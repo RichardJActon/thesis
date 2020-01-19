@@ -1,0 +1,35 @@
+--- 
+title: "3rd Progression Review"
+author: "Richard J.Acton"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: "`r normalizePath('~/Documents/bibtex/library.bib')`"
+biblio-style: 
+csl: "`r normalizePath('~/Documents/bibtex/genomebiology.csl')`"
+link-citations: yes
+github-repo: 
+description: "PhD Thesis"
+subtitle: |
+  The Epigenomics of Human Ageing
+  
+  Academic Unit - Human Development and Health
+  
+  Supervisors - Chris Bell, Karen Lillycrop and Cyrus Cooper
+---
+
+# Abstract {-}
+
+Aims:
+
+1. Identify Age related changes in DNA methylation in regions of the genome characterised in the TwinsUK MeDIP-seq dataset and poorly covered by or covered in small samples by other technologies. 
+
+	a. The tRNA genes, following up on the previous finding of age-related DNA hypermethylation at tRNA-iMet-CAT-1-4 [@Bell2016]. tRNA genes have a core role in cellular metabolism, many emerging regulatory functions both structural and as signalling molecules. tRNA genes also interface with many systems the modulation of which impact longevity, making any age-related changes in their epigenetic state potentially very consequential.
+	b. Alu repeat elements, a primate specific family of SINEs present in over 1 million copies in the human genome. We aim to construct a DNA methylation clock using only these elements. We reason that age acceleration based on this clock will yield different information about biological ageing than from previous clocks as the effects of DNA methylation changes differ between repressed repetitive elements and regulatory sequences. 
+
+2. Identify epigenetic associations with bone health outcomes and of vitamin D supplementation during pregnancy as an intervention to improve bone outcomes [@Harvey2012a; @Cooper2016]. Provide some ground work for mechanistic studies to extend understanding what systems influence influence bone health by identifying what genomic features change epigenetically with bone traits and interventions intented to affect these traits.
+
+# Acknowledgements {-}
+
+I would like to acknowledge Nevena Krstic for her work extracting the DNA for the MAVIDOS EPIC array analysis and Dr Millie Parsons for her assistance with with the MAVIDOS sample metadata, as well as Dr Beth Curtis and Professor Nick Harvey for their assistance with framing the research questions for the vitamin D and bone development outcomes work with the MAVIDOS samples. I would like to acknowledge Nikki Graham for her assistance identifying suitable samples for targeted bisulfite sequencing work and her work extracting DNA from those samples. I acknowledge the use of the IRIDIS High-Performance Computing Facility, and associated support services at the University of Southampton, in the completion of this work. Finally, I would like to acknowledge the extensive help and support of my primary supervisor Dr Chris Bell.

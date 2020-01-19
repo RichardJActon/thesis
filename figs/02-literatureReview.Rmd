@@ -1,0 +1,563 @@
+---
+output:
+  word_document: default
+  html_document: default
+---
+# literature Review {#literatureReview}
+## Epigenomics - Overview
+Epigenomics refers to the totality of the epigenetic modifications present in cells. Epigenetics generally refers to modifications to DNA and chromatin which do not affect the primary sequence of DNA bases, but which are to varying degrees stable and heritable. The term derives from epigenesis and genetics originating with Conrad Waddington in the 1940s and 50s. Epigenesis refers to the idea that organisms develop through the progressive differentiation of cells from the egg into adult tissues. As modern genetics revealed that every cell contained a complete copy of the genome which was differentially utilised by the cells of adult organisms, the terms where fused to reflect the study of how this occurs. The usage has evolved a little further since molecular biology began to elucidate the mechanisms involved in this process and the term now frequently refers to the study of these mechanisms and their effects in less explicitly developmental contexts. Some consider that heritability should be a criterion for a mark to be considered epigenetic, but this excludes may phenomena now commonly refereed to using the term. Requiring heritability results in a further definitional dispute over degrees of heritability; mitotic, meiotic, transgenerational and to what degree of fidelity? Adrian Bird [@Bird2007] proposes the definition: "the structural adaptation of chromosomal regions so as to register, signal or perpetuate altered activity states." as a useful compromise. 
+
+Whilst an organism can generally be though of as having a single genome, it will have at least as many epigenomes as it has cells types. informal estimates seem to place this number as very roughtly on the order of 200. At this point in time however there is no clear definition of what constitutes a distinct cell type, indeed they are beginning to be defined by the distinct patterns of gene expression and epigenetic modifications they exhibit. Consequently the number epigenomes that could be considered distinct will likely ultimately approximate to the number of epigenomes which can usefully distinguish between sub-populations of cells. An effort is underway to estabish a consortium to produce a [Human Cell Atlas](www.humancellatlas.org) [@HumanCellAtlas] and a cell type ontology [@CellOntologyOBO] exists.
+
+There are a plethora of epigenetic modifications to numerous to list exhaustively here. They include DNA methylation and Histone tail modifiations generally at lysine residues. These can be methylations with between one and three methyl groups per lysine, Acetylations, Ubquitylations, SUMOylations, and phosphorylations. These are denoted in the form: (histone name)(Residue single letter code)(residue position)(modification type) e.g. H3K27me3 denotes a trimethylation at the lysine residue at position 27 in histone 3. Alternatives to the canonical histones can be substituted in the nucleosome, H2A.Z and H3.3 for example ^^^(). Many of these marks can be generally classified as permissive of repressive but are frequently combined with marks of opposing affect, rendering the interpretation of the 'Histone Code' extremely challenging. 
+
+The most prominent and well studied epigenetic modifications are a subset of the histone modifications and DNA methylation at at the 5 carbon in cytosine (figure \@ref(fig:5mCvsC)), in a CpG dinucleotide context (figure \@ref(fig:CpGvsGpC)). 5-methylcytosine is abbreviated 5mC. In rarer instances DNA can be metylated at cytosines in other sequence contexts and on other bases [@]. DNA CpG methylation is, at present probably the most well characterised of the epigenic modifications, in terms of the amount of data available about a single epigenetic mark. ^^^(*_get some info on the relative amount of meth vs histone data_*) (herafter 'DNA Methyaltion' refers to CpG methylation unless stated otherwise.) DNA methyaltion is stable and relatively easy to characterise from biological samples by comparison with other epigenetic marks, the methylation status of ancient DNA has even been characterised, see for example: [@Briggs2010],[@Smith2015]. ...  DNA methylation also offers the appearance of relative simplicity in comparison to the complex picture of the 'histone code' giving the impression that its useful interpretation may be more readily tractable.
+
+
+```{r 5mCvsC, fig.cap='(ref:5mCvsC-Cap)', echo=FALSE}
+knitr::include_graphics("figs/5mC_vs_C.png")
+```
+
+(ref:5mCvsC-Cap) Structure of 5-methylcytosine contrasted with Cytosine. (Figure created by the Author.)
+
+```{r CpGvsGpC, fig.cap='(ref:CpGvsGpC-Cap)', echo=FALSE}
+knitr::include_graphics("figs/CpG_vs_GpC.png")
+```
+
+(ref:CpGvsGpC-Cap) A schematic representation showing a Methylated CpG dinucleotide in its structural context. This is contrasted with a __GpC__ dinucleotide, which cannot be superimposed on a __CpG__. (Figure created by the Author.)
+
+## DNA methylation
+### Biology of DNA methylation - Origins and Effects
+> Key Refs: point to schubeler 2015 review, irizarry 2009 - shores, 
+
+#### Distribution
+The is considerable diversity in the distribution DNA methylation across different taxa, suggesting DNA methylation may be used for at least partially distinct purposes by different lineages. reviewed in [@Suzuki2008] In mammals most CpGs are constitutively methylated ^^^(), [@Stadler2011] and are distributed quite sparsely through the genome ^^^(~ relative freqency data) with higher CpG density features which are frequently unmethylated called CpG islands (CGIs).
+
+5-methylcytosine is prone to deamination to thymine resulting in a mismatch TG lesion and frequently mutation to a TA pair ,[@Shen1994]~. This higher frequency of mutation means that whilst meCpGs make up ~1%^^^[@] of the genome they are responsible for ~30%^^^[@] of somatic germline mutations. As CpGs tend to be methylated and tend to cause mutations when methylated they are frequently lost from the genome unless they are subject to some form of possitve selection^^^[@]
+
+underying DNA seqence is the primary determinant of DNA methylation status ^^^(),[@Lienert2011]
+
+CpG islands - higher CpG density - less methylated - promoters 
+- deaton and bird review [@Deaton2011]
+
+CpG shores [@Irizarry2009]
+
+Gene body - transcriptional noise
+
+^^^(distribution sets mamalian context for mechanism below:)
+
+#### Methylation and Demethylation
+Methylated CpGs are heritable through cell divisions as they are maintained by DNMT1 (DNA methyl transferase 1) which is associated with the replication machinery [@Vertino2002] ^^^(vertino initial co-fractionation additoinal references). DNMT1 specialises in recognising hemimethylated DNA and methylating the unmethylated C in a palindromic CpG dinucleotide site.[@] 
+
+DNMT3a and DNMT3b are responsible for *de novo* DNA methylation (DNMT3L - catalytically inactive, but DNA binding)
+
+demethylation passive, active
+
+TET (ten eleven translocation)
+
+##### Fidelity of DNA methylation transmission
+The fidelity of DNA methylation copying can be assayed by Hairpin-Bisulfite PCR (Polymerase Chain Reaction) [@Laird2004]. Laird et al. looked at two alleles of a portion of the CpG island from the human *FMR1* gene in uncultured lymphocytes, one hyper methylated and one hypomethylated. In the hypermethylated allele they found that 96% of sites methylated in the parent strand remained methylated in the daughter strand and 86% of unmethylated sites remained unmethylated. By contrast in the hypomethylated allele there were no methylated sites to be retained and >99% of unmethyalted sites remained so following replication. 
+
+| Retention    | Hyper/% | Hypo/% |
+|--------------|---------|--------|
+| methylated   | 96      | NA     |
+| unmethylated | 86      | >99    |
+
+Table: (\#tab:DNAmethFidTab) EXAMPLE TABLE DNA methylation fidelity Data from Laird et al. [@Laird2004] 
+
+TEST TAB REF \@ref(tab:DNAmethFidTab)
+
+Laird et al.'s work suggests a higher degree of overall methylation fidelity for hypomethylated DNA and a propensity for unmethylated sites in hypermethylated DNA to become methylated.
+
+Zhao et al [@Zhao2014] applied Hairpin-Bisulfite PCR genome wide in mouse embryonic stem cells (ESCs). They also found high degrees of methylation fidelity in hypomethylated regions such as CGIs and Promoters, as well as a high degree of fidelity in \@ref(fig:Zhao2014fig3ab). 
+
+```{r Zhao2014fig3ab, fig.cap='(ref:Zhao2014fig3ab-Cap)', echo=FALSE}
+knitr::include_graphics("figs/Zhao2014_fig3_a+b.png")
+```
+
+(ref:Zhao2014fig3ab-Cap) Bimodal Distribution of DNA methylation level and fidelity
+Methylation fidelity exhibits a bimodal distribution with most and least methylated regions exhibiting the highest fidelity. Additionally fidelity for methylation levels of 10-50% is considerably better than fidelity for levels of 50-90%. This data is from the mouse cell line ES-E14TG2a which is capable of self-renewal when cultured with Leukaemia Inhibitory Factor (LIF) and spontaneous differentiation upon removal of LIF (denoted as E14-d0 at day 0 and E14-d6 at day 6 after the withdrawal of LIF, respectively). Fidelity represents the percentage of symmetrically methylated or unmethylated CpGdyads for a given position as determined by Hairpin-Bisulfite PCR. (Reproduced from Zhao et al. (figure 3 a and b) [@Zhao2014].)
+
+Jenkinson et al. [@Jenkinson2017] took an information theoretic approach to DNA methylation maintenance, modeling the binary methylation state of CpGs as a noisy communications channel. Permitting them to compute the information capacity, methylation entropy, and the relative disipated energy of these channels. 
+
+Zhao et al. observed that methylation fidelity increased with gene expression, and that the methylation fidelity of genes with no detectable expression did not differ from that of regions distal from the TSS. Which suggests an emphasis on enforcing an unmethyalted state for actively expressed genes by mechanisms of gene expression control involving DNA methylation. Jenkinson et al.'s [@Jenkinson2017] model found that CpGs in TSS have the highest information capacity, low entropy and disipated large amounts of energy (SF3) energy, suggesting that changes in methyation here are less subject to chance and that the cell expends more resources at these loci to acheive this higher level of control over their methylation state.
+
+Zhao et al. also noted that the binding sites of the 13 pluipotency enriched transcription factors which they examined exhibited low methylation and high methylation fidelity. When they permitted their mouse ESCs to differentiate they observed increased methylation and methylation fidelity at regions distal from transcription start sites (TSSs), and minimal change around TSS. This aligns with the findings of Stadler et al. [@Stadler2011] whose low-methylated regions (LMRs) which are generally distal from TSSs exhibit cell type specific changes in methylation status with differentiation. 
+
+
+
+
+
+Zhao - higher density CGI, lower  methylation level 
+
+modeling work by [@Affinito2016] - increased methylation above a certain level drops off
+
+review of DNA methylation maintenance - [@Jones2009]
+
+
+
+#### Binding factors and regulatory roles
+DNA methylation impacts and is impacted by Transcription factor binding, Histone Remodeling and histone modification. Consequently the effects of DNA methylation on gene expression through the control of transciption is of varying degrees of directness. Very direct effects such as the methylation state of CpGs in the binding motif a transcription factor controlling whether or not it binds (e.g. NRF1[@Domcke2015]) in a promoter (*cis*), or through more indirect paths involving recruiting factors which alter chromatin modifications or recruit chromatin remodelling factors potentially leading to long range (*trans*) effects.
+
+
+Enhancers and TF binding sites (UMR,LMR,FMR) - CTCF, Cfp1-H3k4me3 [@Thomson2010]
+
+
+### Methods of characterising DNA methylation
+(Brief descriptions - Strengths and weaknesses)
+
+#### Restriciton based
+##### Restriction landmark genomic scanning (RLGS)
+Restriction landmark genomic scanning (RLGS) [@Hatada1991], [@Hayashizaki1993], [@Costello2002]
+digest - linear agarose electrophoresis (dim1) - in gel digest - polyacrylamide electrophoresis (dim2) - in gel digest and radiolabeling with polymerase and P^13 - auto radiograph
+methylated sites not digested therefore not labeled - compare with samples form other tissues, cancer etc to see diff - can clone out fragments from gel spots for further characterisation
+resolve ~2k spots per gel more with different enzyme combos ~ enzymes bias towards partiular sites e.g. CpG islands
+
+##### Amplification of intermethylated sites (AIMS)
+
+##### Combined Bisulfite Restriction Analysis (COBRA)
+
+#### Arrays 
+
+Generations of illumina BeadChip array technologies:
+- 1.5k golden gate [@Bibikova2006] - Targeted to Cancer related genes.
+- 27k infinium [@Bibikova2009] - Targeted to TSS/proximal promoter of Consensus coding sequence genes.
+- 450k [@Bibikova2011]
+- 850k EPIC [@Moran2015]
+
+Bisulfite conversion, (amp), annealing, single base extension
+
+#### MeDIP-seq
+
+#### bisulfite sequencing
+
+(WGBS, RRBS, Targeted)
+
+##### Whole Genome Bisulfite Sequencing (WGBS)
+
+Whole Genome Bisulfite Sequencing has the potential to cover all CpG sites unlike array based methods and provide single nucleotide resolution, unlike immunoprecipition followed sequencing based methods.
+It also has the advantage of concurrently providing a genome sequence which can reveal sequence varients which may effect methylation permitting better separation of genetic from other causes of DNA methylation patterns.
+However this method has significant drawbacks interms of cost and efficiency. [@Ziller2013] noted that 65% of their reads did not contain CpGs and that others where uninformative about methylation status for other reasons leading to an effective loss of 80% of their sequencing depth. Libertini et 2016 [@Libertini2016] found that 85x coverage was needed to accurately call differential methylation at individual CpGs genome wide. Dropping to 30x coverage resulted in loss of ~50% of the information content. ^^^( elaborate)
+
+Given that the Roadmap epigenomics project [@Satterlee2010],[@Roadmap2011] and BLUEPRINT epigenome consortium [@Adams2012] by adhering to International Human Epigenome Consortium (IHEC) [@IHECeditorial2010] guidelines, [@IHEC2012] only require 30x coverage for their WGBS samples, it may not be possible to make reliable differentially methylated position (DMP) calls genome wide for many of these datasets. Individual DMPs with adequate coverage across comparison sets could be called reliably but this would make a highly restrictive criterion.
+
+Other sequencing based techniques which do not provide complete genome coverage provide alternatives to WGBS which do not require such high numbers of total reads by making a larger proportion of the reads informative about CpG methylation status.
+
+##### Reduced Representation Bisulfite Sequenceing (RRBS) 
+[@Meissner2005]
+
+##### Targeted 
+
+[@Ziller2016] - tragets regions with dynamic methylation
+sure select agilent 
+
+#### problems... Methodological problems 
+confounding factors
+genetic background
+copy number varients [@]
+SNPs [@Boks2009] ... hsm paper
+
+EWAS?
+
+biological significance of differences in mean methylation level 
+
+differnetial variability iEVORA [@Paul2016]
+[@Jenkinson2017]
+
+cell type
+
+## Aging in the context of Epigenetics
+
+Epigenetic alterations are one of the 9 Hallmarks of aging identified by L?pez-Ot?n et al. [@L?pez-Ot?n2013] in their 2013 paper laying out some common themes identified in the study of molecular and cellular aging.
+
+Early Aging and DNA methylation work using biochemical, chromatographic and radio labeling techniques to assay global changes in the amount of 5mC found differences in 5mC composition with cell type [@Ehrlich1982] but did not see changes with age. Other work around that time however found differences in 5mC levels with the age of cells in culture [@Wilson1983]. Wilson et al. noted that DNA methylation decrease across several tens of generations of cell lines in culture, but not in immortal cell lines, which had lower absolute levels of 5mc to start with but remained constant over time. Wilson et al. also cite earlier work by Romanov et al. [@Romanov1981] and Berdyshev et al. [@Berdyshev1967] which documented decreases in 5mc with age in cows and salmon respectively. Later work by Wilson et al. [@Wilson1987] in mice *P. leucopus* and *M. musculus* found decreases in 5mC with Age and that the rate of decline was less in the longer lived *P. leucopus* than in *M. musculus*. Wilson et al. also noted that the mitotic index of tissues did not relate to the loss of DNA methylation with age in tension with their earlier observations *in vitro*. The persistent loss of 5mC over time and the dramatic changes in methylation seen in cancer cells lead Wilson et al. to suggest that dysregulation of DNA methylation may have a substancial role to play in the age dependency of cancer risk and aging more generally. ~The possibility of a link between DNAm dysregulation with age and increased cancer risk with age has been explored further by otheres since ... ^^^(Fraga~ [@Ahuja2000])~
+
+Methods which allowed the examination of changes in DNA methylation at known locales in the genome permitted a more nuanced picture of changes in DNA methylation over time to develop. Fraga et al [@Fraga2005] introduced the concept of "epigenetic drift". The divegence of DNA methylation and other epigenetic modification patterns with time. Fraga et al. looked at the divergence in DNA methylation along with Histone H3 and H4 acetylation patterns between monozygotic (MZ) twins over a wide range of ages. figure \@ref(fig:Fraga2005fig3) is a nice visual encapsulation of Fraga et al.'s DNA methyaltion results.
+
+```{r Fraga2005fig3, fig.cap='(ref:Fraga2005fig3-Cap)', echo=FALSE}
+knitr::include_graphics("figs/Fraga2005fig3.png")
+```
+
+(ref:Fraga2005fig3-Cap) Mapping Chromosomal Regions of differential DNA methylation.
+Examples from Chromosomes 1, 3, 12 & 17 are shown for a 3 and 50 year old twin pair.
+methylation status is show by competative hybridisation of AIMS (amplification of intermethylated sites) products to metaphase chromosomes.
+Green and Red signals indicate hypermethylation and hypomethylation events between twins, Yellow indicates little difference. 
+Red and Green blocks adjacent to ideograms indicate area of significant DNA methylation change.
+(Reproduced from [@Fraga2005] (figure 3).)
+
+Fraga et al. observed that older twins had greater epigenetic differences with time, in DNA methylation as well as H3,H4 Acetylation. Fraga et al. also noted that the divergence was greater in twins who had lived longer appart and had different medical histories. 
+
+*numerus locus specific age related DNA meth changes reported before genome scale analyses with individual CpG resolution ~ need some examples to cite*
+
+The illumina Golden gate array prodided
+illumina golden gate 1505 [@Bibikova2006] - probes targeted to cancer related genes
+[@Bjornsson2008] - see blow
+[@Boks2009] - 
+[@Christensen2009] - 
+
+[@Bjornsson2008] substancial intra-individual differences (contrast with @Eckhardt2006 and @Ehrlich1982 no age meth changes - averages accross individuals that found no age related changes)
+
+[@Bjornsson2008] also found intra-individual differences to be highly heritable
+
+[@Heyn2012] - newborn and centenarian WGBS
+
+
+
+### Epigentic Clocks
+With the advent of array based techniques which permitted the measurement of the methylation status of Specific CpGs placed stategically throughout the genome researchers were able to undertake a more fine grained analysis of the changes in DNA methylation with age. This allowed the prediction of chronological age from a metric of "DNA methylation age" (DNAm age), and interpretation of the differences in prediced and chronlogical age in terms of the pathophysiology of aging. 
+
+The illumina Golden gate array [@Bibikova2006] with 1505 probes targeted to cancer related genes was the first of these. Bjornsson et al. DNAm changes with and and substancial intra-individual differences in in these changes contrast to earlier work: @Eckhardt2006 and @Ehrlich1982 who found no age related changes their work however used averages accross individuals and found no age related changes. Bjornsson et al. also found that the intra-individual differences in differential methylation with aging where highly heritable by use of familial clustering. Work by Boks et al. also using the golden gate array corroborated Bjornsson et al.'s findings in monozygotic twins [@Boks2009]. Christensen et al. used the golden gate array to look at age related changes in DNAm in several tissue types in contrast to Bjornsson and Boks who used perphieral blood [@Christensen2009]. CpG sites differentially methylated with age when searching accross all tissues were frequently specific to small number of tissue types. In addition CpGs in CGIs tended to the hypermethylated with and and *vice versa*. Christensen et al. also found that the methylation profiles for different tissue were higly predictive of tissue type.
+
+Rakyan et al. [@Rakyan2010] looked at age related changes in DNAm using the illumina 27k array [@Bibikova2009] with whole blood samples in a discovery set. They replicated their findings in sorted cell fractions to see if they could capture changes in DNAm that could be attributed to changes in blood cell type composition over time, which they did not find. Teschendorff et al. 2012 found that promoters of targets of the polycomb group proteins (PCGTs) were more likely than non-PCGTs to become methylated with age, and where associated with pre-neoplatic conditions; in a large cohort using the 27k array with blood and epithelial cell smaples [@Teschendorff2010]. Bocklandt et al. [@Bocklandt2011] also using the 27k array but with saliva samples created the first "epigenetic clock" used to predict the chronological age of donors based on the DNAm landscape of their cells, the mean error was 5.2 years. Bocklandt et al. were able to acheive similar predictive accuracy with a few as 3 CpG sites in their model. Koch and Wagner [@Koch2011] used publically available 27k array datasets from a variety of different tissues to train a model using a different statistical method but only acheived an error of 11 years. They did however identify a number of CpGs also identified by Bocklandt et al. Bell et al. used 27k array data to look for correlations between differential methylation and age related phenotypes as well as chronological age, they found few of the former and many of the latter [@Bell2012]. Many of the aDMRs they identified presisted accross tissue types and replicated in a second cohort, several had been identified previosuly by Rakyan and Bocklandt.
+
+Heyn et al. examined the DNA methylation status of a newborn and a centenerain CD4+ T cells using whole genome bisulfite sequencing (WGBS) [@Heyn2012], along with a group of newborns and nonagenarians using the illumina 450k array [@Bibikova2011]. Heyn et al. observed a global decresae in methylation from newborn to centenarian, as well as in the 450k data and a intermediate level of methylation on a sample of intermediate age. I addition Heyn et al. noted that adjacent CpGs which normally exhibit degrees correlation in methylation status [@affinito2016], particualrly in CpG dense regions like CGIs were less well correlated with their neighbors with age. In January of 2013 Hannum at al. [@Hannum2013] published a study using the illumina 450k array and whole blood samples. In December of the same year Horvath [@Horvath2013] published a studing using multiple datasets some produced on the 27k and some the 450k array. both used 'elastic net' penalized multivariate regression models to identify CpGs which collevtively provide the best predictor of DNAm age rather than the CpGs which are individually most highly correlated with age.
+
+Florath et al. identified some additional age associated CpGs [@Florath2014] from 2 large cohorts totaling N=898 and an N=67 8yr follow up longitudinal cohort
+
+These epigenetic clocks varied in their predictive accuarcy of chronolgical age 
+
+table?
+
+|Model|Estitmated Age prediction error|Number of CpGs|
+
+*sumarise findings*
+
+```{r AgeCpGUpSet, fig.cap='(ref:AgeCpGUpSet-Cap)', echo=FALSE}
+knitr::include_graphics("figs/AgeCpGUpSet.png")
+```
+
+(ref:AgeCpGUpSet-Cap) Overlap of CpG sites identified in various in DNAm aging models, set intersections with no contents are not included.
+Data from: [@Rakyan2010],[@Teschendorff2010],[@Bocklandt2011],[@Garagnani2012],[@Bell2012],[@Hannum2013],[@Horvath2013],[@Florath2014],[@Weidner2014].
+(Created with UpSetR [@Lex2014].)
+
+,[@Koch2011] - non indi
+
+Interestingly as illustrated in figure \@ref(fig:AgeCpGUpSet) CpGs identified and used as age predictors in various studies show relatively little overlap. This lack of aggreement does not seem to be substancially due to tissues specific effects as several of the age prediction models whose data were used in figure \@ref(fig:AgeCpGUpSet) were validated across multiple tissues.
+
+[@Johnson2017] - non-lineage age CpGs
+
+In his paper [@Horvath2013] Horvath proposed that DNAm age is a measure of the work done by an "Epigenetic Maintenance system" (EMS) which maintains epigenetic stability over time. Considering work in its physical sense of the integral of power over time, Horvath considered power, the rate of change in the use of energy by the EMS as the 'tick-rate' of the epigenetic clock. He proposed that during development power wold be high due to the high level of stress on the system and that power would drop to a consistent level once maturity was reached. Horvath layed out four predictions of this EMS model.
+
+*other predictions*
+
+1. cancer tissue should show signs of accelerated age, reflecting the protective actions of the EMS
+2. many mitogens, genomic aberrations, and oncogenes, which trigger the re- sponse of the EMS, should be associated with accelerated DNAm age.
+3. high age acceleration of cancer tissue should be associated with fewer somatic mutations given the protective role of the EMS
+4. mutations in TP53 should be associated with a lower age acceleration of can- cer tissue if one further assumes that p53 signaling helps trigger the EMS
+
+I would propose that a fith prediction of this model is that DNA methylation fidelity should be elevated during development and differentiation as a reflection of the greater amount of work done by the EMS during this period. This is bourne out by the results of Zhao et al. [@Zhao2014] who noted a global increase in DNA methylation fidelity in during the early differentiation of mouse embryonic stems cells.
+
+```{r Zhao2014F4cd, fig.cap='(ref:Zhao2014F4cd-Cap)', echo=FALSE}
+knitr::include_graphics("figs/Zhao2014F4cd.png")
+```
+
+(ref:Zhao2014F4cd-Cap) DNA methylation fidelity and experssion level adjacent to transcription start sites (TSS) in mouse embyonic stem cells (mES) prior to and during Differentiation.
+E14-d0 mES cells at day 14. E14-d6 mES cells at day 14, 6 days after leukemia inhibitory factor (LIF) withdrawal (Initiation of differentiation).
+Reproduced from [@Zhao2014] (figure 4, C & D).
+
+energy expenditure of methylation channels [@Jenkinson2017] and Horvath's EMS, RDE for a CpG channel ~= work done by Horvath's EMS at a given locus
+high capacity, relative disipated energy (RDE) which decreased with age, inverse for entropy~
+increase in entropy and loss of entropic sensitivity with age
+
+[@Thompson2017] - DNAm age clock in dogs and wolves - blood
+[@Stubbs2017] - DNAm age clock mice - multi tissue
+
+[@Johnson2017] - non-linear changes with age
+
+#### Predicting Mortality and Morbidity
+
+follow up on the epigenetic clock studies to see if divergence of DNAm age from chronological age was pridictive of health outcomes.
+
+[@Marioni2015] - mortality prediction
+[@Chen2016a] - meta analysis
+
+[@Raina2017] - DNAm age and cerebral white matter hyperintensities
+
+[@Zhang2017] - Specific Age assoicated CpGs not very reproducible between cohorts - multiple better~?
+
+Biases in DNAm age assocaited CpGs
+- CpGs hypermethylated in 'ground state' will be more likely to be detected as becoming hypomethylated as easier to get strong effect sizes from larger changes and vice versa. - implications for interpretation of CGI vs shore/shelf vs sea differences in age related direction of change? (direction opposite to ground state has high prior of detection by comparison to change in same direction ~dynamic range?)
+
+- if DNAm change with age varies in stocasticity with hyper vs hypo methylation...
+    - if hypo is more stocastic one would expect, relative to baseline number of hyper vs hypo sites, fewer hypo CpGs wich change consistently with age than hypermethylated sites.
+        - assuption: there are more basline hyper sites that baseline hypo sites, @Ziller2013 f2d ~ ? (hyper are denser and more highly correleted with one another ~ @Affinito) - NEED GLOBAL CpG methylation level freq hist.
+        - then ceteris paribus one should expect more hypo than hyper age CpGs
+        - sites asociated with age are more hyper than hypo by ~ at least 2:1
+        - one would infer from that DNAm shoudl increase with age, but the opposite is the case, global loss is observed.
+        - 
+        
+        
+    - hyper still stocastic, fewer, more highly corelated? ~ 
+- CpG density - CGIs enriched for CpGs
+- probe selection bias - 
+
+- predictable changes vs stocastic changes are likely to differ by tissue type - stocastic changes will occur in loci that are predictable in other tissues.
+
+biomarker of aging
+1. It must predict the rate of aging. In other words, it would tell exactly where a person is in their total life span. It must be a better predictor of life span than chro- nological age.
+2. It must monitor a basic process that underlies the aging process, not the effects of disease.
+3. It must be able to be tested repeatedly without harming the person. For example, a blood test or an imaging technique.
+4. It must be something that works in humans and in lab- oratory animals, such as mice. This is so that it can be tested in lab animals before being validated in humans.
+
+[@Hahn2017] - dietary restriction DNAm mouse liver
+
+[@Teschendorff2010],[@Rakyan2010] - stable stem cell character, increases self renewal, decreased capacity for differeniation 
+
+
+Whilst DNAm age is highly reproducible
+
+- cancer aging change comonalities
+- drift vs clock
+- EMS details?
+
+#### Mitotic
+> Key Ref: Yang 2016 GenBio
+
+[@Jung2015] - aging and DNA methylation review
+
+### tRNAs and aging
+> Key Refs - hit in Bell 2016
+
+(highly speculative conection to matched amino acid requirement and aging bottleneck - linda partridge)
+
+
+
+---
+output:
+  word_document: default
+  html_document: default
+---
+
+# Literature Review {#literatureReview}
+## Epigenomics - Overview
+Epigenetics generally refers to modifications to DNA and chromatin which do not affect the primary sequence of DNA bases, but which are to varying degrees stable and heritable. The term derives from epigenesis and genetics originating with Conrad Waddington [@Waddington1942]. Epigenesis refers to the idea that organisms develop through the progressive differentiation of cells from the egg into adult tissues. As modern genetics revealed that every cell contained a complete copy of the genome which was differentially utilised by the cells of adult organisms, the terms were fused to reflect the study of how this occurs. The usage has evolved a little further since molecular biology began to elucidate the mechanisms involved in this process and the term now frequently refers to the study of these mechanisms and their effects in less explicitly developmental contexts. Aruther Riggs et al. considered that heritability should be a criterion for a mark to be considered epigenetic , but this excludes may phenomena now commonly referred to using the term [@Russo1996]. Requiring heritability results in a further definitional dispute over degrees of heritability; mitotic, meiotic, transgenerational and to what degree of fidelity? Adrian Bird proposes the definition: "the structural adaptation of chromosomal regions so as to register, signal or perpetuate altered activity states." as a useful compromise [@Bird2007]. Epigenomics refers to the totality of the epigenetic modifications present in cells.
+
+Whilst an organism can generally be thought of as having a single genome, with execptions such as Somatic mutations and Chimerism, it will have at least as many epigenomes as it has cells types. There are on the order of $10^{13}$ cells in the human body [@Bianconi2013]. Estimates of the number of cell types vary with resolution at which one deems cells functionally distinct [@HumanCellAtlas]. At this point in time, however, there is no clear definition of what constitutes a distinct cell type, indeed they are beginning to be defined by the distinct patterns of gene expression and epigenetic modifications they exhibit [@CellSystemsCellType2017]. Consequently, the number epigenomes that could be considered distinct will likely ultimately approximate to the number of epigenomes which can usefully distinguish between sub-populations of cells. An effort is underway to establish a consortium to produce a [Human Cell Atlas](www.humancellatlas.org) [@HumanCellAtlas] and a cell type ontology [@CellOntologyOBO] exists.
+
+There are a plethora of epigenetic modifications which can be subdivided into four broard categories:
+
+1. __DNA modifications__
+
+    DNA methylation primarily takes place on Cytosine residues, other bases can be methylated such as N6-methyladenine [@Wu2016]. Cytosine methylation occurs principally in an mCpG sequence context but can also occur in mCpH, mCHG and mCHH (H=A/C/T) contexts; particularly in cells of the nervous system [@Guo2014a] and embryonic stem cells were as many as 25% of all cytosines can be methylated in non-canonical contexts. In constrast to the methylation of fetal lung fibroblasts which is 99.98% in CpG context [@Lister2009], [@Schultz2015].
+
+2. __Histone tail modifications__
+
+    Histone tail modifications generally ocur at lysine residues. Examples of modifications include methylations with between one and three methyl groups per lysine, Acetylations, Ubiquitylation, SUMOylations, and phosphorylations (Reviewed in @Bannister2011). Many of these marks can be generally classified as permissive of repressive but are frequently found in combinations of marks of opposing effect, rendering the interpretation of the 'Histone Code' extremely challenging [@Voigt2012]. One approach to interpreting chromatin state is segmentation. Segmentation makes use of pattern discovery techniques to divide the genome into discrete sections  assigning these sections to a set of catagories which can then be compared to existing annotations to provide functional labels [@Hoffman2012]. When sucessfull the pattern discovery algorithm independently recapitulates our existing ontology of functional elements and hopefully provides new insights by for example highlighting regions not previsouly consisdered to be in a given functional category. This is a "top-down" approach making use of the "sum" of avaialble chromatin state data rather than trying to interpret the significance of a single type of mark.
+
+3. __Histone Variants__
+
+    Alternatives to the canonical histones can be substituted in the nucleosome, H2A.Z and H3.3 for example, Reviewed in @Weber2014. Alternative histones can alter chromatin structure, dynamics and binding by other factors.
+
+4. __Some non-coding RNAs (ncRNA)__
+
+    A subset of ncRNAs, particularly those which persist in close association with chromatin such as the long non-coding RNA (lncRNA) Xist which is a key regulator of X inactivation [@Cerase2015], can fall within the definition of epigenetic features. (reviewed in @Kaikkonen2011.)
+
+## DNA Methylation
+### Structure and Context
+DNA methylation is the most well-studied epigenetic modification [@]. Specifically CpG methylation, the addition of a Methyl group to the 5 carbon of a cytosine base (figure \@ref(fig:5mCvsC)), in a CpG dinucleotide context (figure \@ref(fig:CpGvsGpC)). 5-methylcytosine is abbreviated 5mC. (hereafter 'DNA Methylation' or 'DNAm' refers to CpG methylation unless stated otherwise.)
+
+DNA methylation is stable and relatively easy to characterise from biological samples by comparison with other epigenetic marks, the methylation status of ancient DNA has even been characterised, see for example: [@Briggs2010] and [@Smith2015]. DNA methylation also offers the appearance of relative simplicity in comparison to the complex picture of the 'histone code' giving the impression that its useful interpretation may be more readily tractable.
+
+Expand^
+
+```{r 5mCvsC, fig.cap='(ref:5mCvsC-Cap)', echo=FALSE}
+knitr::include_graphics("figs/5mC_vs_C.png")
+```
+
+(ref:5mCvsC-Cap) The structure of 5-methylcytosine contrasted with Cytosine. (Figure created by the Author.)
+
+```{r CpGvsGpC, fig.cap='(ref:CpGvsGpC-Cap)', echo=FALSE}
+knitr::include_graphics("figs/CpG_vs_GpC.png")
+```
+
+(ref:CpGvsGpC-Cap) A schematic representation showing a Methylated CpG dinucleotide in its structural context. This is contrasted with a __GpC__ dinucleotide, which cannot be superimposed on a __CpG__. upper left: methylated cytosine residues in a CpG dinucleotide, showing 5mC is 5' of G on both DNA strands. upper right: unmethylated cytosine residues in a GpC dinucleotide, showing G is 5' of C on both DNA strands. lower: superimposition of a GpC and CpG dinucleotide illustrating the mirrored nature of these structures and the imposibility of superimposing them through rotation. (Figure created by the Author.)
+
+### Distribution and Global Trends
+
+There are 28,299,634 CpGs [@Luo2014] in the hg19 assembly of the human genome [@Lander2001]. Given that the GC content of the human genome is $42\%$ the prior probability of getting a CpG dinucleotide is: $0.21 \times 0.21 = 0.0441$, 4.41%. CpGs represent $\sim1.8\%$ of the dinucleotides in the human genome $28,299,634 \div (3.23\times10^9\div2) \approx 0.0175$. Methylated cytosines are prone to deamination to tyrosines, resulting in mismatch lesions [@Duncan1980]. This increased mutagenic potential generally means they are selected against, accounting for at least some part of their under-representation in the genome. The three major classes of repeat elements SINEs, LINEs and LTRs contain some 46% of all CpG sites, with a further 5% in other repetitive elements [@Luo2014]. 
+
+```{r CGIs, fig.cap='(ref:CGIs-Cap)', echo=FALSE}
+knitr::include_graphics("figs/CGI-Shores-Shelves-Seas_2.png")
+```
+
+(ref:CGIs-Cap) Schematic representation of CpG Islands, shores, shelves and seas. CpG density declines from shores to seas and methylation increases (methylation density and proportion not to scale). (Figure created by the Author.)
+
+CpGs are not uniformly distributed in the genome they occur at higher frequency in some regions. "CpG islands" or CGIs are regions of high CpG density. The total number of CpGs in the UCSC repeat masked CGI annotation list of 28,691 CGIs is 1,990,729. These CpGs comprise $\sim7.0\%$ of the total number of CpGs the genome. The mean percentage of the sequence of these CGIs that is comprised of CpG dinucleotides is $\sim18.5\%$ and their mean length is 761bp. 
+
+DMRs in CGIs..
+
+Irizarry et al. found that the 2kb regions flanking CpG islands which they termed "CpG island shores" exhibited greater tissue-specific differential methylation than the islands themselves [@Irizarry2009]. This nomenclature has subsequently been expanded further with "CpG island shelves" which are 2kb - 4kb from the CGIs and "seas" referring to the rest of the genome, see figure \@ref(fig:CGIs). 
+
+CGIs overlap the promoters of $\sim70\%$ of genes [@Saxonov2006], this, however, leaves roughly half of all CGIs as "orphans" not associated with a known transcription site. These orphan CGIs frequently constitute cell-type specific enhancers [@Bell2017] and alternate promoters [@Illingworth2010],[@Maunakea2010]. CpGs are distributed quite sparsely through the genome occurring at low density in "seas" and at increasing density in CGIs and their flanking regions, see figure \@ref(fig:CGIs). Early work showed 70-80% of CpGs are constitutively methylated [@Ehrlich1982] (reviewed @Bird2002) Stadler et al. produced a more detailed picture of the distribution of CpG methylation in mouse embryonic stem cells (ESCs) [@Stadler2011] see figure \@ref(fig:CpGfreqVsDNAm). It is a characteristic of CGIs that they are generally unmethylated.
+
+```{r CpGfreqVsDNAm, fig.cap='(ref:CpGfreqVsDNAm-Cap)', echo=FALSE}
+knitr::include_graphics("figs/CpGfreqVsDNAm.png")
+```
+
+(ref:CpGfreqVsDNAm-Cap) The fraction of CpGs with a given methylation level. Data from Whole genome bisulfite sequencing (WGBS) of Mouse embryonic stem cells. (Figure reproduced from @Stadler2011 figure 1a)
+
+### Maintenence and Fidelity.
+
+DNA methylation is highly dependent on the underlying DNA sequence. Sequence features of particular importance to determining DNA methylation status are: transcription factor and other DNA binding protein recognition motifs, and CpG density [@Lienert2011],[@Ziller2013]. Alterations in underlying DNA sequence such as SNPs can have a significant impact on methylation level and the susceptibility of the methylation level to change [@Boks2009], [@Kerkel2008],[@Schalkwyk2010],[@Shoemaker2010], and (Unpublished work Bell et al. 2017). Despite the strong influence of sequence on methylation, global CpG methylation exhibits change over developmental time as illustrated in figure \@ref(fig:DNAmDevTime) and exhibit tissue specific changes in distribution and amount [@Ziller2013]. 
+
+```{r DNAmDevTime, fig.cap='(ref:DNAmDevTime-Cap)', echo=FALSE}
+knitr::include_graphics("figs/Ciernia2016f3DNAmTime.PNG")
+```
+
+(ref:DNAmDevTime-Cap) 5mC levels over developmental time. 5mCH or 5-methylcytosine-(A, T or C) levels are represented on a separate (purple) Axis from the main 5mCG axis. PGC = Primordial Germ Cell. (Figure reproduced from @Ciernia2016 figure 3)
+
+DNA methylation is inherited by daughter cells with quite high fidelity. The fidelity of DNA methylation copying can be assayed by Hairpin-Bisulfite PCR (Polymerase Chain Reaction) [@Laird2004]. Laird et al. looked at two alleles of a portion of the CpG island from the human *FMR1* gene in uncultured lymphocytes, one hypermethylated and one hypomethylated. In the hypermethylated allele, they found that 96% of sites methylated in the parent strand remained methylated in the daughter strand and 86% of unmethylated sites remained unmethylated. By contrast in the hypomethylated allele, there were no methylated sites to be retained and >99% of unmethylated sites remained so following replication. Laird et al.'s work suggests a higher degree of overall methylation fidelity for hypomethylated DNA and a propensity for unmethylated sites in hypermethylated DNA to become methylated.
+
+Zhao et al [@Zhao2014] applied Hairpin-Bisulfite PCR genome-wide in mouse embryonic stem cells (ESCs). They also found high degrees of methylation fidelity in hypomethylated regions such as CGIs and Promoters, as well as a high degree of fidelity in sites bound by transcription factors. \@ref(fig:Zhao2014fig3ab). 
+
+```{r Zhao2014fig3ab, fig.cap='(ref:Zhao2014fig3ab-Cap)', echo=FALSE}
+knitr::include_graphics("figs/Zhao2014_fig3_a+b.png")
+```
+
+(ref:Zhao2014fig3ab-Cap) Bimodal Distribution of DNA methylation level and fidelity.
+Methylation fidelity exhibits a bimodal distribution with most and least methylated regions exhibiting the highest fidelity. Additionally, fidelity for methylation levels of 10-50% is considerably better than fidelity for levels of 50-90%. This data is from the mouse cell line ES-E14TG2a which is capable of self-renewal when cultured with Leukaemia Inhibitory Factor (LIF) and spontaneous differentiation upon removal of LIF (denoted as E14-d0 at day 0 and E14-d6 at day 6 after the withdrawal of LIF, respectively). Fidelity represents the percentage of symmetrically methylated or unmethylated CpGdyads for a given position as determined by Hairpin-Bisulfite PCR. (Reproduced from @Zhao2014 (figure 3 a and b).)
+
+CpG methylation is maintained by DNA methyltransferase enzymes. DNMT1 (DNA methyltransferase 1) is associated with the replication machinery [@Vertino2002] and recapitulates the methylation state of the parent strand on the daughter strand during replication. DNMT1 specialises in recognising hemimethylated DNA and methylating the unmethylated C in a palindromic CpG dinucleotide site. DNMT3a and DNMT3b are responsible for *de novo* DNA methylation along with DNMT3L a catalytically inactive, but DNA-binding subunit [@Jia2009].
+
+## Aging 
+### Hallmarks
+Aging is characterised by a progressive deterioration of physiological integrity with time, resulting in increased risk of mortality and morbidity. These changes at the organismal level have their origins in changes at the molecular and cellular scales. López-Otín et al. [@Lopez-Otin2013] identified nine hallmarks of aging in their 2013 review. These hallmarks are:
+
+1. Genomic instability
+2. Telomere attrition
+3. __Epigenetic alterations__
+4. Loss of proteostasis
+5. Deregulated nutrient sensing
+6. Mitochondrial dysfunction
+7. Cellular senescence
+8. Stem cell exhaustion
+9. Altered intercellular communication
+
+This review focuses on the 3rd hallmark, epigenetic alterations, specifically the role of DNA methylation in aging.
+
+### DNA Methylation and Aging
+
+Early work on DNA methylation and aging used biochemical, chromatographic and radiolabeling techniques to assay global changes in the amount of 5mC. These studies found differences in 5mC composition with cell type [@Ehrlich1982] but did not see changes with age. Other work around that time however found differences in 5mC levels with the age of cells in culture [@Wilson1983]. Wilson et al. noted that DNA methylation decreased across several tens of generations of cell lines in culture, but not in immortal cell lines. Immortal cell lines had lower absolute levels of 5mc to start with but remained constant over time. Wilson et al. also cite earlier work by Romanov et al. [@Romanov1981] and Berdyshev et al. [@Berdyshev1967] which documented decreases in 5mc with age in cows and salmon respectively.
+
+Later work by Wilson et al. [@Wilson1987] in mice *P. leucopus* and *M. musculus* found decreases in 5mC with Age and that the rate of decline was less in the longer lived *P. leucopus* than in *M. musculus*. Interestingly a recent study by Cole et al. found no global differences between young and old mice in short and long-lived strains, however, their other observations would seem to corroborate these initial trends. For the assayed sites long-lived mice exhibited 10x more hypermethylation than wild-type (WT), and WT mice had 3x more Differentially Methylated Regions significantly associated with age (DMRs/aDMRs) than did long-lived mice. Notably, the WT and long-lived mice shared many of the same aDMRs which differed in their degree of methylation as opposed to affecting different sites in the genome [@Cole2017]. The lack of apparent global changes may be due to the biases of the reduced representation bisulfite sequencing (RRBS) method used. RRBS uses a restriction based approach to enrich for regions with high GC content such as CGIs which tend to have low levels of methylation, and consequently may not be sensitive to loss of methylation in generally hypermethylated regions which could contribute to a global trend [@Meissner2005].
+
+Wilson et al. also noted that the mitotic index of tissues did not relate to the loss of DNA methylation with age in tension with their earlier observations *in vitro*. The persistent loss of 5mC over time and the dramatic changes in methylation seen in cancer cells lead Wilson et al. to suggest that dysregulation of DNA methylation may have a substantial role to play in the age dependency of cancer risk and aging more generally, a possibility which has subsequently been further explored by others, reviewed by @Feinberg2004. It has been suggested that "Epimutations" may be able to substitute for mutations in the multi-hit model of carcinogenesis [@Knudson1971], for example .
+
+Methods which allowed the examination of changes in DNA methylation at known locales in the genome permitted a more nuanced picture of changes in DNA methylation over time to develop. Fraga et al [@Fraga2005] introduced the concept of "epigenetic drift". The divergence of DNA methylation and other epigenetic modification patterns with time. Fraga et al. looked at the divergence in DNA methylation along with global Histone H3 and H4 acetylation patterns between monozygotic (MZ) twins over a wide range of ages. figure \@ref(fig:Fraga2005fig3) is a useful visual encapsulation of Fraga et al.'s DNA methylation results.
+
+```{r Fraga2005fig3, fig.cap='(ref:Fraga2005fig3-Cap)', echo=FALSE}
+knitr::include_graphics("figs/Fraga2005fig3.png")
+```
+
+(ref:Fraga2005fig3-Cap) Mapping Chromosomal Regions of Differential DNA Methylation.
+Examples from Chromosomes 1, 3, 12 & 17 are shown for a 3 and 50-year-old twin pair.
+methylation status is shown by competitive hybridization of AIMS (amplification of inter-methylated sites) products to metaphase chromosomes.
+Green and Red signals indicate hypermethylation and hypomethylation events between twins, Yellow indicates little difference. 
+Red and Green blocks adjacent to ideograms indicate areas of significant DNA methylation change.
+(Reproduced from [@Fraga2005] (figure 3).)
+
+Fraga et al. observed that older twins had greater epigenetic differences with time, in DNA methylation as well as H3, H4 Acetylation. Fraga et al. also noted that the divergence in epigenetic state was greater in twins who had lived longer apart and had different medical histories. 
+
+### Age-Related Differential Methylation and Epigenetic Clocks
+
+With the advent of array-based techniques which permitted the measurement of the methylation status of Specific CpGs placed strategically throughout the genome researchers were able to undertake a more fine-grained analysis of the changes in DNA methylation with age. This has allowed the prediction of chronological age from a metric of "DNA methylation age" (DNAm age), and interpretation of the differences in predicted and chronological age in terms of the pathophysiology of aging. 
+
+The Illumina Golden gate array [@Bibikova2006] with 1505 probes targeted to cancer-related genes was the first of these. Bjornsson et al. observed DNAm changes with age as well as substantial intra-individual differences in contrast to earlier work: @Eckhardt2006 and @Ehrlich1982 who found no age-related changes using averages across individuals. Bjornsson et al. also found that the intra-individual differences in differential methylation with aging were highly heritable by use of familial clustering. Work by Boks et al. also using the golden gate array corroborated Bjornsson et al.'s findings in monozygotic twins [@Boks2009]. Christensen et al. used the golden gate array to look at age-related changes in DNAm in several tissue types in contrast to Bjornsson and Boks who used peripheral blood [@Christensen2009]. CpG sites that are differentially methylated with age when searching across all tissues were frequently specific to a small number of tissue types. In addition, CpGs in CGIs tended to be hypermethylated with age and *vice versa*. Christensen et al. also found that the methylation profiles for different tissue were highly predictive of tissue type.
+
+@Rakyan2010 looked at age-related changes in DNAm using the Illumina 27k array [@Bibikova2009] with whole blood samples in a discovery set. They replicated their findings in sorted cell fractions to see if they could capture changes in DNAm that could be attributed to changes in blood cell type composition over time, which they did not find. @Teschendorff2010 found that promoters of targets of the polycomb group proteins (PCGTs) were more likely than non-PCGTs to become methylated with age. Repression of PCGTs is required for Stem cells to differentiate. PCGTs whose methylation status was associated with age were associated with pre-neoplastic conditions in a large cohort using the 27k array with blood and epithelial cell samples. 
+
+@Bocklandt2011 also using the 27k array but with saliva samples created the first "epigenetic clock" used to predict the chronological age of donors based on the DNAm landscape of their cells, the mean error was 5.2 years. Bocklandt et al. were able to achieve similar predictive accuracy with a few as 3 CpG sites in their model. @Koch2011 used publically available 27k array datasets from a variety of different tissues to train a model using a different statistical method but only achieved an error of 11 years. They did, however, identify a number of CpGs also identified by Bocklandt et al. Bell et al. used 27k array data to look for correlations between differential methylation and age-related phenotypes as well as chronological age. They found that few age related phenotypes were correlated with differential methylation, only 5 CpG sites were identified for the 16 age-related phenotypes examined. Whereas 490 significant CpGs were associated with chronological age [@Bell2012]. Many of the CpGs they identified persisted across tissue types and replicated in a second cohort, several had been identified previously by Rakyan et al. and Bocklandt et al.
+
+Heyn et al. examined the DNA methylation status of a newborn and a centenarian CD4+ T cells using whole genome bisulfite sequencing (WGBS) [@Heyn2012], along with a group of newborns and nonagenarians using the Illumina 450k array [@Bibikova2011]. Heyn et al. observed a global decrease in methylation from newborn to centenarian, as well as an intermediate level of methylation on a sample of intermediate age (see figure \@ref(fig:Heyn2012F1b)). This observation was replicated in 450k data. In addition, Heyn et al. noted that adjacent CpGs normally exhibit a substantial degree of correlation in methylation status, and that they were less well correlated with their neighbours with increasing age. Modeling work done by @Affinito2016 agrees with this correlation between neighboring CpGs, which is particularly pronounced in CpG dense regions like CGIs. Garagnani et al. used 450k array data from a cohort of 64 subjects aged 9-83 to identify those CpGs most well correlated with age as had been done with previous array technologies [@Garagnani2012].
+
+```{r Heyn2012F1b, fig.cap='(ref:Heyn2012F1b-Cap)', echo=FALSE}
+knitr::include_graphics("figs/Heyn2012F1b.png")
+```
+
+(ref:Heyn2012F1b-Cap) Global Hypomethylation with Age. NB = Newborn, Y26 = 26 year old, Y103 = 103 year old.
+(Reproduced from @Heyn2012 figure 1 b.)
+
+In January of 2013 Hannum at al. [@Hannum2013] published a study using the Illumina 450k array and whole blood samples for 656 participants aged 19-101, their optimised model was able to predict age with an error of 3.9 years. In December of the same year, Horvath [@Horvath2013] published a study using multiple datasets, including  Hannum's data, some produced on the 27k and some the 450k array. both used 'elastic net' penalised multivariate regression models to identify CpGs which collectively provide the best predictor of DNAm age rather than the CpGs which are individually most highly correlated with age. 
+
+@Martino2013
+
+Florath et al. identified some additional age-associated CpGs [@Florath2014] from 2 large cohorts totalling N=898 and an N=67 8yr follow-up longitudinal cohort. More than 3/4 of the CpG sites they identified began as hypomethylated and increased in methylation with age. @Bacalini2015 performed a meta-analysis of existing DNAm age datasets and employed a "region-centric" approach to try to identify loci larger than single CpGs which they anticipate will be more biologiclaly meaninful than lone CpGs, they found that their approach increased the number of common feature identified using the Hannum et al. and Heyn et al. datasets. @Zaghlool2015 performed 450k array DNAm age study in Qatari population they identified 12/88, 23/490 and 102/162 of the CpGs found by Bocklandt et al, Bell et al. and Florath et al. respectively. Zaghlool et al. also found that Horvath's age predictor had an error of 3.7 years in their dataset. This is agreement with existing findings that ethnicity had not major effects on the DNAm age signature. @Benton2017 looked at changes in DNA methylation with age in a genetically isolated population on Norfolk Island with similar results to previous studies but identifying some novel age-associated CpGs.
+
+Most DNAm relationships with age noted in previous studies have been linear, Johnson et al. used the 450k array in peripheral blood samples. They identified 21 CpGs whose DNAm changes at a rate that changes with age from an initial pool of 27,723 CpGs which were differentially methylated with age. 2 sites exhibited an increasing rate of increase in DNAm with age, and 18 sites a decreasing rate of increase [@Johnson2017].
+
+### DNAm Age as a Biomarker of Aging
+
+We have seen that DNAm can be a fairly accurate predictor of age, however, there is more to being a good biomarker of aging than predictive accuracy. Weidner et al. conducted a study with the specific intent of identifying CpG sites that would serve as the best biomarkers of aging [@Weidner2014]. below is a list of specific criteria for a high-quality biomarker of aging laid out by @Johnson2006. 
+
+1. It must predict the rate of aging. In other words, it would tell exactly where a person is in their total life span. It must be a better predictor of life span than chronological age.
+2. It must monitor a basic process that underlies the aging process, not the effects of disease.
+3. It must be able to be tested repeatedly without harming the person. For example, a blood test or an imaging technique.
+4. It must be something that works in humans and in laboratory animals, such as mice. This is so that it can be tested in lab animals before being validated in humans.
+
+We have seen that DNA methylation clocks can be good predictors of chronological age, we will revisit the question of whether or not they are superior to chronological age in their ability to predict lifespan below. @Bell2012 found DNAm did not generally correlate well with aging phenotypes but did correlate well with chronological age and @Teschendorff2010 found that their age associated DNAm signature remained fairly constant across several disease states including ovarian cancer and type 1 diabetes. Suggesting that DNAm age prediction does indeed: "monitor a basic process that underlies the aging process, not the effects of disease", meeting criterion number 2. Several of the DNAm clocks discussed so far have been based on whole peripheral blood samples meeting criterion number 3. DNAm age clocks have been shown to work in Chimpanzees [@Horvath2013], Dogs/Wolves [@Thompson2017], Mice [@Stubbs2017] and are likely to work in other mammalian model organisms. I should be noted that Horvath's Human clock uses array data and that the Dog/wolf and mouse clocks use RRBS. Model organisms such as *C. elegans* which essentially lack DNA methylation would not, however, be likely to be tractable for DNAm based age prediction. Consequently DNAm age prediction at least partially meets criterion number 4.
+
+Is DNA methylation a better predictor of life span than chronological age? Both Hannum and Horvath identified the difference between DNAm age and chronological age or $\Delta_{Age}$ as a potential indicator of disproportionate biological aging. @Marioni2015 Explicitly set forth to test the value of DNAm age as a predictor of mortality. Adjusting for Age, Sex, childhood IQ, education, social class, hypertension, diabetes, cardiovascular disease, and *APOE* e4 status a $\Delta_{Age}$ of +5 is associated with a 16% increased mortality risk (See figure \@ref(fig:Marioni2015f3)). A meta-analysis of DNAm age predictors by @Chen2016a also found that measures of age acceleration based on Hannum and Horvath clocks were superior predictors of mortality than chronological age before and after correction for various potentially confounding factors. Chen et al. also noted that correction for blood cell composition improved predictive power. Indicating that DNAm age is indeed superior to chronological age as a predictor of lifespan meeting criterion number 1 for an aging biomarker. 
+
+
+```{r Marioni2015f3, fig.cap='(ref:Marioni2015f3-Cap)', echo=FALSE}
+knitr::include_graphics("figs/Marioni2015f3.png")
+```
+
+(ref:Marioni2015f3-Cap) Survival probability by quartiles of $\Delta_{Age}$ in LBC 1921 adjusted for sex, and chronological age. LBC = Lothian Birth Cohort. Using the Hannum and Horvath predictors' values for $\Delta_{Age}$.
+(Reproduced from @Marioni2015 figure 3.)
+
+### Analysis of the Findings of DNAm Age Studies
+
+Interestingly as illustrated in figure \@ref(fig:AgeCpGUpSet) CpGs whose methylation status has been identified as correlating with age in various studies show relatively little overlap, this overlap would be reduced a little further if a consistent direction of change with age were also required. Despite this changes in DNAm with age are probably the most robust and reproducible large-scale epigenetic change yet captured. This this lack of agreement in absolute terms, however, presents a challenge about how to interpret DNAm changes with age. 
+
+```{r AgeCpGUpSet, fig.cap='(ref:AgeCpGUpSet-Cap)', echo=FALSE}
+knitr::include_graphics("figs/AgeCpGUpSet.png")
+```
+
+(ref:AgeCpGUpSet-Cap) Overlap of CpG sites identified in various in DNAm aging models, set intersections with no contents are not included.
+Data from: [@Rakyan2010],[@Teschendorff2010],[@Bocklandt2011],[@Garagnani2012],[@Bell2012],[@Hannum2013],[@Horvath2013],[@Florath2014],[@Weidner2014],[@Benton2017]. NB some of the datasets show here are __not independent__, data used to identify aDMRs in some of these studies was also used in others. These data also __do not use consistent cut-off thresholds__ for inclusion of loci in the list of top age-associated hits.
+(Created with UpSetR [@Lex2014].)
+
+The result of the various DNAm age studies display some seemingly contradictory trends. For example there is the global loss of methylation with age [@Wilson1987],[@Fraga2005],[@Heyn2012] and yet the majority of the highly significant age predicting CpGs in clocks are undergoing hypermethylation by a ratio of very roughly 2:1 [@Rakyan2010], [@Bocklandt2011], [@Koch2011], [@Garagnani2012], [@Florath2014] (see figure \@ref(fig:Florath2014F4abc)). Interestingly when expanded to look at all age-associated CpGs and not just the most highly correlated a slightly different picture emerges. @Teschendorff2010 noted in their original study and @Zhang2017 noted in a subsequent analysis if more loosely age correlated sites are included hypomethylation with age is more prevalent. @Zhang2017 states roughly 60% of sites are hypomethylated and 40% hypermethylated, they also observed that all of the highly age-predictive CpGs which overlapped between the studies they examined were hypomethylated. 
+
+Sites which are hypomethylated as their "ground state" are more likely to be in CGIs than sites which are hypermethylated as their "ground state", and thus hypomethylated sites are more likely to be variable in their methylation state and subject to tight regulatory control than are hypermethylated sites. expanding the pool to look at CpG sites more poorly correlated with age is likely to introduce more sites whose hypomethylation with age is due to increased stochasticity with age. however from the background information, one would expect that hypermethylated sites in CpG dense regions like CGIs whose methylation level declines with age would make good quality indicators. Given that CpGs in CGIs have a high prior probability of being hypomethylated, it follows that one would be more likely to observe a hypermethylation event by chance. Consequently, a CpG in a CGI that exhibits hypomethylation with age is less likely to be a result of noise than its converse, This may explain the higher reproducibility of these hypomethylated sites. 
+
+```{r Florath2014F4abc, fig.cap='(ref:Florath2014F4abc-Cap)', echo=FALSE}
+knitr::include_graphics("figs/Florath2014_F4abc.png")
+```
+
+(ref:Florath2014F4abc-Cap) Mean methylation level by genomic region showing proportions negatively correlated with age, i.e. become hypomethylated as age increases.
+(Reproduced from @Florath2014 figure4 a, b, c.)
+
+In a review of DNAm and aging @Jones2015 drew a distinction between Epigenetic drift changes and epigenetic clock changes with age wherein they defined drift as "the collection of DNA methylation changes that are associated with age within an individual but are not common across individuals.", which is slightly different to the definition used by @Fraga2005. Clock changes are defined as "those sites that are associated with age across individuals and can thus in some cases be used to predict chronological age". Drift constitutes stochastic change over time not driven by some process which strongly biases the resulting changes in DNAm in direction or to specific sites. Clock changes are the converse, some underlying process biases DNAm changes in direction and/or position.
+
+This picture is complicated by the tissue specificity of DNAm changes. Whilst it is evidently the case that multi-tissue DNAm age prediction is possible, it also seems to be the case that an age predictor trained on samples from a specific tissue will outperform one trained on multiple or other tissues when predicting the age of a sample of matching tissue type. This is supported by the out performance of the Horvath predictor by the Hannum predictor in blood samples [@Marioni2015]. ~hannum poorer in non-blood example~? and differentially predicted ages of tissues such as breast noted by @Horvath2013. DNAm was highly correlated with age for a variety of tissue-specific sites in many studies, suggesting that the definition of clock sites is frequently tissue dependent. This may also be true of drift changes, stochastic changes may occur at sites in one tissue that would be tightly controlled in another. One could restrict the definition of clock changes further to only those which are present in all/most tissue types to make a multi-tissue predictor. 
+
+Jenkinson et al. [@Jenkinson2017] took an information theoretic approach to DNA methylation maintenance, modelling the binary methylation state of CpGs as a noisy communications channel. Permitting them to compute the information capacity (CAP), methylation entropy (ENT), and the relative dissipated energy (RDE) of these channels. High capacity channels represent reliable transmission of methylation state, consistent with high RDE as more energy is needed to ensure reliability and low entropy as methylation is more ordered at sites under tighter control than at less highly controlled sites. They found that the Transcription start sites (TSS) exhibited high levels of RDE and high information capacity as well as low levels of entropy these values trended in the opposite direction as they moved outwards to CGIs, shores and seas. This information theoretic framing provides a useful lens through which to view drift and clock loci. 
+
+I hypothesise that as a cell differentiates those sites the methylation status of which are most important for successful differentiation will be the focus of the expenditure of cellular resources to set and maintain their methylation state, and will thus exhibit high capacity and low entropy. Whatever mechanism is focusing the resources of the cell on the maintenance of the methylation at these sites may be responsible for the tissue specific biases in DNAm changes over time i.e. their targets will be clock sites. Those sites not involved in the maintenance of the specific differentiated state would be a lower priority for the expenditure of cellular resources and thus display lower information capacity and higher entropy i.e. be drift sites. This also leads me to predict that multi-tissue age predicting loci would be enriched for factors common to the maintenance of a differentiated state. This is consistent with @Teschendorff2010 's observation that PCGTs are enriched among CpGs associated with age. This is also complimentary to the idea that DNAm dysregulation with age promotes carcinogenesis by stabilising stem cell character but with reduced capaciSty for differentiation as proposed by @Teschendorff2010 and @Rakyan2010.
+
+In his paper [@Horvath2013] Horvath proposed that DNAm age is a measure of the work done by an "Epigenetic Maintenance system" (EMS) which maintains epigenetic stability over time. Considering work in its physical sense of the integral of power over time, Horvath considered power, the rate of change in the use of energy by the EMS as the 'tick-rate' of the epigenetic clock. He proposed that during development power would be high due to the high level of stress on the system and that power would drop to a consistent level once maturity was reached. Horvath laid out four predictions of this EMS model and argued that there was evidence in support of each of them. The predictions were:
+
+1. Cancer tissue should show signs of accelerated age, reflecting the protective actions of the EMS
+2. Many mitogens, genomic aberrations, and oncogenes, which trigger the response of the EMS, should be associated with accelerated DNAm age.
+3. High age acceleration of cancer tissue should be associated with fewer somatic mutations given the protective role of the EMS
+4. Mutations in TP53 should be associated with a lower age acceleration of cancer tissue if one further assumes that p53 signalling helps trigger the EMS
+
+I would propose that a fifth prediction of this model is that DNA methylation fidelity should be elevated during development and differentiation as a reflection of the greater amount of work done by the EMS during this period. This is borne out by the results of Zhao et al. [@Zhao2014] who noted a global increase in DNA methylation fidelity in during the early differentiation of mouse embryonic stems cells (see figure \@ref(fig:Zhao2014fig3ab)). 
+
+If Horvath's Concept of an EMS is accurate and Jenkinson et al.'s RDE captures the energy expended by the cell on the maintenance of the methylation state of a locus, One would expect Horvath's concept of an EMS to tie in quite nicely with Jenkinson et al.'s methylation channel model. With the Relative dissipated energy (RDE) for a CpG channel corresponding to the work done by Horvath's EMS at a given locus. Jenkinson et al. Did indeed observe high levels of RDE in stem cells and a decline of RDE with age. Interestingly, however, some cancers exhibited decreased RDE, CAP and increased entropy which is consistent with an accelerated aging profile but less so with elevated activity of an EMS.
+
+@Jenkinson2017 found a global increase in entropy with age, but not with cell passage in culture suggesting an increase in entropy is associated with epigenetic age independent of mitotic age. This observation is in agreement with the finding that epigenetic state becomes more stochastic and diverges with age [@Fraga2005], indeed genes whose methylation were most divergent with age were enriched for aging associations. They also observed a loss of entropic sensitivity with age, entropic sensitivity is an indicator of how plastic DNAm state is to extrinsic effects. Jenkinson et al. noted that there is a general loss of phenotypic plasticity with age, but cited no specific instance of loss of DNAm plasticity to environmental effects with age. @Hahn2017 provided a possible example of this effect when they reported that dietary restriction caused fewer differences in the methylation state of older than younger mice.
+
+@Slieker2016 - DNAm variability and age...
+
+For other reviews of DNA methylation and Aging which have informed this work see: [@Jung2015] and [@Jones2015].
+
+### Conclusions
+
+DNAm age is a high-quality biomarker of aging which can be tailored to the particular requirements of the context, be it estimating the chronological age of individuals, measuring age acceleration/deceleration of individually relative to their chronological age or estimating age disparity of tissues. There is predictably a cost/accuracy trade-off. 
+
+...
+
+

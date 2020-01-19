@@ -1,0 +1,38 @@
+# (PART) Results 3 {-}
+
+# Alu Clock Paper Draft Introduction {#AluIntro}
+
+Age is a significant risk factor across the breadth of chronic diseases, including cardiovascular, obesity-related, ophthalmic, musculoskeletal and neurological disorders [@Partridge2018].
+The molecular changes that occur with age include alterations to the epigenome [@Booth2016] – the chemical modifications and packaging of the genome that indicate or facilitate cell-specific activity [@Bird2007].
+This includes age-related changes to DNA methylation, the most common modification of DNA [@Lopez-Otin2013].
+This epigenetic mechanism is crucial in repressing the large proportion of the human genome (~45% [@Gregory2005]) that is comprised of repetitive or transposable elements [@Deniz2019], [@Kazazian2017].
+It also classically leads to robust repression of gene expression through promoter DNA methylation [@Deaton2011], and has more nuanced effects on expression within the gene body [@Hellman2007], as well as influencing splicing [@Shukla2011] and transcription factor binding-sites (TFBSs) [@Blattler2014], [@Yin2017].
+
+A significant decrease in DNA methylation with age was first observed with pioneering global measures [@Wilson1983], in similar fashion to the reduced methylation seen in cancer tissue [@Gama-Sosa1983].
+This DNA methylation loss was seen to be strongly contributed to by the demethylation of repetitive elements [@Bollati2010].
+Random drift in the epigenetic state with age was also observed [@Bollati2010], and more recent studies have identified targeted hypermethylation of specific functional regions, such as the promoters of polycomb target genes [@Teschendorff2010], bivalent chromatin domains [@Rakyan2010] and the genomic loci of specific tRNA genes [@Acton2020] 
+
+Alu elements are the most successful transposon in terms of numbers within the human genome, totalling ~1.19 million copies and comprising ~10.7% of the genomic sequence [@Dewannieux2003], [@Deininger2011].
+This ~300 bp primate-specific retrotransposon is a member of the short interspersed nuclear elements (SINEs) and is derived from the 7SL RNA gene [@Ullu1984].
+Alu elements arose ~65 million years ago (MYA), with a peak in amplification around ~40 MYA [@Ade2013].
+Non-LTR retrotransposons, which include Alus as well as L1 and SVA elements, are active in human.
+However, Alu elements themselves are non-autonomous and need to commandeer a nearby L1 element’s retrotransposition molecular machinery [@Cordaux2009].
+Alu insertion mutagenesis as well as Alu element mediated recombination account for 0.4% of all human genetic disorders [@Kazazian2017], [@Belancio2008].
+
+DNA methylation represses Alu elements and due to their sequences being rich in CpGs they in fact account for ~25% of all the CpGs in human genome (~7.5 million) [@Deininger2011].
+Alu repeats are predominately methylated across all normal tissues, and even in cancer cells they are the more resistant to hypomethylation than other repetitive elements, implying a strong pressure to maintain their epigenetic state [@Jorda2017].
+These elements are an abundant genetic resource of regulatory sequences with
+numerous TFBSs residing within its canonical sequence [@Polak2006].
+They can influence gene expression [@Chen2017b], [@RobertoFerrari2019] and there is evidence that some may possess enhancer activity [@Su2014]. 
+The deterioration of epigenomic repression can unmask latent regulatory function within repetitive elements [@Ward2013], [@Chuong2017], [@Xie2013].
+This has been clearly displayed as a pathogenic mechanism in cancer, with epigenetic reactivation of cryptic cis-regulatory elements (CREs) within transposons acting as oncogenic drivers [@Jang2019] , including Alu elements [@Rajendiran2016].
+There is the potential for these changes to also influence common non-malignant age-related diseases [@Chuong2017], [@Payer2017].
+
+The identification of specific age-related DNA methylation changes has enabled the construction of ‘DNA methylation clocks‘ [@Horvath2018] that can predict an individual’s chronological age, but also capture aspects of biological ageing, such as all-cause mortality [@Marioni2015].
+Hypermethylated and hypomethylated cytosines approximately equally drive these DNA methylation clocks, although these age-related increases or decreases in methylation are driven by distinct biological mechanisms [@Mozhui2017], [@Wu2017].
+Interestingly, hypomethylating CpGs have been identified to be the most indicative of biological ageing-related all-cause mortality effects in blood [@Zhang2017].
+However, due to poor coverage of the repetitive space because of technical issues [@Bell2019], much of the genomic hypomethylation is not well captured by array analysis.
+
+In this study we set about to identify and explore age-related DNA methylation changes in Alu elements in a large (>3,000) immunoprecipitation-derived sequencing-based dataset (MeDIP-seq) from peripheral blood DNA. We constructed an Alu-specific DNA methylation ageing clock and compared how this contrasted with other clocks’ measures. We also investigated genetic influences on age- acceleration measures from this Alu-clock via GWAS, as has been with shown previously with an association in the TERT gene with the Horvath clock [@Lu2017], [@Gibson2019].
+These results may reveal mechanisms involved in controlling the epigenetic state of this large portion of the genome.
+Finally, we interrogated these genetic associations for any potential connection with common age-related diseases through PheWAS in the UKBiobank dataset [@Bycroft2017].

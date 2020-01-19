@@ -1,0 +1,7 @@
+tRNA	Location	MeDIP-seq p-value	BiS-seq p-value	BiS-seq slope
+tRNA-iMet-CAT-1-4	chr6	2.83e-11	9.35e-04	4.54
+tRNA-Met-CAT-5-1	chr6	2.07e-10	3.62e-01	0.339
+tRNA-Met-CAT-4-2	chr6	5.46e-12	4.62e-01	0.404
+tRNA-Ile-AAT-1-1	chr6	2.58e-12	4.27e-05	0.487
+tRNA-Ile-AAT-4-1	chr17	3.03e-10	6.88e-04	-0.745
+tRNA-Ser-AGA-2-6	chr17	1.16e-10	4.28e-2	0.623

@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<project name="PhD" company="University of Southampton" manager="Chris Bell" phase="Phase1" project-start="20160926T000000Z" mrproject-version="2" calendar="1">
+  <properties/>
+  <phases>
+    <phase name="Phase1"/>
+  </phases>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Working" description="A default working day"/>
+      <day-type id="1" name="Nonworking" description="A default non working day"/>
+      <day-type id="2" name="Use base" description="Use day from base calendar"/>
+    </day-types>
+    <calendar id="1" name="Default">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="Induction" note="" work="176400" start="20160926T000000Z" end="20161101T000000Z" work-start="20160926T080000Z" percent-complete="80" priority="0" type="normal" scheduling="fixed-work">
+      <task id="2" name="Induction Sessions" note="" work="144000" start="20160926T000000Z" end="20160930T170000Z" work-start="20160926T080000Z" percent-complete="80" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20160926T000000Z"/>
+      </task>
+      <task id="3" name="Academic Needs Assesment completed" note="" work="0" start="20161101T000000Z" end="20161101T000000Z" work-start="20161101T080000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20161101T000000Z"/>
+      </task>
+      <task id="4" name="3 Month Plan for Research completed" note="" work="0" start="20161101T000000Z" end="20161101T000000Z" work-start="20161101T080000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20161101T000000Z"/>
+      </task>
+      <task id="5" name="DSE H&amp;S online training" note="" work="3600" duration="3600" start="20161010T000000Z" end="20161010T090000Z" work-start="20161010T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration">
+        <constraint type="must-start-on" time="20161010T000000Z"/>
+      </task>
+      <task id="6" name="Online Ethics Training" note="" work="28800" duration="57600" start="20161012T000000Z" end="20161013T170000Z" work-start="20161012T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration">
+        <constraint type="must-start-on" time="20161012T000000Z"/>
+      </task>
+    </task>
+    <task id="7" name="Haplotype specific Methylation Data Analysis" note="" work="432000" start="20161012T000000Z" end="20161101T170000Z" work-start="20161012T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20161012T000000Z"/>
+    </task>
+    <task id="8" name="Epigenomics of Common Disease Conference" note="" work="115200" duration="115200" start="20161101T000000Z" end="20161104T170000Z" work-start="20161101T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration">
+      <constraint type="must-start-on" time="20161101T000000Z"/>
+    </task>
+    <task id="9" name="Write 1st Quarterly Progress Report" note="" work="28800" start="20161226T000000Z" end="20170101T000000Z" work-start="20161226T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20161212T000000Z"/>
+      <task id="10" name="Write QR1" note="" work="28800" start="20161226T000000Z" end="20161226T170000Z" work-start="20161226T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20161226T000000Z"/>
+      </task>
+      <task id="11" name="1st Quarterly Progress Report Due" note="" work="0" start="20170101T000000Z" end="20170101T000000Z" work-start="20170102T080000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20170101T000000Z"/>
+      </task>
+    </task>
+    <task id="12" name="Become Familiar With Bisulphite Sequencing Analysis Techniques" note="" work="864000" start="20161107T000000Z" end="20161216T170000Z" work-start="20161107T080000Z" percent-complete="50" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20161107T000000Z"/>
+    </task>
+    <task id="13" name="tRNA project" note="" work="2246400" start="20161201T000000Z" end="20170630T170000Z" work-start="20161201T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20161123T000000Z"/>
+      <task id="14" name="Recapitulate tRNA-iMet-CAT-1-4 observation, extend to other iMet/Met tRNAs" note="" work="57600" start="20161201T000000Z" end="20161202T170000Z" work-start="20161201T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20161201T000000Z"/>
+      </task>
+      <task id="15" name="Combinatorial Age randomisation analysis" note="" work="144000" start="20161219T000000Z" end="20161223T170000Z" work-start="20161219T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20161219T000000Z"/>
+      </task>
+      <task id="16" name="Permutation Analysis with Same CpG density windows" note="" work="144000" start="20161226T000000Z" end="20161230T170000Z" work-start="20161226T080000Z" percent-complete="30" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20161226T000000Z"/>
+      </task>
+      <task id="17" name="Write code to sample and age correlate windows" note="" work="144000" start="20170524T000000Z" end="20170530T170000Z" work-start="20170524T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20170524T000000Z"/>
+      </task>
+      <task id="18" name="Corroboration in other datasets" note="" work="921600" start="20170116T000000Z" end="20170609T170000Z" work-start="20170116T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="19" name="Learn DeepBlue R API" note="" work="288000" start="20170116T000000Z" end="20170127T170000Z" work-start="20170116T080000Z" percent-complete="70" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="start-no-earlier-than" time="20170116T000000Z"/>
+        </task>
+        <task id="20" name="Develop pipline for Batch Dowloading, filtering and Visulaisation" note="" work="403200" start="20170130T000000Z" end="20170216T170000Z" work-start="20170130T080000Z" percent-complete="70" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="start-no-earlier-than" time="20170130T000000Z"/>
+        </task>
+        <task id="21" name="Finish streamlining with apply functions" note="" work="86400" start="20170531T000000Z" end="20170602T170000Z" work-start="20170531T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="start-no-earlier-than" time="20170531T000000Z"/>
+        </task>
+        <task id="22" name="Develop filter based on extra metadata" note="" work="144000" start="20170605T000000Z" end="20170609T170000Z" work-start="20170605T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="start-no-earlier-than" time="20170605T000000Z"/>
+        </task>
+      </task>
+      <task id="23" name="tRNA gene Tissue Spceific methylation" note="" work="144000" start="20170217T000000Z" end="20170223T170000Z" work-start="20170217T080000Z" percent-complete="40" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20170217T000000Z"/>
+      </task>
+      <task id="24" name="Data Visualisation" note="" work="288000" start="20170224T000000Z" end="20170309T170000Z" work-start="20170224T080000Z" percent-complete="70" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20170224T000000Z"/>
+      </task>
+      <task id="25" name="Expand analysis to additional tRNAs" note="" work="288000" start="20170612T000000Z" end="20170623T170000Z" work-start="20170612T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20170612T000000Z"/>
+      </task>
+      <task id="26" name="tRNA Expression data?" note="" work="86400" start="20170627T000000Z" end="20170629T170000Z" work-start="20170627T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20170627T000000Z"/>
+      </task>
+      <task id="27" name="Evaluate progress of tRNA work - Continue or move on" note="" work="28800" start="20170630T000000Z" end="20170630T170000Z" work-start="20170630T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20170630T000000Z"/>
+      </task>
+    </task>
+    <task id="28" name="HSM Website" note="" work="432000" start="20170313T000000Z" end="20170322T120000Z" work-start="20170313T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20170313T000000Z"/>
+    </task>
+    <task id="29" name="LEC/LCC joint meeting on Epigenetics and Metabolism" note="" work="21600" duration="28800" start="20170303T000000Z" end="20170303T170000Z" work-start="20170303T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration">
+      <constraint type="must-start-on" time="20170303T000000Z"/>
+    </task>
+    <task id="30" name="CLEPSO" note="" work="57600" duration="57600" start="20170309T000000Z" end="20170310T170000Z" work-start="20170309T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-duration">
+      <constraint type="must-start-on" time="20170309T000000Z"/>
+    </task>
+    <task id="31" name="PGR Training Week" note="" work="144000" start="20170109T000000Z" end="20170113T170000Z" work-start="20170109T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20170109T000000Z"/>
+    </task>
+    <task id="32" name="First Progression Review (PgR1)" note="" work="1296000" duration="2592000" start="20170320T000000Z" end="20170721T170000Z" work-start="20170320T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+      <constraint type="start-no-earlier-than" time="20170320T000000Z"/>
+      <task id="33" name="First Progression Report Submission window" note="" work="28800" duration="1728000" start="20170501T000000Z" end="20170721T170000Z" work-start="20170501T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+        <constraint type="must-start-on" time="20170501T000000Z"/>
+      </task>
+      <task id="34" name="Write Literature review" note="~5k words - &#10;Tue 25 Oct 2016, 13:52&#10;" work="1152000" start="20170320T000000Z" end="20170512T170000Z" work-start="20170320T080000Z" percent-complete="95" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20170320T000000Z"/>
+      </task>
+      <task id="35" name="Academic needs analysis" note="" work="28800" start="20170501T000000Z" end="20170501T170000Z" work-start="20170501T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20170501T000000Z"/>
+      </task>
+      <task id="36" name="Research Plan" note="" work="57600" start="20170503T000000Z" end="20170504T170000Z" work-start="20170503T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20170503T000000Z"/>
+      </task>
+      <task id="37" name="Personal Reflection" note="" work="28800" start="20170505T000000Z" end="20170505T170000Z" work-start="20170505T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20170505T000000Z"/>
+      </task>
+    </task>
+    <task id="38" name="BINGs Conference" note="" work="28800" start="20170517T000000Z" end="20170517T170000Z" work-start="20170517T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20170517T000000Z"/>
+    </task>
+    <task id="39" name="Frontiers in epigenetic chemical biology" note="" work="57600" start="20170522T000000Z" end="20170523T170000Z" work-start="20170522T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20170522T000000Z"/>
+    </task>
+    <task id="40" name="Bristol Epigenetic Epidemiology Workshop" note="" work="86400" duration="86400" start="20170605T000000Z" end="20170607T170000Z" work-start="20170605T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+      <constraint type="must-start-on" time="20170605T000000Z"/>
+    </task>
+    <task id="41" name="Write 2nd Quarterly Progress Report" note="" work="28800" start="20170327T000000Z" end="20170401T000000Z" work-start="20170327T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20170314T000000Z"/>
+      <task id="42" name="Write QR2" note="" work="28800" start="20170327T000000Z" end="20170327T170000Z" work-start="20170327T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20170327T000000Z"/>
+      </task>
+      <task id="43" name="2nd Quarterly Progress Report Due" note="" work="0" start="20170401T000000Z" end="20170401T000000Z" work-start="20170403T080000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20170401T000000Z"/>
+      </task>
+    </task>
+    <task id="44" name="Write 3rd Quarterly Progress Report" note="" work="28800" start="20170626T000000Z" end="20170701T000000Z" work-start="20170626T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20170612T000000Z"/>
+      <task id="45" name="Write QR3" note="" work="28800" start="20170626T000000Z" end="20170626T170000Z" work-start="20170626T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20170626T000000Z"/>
+      </task>
+      <task id="46" name="3rd Quarterly Progress Report Due" note="" work="0" start="20170701T000000Z" end="20170701T000000Z" work-start="20170703T080000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20170701T000000Z"/>
+      </task>
+    </task>
+    <task id="47" name="Analysis of Repatative elements in EpiTwins MeDIP-seq data" note="" work="3744000" start="20170703T000000Z" end="20171229T170000Z" work-start="20170703T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20170703T000000Z"/>
+    </task>
+    <task id="48" name="Write 4th Quarterly Progress Report" note="" work="28800" start="20170925T000000Z" end="20171001T000000Z" work-start="20170925T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20170911T000000Z"/>
+      <task id="49" name="Write QR4" note="" work="28800" start="20170925T000000Z" end="20170925T170000Z" work-start="20170925T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20170925T000000Z"/>
+      </task>
+      <task id="50" name="4th Quarterly Progress Report Due" note="" work="0" start="20171001T000000Z" end="20171001T000000Z" work-start="20171002T080000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20171001T000000Z"/>
+      </task>
+    </task>
+    <task id="51" name="Write 5th Quarterly Progress Report" note="" work="28800" start="20171225T000000Z" end="20180101T000000Z" work-start="20171225T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="52" name="Write QR5" note="" work="28800" start="20171225T000000Z" end="20171225T170000Z" work-start="20171225T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20171225T000000Z"/>
+      </task>
+      <task id="53" name="5th Quarterly Progress Report Due" note="" work="0" start="20180101T000000Z" end="20180101T000000Z" work-start="20180101T080000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20180101T000000Z"/>
+      </task>
+    </task>
+  </tasks>
+  <resource-groups/>
+  <resources>
+    <resource id="1" name="Richard J. Acton" short-name="Richard" type="1" units="0" email="rjactonspsfcf@gmail.com" note="" std-rate="0"/>
+    <resource id="2" name="Dr. Chris Bell" short-name="Chris" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="3" name="IRIDIS" short-name="IRIDIS" type="2" units="0" email="" note="" std-rate="0"/>
+    <resource id="4" name="Desktop Computer" short-name="PC" type="2" units="0" email="" note="" std-rate="0"/>
+    <resource id="5" name="LAMP stack on a university server" short-name="LAMPstack" type="2" units="0" email="" note="" std-rate="0"/>
+  </resources>
+  <allocations>
+    <allocation task-id="28" resource-id="1" units="100"/>
+    <allocation task-id="13" resource-id="1" units="100"/>
+    <allocation task-id="41" resource-id="1" units="100"/>
+    <allocation task-id="8" resource-id="1" units="50"/>
+    <allocation task-id="11" resource-id="1" units="100"/>
+    <allocation task-id="7" resource-id="1" units="100"/>
+    <allocation task-id="6" resource-id="1" units="50"/>
+    <allocation task-id="5" resource-id="1" units="100"/>
+    <allocation task-id="4" resource-id="1" units="100"/>
+    <allocation task-id="3" resource-id="1" units="100"/>
+    <allocation task-id="33" resource-id="1" units="2"/>
+    <allocation task-id="1" resource-id="1" units="100"/>
+    <allocation task-id="8" resource-id="2" units="50"/>
+    <allocation task-id="4" resource-id="2" units="100"/>
+    <allocation task-id="3" resource-id="2" units="100"/>
+    <allocation task-id="28" resource-id="5" units="100"/>
+  </allocations>
+</project>
