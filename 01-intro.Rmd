@@ -1,6 +1,8 @@
 # (PART) Introduction {-}
 # The Epigenomics of Human Ageing {#intro}
 
+## Aims & Context
+
 ## Epigenomics - Overview
 
 Epigenetics generally refers to modifications to DNA and chromatin which do not affect the primary sequence of DNA bases, but which are to varying degrees stable and heritable. The term derives from epigenesis and genetics originating with Conrad Waddington [@Waddington1942]. Epigenesis refers to the idea that organisms develop through the progressive differentiation of cells from the egg into adult tissues. As modern genetics revealed that every cell contained a complete copy of the genome which was differentially utilised by the cells of adult organisms, the terms were fused to reflect the study of how this occurs. The usage has evolved a little further since molecular biology began to elucidate the mechanisms involved in this process and the term now frequently refers to the study of these mechanisms and their effects in less explicitly developmental contexts. Arthur Riggs et al. considered that heritability should be a criterion for a mark to be considered epigenetic, but this excludes many phenomena now commonly referred to using the term [@Russo1996]. Requiring heritability results in a further definitional dispute over degrees of heritability; mitotic, meiotic, transgenerational and to what degree of fidelity? Adrian Bird proposed the definition: "the structural adaptation of chromosomal regions so as to register, signal or perpetuate altered activity states." as a useful compromise [@Bird2007]. Epigenomics refers to the totality of the epigenetic modifications present in a particular cell, tissue type or genome.
