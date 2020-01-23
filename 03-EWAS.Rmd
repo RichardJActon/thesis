@@ -10,25 +10,73 @@ Maternal vitamin D levels during pregnancy have previously been shown to impact 
 
 ### Background
 
-Epigenetic states are a product of both genetics and environment, they exist on a continuum from complete or obligatory genetic influence through facultative variation influenced by genetics, to the purely epigenetic subject entirely to environmental factors. This picture is complicated by the observation that genetics can not merely influence epigenetic state but also the extent to which that state will vary depending on environmental factors [@Holland2017]. Epigenome-wide association studies have been performed for many traits including age (Section \@ref(DNAmAgeReview)), smoking status [@Dogan2017], exposure to atmospheric particulate matter [Dai2016], and obesity [@Wahl2016]. Some robust and reproducible epigenetic changes have been identified with EWAS, particularly for traits such as a age and smoking. Unlike genome-wide association studies (GWAS) associations found by EWAS can be due to reverse causation. That is to say, a genetic variant associated with a disease is very unlike to have been caused by the disease state whereas an epigenetic association can be the consequence of a disease state. Whilst this can complicate the dissection of disease aetiology it can also be a boon in unpicking the biology that follows on from a particular disease or environmental exposure by revealing what biological networks are affected. 
+Epigenetic states are a product of both genetics and environment, they exist on a continuum from complete or obligatory genetic influence through facultative variation influenced by genetics, to the purely epigenetic subject entirely to environmental factors. This picture is complicated by the observation that genetics can not merely influence epigenetic state but also the extent to which that state will vary depending on environmental factors [@Holland2017]. Epigenome-wide association studies have been performed for many traits including age (Section \@ref(DNAmAgeReview)), smoking status [@Dogan2017], exposure to atmospheric particulate matter [Dai2016], and obesity [@Wahl2016]. Some robust and reproducible epigenetic changes have been identified with EWAS, particularly for traits such as a age and smoking. Unlike genome-wide association studies (GWAS) associations found by EWAS can be due to reverse causation. That is to say, a genetic variant associated with a disease is very unlikely to have been caused by the disease state whereas an epigenetic association can be the consequence of a disease state. Whilst this can complicate the dissection of disease aetiology it can also be a boon in unpicking the biology that follows on from a particular disease or environmental exposure by revealing what biological networks are affected. 
 
-Work in rat models has demonstrated the ability of maternal nutritional exposure during pregnancy to influence the methylation and expression of genes in their offspring [@Burdge2007a,@Lillycrop2008] (reviewed in [@Burdge2007]). Consequently, the methylation status of target genes of interest for vitamin D and bone development related pathways have been examined. 
+Work in rat models has demonstrated the ability of maternal nutritional exposure during pregnancy to influence the methylation and expression of genes in their offspring [@Burdge2007a; @Lillycrop2008] (reviewed in [@Burdge2007]). Consequently, the methylation status of target genes of interest for vitamin D and bone development related pathways have been examined. 
 
 Retinoid-X-receptor-alpha (RXRA), which forms a heterodimer with the vitamin D receptor is essential for the nuclear action of $1,25(OH)_2-Vitamin~D$. DNA methylation at four of ten CpG sites in the *RXRA* gene were significantly ($p\le0.05$) lower in the umbilical cord of offspring from cholecalciferol supplemented mothers compared to placebo with a mean difference in methylation of -1.98% (n=447, 95% CI -3.65 to -0.32, p=0.01). One CpG site in the gene is related to estimated free 25(OH)D levels [@Harvey2014d].
 
 Methylation of cyclin-dependent kinase inhibitor 2A (CDKN2A) in umbilical cord tissue has been implicated in bone cell activity mediating skeletal development and homeostasis. The *CDKN2A* locus has quite complex biology encoding two cell cycle inhibitors $p14^{ARF}$ and $p16^{INK4a}$ as well as the long non-coding RNA *ANRIL* which inhibits $p16^{INK4a}$. Targeted analysis of nine CpGs in a 300bp stretch of the *ANRIL* promoter region of *CDKN2A* was carried out. Methylation at several of these sites showed an inverse correlation with bone size, mineral content, and mineral density at age four years [@Curtis2017].
 
-The MAVIDOS trial is a randomised, double-blind, placebo-controlled trial of vitamin D supplementation in pregnancy focused on bone development outcomes [@Harvey2012a,@Cooper2016]. Motivated by findings that low levels of maternal 25(OH)-Vitamin D during gestation have been associated with reduced bone mass, extending to peak bone mass [@Zhu2014a] and altered femoral morphology; leading to increased risk of osteoporosis in later life [@Mahon2010a,@Viljakainen2010,@Viljakainen2011]. $1,25(OH)_2-Vitamin~D$ has been implicated in the control of Plasma membrane $Ca^{2+}$-ATPases (PMCAs). The expression of the *PMCA3* gene in the placenta has been associated with umbilical cord calcium concentration and intrauterine accrual of bone mineral content [@Kip2004]. This provides part of a candidate mechanism linking vitamin D to bone outcomes.
+The MAVIDOS trial is a randomised, double-blind, placebo-controlled trial of vitamin D supplementation in pregnancy focused on bone development outcomes [@Harvey2012a; @Cooper2016]. Motivated by findings that low levels of maternal 25(OH)-Vitamin D during gestation have been associated with reduced bone mass, extending to peak bone mass [@Zhu2014a] and altered femoral morphology; leading to increased risk of osteoporosis in later life [@Mahon2010a; @Viljakainen2010; @Viljakainen2011]. $1,25(OH)_2-Vitamin~D$ has been implicated in the control of Plasma membrane $Ca^{2+}$-ATPases (PMCAs). The expression of the *PMCA3* gene in the placenta has been associated with umbilical cord calcium concentration and intrauterine accrual of bone mineral content [@Kip2004]. This provides part of a candidate mechanism linking vitamin D to bone outcomes.
 
 ### EWAS for Maternal Vitamin D Status and Offspring Bone Outcomes
 
 This work sought to identify additional loci with changes in DNAm associated with bone development outcomes and vitamin D, beyond those identified in previous work targeted to specific loci. An 'epigenome-wide' approach examining ~850k sites in the genome was carried out using the Illumina EPIC methylation bead chip array on umbilical cord tissue samples from participants in the MAVIDOS study (n=140). Results were compared with additional samples run on the Illumina 450k array (n=60), which as the name suggests covers only ~450k sites.  
 
-Epigenome-Wide Association Studies (EWAS) were performed for four variables of interest: intervention vs placebo status, neonatal bone mineral content(g) as determined by dual-energy X-ray absorptiometry (DXA) scans, Maternal Vitamin D levels (34wks) and change in maternal Vitamin D levels from 11 to 34wks. Subsequent analyses planned with this data include: Testing the effectiveness of epigenetic predictors of gestational age developed in cord blood [@Bohlin2016,@Knight2016] in cord tissue samples. Potentially testing if 'phenotypic age' as predicted by DNA methylation [@Levine2018] is related to gestational age, unlike DNA methylation age [@Simpkin2016,@Simpkin2017].
+Epigenome-Wide Association Studies (EWAS) were performed for four variables of interest: intervention vs placebo status, neonatal bone mineral content(g) as determined by dual-energy X-ray absorptiometry (DXA) scans, Maternal Vitamin D levels (34wks) and change in maternal Vitamin D levels from 11 to 34wks.
+
+>Subsequent analyses planned with this data include: Testing the effectiveness of epigenetic predictors of gestational age developed in cord blood [@Bohlin2016; @Knight2016] in cord tissue samples. Potentially testing if 'phenotypic age' as predicted by DNA methylation [@Levine2018] is related to gestational age, unlike DNA methylation age [@Simpkin2016; @Simpkin2017].
 
 ## Methods
 
 Analysis of the Illumina EPIC and 450k methylation arrays was carried out in the R language using the ['meffil'](https://github.com/perishky/meffil/wiki) package [@Min2017], which is capable of performing functional normalisation in a more memory efficient fashion than alternatives such as 'minfi'. 
+
+### Functional Normalisation
+
+Functional normalisation is an approach to removing unwanted variation associated with 'batch' effects such as the date on which a sample was analysed or which slide a sample is on developed by @Fortin2014. This noise in the data masks the signal associated with the underlying biological effect of interest. 
+
+Functional normalisation makes use of control probes on the arrays which are designed to capture only technical variation as surrogates for the sources of unwanted variation. The control probes are processed into 42 summary measures, and principal components analysis is performed on the control probe summary matrices for all samples. The top *m* principal components (PCs) are used as the surrogates for technical variation going forward. The number, *m*, of PCs from the control probe summary matrices used is informed by the amount of residual variation remaining after normalisation. Picking the number of PCs which correspond to the last steep drop in residual variation is the approach recommended by the implementers of meffil, and @Fortin2014 recommend an *m* of 2 as performing well across a variety of analyses. (See supplementary material from [@Fortin2014] for details of the control probe summary process.)
+
+The process used by functional normalisation is a variant on quantile normalisation. Instead of forcing the empirical marginal distributions of the samples to be identical at each site across arrays it constructs quantile function which only removes variation arising from surrogates for batch variation to produce the normalised values. This approach is effective even when comparing samples with large global differences in methylation levels such as between normal and cancer samples, but cannot overcome high degrees of confounding [@Fortin2014].
+
+### EWAS Models
+
+#### Cell-Type Correction
+
+Blood cell composition is a known confounder in epigenetic studies [@Jaffe2014,@Houseman2012]. Observed variation DNA methylation can be cell-type intrinsic, changes in DNAm not driven by changes in the cell-type composition of the tissue, or cell-type extrinsic, due to changes in the cell-type composition of the population sampled (Figure \@ref(fig:IntrinsicVsExtrinsicDNAmChangeGeneral)). An established approach for addressing this potential source of confounding it is to add terms to the regression model which reflect the cell type composition of each sample. Cell type composition can be ascertained through three main approaches: Direct cell count data; predicted cell-count based on comparing experimental methylation data to methylation data from reference samples of the tissue in question [@Houseman2012]; or reference free approaches which make use of mathematical methods to identify sources of confounding variation such as cell-type heterogeneity. Whilst there are several reference samples available for cord blood [@Cardenas2016,@DeGoede2015,@Bakulski2016,@Gervin2016], none were found for cord tissue samples, consequently, we made use of reference free methods for cell type correction. We performed EWAS using Surrogate Variable Analysis (SVA) [@Leek2007] and Independent surrogate variable analysis (iSVA) [@Teschendorff2011], the results displayed here are those generated using SVA as this method was recommended based on comparisons of the performance of various cell-type heterogeneity correction methods [@McGregor2016,@Teschendorff2017].
+
+```{r IntrinsicVsExtrinsicDNAmChangeGeneral, fig.cap='(ref:IntrinsicVsExtrinsicDNAmChangeGeneral-Cap)', out.width='80%', fig.align = 'center', fig.show='hold', echo=FALSE}
+knitr::include_graphics("figs/IntrinsicVsExtrinsicDNAmChangeGeneral.png")
+```
+(ref:IntrinsicVsExtrinsicDNAmChangeGeneral-Cap) Diagramatic representation of DNAm change arrising from extrinsic, cell-type composition change and intrinic, DNAm of cells changes without the proportion of cell-types in the population changing. These two modes of change are of course not mutually exclusive and both can be occuring. 
+
+##### !!! custom cord tissue ref - Cell-Type Correction
+
+[@]
+
+#### Covariates Included in the Models
+
+By default EWAS in meffil are run with four different models:
+
+1. No covariates, attempting to predict methylation with the variable of interest.
+2. All covariates, attempting to predict methylation with the variable of interest plus a user-supplied list of covariates.
+3. SVs + all covariates, attempting to predict methylation with user-supplied covariates and surrogate variables generated from SVA.
+4. iSVs + all covariates, attempting to predict methylation with user-supplied covariates and independent surrogate variables generated from iSVA.
+
+In all the EWAS run here age at which bone measurements were made and sex were supplied as covariates.
+
+Running EWAS with multiple models permits the effects of adding the various covariates on the results of the analysis to be seen. We observed no major differences in the results when using models with and without covariates so have reported here the results of model 3 above. That is to say, the covariates used were the surrogate variables produced from SVA, Age (days) and Sex.
+
+### Concordance of EPIC and 450k EWAS Results
+
+>Concordance between the top ranking probes by p-value with SVA correction was determined using the code which can be found in Section xxx: concordanceCode.
+
+## Results
+
+### Summary of Results
+
+DNAm at none of the probes were significantly associated with the any of the four variables of interest for which EWAS were performed in either the EPIC or 450k datasets. The concordance between the probes with the top-ranked p-values in common between the EPIC and 450k data was at the level of chance. 3 of the EPIC arrays were excluded from the analysis for failing quality control leaving an n=137.
 
 ### Quality Control (QC)
 
@@ -147,12 +195,6 @@ knitr::include_graphics("figs/MAVIDOSqc450kbeadNumAcross.png")
 
 ### Functional Normalisation
 
-Functional normalisation is an approach to removing unwanted variation associated with 'batch' effects such as the date on which a sample was analysed or which slide a sample is on developed by @Fortin2014. This noise in the data masks the signal associated with the underlying biological effect of interest. 
-
-Functional normalisation makes use of control probes on the arrays which are designed to capture only technical variation as surrogates for the sources of unwanted variation. The control probes are processed into 42 summary measures, and principal components analysis is performed on the control probe summary matrices for all samples. The top *m* principal components (PCs) are used as the surrogates for technical variation going forward. The number, *m*, of PCs from the control probe summary matrices used is informed by the amount of residual variation remaining after normalisation. Picking the number of PCs which correspond to the last steep drop in residual variation is the approach recommended by the implementers of meffil, and @Fortin2014 recommend an *m* of 2 as performing well across a variety of analyses. (See supplementary material from [@Fortin2014] for details of the control probe summary process.)
-
-The process used by functional normalisation is a variant on quantile normalisation. Instead of forcing the empirical marginal distributions of the samples to be identical at each site across arrays it constructs quantile function which only removes variation arising from surrogates for batch variation to produce the normalised values. This approach is effective even when comparing samples with large global differences in methylation levels such as between normal and cancer samples, but cannot overcome high degrees of confounding [@Fortin2014].
-
 An *m* of 6 was chosen for the EPIC arrays as this value produced the last steep drop in residual variation, see Figure \@ref(fig:MAVIDOSfunnormPCsEPICMonApr162018). An *m* of 6 was chosen for the 450k arrays as this value produced the last steep drop in residual variation, see Figure \@ref(fig:MAVIDOSfunnormPCs450kMonApr162018).
 
 ```{r MAVIDOSfunnormPCsEPICMonApr162018, fig.cap='(ref:MAVIDOSfunnormPCsEPICMonApr162018-Cap)', out.width='80%', fig.align = 'center', fig.show='hold', echo=FALSE}
@@ -164,41 +206,6 @@ knitr::include_graphics("figs/MAVIDOSfunnormPCsEPICMonApr162018.png")
 knitr::include_graphics("figs/MAVIDOSfunnormPCs450kMonApr162018.png")
 ```
 (ref:MAVIDOSfunnormPCs450kMonApr162018-Cap) Residual variation remaining after functional normalisation of the top 20,000 most variable probes with *m* PCs from the control probe summary matrices for the 450k array samples (n=60), for M = methylated and U = unmethylated probes.
-
-
-### EWAS Models
-
-#### Cell-Type Correction
-
-Blood cell composition is a known confounder in epigenetic studies [@Jaffe2014,@Houseman2012]. Observed variation DNA methylation can be cell-type intrinsic, changes in DNAm not driven by changes in the cell-type composition of the tissue, or cell-type extrinsic, due to changes in the cell-type composition of the population sampled (Figure \@ref(fig:IntrinsicVsExtrinsicDNAmChangeGeneral)). An established approach for addressing this potential source of confounding it is to add terms to the regression model which reflect the cell type composition of each sample. Cell type composition can be ascertained through three main approaches: Direct cell count data; predicted cell-count based on comparing experimental methylation data to methylation data from reference samples of the tissue in question [@Houseman2012]; or reference free approaches which make use of mathematical methods to identify sources of confounding variation such as cell-type heterogeneity. Whilst there are several reference samples available for cord blood [@Cardenas2016,@DeGoede2015,@Bakulski2016,@Gervin2016], none were found for cord tissue samples, consequently, we made use of reference free methods for cell type correction. We performed EWAS using Surrogate Variable Analysis (SVA) [@Leek2007] and Independent surrogate variable analysis (iSVA) [@Teschendorff2011], the results displayed here are those generated using SVA as this method was recommended based on comparisons of the performance of various cell-type heterogeneity correction methods [@McGregor2016,@Teschendorff2017].
-
-```{r IntrinsicVsExtrinsicDNAmChangeGeneral, fig.cap='(ref:IntrinsicVsExtrinsicDNAmChangeGeneral-Cap)', out.width='80%', fig.align = 'center', fig.show='hold', echo=FALSE}
-knitr::include_graphics("figs/IntrinsicVsExtrinsicDNAmChangeGeneral.png")
-```
-(ref:IntrinsicVsExtrinsicDNAmChangeGeneral-Cap) Diagramatic representation of DNAm change arrising from extrinsic, cell-type composition change and intrinic, DNAm of cells changes without the proportion of cell-types in the population changing. These two modes of change are of course not mutually exclusive and both can be occuring. 
-
-#### Covariates Included in the Models
-
-By default EWAS in meffil are run with four different models:
-
-1. No covariates, attempting to predict methylation with the variable of interest.
-2. All covariates, attempting to predict methylation with the variable of interest plus a user-supplied list of covariates.
-3. SVs + all covariates, attempting to predict methylation with user-supplied covariates and surrogate variables generated from SVA.
-4. iSVs + all covariates, attempting to predict methylation with user-supplied covariates and independent surrogate variables generated from iSVA.
-
-In all the EWAS run here age at which bone measurements were made and sex were supplied as covariates.
-
-Running EWAS with multiple models permits the effects of adding the various covariates on the results of the analysis to be seen. We observed no major differences in the results when using models with and without covariates so have reported here the results of model 3 above. That is to say, the covariates used were the surrogate variables produced from SVA, Age (days) and Sex.
-
-### Concordance of EPIC and 450k EWAS Results
-
-Concordance between the top ranking probes by p-value with SVA correction was determined using the code which can be found in Section xxx: concordanceCode.
-
-## Results
-
-### Summary of Results
-
-DNAm at none of the probes were significantly associated with the any of the four variables of interest for which EWAS were performed in either the EPIC or 450k datasets. The concordance between the probes with the top-ranked p-values in common between the EPIC and 450k data was at the level of chance. 3 of the EPIC arrays were excluded from the analysis for failing quality control leaving an n=137.
 
 ### EWASs
 
@@ -243,7 +250,7 @@ knitr::include_graphics("figs/MAVIDOSdifVDEPICewasManhattanSVA.png")
 ```
 (ref:MAVIDOSdifVDEPICewasManhattanSVA-Cap) Results of EWAS for Change in maternal vitamin D levels from 11 to 34wks gestation with SVA model. Bidirectional Manhattan plot on which $-log_{10}(p-value)$ is plotted on the y axis and the sign of this value represents the direction of change. Size and transparency of points increases with $-log_{10}(p-value)$ such that the most significant probes are represented the largest and least transleucent points. x axis represent chromosomes and position thereupon. Red line indicates the significance threshold of $6.18\times10^{-8}~(0.05\div808,585)$ 
 
-### Concordance of EPIC and 850k EWAS results
+### !!! keep? Concordance of EPIC and 850k EWAS results !!!
 
 In order to ascertain if the results from the EWAS in the 450k and EPIC arrays were producing similar sets of probes in the top ranking positions when ordered by p-value the concordance (% overlap) between the top k probes, where k = 1 .. 100,000 was calculated. Only probes in common between the two arrays were used and k was incremented in steps of 50.
 
@@ -258,6 +265,10 @@ knitr::include_graphics("figs/EPIC450kEWASconcordMAVIDOSMonApr162018.png")
 knitr::include_graphics("figs/EPIC450kEWASconcordMAVIDOSMonApr162018zoom.png")
 ```
 (ref:EPIC450kEWASconcordMAVIDOSMonApr162018zoom-Cap) Concordance between the top 10,000 probes in common between the EWASs run on the EPIC (n=137) and 405k (n=60) data sets. bmc = bone mineral content, cc = Intervention / Placebo, difVD = Chance in Vitamin D from 11 to 34wks, ExHighConc = Example of High Concordance generated using SVA vs iSVA results for the 450k intervention/placebo EWAS. Dotted line denotes concorcance expected by chance (intersects 50% at 387,511, the number of shared probes)
+
+## !!SWS/New MAVIDOS EWAS!!
+
+### 
 
 ## Discussion
 
@@ -275,6 +286,6 @@ At present we likely have insufficient power to perform EWAS on subsets, e.g. on
 
 The effect of maternal smoking on cord blood methylation is a very strong and well established EWAS result [@Joubert2016,@Breton2017]. We have maternal smoking data so it would be interesting to see if we can recapitulate the smoking EWAS result in cord tissue.
 
-#### DNA Methylation Age analyses
+#### !!! never look at gestational age __ DNA Methylation Age analyses
 
-Epigenetic clocks for gestational age have been developed [@Bohlin2016,@Knight2016] but their estimates did not correlate as well with gestational age in a replication set [@Simpkin2017a]. This was potentially due to a bias towards pre-term infants in the initial training set which was quite small. They were initially trained on cord blood and not cord tissue samples, we intend to assess their effectiveness at predicting gestational age in our cord tissue dataset. DNAm age estimates at birth with Horvath's clocks have minimal correlations with gestational age at delivery [@Simpkin2016,@Simpkin2017], we also intend to attempt to replicate this finding. Once the PhenoAge calculator becomes available we also intend to assess if PhenoAge is similarly uncorrelated with gestational age [@Levine2018]. Another potentially interesting question is if there is any association with any of the epigenetic age estimates and bone outcomes.
+> Epigenetic clocks for gestational age have been developed [@Bohlin2016; @Knight2016] but their estimates did not correlate as well with gestational age in a replication set [@Simpkin2017a]. This was potentially due to a bias towards pre-term infants in the initial training set which was quite small. They were initially trained on cord blood and not cord tissue samples, we intend to assess their effectiveness at predicting gestational age in our cord tissue dataset. DNAm age estimates at birth with Horvath's clocks have minimal correlations with gestational age at delivery [@Simpkin2016; @Simpkin2017], we also intend to attempt to replicate this finding. Once the PhenoAge calculator becomes available we also intend to assess if PhenoAge is similarly uncorrelated with gestational age [@Levine2018]. Another potentially interesting question is if there is any association with any of the epigenetic age estimates and bone outcomes.
