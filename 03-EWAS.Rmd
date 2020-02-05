@@ -45,15 +45,22 @@ The process used by functional normalisation is a variant on quantile normalisat
 #### Cell-Type Correction
 
 Blood cell composition is a known confounder in epigenetic studies [@Jaffe2014,@Houseman2012]. Observed variation DNA methylation can be cell-type intrinsic, changes in DNAm not driven by changes in the cell-type composition of the tissue, or cell-type extrinsic, due to changes in the cell-type composition of the population sampled (Figure \@ref(fig:IntrinsicVsExtrinsicDNAmChangeGeneral)). An established approach for addressing this potential source of confounding it is to add terms to the regression model which reflect the cell type composition of each sample. Cell type composition can be ascertained through three main approaches: Direct cell count data; predicted cell-count based on comparing experimental methylation data to methylation data from reference samples of the tissue in question [@Houseman2012]; or reference free approaches which make use of mathematical methods to identify sources of confounding variation such as cell-type heterogeneity. Whilst there are several reference samples available for cord blood [@Cardenas2016,@DeGoede2015,@Bakulski2016,@Gervin2016], none were found for cord tissue samples, consequently, we made use of reference free methods for cell type correction. We performed EWAS using Surrogate Variable Analysis (SVA) [@Leek2007] and Independent surrogate variable analysis (iSVA) [@Teschendorff2011], the results displayed here are those generated using SVA as this method was recommended based on comparisons of the performance of various cell-type heterogeneity correction methods [@McGregor2016,@Teschendorff2017].
+Whilst there are several reference samples available for cord blood [@Cardenas2016; @DeGoede2015; @Bakulski2016; @Gervin2016], and one for cord tissue reference was recently published [@Lin2018]. 
+This cell-type reference had not yet been integrated into the `meffil` R package I was using to perform the EWAS analyses so I created [a fork of `meffil` including this reference panel in the required format](https://github.com/RichardJActon/meffil/blob/LinAndKarnaniCordTissueRef/data-raw/lin-karnani-reference.r), this can be installed directly from github. 
+The code necessary to add this reference to the package data before building the R package can be found in this [gist](https://gist.github.com/RichardJActon/703ae70438e865a37998cd608bd12cd3).
+
+~~none were found for cord tissue samples, consequently, we made use of reference free methods for cell type correction.~~
+
+I performed EWAS using Surrogate Variable Analysis (SVA) [@Leek2007] and Independent surrogate variable analysis (iSVA) [@Teschendorff2011], the results displayed here are those generated using SVA as this method was recommended based on comparisons of the performance of various cell-type heterogeneity correction methods [@McGregor2016; @Teschendorff2017].
 
 ```{r IntrinsicVsExtrinsicDNAmChangeGeneral, fig.cap='(ref:IntrinsicVsExtrinsicDNAmChangeGeneral-Cap)', out.width='80%', fig.align = 'center', fig.show='hold', echo=FALSE}
 knitr::include_graphics("figs/IntrinsicVsExtrinsicDNAmChangeGeneral.png")
 ```
 (ref:IntrinsicVsExtrinsicDNAmChangeGeneral-Cap) Diagramatic representation of DNAm change arrising from extrinsic, cell-type composition change and intrinic, DNAm of cells changes without the proportion of cell-types in the population changing. These two modes of change are of course not mutually exclusive and both can be occuring. 
 
-##### !!! custom cord tissue ref - Cell-Type Correction
 
-[@]
+#### !!! custom cord tissue ref ~ Add new results
+
 
 #### Covariates Included in the Models
 
