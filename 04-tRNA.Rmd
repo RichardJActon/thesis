@@ -57,39 +57,51 @@ In this study we provide the first comprehensive evaluation at the genomic DNA m
 
 Ageing is implicated as a risk factor in multiple chronic diseases [@Partridge2018].
 Understanding how the ageing process leads to deteriorating biological function is now a major research focus, with hopes to increase the human ‘healthspan’ and ameliorate the extensive physical, social and economic costs of these ageing-related disorders [@Campisi2019].
-Epigenetic processes, which influence or can inform us about cell-type specific gene expression, are altered with age and are, furthermore, one of the fundamental hallmarks of this progression [@Lopez-Otin2013; @Booth2016].
+Epigenetic processes, which influence or inform cell-type specific gene expression, are altered with age and are a fundamental hallmark of this progression, indeed they are arguably a hub mediating other hallmarks including stem cell exhaustion, cellular senescence, and mitochondrial dysfunction [@Lopez-Otin2013; @Booth2016]. 
 
-DNA methylation (DNAm) is the most common epigenetic modification of DNA and age-associated changes in this mark in mammalian tissues have been recognised for decades [@Wilson1983].
-In fact, these alterations in DNAm with age are extensive with thousands of loci across the genome affected.
-Many represent 'drift' arising from the imperfect maintenance of the epigenetic state [@Fraga2005].
-However, specific genomic regions show distinct directional changes, with loss of DNA methylation in repetitive or transposable elements [@Chuong2017], as well as gains in certain promoters, including the targets of polycomb repressor complex [@Teschendorff2010] and bivalent domains [@Rakyan2010].
-These observations with the advent of high-throughput DNAm arrays also permitted the identification of individual CpG sites that exhibit consistent changes with age, enabling the construction of predictors of chronological age known as epigenetic or DNAm ‘clocks’ [@Hannum2013; @Horvath2013; @Weidner2014; @Bell2019].
-Additionally, it was observed that ‘acceleration’ of this DNAm-derived measure is a biomarker of ‘biological’ ageing due to associations with morbidity and mortality (Reviewed in [@Horvath2018] & [@Field2018]).
+DNA methylation (DNAm) is the most common epigenetic modification of DNA and age-associated changes in this mark were recognised in mammalian tissues as early as 1983 [@Wilson1983].
+Changes in DNAm with age are extensive with thousands of loci affected.
+Many of these changes represent 'drift' [@Fraga2005] arising from the imperfect maintenance of methylation state.
+Specific genomic regions show distinct directional changes, with loss of DNA methylation in repetitive or transposable elements [@Chuong2017], and gains in certain promoters, including the targets of polycomb repressor complex [@Teschendorff2010] as well as bivalent domains [@Rakyan2010].
+The advent of high-throughput DNAm arrays [@Sandoval2011; @Teschendorff2010; @Hannum2013] has elucidated more detailed patterns of ageing related changes in DNAm.
+The identification of precise individual CpG sites that exhibit consistent changes with age enabled the construction of predictors of chronological age known as epigenetic or DNAm ‘clocks’ [@Hannum2013; @Horvath2013; @Levine2018; @Horvath2018a; @Lu2019].
+Furthermore, it was observed that ‘acceleration’ of this DNAm-derived measure is a biomarker of ‘biological’ ageing due to associations with morbidity and mortality (Reviewed in [@Horvath2018] & [@Field2018]).
 In a previous investigation of ageing-related DNAm changes within common disease-associated GWAS regions, we identified hypermethylation of the specific transfer RNA gene, tRNA-iMet-CAT-1-4 [@Bell2016].
-The initiator methionine tRNA possesses certain unique properties, including its capacity to be rate limiting for translation [@Rideout2012], association with the translation initiation factor eIF2 [@Kolitz2010], and ability to impact the expression of other tRNA genes [@Pavon-Eternod2013].
+The initiator methionine tRNA possesses certain unique properties, including its capacity to be rate limiting for translation [@Rideout2012], association with the translation initiation factor eIF2 [@Kolitz2010], and ability to impact the expression of other tRNA genes [@Pavon-Eternod2013]. 
 
-tRNAs are evolutionarily ancient [@Eigen1989] and fundamental in the translation process for all domains of life.
+tRNAs are fundamental in the translation process for all domains of life and are thus evolutionarily ancient [@Eigen1989].
 This translation machinery and the regulation of protein synthesis are controlled by conserved signalling pathways shown to be modifiable in longevity and ageing interventions [@Tavernarakis2008].
-Additionally, beyond their core role in the information flow from DNA to protein sequence, tRNAs can fragment into numerous tRNA-derived small RNAs (tsRNAs) [@Pliatsika2018] with signalling and regulatory functions [@Schimmel2017; @Lee2009; @Li2018a; @Xu2017a].
-tsRNA abundance has been linked to locus specific tRNA gene expression, in some cases independent of mature tRNA levels [@Torres2019].
+Additionally, beyond their core role in the information flow from DNA to protein sequence, tRNAs can fragment into numerous tRNA-derived small RNAs (tsRNAs) [@Pliatsika2018] with signalling and regulatory functions [@Schimmel2017; @Lee2009].
+Four main types of tsRNAs have been identified, 5’ tRNA halves, 3’ tRNA halves, and the tRNA derived fragments (tRFs) of ~18 and ~22bp sizes [@Torres2019; @Li2018a; @Xu2017a]. 
 
-The 610 annotated tRNA genes of the human tRNAome (gtRNAdb [@Chan2009]) cover <46 kb (including introns) which represents <0.002% of the human genome [@Parisien2013].
+The human tRNAome, comprising all of the genomic locations of tRNA genes, represents an extremely small portion of the genome [@Parisien2013].
+The 610 annotated tRNA genes (gtRNAdb [@Chan2009]) cover <46 kb (including introns) and represents <0.002% of the human genome.
 Yet these genes produce the second most abundant RNA species next to ribosomal RNA [@Lodish2000] and are required for the production of all proteins.
-tRNA genes are transcribed by RNA polymerase III (polIII) [@Schramm2002] and have internal type II polIII promoters [@Canella2010].
+tRNA genes are transcribed by RNA polymerase III (polIII) [@Schramm2002] and have type II polIII promoters which contain A and B-box internal promoter elements bound by the complex TFIIIC, followed by TFIIIB, and polIII [@Canella2010].
 DNAm is able to repress the expression of tRNA genes experimentally [@Besser1990] but may also represent co-ordination with the local repressive chromatin state [@Varshney2015].
-Transcription is also repressed by the highly conserved polIII specific transcription factor Maf1 [@Murawski1994; @Pluta2001], who’s activity is modulated by the Target of Rapamycin Kinase Complex 1 (TORC1) [@Mange2017].
-TORC1 is a highly conserved hub for signals that modulate ageing [@Kennedy2016]. 
+Transcription is also repressed by the highly conserved polIII specific transcription factor Maf1 [@Murawski1994; @Pluta2001], who’s activity is modulated by the Target of Rapamycin Kinase Complex 1 (TORC1) [@Mange2017], a highly conserved hub for signals that modulate ageing [@Kennedy2016]. 
 
-tRNAs as well as tsRNAs are integral to the regulation of protein synthesis and stress response, two processes known to be major modulators of ageing.
+Assuming similar rates of transcription one would expect that the more frequently an amino acid is used in the exome, the more copies of that tRNA gene there would be in the genome.
+Indeed, tRNA gene dosage is quite closely matched to amino acid usage frequency in the human exome, though the correlation is less strong for codon usage.
+Codon usage frequencies have been claimed to be mostly invariant in the transcriptomes of a wide range of tissues, as well as across developmental time [@Schmitt2014].
+However, differences in the codon usage of genes with highly tissue-specifically expressed genes have been observed [@Powell1997].
+The number of isodecoders (tRNAs with the same anticodon but which differ in sequence elsewhere) in the genome expands with organismal complexity [@Goodenbour2006].
+Isodecoders are distinct in translational efficiency [@Geslain2010], which can have consequences in human disease [@Kirchner2017].
+However, such differences seem likely to explain only some of the tissue specificity of tRNA gene regulation. 
+
+Ageing is linked to core aspects of metabolic regulation, with nutrient sensing and stress response acting as major modulators of ageing. 
+tRNAs as well as tsRNAs are integral to the regulation of protein synthesis and stress response.
+protein synthesis represents a substantial proportion of total cellular energy expenditure and this fraction can vary considerably with nutrient availability [@Pace2006].
 Metabolic processes are also recognised to modulate the age estimates of DNAm clocks [@Nwanaji-Enwerem2018].
 Partial inhibition of translation increases lifespan in multiple model organisms [@Hansen2007] and PolIII inhibition increases longevity acting downstream of TORC1 [@Filer2017].
-Furthermore, certain tsRNAs circulating in serum can be modulated by ageing and caloric restriction [@Dhahbi2013].
+Furthermore, 5’ tRNA halves circulating in serum are modulated by ageing and caloric restriction [@Dhahbi2013]. 
 
 We directly investigated ageing-related changes in the epigenetic DNA methylation state of the entire tRNAome, facilitated by the availability of a large-scale MeDIP-seq dataset.
-Arrays poorly cover this portion of genome, with even the latest EPIC (850k) arrays only covering <15% of the tRNA genes, with robust probes, and in total only ~4.7% of all the tRNAome CpGs [@Zhou2017].
+Arrays poorly cover this portion of genome.
+The 450k and EPIC arrays have 110 robust probes covering 84 tRNAs and 129 robust probes covering 89 tRNAs respectively [@Zhou2017].
 tRNA genes sit at the heart not only of the core biological process of translation but at a nexus of signalling networks operating in several different paradigms, from small RNA signalling to large scale chromatin organisation [@VanBortle2017].
-In summary, tRNA biology, protein synthesis, nutrient sensing, stress response and ageing are all intimately interlinked.
-In this study, we have identified tRNAome DNA hypermethylation and independently replicated this newly described ageing-related observation.
+In summation tRNA biology, protein synthesis, nutrient sensing, stress response and ageing are intimately interlinked.
+We have identified tRNAome DNA hypermethylation and independently replicated this newly described ageing-related observation.
 
 \newpage
 ## Methods {#Methods}
