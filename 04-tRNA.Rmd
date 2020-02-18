@@ -30,6 +30,8 @@ suppressPackageStartupMessages({
 })
 ```
 
+- @Vorlander2020 - MAF1 structural
+
 \newpage
 
 ## Abstract
