@@ -1,28 +1,29 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2020.1.13)  22 JAN 2020 15:26
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2020.2.25)  25 FEB 2020 16:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
-LaTeX2e <2019-10-01> patch level 3
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2019/10/25 v1.4k Standard LaTeX document class
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/base/bk10.clo
-File: bk10.clo 2019/10/25 v1.4k Standard LaTeX file (size option)
+LaTeX2e <2020-02-02> patch level 3
+L3 programming layer <2020-02-21> (/home/richardjamesacton/.TinyTeX/texmf-dist/
+tex/latex/base/book.cls
+Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count80
-\c@chapter=\count81
-\c@section=\count82
-\c@subsection=\count83
-\c@subsubsection=\count84
-\c@paragraph=\count85
-\c@subparagraph=\count86
-\c@figure=\count87
-\c@table=\count88
-\abovecaptionskip=\skip41
-\belowcaptionskip=\skip42
-\bibindent=\dimen102
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
+\c@part=\count163
+\c@chapter=\count164
+\c@section=\count165
+\c@subsection=\count166
+\c@subsubsection=\count167
+\c@paragraph=\count168
+\c@subparagraph=\count169
+\c@figure=\count170
+\c@table=\count171
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -56,9 +57,9 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks14
 \symAMSa=\mathgroup4
@@ -66,540 +67,324 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2019/11/16 v2.17d AMS math features
-\@mathmargin=\skip43
+)) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip49
 For additional information on amsmath, use the `?' option.
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
-\ex@=\dimen103
-)) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+\ex@=\dimen135
+)) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen104
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+\pmbraise@=\dimen136
+) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count89
+\inf@bad=\count172
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count90
-\leftroot@=\count91
+\uproot@=\count173
+\leftroot@=\count174
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count92
-\DOTSCASE@=\count93
+\classnum@=\count175
+\DOTSCASE@=\count176
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box27
-\strutbox@=\box28
-\big@size=\dimen105
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen137
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count94
-\c@MaxMatrixCols=\count95
-\dotsspace@=\muskip10
-\c@parentequation=\count96
-\dspbrk@lvl=\count97
+\macc@depth=\count177
+\c@MaxMatrixCols=\count178
+\dotsspace@=\muskip16
+\c@parentequation=\count179
+\dspbrk@lvl=\count180
 \tag@help=\toks16
-\row@=\count98
-\column@=\count99
-\maxfields@=\count100
+\row@=\count181
+\column@=\count182
+\maxfields@=\count183
 \andhelp@=\toks17
-\eqnshift@=\dimen106
-\alignsep@=\dimen107
-\tagshift@=\dimen108
-\tagwidth@=\dimen109
-\totwidth@=\dimen110
-\lineht@=\dimen111
+\eqnshift@=\dimen138
+\alignsep@=\dimen139
+\tagshift@=\dimen140
+\tagwidth@=\dimen141
+\totwidth@=\dimen142
+\lineht@=\dimen143
 \@envbody=\toks18
-\multlinegap=\skip44
-\multlinetaggap=\skip45
+\multlinegap=\skip50
+\multlinetaggap=\skip51
 \mathdisplay@stack=\toks19
-LaTeX Info: Redefining \[ on input line 2858.
-LaTeX Info: Redefining \] on input line 2859.
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.sty
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2019/11/07 v1.0c TeX engine tests
-)) (/home/richardjacton/.TinyTeX/texmf-dist/tex/generic/iftex/ifluatex.sty
+)) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/base/fixltx2e.sty
-Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
-Applying: [2015/01/01] Old fixltx2e package on input line 46.
-
-Package fixltx2e Warning: fixltx2e is not required with releases after 2015
-(fixltx2e)                All fixes are now in the LaTeX kernel.
-(fixltx2e)                See the latexrelease package for details.
-
-Already applied: [0000/00/00] Old fixltx2e package on input line 53.
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/xelatex/mathspec/mathspec.sty
-Package: mathspec 2016/12/22 v0.2b LaTeX Package (Mathematics font selection fo
-r XeLaTeX)
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count101
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2019-11-07 L3 programming layer (loader) 
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-Package: expl3 2019-11-07 L3 programming layer (code)
-\c_max_int=\count102
-\l_tmpa_int=\count103
-\l_tmpb_int=\count104
-\g_tmpa_int=\count105
-\g_tmpb_int=\count106
-\l__seq_internal_a_int=\count107
-\l__seq_internal_b_int=\count108
-\g__kernel_prg_map_int=\count109
-\c__ior_term_noprompt_ior=\count110
-\c_log_iow=\count111
-\l_iow_line_count_int=\count112
-\l__iow_line_target_int=\count113
-\l__iow_one_indent_int=\count114
-\l__iow_indent_int=\count115
-\c_zero_dim=\dimen112
-\c_max_dim=\dimen113
-\l_tmpa_dim=\dimen114
-\l_tmpb_dim=\dimen115
-\g_tmpa_dim=\dimen116
-\g_tmpb_dim=\dimen117
-\c_zero_skip=\skip46
-\c_max_skip=\skip47
-\l_tmpa_skip=\skip48
-\l_tmpb_skip=\skip49
-\g_tmpa_skip=\skip50
-\g_tmpb_skip=\skip51
-\c_zero_muskip=\muskip11
-\c_max_muskip=\muskip12
-\l_tmpa_muskip=\muskip13
-\l_tmpb_muskip=\muskip14
-\g_tmpa_muskip=\muskip15
-\g_tmpb_muskip=\muskip16
-\l_keys_choice_int=\count116
-\l__intarray_loop_int=\count117
-\c__intarray_sp_dim=\dimen118
-\g__intarray_font_int=\count118
-\c__fp_leading_shift_int=\count119
-\c__fp_middle_shift_int=\count120
-\c__fp_trailing_shift_int=\count121
-\c__fp_big_leading_shift_int=\count122
-\c__fp_big_middle_shift_int=\count123
-\c__fp_big_trailing_shift_int=\count124
-\c__fp_Bigg_leading_shift_int=\count125
-\c__fp_Bigg_middle_shift_int=\count126
-\c__fp_Bigg_trailing_shift_int=\count127
-\g__fp_array_int=\count128
-\l__fp_array_loop_int=\count129
-\l__sort_length_int=\count130
-\l__sort_min_int=\count131
-\l__sort_top_int=\count132
-\l__sort_max_int=\count133
-\l__sort_true_max_int=\count134
-\l__sort_block_int=\count135
-\l__sort_begin_int=\count136
-\l__sort_end_int=\count137
-\l__sort_A_int=\count138
-\l__sort_B_int=\count139
-\l__sort_C_int=\count140
-\l__str_internal_int=\count141
-\l__tl_analysis_normal_int=\count142
-\l__tl_analysis_index_int=\count143
-\l__tl_analysis_nesting_int=\count144
-\l__tl_analysis_type_int=\count145
-\l__regex_internal_a_int=\count146
-\l__regex_internal_b_int=\count147
-\l__regex_internal_c_int=\count148
-\l__regex_balance_int=\count149
-\l__regex_group_level_int=\count150
-\l__regex_mode_int=\count151
-\c__regex_cs_in_class_mode_int=\count152
-\c__regex_cs_mode_int=\count153
-\l__regex_catcodes_int=\count154
-\l__regex_default_catcodes_int=\count155
-\c__regex_catcode_L_int=\count156
-\c__regex_catcode_O_int=\count157
-\c__regex_catcode_A_int=\count158
-\c__regex_all_catcodes_int=\count159
-\l__regex_show_lines_int=\count160
-\l__regex_min_state_int=\count161
-\l__regex_max_state_int=\count162
-\l__regex_left_state_int=\count163
-\l__regex_right_state_int=\count164
-\l__regex_capturing_group_int=\count165
-\l__regex_min_pos_int=\count166
-\l__regex_max_pos_int=\count167
-\l__regex_curr_pos_int=\count168
-\l__regex_start_pos_int=\count169
-\l__regex_success_pos_int=\count170
-\l__regex_curr_char_int=\count171
-\l__regex_curr_catcode_int=\count172
-\l__regex_last_char_int=\count173
-\l__regex_case_changed_char_int=\count174
-\l__regex_curr_state_int=\count175
-\l__regex_step_int=\count176
-\l__regex_min_active_int=\count177
-\l__regex_max_active_int=\count178
-\l__regex_replacement_csnames_int=\count179
-\l__regex_match_count_int=\count180
-\l__regex_min_submatch_int=\count181
-\l__regex_submatch_int=\count182
-\l__regex_zeroth_submatch_int=\count183
-\g__regex_trace_regex_int=\count184
-\c_empty_box=\box29
-\l_tmpa_box=\box30
-\l_tmpb_box=\box31
-\g_tmpa_box=\box32
-\g_tmpb_box=\box33
-\l__box_top_dim=\dimen119
-\l__box_bottom_dim=\dimen120
-\l__box_left_dim=\dimen121
-\l__box_right_dim=\dimen122
-\l__box_top_new_dim=\dimen123
-\l__box_bottom_new_dim=\dimen124
-\l__box_left_new_dim=\dimen125
-\l__box_right_new_dim=\dimen126
-\l__box_internal_box=\box34
-\l__coffin_internal_box=\box35
-\l__coffin_internal_dim=\dimen127
-\l__coffin_offset_x_dim=\dimen128
-\l__coffin_offset_y_dim=\dimen129
-\l__coffin_x_dim=\dimen130
-\l__coffin_y_dim=\dimen131
-\l__coffin_x_prime_dim=\dimen132
-\l__coffin_y_prime_dim=\dimen133
-\c_empty_coffin=\box36
-\l__coffin_aligned_coffin=\box37
-\l__coffin_aligned_internal_coffin=\box38
-\l_tmpa_coffin=\box39
-\l_tmpb_coffin=\box40
-\g_tmpa_coffin=\box41
-\g_tmpb_coffin=\box42
-\l__coffin_bounding_shift_dim=\dimen134
-\l__coffin_left_corner_dim=\dimen135
-\l__coffin_right_corner_dim=\dimen136
-\l__coffin_bottom_corner_dim=\dimen137
-\l__coffin_top_corner_dim=\dimen138
-\l__coffin_scaled_total_height_dim=\dimen139
-\l__coffin_scaled_width_dim=\dimen140
-\c__coffin_empty_coffin=\box43
-\l__coffin_display_coffin=\box44
-\l__coffin_display_coord_coffin=\box45
-\l__coffin_display_pole_coffin=\box46
-\l__coffin_display_offset_dim=\dimen141
-\l__coffin_display_x_dim=\dimen142
-\l__coffin_display_y_dim=\dimen143
-\g__char_data_ior=\read1
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/l3kernel/l3deprecation.def
-File: l3deprecation.def 2019-04-06 v L3 Deprecated functions
-))
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xdvipdfm
-x.def
-File: l3backend-xdvipdfmx.def 2019-04-06 L3 backend support: xdvipdfmx
-\g__graphics_track_int=\count185
-\l__pdf_internal_box=\box47
-\g__pdf_backend_object_int=\count186
-\g__pdf_backend_annotation_int=\count187
-))
-Package: xparse 2019-10-11 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count188
-\g__xparse_grabber_int=\count189
-\l__xparse_m_args_int=\count190
-\l__xparse_v_nesting_int=\count191
 )
-Package: fontspec 2019/10/19 v2.7d Font selection for XeLaTeX and LuaLaTeX
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
-Package: fontspec-xetex 2019/10/19 v2.7d Font selection for XeLaTeX and LuaLaTe
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-mat
+h.sty (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-02-21 L3 programming layer (loader) 
+
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xdvi
+pdfmx.def
+File: l3backend-xdvipdfmx.def 2020-02-23 L3 backend support: xdvipdfmx
+\g__graphics_track_int=\count184
+\l__pdf_internal_box=\box47
+\g__pdf_backend_object_int=\count185
+\g__pdf_backend_annotation_int=\count186
+))
+Package: unicode-math 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLaTeX
+
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-mat
+h-xetex.sty
+Package: unicode-math-xetex 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLa
+TeX
+
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse
+.sty
+Package: xparse 2020-02-14 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count187
+\g__xparse_grabber_int=\count188
+\l__xparse_m_args_int=\count189
+\l__xparse_v_nesting_int=\count190
+)
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3ke
+ys2e.sty
+Package: l3keys2e 2020-02-14 LaTeX2e option processing using LaTeX3 keys
+) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.
+sty
+Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTe
 X
-\l__fontspec_script_int=\count192
-\l__fontspec_language_int=\count193
-\l__fontspec_strnum_int=\count194
-\l__fontspec_tmp_int=\count195
-\l__fontspec_tmpa_int=\count196
-\l__fontspec_tmpb_int=\count197
-\l__fontspec_tmpc_int=\count198
-\l__fontspec_em_int=\count199
-\l__fontspec_emdef_int=\count266
-\l__fontspec_strong_int=\count267
-\l__fontspec_strongdef_int=\count268
+\l__fontspec_script_int=\count191
+\l__fontspec_language_int=\count192
+\l__fontspec_strnum_int=\count193
+\l__fontspec_tmp_int=\count194
+\l__fontspec_tmpa_int=\count195
+\l__fontspec_tmpb_int=\count196
+\l__fontspec_tmpc_int=\count197
+\l__fontspec_em_int=\count198
+\l__fontspec_emdef_int=\count199
+\l__fontspec_strong_int=\count266
+\l__fontspec_strongdef_int=\count267
 \l__fontspec_tmpa_dim=\dimen144
 \l__fontspec_tmpb_dim=\dimen145
 \l__fontspec_tmpc_dim=\dimen146
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/base/tuenc.def
-File: tuenc.def 2018/08/11 v2.0j Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
-)) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg)
-LaTeX Info: Redefining \itshape on input line 4047.
-LaTeX Info: Redefining \slshape on input line 4052.
-LaTeX Info: Redefining \scshape on input line 4057.
-LaTeX Info: Redefining \upshape on input line 4062.
-LaTeX Info: Redefining \em on input line 4092.
-LaTeX Info: Redefining \emph on input line 4117.
-)) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/home
-/richardjacton/.TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks20
-\XKV@tempa@toks=\toks21
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex))
-\XKV@depth=\count269
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg)
+)) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 ))
-\c@eu@=\count270
-\c@eu@i=\count271
-\c@mkern=\count272
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/upquote/upquote.sty
+\g__um_fam_int=\count268
+\g__um_fonts_used_int=\count269
+\l__um_primecount_int=\count270
+\g__um_primekern_muskip=\muskip17
+
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-mat
+h-table.tex))) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/upquote/u
+pquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
-Package textcomp Info: Sub-encoding information:
-(textcomp)               5 = only ISO-Adobe without \textcurrency
-(textcomp)               4 = 5 + \texteuro
-(textcomp)               3 = 4 + \textohm
-(textcomp)               2 = 3 + \textestimated + \textcurrency
-(textcomp)               1 = TS1 - \textcircled - \t
-(textcomp)               0 = TS1 (full)
-(textcomp)             Font families with sub-encoding setting implement
-(textcomp)             only a restricted character set as indicated.
-(textcomp)             Family '?' is the default used for unknown fonts.
-(textcomp)             See the documentation for details.
-Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
-File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-)
-LaTeX Info: Redefining \oldstylenums on input line 334.
-Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
-Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
-Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
-Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
-Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
-Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
-Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
-Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
-Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
-Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
-Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
-Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
-Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
-Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
-Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
-Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
-Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
-Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
-Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
-Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
-Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
-Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
-Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
-Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
-
-Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
-Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
-Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
-Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
-Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
-Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
-Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
-Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
-Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
-Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
-Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
-Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
-Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
-Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
-Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
-Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
-Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
-Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
-Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
-Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
-Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
-Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
-Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
-Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
-Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
-Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
-Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
-Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
-Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
-Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
-Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
-Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
-Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
-Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
-Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
-Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
-Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
-)) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/microtype/microtype.s
+ty
 Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
-\MT@toks=\toks22
-\MT@count=\count273
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks20
+)
+\MT@toks=\toks21
+\MT@count=\count271
 LaTeX Info: Redefining \textls on input line 790.
 \MT@outer@kern=\dimen147
 LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
-\MT@listname@count=\count274
+\MT@listname@count=\count272
 
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/microtype/microtype-xetex.de
-f
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/microtype/microtype-xete
+x.def
 File: microtype-xetex.def 2019/11/18 v2.7d Definitions specific to xetex (RS)
 LaTeX Info: Redefining \lsstyle on input line 258.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/microtype/microtype.cfg
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2019/11/18 v2.7d microtype main configuration file (RS)
-)) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2019/11/10 v7.00c Hypertext links for LaTeX
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+)) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.st
+y
 Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
 )
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.st
+y
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode not found.
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-)) (/home/richardjacton/.TinyTeX/texmf-dist/tex/generic/oberdiek/kvdefinekeys.s
-ty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/generic/oberdiek/pdfescape.sty
-Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/oberdiek/hycolor.sty
-Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/oberdiek/xcolor-patch.sty
-Package: xcolor-patch 2016/05/16 xcolor patch
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/oberdiek/hopatch.sty
-Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
-))) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/oberdiek/letltxmacro.sty
-Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/oberdiek/auxhook.sty
-Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+)
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.st
+y
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinek
+eys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.st
+y
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxmacro.
+sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.st
+y
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
 \@linkdim=\dimen148
-\Hy@linkcounter=\count275
-\Hy@pagecounter=\count276
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2019/11/10 v7.00c Hyperref: PDFDocEncoding definition (HO)
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/generic/oberdiek/intcalc.sty
-Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+\Hy@linkcounter=\count273
+\Hy@pagecounter=\count274
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.st
+y
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count277
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/latexconfig/hyperref.cfg
-File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+\Hy@SavedSpaceFactor=\count275
+Package hyperref Info: Option `unicode' set `true' on input line 4421.
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2020/01/14 v7.00d Hyperref: PDF Unicode definition (HO)
 )
-Package hyperref Info: Hyper figures OFF on input line 4535.
-Package hyperref Info: Link nesting OFF on input line 4540.
-Package hyperref Info: Hyper index ON on input line 4543.
-Package hyperref Info: Plain pages OFF on input line 4550.
-Package hyperref Info: Backreferencing OFF on input line 4555.
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4788.
-\c@Hy@tempcnt=\count278
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip17
+Package hyperref Info: Bookmarks ON on input line 4800.
+\c@Hy@tempcnt=\count276
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5147.
+LaTeX Info: Redefining \url on input line 5159.
 \XeTeXLinkMargin=\dimen149
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/generic/oberdiek/bitset.sty
-Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/generic/oberdiek/bigintcalc.sty
-Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.
+sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count279
+\Fld@menulength=\count277
 \Field@Width=\dimen150
 \Fld@charsize=\dimen151
-Package hyperref Info: Hyper figures OFF on input line 6418.
-Package hyperref Info: Link nesting OFF on input line 6423.
-Package hyperref Info: Hyper index ON on input line 6426.
-Package hyperref Info: backreferencing OFF on input line 6433.
-Package hyperref Info: Link coloring OFF on input line 6438.
-Package hyperref Info: Link coloring with OCG OFF on input line 6443.
-Package hyperref Info: PDF/A mode OFF on input line 6448.
-LaTeX Info: Redefining \ref on input line 6488.
-LaTeX Info: Redefining \pageref on input line 6492.
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/generic/oberdiek/atbegshi.sty
-Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/generic/iftex/ifpdf.sty
-Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
-))
-\Hy@abspage=\count280
-\c@Item=\count281
-\c@Hfootnote=\count282
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing OFF on input line 6445.
+Package hyperref Info: Link coloring OFF on input line 6450.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count278
+\c@Item=\count279
+\c@Hfootnote=\count280
 )
 Package hyperref Info: Driver (autodetected): hxetex.
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
-File: hxetex.def 2019/11/10 v7.00c Hyperref driver for XeTeX
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2019/11/10 v7.00c Hyperref: PDF Unicode definition (HO)
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2020/01/14 v7.00d Hyperref driver for XeTeX
+
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.st
+y
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \pdfm@box=\box48
-\c@Hy@AnnotLevel=\count283
-\HyField@AnnotCount=\count284
-\Fld@listcount=\count285
-\c@bookmark@seq@number=\count286
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
-Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/oberdiek/atveryend.sty
-Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+\c@Hy@AnnotLevel=\count281
+\HyField@AnnotCount=\count282
+\Fld@listcount=\count283
+\c@bookmark@seq@number=\count284
+
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfile
+check.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
 )
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/generic/oberdiek/uniquecounter.sty
-Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/generic/uniquecounter/uniqueco
+unter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
 \Hy@SectionHShift=\skip52
-)
-Package hyperref Info: Option `unicode' set `true' on input line 29.
-
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/generic/stringenc/se-ascii-print.d
-ef
-File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
-
-)
-Package hyperref Info: Option `breaklinks' set `true' on input line 29.
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip53
-\bibsep=\skip54
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count287
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2019/02/06 v4.12 Multi-page Table package (DPC)
-\LTleft=\skip55
-\LTright=\skip56
-\LTpre=\skip57
-\LTpost=\skip58
-\LTchunksize=\count288
+) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip53
+\LTright=\skip54
+\LTpre=\skip55
+\LTpost=\skip56
+\LTchunksize=\count285
 \LTcapwidth=\dimen152
 \LT@head=\box49
 \LT@firsthead=\box50
 \LT@foot=\box51
 \LT@lastfoot=\box52
-\LT@cols=\count289
-\LT@rows=\count290
-\c@LT@tables=\count291
-\c@LT@chunks=\count292
-\LT@p@ftn=\toks23
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2019/10/08 v1.6180339 publication quality tables
+\LT@cols=\count286
+\LT@rows=\count287
+\c@LT@tables=\count288
+\c@LT@chunks=\count289
+\LT@p@ftn=\toks22
+) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen153
 \lightrulewidth=\dimen154
 \cmidrulewidth=\dimen155
@@ -610,594 +395,75 @@ Package: booktabs 2019/10/08 v1.6180339 publication quality tables
 \cmidrulesep=\dimen160
 \cmidrulekern=\dimen161
 \defaultaddspace=\dimen162
-\@cmidla=\count293
-\@cmidlb=\count294
+\@cmidla=\count290
+\@cmidlb=\count291
 \@aboverulesep=\dimen163
 \@belowrulesep=\dimen164
-\@thisruleclass=\count295
-\@lastruleclass=\count296
+\@thisruleclass=\count292
+\@lastruleclass=\count293
 \@thisrulewidth=\dimen165
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2019/11/01 v1.3d Standard LaTeX Graphics (DPC,SPQR)
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count294
+) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box53
+\fn@width=\dimen166
+) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+)
+(/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cf
+g
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 105.
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def
-File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
-))
-\Gin@req@height=\dimen166
-\Gin@req@width=\dimen167
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/grffile/grffile.sty
+)
+\Gin@req@height=\dimen167
+\Gin@req@width=\dimen168
+) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/grffile/grffile.sty
 Package: grffile 2019/11/11 v2.1 Extended file name support for graphics (legac
 y)
 Package grffile Info: This package is an empty stub for compatibility on input 
 line 40.
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/titling/titling.sty
-Package: titling 2009/09/04 v2.1d maketitle typesetting
-\thanksmarkwidth=\skip59
-\thanksmargin=\skip60
-\droptitle=\skip61
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/float/float.sty
+) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box54
+\UL@hyphenbox=\box55
+\UL@skip=\skip57
+\UL@hook=\toks23
+\UL@height=\dimen169
+\UL@pe=\count295
+\UL@pixel=\dimen170
+\ULC@box=\box56
+Package: ulem 2019/11/18
+\ULdepth=\dimen171
+) (/home/richardjamesacton/.TinyTeX/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count297
+\c@float@type=\count296
 \float@exts=\toks24
-\float@box=\box53
+\float@box=\box57
 \@float@everytoks=\toks25
-\@floatcapt=\box54
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
+\@floatcapt=\box58
 )
-Package xcolor Info: Driver file: xetex.def on input line 225.
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
-Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/tools/array.sty
-Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
-\col@sep=\dimen168
-\ar@mcellbox=\box55
-\extrarowheight=\dimen169
-\NC@list=\toks26
-\extratabsurround=\skip62
-\backup@length=\skip63
-\ar@cellbox=\box56
-)
-\everycr=\toks27
-\minrowclearance=\skip64
-)
-\rownum=\count298
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
-\multirow@colwidth=\skip65
-\multirow@cntb=\count299
-\multirow@dima=\skip66
-\bigstrutjot=\dimen170
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2017/10/31 v2.20.4
-\thm@style=\toks28
-\thm@bodyfont=\toks29
-\thm@headfont=\toks30
-\thm@notefont=\toks31
-\thm@headpunct=\toks32
-\thm@preskip=\skip67
-\thm@postskip=\skip68
-\thm@headsep=\skip69
-\dth@everypar=\toks33
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2019/06/20 v3.9 Customized lists
-\enitkv@toks@=\toks34
-\labelindent=\skip70
-\enit@outerparindent=\dimen171
-\enit@toks=\toks35
-\enit@inbox=\box57
-\enit@count@id=\count300
-\enitdp@description=\count301
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/vmargin/vmargin.sty
-Package: vmargin 2004/07/15 V2.5 set document margins (VK)
-Package: vmargin 2004/07/15 V2.5 set document margins (VK)
-\PaperWidth=\dimen172
-\PaperHeight=\dimen173
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
-s
-\f@nch@headwidth=\skip71
-\f@nch@O@elh=\skip72
-\f@nch@O@erh=\skip73
-\f@nch@O@olh=\skip74
-\f@nch@O@orh=\skip75
-\f@nch@O@elf=\skip76
-\f@nch@O@erf=\skip77
-\f@nch@O@olf=\skip78
-\f@nch@O@orf=\skip79
-) (./thesis.aux)
-\openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 144.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-44.
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/base/ts1cmr.fd
-File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Info: Redefining \microtypecontext on input line 144.
-Package microtype Info: Character protrusion enabled (level 2).
-Package microtype Info: Using protrusion set `basicmath'.
-Package microtype Info: No adjustment of tracking.
-Package microtype Info: No adjustment of spacing.
-Package microtype Info: No adjustment of kerning.
+! LaTeX Error: Option clash for package xcolor.
 
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/microtype/mt-LatinModernRoma
-n.cfg
-File: mt-LatinModernRoman.cfg 2013/03/13 v1.0 microtype config. file: Latin Mod
-ern Roman (RS)
-)
-\AtBeginShipoutBox=\box58
-Package hyperref Info: Link coloring OFF on input line 144.
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/oberdiek/refcount.sty
-Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
-)
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/generic/oberdiek/gettitlestring.st
-y
-Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
-)
-\c@section@level=\count302
-)
-LaTeX Info: Redefining \ref on input line 144.
-LaTeX Info: Redefining \pageref on input line 144.
-LaTeX Info: Redefining \nameref on input line 144.
-(./thesis.out) (./thesis.out)
-\@outlinefile=\write3
-\openout3 = `thesis.out'.
-
-[1
-
-
-] [2
-
-] (./thesis.toc
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5
-.
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmr' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 5
-.
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-5.
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-5.
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 5.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 5.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 5.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
-(/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (/home/richardjacton/.TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) [3])
-\tf@toc=\write4
-\openout4 = `thesis.toc'.
-
-[4] [5
-
-] [6
-
-] [7] [8
-
-] [9] [10]
-Chapter 1.
-[11
-
-] [12]
-File: figs/5mC_vs_C.png Graphic file (type bmp)
-<figs/5mC_vs_C.png>
-File: figs/CpG_vs_GpC.png Graphic file (type bmp)
-<figs/CpG_vs_GpC.png>
-
-Overfull \hbox (383.85226pt too wide) in paragraph at lines 232--232
-[][]
- []
-
-[13] [14]
-File: figs/CGI-Shores-Shelves-Seas_2.png Graphic file (type bmp)
-<figs/CGI-Shores-Shelves-Seas_2.png>
-
-Overfull \hbox (494.18321pt too wide) in paragraph at lines 243--243
-[][]
- []
-
-File: figs/CpGfreqVsDNAm.png Graphic file (type bmp)
-<figs/CpGfreqVsDNAm.png>
-[15]
-File: figs/Lyko2017DNAmMechanism.png Graphic file (type bmp)
-<figs/Lyko2017DNAmMechanism.png>
-[16]
-File: figs/Wu2017TETsDNAmCycle.png Graphic file (type bmp)
-<figs/Wu2017TETsDNAmCycle.png>
-[17]
-File: figs/Ciernia2016f3DNAmTime.png Graphic file (type bmp)
-<figs/Ciernia2016f3DNAmTime.png>
-File: figs/Riggs2004PNASfig2DNAmFidelity.png Graphic file (type bmp)
-<figs/Riggs2004PNASfig2DNAmFidelity.png>
-[18]
-File: figs/Zhao2014_fig3_a+b.png Graphic file (type bmp)
-<figs/Zhao2014_fig3_a+b.png>
-
-Overfull \hbox (504.68939pt too wide) in paragraph at lines 331--332
-[][]
- []
-
-[19] [20]
-File: figs/Booth2016_F3_epigenomeHubAgingHallmarks_alpha.png Graphic file (type
- bmp)
-<figs/Booth2016_F3_epigenomeHubAgingHallmarks_alpha.png>
-[21]
-File: figs/Fraga2005fig3.png Graphic file (type bmp)
-<figs/Fraga2005fig3.png>
-[22] [23]
-File: figs/Heyn2012F1b.png Graphic file (type bmp)
-<figs/Heyn2012F1b.png>
-
-Overfull \hbox (214.89752pt too wide) in paragraph at lines 427--428
-[][]
- []
-
-[24] [25]
-File: figs/Jaiswal2014fig1_somaticMutationAge.png Graphic file (type bmp)
-<figs/Jaiswal2014fig1_somaticMutationAge.png>
-File: figs/Jaiswal2014fig2c.png Graphic file (type bmp)
-<figs/Jaiswal2014fig2c.png>
-[26] [27]
-File: figs/Marioni2015f3.png Graphic file (type bmp)
-<figs/Marioni2015f3.png>
-
-Overfull \hbox (483.78218pt too wide) in paragraph at lines 508--509
-[][]
- []
-
-[28] [29]
-File: figs/AgeCpGUpSet.png Graphic file (type bmp)
-<figs/AgeCpGUpSet.png>
-
-Overfull \hbox (739.01486pt too wide) in paragraph at lines 521--523
-[][]
- []
-
-[30]
-Overfull \vbox (86.05138pt too high) has occurred while \output is active []
-
-[31]
-File: figs/Florath2014_F4abc.png Graphic file (type bmp)
-<figs/Florath2014_F4abc.png>
-
-Overfull \hbox (41.64615pt too wide) in paragraph at lines 537--538
-[][]
- []
-
-[32]
-Overfull \vbox (60.53278pt too high) has occurred while \output is active []
-
-[33] [34] [35] [36] [37
-
-] [38]
-Chapter 2.
-[39
-
-]
-File: figs/BisulfiteConversionNEB.jpg Graphic file (type bmp)
-<figs/BisulfiteConversionNEB.jpg>
-[40]
-File: figs/MeDIPseqReaction.png Graphic file (type bmp)
-<figs/MeDIPseqReaction.png>
-[41] [42]
-File: figs/Bibikova2011IlluminaMethylationBeadChip.png Graphic file (type bmp)
-<figs/Bibikova2011IlluminaMethylationBeadChip.png>
-[43] [44]
-File: figs/Krueger2011BismarkAlignment.png Graphic file (type bmp)
-<figs/Krueger2011BismarkAlignment.png>
-[45] [46] [47] [48
-
-] [49] [50]
-Chapter 3.
-[51
-
-]
-
-Package Fancyhdr Warning: \headheight is too small (20.0pt): 
-Make it at least 22.76004pt.
-We now make it that large for the rest of the document.
-This may cause the page layout to be inconsistent, however.
-
-[52]
-File: figs/MAVIDOSqcEPICsexMismatch.png Graphic file (type bmp)
-<figs/MAVIDOSqcEPICsexMismatch.png>
-[53]
-File: figs/MAVIDOSqcEPICmethVsUnmeth.png Graphic file (type bmp)
-<figs/MAVIDOSqcEPICmethVsUnmeth.png>
-File: figs/MAVIDOSqcEPICpropSites.png Graphic file (type bmp)
-<figs/MAVIDOSqcEPICpropSites.png>
-[54]
-File: figs/MAVIDOSqcEPICbeadNum.png Graphic file (type bmp)
-<figs/MAVIDOSqcEPICbeadNum.png>
-[55]
-File: figs/MAVIDOSqc450ksexMismatch.png Graphic file (type bmp)
-<figs/MAVIDOSqc450ksexMismatch.png>
-[56]
-File: figs/MAVIDOSqc450kmethVsUnmeth.png Graphic file (type bmp)
-<figs/MAVIDOSqc450kmethVsUnmeth.png>
-[57]
-File: figs/MAVIDOSqc450kpropSites.png Graphic file (type bmp)
-<figs/MAVIDOSqc450kpropSites.png>
-[58]
-File: figs/MAVIDOSqc450kbeadNum.png Graphic file (type bmp)
-<figs/MAVIDOSqc450kbeadNum.png>
-[59]
-File: figs/MAVIDOSqcEPICctrlProbes.png Graphic file (type bmp)
-<figs/MAVIDOSqcEPICctrlProbes.png>
-[60]
-Overfull \vbox (36.02695pt too high) has occurred while \output is active []
-
-[61]
-File: figs/MAVIDOSqcEPICpropSamples.png Graphic file (type bmp)
-<figs/MAVIDOSqcEPICpropSamples.png>
-File: figs/MAVIDOSqcEPICbeadNumAcross.png Graphic file (type bmp)
-<figs/MAVIDOSqcEPICbeadNumAcross.png>
-[62] [63]
-File: figs/MAVIDOSgaphunterEgMonApr162018.png Graphic file (type bmp)
-<figs/MAVIDOSgaphunterEgMonApr162018.png>
-File: figs/MAVIDOSqc450kctrlProbes.png Graphic file (type bmp)
-<figs/MAVIDOSqc450kctrlProbes.png>
-[64]
-Overfull \vbox (36.02695pt too high) has occurred while \output is active []
-
-[65]
-File: figs/MAVIDOSqc450kpropSamples.png Graphic file (type bmp)
-<figs/MAVIDOSqc450kpropSamples.png>
-File: figs/MAVIDOSqc450kbeadNumAcross.png Graphic file (type bmp)
-<figs/MAVIDOSqc450kbeadNumAcross.png>
-[66] [67]
-File: figs/MAVIDOSfunnormPCsEPICMonApr162018.png Graphic file (type bmp)
-<figs/MAVIDOSfunnormPCsEPICMonApr162018.png>
-File: figs/MAVIDOSfunnormPCs450kMonApr162018.png Graphic file (type bmp)
-<figs/MAVIDOSfunnormPCs450kMonApr162018.png>
-[68]
-File: figs/IntrinsicVsExtrinsicDNAmChangeGeneral.png Graphic file (type bmp)
-<figs/IntrinsicVsExtrinsicDNAmChangeGeneral.png>
-[69] [70]
-File: figs/MAVIDOSbmcEPICewasManhattanSVA.png Graphic file (type bmp)
-<figs/MAVIDOSbmcEPICewasManhattanSVA.png>
-File: figs/MAVIDOSccEPICewasManhattanSVA.png Graphic file (type bmp)
-<figs/MAVIDOSccEPICewasManhattanSVA.png>
-[71]
-File: figs/MAVIDOSvitDviolinMonApr162018.png Graphic file (type bmp)
-<figs/MAVIDOSvitDviolinMonApr162018.png>
-[72]
-File: figs/MAVIDOSmVitD34EPICewasManhattanSVA.png Graphic file (type bmp)
-<figs/MAVIDOSmVitD34EPICewasManhattanSVA.png>
-File: figs/MAVIDOSdifVDEPICewasManhattanSVA.png Graphic file (type bmp)
-<figs/MAVIDOSdifVDEPICewasManhattanSVA.png>
-[73]
-File: figs/EPIC450kEWASconcordMAVIDOSMonApr162018.png Graphic file (type bmp)
-<figs/EPIC450kEWASconcordMAVIDOSMonApr162018.png>
-[74]
-File: figs/EPIC450kEWASconcordMAVIDOSMonApr162018zoom.png Graphic file (type bm
-p)
-<figs/EPIC450kEWASconcordMAVIDOSMonApr162018zoom.png>
-[75] [76] [77] [78
-
-] [79] [80]
-Chapter 4.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1204--1205
-\OML/lmm/m/it/10 JordanaBell[]$\TU/lmr/m/n/10 , $\OML/lmm/m/it/10 KarenLillycro
-p[]$\TU/lmr/m/n/10 , $\OML/lmm/m/it/10 JunWang[]$\TU/lmr/m/n/10 , $\OML/lmm/m/i
-t/10 ElaineDennison[]$\TU/lmr/m/n/10 , $\OML/lmm/m/it/10 NicholasHarvey[]$\TU/l
-mr/m/n/10 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1214--1216
-
- []
-
-File: figs/biorxiv_screenshot.png Graphic file (type bmp)
-<figs/biorxiv_screenshot.png>
-[81
-
-] [82] [83] [84] [85] [86] [87] [88] [89]
-File: ./figs/mappability-iMet1.png Graphic file (type bmp)
-<./figs/mappability-iMet1.png>
-File: ./figs/mappabilityScoreDensity_tRNAVsFlank500.png Graphic file (type bmp)
-
-<./figs/mappabilityScoreDensity_tRNAVsFlank500.png>
-[90]
-File: figs/CpGcountBGvstRNAPlot.png Graphic file (type bmp)
-<figs/CpGcountBGvstRNAPlot.png>
-[91]
-File: ./figs/meanMethbytRNAMatHeatmapLow_bl.png Graphic file (type bmp)
-<./figs/meanMethbytRNAMatHeatmapLow_bl.png>
-[92]
-File: ./figs/cancerVsNormalCombinedPlots.png Graphic file (type bmp)
-<./figs/cancerVsNormalCombinedPlots.png>
-[93]
-File: ./figs/meanBetasByTissueTNMpseudoSplitHeatmap.png Graphic file (type bmp)
-
-<./figs/meanBetasByTissueTNMpseudoSplitHeatmap.png>
-[94]
-File: ./figs/meanMethBytRNAByFetalTissueHeatmapPseudosplit.png Graphic file (ty
-pe bmp)
-<./figs/meanMethBytRNAByFetalTissueHeatmapPseudosplit.png>
-[95]
-File: ./figs/combinedFragSizeDists.png Graphic file (type bmp)
-<./figs/combinedFragSizeDists.png>
-[96] [97]
-File: figs/OverviewOfAnalysesFigure_tRNA_3.png Graphic file (type bmp)
-<figs/OverviewOfAnalysesFigure_tRNA_3.png>
-[98]
-File: figs/kutteresq_BLcount.png Graphic file (type bmp)
-<figs/kutteresq_BLcount.png>
-[99]
-File: ./figs/nSigWinProps_WGfishers_BB_sws_hyper_2_BL_noPolyBivExcl_BarTxtast_s
-r.png Graphic file (type bmp)
-<./figs/nSigWinProps_WGfishers_BB_sws_hyper_2_BL_noPolyBivExcl_BarTxtast_sr.png
->
-File: figs/tRNA-poly-bivP_n1000_combined_perm_hist.png Graphic file (type bmp)
-<figs/tRNA-poly-bivP_n1000_combined_perm_hist.png>
-[100]
-File: figs/tRNA_circos_test_inkscape_4.png Graphic file (type bmp)
-<figs/tRNA_circos_test_inkscape_4.png>
-[101] [102]
-File: ./figs/heynViolinBBswsOnlyLabelled_BL.png Graphic file (type bmp)
-<./figs/heynViolinBBswsOnlyLabelled_BL.png>
-File: ./figs/DNAmAgeVsChronAge.png Graphic file (type bmp)
-<./figs/DNAmAgeVsChronAge.png>
-[103]
-File: ./figs/tRNA-iMet-CAT-1-4_nomSig_CpG.png Graphic file (type bmp)
-<./figs/tRNA-iMet-CAT-1-4_nomSig_CpG.png>
-[104] [105]
-File: ./figs/combinedKaryoplots_sig_bl.png Graphic file (type bmp)
-<./figs/combinedKaryoplots_sig_bl.png>
-[106]
-File: ./figs/blood_epitwins450k_Counts_sws_bl_zhou.png Graphic file (type bmp)
-<./figs/blood_epitwins450k_Counts_sws_bl_zhou.png>
-[107]
-File: ./figs/maxScoreBytRNAtRNAge6SplitPlot_BL.png Graphic file (type bmp)
-<./figs/maxScoreBytRNAtRNAge6SplitPlot_BL.png>
-[108]
-File: ./figs/meanMethbytRNAMatLowBB6_bl.png Graphic file (type bmp)
-<./figs/meanMethbytRNAMatLowBB6_bl.png>
-[109] [110]
-File: ./figs/nonSigIsoMapbbswsPlotsGln-CTG.png Graphic file (type bmp)
-<./figs/nonSigIsoMapbbswsPlotsGln-CTG.png>
-[111]
-File: ./figs/CpGPlotComb.png Graphic file (type bmp)
-<./figs/CpGPlotComb.png>
-[112] [113] [114] [115] [116] [117
-
-] [118]
-Chapter 5.
-[119
-
-] [120
-
-]
-Chapter 6.
-[121] [122]
-Chapter 7.
-[123
-
-] [124
-
-]
-Chapter 8.
-[125] [126]
-Chapter 9.
-[127
-
-] [128
-
-]
-Chapter 10.
-[129] [130]
-Chapter 11.
-(./thesis.bbl [131
-
-] [132
-
-] [133] [134] [135] [136] [137] [138] [139] [140] [141] [142] [143] [144] [145]
-[146] [147] [148] [149] [150] [151] [152] [153] [154]
-Underfull \hbox (badness 10000) in paragraph at lines 2801--2809
-[] [] [][][][][] [] [][][][][][] [] [][] [] [][] [] [][][][][] [] [][][][][] []
- [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2801--2809
-[][][][] [] [][] [] [][][][][][][][][][][][][][][][] [] [] [] [][][][][][][][] 
-[] [][][][][] [] [][][] [] [][][][][][][] [] [][] [] [][] [] [][][][][] [] [][]
-[][][][][][][][][][][] []
- []
-
-[155] [156]
-Underfull \hbox (badness 1442) in paragraph at lines 3029--3039
-\TU/lmr/m/n/10 Susan J. Clark, and Clare Stirzaker.  Comprehensive evaluation o
-f genome-wide 5-
- []
-
-[157] [158] [159] [160] [161])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2334.
-[162]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2334.
-(./thesis.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2334.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2334.
-
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 2B3773582708A7F50EACE16A62ECAFEC;3647.
- ) 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78 \usepackage
+                {array} % 
 Here is how much of TeX's memory you used:
- 27482 strings out of 494465
- 524839 string characters out of 6172852
- 709902 words of memory out of 5000000
- 31455 multiletter control sequences out of 15000+600000
- 545065 words of font info for 55 fonts, out of 8000000 for 9000
+ 17163 strings out of 481793
+ 304499 string characters out of 5936266
+ 715313 words of memory out of 5000000
+ 34011 multiletter control sequences out of 15000+600000
+ 532820 words of font info for 28 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 52i,12n,58p,2570b,1046s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,0n,45p,900b,270s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (162 pages).
+No pages of output.

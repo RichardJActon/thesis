@@ -10,9 +10,43 @@ Aims:
 	a. The tRNA genes, following up on the previous finding of age-related DNA hypermethylation at tRNA-iMet-CAT-1-4 [@Bell2016]. tRNA genes have a core role in cellular metabolism, many emerging regulatory functions both structural and as signalling molecules. tRNA genes also interface with many systems the modulation of which impact longevity, making any age-related changes in their epigenetic state potentially very consequential.
 	b. Alu repeat elements, a primate specific family of SINEs present in over 1 million copies in the human genome. We aim to construct a DNA methylation clock using only these elements. We reason that age acceleration based on this clock will yield different information about biological ageing than from previous clocks as the effects of DNA methylation changes differ between repressed repetitive elements and regulatory sequences. 
 
-2. Identify epigenetic associations with bone health outcomes and of vitamin D supplementation during pregnancy as an intervention to improve bone outcomes [@Harvey2012a; @Cooper2016]. Provide some ground work for mechanistic studies to extend understanding what systems influence influence bone health by identifying what genomic features change epigenetically with bone traits and interventions intented to affect these traits.
+2. Identify epigenetic associations with bone health outcomes and of vitamin D supplementation during pregnancy as an intervention to improve bone outcomes [@Harvey2012a; @Cooper2016]. Provide some ground work for mechanistic studies to extend understanding what systems influence bone health by identifying what genomic features change epigenetically with bone traits and interventions intented to affect these traits.
 
-# Ageing ... poplation
+# The Ageing Poplation and Burden of Disease
+
+The global population is ageing as is evident from the changeing shape of the world population pryamid (figure \@ref(fig:poppyramid)). The increase in average lifespan underlying this demographics shift is projected to continue in industrialised nations with a probability of >65% for woman and 85% for men [@Kontis2017] (figure \@ref(fig:Kontis2017-fig1)). Ageing is the main risk factor for cancer, cariovascular and neurodegerative diseases [@Niccoli2012]. Furthermore, morality from these conditions increases according to a logistic function with age (figure \@ref(fig:Belikov2019-fig1)) [@Belikov2019]. In addition to the noninfectious diseases, immunosenescene and frailty in old age contribute to an increased morality from infectious diseases, as figure \@ref(fig:Fleming2005-fig3) illustrates hospital admissions and deaths for respiratoiry disease during seasonal flu epidemics are dramatically higher in over 75s. Ageing is a common underlying risk factor for many conditions and as this would lead one to expect the number of concomitant disorders and the perportion of persons with multiple morbidities increases with age (figure \@ref(fig:Barnett2012-fig1)) [@Barnett2012].
+
+
+```{r poppyramid, fig.cap='(ref:poppyramid-cap)', echo=FALSE}
+knitr::include_graphics("figs/population-pryamids-1950-2019.png")
+```
+
+(ref:poppyramid-cap) Population pryamids for global population for A) 1950 and B) 2019 from [populationpyramid.net](populationpyramid.net)
+
+```{r Kontis2017-fig1, fig.cap='(ref:Kontis2017-fig1-cap)', echo=FALSE}
+knitr::include_graphics("figs/Kontis2017_fig1.jpg")
+```
+
+(ref:Kontis2017-fig1-cap) Median projected increase in life expectancy from birth in the period 2010 to 2030 for 35 industrial nations reproduced from Kontis et al. 2017 figure 1 [@Kontis2017].
+
+```{r Belikov2019-fig1, fig.cap='(ref:Belikov2019-fig1-cap)', echo=FALSE}
+knitr::include_graphics("figs/Belikov2019_fig1.jpg")
+```
+
+(ref:Belikov2019-fig1-cap)  reproduced from Belikov 2019 figure 1 [@Belikov2019].
+
+
+```{r Fleming2005-fig3, fig.cap='(ref:Fleming2005-fig3-cap)', echo=FALSE}
+knitr::include_graphics("figs/Fleming2005_fig3.jpg")
+```
+
+(ref:Fleming2005-fig3-cap) Median projected increase in life expectancy from birth in the period 2010 to 2030 for 35 industrial nations reproduced from Flemming et al. 2005 figure 3 [@Fleming2005].
+
+```{r Barnett2012-fig1, fig.cap='(ref:Barnett2012-fig1-cap)', echo=FALSE}
+knitr::include_graphics("figs/Barnett2012_fig1.jpg")
+```
+
+(ref:Barnett2012-fig1-cap) ... reproduced from Barnett et al. 2012 figure 1 [@Barnett2012].
 
 - ageing population trends / disease burden
   - @Niccoli2012 - disease risk factor - fig 1
@@ -30,7 +64,7 @@ Aims:
 
 ## Epigenomics - Overview
 
-Epigenetics generally refers to modifications to DNA and chromatin which do not affect the primary sequence of DNA bases, but which are to varying degrees stable and heritable. The term derives from epigenesis and genetics originating with Conrad Waddington [@Waddington1942]. Epigenesis refers to the idea that organisms develop through the progressive differentiation of cells from the egg into adult tissues. As modern genetics revealed that every cell contained a complete copy of the genome which was differentially utilised by the cells of adult organisms, the terms were fused to reflect the study of how this occurs. The usage has evolved a little further since molecular biology began to elucidate the mechanisms involved in this process and the term now frequently refers to the study of these mechanisms and their effects in less explicitly developmental contexts. Arthur Riggs et al. considered that heritability should be a criterion for a mark to be considered epigenetic, but this excludes many phenomena now commonly referred to using the term [@Russo1996]. Requiring heritability results in a further definitional dispute over degrees of heritability; mitotic, meiotic, transgenerational and to what degree of fidelity? Adrian Bird proposed the definition: "the structural adaptation of chromosomal regions so as to register, signal or perpetuate altered activity states." as a useful compromise [@Bird2007]. Epigenomics refers to the totality of the epigenetic modifications present in a particular cell, tissue type or genome.
+Epigenetics generally refers to modifications to DNA and chromatin which do not affect the primary sequence of DNA bases, but which are to varying degrees stable and heritable. The term derives from epigenesis and genetics originating with Conrad Waddington [@Waddington1942]. Epigenesis refers to the idea that organisms develop through the progressive differentiation of cells from the egg into adult tissues. As modern genetics revealed that every cell contained a complete copy of the genome which was differentially utilised by the cells of adult organisms, the terms were fused to reflect the study of how this occurs. The usage has evolved a little further since molecular biology began to elucidate the mechanisms involved in this process and the term now frequently refers to the study of these mechanisms and their effects in less explicitly developmental contexts. Arthur Riggs et al. considered that heritability should be a criterion for a mark to be considered epigenetic, but this excludes many phenomena now commonly referred to using the term [@Russo1996]. Requiring heritability results in a further definitional dispute over degrees of heritability; mitotic, meiotic, transgenerational and to what degree of fidelity? Adrian Bird proposed the definition: "the structural adaptation of chromosomal regions so as to register, signal or perpetuate altered activity states." as a useful compromise [@Bird2007]. Epigenomics refers to the totality of the epigenetic modifications present in a particular cell, tissue type or genome. This defintition appears to have caught on with at least some as: 'These days, "epigenetics" more generally refers to all non-genomic information storage in cells including gene networks, chromatin structure and post-translational modifications to histones.', according to Alice Kane and David Sinclair [@Kane2019].
 
 Whilst an organism can generally be thought of as having a single genome, with exceptions such as Somatic mutations and Chimerism, it will have at least as many epigenomes as it has cells types. There are on the order of $10^{13}$ cells in the human body [@Bianconi2013]. Estimates of the number of cell types vary with resolution at which one deems cells functionally distinct [@HumanCellAtlas]. At this point in time, however, there is no clear definition of what constitutes a distinct cell type, indeed they are beginning to be defined by the distinct patterns of gene expression and epigenetic modifications they exhibit [@CellSystemsCellType2017]. Consequently, the number epigenomes that could be considered distinct will likely ultimately approximate to the number of epigenomes which can usefully distinguish between sub-populations of cells. A consortium has been established to produce a [Human Cell Atlas](www.humancellatlas.org) [@Regev2017] which aims to define all human cell types, and a cell type ontology [@CellOntologyOBO] exists.
 
