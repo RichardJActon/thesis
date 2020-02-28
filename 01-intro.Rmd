@@ -14,44 +14,42 @@ Aims:
 
 # The Ageing Poplation and Burden of Disease
 
-The global population is ageing as is evident from the changeing shape of the world population pryamid (figure \@ref(fig:poppyramid)). The increase in average lifespan underlying this demographics shift is projected to continue in industrialised nations with a probability of >65% for woman and 85% for men [@Kontis2017] (figure \@ref(fig:Kontis2017-fig1)). Ageing is the main risk factor for cancer, cariovascular and neurodegerative diseases [@Niccoli2012]. Furthermore, morality from these conditions increases according to a logistic function with age (figure \@ref(fig:Belikov2019-fig1)) [@Belikov2019]. In addition to the noninfectious diseases, immunosenescene and frailty in old age contribute to an increased morality from infectious diseases, as figure \@ref(fig:Fleming2005-fig3) illustrates hospital admissions and deaths for respiratoiry disease during seasonal flu epidemics are dramatically higher in over 75s. Ageing is a common underlying risk factor for many conditions and as this would lead one to expect the number of concomitant disorders and the perportion of persons with multiple morbidities increases with age (figure \@ref(fig:Barnett2012-fig1)) [@Barnett2012].
+The global population is ageing as is evident from the changing shape of the world population pryamid (figure \@ref(fig:poppyramid)). The increase in average lifespan underlying this demographic shift is projected to continue in industrialised nations with a probability of >65% for woman and 85% for men [@Kontis2017] (figure \@ref(fig:Kontis2017-fig1)). Ageing is the main risk factor for cancer, cardiovascular, neurodegerative diseases, and many other conditions including osteoarthritis [@Niccoli2012]. Furthermore, morality from these conditions increases according to a logistic function with age [@Belikov2019] (figure \@ref(fig:Belikov2019-fig1)). In addition to the non-infectious diseases, immunosenescene and frailty in old age contribute to an increased morality from infectious diseases, as exemplified by dramatically higher hospital admissions and deaths for respiratory disease during seasonal flu epidemics in the over 75s [@Fleming2005] (figure \@ref(fig:Fleming2005-fig3)). Ageing is a common underlying risk factor for many conditions and as this would lead one to expect the number of concomitant disorders and the proportion of persons with multiple morbidities increases with age [@Barnett2012] (figure \@ref(fig:Barnett2012-fig1)). 
 
 
-```{r poppyramid, fig.cap='(ref:poppyramid-cap)', echo=FALSE}
+```{r poppyramid, fig.cap='(ref:poppyramid-cap)', out.width='95%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/population-pryamids-1950-2019.png")
 ```
 
-(ref:poppyramid-cap) Population pryamids for global population for A) 1950 and B) 2019 from [populationpyramid.net](populationpyramid.net)
+(ref:poppyramid-cap) __The Population is Getting Older__ Population pryamids for global population for A) 1950 and B) 2019 from [populationpyramid.net](populationpyramid.net)
 
-```{r Kontis2017-fig1, fig.cap='(ref:Kontis2017-fig1-cap)', echo=FALSE}
+```{r Kontis2017-fig1, fig.cap='(ref:Kontis2017-fig1-cap)', out.width='95%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/Kontis2017_fig1.jpg")
 ```
 
-(ref:Kontis2017-fig1-cap) Median projected increase in life expectancy from birth in the period 2010 to 2030 for 35 industrial nations reproduced from Kontis et al. 2017 figure 1 [@Kontis2017].
+(ref:Kontis2017-fig1-cap) __The Population is Likely to Continue Getting Older__ Median projected increase in life expectancy from birth in the period 2010 to 2030 for 35 industrial nations reproduced from Kontis et al. 2017 figure 1 [@Kontis2017].
 
-```{r Belikov2019-fig1, fig.cap='(ref:Belikov2019-fig1-cap)', echo=FALSE}
+```{r Belikov2019-fig1, fig.cap='(ref:Belikov2019-fig1-cap)', out.width='80%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/Belikov2019_fig1.jpg")
 ```
 
-(ref:Belikov2019-fig1-cap)  reproduced from Belikov 2019 figure 1 [@Belikov2019].
+(ref:Belikov2019-fig1-cap) __Mortality from Age-Related Conditions Increases According to a Logistic Function with Age__ Morality rate in deaths per 100,000 at different ages for Atherosclerosis, Essential Hypertenstion, Insulin-dependent diabetes, Non-insulin-dependent diabetes, Alzheimer's disease, and Parkinson's disease. Showing Model fits for exponential, logistic and the sum of 2 logistic functions. Underlying Cause of Death data (1999-2015) were form the Centers for Disease Control and Prevention Wide-ranging OnLine Data for Epidemiologic Research (CDC WONDER) database. Reproduced from Belikov 2019 figure 1 [@Belikov2019].
 
-
-```{r Fleming2005-fig3, fig.cap='(ref:Fleming2005-fig3-cap)', echo=FALSE}
+```{r Fleming2005-fig3, fig.cap='(ref:Fleming2005-fig3-cap)', out.width='80%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/Fleming2005_fig3.jpg")
 ```
 
-(ref:Fleming2005-fig3-cap) Median projected increase in life expectancy from birth in the period 2010 to 2030 for 35 industrial nations reproduced from Flemming et al. 2005 figure 3 [@Fleming2005].
+(ref:Fleming2005-fig3-cap) __Mortality from Non-infectious Diseases Increases With Age__ Visits to  General practitioners, hospital admissions and deaths from respiratory disease in persons aged: (a) 45-64, (b) 65-74 and (c) 75 years and over. Reproduced from Fleming et al. 2005 figure 3 [@Fleming2005].
 
-```{r Barnett2012-fig1, fig.cap='(ref:Barnett2012-fig1-cap)', echo=FALSE}
+```{r Barnett2012-fig1, fig.cap='(ref:Barnett2012-fig1-cap)', out.width='80%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/Barnett2012_fig1.jpg")
 ```
 
-(ref:Barnett2012-fig1-cap) ... reproduced from Barnett et al. 2012 figure 1 [@Barnett2012].
+(ref:Barnett2012-fig1-cap) __Number and Frequency of Comorbidities increases with Age__ Number of chronic disorders by age group. reproduced from Barnett et al. 2012 figure 1 [@Barnett2012].
 
-- ageing population trends / disease burden
-  - @Niccoli2012 - disease risk factor - fig 1
-  - @Barnett2012 - multimorbidity - fig 1
-  - @Kontis2017 - life expectancy increases fig 1
+? compression of morbidity, rectangularisation?
+
+- economics [@Goldman2016]
 
 - epigenomics ageing links
   - @Sinclair2009
@@ -182,6 +180,8 @@ knitr::include_graphics("figs/Zhao2014_fig3_a+b.png")
 (ref:Zhao2014fig3ab-Cap) Bimodal Distribution of DNA methylation level and fidelity.
 Methylation fidelity exhibits a bimodal distribution with most and least methylated regions exhibiting the highest fidelity. Additionally, fidelity for methylation levels of 10-50% is considerably better than fidelity for levels of 50-90%. These data are from the mouse cell line ES-E14TG2a which is capable of self-renewal when cultured with Leukaemia Inhibitory Factor (LIF) and spontaneous differentiation upon removal of LIF (denoted as E14-d0 at day 0 and E14-d6 at day 6 after the withdrawal of LIF, respectively). Fidelity represents the percentage of symmetrically methylated or unmethylated CpG dyads for a given position as determined by Hairpin-Bisulfite PCR. (Reproduced from @Zhao2014 (figure 3 a and b).)
 
+### === DNA methylation assays 
+
 ## Ageing 
 
 ### Hallmarks
@@ -209,9 +209,9 @@ knitr::include_graphics("figs/Booth2016_F3_epigenomeHubAgingHallmarks_alpha.png"
 
 ### DNA Methylation and Ageing
 
-Early work on DNA methylation and ageing used biochemical, chromatographic and radiolabeling techniques to assay global changes in the amount of 5mC. These studies found differences in 5mC composition with cell type [@Ehrlich1982] but did not see changes with age. Other work around that time however found differences in 5mC levels with the age of cells in culture [@Wilson1983]. Wilson et al. noted that DNA methylation decreased across several tens of generations of cell lines in culture, but not in immortal cell lines. Immortal cell lines had lower absolute levels of 5mC to start with but remained constant over time. Wilson et al. also cite earlier work by @Romanov1981 and @Berdyshev1967 which documented decreases in 5mC with age in cows and salmon, respectively.
+Early work on DNA methylation and ageing used biochemical, chromatographic and radiolabeling techniques to assay global changes in the amount of 5mC. These studies found differences in 5mC composition with cell type [@Ehrlich1982] but did not see changes with age. Other work around that time however found differences in 5mC levels with the age of cells in culture [@Wilson1983]. Wilson et al. noted that DNA methylation decreased across several tens of generations of cell lines in culture, but not in immortal cell lines. Immortal cell lines had lower absolute levels of 5mC to start with but remained constant over time. Wilson et al. also cite earlier work by Romanov at al. 1981 [@Romanov1981] and Berdyshev el al. 1967 [@Berdyshev1967] which documented decreases in 5mC with age in cows and salmon, respectively.
 
-Later work by @Wilson1987 in mice *P. leucopus* and *M. musculus* found decreases in 5mC with age and that the rate of decline was less in the longer-lived *P. leucopus* than in *M. musculus*. Interestingly, a recent study using different methods by Cole et al. found no global differences between young and old mice in short and long-lived strains, however, their other observations would seem to corroborate these initial trends. For the assayed sites long-lived mice exhibited 10x more hypermethylation than wild-type (WT), and WT mice had 3x more Differentially Methylated Regions significantly associated with age (DMRs/aDMRs) than did long-lived mice. Notably, the WT and long-lived mice shared many of the same aDMRs which differed in their degree of methylation as opposed to affecting different sites in the genome [@Cole2017]. The lack of apparent global changes may be due to the biases of the reduced representation bisulfite sequencing (RRBS) method used. RRBS uses a restriction enzyme based approach to enrich for regions with high GC content such as CGIs which tend to have low levels of methylation, and consequently may not be sensitive to loss of methylation in generally hypermethylated regions which could contribute to a global trend [@Meissner2005].
+Later work by Wilson et al. 1987 [@Wilson1987] in mice *P. leucopus* and *M. musculus* found decreases in 5mC with age and that the rate of decline was less in the longer-lived *P. leucopus* than in *M. musculus*. Interestingly, a recent study using different methods by Cole et al. found no global differences between young and old mice in short and long-lived strains, however, their other observations would seem to corroborate these initial trends. For the assayed sites long-lived mice exhibited 10x more hypermethylation than wild-type (WT), and WT mice had 3x more Differentially Methylated Regions significantly associated with age (DMRs/aDMRs) than did long-lived mice. Notably, the WT and long-lived mice shared many of the same aDMRs which differed in their degree of methylation as opposed to affecting different sites in the genome [@Cole2017]. The lack of apparent global changes may be due to the biases of the reduced representation bisulfite sequencing (RRBS) method used. RRBS uses a restriction enzyme based approach to enrich for regions with high GC content such as CGIs which tend to have low levels of methylation, and consequently may not be sensitive to loss of methylation in generally hypermethylated regions which could contribute to a global trend [@Meissner2005].
 
 Wilson et al. also noted that the mitotic index of tissues did not relate to the loss of DNA methylation with age in tension with their earlier observations *in vitro*. The persistent loss of 5mC over time and the dramatic changes in methylation seen in cancer cells lead Wilson et al. to suggest that dysregulation of DNA methylation may have a substantial role to play in the age dependency of cancer risk and ageing more generally, a possibility which has subsequently been further explored by others, reviewed by @Feinberg2004. It has been suggested that "Epimutations" may be able to substitute for mutations in the multi-hit model of carcinogenesis [@Knudson1971]. For example; hypermethylation of the *BRCA1* promoter [@Esteller2000], Or, the development of Wilms’ tumour due to Beckwith–Wiedemann syndrome, a disorder arising from loss of imprinting of the gene encoding insulin-like growth factor 2 (IGF-2) leading to a double dose of IGF-2 protein [@Feinberg2018].
 
