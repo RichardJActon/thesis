@@ -22,6 +22,7 @@ These DNA methylation assays generally exploit one of four following things:
 ```{r BisulfiteConversionNEB, fig.cap='(ref:BisulfiteConversionNEB-Cap)', out.width='80%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/BisulfiteConversionNEB.jpg")
 ```
+
 (ref:BisulfiteConversionNEB-Cap) Sodium Bisulfite conversion of C to U, 5mC and 5hmC are unaffected. (Image Credit New England Biolabs).
 
 4. __Physical differences in the methylated base__
@@ -36,6 +37,7 @@ MeDIP-seq uses a monoclonal anti-5mC antibody to bind denatured fragmented genom
 ```{r MeDIPseqReaction, fig.cap='(ref:MeDIPseqReaction-Cap)', out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/MeDIPseqReaction.png")
 ```
+
 (ref:MeDIPseqReaction-Cap) Graphical Summary of the MeDIP-seq process.
 
 #### Bisulfite Conversion methods
@@ -49,13 +51,10 @@ These arrays have now undergone several iterations [@Bibikova2009,@Bibikova2011,
 ```{r Bibikova2011IlluminaMethylationBeadChip, fig.cap='(ref:Bibikova2011IlluminaMethylationBeadChip-Cap)', out.width='90%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/Bibikova2011IlluminaMethylationBeadChip.png")
 ```
+
 (ref:Bibikova2011IlluminaMethylationBeadChip-Cap) __Illumina Methylation Bead Chip Array Probe Designs__
 The probes on the array are 50bp in length. In the type I probes unlike the type II probes the base that is incorporated (or not) in the elongation step is the base that __follows__ the CpG site. The probes on the array are bound by the amplification products derived from the bisulfite converted DNA not direct conversion products. Thus, Cs in the sample DNA represent methylated positions and Ts unmethylated positions, as Ts take the place of Us create by bisulfite conversion during the aplification process.
-__Type I__: Panel A shows the type I probe design. Each locus is represented on two beads, a methylated and an unmethylated bead.
-*Methylated Sample*: When sample DNA binds a methylated probe the G at the second position in the CpG on the methylated probe will be complementary to the C marking the location of the 5mC. Extension will then be able to occur incorporating a fluorescently labeled base complementary to the base just 5' of the 5mC position in the probe. On the unmethylated probe the C marking the position of the 5mC will not be complementary to the to the A base in the probe and thus extension cannot occur. No fluorescent base will be incorporated at the unmethylated probe. 
-*Unmethylated Sample*: When sample DNA binds the methylated probe the T marking the position of the unmethylated C is not complementary to the G at the second position in the CpG site on the probe. Thus, no fluorescent base is incorporated. Whereas, on the unmethylated probe the T marking the position of the unmethylated C will be complementary to the A at the second position in the CpG site on the probe. Thus, a fluorescently labelled base can be incorporated.
-__Type II__: Panel B shows the Type II probe design. For the Type II probes only one probe represents each locus. In the Type II probes the incorporated base is at the second position in the CpG site. A fluorescently labelled A is always incorporated opposite a T in the sample DNA marking the position of an unmethylated C, and a fluorescently labelled G is always incorporated opposite a C marking the position of an unconverted 5mC in the sample DNA. For the Type II probes, in contrast to the Type I probes, methylation is always signalled in the green channel and unmethylation in the red channel.
-(figure reproduced from [@Bibikova2011].)
+__Type I__: Panel A shows the type I probe design. Each locus is represented on two beads, a methylated and an unmethylated bead. *Methylated Sample*: When sample DNA binds a methylated probe the G at the second position in the CpG on the methylated probe will be complementary to the C marking the location of the 5mC. Extension will then be able to occur incorporating a fluorescently labeled base complementary to the base just 5' of the 5mC position in the probe. On the unmethylated probe the C marking the position of the 5mC will not be complementary to the to the A base in the probe and thus extension cannot occur. No fluorescent base will be incorporated at the unmethylated probe. *Unmethylated Sample*: When sample DNA binds the methylated probe the T marking the position of the unmethylated C is not complementary to the G at the second position in the CpG site on the probe. Thus, no fluorescent base is incorporated. Whereas, on the unmethylated probe the T marking the position of the unmethylated C will be complementary to the A at the second position in the CpG site on the probe. Thus, a fluorescently labelled base can be incorporated. __Type II__: Panel B shows the Type II probe design. For the Type II probes only one probe represents each locus. In the Type II probes the incorporated base is at the second position in the CpG site. A fluorescently labelled A is always incorporated opposite a T in the sample DNA marking the position of an unmethylated C, and a fluorescently labelled G is always incorporated opposite a C marking the position of an unconverted 5mC in the sample DNA. For the Type II probes, in contrast to the Type I probes, methylation is always signalled in the green channel and unmethylation in the red channel. (figure reproduced from [@Bibikova2011].)
 
 Methylation at each site on the array is commonly reported as a $\beta$ value, which correspond to the proportion of the sample DNA which was methylated at that site.
 
@@ -78,6 +77,7 @@ Information theoretic analysis techniques which exploit the correlation of methy
 ```{r Krueger2011BismarkAlignment, fig.cap='(ref:Krueger2011BismarkAlignment-Cap)', out.width='90%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/Krueger2011BismarkAlignment.png")
 ```
+
 (ref:Krueger2011BismarkAlignment-Cap) [@Krueger2011]
 
 ###### Targeted
