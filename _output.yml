@@ -14,4 +14,13 @@ bookdown::pdf_book:
   latex_engine: xelatex
   citation_package: natbib
   keep_tex: yes
+  base_format: rmarkdown::pdf_document
+  pandoc_args:
+    - '--template=pandoc-default-template.tex'
+#table: TRUE
+  #"`r function(){rmarkdown::pdf_document(template ='pandoc-default-template.tex')}`"
+  #base_format: rmarkdown::pdf_document(template =  "pandoc-default-template.tex")
+  # base_format:
+  #   rmarkdown::pdf_document:
+  #     template: pandoc-default-template.tex
 bookdown::epub_book: default
