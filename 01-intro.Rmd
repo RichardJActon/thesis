@@ -182,6 +182,29 @@ Methylation fidelity exhibits a bimodal distribution with most and least methyla
 
 ### === DNA methylation assays 
 
+There are numerous DNA methylation assays. Some are designed to assay global DNAm levels producing a single global measurement of the amount of 5mC present in a sample, others assay DNAm in a manner traceble to a specific genomic locus. These methods can be further subdivided into targeted methods where the loci to be examined are known in advance, and those where the loci covered are quasi-randomly sampled. Both the targeted and untargeted methods vary in their granularity, from individual CpGs to large regions of the genome, on the order of megabases. These assays also vary in their coverage of the genome from locus-specific approaches looking at small numbers of individual loci to whole genome methods providing methylation information on all ~28 million CpG sites. Between these two extremes are 'epigenome-wide' methods which are focused with varying degrees of specificity on genomic regions of interest.
+
+These DNA methylation assays generally exploit one of four following things:
+
+1. __Methylation sensitive restriction digestion__
+    A variety of methods exploit enzymes which differentially cut methylated and unmethylated DNA. An example of such enzymes is: HpaII and MspI which are isoschizomers for the sequence: 5'-C^CGG-3' but only HpaII methylation sensitive and unable to cut the sequence if the internal cytosine is methylated. The methods which use such enzymes include: Restriction landmark genomic scanning, which gives a roughly megabase resolution indicators of DNAm levels by 2D electrophoresis [@Hatada1991]. MRE-seq, which makes use of methylation-sensitive restriction digests to enrich for unmethylated DNA [@Maunakea2010]. This is then is sequenced to provide the genomic location of this unmethylated signal. Reduced Representation Bisulfite Sequencing (RRBS), which uses methylation sensitive restriction digestion to enrich for unmethylated sequences which are then subject to bisulfite sequencing, (see point 3 below).
+
+2. __DNA methylation-sensitive binding of DNA by antibodies or other proteins which bind methylated DNA__
+    Anti-5mC antibodies were first used to isolate methylated DNA in 1985 and were subsequently paired with array-based technologies to assay DNAm levels at specific loci in 2005 [@Weber2005; @Harrison2011]. This was followed by MeDIP-seq (methylated DNA immuno-precipitation and sequencing) [@Down2009; @Lienhard2014], which enriches methylated DNA that is then sequenced and the number of reads mapping to a locus is indicative of the relative methylation level. MBD-seq uses a recombinant Methyl Binding Domain (MBD) protein to enrich for methylated double-stranded DNA, prior to sequencing [@Serre2009a]. Inferring the absolute methylation levels form the number of reads mapping to a locus enriched by one of these pull-down methods is complicated by variation in CpG density in the genome and the fact that CpG dense regions tend to have low methylation levels, and thus tend not be pulled down by antibodies binding 5mC or MBD proteins. The best results for estimating absolute methylation levels with these methods come from pairing them with a complementary method to enrich for unmethylated sites such as MRE-seq (described above) [@Li2015]. Though relative methylation levels remain effective in identifying differentially methylated regions when using these methods alone [@Bock2010; @Maunakea2010].
+
+3. __Sodium bisulfite conversion of unmethylated cytosines to uracil__
+    Conversion of cytosine to uracil changes the base complementary to this site from G to A [@Hayatsu1970]. The basic chemistry of the conversion process is illustrated in Figure \@ref(fig:BisulfiteConversionNEB). This conversion can be detected with a variety of other technologies such as: Targeted bisulfite PCR, to examine a small number of selected loci; The Illumina bead chip methylation arrays; WGBS; and Targeted bisulfite PCR. It can also be preformed on a larger number of loci with microfuidic multiplexing such as that provided by the Fluidigm access array [@Adamowicz2018]. It is worth noting that bisulfite conversion cannot differentiate between methylated and hydroxymethylated cytosines. Because 5hmC represents a small fraction of modified bases compared to 5mC many analyses have made the working assumption that unconverted bases are methylated, but it is beginning to be recognised that distinguishing between the two may be biologically important especially in tissues where 5hmC is more prevalent such as neurons. A variant of bisulfite conversion, oxidative bisulfite conversion, exists which can permit 5hmC to be distinguished from 5mC [@Skvortsova2017]. Additionally New England Biolabs has recently developed an enzymatic alternative to chemical bisulfite conversion [@Williams2019]
+
+```{r BisulfiteConversionNEB, fig.cap='(ref:BisulfiteConversionNEB-Cap)', out.width='80%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("figs/BisulfiteConversionNEB.jpg")
+```
+
+(ref:BisulfiteConversionNEB-Cap) Sodium Bisulfite conversion of C to U, 5mC and 5hmC are unaffected. (Image Credit New England Biolabs).
+
+4. __Physical differences in the methylated base__
+    These are exploited by the not yet widely used '3rd generation' sequencing technologies such as nanopore and single-molecule real-time sequencing. These methods respectively exploit the effects of modified bases on ion flow through the nanopore and impact on incorporation time of new bases whilst in the polymerase [@Rhoads2015; @Simpson2017].
+
+
 ## Ageing 
 
 ### Hallmarks
