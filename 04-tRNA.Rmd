@@ -1,6 +1,4 @@
-# (PART) Results 2 {-}
-
-# The Genomic Loci of Specific Human tRNA Genes Exhibit Ageing-Related DNA Hypermethylation {#tRNApaper}
+# Results 2 - The Genomic Loci of Specific Human tRNA Genes Exhibit Ageing-Related DNA Hypermethylation {#tRNAs}
 
 $Richard J. Acton ^{1,2,3}$, $Wei Yuan ^{4,5}$, $Fei Gao ^{6}$, $Yudong Xia ^{6}$, $Emma Bourne ^{7}$, $Eva Wozniak ^{7}$, $Jordana Bell ^{4}$, $Karen Lillycrop ^{3}$, $Jun Wang ^{6}$, $Elaine Dennison ^{2}$, $Nicholas Harvey ^{2}$, $Charles A. Mein ^{7}$, $Tim D. Spector ^{4}$, $Pirro G. Hysi ^{4}$, $Cyrus Cooper ^{2}$, $Christopher G. Bell ^{1}$
 
@@ -194,14 +192,14 @@ Primer design was performed using 'methPrimer' [@Li2002] ([Supplementary File S2
 A total of 84 tRNA loci were targeted and 79 subsequently generated reliable results post-QC.
 The targeted tRNAs covered a total of 723 CpGs with a median of 8 CpGs per tRNA (range 1-13), data passing QC was generated for 458 CpGs, median 6 (range 1-9) per tRNA.
 
-Quality was assessed before and after read trimming using `fastqc` [@Andrews2010] and `multiqc` [@Ewels2016] to visualise the results.
-Targeting primers were trimmed with `cutadapt` [@Martin2011] and a custom `perl5` script.
-Quality trimming was performed with `trim_galore` [@Krueger2015].
+Initial QC for readcount, base call quality and base composition was caried out with `FastQC` (https://github.com/s-andrews/FastQC) [@Andrews2010] and `multiqc` (https://github.com/ewels/MultiQC) [@Ewels2016] for combined visualisation of QC outputs.
+Quality based trimming was performed with `Trim Galore` (https://github.com/FelixKrueger/TrimGalore) [@Krueger2015] and target specific primer trimming with `cutadapt` (https://github.com/marcelm/cutadapt) [@Martin2011] and custom `perl 5` scripts.
 Alignment and methylation calling was performed with `Bismark` (v0.20.0) [@Krueger2011] making use of `bowtie2` [@Langmead2012].
+
 The alignment was performed against both the whole hg19 genome and just the tRNAome +/- 100bp to assess the possible impact of off-target mapping. Mapping to the whole genome did produce purported methylation calls at a larger number of loci than mapping just to the tRNAome (683,783 vs 45,861 respectively).
 Introducing a minimum coverage threshold of 25 reads dramatically reduced this and brought the number of sites into line with that in the tRNAome set (36,065 vs 33,664 respectively) suggesting a small number of ambiguously mapping reads. All subsequent analysis was performed using the alignment to just the tRNAome with a minimum coverage of 25 reads.
 
-We performed pairwise differential methylation analysis of the tRNA genes at the different time points using `RnBeads` [@Muller2019] with `limma` [@Ritchie2015] and a minimum coverage of 25 reads.
+We performed pairwise differential methylation analysis of the tRNA genes at the different time points using `RnBeads` (https://bioconductor.org/packages/release/bioc/html/RnBeads.html) [@Muller2019] with `limma` [@Ritchie2015] and a minimum coverage of 25 reads.
 We also performed linear regression predicting age from DNA methylation at the targeted tRNA sites, permitting us to compare rates of increase with age.
 For the linear regression, we used only CpG sites with more than 25 reads mapped to the regions of the genome targeted for amplification.
 
@@ -726,7 +724,7 @@ A targeted BiS-seq experiment validated the defined nature of the tRNA change in
 Additionally, we gained support for our results from limited DNA methylation array data. 
 
 We subsequently explored further what was driving this age-related phenomenon and its possible biological implications. 
-As this result was observed in peripheral blood, we were well aware that we were examining DNA derived from a heterogeneous cell type population [@Lappalainen2017a].
+As this result was observed in peripheral blood, we were well aware that we were examining DNA derived from a heterogeneous cell type population [@Lappalainen2017].
 Moreover, that there are well known age-related proportional changes in peripheral blood cell composition [@Geiger2013]. 
 The TwinsUK MeDIP-seq and 450k array DNA methylation data included measured haematological values. 
 Therefore, we adjusted for major cell type effects, such as a myeloid skew, and distinct tRNAs were still significant.

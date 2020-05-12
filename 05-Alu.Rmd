@@ -1,8 +1,8 @@
-# (PART) Results 3 {-}
+# Results 3 -
 
-# Abstract 
+## Abstract 
 
-# Introduction {#AluIntro}
+## Introduction {#AluIntro}
 
 Age is a significant risk factor across the breadth of chronic diseases, including cardiovascular, obesity-related, ophthalmic, musculoskeletal and neurological disorders [@Partridge2018].
 The molecular changes that occur with age include alterations to the epigenome [@Booth2016] – the chemical modifications and packaging of the genome that indicate or facilitate cell-specific activity [@Bird2007].
@@ -39,9 +39,9 @@ In this study we set about to identify and explore age-related DNA methylation c
 These results may reveal mechanisms involved in controlling the epigenetic state of this large portion of the genome.
 Finally, we interrogated these genetic associations for any potential connection with common age-related diseases through PheWAS in the UKBiobank dataset [@Bycroft2017].
 
-# Methods
+## Methods
 
-# Results
+## Results
 
 Age-related DNA methylation changes in Alu Elements
 
@@ -62,11 +62,11 @@ Study Design - Figure 1
 - Enrichment Analysis - GREAT [@McLean2010]
 - ?Association with GWAS disease loci
 
-## Alu-element specific DNA methylation Clock
+### Alu-element specific DNA methylation Clock
 
 - Elastic net regression with R package glmnet [@Friedman2010], [@Engebretsen2019]
 
-## Comparison of Alu-Clock with Array-derived DNA methylation Clocks
+### Comparison of Alu-Clock with Array-derived DNA methylation Clocks
 
 - Compared with
 	- Horvath [@Horvath2013] ,
@@ -76,12 +76,12 @@ Study Design - Figure 1
 	- EpiTOC [@Yang2016]
 	- ?Remethylation Window [@Zhou2018]
 
-## Genetic Association for Alu-Clock calculated Age Acceleration
+### Genetic Association for Alu-Clock calculated Age Acceleration
 
 - We performed a GWAS on Age-acceleration similar to Lu et al. 42 calculated in a separate dataset used to construct the Alu-clock
 - Genome-wide significant & nominally significant results 
 
-## Disease Association with these Variants / Enrichment for Age-Related Diseases
+### Disease Association with these Variants / Enrichment for Age-Related Diseases
 
 - Ageing and genetics shared risk [@Zenin2019]
 - https://www.eurekalert.org/pub_releases/2019-01/g-aac012919.php
@@ -98,13 +98,13 @@ Study Design - Figure 1
 
 \newpage
 
-# Discussion
+## Discussion
 
 \newpage
 
-# Methods
+## Methods
 
-## Participants
+### Participants
 
 Human participants were drawn from the TwinsUK Bioresource. 
 These deeply phenotyped individuals DNA methylomes
@@ -118,30 +118,30 @@ We excluded all known
 Excluded polymorphic Alus [@Payer2017]
 ?Exclude any methylation overlapping STRs
 
-## ?Validation with target BiS-seq
+### ?Validation with target BiS-seq
 
-## Alu element specific DNA methylation Clock
+### Alu element specific DNA methylation Clock
 
-## Comparison with Array-derived Clocks
+### Comparison with Array-derived Clocks
 
-## Genetic Association for Alu-Clock
+### Genetic Association for Alu-Clock
 
-## Association of these variants with Age-related Disease
+### Association of these variants with Age-related Disease
 
-### Data availability
+#### Data availability
 
 The MeDIP-seq data supporting the results of this article are available in the EMBL-EBI European Genome-phenome Archive (EGA) under Data set Accession number EGAD00010000983 (https://www.ebi.ac.uk/ega/datasets/
 EGAD00010000983).
 
-### Code availablity
+#### Code availablity
 
 Available at [GitHub](https://github.com/richardjacton)
 
 \newpage
 
-### Acknowledgements
+#### Acknowledgements
 
-### Author Contributions
+#### Author Contributions
 
 \newpage
 

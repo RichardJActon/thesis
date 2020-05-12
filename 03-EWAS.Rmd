@@ -1,6 +1,4 @@
-# (PART) Results 1 {-}
-
-# Assessment of Umbilical Cord Tissue DNA Methylation with Respect to Bone Health, Environmental Factors and Ageing {#MAVIDOS}
+# Results 1 - Assessment of Umbilical Cord Tissue DNA Methylation with Respect to Bone Health, Environmental Factors and Ageing {#arrays}
 
 ## Abstract
 

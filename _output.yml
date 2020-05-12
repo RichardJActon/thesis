@@ -12,15 +12,10 @@ bookdown::pdf_book:
   includes:
     in_header: preamble.tex
   latex_engine: xelatex
-  citation_package: natbib
+  citation_package: none #natbib
   keep_tex: yes
   base_format: rmarkdown::pdf_document
   pandoc_args:
     - '--template=pandoc-default-template.tex'
-#table: TRUE
-  #"`r function(){rmarkdown::pdf_document(template ='pandoc-default-template.tex')}`"
-  #base_format: rmarkdown::pdf_document(template =  "pandoc-default-template.tex")
-  # base_format:
-  #   rmarkdown::pdf_document:
-  #     template: pandoc-default-template.tex
+    - '--csl=genomebiology.csl'
 bookdown::epub_book: default

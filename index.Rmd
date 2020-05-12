@@ -1,14 +1,14 @@
 --- 
 title: "The Epigenomics of Human Ageing"
-author: "Richard J.Acton"
+author: "Richard J. Acton"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
+link-citations: yes
+linkcolor: blue
+linestretch: 1.5
 documentclass: book
 bibliography: "`r normalizePath('~/Documents/bibtex/library.bib')`"
-biblio-style: 
-csl: "`r normalizePath('~/Documents/bibtex/genomebiology.csl')`"
-link-citations: yes
 github-repo: 
 description: "PhD Thesis"
 subtitle: |
@@ -20,8 +20,6 @@ subtitle: |
 ---
 
 # Abstract {-}
-
-Aims:
 
 ...
 
