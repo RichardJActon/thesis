@@ -1,12 +1,20 @@
 # Methods
 
-## Illumina Methylation arrays
+## Illumina DNA Methylation arrays
 
-The Illumina methylation bead chip arrays make use of 50 bp long probes with sequences corresponding to the loci of interest in the genome, with an additional 23 base sequence for positional addressing on the array.
-These probes are attached by their 5' ends to beads which are stuck to the surface of a glass slide, several beads represent each locus at a single spot on the slide.
-The positions of the bead spots are known and used to identify the probes.
+The Illumina methylation bead chip arrays make use of 50 bp long probes with sequences corresponding to the loci of interest in the genome, with an additional 23 base sequence for positional addressing on the array [@Bibikova2006; @Bibikova2009; @Bibikova2011; @Moran2015].
 The CpG of interest is located at the 3' end of the probes.
+These probes are attached by their 5' ends to $3\mu m$ diameter silica beads which are embedded in indentations acid etched into the surface of planar silica slides.
+Each locus is represented by an average of ~30 beads and a minimum of ~5 beads which are distributed randomly across the slide. 
+The number of beads for a given locus is approximated well by the poisson distribution, so this can be used in conjunction with the number of loci to ensure that the probability of having fewer than 5 beads per locus is kept negligibly small by adjusting the ratio of loci to possible bead sites.
+Thus each BeadChip array has a unique random distribution of probes which must be decoded to yield the mapping between positions on the array a target loci being assayed.
+The positions of the beads are decoded through the sequential hybridisation of fluorescent oligonucleotide probes within the 23 base addressing sequence, with probes for each locus having a unique combination of hybridisation events to identify them [@Gunderson2004; @Michael1998].
+An optical scanner such as Illumina's iScan system with a charge coupled device (CCD) to detect the light and a laser to excite the flourescent dyes is used the read the arrays. 
+There are two fluorophore channels the respective fluorescence intensities of which are are recorded at each spot.
+Initially the probe decoding oligos are used to map the probe locations and then flourescently tagged DNA bases are cycled to assay the DNA methylation as described below.
+
 Samples are prepared for the array assay by fragmentation, bisulfite conversion and amplification.
+bisulfite conversion creates a 'pseudo-SNP' by selectively deaminating unmethylated cytosines to uracil and thus changing their base pairing properties and permitting this technology, originally developed to detect SNPs, to assay DNA methylation [@Bibikova2006].
 These sample fragments anneal to complementary probes on the array and unbound DNA is washed away.
 A single DNA polymerase-mediated elongation step is carried out to permit a fluorescently labelled base to be incorporated at the end of each probe.
 C and G are tagged with one fluorophore and A and T with another.
@@ -15,27 +23,29 @@ There are two probe designs:
 1. The type I probes, which make use of two distinct bead types for each locus.
 2. the type II probes, which make use of a single type of bead at each locus.
 
-A scanner excites the two fluorophore channels with a laser and their respective fluorescence intensities at each spot are recorded with an imaging system.
 The 'colour' of the fluorophore incorporated signifies the methylation state and the intensity of the proportion of sites which are in that state.
 The logic of which 'colour' corresponds to methylated or unmethylated varies with the probe type and Figure \@ref(fig:Bibikova2011IlluminaMethylationBeadChip) illustrates and explains this in-depth.
 
 ```{r Bibikova2011IlluminaMethylationBeadChip, fig.cap='(ref:Bibikova2011IlluminaMethylationBeadChip-Cap)', out.width='60%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/Bibikova2011IlluminaMethylationBeadChip.png")
 ```
-(ref:Bibikova2011IlluminaMethylationBeadChip-Cap) __Illumina Methylation Bead Chip Array Probe Designs__ The probes on the array are 50bp in length. In type I probes, unlike type II probes the base that is incorporated (or not) in the elongation step is the base that __follows__ the CpG site. The probes on the array are bound by the amplification products derived from the bisulfite converted DNA, not direct conversion products. Thus, Cs in the sample DNA represent methylated positions and Ts unmethylated positions, as Ts take the place of Us created by bisulfite conversion during the amplification process. __Type I__: Panel A shows the type I probe design. Each locus is represented on two beads, a methylated and an unmethylated bead. *Methylated Sample*: When sample DNA binds a methylated probe the G at the second position in the CpG on the methylated probe will be complementary to the C marking the location of the 5mC. Extension will then be able to occur incorporating a fluorescently labelled base complementary to the base just 5' of the 5mC position in the probe. On the unmethylated probe, the C marking the position of the 5mC will not be complementary to the A base in the probe and thus extension cannot occur. No fluorescent base will be incorporated at the unmethylated probe. *Unmethylated Sample*: When sample DNA binds the methylated probe the T marking the position of the unmethylated C is not complementary to the G at the second position in the CpG site on the probe. Thus, no fluorescent base is incorporated. Whereas, on the unmethylated probe the T marking the position of the unmethylated C will be complementary to the A at the second position in the CpG site on the probe. Thus, a fluorescently labelled base can be incorporated. __Type II__: Panel B shows the Type II probe design. For the Type II probes only one probe represents each locus. In the Type II probes the incorporated base is at the second position in the CpG site. A fluorescently labelled A is always incorporated opposite a T in the sample DNA marking the position of an unmethylated C, and a fluorescently labelled G is always incorporated opposite a C marking the position of an unconverted 5mC in the sample DNA. For the Type II probes, in contrast to the Type I probes, methylation is always signalled in the green channel and unmethylation in the red channel. (figure reproduced from [@Bibikova2011].)
+(ref:Bibikova2011IlluminaMethylationBeadChip-Cap) __Illumina Methylation Bead Chip Array Probe Designs__ The probes on the array are 50bp in length. In type I probes, unlike type II probes the base that is incorporated (or not) in the elongation step is the base that __follows__ the CpG site. The probes on the array are bound by the amplification products derived from the bisulfite converted DNA, not direct conversion products. Thus, Cs in the sample DNA represent methylated positions and Ts unmethylated positions, as Ts take the place of Us created by bisulfite conversion during the amplification process. __Type I__: Panel A shows the type I probe design. Each locus is represented on two beads, a methylated and an unmethylated bead. *Methylated Sample*: When sample DNA binds a methylated probe the G at the second position in the CpG on the methylated probe will be complementary to the C marking the location of the 5mC. Extension will then be able to occur incorporating a fluorescently labelled base complementary to the base just 5' of the 5mC position in the probe. On the unmethylated probe, the C marking the position of the 5mC will not be complementary to the A base in the probe and thus extension cannot occur. No fluorescent base will be incorporated at the unmethylated probe. *Unmethylated Sample*: When sample DNA binds the methylated probe the T marking the position of the unmethylated C is not complementary to the G at the second position in the CpG site on the probe. Thus, no fluorescent base is incorporated. Whereas, on the unmethylated probe the T marking the position of the unmethylated C will be complementary to the A at the second position in the CpG site on the probe. Thus, a fluorescently labelled base can be incorporated. __Type II__: Panel B shows the Type II probe design. For the Type II probes only one probe represents each locus. In the Type II probes the incorporated base is at the second position in the CpG site. A fluorescently labelled A is always incorporated opposite a T in the sample DNA marking the position of an unmethylated C, and a fluorescently labelled G is always incorporated opposite a C marking the position of an unconverted 5mC in the sample DNA. For the Type II probes, in contrast to the Type I probes, methylation is always signalled in the green channel and unmethylation in the red channel. (figure reproduced from Bibikova et al. [@Bibikova2011].)
 
 These arrays have now undergone several iterations [@Bibikova2009; @Bibikova2011; @Moran2015].
 The current array probe design was preceded by the 'golden gate' array which used a variant on the SNP probe design with methylation-specific PCR, This array contained ~1.5k probes covering 371 genes with a strong focus of cancer-related genes [@Bibikova2006].
 The first array using the probe design outlined above was the 'Infinium' array which contained 27k type I probes focused on the promoter regions for 14,475 consensus coding genes with 110 miRNA promoters [@Bibikova2009].
 The 450k array which had ~480k mixed type I and II probes covering 21,231 RefSeq genes, 26,658 CpG islands, 80,538 predicted enhancer regions and a variety of other features, including the MHC region [@Bibikova2011].
 The 450k array systematically underestimates the methylation level in highly methylated regions [@Clark2012], this may well be because it samples only single sites, and highly methylated regions are often not fully methylated.
-Modelling work by @Affinito2016 suggests that once a threshold level of DNAm is reached in a region further methylation becomes less likely, meaning that sampling a single site is likely to produce a systematic underestimate.
+A Markov chain model of DNA methylation state developed by Affinito et al. [@Affinito2016] suggests that once a threshold level of DNAm is reached on a molecule further methylation becomes less likely.
+They reason that DNMTs recruited by the high methylation state have greater difficulty accessing the remaining unmethylated sites.
+Thus sampling a single site is likely to produce a systematic underestimate as once neighboring sites are methylated methylation at a given CpG is less likely to increase further.
 The 'EPIC' array has ~850k probes including >90% of those on the 450k with greatly expanded coverage of loci with more dynamic methylation states than promoters and CGIs [@Moran2015].
 Promoters and CGIs tend to have relatively low methylation variability and the EPIC array aims to capture more functional methylation variation at regions such as enhancers [@Ziller2013].
 The 'EPIC' array also contains both Type I and Type II probes, with many of the new sites being type II.
 The type I probes have greater dynamic range than the type II but take up twice as much space on the array so there is some trade-off between maximising the number of sites covered and the quality of data at those sites.
 
 Methylation at each site on the array is commonly reported as a $\beta$ value, which corresponds to the proportion of the sample DNA which was methylated at that site.
+This is computed from the intensity values extracted from Illumina's IDAT format files which in the case of the methylation arrays are a binary format which had to be reverse engineered to permit analysis outside of Illumina's 'GenomeStudio' [@Smith2013].
 
 $$\frac{\beta=intensity[M]}{intensity[U] + intensity[M]}$$
 
@@ -49,27 +59,28 @@ This difference means that to operate uniformly on this mixed data a normalisati
 ```{r Dedeurwaerder2011fig1bL, fig.cap='(ref:Dedeurwaerder2011fig1bL-Cap)', out.width='50%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/Dedeurwaerder2011fig1bL.png")
 ```
-(ref:Dedeurwaerder2011fig1bL-Cap) __Type I probes have a wider range and less variability than type II__. Type I probes shown in blue, Type II in red. Plot shows kernel density of beta values with gausian smoothing. (Reproduced from [@Dedeurwaerder2011])
+(ref:Dedeurwaerder2011fig1bL-Cap) __Type I probes have a wider range and less variability than type II__. Type I probes shown in blue, Type II in red. Plot shows kernel density of beta values with gausian smoothing. (Reproduced from Dedeurwaerder et al. [@Dedeurwaerder2011])
 
 There exist a number of normalisation methods to account for probe-type bias [@Fortin2016] such as beta-mixture quantile normalization (BMIQ) [@Teschendorff2013]. 
-This method was applied as a part of the pre-processing of the Twins UK 450k array datasets used in this work [Results 2](#tRNAs). 
-In addition, there are other techniques capable of correcting for probe bias as well as other sources of technical variation such as batch effects.
-Functional normalisation [@Fortin2014] which makes use of the technical control probe data on the arrays to inform its transformation of the DNA methylation values was used to normalise EPIC array data from the MAVIDOS and Southampton Women's Study (SWS) data in this work [Results 1](#arrays).
+This method was applied as a part of the pre-processing of the Twins UK 450k array datasets used in [Chapter 4](#tRNAs) in this thesis. 
+In addition, there are other techniques capable of correcting for probe bias as well as other sources of technical variation such as batch effects [@Leek2010].
+Functional normalisation [@Fortin2014] which makes use of the technical control probe data on the arrays to inform its transformation of the DNA methylation values was used to normalise EPIC array data from the MAVIDOS and Southampton Women's Survey (SWS) data in [Chapter 3](#arrays) of this work.
 
 In addition to probe-type bias, there are other sources of potential problems for individual probes on these arrays [@Pidsley2016].
 Zhou et al. divide these into three categories [@Zhou2017]:
 
 1. Probes with SNPs internal to the probes especially if located near the 3' end.
-  These can cause issues by: a) preventing extension through mismatches near the 3' end.
-  b) Altering the ability of the target cytosine to be methylated through effects on the sequence context, including the case where a C/T polymorphism in place of the C/T bisulfite induced conversion.
-  c) Inducing a colour change in a type I probe by altering the extension base.
+  These can cause issues by: 
+    a) preventing extension through mismatches near the 3' end.
+    b) Altering the ability of the target cytosine to be methylated through effects on the sequence context, including the case where a C/T polymorphism in place of the C/T bisulfite induced conversion.
+    c) Inducing a colour change in a type I probe by altering the extension base.
 2. Probes which map to multiple possible locations in the bisulfite-converted genome. 
   Methylation values form multi-mapping probes are an amalgam of the methylation levels at the different loci to which the probes can map and cannot be disentangled to yield reliable results for the different loci.
 3. Probes with partial off-target matches to other loci.
   Probes with partial matches at the 3' end can lead to extension and an erroneous readout of methylation levels for that locus or partial matches elsewhere can lead to competition for binding with the probe intended for that locus.
 
 To account for these potential problems probe 'masks' have been produced which identify probes which commonly exhibit one or more of these problematic properties so that findings at these loci can be excluded or followed up for validation with other methods [@Zhou2017; @Pidsley2016].
-These masks have been used here to identify potentially problematic probes ([Results 1](#arrays), [Results 2](#tRNAs)).
+These masks have been used here to identify potentially problematic probes.
 
 The presence of a genetic variant which influences the DNA methylation state of a CpG is known as genetic confounding.
 This is not necessarily a problem if genetic effects on a phenotype of interest are a useful outcome but it is an issue if looking for effects mediated purely through epigenetic mechanisms.
@@ -81,28 +92,30 @@ Thus probes in the vicinity of non-SNP mutations should also be subject to addit
 
 ## MeDIP-seq {#MeDIPseq}
 
-MeDIP-seq uses a monoclonal anti-5mC antibody to bind denatured fragmented genomic DNA at methylated CpG sites, this antibody-bound fraction of DNA is isolated and sequenced [@Down2009], Figure \@ref(fig:MeDIPseqReaction) outlines the workflow.
-Unlike bisulfite conversion approaches this method permits 5mC to be differentiated from 5hmC.
+MeDIP-seq uses a monoclonal anti-5mC antibody to bind denatured fragmented genomic DNA at methylated CpG sites. 
+This antibody-bound fraction of DNA is isolated and sequenced [@Down2009], Figure \@ref(fig:MeDIPseqReaction) outlines the workflow.
+Unlike bisulfite conversion approaches this method permits 5mC to be differentiated from 5hmC, as the antibody binds specifically to 5mC.
 The methylation level across the CpG sites in the region of the genome to which the resultant sequencing reads map can subsequently be estimated by counting the number of reads and accounting for the CpG density with software tools such as the `MEDIPS` R package [@Lienhard2014].
 
-MeDIP-seq can also cover much more the methylome than does the 450k array. 
+MeDIP-seq can also cover much more of the methylome than do the 450k or EPIC arrays. 
 The 450k array captures ~1.6% of the 28 million CpGs in the genome. 
 At near saturation coverage of ~40 million reads per sample, MeDIP-seq can cover ~60% of all CpGs with at least 1 read, this is almost all methylated CpGs.
 At half that total read count MeDIP-seq still covers ~50% of CpGs at $\ge1\times$ and ~20% at $\ge5\times$ [@Taiwo2012].
+Other estimates place the threshold for saturation coverage by MeDIP-seq lower at between 20 and 30 million reads and suggest that the maximum number of CpGs covered at least once could extend up to 90% [@Chavez2010].
 MeDIP-seq provide a particular advantage by comparison with the Illumina beadchip array technologies with respect to the coverage it provides for repetitive regions of the genome. 
 This is illustrated by Clark et al. who show that MeDip-seq covers an estimated 91.4% of repetitive sequences and the 450k array only 3.4% [@Clark2012] (Figure \ref{fig:Clark2012fig1}).
-This makes it particularly suited to the aims of this project.
+This makes it particularly suited to the aims of this project (Chapters [4](#tRNAs) & [5](#Alus)).
 
 ```{r Clark2012fig1, fig.cap='(ref:Clark2012fig1-Cap)', out.width='90%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/Clark2012fig1MeDIPseqVs450Kcoverage.png")
 ```
 
-(ref:Clark2012fig1-Cap) MeDIP-seq provides superior coverage of repetitive regions of the genome than the illumina array platform. MD-s = MeDIP-seq, 450k = Illumina 450k DNA methylation bead chip array (Reproduced from [@Clark2012])
+(ref:Clark2012fig1-Cap) MeDIP-seq provides superior coverage of repetitive regions of the genome than the Illumina array platform. MD-s = MeDIP-seq, 450k = Illumina 450k DNA methylation bead chip array (Reproduced from Clark et al. [@Clark2012])
 
 ```{r MeDIPseqReaction, fig.cap='(ref:MeDIPseqReaction-Cap)', out.width='60%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/MeDIPseqReaction.png")
 ```
-(ref:MeDIPseqReaction-Cap) __Graphical Summary of the MeDIP-seq process__ Purified DNA is fragmented by sonication, denatured and incubated with anti-5mC antibodies. Before being immunoprecipitated resulting in fragments containing methylated CpGs which are then sequenced.
+(ref:MeDIPseqReaction-Cap) __Graphical Summary of the MeDIP-seq process__ Purified DNA is fragmented by sonication, denatured and incubated with anti-5mC antibodies. It is then immunoprecipitated resulting in fragments containing methylated CpGs which are subsequently sequenced.
 
 DNA sample preparation, MeDIP reaction, and Illumina sequencing were performed by BGI-Shenzhen (Shenzhen, China).
 Fragmentation of genomic DNA from whole peripheral blood samples from the Twins UK cohort was performed by sonication using a Covaris system (Woburn, MA, USA).
@@ -114,6 +127,7 @@ The product of the MeDIP reaction was purified with Zymo DNA Clean & Concentrato
 Size selection of fragments (200–500 bp) was performed by gel excision and quality assessed by Agilent BioAnalyzer (Agilent Technologies, Santa Clara, CA, USA). 
 The resultant libraries were subjected to highly parallel 50bp single-end sequencing on the Illumina HiSeq2000 platform.
 
+Quality control (QC) and alignment were performed by Twins UK.
 Sequencing data were subject to initial QC for call quality and base composition using `FASTQC` (v0.10.0) (https://github.com/s-andrews/FastQC) [@Andrews2010].
 Duplicates were removed with `SAMTools` (https://github.com/samtools/samtools) [@Li2009b].
 The alignment was performed using the Burrows-Wheeler Aligner (`bwa`) (https://github.com/lh3/bwa) [Li2009] with a minimum mapping quality score of Q10.
@@ -140,12 +154,12 @@ There are 3652 individuals in this data set.
 These individuals originate from 1933 unique families.
 There are 1234 monozygotic (MZ) twin pairs (2468 individuals), and 458 dizygotic (DZ) twin pairs (916 individuals).
 
-The above-described processing steps for Methylated DNA Immunoprecipitation sequencing (MeDIP-seq) data used here have been previously described by Bell et al. [@Bell2016; @Bell2017a].
+The above-described processing steps for Methylated DNA Immunoprecipitation sequencing (MeDIP-seq) data used here have been previously described in Bell et al. [@Bell2016; @Bell2017a].
 These processed data are available, subject to approval, from the European Genome-phenome Archive (EGA) (https://www.ebi.ac.uk/ega) under study number EGAS00001001910 and dataset EGAD00010000983.
 
 ## Targeted Bisulfite sequencing
 
-Targeted Bisulfite sequencing very similar in principle to ordinary targeted DNA sequencing but preceded by a bisulfite conversion step as illustrated in Figure \@ref(fig:BisulfiteConversionNEB) [@Bock2010].
+Targeted Bisulfite sequencing [@Korbie2015] is very similar in principle to ordinary targeted DNA sequencing but preceded by a bisulfite conversion step as illustrated in Figure \@ref(fig:BisulfiteConversionNEB) [@Bock2010].
 However, bisulfite conversion has several implications for downstream processing.
 Bisulfite library prep can be either directional, sequencing reads correspond to a bisulfite-converted version of either the forward or reverse strand, or non-directional in which sequencing reads correspond to bisulfite-converted versions of either strand giving a total of four bisulfite-converted sequences with the strand of origin unknown.
 If a library is directional there are only two bisulfite-converted sequences.
@@ -157,14 +171,14 @@ Alignment is performed with *in silico* bisulfite converted versions of the geno
 This requires four parallel instances of bowtie for forward and reverse G to A and C to T conversions, which are combined to determine the unique best alignment.
 (Figure \@ref(fig:Krueger2011BismarkAlignment) panel A).
 Bisulfite conversion results in loss of sequence complexity as many Cs effectively become Ts meaning short reads can be challenging to map.
-For targeted sequencing approaches it is advisable to align to both the targeted sites and their flanking regions as well as to the whole genome, especially if any of the targeted regions contain repetitive sequences.
+For targeted sequencing approaches it is advisable to align to both the targeted sites and their flanking regions as well as to the whole genome, especially if any of the targeted regions contain repetitive sequences [@Bottcher2012].
 Substantial mapping to areas other than those targeted could be indicative of off-target amplification, this step forms a part of the quality control process.
 `Bismark` produces methylation calls either combined or by strand and which can be filtered by methylation context CpG, CHG or CHH.
 
 ```{r Krueger2011BismarkAlignment, fig.cap='(ref:Krueger2011BismarkAlignment-Cap)', out.width='60%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/Krueger2011BismarkAlignment.png")
 ```
-(ref:Krueger2011BismarkAlignment-Cap) __Bisulfite sequencing alignment process__  (Reproduced from [@Krueger2011])
+(ref:Krueger2011BismarkAlignment-Cap) __Bisulfite sequencing alignment process__  (Reproduced from Krueger et al. [@Krueger2011])
 
 Targeted sequencing methods where the aim is to sequence a number of amplicons ($N_a$) from a number of samples ($N_s$) means the total number of PCR reactions in the pairwise matrix is ($N_a \times N_s$).
 This can rapidly become difficult to manage with conventional bench-top PCR methods especially where consistently between reactions is important for quantitation.

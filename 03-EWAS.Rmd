@@ -4,15 +4,80 @@
 
 Maternal vitamin D levels during pregnancy have previously been shown to impact on the methylation status of specific genes associated with vitamin D signalling and metabolism, such as *RXRA*. 
 Long-term bone health outcomes have also been associated with both maternal vitamin D during pregnancy and methylation of the *CDKN2A* gene. 
-To attempt to identify other loci the epigenetic regulation of which is pertinent to the impact of maternal vitamin D levels on long-term bone health Epigenome-Wide Association Studies (EWAS) were performed with DNA methylation data from the Illumina EPIC & 450k methylation bead chip arrays (n=137 & n=60, respectively). 
+To attempt to identify other loci the epigenetic regulation of which is pertinent to the impact of maternal vitamin D levels on long-term bone health Epigenome-Wide Association Studies (EWAS) were performed with DNA methylation data from the Illumina EPIC & 450k methylation bead chip arrays
+
+(n=137 & n=60, respectively).
+
 The impact of intervention vs placebo status in a trial of vitamin D supplementation in pregnancy, neonatal bone mineral content, Maternal Vitamin D levels (34wks) and change in maternal Vitamin D levels from 11-34wks, on methylation were examined. 
-No loci were identified as changing significantly in methylation status in any of these EWAS, however, the power of this study was such that changes with small to medium effect sizes may have gone undetected. 
+No loci were identified as changing significantly in methylation status in any of these EWAS, however, 
+
+the power of this study was such that changes with small to medium effect sizes may have gone undetected. 
+- power calculations?
+
+
 It is our intention to extend this analysis with additional samples to increase the power. 
-We also intend to make use of this data to assess epigenetic estimates of biological and gestational age.
+
 
 ## Introduction
 
+- problem = osteoporosis
+- peak bone mass -> osteoporosis
+- developmental factors -> peak bone mass
+- dev factors - vitamin D ~ calcium interaction either can be limiting or other low protein rats/prudent diet
+- 
+
+In England and Wales a survey of general practice data indicates that 53% of women and 21% of men will experience a bone fracture in their remaining lifetime from the age of 50 years [@VanStaa2001] (Figure \ref{fig:VanStaa2001}).
+Hip fractures in particular are associated with a reduction in survival of an estimated 10-20% with most deaths occurring in the first 6 months, vertebral fractures though approximately an order of magnitude less common carry a similar mortality risk [@VanStaa2001; @Streubel2011].
+The national osteoporosis foundation estimated the societal cost of osteoporosis at 58 Billion USD for 2018 in the USA alone [@Thompson2018] with serious negative implications for the quality of life of those with this condition.
+Thus interventions to increase bone health and reduce the rate of osteoporosis as well as developing a mechanistic understanding of the development of this condition are of considerable medical interest.
+
+```{r VanStaa2001, fig.cap='(ref:VanStaa2001-Cap)', out.width='50%', fig.align = 'center', fig.show='hold', echo=FALSE}
+knitr::include_graphics("figs/adapted_from_VanStaa2001_Fig1-2.png")
+```
+(ref:VanStaa2001-Cap) __Overall Fracture Incidence Increases With Age__ Data from 5 million adults in the General Practice Research Database 1988-1998. __A__ Incidence of all fractures at any site by sex and age. __B__ Fractures by sex and age at select sites, pelvis, Femur/Hip & Vertebra confer the greatest increased mortality rates and Radius/Ulna has the greatest sexual dimorphism. (Adapted from van Staa et al. [@VanStaa2001].)
+
+Modelling work indicates that the largest determinant of osteoporosis risk is peak bone mineral density (BMD) with a 10% change in peak BMD leading to a predicted 13 year delay in the development of osteoporosis [@Hernandez2003].
+Though the baseline BMD is a better predictor of fracture risk, the rate of loss also independently predicts risk [@Nguyen2005; @Finkelstein2008; @Hui1990].
+Thus factors altering the peak bone mass and/or density will be important for modulating osteoporosis risk.
+Bone mass increases from intrauterine development through to a peak in early adulthood (Figure \ref{fig:Harvey2014bfig1}).
+
+Calcium, phosphate and vitamin D are needed for bone development [@Bikle2012] and maintenance.
+Vitamin D is needed for sufficient intestinal absorption of calcium [@Christakos2011] and phosphate [@Fukumoto2014] in addition to the hormonal role it plays in the regulation of bone development.
+
+~~Calcium and vitamin D can become limiting for bone development, for example in Pune, India the consumption of calcium rich foods during pregnancy lead to higher total lumbar spine bone mineral content (BMC) and areal BMD in a population with high vitamin D [@Ganpule2006]. ~~
+
+Birth weight predicts bone mass in adulthood [@Baird2011]. 
+A longitudinal study with long term follow up at Helsinki University Central Hospital linked low childhood growth rate with greater fracture risk in later life [@Cooper2001].
+There is something of a north-south gradient in europe for hip fracture risk [@Holroyd2012; @Kanis2002] with countries in northern latitudes showing higher risk. 
+Given the requirement for UVB light exposure in vitamin D synthesis it would be reasonable to suspect vitamin D levels might be responsible for this effect however international comparisons of vitamin D levels do not follow a simple north-south gradient with dietary and cultural factors impacting on vitamin D levels [@Prentice2008], this picture is further complicated by seasonal variation in vitamin D [@Cooper2016].
+
+
+
+
+[@Holroyd2012]
+
+Kanis2002
+
+Calcium is needed for bone development... vitamin d or calcium can be limiting 
+- Pune, India, calcium-rich foods during pregnancy -> higher total and lumbar spine BMC and areal BMD, high vitamin D [@Ganpule2006]
+- north south gradient in european hip fracture risk - vitamin D?
+
+[@Harvey2014b] - Osteoporosis: A Lifecourse Approach
+[@Holroyd2012] - Epigenetic influences in the developmental origins of osteoporosis
+
+
+
+
+cohort profile sws @Inskip2006
+
+```{r Harvey2014bfig1, fig.cap='(ref:Harvey2014bfig1-Cap)', out.width='50%', fig.align = 'center', fig.show='hold', echo=FALSE}
+knitr::include_graphics("figs/Harvey2014bfig1.png")
+```
+(ref:Harvey2014bfig1-Cap) __Bone Mass Over The Lifecourse__ Bone mass increases from intrauterine development through to a peak in early adulthood. Intervention in early life to modulate growth trajectory and increase peak mass may provide a higher starting point and delay bone loss in later life. (Reproduced from [@Harvey2014b].)
+
 ### Background
+
+#### EWAS
 
 Epigenetic states are a product of both genetics and environment, they exist on a continuum from complete or obligatory genetic influence through facultative variation influenced by genetics, to the purely epigenetic subject entirely to environmental factors. 
 This picture is complicated by the observation that genetics can not merely influence epigenetic state but also the extent to which that state will vary depending on environmental factors [@Holland2017]. 
@@ -22,6 +87,7 @@ Unlike genome-wide association studies (GWAS) associations found by EWAS can be 
 That is to say, a genetic variant associated with a disease is very unlikely to have been caused by the disease state whereas an epigenetic association can be the consequence of a disease state. 
 Whilst this can complicate the dissection of disease aetiology it can also be a boon in unpicking the biology that follows on from a particular disease or environmental exposure by revealing what biological networks are affected. 
 
+####  
 
 Work in rat models has demonstrated the ability of maternal nutritional exposure during pregnancy to influence the methylation and expression of genes in their offspring [@Burdge2007a; @Lillycrop2008] (reviewed in [@Burdge2007]). 
 Consequently, the methylation status of target genes of interest for vitamin D and bone development related pathways have been examined. 
@@ -45,8 +111,12 @@ This provides part of a candidate mechanism linking vitamin D to bone outcomes.
 ### EWAS for Maternal Vitamin D Status and Offspring Bone Outcomes
 
 This work sought to identify additional loci with changes in DNAm associated with bone development outcomes and vitamin D, beyond those identified in previous work targeted to specific loci. 
-An 'epigenome-wide' approach examining ~850k sites in the genome was carried out using the Illumina EPIC methylation bead chip array on umbilical cord tissue samples from participants in the MAVIDOS study (n=140). 
-Results were compared with additional samples run on the Illumina 450k array (n=60), which as the name suggests covers only ~450k sites. 
+
+
+
+
+An 'epigenome-wide' approach examining ~850k sites in the genome was carried out using the Illumina EPICmethylation bead chip array on umbilical cord tissue samples from participants in the MAVIDOS study (n=140). 
+Results were compared with additional samples run on the Illumina 450k array (n=60), which covers only ~450k sites. 
  
 
 Epigenome-Wide Association Studies (EWAS) were performed for four variables of interest: intervention vs placebo status, neonatal bone mineral content(g) as determined by dual-energy X-ray absorptiometry (DXA) scans, Maternal Vitamin D levels (34wks) and change in maternal Vitamin D levels from 11 to 34wks.
@@ -58,23 +128,26 @@ Potentially testing if 'phenotypic age' as predicted by DNA methylation [@Levine
 
 Analysis of the Illumina EPIC and 450k methylation arrays was carried out in the R language using the ['meffil'](https://github.com/perishky/meffil/wiki) package [@Min2017], which is capable of performing functional normalisation in a more memory efficient fashion than alternatives such as 'minfi'. 
 
-
 ### Functional Normalisation
 
-Functional normalisation is an approach to removing unwanted variation associated with 'batch' effects such as the date on which a sample was analysed or which slide a sample is on developed by @Fortin2014. 
+Functional normalisation is an approach to removing unwanted variation associated with 'batch' effects such as the date on which a sample was analysed or which slide a sample is on developed by Fortin et al. [@Fortin2014]. 
 This noise in the data masks the signal associated with the underlying biological effect of interest. 
-
 
 Functional normalisation makes use of control probes on the arrays which are designed to capture only technical variation as surrogates for the sources of unwanted variation. 
 The control probes are processed into 42 summary measures, and principal components analysis is performed on the control probe summary matrices for all samples. 
 The top *m* principal components (PCs) are used as the surrogates for technical variation going forward. 
 The number, *m*, of PCs from the control probe summary matrices used is informed by the amount of residual variation remaining after normalisation. 
-Picking the number of PCs which correspond to the last steep drop in residual variation is the approach recommended by the implementers of meffil, and @Fortin2014 recommend an *m* of 2 as performing well across a variety of analyses. 
+Picking the number of PCs which correspond to the last steep drop in residual variation is the approach recommended by the implementers of meffil, and Fortin et al. [@Fortin2014] recommend an *m* of 2 as performing well across a variety of analyses. 
 (See supplementary material from [@Fortin2014] for details of the control probe summary process.)
 
 The process used by functional normalisation is a variant on quantile normalisation. 
 Instead of forcing the empirical marginal distributions of the samples to be identical at each site across arrays it constructs quantile function which only removes variation arising from surrogates for batch variation to produce the normalised values. 
 This approach is effective even when comparing samples with large global differences in methylation levels such as between normal and cancer samples, but cannot overcome high degrees of confounding [@Fortin2014].
+
+### Genetically Confounded and Multi-mapping Probes
+
+- masks
+- gap hunting
 
 ### EWAS Models
 
@@ -84,8 +157,10 @@ Blood cell composition is a known confounder in epigenetic studies [@Jaffe2014; 
 Observed variation DNA methylation can be cell-type intrinsic, changes in DNAm not driven by changes in the cell-type composition of the tissue, or cell-type extrinsic, due to changes in the cell-type composition of the population sampled (Figure \@ref(fig:IntrinsicVsExtrinsicDNAmChangeGeneral)). 
 An established approach for addressing this potential source of confounding it is to add terms to the regression model which reflect the cell type composition of each sample. 
 Cell type composition can be ascertained through three main approaches: Direct cell count data; predicted cell-count based on comparing experimental methylation data to methylation data from reference samples of the tissue in question [@Houseman2012]; or reference free approaches which make use of mathematical methods to identify sources of confounding variation such as cell-type heterogeneity. 
-Whilst there are several reference samples available for cord blood [@Cardenas2016; @DeGoede2015; @Bakulski2016; @Gervin2016], and one for cord tissue reference was recently published [@Lin2018]. 
-This cell-type reference had not yet been integrated into the `meffil` R package I was using to perform the EWAS analyses so I created [a fork of `meffil` including this reference panel in the required format](https://github.com/RichardJActon/meffil/blob/LinAndKarnaniCordTissueRef/data-raw/lin-karnani-reference.r), this can be installed directly from github. 
+Whilst there are several reference samples available for cord blood [@Cardenas2016; @DeGoede2015; @Bakulski2016; @Gervin2016], None were available to cord tissue at the time of the initial analysis
+
+and one for cord tissue reference was recently published [@Lin2018]. 
+This cell-type reference had not yet been integrated into the `meffil` R package used to perform the EWAS analyses so I created [a fork of `meffil` including this reference panel in the required format](https://github.com/RichardJActon/meffil/blob/LinAndKarnaniCordTissueRef/data-raw/lin-karnani-reference.r), this can be installed directly from github. 
 The code necessary to add this reference to the package data before building the R package can be found in this [gist](https://gist.github.com/RichardJActon/703ae70438e865a37998cd608bd12cd3).
 
 ~~none were found for cord tissue samples, consequently, we made use of reference free methods for cell type correction.~~
@@ -122,17 +197,41 @@ That is to say, the covariates used were the surrogate variables produced from S
 
 ## Results
 
-### Summary of Results
+### Outline
+
+Three sets of EWAS analyses were performed:
+Phase I of the MAVIDOS EPIC arrays and comparison with 450k array results.
+Phase II of the MAVIDOS EPIC analysis with additional samples.
+The analysis of the SWS cord blood EPIC array data.
+
+- MAVIDOS phase I results (EPIC n = 140, 450k n = 60)
+  - EWAS: 
+    - Intervention Vs. Placebo 
+    - Bone Mineral Content at Birth /g
+    - Maternal Vitamin D at 34wks (units!)
+    - Change in Maternal Vitamin D form 11 to 34wks (units!)
+    
+- MAVIDOS phase II results (n = 386) !!qc 377!!
+  - EWAS: 4yr DXA: Total BMC (g), without heads
+  
+- SWS cord blood (n = 464)
+  - EWAS:
+    - 8 yr DXA: Total BMC (kg), without heads,adjusted for sex and age
+    - 6 yr DXA: Total BMC (kg), without heads,adjusted for sex and age
+    - 6yr PQCT: 38% - Periosteal circumference (circular ring model) (mm)
+    - 6yr PQCT: 38% - Cortical density (mg/cm3)
+
+### MAVIDOS phase I
 
 DNAm at none of the probes were significantly associated with the any of the four variables of interest for which EWAS were performed in either the EPIC or 450k datasets. 
 The concordance between the probes with the top-ranked p-values in common between the EPIC and 450k data was at the level of chance. 
 3 of the EPIC arrays were excluded from the analysis for failing quality control leaving an n=137.
 
-### Quality Control (QC)
+#### Quality Control (QC)
 
-#### Whole array QC
+##### Whole array QC
 
-##### EPIC arrays
+###### EPIC arrays
 
 The predicted sex of the samples generated using sex chromosome probe intensities was checked against that in the sample annotation and two mismatches were found. 
 These were MAVIDOS IDs 206 and 63 and the associated arrays were excluded from further analysis, (Figure \@ref(fig:MAVIDOSqcEPICsexMismatch)).
@@ -164,7 +263,7 @@ knitr::include_graphics("figs/MAVIDOSqcEPICbeadNum.png")
 Black line indicates the exclusion threshold of 0.1. 
 Plot generated by meffil QC report.
 
-##### 450k Arrays
+###### 450k Arrays
 
 There were no mismatches between predicted and annotated sex (Figure \@ref(fig:MAVIDOSqc450ksexMismatch)). 
 There were not any samples with outliers in their methylated / unmethylated probe proportions (Figure \@ref(fig:MAVIDOSqc450kmethVsUnmeth)). 
@@ -193,11 +292,11 @@ knitr::include_graphics("figs/MAVIDOSqc450kbeadNum.png")
 Black line indicates the exclusion threshold of 0.1. 
 Plot generated by meffil QC report.
 
-#### Probe QC
+##### Probe QC
 
-##### Probe QC - EPIC Arrays
+###### Probe QC - EPIC Arrays
 
-###### Probe Quality
+####### Probe Quality
 
 There were no outliers within the control probes Figure \@ref(fig:MAVIDOSqcEPICctrlProbes). 
 1,626 probes were excluded for having high background signal in a high proportion of samples (proportion of samples with detection p-value > 0.01 is > 0.1), (Figure \@ref(fig:MAVIDOSqcEPICpropSamples)). 
@@ -220,7 +319,7 @@ knitr::include_graphics("figs/MAVIDOSqcEPICbeadNumAcross.png")
 ```
 (ref:MAVIDOSqcEPICbeadNumAcross-Cap) Low bead count probes across samples for EPIC data. Manhattan plot showing the proportion of samples (y) in which a given probe (x) has a bead count of <3. Black line indicates the exclusion threshold of 0.1. Plot generated by meffil QC report.
 
-###### Multi-mapping and Genetically Confounded Probes
+####### Multi-mapping and Genetically Confounded Probes
 
 Probes from different locations in the genome with similar sequences, especially following the reduction in sequence complexity associated with bisulfite conversion, can be cross-reactive on the arrays leading to erroneous signals and are thus commonly excluded from analysis. 
 DNAm is often strongly influenced by genetic factors, the effect is especially pronounced when variants alter the sequence at CpG sites themselves as the site can then no longer be methylated. 
@@ -243,9 +342,9 @@ knitr::include_graphics("figs/MAVIDOSgaphunterEgMonApr162018.png")
 ```
 (ref:MAVIDOSgaphunterEgMonApr162018-Cap) An example of the DNAm distribution for a result from the 'gaphunter()' function. This is an example chosen to best exemplify the sort of result which is strongly suggestive of a genetic variant with an impact on methylation status acting on this site. It is unrepresentative of typical results from 'gaphunter()' in that the groups have a relatively even membership, many results have a small number of individuals in one or more groups making it hard to distinguish methylation outliers caused by rarer genetic variants from those with other causes.
 
-##### Probe QC - 450k Arrays
+###### Probe QC - 450k Arrays
 
-###### Probe Quality
+####### Probe Quality
 
 There was one sample (MAVIDOS ID 2183) with an outlier within the control probes, the 'stain.R' probe, (Figure \@ref(fig:MAVIDOSqc450kctrlProbes)). 
 509 probes were excluded for having high background signal in a high proportion of samples (proportion of samples with detection p-value > 0.01 is > 0.1), (Figure \@ref(fig:MAVIDOSqc450kpropSamples)). 
@@ -266,12 +365,12 @@ knitr::include_graphics("figs/MAVIDOSqc450kbeadNumAcross.png")
 ```
 (ref:MAVIDOSqc450kbeadNumAcross-Cap) Low bead count probes across samples for 450k data. Manhattan plot showing the proportion of samples (y) in which a given probe (x) has a bead count of <3. Black line indicates the exclusion threshold of 0.1. Plot generated by meffil QC report.
 
-###### Multi-mapping and Genetically Confounded Probes
+####### Multi-mapping and Genetically Confounded Probes
 
 @Zhou2017 provided a list of probes which they recommend 'masking' from the 450k array due to, multi-mapping issues, genetic variants overlapping the CpG sites and other factors which may render results from these probes problematic. 
 All probes on this list were excluded from the analysis following functional normalisation, leaving a total of 418,632 probes for subsequent analysis.
 
-### Functional Normalisation
+#### Functional Normalisation
 
 An *m* of 6 was chosen for the EPIC arrays as this value produced the last steep drop in residual variation, see Figure \@ref(fig:MAVIDOSfunnormPCsEPICMonApr162018). 
 An *m* of 6 was chosen for the 450k arrays as this value produced the last steep drop in residual variation, see Figure \@ref(fig:MAVIDOSfunnormPCs450kMonApr162018).
@@ -286,9 +385,9 @@ knitr::include_graphics("figs/MAVIDOSfunnormPCs450kMonApr162018.png")
 ```
 (ref:MAVIDOSfunnormPCs450kMonApr162018-Cap) Residual variation remaining after functional normalisation of the top 20,000 most variable probes with *m* PCs from the control probe summary matrices for the 450k array samples (n=60), for M = methylated and U = unmethylated probes.
 
-### EWASs
+#### EWASs
 
-#### Neonatal Bone Mineral Content
+##### Neonatal Bone Mineral Content
 
 No probes fell below the Bonferroni corrected significance threshold for an association between DNAm at that locus and neonatal bone mineral content, Figure \@ref(fig:MAVIDOSbmcEPICewasManhattanSVA).
 
@@ -297,7 +396,7 @@ knitr::include_graphics("figs/MAVIDOSbmcEPICewasManhattanSVA.png")
 ```
 (ref:MAVIDOSbmcEPICewasManhattanSVA-Cap) Results of EWAS for neonatal bone mineral content with SVA model. Bidirectional Manhattan plot on which $-log_{10}(p-value)$ is plotted on the y axis and the sign of this value represents the direction of change. Size and transparency of points increases with $-log_{10}(p-value)$ such that the most significant probes are represented the largest and least transleucent points. x axis represent chromosomes and position thereupon. Red line indicates the significance threshold of $6.18\times10^{-8}~(0.05\div808,585)$  
 
-#### Intervention / Placebo
+##### Intervention / Placebo
 
 No probes fell below the Bonferroni corrected significance threshold for an association between DNAm at that locus and Intervention/placebo group status, Figure \@ref(fig:MAVIDOSccEPICewasManhattanSVA).
 
@@ -306,7 +405,7 @@ knitr::include_graphics("figs/MAVIDOSccEPICewasManhattanSVA.png")
 ```
 (ref:MAVIDOSccEPICewasManhattanSVA-Cap) Results of EWAS for intervention/placebo group status with SVA model. Bidirectional Manhattan plot on which $-log_{10}(p-value)$ is plotted on the y axis and the sign of this value represents the direction of change. Size and transparency of points increases with $-log_{10}(p-value)$ such that the most significant probes are represented the largest and least transleucent points. x axis represent chromosomes and position thereupon. Red line indicates the significance threshold of $6.18\times10^{-8}~(0.05\div808,585)$ 
 
-#### Maternal Vitamin D (34wks)
+##### Maternal Vitamin D (34wks)
 
 Maternal Vitamin D levels remain substantially overlapping between intervention and placebo groups at 34wks, see Figure \@ref(fig:MAVIDOSvitDviolinMonApr162018). 
 Thus maternal vitamin D at 34wks may prove a more useful variable to model than intervention/placebo status. 
@@ -322,7 +421,7 @@ knitr::include_graphics("figs/MAVIDOSmVitD34EPICewasManhattanSVA.png")
 ```
 (ref:MAVIDOSmVitD34EPICewasManhattanSVA-Cap) Results of EWAS for maternal vitamin D levels at 34wks gestation with SVA model. Bidirectional Manhattan plot on which $-log_{10}(p-value)$ is plotted on the y axis and the sign of this value represents the direction of change. Size and transparency of points increases with $-log_{10}(p-value)$ such that the most significant probes are represented the largest and least transleucent points. x axis represent chromosomes and position thereupon. Red line indicates the significance threshold of $6.18\times10^{-8}~(0.05\div808,585)$ 
 
-#### Change in Maternal Vitamin D
+##### Change in Maternal Vitamin D
 
 No probes fell below the Bonferroni corrected significance threshold for an association between DNAm at that locus and change in maternal vitamin D from 11 to 34wks gestation, Figure \@ref(fig:MAVIDOSdifVDEPICewasManhattanSVA).
 
@@ -331,7 +430,7 @@ knitr::include_graphics("figs/MAVIDOSdifVDEPICewasManhattanSVA.png")
 ```
 (ref:MAVIDOSdifVDEPICewasManhattanSVA-Cap) Results of EWAS for Change in maternal vitamin D levels from 11 to 34wks gestation with SVA model. Bidirectional Manhattan plot on which $-log_{10}(p-value)$ is plotted on the y axis and the sign of this value represents the direction of change. Size and transparency of points increases with $-log_{10}(p-value)$ such that the most significant probes are represented the largest and least transleucent points. x axis represent chromosomes and position thereupon. Red line indicates the significance threshold of $6.18\times10^{-8}~(0.05\div808,585)$ 
 
-### !!! keep? Concordance of EPIC and 850k EWAS results !!!
+#### !!! keep? Concordance of EPIC and 850k EWAS results !!!
 
 In order to ascertain if the results from the EWAS in the 450k and EPIC arrays were producing similar sets of probes in the top ranking positions when ordered by p-value the concordance (% overlap) between the top k probes, where k = 1 .. 
 100,000 was calculated. 
@@ -352,7 +451,9 @@ knitr::include_graphics("figs/EPIC450kEWASconcordMAVIDOSMonApr162018zoom.png")
 ```
 (ref:EPIC450kEWASconcordMAVIDOSMonApr162018zoom-Cap) Concordance between the top 10,000 probes in common between the EWASs run on the EPIC (n=137) and 405k (n=60) data sets. bmc = bone mineral content, cc = Intervention / Placebo, difVD = Chance in Vitamin D from 11 to 34wks, ExHighConc = Example of High Concordance generated using SVA vs iSVA results for the 450k intervention/placebo EWAS. Dotted line denotes concorcance expected by chance (intersects 50% at 387,511, the number of shared probes)
 
-## !!SWS/New MAVIDOS EWAS!!
+## MAVIDOS phase II
+
+## Southampton Women’s Survey (SWS)
 
 ### 
 
