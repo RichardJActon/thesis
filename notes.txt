@@ -1,0 +1,4 @@
+It would also be interesting to check if any of the CpGs in *CDKN2A* identified as correlating with bone outcomes are present on the arrays and possibly to perform a power analysis to ascertain if we would have predicted that we would be able to replicate these findings with this data.
+
+
+*vit D genetic variants*

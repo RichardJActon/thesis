@@ -116,7 +116,7 @@ Participants for our targeted bisulfite sequencing of select tRNA loci were draw
 Samples from participants aged 4 and 28 years are from the MAVIDOS [@Harvey2012a] study and participants aged 63 and 78 years are from the Hertfordshire cohort study [@Syddall2005].
 Due to a limited number of available samples, the two 4 year old pools contained DNA from 20 individuals each, with all other pools having 25 contributing individuals.
 Pool 1, the first 4 year old pool used DNA from all male samples, with all other pools using all female samples.
-Thus, the total number of participants was 190 (see Table \ref{tab:poolAges}).
+Thus, the total number of participants was 190 (see Table \@ref(tab:poolAges)).
 Samples from the 28 year old time point are all from pregnant women at ~11 weeks gestation.  
 
 ### tRNA annotation information {#tRNAanno}
@@ -163,7 +163,7 @@ Models for this set included participant identifier as a fixed effect in additio
 #### Permutation Analysis for Enrichment with Age-related Changes {#AgeErichmentPermutation}
  
 We performed a permutation analysis to determine whether the CpG distribution of sets of the tRNAome was the principle driver of the ageing-related changes observed.
-Windows overlapping tRNAs have a higher proportion of windows with a greater CpG density than their surrounding sequences (see supplementary Figure \ref{fig:CpGcountBGvstRNAPlot}).
+Windows overlapping tRNAs have a higher proportion of windows with a greater CpG density than their surrounding sequences (see supplementary Figure \@ref(fig:CpGcountBGvstRNAPlot)).
 CpGs residing within moderate CpG density loci are the most dynamic in the genome [@Ziller2013] and CpG dense CpG island regions include specific ageing-related changes [@Teschendorff2010; @Rakyan2010; @Bell2016]. 
 For comparison we also performed the permuation in the CGI regions from the Polycomb group protein target promoters in Teschendorff *et al.* [@Teschendorff2010] and bivalent loci from ENCODE ChromHmm 'Poised Promoter' classification in the GM12878 cell-line [@Ernst2011].
 A random set of 500bp windows representing an equivalent CpG density distribution of the feature set in question were selected from the genome-wide data.
@@ -251,50 +251,11 @@ We performed simple linear modeling to predict age from methylation level at eac
 
 \newpage
 
-## Supplementary materials {-}
-
-### Supplementary Figures
-
-```{r mappabilityiMet1, fig.cap="(ref:mappabilityiMet1Cap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
-knitr::include_graphics("./figs/mappability-iMet1.png")
-```
-(ref:mappabilityiMet1Cap) Example of mappability data from the encode mappability tracks [@Derrien2012] for the initiator methionine tRNA genes.
-
-```{r mappabilityScoreDensity, fig.cap="(ref:mappabilityScoreDensityCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
-knitr::include_graphics("./figs/mappabilityScoreDensity_tRNAVsFlank500.png")
-```
-(ref:mappabilityScoreDensityCap) Mappability score density of the tRNAome increases with read length and is greater when flanking regions ($\pm500bp$) are included. Mappability score density is computed as the area under the encode mappability tracks [@Derrien2012] over the length of the region.
-
-```{r CpGcountBGvstRNAPlot, fig.cap="(ref:CpGcountBGvstRNAPlotCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
-knitr::include_graphics("figs/CpGcountBGvstRNAPlot.png")
-```
-(ref:CpGcountBGvstRNAPlotCap) CpG Density in windows overlapping tRNA genes compared to that of non-tRNA overlapping windows in flanking sequences (+/-5kb)
-
-```{r meanMethbytRNAMatHeatmapLow, fig.cap="(ref:meanMethbytRNAMatHeatmapLowCap)", out.width='90%', fig.show='hold', fig.align = 'center', echo=FALSE}
-knitr::include_graphics("./figs/meanMethbytRNAMatHeatmapLow_bl.png")
-```
-(ref:meanMethbytRNAMatHeatmapLowCap) Heatmap Mean Methylation of probes covering each tRNA in 7 cell-type fractions from 6 Male individuals. Showing all 150 tRNAs covered by 213 probes on the Illumina 450k array. Data from [GSE35069](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35069) [@Reinius2012] downloaded using `GEOquery` [@Davis2007p]. Generated with the `ComplexHeatmap` `R` package [@Gu2016].
-
-```{r cancerVsNormalCombinedPlots, fig.cap="(ref:cancerVsNormalCombinedPlotsCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
-knitr::include_graphics("./figs/cancerVsNormalCombinedPlots.png")
-```
-(ref:cancerVsNormalCombinedPlotsCap) Global properties of tRNA methylation data for 45 tRNA genes across 19 tissues with matched normal and tumour samples from 733 cases in TCGA [@Yang2016; @Nazor2012].
-
-```{r meanBetasByTissueTNMHeatmap, fig.cap="(ref:meanBetasByTissueTNMHeatmapCap)", out.width='90%', fig.show='hold', fig.align = 'center', echo=FALSE}
-knitr::include_graphics("./figs/meanBetasByTissueTNMpseudoSplitHeatmap.png")
-```
-(ref:meanBetasByTissueTNMHeatmapCap) Mean Methylation of 43 tRNAs in 19 tissues. Possible pseudogene (tRNA-Asn-ATT-1-1) is shown in a separate cluster beneath the main heatmap [@Gu2016].
-
-```{r meanMethBytRNAByFetalTissueHeatmap, fig.cap="(ref:meanMethBytRNAByFetalTissueHeatmapCap)", out.width='60%', fig.show='hold', fig.align = 'center', echo=FALSE}
-knitr::include_graphics("./figs/meanMethBytRNAByFetalTissueHeatmapPseudosplit.png")
-```
-(ref:meanMethBytRNAByFetalTissueHeatmapCap) Mean Methylation of 115 tRNAs in 11 tissues. Possible pseudogenes are shown in a separate cluster beneath the main heatmap [@Gu2016].
-
 ### MINTmap reference Fragment distribution
 
-In the original MINTmap reference (Figure \ref{fig:combinedFragSizeDists}b) there are peaks at around 18nt, 22nt and 32nt.
+In the original MINTmap reference (Figure \@ref(fig:combinedFragSizeDists)b) there are peaks at around 18nt, 22nt and 32nt.
 This is consistent with the expected tRNA fragment size distributions with 'tRNA halves' at 30-33nt and other tRFs at 18nt and 22nt.
-In our custom reference (Figure \ref{fig:combinedFragSizeDists}a) whilst there is still a peak at ~18nt, with suggestions of peaks near 22nt and 32nt the tRNA fragment length distribution is somewhat different from that of the standard MINTmap reference.
+In our custom reference (Figure \@ref(fig:combinedFragSizeDists)a) whilst there is still a peak at ~18nt, with suggestions of peaks near 22nt and 32nt the tRNA fragment length distribution is somewhat different from that of the standard MINTmap reference.
 There are larger peaks at ~28 and ~40nt consistent with the longer fragments expected given that this reference aimed to target fragments derived from pre-tRNAs not tRFs derived from mature tRNAs.
 
 ```{r combinedFragSizeDists, fig.cap="(ref:combinedFragSizeDistsCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
@@ -309,22 +270,144 @@ knitr::include_graphics("./figs/combinedFragSizeDists.png")
 ### DNA Methylation of Specific tRNA Gene Loci Changes with Age
 
 Due to tRNAs critical role in translation and evidence of their modulation in ageing and longevity-related pathways, we interrogated these genes for evidence of ageing-related epigenetic changes.
-Our discovery set was a large-scale peripheral blood-derived DNA methylome dataset comprising of 4350 samples (see Figure \ref{fig:OverviewOfAnalyses}).
+Our discovery set was a large-scale peripheral blood-derived DNA methylome dataset comprising of 4350 samples (see Figure \@ref(fig:OverviewOfAnalyses)).
 This sequencing-based dataset had been generated by Methylated DNA Immunoprecipitation (MeDIP-seq) [@Down2009], which relies on the enrichment of methylated fragments of 200-500 bp to give a regional DNAm assessment (500 bp semi-overlapping windows, see [Methods](#EpiTwinsMethods)).
-In total the human tRNAome is comprised of 610 tRNAs (gtRNAdb)(see Figure \ref{fig:kutteresq}), though only 492 are autosomal and do not reside in blacklisted regions of the genome [@Amemiya2019].
+In total the human tRNAome is comprised of 610 tRNAs (gtRNAdb)(see Figure \@ref(fig:kutteresq)), though only 492 are autosomal and do not reside in blacklisted regions of the genome [@Amemiya2019].
 Due to the small size of these tRNAs (60-86bp, median 73bp, excluding introns which are present in ~30 tRNAs with sizes from 10-99bp, median 19bp), this fragment-based method enabled a robust examination of the epigenetic state of these highly similar sequences. 
 This was supported by a mappability assessment. 
 The median mappability score density for the tRNAome was 0.90 for 50mers when considering tRNA genes $\pm500bp$ reflecting the regional nature of the MeDIP-seq assay.
-In contrast the 50mer mappability density is 0.68 for tRNA genes alone representative of the mappability of reads generated using a technique such as whole-genome bisulfite sequencing (see Figures \ref{fig:mappabilityiMet1} & \ref{fig:mappabilityScoreDensity}). 
+In contrast the 50mer mappability density is 0.68 for tRNA genes alone representative of the mappability of reads generated using a technique such as whole-genome bisulfite sequencing (see Figures \@ref(fig:mappabilityiMet1) & \@ref(fig:mappabilityScoreDensity)). 
+
+```{r OverviewOfAnalyses, fig.cap="(ref:OverviewOfAnalysesCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("figs/OverviewOfAnalysesFigure_tRNA_3.png")
+```
+(ref:OverviewOfAnalysesCap) Study Structure. tRNAs differentially methylated with age initially identified in MeDIP-seq, validated (where covered in 450k array) and replicated in targeted bisulfite sequencing of pooled samples. Tissue specificity of these effects was explored in TCGA and foetal tissue data.
 
 We identified 21 genome-wide significant and 44 study-wide significant results (p < $4.34\times10^{-9}$ and $8.36\times10^{-5}$, respectively, via linear regression see [Methods](#medipmodels) (batch corrected n=4350).
 Study-wide significance was calculated conservatively for all 598 autosomal tRNAs. 
 There was a strong directional trend with all results at both significance levels being due to increases in DNA methylation.
 Age-related changes in cell type proportion are strong in heterogeneous peripheral blood, and include a myeloid skew, loss of naive T cells and increases in senescent cells [@Geiger2013].
-A subset of 3 genome-wide and 16 study-wide significant hypermethylation results remained significant even after correcting for potential cell-type changes by including lymphocytes, monocytes, neutrophils and eosinophil cell count data (n=3001, Listed in Table \ref{tab:GWSBBtRNAsTab}, Red in Figure \ref{fig:circos}).
+A subset of 3 genome-wide and 16 study-wide significant hypermethylation results remained significant even after correcting for potential cell-type changes by including lymphocytes, monocytes, neutrophils and eosinophil cell count data (n=3001, Listed in Table \@ref(fig:GWSBBtRNAsTab), Red in Figure \@ref(fig:circos)).
 tRNA-iMet-CAT-1-4 is located on chromosome 6.
 tRNA-Ile-AAT-4-1 and tRNA-Ser-AGA-2-6 are neighbours and are located on chromosome 17 within the 3' UTR of *CTC1* (CST Telomere Replication Complex Component 1).
 Going forward we refer to these most robustly corrected sets of 3 and 16 tRNA genes as the genome-wide and study-wide significant tRNA genes respectively.
+
+
+```{r GWSBBtRNAsTabBuild, eval=FALSE, out.width='60%', echo=FALSE, warning = FALSE, message = FALSE}
+#eval = TRUE, # eval=FALSE,
+gws <- 4.338717e-09
+sws <- 0.05 / 598
+medipWinbytRNAres <- readRDS("Supplementary_Files/medipWinbytRNAres.Rds")
+medipWinbytRNAres %>%
+    tibble::as_tibble() %>%
+    arrange(tRNAname, medip.p.value) %>%
+    select(-width, -strand) %>%
+    filter(medip.batch.p.value < gws) %>%
+    filter(is.na(BLreason)) %>%
+	#mutate(swsl = medip.p.value < sws) %>%
+	#mutate(model = if_else(medip.p.value < sws,"BB sws","batch gws")) %>%
+    mutate(
+        window = sprintf(
+            "%s:%s-%s", tools::toTitleCase(as.character(seqnames)),
+            format(big.mark = ",", start), format(big.mark = ",", end)
+        )
+    ) %>%
+    #dplyr::mutate(across(ends_with(".slope"), ~sprintf("%.3f",.))) %>%
+    dplyr::mutate(
+        across(
+            ends_with(".slope"),
+            ~cell_spec(
+                sprintf("%.2f",.),
+                #color = "white",
+                color = ifelse(is.na(.), "#BBBBBB", "black"),
+                bold = TRUE,
+                background = case_when(
+                    #swsl == FALSE ~ "#BBBBBB",#"red",
+                    sign(.) == 1 ~ "#fddbc7",#"#ef8a62",
+                    sign(.) == -1 ~ "#d1e5f0",#"#67a9cf",
+                    TRUE ~ "#BBBBBB"
+                )
+            )
+        )
+    ) %>%
+    dplyr::mutate(
+        across(
+            ends_with(".p.value"),
+            ~cell_spec(
+                sprintf("%.2e", .),
+                #color = "white",
+                bold = TRUE,
+                color = ifelse(is.na(.), "#BBBBBB", "white"),
+                background = 
+                	case_when(
+                		#swsl == FALSE ~ "#BBBBBB",
+                		TRUE ~ spec_color(log2(.), option = "E", end = 0.9)
+                	)
+            )
+        )
+    ) %>%
+	# dplyr::mutate(
+	# 	model = 
+	# 	cell_spec(
+	# 		model, background = case_when(
+	# 			model == "BB sws" ~ "red",
+	# 			TRUE ~ "black"
+	# 		)
+	# 	)
+	# ) %>%
+    #dplyr::mutate(across(ends_with(".p.value"), ~sprintf("%.3e",.))) %>%
+    dplyr::select(
+        tRNA = tRNAname,
+        Window = window, 
+        #model,
+        ` Slope` = medip.slope, ` p-value` = medip.p.value,
+        #`Slope ` = medip.batch.slope, `p-value ` = medip.batch.p.value,
+        ` Slope ` = array.slope, ` p-value ` = array.p.value,
+        `  Slope` = tbs.slope, `  p-value` = tbs.p.value
+    ) %>%
+    kableExtra::kable(
+        #longtable = TRUE,
+    	#caption = "(ref:GWSBBtRNAsTabCap)",
+        booktabs = TRUE, escape = FALSE,
+    ) %>%
+    kable_styling(
+        #full_width = TRUE,
+        font_size = 12,
+        latex_options = c("scale_down")
+    ) %>%
+    collapse_rows(
+        columns = 1:2,#7, 
+        latex_hline = "major",#none
+        valign = "middle"
+    ) %>%
+    add_header_above(
+    	c(
+    		" " = 2,#3,
+    		#"MeDIP Blood & Batch" = 2, "MeDIP Batch" = 2,
+    		"MeDIP" = 2,
+    		"450k Array" = 2, "Targeted BiS-seq" = 2
+    	)
+    ) %>%
+    #landscape() %>%
+	save_kable("figs/table1a.pdf")
+
+magick::image_read_pdf("figs/table1a.pdf") %>% 
+	magick::image_convert("png") %>% 
+	magick::image_write("figs/table1a.png")
+
+```
+
+```{r GWSBBtRNAsTab, fig.cap="(ref:GWSBBtRNAsTabCap)", out.width='95%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("./figs/table1a.png")
+```
+
+(ref:GWSBBtRNAsTabCap) Study-wide significantly hypermethylating tRNAs in blood cell-type and batch corrected model MeDIP-seq. With Corresponding results in Twins UK 450k array (blood cell-type corrected) and targeted bisulfite sequencing results. Age models for array and targeted BiS-seq were calculated using all probes / CpGs overlapping the indicated tRNA gene. 'Slope' corresponds to the beta value for methylation in the linear model, orange colouring indicates hypermethylation and blue hypomethylation. p-values coloured such that low values are dark blue and high values are yellow. blank grey cells indicate missing data. Due to the related nature of these twin samples, we also analysed these data in two subsets of n = 1198 & 1206 by selecting one twin from each pair into the seperate sets. This analysis also included correction for Batch and Blood Cell counts.Whilst in these smaller datasets no tRNAs were genome-wide significant, 5 and 7 tRNA genes, respectively, reached study-wide significance. 
+In these sets 5/5 and 6/7 of these were present in 16 study-wide significant tRNA genes.
+
+```{r circos, fig.cap="(ref:circosCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("figs/tRNA_circos_test_inkscape_4.png")
+```
+(ref:circosCap) Human tRNAome overview. From the outside in: Chromosome ideograms scaled by the number of tRNA genes (total = 598), as excludes chromosome X (10), Y (0) and contig chr1_gl000192_random (2; see [Methods](#tRNAanno)). tRNA genes within 20kbp of one another are grouped with breaks inserted between these clusters. Radial grey lines represent the location of tRNA genes in the genome. $-log_{10}(p-value)$ for the blood cell-type and batch corrected age model are shown for each window overlapping a tRNA gene in green. Mean methylation across all samples (n=3001) in RPM (reads per million base pairs) is shown in blue. Genome-wide significant cell-type & batch corrected ($p < 4.34\times10^{-9}$) tRNAs show in red. The 158 Loci covered by 213 probes on the 450k array which directly overlap a tRNA gene are shown with green triangles. The 84 loci targeted for bisulfite sequencing in this study are indicated in magenta. Mappability score density is computed as the area under the encode mappability tracks [@Derrien2012] over the length of the region.
 
 Due to the related nature of these twin samples, we also analysed these data in two subsets of n=1198 & 1206 by selecting one twin from each pair into the seperate sets.
 This analysis also included correction for Batch and Blood Cell counts. 
@@ -335,11 +418,6 @@ Furthermore, we examined a subset of samples with longitudinal data (n=658 methy
 At the nominal significance threshold (p < 0.05) this yielded a split of 41 hypermethylating tRNA genes and 22 hypomethylating tRNA genes. 
 Of these hypermethylated tRNAs, 2 are in the previously identified genome-wide significant set of 3 (with tRNA-iMet-CAT-1-4 ranked 3rd by p-value) and 9 are in the study-wide significant set of 16. 
 
-```{r OverviewOfAnalyses, fig.cap="(ref:OverviewOfAnalysesCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
-knitr::include_graphics("figs/OverviewOfAnalysesFigure_tRNA_3.png")
-```
-(ref:OverviewOfAnalysesCap) Study Structure. tRNAs differentially methylated with age initially identified in MeDIP-seq, validated (where covered in 450k array) and replicated in targeted bisulfite sequencing of pooled samples. Tissue specificity of these effects was explored in TCGA and foetal tissue data.
-
 ```{r kutteresq, fig.cap="(ref:kutteresqCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/kutteresq_BLcount.png")
 ```
@@ -347,73 +425,51 @@ knitr::include_graphics("figs/kutteresq_BLcount.png")
 
 ### tRNA Genes are Enriched for Age Related DNA Hypermethylation
 
-Whilst ageing changes are pervasive throughout the DNA methylome, we identified a strong enrichment for this to occur within the discrete tRNAome (Fisher's Exact Test p = $1.05\times10^{-27}$) (see Figure \ref{fig:sizePropEnrich}).
+Whilst ageing changes are pervasive throughout the DNA methylome, we identified a strong enrichment for this to occur within the discrete tRNAome (Fisher's Exact Test p = $1.05\times10^{-27}$) (see Figure \@ref(fig:sizePropEnrich)).
 This is still significant if the 6 of the study-wide significant 16 tRNAs that overlap polycomb or bivalent regions are excluded (p = $4.66\times10^{-15}$)
-
-```{r, sizePropEnrich, fig.cap="(ref:sizePropEnrichCap)", out.width='90%', fig.show='hold', fig.align = 'center', echo=FALSE}
-knitr::include_graphics("./figs/nSigWinProps_WGfishers_BB_sws_hyper_2_BL_noPolyBivExcl_BarTxtast_sr.png")
-```
-(ref:sizePropEnrichCap) Age-related DNA hypermethylation Genomic Region Enrichment. (n = 3001, tRNAs are enriched compared to the genomic background, Fisher's Exact Test p < $1.05\times10^{-27}$, Blood cell-type and batch corrected). 
 
 CpG density itself is known to have a clear impact on the potential for variability of the DNA methylome as well as ageing-related changes [@Ziller2013; @Christensen2009].
 To assess whether this hypermethylation finding was being merely driven by the inherent CpG density of the tRNAome, we performed a CpG density matched permutation analysis (1,000X, see [Methods](#AgeErichmentPermutation)).
-This supported the specific nature of these age-related DNAm changes within the functional tRNAome (Empirical p-value < $1.0\times10^{-3}$, Figure \ref{fig:permHists}).
+This supported the specific nature of these age-related DNAm changes within the functional tRNAome (Empirical p-value < $1.0\times10^{-3}$, Figure \@ref(fig:sizePropEnrich) b).
 As a point of comparison for this genomic functional unit, we also performed the same permutations for the known age-related changes in the promoters of genes that are polycomb group targets [@Teschendorff2010] and those with a bivalent chromatin state [@Rakyan2010].
 We were able to reproduce the enrichment of the polycomb group targets and bivalent regions (Empirical p-value < $1.0\times10^{-3}$) in our dataset.
 
-```{r permHists, fig.cap="(ref:permHistsCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
-knitr::include_graphics("figs/tRNA-poly-bivP_n1000_combined_perm_hist.png")
+```{r, sizePropEnrich, fig.cap="(ref:sizePropEnrichCap)", out.width='60%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("./figs/permutation-proportion.png")
 ```
-(ref:permHistsCap) CpG Density Genome-wide Permutation Analysis. Each permutation represented a random set of windows matching the CpG density of the functional unit (bivalent domains, polycomb group target promoters & the tRNAome). These are subsequently assessed for signficant age-related DNAm changes (see [Methods](#AgeErichmentPermutation)). The red line is the observed number of significant loci. 
+(ref:sizePropEnrichCap) __A)__ tRNA genes are enriched for age-related hypermethylation compared to the genomic background, (Fisher's Exact Test p < $1.05\times10^{-27}$, n = 3001). __B)__ tRNA genes show more significant hypermethylations than CpG Density matched permutations. Each permutation represented a random set of windows matching the CpG density of the functional unit (bivalent domains, polycomb group target promoters & the tRNA genes). These are subsequently assessed for signficant age-related DNAm changes (see [Methods](#AgeErichmentPermutation)). The red line is the observed number of significant loci.
 
-```{r GWSBBtRNAsTab, out.width='60%', echo=FALSE,}
-bb6tRNASummaryTab <- read_tsv(
-	"./figs/bb3tRNASummaryTab.tsv",
-	progress = FALSE,
-	col_types = cols(
-		.default = col_character()
-	)
-)
+tRNA-iMet-CAT-1-4 is located in the largest tRNA gene cluster in the human genome at chr6p22.2-1.
+This cluster contains 157 tRNA genes spanning the 2.67Mb from tRNA-iMet-CAT-1-2 to tRNA-Leu-AAG-3-1, and also hosts a histone gene microcluster.
+tRNA-Ile-AAT-4-1 and tRNA-Ser-AGA-2-6 are neighbours and are located on chromosome 17 (Figure  \@ref(fig:gvizLocusZooms)).
+Notably tRNA-Ile-AAT-4-1 and tRNA-Ser-AGA-2-6 have a third close neighbour tRNA-Thr-AGT-1-2 which does not show significant age-related hypermethylation.
+We observe a similar pattern of sharp peaks of significance closely localised around the other loci in the study-wide significant set.
+GENCODE 19 places tRNA-Ile-AAT-4-1 in the 3’UTR of a Nonsense-mediated decay transcript of *CTC1* (CST Telomere Replication Complex Component 1, CTC1-002, ENST00000449476.2) and not of its primary transcript.
 
-bb6tRNASummaryTabKable <- 
-bb6tRNASummaryTab %>% 
-	kable(
-		#digits = 2,
-		format = "latex",#"html",
-		escape = FALSE,
-		booktabs = TRUE,
-		caption = "(ref:GWSBBtRNAsTabCap)",
-		linesep = ""
-	) %>%
-	kable_styling(
-		bootstrap_options = "striped", full_width = FALSE,
-		latex_options = c("striped", "scale_down")
-	) %>%#, fixed_thead = TRUE
-	#row_spec(0, background = "#b8b8b8") %>%
-	column_spec(1, bold = TRUE, border_right = TRUE)
-
-bb6tRNASummaryTabKable
+```{r gvizLocusZooms, fig.cap="(ref:gvizLocusZoomsCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("figs/gviz_iMet-CAT-1-4_Ser-AGA-2-6_3k_white_bigger.png")
 ```
-(ref:GWSBBtRNAsTabCap) Significantly Hypermethylating tRNAs in blood cell-type and batch corrected model MeDIP-seq. 'Slope' corresponds to the beta value for methylation in the linear model.
+(ref:gvizLocusZoomsCap) __A)__ tRNA-iMet-CAT-1-4 as well as __B)__ tRNA-Ser-AGA-2-6 and tRNA-Ile-AAT-4-1 exhibit age related DNA hypermethylation in MeDIP-seq data. The sharp peaks suggest that this effect is localised to individual tRNA genes. One of the windows overlapping tRNA-Ile-AAT-4-1 also partially overlaps tRNA-Ser-AGA-2-6.
+Results shown are from the blood cell-type and batch corrected model. Median Methylation in reads per million is calculated across all samples in the model. The window structure track (Wins) illustrates the tiled nature of the MeDIP-seq windowing. Some annotations of the 3' UTR of CTC1 extend further than illustrated here covering tRNA-Thr-AGT-1-2. CpG density and CpG position are included to illustrate that similarly CpG dense tRNA genes are exhibiting differing age related DNAm change patterns.
 
-```{r circos, fig.cap="(ref:circosCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
-knitr::include_graphics("figs/tRNA_circos_test_inkscape_4.png")
+To place these hypermethylating tRNA genes in their genomic context we examined how the extended set of 44 non-blood cell-type corrected study-wide significant tRNAs clustered with other tRNA genes.
+We clustered the tRNA genes by grouping together all tRNAs within 5Mb of one another and then required that a cluster contain at least 5 tRNA genes with a density of at least 5 tRNA genes per Mb (see [Methods](#clustering)).
+This yielded 12 major tRNA gene clusters containing a total of 353 tRNA genes, 42 of the 44 study-wide significant tRNA genes in the non cell-type corrected age model reside within these clusters (figure \@ref(fig:heyn) b). 
+The hypermethylating tRNA genes are spread evenly among these clusters proportionately to their size, (no significant difference in a one-way ANOVA of percentage of significant tRNAs by cluster).
+
+```{r heyn, fig.cap="(ref:heynCap)", out.width='95%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("./figs/heyn-cluster.png")
 ```
-(ref:circosCap) Human tRNAome overview. From the outside in: Chromosome ideograms scaled by the number of tRNA genes (total = 598), as excludes chromosome X (10), Y (0) and contig chr1_gl000192_random (2; see [Methods](#tRNAanno)). tRNA genes within 20kbp of one another are grouped with breaks inserted between these clusters. Radial grey lines represent the location of tRNA genes in the genome. $-log_{10}(p-value)$ for the blood cell-type and batch corrected age model are shown for each window overlapping a tRNA gene in green. Mean methylation across all samples (n=3001) in RPM (reads per million base pairs) is shown in blue. Genome-wide significant cell-type & batch corrected ($p < 4.34\times10^{-9}$) tRNAs show in red. The 158 Loci covered by 213 probes on the 450k array which directly overlap a tRNA gene are shown with green triangles. The 84 loci targeted for bisulfite sequencing in this study are indicated in magenta. Mappability score density is computed as the area under the encode mappability tracks [@Derrien2012] over the length of the region.
-
-\newpage
+(ref:heynCap) __A)__ Available study-wide significant (SWS) tRNA genes (n = 14) are more methylated in a centenarian than in a neonate or a 26 year old. Whole Genome Bisulfite Sequencing Data in a newborn, as adult and a centenarian. Each point represents the methylation level at an individual CpG within a tRNA gene. __B)__ Almost all tRNA genes (42/44, counts shown in red) study-wide significant in the MeDIP batch corrected age model, and all of the genome-wide significant and blood-cell type corrected sets of tRNA genes reside in one of 12 major tRNA gene clusters. (Defined by joining all tRNAs within 5Mb of one another and requiring at least 5 tRNA genes per cluster with a density of at least 5 tRNA genes per Mb). 
 
 #### Age-related tRNAome DNA Hypermethylation is even observed in one Newborn versus one Centenarian
 
 We examined an available Whole Genome Bisulphite sequencing (WGBS) dataset from Heyn *et al.* [@Heyn2012] (see [Methods](#Methods))
 These data consisted of blood-derived DNA WGBS in one newborn child and one 26 year old, and centenarian (103 years).
 In their analysis, the centenarian was found to have more hypomethylated CpGs than the neonate across all genomic compartments, including promoters, exonic, intronic, and intergenic regions.
-However, even in this examination of 3 individuals of 3 different age in the 55% of tRNA that possessed coverage, we observed DNA hypermethylation with age among the study-wide significant tRNA hypermethylators. The centenarian was significantly more methylated in this set of tRNAs than the neonate (Wilcoxon rank sum test, 6.14% increase (95% CI -Inf - 4.31), W = 717, p = $6.14\times10^{-4}$, see Figure \ref{fig:heyn}).
+However, even in this examination of 3 individuals of 3 different age in the 55% of tRNA that possessed coverage, we observed DNA hypermethylation with age among the study-wide significant tRNA hypermethylators. The centenarian was significantly more methylated in this set of tRNAs than the neonate (Wilcoxon rank sum test, 6.14% increase (95% CI -Inf - 4.31), W = 717, p = $6.14\times10^{-4}$, see Figure \@ref(fig:heyn) a).
 
-```{r heyn, fig.cap="(ref:heynCap)", out.width='60%', fig.show='hold', fig.align = 'center', echo=FALSE}
-knitr::include_graphics("./figs/heynViolinBBswsOnlyLabelled_BL.png")
-```
-(ref:heynCap) Whole Genome Bisulfite Sequencing Data in a newborn, as adult and a centenarian. Each point represents the methylation level at an individual CpG within a tRNA gene. Numbers in parentheses indicate the number of tRNA genes for which methylation data is shown. SWS: Available study-wide significant tRNA genes.
+\newpage
 
 #### Age-related Changes Independently Replicated with Targeted Bisulfite Sequencing
 
@@ -421,29 +477,29 @@ In order to further robustly support these-ageing related changes, we attempted 
 Furthermore, we employed a different technology Targeted bisulfite (BiS) sequencing to also further validate the MeDIP-seq-derived results.
 These data provide individual CpG resolution to identify what may be driving the regional DNAm changes observed.
 
-We performed this targeted BiS-seq in blood-derived DNA from 8 pools of age-matched individuals at 4 time-points (~4, ~28, ~63, ~78 years) from a total of 190 individuals, as detailed in Table \ref{tab:poolAges}.
+We performed this targeted BiS-seq in blood-derived DNA from 8 pools of age-matched individuals at 4 time-points (~4, ~28, ~63, ~78 years) from a total of 190 individuals, as detailed in Table \@ref(tab:poolAges).
 A total of 79 tRNA loci generated reliable results post-QC (see [Methods](#targetedBiSseq)).
 These tRNAs covered a total of 458 CpGs with a median of 6 CpGs per tRNA (range 1-9).
 Median Coverage per site across pools, technical replicates and batches was 679 reads (mean 5902).
 
 Firstly, we ran the 8 Pooled samples on the Illumina EPIC (850k) array to confirm that our pooling approach was applicable for DNAm ageing-related evaluation.
-This showed an $R^2 = 0.98$ between pool mean chronological age and Horvath clock DNAm predicted age [@Horvath2013](see Figure \ref{fig:DNAmAgeVsChronAge}).
+This showed an $R^2 = 0.98$ between pool mean chronological age and Horvath clock DNAm predicted age [@Horvath2013](see Figure \@ref(fig:DNAmAgeVsChronAge)).
 Therefore, this confirmed the utility of this novel pooling approach. 
 We also used these array derived data to estimate the major blood cell proportions for each of these pools with the Houseman algorithm [@Houseman2012].
 
 ```{r DNAmAgeVsChronAge, fig.cap="(ref:DNAmAgeVsChronAgeCap)", out.width='60%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("./figs/DNAmAgeVsChronAge.png")
 ```
-(ref:DNAmAgeVsChronAgeCap) Chronological Age compared with DNAm Age estimated with Horvath's 2013 multi-tissue clock [@Horvath2013] based on EPIC array data for the 8 pooled samples used in the Targeted Bisulfite sequencing (See Table \ref{tab:poolAges} for pool details).
+(ref:DNAmAgeVsChronAgeCap) Chronological Age compared with DNAm Age estimated with Horvath's 2013 multi-tissue clock [@Horvath2013] based on EPIC array data for the 8 pooled samples used in the Targeted Bisulfite sequencing (See Table \@ref(tab:poolAges) for pool details).
 
 We noted that individual tRNA loci exhibiting age-related changes in DNAm had duplicate or isodecoder (same anticodon but body sequence variation) sequences in the genome, which despite exact or near sequence identity did not show similar changes.
 tRNA-iMet-CAT-1-4 for instance is 1 of 8 identical copies in the genome and was the only locus that showed significant changes.
-The results of pairwise differential methylation tests between age groups for the 6 top tRNAs from the MeDIP-seq models are listed in Table \ref{tab:pairwiseTab}.
+The results of pairwise differential methylation tests between age groups for the 6 top tRNAs from the MeDIP-seq models are listed in Table \@ref(tab:pairwiseTab).
 
-Of the 3 top hits in MeDIP-seq, tRNA-iMet-CAT-1-4 (Figure \ref{fig:combinedKaryoplots}c) and tRNA-Ser-AGA-2-6 (Figure \ref{fig:combinedKaryoplots}i) exceeded nominal significance (p-values = $9.35\times10^{-4}$ & $4.28\times10^{-2}$ , respectively).
-However, tRNA-Ile-AAT-4-1 (Figure \ref{fig:combinedKaryoplots}n) showed a nominal decrease in DNAm with age. 
-tRNA tRNA-Leu-TAG-2-1 from the study-wide significant set also showed nominally significant hypermethylation with age (Figure \ref{fig:combinedKaryoplots}u).
-Also, four of the individual CpGs in tRNA-iMet-CAT-1-4 exhibited nominally significant increases in DNAm with Age (Figure \ref{fig:tRNAiMetCAT1x4nomSigCpG}).
+Of the 3 top hits in MeDIP-seq, tRNA-iMet-CAT-1-4 (Figure \@ref(fig:combinedKaryoplots)c) and tRNA-Ser-AGA-2-6 (Figure \@ref(fig:combinedKaryoplots)i) exceeded nominal significance (p-values = $9.35\times10^{-4}$ & $4.28\times10^{-2}$ , respectively).
+However, tRNA-Ile-AAT-4-1 (Figure \@ref(fig:combinedKaryoplots)n) showed a nominal decrease in DNAm with age. 
+tRNA tRNA-Leu-TAG-2-1 from the study-wide significant set also showed nominally significant hypermethylation with age (Figure \@ref(fig:combinedKaryoplots)u).
+Also, four of the individual CpGs in tRNA-iMet-CAT-1-4 exhibited nominally significant increases in DNAm with Age (Figure \@ref(fig:tRNAiMetCAT1x4nomSigCpG)).
 
 ```{r, tRNAiMetCAT1x4nomSigCpG, fig.cap="(ref:tRNAiMetCAT1x4nomSigCpGCap)", out.width='80%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("./figs/tRNA-iMet-CAT-1-4_nomSig_CpG.png")
@@ -601,7 +657,7 @@ pairwiseTab
 ##### Select Duplicates & Isodecoders of Hypermethylating tRNA loci remain unchanged
 
 We targeted a selection of these duplicate and isodecoder loci for bisulfite sequencing in order to confirm that the identified DNAm changes are specific to a given locus and not general to related tRNAs.
-Examining the tRNA-iMet-CAT-1 family, only the previously identified 1-4 version confirmed significant hypermethylation (not 1-2, 1-3 or 1-5)(Figure \ref{fig:combinedKaryoplots}a-e). Likewise the tRNA-Ser-AGA-2-6 version was supported compared to 2-1,2-4 and 2-5(Figure \ref{fig:combinedKaryoplots}f-j)).
+Examining the tRNA-iMet-CAT-1 family, only the previously identified 1-4 version confirmed significant hypermethylation (not 1-2, 1-3 or 1-5)(Figure \@ref(fig:combinedKaryoplots)a-e). Likewise the tRNA-Ser-AGA-2-6 version was supported compared to 2-1,2-4 and 2-5(Figure \@ref(fig:combinedKaryoplots)f-j)).
 
 ```{r, combinedKaryoplots, fig.cap="(ref:combinedKaryoplotsCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("./figs/combinedKaryoplots_sig_bl.png")
@@ -613,7 +669,7 @@ knitr::include_graphics("./figs/combinedKaryoplots_sig_bl.png")
 Although DNA methylation array poorly cover the tRNAome, we wished to attempt to see if this BiS-based but differing and well-established technology was supportive at all of our DNA hypermethylation findings. 
 TwinsUK had available 450k array on 587 individuals, and this platform includes 143 probes, covering 103 tRNAs.
 All the 3 top tRNAs in the MeDIP-seq results were covered by this data set, and 7 of the 16 study-wide significant set.
-9 tRNAs show significant (p < $4.58\times10^{-4}$) increases in DNA methylation with age in models corrected for blood cell counts including all 3 of the 3 tRNAs identified in the MeDIP-seq as genome-wide significant and 5 of the 7 study-wide significant set present on the array (Figure \ref{fig:bloodEpitwins450kCounts}).
+9 tRNAs show significant (p < $4.58\times10^{-4}$) increases in DNA methylation with age in models corrected for blood cell counts including all 3 of the 3 tRNAs identified in the MeDIP-seq as genome-wide significant and 5 of the 7 study-wide significant set present on the array (Figure \@ref(fig:bloodEpitwins450kCounts)).
 Although it should be noted that 56 of these 143 probes are within the non-robust set of Zhou et al. [@Zhou2017], including 1 of the genome-wide, and 1 of the study-wide results (covering tRNA-Ile-AAT-4-1 & tRNA-Val-AAC-4-1), respectively.
 
 ```{r bloodEpitwins450kCounts, fig.cap="(ref:bloodEpitwins450kCountsCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
@@ -624,8 +680,8 @@ knitr::include_graphics("./figs/blood_epitwins450k_Counts_sws_bl_zhou.png")
 #### Ageing-Related tRNA Loci show increased Enhancer-Related Chromatin Signatures
 
 We further explored the activity of the tRNAome in public Chromatin segmentation data in blood (Epilogos Blood & T-cells set) [@Meuleman2019].
-This shows proportionally more Enhancer-related (Enh, EnhBiv & EnhG) chromatin states at tRNA genes hypermethylating with age than the stronger Promoter-related (TSS) in other tRNAs. (Figure \ref{fig:combinedEpilogosPlot}).
-Whereas these characteristics are less frequently predominant in the rest of the tRNAs (Figure \ref{fig:combinedEpilogosPlot}).
+This shows proportionally more Enhancer-related (Enh, EnhBiv & EnhG) chromatin states at tRNA genes hypermethylating with age than the stronger Promoter-related (TSS) in other tRNAs. (Figure \@ref(fig:combinedEpilogosPlot)).
+Whereas these characteristics are less frequently predominant in the rest of the tRNAs (Figure \@ref(fig:combinedEpilogosPlot)).
 Age-hypermethylating tRNA are enriched for enhancer chromatin states compared to the rest of the tRNAome (Fisher's Exact test p = 0.01).
 
 ```{r, combinedEpilogosPlot, fig.cap="(ref:combinedEpilogosPlotCap)", out.width='90%', fig.show='hold', fig.align = 'center', echo=FALSE}
@@ -642,7 +698,7 @@ Specifically, there is shift to favour the production of cells in the myeloid li
 These points lead us to examine tRNA gene DNAm in sorted cell populations.
 We used a publically available 450k array dataset [@Reinius2012]) that has been used in the construction of cell-type specific DNAm references for cell-type fraction prediction using the Houseman algorithm [@Houseman2012] (see [Methods](#sortedbloodmethods)).
 This consists of data from 6 individuals (aged $38 \pm 13.6$/yrs) from seven isolated cell populations (CD4+ T cells, CD8+ T cells, CD56+ NK cells, CD19+ B cells, CD14+ monocytes, neutrophils, and eosinophils).
-We found that tRNA gene DNAm could separate myeloid from lymphoid lineages (Figures \ref{fig:meanMethbytRNAMatLowBB6} & \ref{fig:meanMethbytRNAMatHeatmapLow}). 
+We found that tRNA gene DNAm could separate myeloid from lymphoid lineages (Figures \@ref(fig:meanMethbytRNAMatLowBB6) & \@ref(fig:meanMethbytRNAMatHeatmapLow)). 
 
 Of the eight study-wide significant tRNAs with array coverage, we identified that collectively these eight are significantly more methylated in the lymphoid than the myeloid lineage (1.1% difference, Wilcoxon rank sum test p = $1.50\times10^{-6}$ 95% CI 0.7%-$\infty$).
 Thus, any age related increases in myeloid cell proportion would be expected to dampen rather than exaggerate the age-related hypermethylation signal that we observed.
@@ -667,11 +723,11 @@ Only 43 tRNA genes had adequate data to compare across tissues in this dataset a
 #### tRNA Genes also Hypermethylate with Age in Solid Tissue
 
 Only 2 of the 3 tRNA genes we identified as genome-wide significant and a further 1 of the study-wide significant tRNA genes are present in the set of 45 tRNA genes in the TCGA data, thus limiting our ability to draw conclusions about the tissue specificity of our results. 
-Solid tissue samples have a strong preponderance for low levels of methylation consistent with the active transcription of many tRNA genes and show slight increasing methylation with age but age accounts for very little of the variance (linear regression slope estimate = $1.52$; $R^2= 0.0002$; p-value $1.34\times10^{-3}$ (Figure \ref{fig:cancerVsNormalCombinedPlots}d). 
+Solid tissue samples have a strong preponderance for low levels of methylation consistent with the active transcription of many tRNA genes and show slight increasing methylation with age but age accounts for very little of the variance (linear regression slope estimate = $1.52$; $R^2= 0.0002$; p-value $1.34\times10^{-3}$ (Figure \@ref(fig:cancerVsNormalCombinedPlots)d). 
 In a pan-tissue analysis we found that 10 tRNA genes showed changes in DNAm with age, 9 of which were hypermethylation (p-value $<1.1\times10^{-3}$).
 One of these tRNA genes, tRNA-Ser-TGA-2-1 was also present in study-wide significant set of tRNA genes.
-Figures \ref{fig:meanBetasByTissueTNMHeatmap} & \ref{fig:meanMethBytRNAByFetalTissueHeatmap} illustrate minimal tissue specific differences.
-Interestingly, however, tRNA-iMet-CAT-1-4 and tRNA-Ser-AGA-2-6 appeared more variable in methylation state than many other tRNAs in the TCGA normal tissue samples (Figure \ref{fig:meanBetasByTissueTNMHeatmap}) and indeed have the highest variance in DNA methylation across tissues (Figure \ref{fig:cancerVsNormalCombinedPlots}c).
+Figures \@ref(fig:meanBetasByTissueTNMHeatmap) & \@ref(fig:meanMethBytRNAByFetalTissueHeatmap) illustrate minimal tissue specific differences.
+Interestingly, however, tRNA-iMet-CAT-1-4 and tRNA-Ser-AGA-2-6 appeared more variable in methylation state than many other tRNAs in the TCGA normal tissue samples (Figure \@ref(fig:meanBetasByTissueTNMHeatmap)) and indeed have the highest variance in DNA methylation across tissues (Figure \@ref(fig:cancerVsNormalCombinedPlots)c).
 
 ### Expression of tRNAs in Blood with Age
 
@@ -684,9 +740,9 @@ The lack of coverage of age hypermethylating tRNAs by uniquely attributable RNA-
 
 Using the original MINTmap reference optimised to detect tRNA fragments derived from mature tRNAs there were 5384 unique fragments derived from as many as 417 tRNA loci.
 However, the mapping between fragments and loci in this reference is many to many, with each tRNA gene able to give rise to many fragments and each fragment attributable to at least 1 and usually many tRNA genes.
-We limited our examination of these fragments to those with a length of greater than or equal to 40nt to capture reads more likely to be derived from mature tRNAs rather than tRFs or tRNA halves (Figure \ref{fig:combinedFragSizeDists}).
+We limited our examination of these fragments to those with a length of greater than or equal to 40nt to capture reads more likely to be derived from mature tRNAs rather than tRFs or tRNA halves (Figure \@ref(fig:combinedFragSizeDists)).
 We identified 48 tsRNAs with nominally significant expression changes (p < 0.05), 8 increased and 40 decreased in abundance with age.
-For example 5 of 6 fragments showing significant age-related expression changes derived from the Gln-CTG family of tRNAs are decreasing with age (Figure \ref{fig:mintmapres}).
+For example 5 of 6 fragments showing significant age-related expression changes derived from the Gln-CTG family of tRNAs are decreasing with age (Figure \@ref(fig:mintmapres)).
 This is suggestive that expression of some tRNA genes may decline with age but this possibility is in need of additional tRNA expression data before it can be asserted with confidence.
 
 ```{r mintmapres, fig.cap="(ref:mintmapresCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
@@ -701,7 +757,7 @@ These data from 152 mice covered 51 tRNA genes and 385 CpGs after QC (see [Metho
 The mice ranged in age from 0.67-35 months.
 
 Three of the 51 tRNAs showed Bonferroni significant DNA methylation changes with age (p-value < $1.08 \times 10^{-4}$) and all were in the hypermethylation direction.
-These three are tRNA-Asp-GTC-1-12, tRNA-Ile-AAT-1-4, tRNA-Glu-TTC-1-3 (Figure \ref{fig:mouse}).
+These three are tRNA-Asp-GTC-1-12, tRNA-Ile-AAT-1-4, tRNA-Glu-TTC-1-3 (Figure \@ref(fig:mouse)).
 
 ```{r mouse, fig.cap="(ref:mouseCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("./figs/CpGPlotComb.png")
@@ -722,6 +778,9 @@ Secondly, being a fragment-based regional assessment of DNA methylation, the ind
 We determined by genome-wide permutation that this strong hypermethylation signal was specific to the tRNAome, and not merely driven by the underlying CpG density of these loci.
 A targeted BiS-seq experiment validated the defined nature of the tRNA change in an independent dataset, with a successful pooling approach, which may also be useful for other ageing-related targeted DNA methylome evaluations. 
 Additionally, we gained support for our results from limited DNA methylation array data. 
+
+Whilst the changes in DNA methylation we have observed are relatively small (i.e. 3.7% between 4-year to 78-year pools in tRNA-iMet-CAT-1-4), this is consistent with the effect size seen in the majority of positions differentially methylatyed with age in many other studies [@Slieker2016; @Xu2014b], except for the noted extreme outliers, such as *EVOLV2* [@Slieker2018]. 
+Furthermore, effect size cut-offs are observed to remove a large fraction of true age-DMPs [@Zhu2018].
 
 We subsequently explored further what was driving this age-related phenomenon and its possible biological implications. 
 As this result was observed in peripheral blood, we were well aware that we were examining DNA derived from a heterogeneous cell type population [@Lappalainen2017].
@@ -786,9 +845,8 @@ We directly interrogated the epigenetic DNA methylation state of the functionall
 
 ## Data availability
 
-The MeDIP-seq data supporting the results of this article are available in the EMBL-EBI European Genome-phenome Archive (EGA) under Data set Accession number EGAD00010000983 (https://www.ebi.ac.uk/ega/datasets/
-EGAD00010000983).
-The targeted BiS-sequencing data will be available on publication.
+The MeDIP-seq data supporting the results of this article are available in the EMBL-EBI European Genome-phenome Archive (EGA) under Data set Accession number EGAD00010000983 ([https://www.ebi.ac.uk/ega/datasets/EGAD00010000983](https://www.ebi.ac.uk/ega/datasets/EGAD00010000983)).
+The targeted BiS-sequencing data is available at: [https://www.ncbi.nlm.nih.gov/bioproject/PRJNA635108](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA635108)
 
 ## Code availablity
 
@@ -798,14 +856,14 @@ Available at [https://github.com/RichardJActon/tRNA_paper_code](https://github.c
 
 ## Acknowledgements
 
-We gratefully acknowlege the individuals from TwinsUK, Mavidos and the Hertfordshrie cohort.
+We gratefully acknowledge the individuals from TwinsUK, Mavidos and the Hertfordshrie cohort.
 TwinsUK received funding from the Wellcome Trust (Ref: 081878/Z/06/Z), European Community’s Seventh Framework Programme (FP7/2007-2013), the National Institute for Health Research (NIHR)-funded BioResource, Clinical Research Facility and Biomedical Research Centre based at Guy’s and St Thomas’ NHS Foundation Trust in partnership with King’s College London. 
 Further funding support for the EpiTwin project was obtained from the European Research Council (project number 250157) and BGI. 
 SNP Genotyping was performed by The Wellcome Trust Sanger Institute and National Eye Institute via NIH/CIDR.
 The authors would like to thank Nikki Graham for her assistance with the identification and pooling of the MAVIDOS and Hertfordshire DNA samples.
 The authors also acknowledge the use of the IRIDIS High Performance Computing Facility, and associated support services at the University of Southampton, in the completion of this work.
 The MRC-LEU is supported by the Medical Research Council (MRC).
-CGB recieved support from Diabetes UK (16/0005454).
+CGB received support from Diabetes UK (16/0005454).
 RJA was in receipt of a MRC Doctoral fund (1820097).
 
 ## Author Contributions
@@ -821,4 +879,43 @@ PGH contributed additional data and discussion of results.
 RJA and CGB wrote the paper. 
 All authors reviewed and approved the final manuscript.
 
-## References
+\newpage
+
+## Supplementary materials {-}
+
+### Supplementary Figures
+
+```{r mappabilityiMet1, fig.cap="(ref:mappabilityiMet1Cap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("./figs/mappability-iMet1.png")
+```
+(ref:mappabilityiMet1Cap) Example of mappability data from the encode mappability tracks [@Derrien2012] for the initiator methionine tRNA genes.
+
+```{r mappabilityScoreDensity, fig.cap="(ref:mappabilityScoreDensityCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("./figs/mappabilityScoreDensity_tRNAVsFlank500.png")
+```
+(ref:mappabilityScoreDensityCap) Mappability score density of the tRNAome increases with read length and is greater when flanking regions ($\pm500bp$) are included. Mappability score density is computed as the area under the encode mappability tracks [@Derrien2012] over the length of the region.
+
+```{r CpGcountBGvstRNAPlot, fig.cap="(ref:CpGcountBGvstRNAPlotCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("figs/CpGcountBGvstRNAPlot.png")
+```
+(ref:CpGcountBGvstRNAPlotCap) CpG Density in windows overlapping tRNA genes compared to that of non-tRNA overlapping windows in flanking sequences (+/-5kb)
+
+```{r meanMethbytRNAMatHeatmapLow, fig.cap="(ref:meanMethbytRNAMatHeatmapLowCap)", out.width='90%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("./figs/meanMethbytRNAMatHeatmapLow_bl.png")
+```
+(ref:meanMethbytRNAMatHeatmapLowCap) Heatmap Mean Methylation of probes covering each tRNA in 7 cell-type fractions from 6 Male individuals. Showing all 150 tRNAs covered by 213 probes on the Illumina 450k array. Data from [GSE35069](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35069) [@Reinius2012] downloaded using `GEOquery` [@Davis2007p]. Generated with the `ComplexHeatmap` `R` package [@Gu2016].
+
+```{r cancerVsNormalCombinedPlots, fig.cap="(ref:cancerVsNormalCombinedPlotsCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("./figs/cancerVsNormalCombinedPlots.png")
+```
+(ref:cancerVsNormalCombinedPlotsCap) Global properties of tRNA methylation data for 45 tRNA genes across 19 tissues with matched normal and tumour samples from 733 cases in TCGA [@Yang2016; @Nazor2012].
+
+```{r meanBetasByTissueTNMHeatmap, fig.cap="(ref:meanBetasByTissueTNMHeatmapCap)", out.width='90%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("./figs/meanBetasByTissueTNMpseudoSplitHeatmap.png")
+```
+(ref:meanBetasByTissueTNMHeatmapCap) Mean Methylation of 43 tRNAs in 19 tissues. Possible pseudogene (tRNA-Asn-ATT-1-1) is shown in a separate cluster beneath the main heatmap [@Gu2016].
+
+```{r meanMethBytRNAByFetalTissueHeatmap, fig.cap="(ref:meanMethBytRNAByFetalTissueHeatmapCap)", out.width='60%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("./figs/meanMethBytRNAByFetalTissueHeatmapPseudosplit.png")
+```
+(ref:meanMethBytRNAByFetalTissueHeatmapCap) Mean Methylation of 115 tRNAs in 11 tissues. Possible pseudogenes are shown in a separate cluster beneath the main heatmap [@Gu2016].
