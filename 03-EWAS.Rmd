@@ -2,12 +2,12 @@
 
 ## Abstract
 
-Long term bone health and fracture risk is strongly influenced by the peak bone mass that is attained in early adulthood, this has its origins in development from late pregnancy trough early childhood.
-Vitamin D availability to facilitate the uptake of calcium and phosphate is essential to healthy bone development, in addition to the role of vitamin D as a hormone mediating this process.
+Long term bone health and fracture risk is strongly influenced by the peak bone mass that is attained in early adulthood, this has its origins in development from late pregnancy through early childhood.
+The availability of vitamin D to facilitate the uptake of calcium and phosphate is essential to healthy bone development, in addition to the role of vitamin D as a hormone mediating this process.
 Greater mechanistic understanding of this process is desirable to permit the design of more effective interventions to reduce the substantial health burden of osteoporotic fractures in the elderly.
 Maternal vitamin D levels during pregnancy have previously been shown to impact on the methylation status of specific genes associated with vitamin D signalling and metabolism, such as *RXRA*. 
 Long-term bone health outcomes have also been associated with both maternal vitamin D during pregnancy and methylation of the *CDKN2A* gene. 
-To attempt to identify other loci the epigenetic regulation of which is pertinent to the impact of maternal vitamin D levels on long-term bone health Epigenome-Wide Association Studies (EWAS) were performed with DNA methylation data from the Illumina EPIC & 450k methylation bead chip arrays.
+To attempt to identify other loci, the epigenetic regulation of which is pertinent to the impact of maternal vitamin D levels on long-term bone health, Epigenome-Wide Association Studies (EWAS) were performed with DNA methylation data from the Illumina EPIC & 450k methylation bead chip arrays.
 We tentatively identify two CpGs whose DNA methylation state is associated with bone mineral content at 6 years of age and periosteal circumference at 6 years of age respectively.
 
 ## Introduction
@@ -70,7 +70,7 @@ Methylation at several of these sites showed an inverse correlation with bone si
 Epigenetic states are a product of both genetics and environment, they exist on a continuum from complete or obligatory genetic determination through facilitative variation influenced by genetics, to the purely epigenetic subject entirely to environmental factors.
 This picture is complicated by the observation that genetics can not merely influence epigenetic state but also the extent to which that state will vary depending on environmental factors [@Holland2017]. 
 Epigenome-wide association studies have been performed on DNA methylation data for many traits including age (Section \@ref(DNAmAgeReview)), smoking status [@Dogan2017], exposure to atmospheric particulate matter [@Dai2016], and obesity [@Wahl2016]. 
-Some robust and reproducible DAN methylation changes have been identified with EWAS, particularly for traits such as a age and smoking. 
+Some robust and reproducible DNA methylation changes have been identified with EWAS, particularly for traits such as age and smoking. 
 Unlike genome-wide association studies (GWAS) associations found by EWAS can be due to reverse causation. 
 That is to say, a genetic variant associated with a disease is very unlikely to have been caused by the disease state whereas an epigenetic association can be the consequence of a disease state. 
 Whilst this can complicate the dissection of disease aetiology it can also be a boon in unpicking the biology that follows on from a particular disease or environmental exposure by revealing what biological networks are affected. 
@@ -106,7 +106,7 @@ Analysis of the Illumina EPIC and 450k methylation arrays was carried out in the
 
 ### Functional Normalisation
 
-Functional normalisation is an approach to removing unwanted variation associated with 'batch' effects such as the date on which a sample was analysed or which slide a sample is on developed by Fortin et al. [@Fortin2014]. 
+Functional normalisation is an approach to removing unwanted variation associated with 'batch' effects such as the date on which a sample was analysed or which slide a sample is on which was developed by Fortin et al. [@Fortin2014]. 
 This noise in the data masks the signal associated with the underlying biological effect of interest. 
 
 Functional normalisation makes use of control probes on the arrays which are designed to capture only technical variation as surrogates for the sources of unwanted variation. 
@@ -117,7 +117,7 @@ Picking the number of PCs which correspond to the last steep drop in residual va
 (See supplementary material from [@Fortin2014] for details of the control probe summary process.)
 
 The process used by functional normalisation is a variant on quantile normalisation. 
-Instead of forcing the empirical marginal distributions of the samples to be identical at each site across arrays it constructs quantile function which only removes variation arising from surrogates for batch variation to produce the normalised values. 
+Instead of forcing the empirical marginal distributions of the samples to be identical at each site across arrays. To produce the normalised values it constructs a quantile function which only removes variation arising from surrogates for batch variation. 
 This approach is effective even when comparing samples with large global differences in methylation levels such as between normal and cancer samples, but cannot overcome high degrees of confounding [@Fortin2014].
 
 ### Genetically Confounded and Multi-mapping Probes
@@ -128,10 +128,10 @@ Thus, sites that have common genetic variants at the probe site are also exclude
 
 43,254 probes on the EPIC array have been identified as multi-mapping, DNA binding to the probes may be derived from other locations in the genome invalidating these probes as a measure of methylation at their intended loci [@Pidsley2016]. 
 12,510 probes were identified as having genetic variants at the CpG locus they are intending to assay, this can produce misleading results as mutant bases can resemble the products of bisulfite conversion [@Pidsley2016]. 
-1,812 probes overlapping regions exhibiting haplotype-specific methylation associated with common non-SNP genetic variants (CNVs, Indels, STRs) and regional in-phase clustering of CpG-SNPs [@Bell2017a]. 
-Zhou et al. [@Zhou2017] provided a list of probes which they recommend 'masking' from the 450k array due to, multi-mapping issues, genetic variants overlapping the CpG sites and other factors which may render results from these probes problematic. 
+1,812 probes where found t overlap regions exhibiting haplotype-specific methylation associated with common non-SNP genetic variants (CNVs, Indels, STRs) and regional in-phase clustering of CpG-SNPs [@Bell2017a]. 
+Zhou et al. [@Zhou2017] provided a list of probes which they recommend 'masking' from the 450k array due to multi-mapping issues, genetic variants overlapping the CpG sites, and other factors which may render results from these probes problematic. 
 
-In order to identify any potential additional sources of genetic confounding in the phase I MAVIDOS analysis, we looked for probes with methylation values which cluster into distinct groups using the 'gap hunting' method developed by Andrews et al. [@Andrews2016]. 
+In order to identify any potential additional sources of genetic confounding in the phase I MAVIDOS analysis, Probes with methylation values which cluster into distinct groups were identified using the 'gap hunting' method developed by Andrews et al. [@Andrews2016]. 
 Such distinct clusters of methylation can arise from genetic variants which influence methylation levels being present in homozygous and heterozygous forms in the study population, see Figure \@ref(fig:MAVIDOSgaphunterEgMonApr162018). 
 As the sensitivity and specificity of 'gap hunting' is limited, it is the advice of the authors not to exclude probes flagged by `gaphunter()` prior to performing EWAS. 
 It is instead advised to check if any of the results appear in this list after the fact and examine the possibility of a genetic effect if they are.
@@ -142,18 +142,18 @@ Flagging of problematic probes occurred after EWAS on any significant results.
 
 #### Cell-Type Correction
 
-Cell composition is a known confounder in epigenetic studies [@Jaffe2014; @Houseman2012]. 
-Observed variation DNA methylation can be cell-type intrinsic, changes in DNAm not driven by changes in the cell-type composition of the tissue, or cell-type extrinsic, due to changes in the cell-type composition of the population sampled (Figure \@ref(fig:IntrinsicVsExtrinsicDNAmChangeGeneral)). 
+Cell-type composition is a known confounder in epigenetic studies [@Jaffe2014; @Houseman2012]. 
+Observed variation DNA methylation can be cell-type intrinsic, where changes in DNA methylation are not driven by changes in the cell-type composition of the tissue; or cell-type extrinsic, where changes in DNA methylation are due to changes in the cell-type composition of the population sampled (Figure \@ref(fig:IntrinsicVsExtrinsicDNAmChangeGeneral)). 
 An established approach for addressing this potential source of confounding is to add terms to the regression model which reflect the cell-type composition of each sample. 
 Cell-type composition can be ascertained through three main approaches: Direct cell count data; Estimating cell counts using the experimental data and models fitted on DNA methylation data from reference panels of known cell-type composition [@Houseman2012]; or reference free approaches which make use of mathematical methods to identify sources of confounding variation such as cell-type heterogeneity. 
-Whilst there are several reference samples available for cord blood [@Cardenas2016; @DeGoede2015; @Bakulski2016; @Gervin2016], None were available to cord tissue at the time of the initial analysis, and consequently we made use of reference free techniques in phase I of the MaViDOS analysis.
-Models were fitted using Surrogate Variable Analysis (SVA) [@Leek2007] and Independent surrogate variable analysis (iSVA) [@Teschendorff2011].
-Our results focus on SVA as we observed minimal differences between the two methods and SVA was recommended based on comparisons of the performance of various cell-type heterogeneity correction methods [@McGregor2016; @Teschendorff2017].
+Whilst there are several reference samples available for cord blood [@Cardenas2016; @DeGoede2015; @Bakulski2016; @Gervin2016], none were available for cord tissue at the time of the initial analysis, and consequently a reference free technique was used in phase I of the MAVIDOS analysis.
+Models were fitted using Surrogate Variable Analysis (SVA) [@Leek2007] and independent Surrogate Variable Analysis (iSVA) [@Teschendorff2011].
+The focus of these results is on SVA as minimal differences between the two methods were observed and SVA was recommended based on comparisons of the performance of various cell-type heterogeneity correction methods [@McGregor2016; @Teschendorff2017].
 
 ```{r IntrinsicVsExtrinsicDNAmChangeGeneral, fig.cap='(ref:IntrinsicVsExtrinsicDNAmChangeGeneral-Cap)', out.width='80%', fig.align = 'center', fig.show='hold', echo=FALSE}
 knitr::include_graphics("figs/IntrinsicVsExtrinsicDNAmChangeGeneral.png")
 ```
-(ref:IntrinsicVsExtrinsicDNAmChangeGeneral-Cap) Diagrammatic representation of DNAm change arising from extrinsic, cell-type composition change and intrinsic, DNAm of cells changes without the proportion of cell-types in the population changing. These two modes of change are of course not mutually exclusive and both can be occurring. 
+(ref:IntrinsicVsExtrinsicDNAmChangeGeneral-Cap) Diagrammatic representation of DNAm change arising from extrinsic or intrinsic changes in DNA methylation. Extrinsic changes are due to shifts in cell-type composition. Intrinsic changes in DNA methylation occur without changes in the proportions of cell-types. These two modes of change are of course not mutually exclusive and both can be occurring. 
 
 
 A reference panel for cord tissue samples was recently published [@Lin2018]. 
@@ -168,20 +168,20 @@ By default EWAS in `meffil` are run with four different models:
 1. No covariates, attempting to predict methylation with the variable of interest.
 2. All covariates, attempting to predict methylation with the variable of interest plus a user-supplied list of covariates.
 3. Surrogate Variables + all covariates, attempting to predict methylation with user-supplied covariates and surrogate variables generated from SVA.
-4. independent Surrogate Variables + all covariates, attempting to predict methylation with user-supplied covariates and independent surrogate variables generated from iSVA.
+4. Independent Surrogate Variables + all covariates, attempting to predict methylation with user-supplied covariates and independent surrogate variables generated from iSVA.
 
 Running EWAS with multiple models permits the effects of adding the various covariates on the results of the analysis to be seen. 
 
 ### Concordance of EPIC and 450k EWAS Results
 
-In order to ascertain if the results from the EWAS in the 450k and EPIC arrays were producing similar sets of probes in the top ranking positions when ordered by p-value the concordance (% overlap) between the top k probes, where k = 1 .. 100,000 was calculated. 
+In order to ascertain if the results from the EWAS in the 450k and EPIC arrays were producing similar sets of probes in the top ranking positions when ordered by p-value, the concordance (% overlap) between the top k probes, where $k = 1 .. 100,000$ was calculated. 
 Only probes in common between the two arrays were used and k was incremented in steps of 50.
 
 ## Results
 
 ### MAVIDOS phase I
 
-DNA methylation at none of the probes were significantly associated with the any of the four variables of interest for each EWAS performed in either the EPIC or 450k datasets. 
+DNA methylation at none of the probes were significantly associated with any of the four variables of interest for each EWAS performed in either the EPIC or 450k datasets. 
 The concordance between the probes with the top-ranked p-values in common between the EPIC and 450k data was at the level of chance.
 
 #### Whole array QC
@@ -201,7 +201,7 @@ The dataset also contained four samples for which there were two technical repli
 Array 201516310023 (MAVIDOS ID 95) was excluded as its median methylated signal was more than $3\sigma$ from the expected value, (Figure \@ref(fig:MAVIDOSqcEPICmethVsUnmeth)). 
 No samples were excluded for having a higher than expected proportion of undetected probes (proportion of probes with detection p-value > 0.01 is > 0.1) (Figure \@ref(fig:MAVIDOSqcEPICpropSites)). 
 No samples were excluded for having a high proportion of probes with low bead counts (proportion of probes with bead number < 3 is > 0.1), (Figure \@ref(fig:MAVIDOSqcEPICbeadNum)).
-In Total 3 of the EPIC arrays were excluded from the analysis for failing quality control leaving an n=137.
+In total 3 of the EPIC arrays were excluded from the analysis for failing quality control leaving an n=137.
 
 ```{r MAVIDOSqcEPICmethVsUnmeth, fig.cap='(ref:MAVIDOSqcEPICmethVsUnmeth-Cap)', out.width='80%', fig.align = 'center', fig.show='hold', echo=FALSE}
 knitr::include_graphics("figs/MAVIDOSqcEPICmethVsUnmeth.png")
@@ -279,7 +279,7 @@ knitr::include_graphics("figs/MAVIDOSqcEPICbeadNumAcross.png")
 (ref:MAVIDOSqcEPICbeadNumAcross-Cap) Low bead count probes across samples for EPIC data. Manhattan plot showing the proportion of samples (y) in which a given probe (x) has a bead count of <3. Black line indicates the exclusion threshold of 0.1. Plot generated by `meffil` QC report.
 
 
-Problematic probes identified Pidsley et al. [@Pidsley2016] and those overlapping the regions identified by Bell et al. [@Bell2017a] were excluded from subsequent analysis after functional normalisation. 
+Problematic probes identified by Pidsley et al. [@Pidsley2016] and those overlapping the regions identified by Bell et al. [@Bell2017a] were excluded from subsequent analysis after functional normalisation. 
 This, including the poor quality probes, is a total of 57,396 unique probes excluded from the analysis (~6.62% of the total number of probes).
 Gap hunter identified a further 77,398 probes (8.9% of all probes) which might be subject to genetic confounding (Figure \@ref(fig:MAVIDOSgaphunterEgMonApr162018)).
 
@@ -353,7 +353,7 @@ SVA generated 5 significant surrogate variables which were additionally used in 
 ```{r MAVIDOSbmcEPICewasManhattanSVA, fig.cap='(ref:MAVIDOSbmcEPICewasManhattanSVA-Cap)', out.width='80%', fig.align = 'center', fig.show='hold',  echo=FALSE}
 knitr::include_graphics("figs/MAVIDOSbmcEPICewasManhattanSVA.png")
 ```
-(ref:MAVIDOSbmcEPICewasManhattanSVA-Cap) Results of EWAS for neonatal bone mineral content with SVA model. Bidirectional Manhattan plot on which $-log_{10}(p-value)$ is plotted on the y axis and the sign of this value represents the direction of change. Size and transparency of points increases with $-log_{10}(p-value)$ such that the most significant probes are represented the largest and least translucent points. x axis represent chromosomes and position thereupon. Red line indicates the significance threshold of $6.18\times10^{-8}~(0.05\div808,585)$  
+(ref:MAVIDOSbmcEPICewasManhattanSVA-Cap) Results of EWAS for neonatal bone mineral content with SVA model. Bidirectional Manhattan plot on which $-log_{10}(p-value)$ is plotted on the y axis and the sign of this value represents the direction of change. Size and transparency of points increases with $-log_{10}(p-value)$ such that the most significant probes are represented by the largest and least translucent points. x axis represents chromosomes and position thereupon. Red line indicates the significance threshold of $6.18\times10^{-8}~(0.05\div808,585)$.  
 
 
 ##### Intervention / Placebo
@@ -365,7 +365,7 @@ SVA generated 5 significant surrogate variables which were additionally used in 
 ```{r MAVIDOSccEPICewasManhattanSVA, fig.cap='(ref:MAVIDOSccEPICewasManhattanSVA-Cap)', out.width='80%', fig.align = 'center', fig.show='hold', echo=FALSE}
 knitr::include_graphics("figs/MAVIDOSccEPICewasManhattanSVA.png")
 ```
-(ref:MAVIDOSccEPICewasManhattanSVA-Cap) Results of EWAS for intervention/placebo group status with SVA model. Bidirectional Manhattan plot on which $-log_{10}(p-value)$ is plotted on the y axis and the sign of this value represents the direction of change. Size and transparency of points increases with $-log_{10}(p-value)$ such that the most significant probes are represented the largest and least translucent points. x axis represent chromosomes and position thereupon. Red line indicates the significance threshold of $6.18\times10^{-8}~(0.05\div808,585)$ 
+(ref:MAVIDOSccEPICewasManhattanSVA-Cap) Results of EWAS for intervention/placebo group status with SVA model. Bidirectional Manhattan plot on which $-log_{10}(p-value)$ is plotted on the y axis and the sign of this value represents the direction of change. Size and transparency of points increases with $-log_{10}(p-value)$ such that the most significant probes are represented by the largest and least translucent points. x axis represents chromosomes and position thereupon. Red line indicates the significance threshold of $6.18\times10^{-8}~(0.05\div808,585)$. 
 
 
 ##### Maternal Vitamin D (34wks)
@@ -386,7 +386,7 @@ SVA generated 5 significant surrogate variables which were additionally used in 
 ```{r MAVIDOSmVitD34EPICewasManhattanSVA, fig.cap='(ref:MAVIDOSmVitD34EPICewasManhattanSVA-Cap)', out.width='80%', fig.align = 'center', fig.show='hold', echo=FALSE}
 knitr::include_graphics("figs/MAVIDOSmVitD34EPICewasManhattanSVA.png")
 ```
-(ref:MAVIDOSmVitD34EPICewasManhattanSVA-Cap) Results of EWAS for maternal circulating 25(OH)-vitamin D levels (nmol/l) levels at 34wks gestation with SVA model. Bidirectional Manhattan plot on which $-log_{10}(p-value)$ is plotted on the y axis and the sign of this value represents the direction of change. Size and transparency of points increases with $-log_{10}(p-value)$ such that the most significant probes are represented the largest and least transleucent points. x axis represent chromosomes and position thereupon. Red line indicates the significance threshold of $6.18\times10^{-8}~(0.05\div808,585)$ 
+(ref:MAVIDOSmVitD34EPICewasManhattanSVA-Cap) Results of EWAS for maternal circulating 25(OH)-vitamin D levels (nmol/l) levels at 34wks gestation with SVA model. Bidirectional Manhattan plot on which $-log_{10}(p-value)$ is plotted on the y axis and the sign of this value represents the direction of change. Size and transparency of points increases with $-log_{10}(p-value)$ such that the most significant probes are represented by the largest and least transleucent points. x axis represents chromosomes and position thereupon. Red line indicates the significance threshold of $6.18\times10^{-8}~(0.05\div808,585)$. 
 
 
 ##### Change in Maternal Vitamin D
@@ -404,7 +404,7 @@ knitr::include_graphics("figs/MAVIDOSdifVD.png")
 ```{r MAVIDOSdifVDEPICewasManhattanSVA, fig.cap='(ref:MAVIDOSdifVDEPICewasManhattanSVA-Cap)', out.width='80%', fig.align = 'center', fig.show='hold', echo=FALSE}
 knitr::include_graphics("figs/MAVIDOSdifVDEPICewasManhattanSVA.png")
 ```
-(ref:MAVIDOSdifVDEPICewasManhattanSVA-Cap) Results of EWAS for Change in maternal circulating 25(OH)-vitamin D levels (nmol/l) levels from 11 to 34wks gestation with SVA model. Bidirectional Manhattan plot on which $-log_{10}(p-value)$ is plotted on the y axis and the sign of this value represents the direction of change. Size and transparency of points increases with $-log_{10}(p-value)$ such that the most significant probes are represented the largest and least translucent points. x axis represent chromosomes and position thereupon. Red line indicates the significance threshold of $6.18\times10^{-8}~(0.05\div808,585)$ 
+(ref:MAVIDOSdifVDEPICewasManhattanSVA-Cap) Results of EWAS for change in maternal circulating 25(OH)-vitamin D levels (nmol/l) levels from 11 to 34wks gestation with SVA model. Bidirectional Manhattan plot on which $-log_{10}(p-value)$ is plotted on the y axis and the sign of this value represents the direction of change. Size and transparency of points increases with $-log_{10}(p-value)$ such that the most significant probes are represented by the largest and least translucent points. x axis represents chromosomes and position thereupon. Red line indicates the significance threshold of $6.18\times10^{-8}~(0.05\div808,585)$. 
 
 #### Concordance of EPIC and 450k EWAS results
 
@@ -416,13 +416,13 @@ In the absence of any probes above the significance threshold and with poor conc
 ```{r EPIC450kEWASconcordMAVIDOSMonApr162018, fig.cap='(ref:EPIC450kEWASconcordMAVIDOSMonApr162018-Cap)', out.width='80%', fig.align = 'center', fig.show='hold', echo=FALSE}
 knitr::include_graphics("figs/EPIC450kEWASconcordMAVIDOSMonApr162018.png")
 ```
-(ref:EPIC450kEWASconcordMAVIDOSMonApr162018-Cap) Concordance between the top 100,000 probes in common between the EWASs run on the EPIC (n=137) and 450k (n=60) data sets. bmc = bone mineral content, cc = Intervention / Placebo, difVD = Change in Vitamin D from 11 to 34wks, ExHighConc = Example of High Concordance generated using SVA vs iSVA results for the 450k intervention/placebo EWAS. Dotted line denotes concorcance expected by chance (intersects 50% at 387,511, the number of shared probes)
+(ref:EPIC450kEWASconcordMAVIDOSMonApr162018-Cap) Concordance between the top 100,000 probes in common between the EWASs run on the EPIC (n=137) and 450k (n=60) data sets. bmc = bone mineral content, cc = Intervention / Placebo, difVD = Change in Vitamin D from 11 to 34wks, ExHighConc = Example of High Concordance generated using SVA vs iSVA results for the 450k intervention/placebo EWAS. Dotted line denotes concordance expected by chance (intersects 50% at 387,511, the number of shared probes).
 
 
 ```{r EPIC450kEWASconcordMAVIDOSMonApr162018zoom, fig.cap='(ref:EPIC450kEWASconcordMAVIDOSMonApr162018zoom-Cap)', out.width='80%', fig.align = 'center', fig.show='hold', echo=FALSE}
 knitr::include_graphics("figs/EPIC450kEWASconcordMAVIDOSMonApr162018zoom.png")
 ```
-(ref:EPIC450kEWASconcordMAVIDOSMonApr162018zoom-Cap) Concordance between the top 10,000 probes in common between the EWASs run on the EPIC (n=137) and 405k (n=60) data sets. bmc = bone mineral content, cc = Intervention / Placebo, difVD = Chance in Vitamin D from 11 to 34wks, ExHighConc = Example of High Concordance generated using SVA vs iSVA results for the 450k intervention/placebo EWAS. Dotted line denotes concordance expected by chance (intersects 50% at 387,511, the number of shared probes)
+(ref:EPIC450kEWASconcordMAVIDOSMonApr162018zoom-Cap) Concordance between the top 10,000 probes in common between the EWASs run on the EPIC (n=137) and 405k (n=60) data sets. bmc = bone mineral content, cc = Intervention / Placebo, difVD = Chance in Vitamin D from 11 to 34wks, ExHighConc = Example of High Concordance generated using SVA vs iSVA results for the 450k intervention/placebo EWAS. Dotted line denotes concordance expected by chance (intersects 50% at 387,511, the number of shared probes).
 
 
 ### MAVIDOS phase II
@@ -488,7 +488,7 @@ knitr::include_graphics("figs/MAVIDOS-II-qcEPICbeadNumAcross.png")
 
 #### Functional Normalisation
 
-An *m* of 6 was chosen for as this value produced the last steep drop in residual variation, see Figure \@ref(fig:MAVIDOSIIfunnormPCsEPIC).
+An *m* of 6 was chosen as this value produced the last steep drop in residual variation, see Figure \@ref(fig:MAVIDOSIIfunnormPCsEPIC).
 
 ```{r MAVIDOSIIfunnormPCsEPIC, fig.cap='(ref:MAVIDOSIIfunnormPCsEPIC-Cap)', out.width='80%', fig.align = 'center', fig.show='hold', echo=FALSE}
 knitr::include_graphics("figs/MAVIDOS-II-funnormPCsEPIC.png")
@@ -499,9 +499,9 @@ knitr::include_graphics("figs/MAVIDOS-II-funnormPCsEPIC.png")
 
 ##### Bone Mineral Content at 4 years
 
-The model for this EWAS attempted to predict whole body (minus head) bone mineral content (g) (Figure \@ref(fig:MAVIDOSIInsubtotbmc)) correcting for: Cell type composition (B-cells, CD4+T, CD8+T, Granulocytes, Monocytes, Natural Killer cells, Endothelial cells, Epithelial cells, Stromal cells), Mother's age at birth, Sex, Mother's BMI at 11 weeks gestation, Whether the mother smoked during pregnancy, & Gestational Age.
+The model for this EWAS attempted to predict whole body (minus head) bone mineral content (g) (Figure \@ref(fig:MAVIDOSIInsubtotbmc)) correcting for: Cell type composition (B-cells, CD4+T, CD8+T, Granulocytes, Monocytes, Natural Killer cells, Endothelial cells, Epithelial cells, Stromal cells), Mother's age at birth, Sex, Mother's BMI at 11 weeks gestation, whether the mother smoked during pregnancy, & Gestational Age.
 The EWAS was performed on 237 individuals.
-Surrogate variable analysis identified 19 significant surrogate variables which were included in the model.
+surrogate variable analysis identified 19 significant surrogate variables which were included in the model.
 No probes fell below the Bonferroni corrected significance threshold for an association between DNAm at that locus and bone mineral content, in any of the models including SVA (Figure \@ref(fig:MAVIDOSIInsubtotbmcEPICewasManhattanSVA)).
 
 ```{r MAVIDOSIInsubtotbmc, fig.cap='(ref:MAVIDOSIInsubtotbmc-Cap)', out.width='80%', fig.align = 'center', fig.show='hold',  echo=FALSE}
@@ -513,12 +513,12 @@ knitr::include_graphics("figs/MAVIDOSIInsubtotbmc.png")
 ```{r MAVIDOSIInsubtotbmcEPICewasManhattanSVA, fig.cap='(ref:MAVIDOSIInsubtotbmcEPICewasManhattanSVA-Cap)', out.width='80%', fig.align = 'center', fig.show='hold',  echo=FALSE}
 knitr::include_graphics("figs/MAVIDOSIInsubtotbmcEPICewasManhattanSVA.png")
 ```
-(ref:MAVIDOSIInsubtotbmcEPICewasManhattanSVA-Cap) Results of EWAS for whole body minus head bone mineral content (g) with SVA model (n = 237). Bidirectional Manhattan plot on which $-log_{10}(p-value)$ is plotted on the y axis and the sign of this value represents the direction of change. Size and transparency of points increases with $-log_{10}(p-value)$ such that the most significant probes are represented the largest and least translucent points. x axis represent chromosomes and position thereupon. Red line indicates the significance threshold of $6.18\times10^{-8}~(0.05\div808,585)$  
+(ref:MAVIDOSIInsubtotbmcEPICewasManhattanSVA-Cap) Results of EWAS for whole body minus head bone mineral content (g) with SVA model (n = 237). Bidirectional Manhattan plot on which $-log_{10}(p-value)$ is plotted on the y axis and the sign of this value represents the direction of change. Size and transparency of points increases with $-log_{10}(p-value)$ such that the most significant probes are represented by the largest and least translucent points. x axis represents chromosomes and position thereupon. Red line indicates the significance threshold of $6.18\times10^{-8}~(0.05\div808,585)$.  
 
 ### Southampton Women’s Survey (SWS)
 
 DNA methylation at two probes were significantly associated with total bone mineral content at 6 years and periosteal circumference at 6 years respectively.
-Probe cg26559250 located at Chr6:157,653,445-157,653,447 at the ZDHHC14 (zinc finger DHHC-type palmitoyltransferase 14) gene shown an increase of DNA methylation with increasing bone mineral content with a significance of $2.52\times 10^{-8}$
+Probe cg26559250 located at Chr6:157,653,445-157,653,447 at the ZDHHC14 (zinc finger DHHC-type palmitoyltransferase 14) gene showed an increase of DNA methylation with increasing bone mineral content with a significance of $2.52\times 10^{-8}$
 Probe cg22570676 located at Chr19:2,527,492-2,527,494 at the GNG7 (G protein subunit gamma 7) gene showed an increase of DNA methylation with increasing periosteal circumference with a significance of $4.24\times 10^{-8}$.
 Neither probe is flagged for known technical issues or genetic confounding [@Zhou2017].
 
@@ -539,7 +539,7 @@ knitr::include_graphics("figs/SWSqcEPICsexMismatch.png")
 (ref:SWSqcEPICsexMismatch-Cap) Predicted sex of each sample based on the sex chromosome copy numbers inferred from probe intensities for the EPIC array data. Mismatches between the predicted sex and that asserted in the sample annotation metadata are shown in red. Two predicted sex values differ from their annotations. Plot generated by `meffil` QC report.
 
 
-No samples were exclude for having a median methylated signal that was more than $3\sigma$ from the expected value, (Figure \@ref(fig:SWSqcEPICmethVsUnmeth)). 
+No samples were excluded for having a median methylated signal that was more than $3\sigma$ from the expected value, (Figure \@ref(fig:SWSqcEPICmethVsUnmeth)). 
 No samples were excluded for having a higher than expected proportion of undetected probes (proportion of probes with detection p-value > 0.01 is > 0.1) (Figure \@ref(fig:SWSqcEPICpropSites)). 
 No samples were excluded for having a high proportion of probes with low bead counts (proportion of probes with bead number < 3 is > 0.1), (Figure \@ref(fig:SWSqcEPICbeadNum)).
 
@@ -586,7 +586,7 @@ knitr::include_graphics("figs/SWSqcEPICbeadNumAcross.png")
 
 #### Functional Normalisation
 
-An *m* of 12 was chosen for as this value produced the last steep drop in residual variation, see Figure \@ref(fig:SWSfunnormPCsEPIC).
+An *m* of 12 was chosen as this value produced the last steep drop in residual variation, see Figure \@ref(fig:SWSfunnormPCsEPIC).
 
 ```{r SWSfunnormPCsEPIC, fig.cap='(ref:SWSfunnormPCsEPIC-Cap)', out.width='80%', fig.align = 'center', fig.show='hold', echo=FALSE}
 knitr::include_graphics("figs/SWSfunnormPCsEPIC.png")
@@ -595,14 +595,14 @@ knitr::include_graphics("figs/SWSfunnormPCsEPIC.png")
 
 #### EWAS
 
-For all the EWAS blood cell-type counts were estimated using the Houseman method [@Houseman2012] using cord blood cell-type reference panel from Bakulski et al. [@Bakulski2016].
+For all the EWAS, blood cell-type counts were estimated using the Houseman method [@Houseman2012] and the cord blood cell-type reference panel from Bakulski et al. [@Bakulski2016].
 The Cell-types estimated were: B cells, CD4+ T cells, CD8+ T Cells, Granulocytes, Monocytes, Natural Killer cells, & Erythrocytes.
 In addition to the estimated blood cell counts all models included as covariates: Maternal Age at time of birth (years), Sex, maternal BMI at 11 weeks gestation, parity, whether or not the mother smoked during pregnancy, and gestational age.
 
 ##### Total Bone Mineral Conent at 8 years
 
 Figure \@ref(fig:SWSttotbmcwhasa), illustrates the distribution of bone mineral content at 8 years in the 408 individuals in this EWAS.
-Surrogate variable analysis identified 95 significant surrogate variables, this is likely an overestimate stemming from small amounts of variation remaining unaccounted for by the manual model thus we have included manhattan plots base on the manual model.
+Surrogate variable analysis identified 95 significant surrogate variables, this is likely an overestimate stemming from small amounts of variation remaining unaccounted for by the manual model thus the Manhattan plots based on the manual model were included.
 No probes fell below the Bonferroni corrected significance threshold ($5.92\times10^{-8}$) for an association between DNA methylation at that locus and total bone mineral content minus head at 8 years adjusted for age and sex, Figure \@ref(fig:SWSttotbmcwhasaEPICewasManhattanSVA).
 
 ```{r SWSttotbmcwhasa, fig.cap='(ref:SWSttotbmcwhasa-Cap)', out.width='80%', fig.align = 'center', fig.show='hold',  echo=FALSE}
@@ -613,47 +613,47 @@ knitr::include_graphics("figs/SWS8yrBMCdist.png")
 ```{r SWSttotbmcwhasaEPICewasManhattanSVA, fig.cap='(ref:SWSttotbmcwhasaEPICewasManhattanSVA-Cap)', out.width='80%', fig.align = 'center', fig.show='hold', echo=FALSE}
 knitr::include_graphics("figs/SWSttotbmcwhasaEPICewasManhattanAll.png")
 ```
-(ref:SWSttotbmcwhasaEPICewasManhattanSVA-Cap) Results of EWAS for whole body (minus head) bone mineral content in kg at 8 years of age (n = 408), adjusted for sex and age. The 'all' model model results are shown here. Bidirectional Manhattan plot on which $-log_{10}(p-value)$ is plotted on the y axis and the sign of this value represents the direction of change. The x axis represent chromosomes and position thereupon. Red line indicates the significance threshold of $5.92\times10^{-8}$
+(ref:SWSttotbmcwhasaEPICewasManhattanSVA-Cap) Results of EWAS for whole body (minus head) bone mineral content in kg at 8 years of age (n = 408), adjusted for sex and age. The 'all' model results are shown here. Bidirectional Manhattan plot on which $-log_{10}(p-value)$ is plotted on the y axis and the sign of this value represents the direction of change. The x axis represents chromosomes and position thereupon. Red line indicates the significance threshold of $5.92\times10^{-8}$.
 
 ##### Total Bone Mineral Conent at 6 years
 
 Figure \@ref(fig:SWSstotbmcwhasa), illustrates the distribution of bone mineral content at 6 years in the 402 individuals in this EWAS.
-Surrogate variable analysis identified 97 significant surrogate variables, this is likely an overestimate stemming from small amounts of variation remaining unaccounted for by the manual model thus we have included manhattan plots base on the manual model.
+Surrogate variable analysis identified 97 significant surrogate variables, this is likely an overestimate stemming from small amounts of variation remaining unaccounted for by the manual model thus Manhattan plots based on the manual model have been included.
 
 ```{r SWSstotbmcwhasa, fig.cap='(ref:SWSstotbmcwhasa-Cap)', out.width='80%', fig.align = 'center', fig.show='hold',  echo=FALSE}
 knitr::include_graphics("figs/SWS6yrBMCdist.png")
 ```
 (ref:SWSstotbmcwhasa-Cap) Distribution of whole body (minus head) bone mineral content in kg at 8 years of age (n = 402), adjusted for sex and age, as measured by DXA.
 
-One probe fell below the Bonferroni corrected significance threshold ($5.92\times10^{-8}$) for an association between DNA methylation at that locus and total bone mineral content minus head at 6 years adjusted for age and sex, Figure \@ref(fig:SWSstotbmcwhasaEPICewasManhattanSVA). This probe was cg26559250 which is located at Chr6:157,653,445-157,653,447 adjacent to the ZDHHC14 (zinc finger DHHC-type palmitoyltransferase 14) gene. cg26559250 was significant (p = $2.52\times 10^{-8}$, increase of 1.46% per kg) in the 'all' model and was also bonferoni significant in the uncorrected model. However, cg26559250 was not significant in the SVA or iSVA models suggesting that it may be attributable to batch or cell-type effects.
+One probe fell below the Bonferroni corrected significance threshold ($5.92\times10^{-8}$) for an association between DNA methylation at that locus and total bone mineral content minus head at 6 years adjusted for age and sex, Figure \@ref(fig:SWSstotbmcwhasaEPICewasManhattanSVA). This probe was cg26559250 which is located at Chr6:157,653,445-157,653,447 adjacent to the ZDHHC14 (zinc finger DHHC-type palmitoyltransferase 14) gene. cg26559250 was significant (p = $2.52\times 10^{-8}$, increase of 1.46% per kg) in the 'all' model and was also Bonferroni significant in the uncorrected model. However, cg26559250 was not significant in the SVA or iSVA models suggesting that it may be attributable to batch or cell-type effects.
 
 ```{r SWSstotbmcwhasaEPICewasManhattanSVA, fig.cap='(ref:SWSstotbmcwhasaEPICewasManhattanSVA-Cap)', out.width='80%', fig.align = 'center', fig.show='hold', echo=FALSE}
 knitr::include_graphics("figs/SWSstotbmcwhasaEPICewasManhattanAll.png")
 ```
-(ref:SWSstotbmcwhasaEPICewasManhattanSVA-Cap) Results of EWAS for whole body (minus head) bone mineral content in kg at 6 years of age (n = 402), adjusted for sex and age. The 'all' model model results are shown here. Bidirectional Manhattan plot on which $-log_{10}(p-value)$ is plotted on the y axis and the sign of this value represents the direction of change. The x axis represent chromosomes and position thereupon. Red line indicates the significance threshold of $5.92\times10^{-8}$
+(ref:SWSstotbmcwhasaEPICewasManhattanSVA-Cap) Results of EWAS for whole body (minus head) bone mineral content in kg at 6 years of age (n = 402), adjusted for sex and age. The 'all' model results are shown here. Bidirectional Manhattan plot on which $-log_{10}(p-value)$ is plotted on the y axis and the sign of this value represents the direction of change. The x axis represents chromosomes and position thereupon. Red line indicates the significance threshold of $5.92\times10^{-8}$.
 
 ##### Periosteal Circumference at 6 years
 
 Figure \@ref(fig:SWSs3peric), illustrates the distribution of periosteal circumference at 38% from the distal end of the tibia at 6 years (mm) in the 141 individuals in this EWAS.
-Surrogate variable analysis identified 37 significant surrogate variables, this is likely an overestimate stemming from small amounts of variation remaining unaccounted for by the manual model thus we have included manhattan plots base on the manual model.
+Surrogate variable analysis identified 37 significant surrogate variables, this is likely an overestimate stemming from small amounts of variation remaining unaccounted for by the manual model thus Manhattan plots based on the manual model have been included.
 
 ```{r SWSs3peric, fig.cap='(ref:SWSs3peric-Cap)', out.width='80%', fig.align = 'center', fig.show='hold',  echo=FALSE}
 knitr::include_graphics("figs/SWSs3peric.png")
 ```
 (ref:SWSs3peric-Cap) Distribution of periosteal circumference at 38% from the distal end of the tibia (mm) at 6 years of age (n = 141), adjusted for sex and age, as measured by PQCT.
 
-One probe fell below the Bonferroni corrected significance threshold for an association between DNA methylation at that locus and periosteal circumference at 38% from the distal end of the tibia at 6 years (mm) adjusted for age and sex, Figure \@ref(fig:SWSs3pericEPICewasManhattanSVA). This probes was cg22570676 which is located at Chr19:2,527,492-2,527,494 at the GNG7 (G protein subunit gamma 7) gene. cg22570676 was significant (p = $4.24\times 10^{-8}$, increase of 0.370% per mm) in the 'all' model and was also bonferoni significant in the uncorrected model. However, cg22570676 was not significant in the SVA or iSVA models suggesting that it may be attributable to batch or cell-type effects.
+One probe fell below the Bonferroni corrected significance threshold for an association between DNA methylation at that locus and periosteal circumference at 38% from the distal end of the tibia at 6 years (mm) adjusted for age and sex, Figure \@ref(fig:SWSs3pericEPICewasManhattanSVA). This probes was cg22570676 which is located at Chr19:2,527,492-2,527,494 at the GNG7 (G protein subunit gamma 7) gene. cg22570676 was significant (p = $4.24\times 10^{-8}$, increase of 0.370% per mm) in the 'all' model and was also Bonferroni significant in the uncorrected model. However, cg22570676 was not significant in the SVA or iSVA models suggesting that it may be attributable to batch or cell-type effects.
 
 ```{r SWSs3pericEPICewasManhattanSVA, fig.cap='(ref:SWSs3pericEPICewasManhattanSVA-Cap)', out.width='80%', fig.align = 'center', fig.show='hold', echo=FALSE}
 knitr::include_graphics("figs/SWSs3pericEPICewasManhattanAll.png")
 ```
-(ref:SWSs3pericEPICewasManhattanSVA-Cap) Results of EWAS for periosteal circumference at 38% from the distal end of the tibia (mm) at 6 years of age (n = 141), adjusted for sex and age. The 'all' model model results are shown here. Bidirectional Manhattan plot on which $-log_{10}(p-value)$ is plotted on the y axis and the sign of this value represents the direction of change. The x axis represent chromosomes and position thereupon. Red line indicates the significance threshold of $5.92\times10^{-8}$
+(ref:SWSs3pericEPICewasManhattanSVA-Cap) Results of EWAS for periosteal circumference at 38% from the distal end of the tibia (mm) at 6 years of age (n = 141), adjusted for sex and age. The 'all' model results are shown here. Bidirectional Manhattan plot on which $-log_{10}(p-value)$ is plotted on the y axis and the sign of this value represents the direction of change. The x axis represents chromosomes and position thereupon. Red line indicates the significance threshold of $5.92\times10^{-8}$
 
 ##### Cortical Denisty at 6 years
 
 Figure \@ref(fig:SWSs3crtden), illustrates the distribution of cortical density at 38% from the distal end of the tibia at 6 years ($mg~cm^{-3}$) in the 141 individuals in this EWAS.
 No probes fell below the Bonferroni corrected significance threshold ($5.92\times10^{-8}$) for an association between DNA methylation at that locus and cortical density at 6 years, Figure \@ref(fig:SWSs3crtdenEPICewasManhattanSVA).
-Surrogate variable analysis identified 37 significant surrogate variables, this is likely an overestimate stemming from small amounts of variation remaining unaccounted for by the manual model thus we have included manhattan plots base on the manual model.
+Surrogate variable analysis identified 37 significant surrogate variables, this is likely an overestimate stemming from small amounts of variation remaining unaccounted for by the manual model thus Manhattan plots based on the manual model.
 
 ```{r SWSs3crtden, fig.cap='(ref:SWSs3crtden-Cap)', out.width='80%', fig.align = 'center', fig.show='hold',  echo=FALSE}
 knitr::include_graphics("figs/SWSs3crtden.png")
@@ -663,7 +663,7 @@ knitr::include_graphics("figs/SWSs3crtden.png")
 ```{r SWSs3crtdenEPICewasManhattanSVA, fig.cap='(ref:SWSs3crtdenEPICewasManhattanSVA-Cap)', out.width='80%', fig.align = 'center', fig.show='hold', echo=FALSE}
 knitr::include_graphics("figs/SWSs3crtdenEPICewasManhattanAll.png")
 ```
-(ref:SWSs3crtdenEPICewasManhattanSVA-Cap) Results of EWAS for cortical density at 38% from the distal end of the tibia ($mg~cm^{-3}$) at 6 years of age (n = 141). The 'all' model model results are shown here. Bidirectional Manhattan plot on which $-log_{10}(p-value)$ is plotted on the y axis and the sign of this value represents the direction of change. The x axis represent chromosomes and position thereupon. Red line indicates the significance threshold of $5.92\times10^{-8}$
+(ref:SWSs3crtdenEPICewasManhattanSVA-Cap) Results of EWAS for cortical density at 38% from the distal end of the tibia ($mg~cm^{-3}$) at 6 years of age (n = 141). The 'all' model results are shown here. Bidirectional Manhattan plot on which $-log_{10}(p-value)$ is plotted on the y axis and the sign of this value represents the direction of change. The x axis represents chromosomes and position thereupon. Red line indicates the significance threshold of $5.92\times10^{-8}$
 
 ## Discussion
 
@@ -673,7 +673,7 @@ Two possible results for bone outcomes at 6 years were identified in the SWS dat
 The effect observed at probe cg26559250, adjacent to the ZDHHC14 gene, in EWAS for bone mineral content at 6 years was not seen at the 8 year time point.
 Furthermore both this result and the finding for probe cg22570676 and periosteal circumference were of small effect sizes 1.46% per kg, 0.370% per mm respectively.
 Consequently these results should be treated with considerable caution, they are in need of replication before they can be considered reliable.
-We did not manage to identify any Bonferoni significant DNA methylation changes at the *CDKN2A* and *RXRA* loci which have been previously associated maternal vitamin D and bone phenotypes, despite the presence of 95 and 75 probes annotated as being in the vicinity of these genes respectively.
+No Bonferroni significant DNA methylation changes at the *CDKN2A* and *RXRA* loci which have been previously associated with maternal vitamin D and bone phenotypes were identified, despite the presence of 95 and 75 probes annotated as being in the vicinity of these genes respectively.
 
 ```{r, echo=FALSE, include=FALSE, eval=FALSE}
 #See: http://www.utstat.toronto.edu/~brunner/oldclass/378f16/readings/CohenPower.pdf
@@ -705,19 +705,19 @@ CDKN2A %>% length()
 
 Whilst the calculation of power for EWAS is a complex and rather understudied problem [@Wang2011; @Tsai2015; @Graw2019] it is possible to achieve some approximations using Cohen's methods [@Cohen1988]. 
 To achieve the modest goal of 80% power for a small effect size ($r^2 = 0.02$) in a linear regression analysis (F-test) with 7 covariates at a significance level suitable for the EPIC array of p = $5.92\times10^{-8}$ an n of 2607 is needed.
-Seven was a smallest number of covariates used in an SVA model in these analyses, models in the SWS analyses had 13 manually specified variables.
+Seven was the smallest number of covariates used in an SVA model in these analyses, models in the SWS analyses had 13 manually specified variables.
 When considering what is for EWAS a very large effect size ($r^2 = 0.15$) with the 13 covariates used in the SWS models it is possible to achieve 80% power for an n of 374.
 This is an effect size in line with the effects of smoking on DNA methylation at some loci [@Joubert2016; @Breton2017].
 This would make the two largest EWAS performed here for BMC at 8 and 6 years (n = 408, n = 402 respectively) powered only to find large effect sizes with just over 80% probability. 
 The most generous set of parameters (80% power, $r^2 = 0.15$, p = $5.92\times10^{-8}$, & 2 covariates) yield an n of 259, more realistic numbers (90% power, $r^2 = 0.02$, p = $5.92\times10^{-8}$, & 13 covariates) yield an n of 3370.
 EWAS have identified biologically relevant changes associated with environmental exposures in DNA methylation with magnitudes of less than a single percentage point, and percentage changes in the low single digits are not uncommon in EWAS [@Breton2017]. 
 This makes all of the EWAS performed here underpowered to identify small DNA methylation changes which might be expected to occur.
-We are in collaboration with colleagues in Bristol on a meta-analysis to include these data with similar results from other cohorts in order to increase the power of our analyses. 
+A collaboration with colleagues in Bristol is underway to perform a meta-analysis to include these data with similar results from other cohorts in order to increase the power of these analyses. 
 The covariates included in the models for the second phase of MAVIDOS analysis and the SWS analysis are matched to those being used by our collaborators to maximise the comparability of our results.
 
 Given that the effect of maternal vitamin D on neonatal bone mass appears to be seasonal, with only babies born in the winter months showing statistically significant benefits of supplementation [@Cooper2016], it would be interesting to perform seasonally stratified EWAS were sufficient numbers available to do so with reasonable power.
 
-Attempting identify small changes in the overall DNA methylation state of complex populations of cells like blood and umbilical cord tissue which are associated with phenotypes such as circulating maternal vitamin D is a technically challenging undertaking. 
+Attempting to identify small changes in the overall DNA methylation state of complex populations of cells like blood and umbilical cord tissue which are associated with phenotypes such as circulating maternal vitamin D is a technically challenging undertaking. 
 This work provides two candidates for further analysis for associations between DNA methylation and bone health outcomes at 6 years of age.
 Furthermore, these results have contributed to a larger meta analysis with greater power to detect associations with metrics of bone health.
 

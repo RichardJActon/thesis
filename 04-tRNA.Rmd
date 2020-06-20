@@ -506,7 +506,7 @@ knitr::include_graphics("./figs/tRNA-iMet-CAT-1-4_nomSig_CpG.png")
 ```
 (ref:tRNAiMetCAT1x4nomSigCpGCap) Individual CpG methylation increases (nominally significant p < 0.05) in tRNA-iMet-CAT-1-4.
 
-```{r poolAges, out.width='60%', echo=FALSE,}
+```{r poolAges, out.width='60%', echo=FALSE}
 ##knitr::include_graphics("./figs/poolSummaryTable.png")
 ##options(knitr.table.format = "html")#"latex"
 sampleMetaData <- read_tsv(
