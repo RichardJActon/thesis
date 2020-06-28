@@ -41,7 +41,7 @@ In both their core translational and additional regulatory roles, tRNAs are inti
 Experimentally DNA methylation can alter tRNA expression, but little is known about the genomic DNA methylation state of tRNAs.
 
 Here, we find that the human genomic tRNA loci (610 tRNA genes termed the tRNAome) are enriched for ageing-related DNA hypermethylation.
-We initially identified DNA hypermethylation of 44 and 21 specific tRNA genes, at study-wide (p < $4.34\times10^{-9}$) and genome-wide ($p < 4.34\times10^{-9}$) significance, respectively, in 4,350 MeDIP-seq peripheral blood DNA methylomes (16 - 82 years).
+We initially identified DNA hypermethylation of 44 and 21 specific tRNA genes, at study-wide (p < $8.36\times10^{-5}$) and genome-wide ($p < 4.34\times10^{-9}$) significance, respectively, in 4,350 MeDIP-seq peripheral blood DNA methylomes (16 - 82 years).
 This starkly contrasted with 0 hypomethylated at both these significance levels.
 Further analysing the 21 genome-wide results, we found 3 of these tRNAs to be independent of major changes in cell-type composition (tRNA-iMet-CAT-1-4, tRNA-Ser-AGA-2-6, tRNA-Ile-AAT-4-1).
 We also excluded the ageing-related changes being due to the inherent CpG density of the tRNAome by permutation analysis (1,000x, Empirical p-value < $1\times10^{-3}$).
@@ -71,23 +71,39 @@ The initiator methionine tRNA possesses certain unique properties, including its
 
 tRNAs are fundamental in the translation process for all domains of life and are thus evolutionarily ancient [@Eigen1989].
 This translation machinery and the regulation of protein synthesis are controlled by conserved signalling pathways shown to be modifiable in longevity and ageing interventions [@Tavernarakis2008].
-Additionally, beyond their core role in the information flow from DNA to protein sequence, tRNAs can fragment into numerous tRNA-derived small RNAs (tsRNAs) [@Pliatsika2018] with signalling and regulatory functions [@Schimmel2017; @Lee2009].
-Four main types of tsRNAs have been identified, 5’ tRNA halves, 3’ tRNA halves, and the tRNA derived fragments (tRFs) of ~18 and ~22bp sizes [@Torres2019; @Li2018a; @Xu2017a]. 
+Additionally, beyond their core role in the information flow from DNA to protein sequence, tRNAs can fragment into numerous tRNA-derived small RNAs (tsRNAs).
+There are numerous tRNA derived small RNAs (tsRNAs) [@Pliatsika2018] which serve as signalling molecules [@Lee2009] (Figure \@ref(fig:tRNAderivedSmallRNARoles)).
+Four main types of tsRNAs have been identified, these are 5' tRNA halves, 3' tRNA halves, and the tRNA derived fragments (tRFs) of ~18 - ~22bp sizes [@Torres2019; @Li2018a; @Xu2017a].
+tRNAs and pre-tRNAs also give rise to piRNAs [@Keam2014; @Honda2017; @Tosar2018] and internal tRNA fragments or itRFs [@Loher2017].
+The terminology and ontology of tsRNAs is still stabilising as our understanding of these RNA species evolves.
+Some of these tsRNAs feedback on protein synthesis by regulating ribosome biogenesis [@Kim2017], others have diverse regulatory functions such as targeting transposable element transcripts [@Martinez2017].
+The extent of the functional significance of tsRNAs is also an open question [@Schimmel2017].
+
+```{r tRNAderivedSmallRNARoles, fig.cap="(ref:tRNAderivedSmallRNARoles-Cap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("./figs/tRNAderivedSmallRNARoles.png")
+```
+(ref:tRNAderivedSmallRNARoles-Cap) __The Types and Functions of tRNA derived small RNAs__ Reproduced from Cristodero et al. [@Cristodero2017].
 
 The human tRNAome, comprising all of the genomic locations of tRNA genes, represents an extremely small portion of the genome [@Parisien2013].
-The 610 annotated tRNA genes (gtRNAdb [@Chan2009]) cover <46 kb (including introns) and represents <0.002% of the human genome.
-Yet these genes produce the second most abundant RNA species next to ribosomal RNA [@Lodish2000] and are required for the production of all proteins.
-tRNA genes are transcribed by RNA polymerase III (polIII) [@Schramm2002] and have type II polIII promoters which contain A and B-box internal promoter elements bound by the complex TFIIIC, followed by TFIIIB, and polIII [@Canella2010].
+There are 416 high confidence tRNA genes when additionally considering tRNA pseudo genes, nuclear encoded mitochondrial tRNA genes and possibly some closely related repetitive sequences the number of sequences closely resembling tRNAs is 610 (gtRNAdb [@Chan2009]) this extended set covers <46 kb (including introns) and represents <0.002% of the human genome.
+Despite their small genomic footprint these genes produce the second most abundant RNA species next to ribosomal RNA [@Lodish2000] and are required for the production of all proteins.
+tRNA genes are transcribed by RNA polymerase III (polIII) [@Schramm2002] and have type II polIII promoters which contain A and B-box internal promoter elements bound by the complex TFIIIC, followed by TFIIIB, and polIII [@Canella2010]. Transcription is terminated by a simple run of Ts and proceeds in rounds of fast re-initiation where the same polIII molecule is preferentially re-used [@Dieci1996]. tRNA gene expression is modulated by the polIII specific transcription factor Maf1 a highly conserved factor which represses tRNA transcription [@Murawski1994; @Pluta2001]. The activity of Maf1 is modulated by the Target of Rapamycin Kinase Complex 1 (TORC1) [@Mange2017]. Several general transcription factors also influence tRNA gene expression; the tumour suppressors p53 [@Crighton2003] and Rb [@Sutcliffe2000] both negatively regulate tRNA expression and c-Myc upregulates tRNA gene expression, all act via TFIIIB [@Gomez-Roman2003]. tRNAs are dysregulated in cancer, and have  potential utility as prognostic markers [@Krishnan2016]. tRNA regulation may play an important role in cancer [@Huang2018]. 
 DNAm is able to repress the expression of tRNA genes experimentally [@Besser1990] but may also represent co-ordination with the local repressive chromatin state [@Varshney2015].
 Transcription is also repressed by the highly conserved polIII specific transcription factor Maf1 [@Murawski1994; @Pluta2001], who’s activity is modulated by the Target of Rapamycin Kinase Complex 1 (TORC1) [@Mange2017], a highly conserved hub for signals that modulate ageing [@Kennedy2016]. 
 
 Assuming similar rates of transcription one would expect that the more frequently an amino acid is used in the exome, the more copies of that tRNA gene there would be in the genome.
-Indeed, tRNA gene dosage is quite closely matched to amino acid usage frequency in the human exome, though the correlation is less strong for codon usage.
+Indeed, tRNA gene dosage is quite closely matched to amino acid usage frequency in the human exome, though the correlation is less strong for codon usage (Figure \@ref(fig:codonAndaaFreqNtRNAplots)).
+The imperfect nature of this correlation suggests that there may be regulation of tRNA expression beyond simply haveing copy numbers proportionate to usage frequency.
 Codon usage frequencies have been claimed to be mostly invariant in the transcriptomes of a wide range of tissues, as well as across developmental time [@Schmitt2014].
 However, differences in the codon usage of genes with highly tissue-specifically expressed genes have been observed [@Powell1997].
 The number of isodecoders (tRNAs with the same anticodon but which differ in sequence elsewhere) in the genome expands with organismal complexity [@Goodenbour2006].
 Isodecoders are distinct in translational efficiency [@Geslain2010], which can have consequences in human disease [@Kirchner2017].
 However, such differences seem likely to explain only some of the tissue specificity of tRNA gene regulation. 
+
+```{r codonAndaaFreqNtRNAplots, fig.cap="(ref:codonAndaaFreqNtRNAplots-Cap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("./figs/codonAndaaFreqNtRNAplots.png")
+```
+(ref:codonAndaaFreqNtRNAplots-Cap) __tRNA gene copy number is imperfectly correlated with amino acid and codon usage frequency__ __A)__ Amino acid usage frequency in the human exome vs tRNA gene copy number __B)__ Codon usage frequency in the human exome vs tRNA gene copy number Usage Frequency Data [@Athey2017], tRNA gene count data from GtRNAdb [@Chan2009].
 
 Ageing is linked to core aspects of metabolic regulation, with nutrient sensing and stress response acting as major modulators of ageing. 
 tRNAs as well as tsRNAs are integral to the regulation of protein synthesis and stress response.
@@ -96,9 +112,25 @@ Metabolic processes are also recognised to modulate the age estimates of DNAm cl
 Partial inhibition of translation increases lifespan in multiple model organisms [@Hansen2007] and PolIII inhibition increases longevity acting downstream of TORC1 [@Filer2017].
 Furthermore, 5’ tRNA halves circulating in serum are modulated by ageing and caloric restriction [@Dhahbi2013]. 
 
+DNAm is able to repress the expression of tRNA genes on methylated expression vectors [@Besser1990].
+Whilst the broader chromatin milieu affects tRNA transcription, tRNA genes are unusual in that they are sufficiently short to fit within a single nucleosome.
+tRNA genes are generally 'nucleosome free' and precise placement of the nucleosome immediately upstream of the transcriptional start site is of importance for their expression [@Bhargava2013a].
+A recent review of the epigenetic regulation of the polIII transcriptome [@Park2017] noted the very limited CpG methylation data available at polIII loci.
+Transcription by RNA polymerase III at SINE loci is suppressed by histone methylation but not by DNA methylation [@Varshney2015], indicating that DNA methylation may not directly influence the expression of tRNA genes but may do so by influencing the surrounding chromatin state.
+Standard RNA-seq is of limited utility in examine tRNA expression due to the issues of mappability.
+tRNAs are a major target for 'epitranscriptomic' modification, with an average of 11-13 modifications per tRNA [@Wilusz2015; @Schimmel2017], some of which stop polymerases from elongating or alter base pairing creating further mapping challenges.
+Thus variants on standard RNA-seq procedures have been developed [@Cozen2015; @Shigematsu2017a; @Gogakos2017]. polIII ChIP-seq has been used as a proxy for tRNA gene expression, and unlike RNA-seq based methods generates reads from uniquely identifiable flanking regions which map to a known locus of origin.
+This same advantage exists for the MeDIP-seq data used in this study. 
+
+tRNA gene loci may also play a role in large scale genome organisation.
+tRNA gene clusters act as insulators [@Raab2011], and have extensive long-range chromatin interactions with other tRNA gene loci [@VanBortle2017].
+The coordinated transcription of tRNAs at subnuclear foci may represent an organising principle for 3D-chromatin by providing spatial constrains. 
+In both budding and fission yeast tRNA genes localise to the nucleolus. In fission yeast, a subset of B-box sequence elements bound TFIIIC and not polIII serve as chromatin anchors to the nuclear periphery and act as boundaries between euchromatic and heterochromatic regions [@Noma2006].
+It is unclear to what extend tRNA genes may play similar roles in large scale chromatin organisation in other organisms.
+
 We directly investigated ageing-related changes in the epigenetic DNA methylation state of the entire tRNAome, facilitated by the availability of a large-scale MeDIP-seq dataset.
 Arrays poorly cover this portion of genome.
-The 450k and EPIC arrays have 110 robust probes covering 84 tRNAs and 129 robust probes covering 89 tRNAs respectively [@Zhou2017].
+The 450k and EPIC arrays have 110 robust probes covering 84 tRNAs and 129 robust probes covering 89 tRNAs respectively, thus even the latest EPIC arrays cover <15% of the tRNA genes, with robust probes, and in total only ~4.7% of all the tRNA gene CpGs [@Zhou2017].
 tRNA genes sit at the heart not only of the core biological process of translation but at a nexus of signalling networks operating in several different paradigms, from small RNA signalling to large scale chromatin organisation [@VanBortle2017].
 In summation tRNA biology, protein synthesis, nutrient sensing, stress response and ageing are intimately interlinked.
 We have identified tRNAome DNA hypermethylation and independently replicated this newly described ageing-related observation.
@@ -211,7 +243,7 @@ Cell-type correction was performed using cell-count data and the following model
 
 ### Chromatin Segmentation Data
 
-Epilogos chromatin segmentation data [@Meuleman2019] was downloaded for the tRNA gene regions +/- 200bp from https://explore.altius.org/tabix/epilogos/hg19.15.Blood_T-cell.KL.gz using the `tabix` utility. 
+Epilogos chromatin segmentation data [@Meuleman2019; @Ernst2011] was downloaded for the tRNA gene regions +/- 200bp from https://explore.altius.org/tabix/epilogos/hg19.15.Blood_T-cell.KL.gz using the `tabix` utility. 
 The data used was the 'Blood & T-cell' 15 State model based on segmentation of 14 cell-types.
 This data was manipulated and visualised with `R` and `ggplot2`.
 
@@ -233,11 +265,11 @@ We used small RNA-seq data from sorted blood cell fractions [@Juzenas2017] ([GSE
 This dataset covered 42 individuals aged 21-63.
 We also created a customised MINTmap reference designed to include only fragments which unambiguously map to a single tRNA gene locus and which overlap the 5' or 3' end of the genomic tRNA sequence by at least one base with no mismatches.
 This reference is intended to capture pre-tRNAs prior to processing and CCA addition operating under the assumption that the levels of pre-tRNAs will be informative about the amount of transcription taking place at the tRNA loci.
-This approach provides at most a many to one mapping of tRNA fragment to a tRNA gene.
+This approach provides at most a many to one mapping of tRNA fragments to a tRNA genes.
 
 Assaying the expression of tRNA genes presents numerous difficulties [@Torres2019], and usually requires variants on standard RNA-seq protocols.
 Our custom MINTmap reference build yielded 383 fragments mapping to 92 distinct tRNA loci in this data.
-To control quality only fragments with more than 20 total instances in the dataset and present in more than 20 individuals were considered.
+To control quality, only fragments with more than 20 total instances in the dataset, and present in more than 20 individuals were considered.
 
 The maximum length of a fragment was limited to 50nt, due to the read length of the small RNA-seq data.
 
@@ -247,21 +279,7 @@ We downloaded methylation calls and coverage information resulting from RRBS per
 These data from 152 mice covered 68 tRNA and 436 CpGs after QC requiring >50 reads per CpG and >10 data points per tRNA.
 We excluded 5 tRNAs from blacklisted regions of mm10 [@Amemiya2019].
 After QC there were 58 tRNA genes and 385 CpGs.
-We performed simple linear modeling to predict age from methylation level at each tRNA and each CpG.
-
-\newpage
-
-### MINTmap reference Fragment distribution
-
-In the original MINTmap reference (Figure \@ref(fig:combinedFragSizeDists)b) there are peaks at around 18nt, 22nt and 32nt.
-This is consistent with the expected tRNA fragment size distributions with 'tRNA halves' at 30-33nt and other tRFs at 18nt and 22nt.
-In our custom reference (Figure \@ref(fig:combinedFragSizeDists)a) whilst there is still a peak at ~18nt, with suggestions of peaks near 22nt and 32nt the tRNA fragment length distribution is somewhat different from that of the standard MINTmap reference.
-There are larger peaks at ~28 and ~40nt consistent with the longer fragments expected given that this reference aimed to target fragments derived from pre-tRNAs not tRFs derived from mature tRNAs.
-
-```{r combinedFragSizeDists, fig.cap="(ref:combinedFragSizeDistsCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
-knitr::include_graphics("./figs/combinedFragSizeDists.png")
-```
-(ref:combinedFragSizeDistsCap) Comparison of the fragment size distributions between our custom reference (A) and the original the MINTmap reference (B).
+We performed simple linear modelling to predict age from methylation level at each tRNA and each CpG.
 
 \newpage
 
@@ -269,19 +287,36 @@ knitr::include_graphics("./figs/combinedFragSizeDists.png")
 
 ### DNA Methylation of Specific tRNA Gene Loci Changes with Age
 
-Due to tRNAs critical role in translation and evidence of their modulation in ageing and longevity-related pathways, we interrogated these genes for evidence of ageing-related epigenetic changes.
-Our discovery set was a large-scale peripheral blood-derived DNA methylome dataset comprising of 4350 samples (see Figure \@ref(fig:OverviewOfAnalyses)).
-This sequencing-based dataset had been generated by Methylated DNA Immunoprecipitation (MeDIP-seq) [@Down2009], which relies on the enrichment of methylated fragments of 200-500 bp to give a regional DNAm assessment (500 bp semi-overlapping windows, see [Methods](#EpiTwinsMethods)).
-In total the human tRNAome is comprised of 610 tRNAs (gtRNAdb)(see Figure \@ref(fig:kutteresq)), though only 492 are autosomal and do not reside in blacklisted regions of the genome [@Amemiya2019].
-Due to the small size of these tRNAs (60-86bp, median 73bp, excluding introns which are present in ~30 tRNAs with sizes from 10-99bp, median 19bp), this fragment-based method enabled a robust examination of the epigenetic state of these highly similar sequences. 
-This was supported by a mappability assessment. 
-The median mappability score density for the tRNAome was 0.90 for 50mers when considering tRNA genes $\pm500bp$ reflecting the regional nature of the MeDIP-seq assay.
-In contrast the 50mer mappability density is 0.68 for tRNA genes alone representative of the mappability of reads generated using a technique such as whole-genome bisulfite sequencing (see Figures \@ref(fig:mappabilityiMet1) & \@ref(fig:mappabilityScoreDensity)). 
-
 ```{r OverviewOfAnalyses, fig.cap="(ref:OverviewOfAnalysesCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/OverviewOfAnalysesFigure_tRNA_3.png")
 ```
-(ref:OverviewOfAnalysesCap) Study Structure. tRNAs differentially methylated with age initially identified in MeDIP-seq, validated (where covered in 450k array) and replicated in targeted bisulfite sequencing of pooled samples. Tissue specificity of these effects was explored in TCGA and foetal tissue data.
+(ref:OverviewOfAnalysesCap) __Study Structure__ tRNAs differentially methylated with age initially identified in MeDIP-seq, validated (where covered in 450k array) and replicated in targeted bisulfite sequencing of pooled samples. Tissue specificity of these effects was explored in TCGA and foetal tissue data.
+
+Due to tRNAs critical role in translation and evidence of their modulation in ageing and longevity-related pathways, we interrogated these genes for evidence of ageing-related epigenetic changes.
+Our discovery set was a large-scale peripheral blood-derived DNA methylome dataset comprising of 4,350 samples (see Figure \@ref(fig:OverviewOfAnalyses)).
+This sequencing-based dataset had been generated by Methylated DNA Immunoprecipitation (MeDIP-seq) [@Down2009], which relies on the enrichment of methylated fragments of 200-500 bp to give a regional DNAm assessment (500 bp semi-overlapping windows, see [Methods](#EpiTwinsMethods)).
+In total the extended human tRNAome is comprised of 610 tRNAs and closely related sequences (gtRNAdb)(see Figure \@ref(fig:kutteresq)), though only 492 are autosomal and do not reside in blacklisted regions of the genome [@Amemiya2019].
+
+```{r kutteresq, fig.cap="(ref:kutteresqCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("figs/kutteresq_BLcount.png")
+```
+(ref:kutteresqCap) __The genetic code as instantiated in the human tRNAome__ The triplet genetic code leads to the incorporation of specific amino acids into an elongating protein via corresponding tRNAs. n is the number of tRNA genes which encode a given amino acid, the number in parentheses is how many of those may be pseudogenes based on their tRNAscan score [@Lowe2016], and the number in square braces is the number in blacklisted regions [@Amemiya2019]. There are a total of 610 tRNAs and closely rrelated sequences in GtRNAdb [@Chan2009], 416 of which are high confidence tRNAs, 116 of which are potential pseudogenes, and 107 are in blacklisted regions [@Amemiya2019]. Notably 7 of the 61 non-STOP codons are missing from the human tRNAome therefore these codons are handled by wobble base matching (*e.g.* GCG Arg, ACC Gly). Also of note are the suppressor and selenocysteine tRNAs. The 20 methionine tRNAs are split equally between initiator methionine and internally incorporating methionine tRNAs, which are structurally distinct. There are also 23 nuclear encoded mitochondrial tRNAs.
+
+Due to the small size of these tRNAs (60-86bp, median 73bp, excluding introns which are present in ~30 tRNAs with sizes from 10-99bp, median 19bp), this fragment-based method enabled a robust examination of the epigenetic state of these highly similar sequences. 
+This was supported by a mappability assessment. 
+The median mappability score density for the tRNAome was 0.90 for 50mers when considering tRNA genes $\pm500bp$ reflecting the regional nature of the MeDIP-seq assay.
+In contrast the 50mer mappability density is 0.68 for the tRNA gene sequences alone without flanking sequences. Excluding the flanking region is representative of the mappability of reads generated using a technique such as whole-genome bisulfite sequencing as there is no ChIP fragment so reads mapping to adjacent more mappable sequences do not convey information about the methylation state of sites in the same fragment but which are harder to map (see Figures \@ref(fig:mappabilityiMet1) & \@ref(fig:mappabilityScoreDensity)).
+
+
+```{r mappabilityiMet1, fig.cap="(ref:mappabilityiMet1Cap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("./figs/mappability-iMet1.png")
+```
+(ref:mappabilityiMet1Cap) Example of mappability data from the encode mappability tracks [@Derrien2012] for the initiator methionine tRNA genes.
+
+```{r mappabilityScoreDensity, fig.cap="(ref:mappabilityScoreDensityCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("./figs/mappabilityScoreDensity_tRNAVsFlank500.png")
+```
+(ref:mappabilityScoreDensityCap) Mappability score density of the tRNAome increases with read length and is greater when flanking regions ($\pm500bp$) are included. Mappability score density is computed as the area under the encode mappability tracks [@Derrien2012] over the length of the region.
 
 We identified 21 genome-wide significant and 44 study-wide significant results (p < $4.34\times10^{-9}$ and $8.36\times10^{-5}$, respectively, via linear regression see [Methods](#medipmodels) (batch corrected n=4350).
 Study-wide significance was calculated conservatively for all 598 autosomal tRNAs. 
@@ -418,10 +453,6 @@ Furthermore, we examined a subset of samples with longitudinal data (n=658 methy
 At the nominal significance threshold (p < 0.05) this yielded a split of 41 hypermethylating tRNA genes and 22 hypomethylating tRNA genes. 
 Of these hypermethylated tRNAs, 2 are in the previously identified genome-wide significant set of 3 (with tRNA-iMet-CAT-1-4 ranked 3rd by p-value) and 9 are in the study-wide significant set of 16. 
 
-```{r kutteresq, fig.cap="(ref:kutteresqCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
-knitr::include_graphics("figs/kutteresq_BLcount.png")
-```
-(ref:kutteresqCap) The genetic code as represented in the human tRNAome. The triplet genetic code leads to the incorporation of specific amino acids into an elongating protein via corresponding tRNAs. n is the number of tRNA genes which encode a given amino acid, the number in parentheses is how many of those may be pseudogenes based on their tRNAscan score [@Lowe2016], and the number in square braces is the number in blacklisted regions [@Amemiya2019]. There are a total of 610 tRNAs in GtRNAdb [@Chan2009], 116 of which are potential pseudogenes, and 107 are in blacklisted regions [@Amemiya2019]. Notably 7 of the 61 non-STOP codons are missing from the human tRNAome therefore these codons are handled by wobble base matching (*e.g.* GCG Arg, ACC Gly). Also of note are the suppressor and selenocysteine tRNAs. The 20 methionine tRNAs are split equally between initiator methionine and internally incorporating methionine tRNAs, which are structurally distinct. There are also 23 nuclear encoded mitochondrial tRNAs.
 
 ### tRNA Genes are Enriched for Age Related DNA Hypermethylation
 
@@ -750,19 +781,38 @@ knitr::include_graphics("./figs/nonSigIsoMapbbswsPlotsGln-CTG.png")
 ```
 (ref:mintmapresCap) tRNA fragments derived from the Gln-CTG family of tRNAs, selected as tRNA-Gln-CTG-7-1 is one of the 16 study-wide significant age-hypermethylating tRNA genes. Pane titles contain the MINTbase Plates, unique identifiers of the tRNA fragments [@Pliatsika2018].
 
-### Mice also show age-related tRNA gene DNA hypermethylation
+#### MINTmap reference Fragment distribution
 
-We examined the DNA methylation of the mouse tRNAome in using data from a reduced representation bisulfite sequencing (RRBS) experiment performed by Petkovich et al. [@Petkovich2017].
-These data from 152 mice covered 51 tRNA genes and 385 CpGs after QC (see [Methods](#mousemethods)), representing ~11% of the mouse tRNAome.
+In the original MINTmap reference (Figure \@ref(fig:combinedFragSizeDists)b) there are peaks at around 18nt, 22nt and 32nt.
+This is consistent with the expected tRNA fragment size distributions with 'tRNA halves' at 30-33nt and other tRFs at 18nt and 22nt.
+In our custom reference (Figure \@ref(fig:combinedFragSizeDists)a) whilst there is still a peak at ~18nt, with suggestions of peaks near 22nt and 32nt the tRNA fragment length distribution is somewhat different from that of the standard MINTmap reference.
+There are larger peaks at ~28 and ~40nt consistent with the longer fragments expected given that this reference aimed to target fragments derived from pre-tRNAs not tRFs derived from mature tRNAs.
+
+```{r combinedFragSizeDists, fig.cap="(ref:combinedFragSizeDistsCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("./figs/combinedFragSizeDists.png")
+```
+(ref:combinedFragSizeDistsCap) Comparison of the fragment size distributions between our custom reference __A)__ and the original the MINTmap reference __B)__.
+
+## Mice also show age-related tRNA gene DNA hypermethylation
+
+We examined the DNA methylation of the mouse tRNA genes in using data from a reduced representation bisulfite sequencing (RRBS) experiment performed by Petkovich et al. [@Petkovich2017].
+These data from 152 mice covered 51 tRNA genes and 385 CpGs after QC (see [Methods](#mousemethods)), representing ~11% of mouse tRNA genes.
 The mice ranged in age from 0.67-35 months.
 
 Three of the 51 tRNAs showed Bonferroni significant DNA methylation changes with age (p-value < $1.08 \times 10^{-4}$) and all were in the hypermethylation direction.
-These three are tRNA-Asp-GTC-1-12, tRNA-Ile-AAT-1-4, tRNA-Glu-TTC-1-3 (Figure \@ref(fig:mouse)).
+These three are tRNA-Asp-GTC-1-12, tRNA-Ile-AAT-1-4, tRNA-Glu-TTC-1-3 (Figure \ref{fig:mouse}). Full Age model Results are available in [Supplementary File S4](Supplementary_Files/SF4_mouse_tRNA_age_models.xlsx).
 
 ```{r mouse, fig.cap="(ref:mouseCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("./figs/CpGPlotComb.png")
 ```
-(ref:mouseCap) DNA methylation of CpGs in 3 tRNA which significantly hypermethylate with age in mice. 6 CpGs reach bonferroni significance and 7 show nominally significant increases.
+
+(ref:mouseCap) DNA methylation of CpGs in 3 tRNA which significantly hypermethylate with age in mice, in data from Petkovich et al. [@Petkovich2017]. 6 CpGs reach bonferroni significance and 7 show nominally significant increases.
+
+In order to investigate the mouse results further we made use of data from Thornlow et al. [@Thornlow2020], which had established tRNA ortholog sets for 29 mammalian species.
+They identified 197 mouse tRNAs as having direct human orthologs with 44 of these included in the mouse results from Petkovich et al. [@Petkovich2017].
+However, unfortunately, although 2 of the top 3 tRNAs (tRNA-Ser-AGA-2-6 & tRNA-Ile-AAT-4-1) have mouse orthologs (tRNA-Ser-AGA-2-2 & tRNA-Ile-AAT-1-1), they are not covered in these mouse data. 
+Furthermore, none of the tRNAs showing significant hypermethylation in mice (at nominal p<0.05) had human orthologs in our MeDIP-seq study-wide significant hypermethylating set. 
+Therefore, whilst we cannot directly compare specific tRNA loci due to this lack of coverage, it is interesting that the small number of significant tRNA genes in the mouse data also hypermethylate with age.
 
 \newpage
 
@@ -884,16 +934,6 @@ All authors reviewed and approved the final manuscript.
 ## Supplementary materials {-}
 
 ### Supplementary Figures
-
-```{r mappabilityiMet1, fig.cap="(ref:mappabilityiMet1Cap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
-knitr::include_graphics("./figs/mappability-iMet1.png")
-```
-(ref:mappabilityiMet1Cap) Example of mappability data from the encode mappability tracks [@Derrien2012] for the initiator methionine tRNA genes.
-
-```{r mappabilityScoreDensity, fig.cap="(ref:mappabilityScoreDensityCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
-knitr::include_graphics("./figs/mappabilityScoreDensity_tRNAVsFlank500.png")
-```
-(ref:mappabilityScoreDensityCap) Mappability score density of the tRNAome increases with read length and is greater when flanking regions ($\pm500bp$) are included. Mappability score density is computed as the area under the encode mappability tracks [@Derrien2012] over the length of the region.
 
 ```{r CpGcountBGvstRNAPlot, fig.cap="(ref:CpGcountBGvstRNAPlotCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/CpGcountBGvstRNAPlot.png")
