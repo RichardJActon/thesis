@@ -20,6 +20,16 @@ subtitle: |
   Supervisors - Chris Bell, Karen Lillycrop and Cyrus Cooper
 ---
 
+```{r,include=FALSE,echo=FALSE}
+suppressPackageStartupMessages({
+	#library(DiagrammeR)
+	library(tidyverse)
+	#library(gt)
+	library(kableExtra)
+  options(kableExtra.auto_format = TRUE)
+})
+```
+
 # Abstract {-}
 
 ...
