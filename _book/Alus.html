@@ -24,7 +24,7 @@
 <meta name="author" content="Richard J. Acton" />
 
 
-<meta name="date" content="2020-07-05" />
+<meta name="date" content="2020-07-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,8 +50,6 @@
 
 
 
-<script src="libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
 
 
 
@@ -135,15 +133,15 @@
 <li class="chapter" data-level="4.4.2" data-path="tRNAs.html"><a href="tRNAs.html#trna-genes-are-enriched-for-age-related-dna-hypermethylation"><i class="fa fa-check"></i><b>4.4.2</b> tRNA Genes are Enriched for Age Related DNA Hypermethylation</a></li>
 <li class="chapter" data-level="4.4.3" data-path="tRNAs.html"><a href="tRNAs.html#trna-gene-dna-methylation-in-other-tissues"><i class="fa fa-check"></i><b>4.4.3</b> tRNA Gene DNA Methylation in Other Tissues</a></li>
 <li class="chapter" data-level="4.4.4" data-path="tRNAs.html"><a href="tRNAs.html#expression-of-trnas-in-blood-with-age"><i class="fa fa-check"></i><b>4.4.4</b> Expression of tRNAs in Blood with Age</a></li>
+<li class="chapter" data-level="4.4.5" data-path="tRNAs.html"><a href="tRNAs.html#mice-also-show-age-related-trna-gene-dna-hypermethylation"><i class="fa fa-check"></i><b>4.4.5</b> Mice also show age-related tRNA gene DNA hypermethylation</a></li>
 </ul></li>
-<li class="chapter" data-level="4.5" data-path="tRNAs.html"><a href="tRNAs.html#mice-also-show-age-related-trna-gene-dna-hypermethylation"><i class="fa fa-check"></i><b>4.5</b> Mice also show age-related tRNA gene DNA hypermethylation</a></li>
+<li class="chapter" data-level="4.5" data-path="tRNAs.html"><a href="tRNAs.html#trna-gene-methylation-in-cancer"><i class="fa fa-check"></i><b>4.5</b> tRNA Gene Methylation in Cancer</a></li>
 <li class="chapter" data-level="4.6" data-path="tRNAs.html"><a href="tRNAs.html#discussion-1"><i class="fa fa-check"></i><b>4.6</b> Discussion</a></li>
 <li class="chapter" data-level="4.7" data-path="tRNAs.html"><a href="tRNAs.html#data-availability"><i class="fa fa-check"></i><b>4.7</b> Data availability</a></li>
 <li class="chapter" data-level="4.8" data-path="tRNAs.html"><a href="tRNAs.html#code-availablity"><i class="fa fa-check"></i><b>4.8</b> Code availablity</a></li>
 <li class="chapter" data-level="4.9" data-path="tRNAs.html"><a href="tRNAs.html#acknowledgements-1"><i class="fa fa-check"></i><b>4.9</b> Acknowledgements</a></li>
-<li class="chapter" data-level="4.10" data-path="tRNAs.html"><a href="tRNAs.html#author-contributions"><i class="fa fa-check"></i><b>4.10</b> Author Contributions</a></li>
 <li class="chapter" data-level="" data-path="tRNAs.html"><a href="tRNAs.html#supplementary-materials"><i class="fa fa-check"></i>Supplementary materials</a><ul>
-<li class="chapter" data-level="4.10.1" data-path="tRNAs.html"><a href="tRNAs.html#supplementary-figures"><i class="fa fa-check"></i><b>4.10.1</b> Supplementary Figures</a></li>
+<li class="chapter" data-level="4.9.1" data-path="tRNAs.html"><a href="tRNAs.html#supplementary-figures"><i class="fa fa-check"></i><b>4.9.1</b> Supplementary Figures</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="Alus.html"><a href="Alus.html"><i class="fa fa-check"></i><b>5</b> Results 3 -</a><ul>
@@ -197,35 +195,35 @@
 </div>
 <div id="AluIntro" class="section level2">
 <h2><span class="header-section-number">5.2</span> Introduction</h2>
-<p>Age is a significant risk factor across the breadth of chronic diseases, including cardiovascular, obesity-related, ophthalmic, musculoskeletal and neurological disorders <span class="citation">[<a href="#ref-Partridge2018" role="doc-biblioref">227</a>]</span>.
+<p>Age is a significant risk factor across the breadth of chronic diseases, including cardiovascular, obesity-related, ophthalmic, musculoskeletal and neurological disorders <span class="citation">[<a href="#ref-Partridge2018" role="doc-biblioref">226</a>]</span>.
 The molecular changes that occur with age include alterations to the epigenome <span class="citation">[<a href="#ref-Booth2016" role="doc-biblioref">10</a>]</span> – the chemical modifications and packaging of the genome that indicate or facilitate cell-specific activity <span class="citation">[<a href="#ref-Bird2007" role="doc-biblioref">16</a>]</span>.
 This includes age-related changes to DNA methylation, the most common modification of DNA <span class="citation">[<a href="#ref-Lopez-Otin2013" role="doc-biblioref">9</a>]</span>.
-This epigenetic mechanism is crucial in repressing the large proportion of the human genome (~45% <span class="citation">[<a href="#ref-Gregory2005" role="doc-biblioref">335</a>]</span>) that is comprised of repetitive or transposable elements <span class="citation">[<a href="#ref-Deniz2019" role="doc-biblioref">336</a>]</span>, <span class="citation">[<a href="#ref-Kazazian2017" role="doc-biblioref">337</a>]</span>.
-It also classically leads to robust repression of gene expression through promoter DNA methylation <span class="citation">[<a href="#ref-Deaton2011" role="doc-biblioref">338</a>]</span>, and has more nuanced effects on expression within the gene body <span class="citation">[<a href="#ref-Hellman2007" role="doc-biblioref">339</a>]</span>, as well as influencing splicing <span class="citation">[<a href="#ref-Shukla2011" role="doc-biblioref">340</a>]</span> and transcription factor binding-sites (TFBSs) <span class="citation">[<a href="#ref-Blattler2014" role="doc-biblioref">341</a>]</span>, <span class="citation">[<a href="#ref-Yin2017" role="doc-biblioref">51</a>]</span>.</p>
-<p>A significant decrease in DNA methylation with age was first observed with pioneering global measures <span class="citation">[<a href="#ref-Wilson1983" role="doc-biblioref">90</a>]</span>, in similar fashion to the reduced methylation seen in cancer tissue <span class="citation">[<a href="#ref-Gama-Sosa1983" role="doc-biblioref">342</a>]</span>.
-This DNA methylation loss was seen to be strongly contributed to by the demethylation of repetitive elements <span class="citation">[<a href="#ref-Bollati2010" role="doc-biblioref">343</a>]</span>.
-Random drift in the epigenetic state with age was also observed <span class="citation">[<a href="#ref-Bollati2010" role="doc-biblioref">343</a>]</span>, and more recent studies have identified targeted hypermethylation of specific functional regions, such as the promoters of polycomb target genes <span class="citation">[<a href="#ref-Teschendorff2010" role="doc-biblioref">108</a>]</span>, bivalent chromatin domains <span class="citation">[<a href="#ref-Rakyan2010" role="doc-biblioref">106</a>]</span> and the genomic loci of specific tRNA genes <span class="citation">[<a href="#ref-Acton2020" role="doc-biblioref">225</a>]</span></p>
-<p>Alu elements are the most successful transposon in terms of numbers within the human genome, totalling ~1.19 million copies and comprising ~10.7% of the genomic sequence <span class="citation">[<a href="#ref-Dewannieux2003" role="doc-biblioref">344</a>]</span>, <span class="citation">[<a href="#ref-Deininger2011" role="doc-biblioref">345</a>]</span>.
-This ~300 bp primate-specific retrotransposon is a member of the short interspersed nuclear elements (SINEs) and is derived from the 7SL RNA gene <span class="citation">[<a href="#ref-Ullu1984" role="doc-biblioref">346</a>]</span>.
-Alu elements arose ~65 million years ago (MYA), with a peak in amplification around ~40 MYA <span class="citation">[<a href="#ref-Ade2013" role="doc-biblioref">347</a>]</span>.
+This epigenetic mechanism is crucial in repressing the large proportion of the human genome (~45% <span class="citation">[<a href="#ref-Gregory2005" role="doc-biblioref">342</a>]</span>) that is comprised of repetitive or transposable elements <span class="citation">[<a href="#ref-Deniz2019" role="doc-biblioref">343</a>]</span>, <span class="citation">[<a href="#ref-Kazazian2017" role="doc-biblioref">344</a>]</span>.
+It also classically leads to robust repression of gene expression through promoter DNA methylation <span class="citation">[<a href="#ref-Deaton2011" role="doc-biblioref">345</a>]</span>, and has more nuanced effects on expression within the gene body <span class="citation">[<a href="#ref-Hellman2007" role="doc-biblioref">346</a>]</span>, as well as influencing splicing <span class="citation">[<a href="#ref-Shukla2011" role="doc-biblioref">347</a>]</span> and transcription factor binding-sites (TFBSs) <span class="citation">[<a href="#ref-Blattler2014" role="doc-biblioref">348</a>]</span>, <span class="citation">[<a href="#ref-Yin2017" role="doc-biblioref">51</a>]</span>.</p>
+<p>A significant decrease in DNA methylation with age was first observed with pioneering global measures <span class="citation">[<a href="#ref-Wilson1983" role="doc-biblioref">90</a>]</span>, in similar fashion to the reduced methylation seen in cancer tissue <span class="citation">[<a href="#ref-Gama-Sosa1983" role="doc-biblioref">349</a>]</span>.
+This DNA methylation loss was seen to be strongly contributed to by the demethylation of repetitive elements <span class="citation">[<a href="#ref-Bollati2010" role="doc-biblioref">350</a>]</span>.
+Random drift in the epigenetic state with age was also observed <span class="citation">[<a href="#ref-Bollati2010" role="doc-biblioref">350</a>]</span>, and more recent studies have identified targeted hypermethylation of specific functional regions, such as the promoters of polycomb target genes <span class="citation">[<a href="#ref-Teschendorff2010" role="doc-biblioref">108</a>]</span>, bivalent chromatin domains <span class="citation">[<a href="#ref-Rakyan2010" role="doc-biblioref">106</a>]</span> and the genomic loci of specific tRNA genes <span class="citation">[<a href="#ref-Acton2020" role="doc-biblioref">225</a>]</span></p>
+<p>Alu elements are the most successful transposon in terms of numbers within the human genome, totalling ~1.19 million copies and comprising ~10.7% of the genomic sequence <span class="citation">[<a href="#ref-Dewannieux2003" role="doc-biblioref">351</a>]</span>, <span class="citation">[<a href="#ref-Deininger2011" role="doc-biblioref">352</a>]</span>.
+This ~300 bp primate-specific retrotransposon is a member of the short interspersed nuclear elements (SINEs) and is derived from the 7SL RNA gene <span class="citation">[<a href="#ref-Ullu1984" role="doc-biblioref">353</a>]</span>.
+Alu elements arose ~65 million years ago (MYA), with a peak in amplification around ~40 MYA <span class="citation">[<a href="#ref-Ade2013" role="doc-biblioref">354</a>]</span>.
 Non-LTR retrotransposons, which include Alus as well as L1 and SVA elements, are active in human.
-However, Alu elements themselves are non-autonomous and need to commandeer a nearby L1 element’s retrotransposition molecular machinery <span class="citation">[<a href="#ref-Cordaux2009" role="doc-biblioref">348</a>]</span>.
-Alu insertion mutagenesis as well as Alu element mediated recombination account for 0.4% of all human genetic disorders <span class="citation">[<a href="#ref-Kazazian2017" role="doc-biblioref">337</a>]</span>, <span class="citation">[<a href="#ref-Belancio2008" role="doc-biblioref">349</a>]</span>.</p>
-<p>DNA methylation represses Alu elements and due to their sequences being rich in CpGs they in fact account for ~25% of all the CpGs in human genome (~7.5 million) <span class="citation">[<a href="#ref-Deininger2011" role="doc-biblioref">345</a>]</span>.
-Alu repeats are predominately methylated across all normal tissues, and even in cancer cells they are the more resistant to hypomethylation than other repetitive elements, implying a strong pressure to maintain their epigenetic state <span class="citation">[<a href="#ref-Jorda2017" role="doc-biblioref">350</a>]</span>.
+However, Alu elements themselves are non-autonomous and need to commandeer a nearby L1 element’s retrotransposition molecular machinery <span class="citation">[<a href="#ref-Cordaux2009" role="doc-biblioref">355</a>]</span>.
+Alu insertion mutagenesis as well as Alu element mediated recombination account for 0.4% of all human genetic disorders <span class="citation">[<a href="#ref-Kazazian2017" role="doc-biblioref">344</a>]</span>, <span class="citation">[<a href="#ref-Belancio2008" role="doc-biblioref">356</a>]</span>.</p>
+<p>DNA methylation represses Alu elements and due to their sequences being rich in CpGs they in fact account for ~25% of all the CpGs in human genome (~7.5 million) <span class="citation">[<a href="#ref-Deininger2011" role="doc-biblioref">352</a>]</span>.
+Alu repeats are predominately methylated across all normal tissues, and even in cancer cells they are the more resistant to hypomethylation than other repetitive elements, implying a strong pressure to maintain their epigenetic state <span class="citation">[<a href="#ref-Jorda2017" role="doc-biblioref">357</a>]</span>.
 These elements are an abundant genetic resource of regulatory sequences with
-numerous TFBSs residing within its canonical sequence <span class="citation">[<a href="#ref-Polak2006" role="doc-biblioref">351</a>]</span>.
-They can influence gene expression <span class="citation">[<a href="#ref-Chen2017b" role="doc-biblioref">352</a>]</span>, <span class="citation">[<a href="#ref-RobertoFerrari2019" role="doc-biblioref">353</a>]</span> and there is evidence that some may possess enhancer activity <span class="citation">[<a href="#ref-Su2014" role="doc-biblioref">354</a>]</span>.
-The deterioration of epigenomic repression can unmask latent regulatory function within repetitive elements <span class="citation">[<a href="#ref-Ward2013" role="doc-biblioref">355</a>]</span>, <span class="citation">[<a href="#ref-Chuong2017" role="doc-biblioref">229</a>]</span>, <span class="citation">[<a href="#ref-Xie2013" role="doc-biblioref">356</a>]</span>.
-This has been clearly displayed as a pathogenic mechanism in cancer, with epigenetic reactivation of cryptic cis-regulatory elements (CREs) within transposons acting as oncogenic drivers <span class="citation">[<a href="#ref-Jang2019" role="doc-biblioref">357</a>]</span> , including Alu elements <span class="citation">[<a href="#ref-Rajendiran2016" role="doc-biblioref">358</a>]</span>.
-There is the potential for these changes to also influence common non-malignant age-related diseases <span class="citation">[<a href="#ref-Chuong2017" role="doc-biblioref">229</a>]</span>, <span class="citation">[<a href="#ref-Payer2017" role="doc-biblioref">359</a>]</span>.</p>
+numerous TFBSs residing within its canonical sequence <span class="citation">[<a href="#ref-Polak2006" role="doc-biblioref">358</a>]</span>.
+They can influence gene expression <span class="citation">[<a href="#ref-Chen2017b" role="doc-biblioref">359</a>]</span>, <span class="citation">[<a href="#ref-RobertoFerrari2019" role="doc-biblioref">360</a>]</span> and there is evidence that some may possess enhancer activity <span class="citation">[<a href="#ref-Su2014" role="doc-biblioref">361</a>]</span>.
+The deterioration of epigenomic repression can unmask latent regulatory function within repetitive elements <span class="citation">[<a href="#ref-Ward2013" role="doc-biblioref">362</a>]</span>, <span class="citation">[<a href="#ref-Chuong2017" role="doc-biblioref">228</a>]</span>, <span class="citation">[<a href="#ref-Xie2013" role="doc-biblioref">363</a>]</span>.
+This has been clearly displayed as a pathogenic mechanism in cancer, with epigenetic reactivation of cryptic cis-regulatory elements (CREs) within transposons acting as oncogenic drivers <span class="citation">[<a href="#ref-Jang2019" role="doc-biblioref">364</a>]</span> , including Alu elements <span class="citation">[<a href="#ref-Rajendiran2016" role="doc-biblioref">365</a>]</span>.
+There is the potential for these changes to also influence common non-malignant age-related diseases <span class="citation">[<a href="#ref-Chuong2017" role="doc-biblioref">228</a>]</span>, <span class="citation">[<a href="#ref-Payer2017" role="doc-biblioref">366</a>]</span>.</p>
 <p>The identification of specific age-related DNA methylation changes has enabled the construction of ‘DNA methylation clocks‘ <span class="citation">[<a href="#ref-Horvath2018" role="doc-biblioref">149</a>]</span> that can predict an individual’s chronological age, but also capture aspects of biological ageing, such as all-cause mortality <span class="citation">[<a href="#ref-Marioni2015" role="doc-biblioref">135</a>]</span>.
-Hypermethylated and hypomethylated cytosines approximately equally drive these DNA methylation clocks, although these age-related increases or decreases in methylation are driven by distinct biological mechanisms <span class="citation">[<a href="#ref-Mozhui2017" role="doc-biblioref">360</a>]</span>, <span class="citation">[<a href="#ref-Wu2017" role="doc-biblioref">60</a>]</span>.
+Hypermethylated and hypomethylated cytosines approximately equally drive these DNA methylation clocks, although these age-related increases or decreases in methylation are driven by distinct biological mechanisms <span class="citation">[<a href="#ref-Mozhui2017" role="doc-biblioref">367</a>]</span>, <span class="citation">[<a href="#ref-Wu2017" role="doc-biblioref">60</a>]</span>.
 Interestingly, hypomethylating CpGs have been identified to be the most indicative of biological ageing-related all-cause mortality effects in blood <span class="citation">[<a href="#ref-Zhang2017" role="doc-biblioref">140</a>]</span>.
 However, due to poor coverage of the repetitive space because of technical issues <span class="citation">[<a href="#ref-Bell2019" role="doc-biblioref">150</a>]</span>, much of the genomic hypomethylation is not well captured by array analysis.</p>
-<p>In this study we set about to identify and explore age-related DNA methylation changes in Alu elements in a large (&gt;3,000) immunoprecipitation-derived sequencing-based dataset (MeDIP-seq) from peripheral blood DNA. We constructed an Alu-specific DNA methylation ageing clock and compared how this contrasted with other clocks’ measures. We also investigated genetic influences on age- acceleration measures from this Alu-clock via GWAS, as has been with shown previously with an association in the TERT gene with the Horvath clock <span class="citation">[<a href="#ref-Lu2017" role="doc-biblioref">361</a>]</span>, <span class="citation">[<a href="#ref-Gibson2019" role="doc-biblioref">362</a>]</span>.
+<p>In this study we set about to identify and explore age-related DNA methylation changes in Alu elements in a large (&gt;3,000) immunoprecipitation-derived sequencing-based dataset (MeDIP-seq) from peripheral blood DNA. We constructed an Alu-specific DNA methylation ageing clock and compared how this contrasted with other clocks’ measures. We also investigated genetic influences on age- acceleration measures from this Alu-clock via GWAS, as has been with shown previously with an association in the TERT gene with the Horvath clock <span class="citation">[<a href="#ref-Lu2017" role="doc-biblioref">368</a>]</span>, <span class="citation">[<a href="#ref-Gibson2019" role="doc-biblioref">369</a>]</span>.
 These results may reveal mechanisms involved in controlling the epigenetic state of this large portion of the genome.
-Finally, we interrogated these genetic associations for any potential connection with common age-related diseases through PheWAS in the UKBiobank dataset <span class="citation">[<a href="#ref-Bycroft2017" role="doc-biblioref">363</a>]</span>.</p>
+Finally, we interrogated these genetic associations for any potential connection with common age-related diseases through PheWAS in the UKBiobank dataset <span class="citation">[<a href="#ref-Bycroft2017" role="doc-biblioref">370</a>]</span>.</p>
 </div>
 <div id="methods-2" class="section level2">
 <h2><span class="header-section-number">5.3</span> Methods</h2>
@@ -239,18 +237,18 @@ Finally, we interrogated these genetic associations for any potential connection
 <li>This sequencing-based dataset – MeDIP-seq fragments 200-500bp – size Alu elements 300bp</li>
 <li>Remove strongly genetically driven loci
 <ul>
-<li>Removed known polymorphic Alu in the human population <span class="citation">[<a href="#ref-Payer2017" role="doc-biblioref">359</a>]</span></li>
+<li>Removed known polymorphic Alu in the human population <span class="citation">[<a href="#ref-Payer2017" role="doc-biblioref">366</a>]</span></li>
 <li>?Adapted Gap Hunting algorithm (see Methods)</li>
 </ul></li>
 <li>Genome-wide significant/ Study-wide Significant windows</li>
 <li>?Validated Alu methylation with target BiS-seq</li>
-<li>Enrichment Analysis - GREAT <span class="citation">[<a href="#ref-McLean2010" role="doc-biblioref">364</a>]</span></li>
+<li>Enrichment Analysis - GREAT <span class="citation">[<a href="#ref-McLean2010" role="doc-biblioref">371</a>]</span></li>
 <li>?Association with GWAS disease loci</li>
 </ul>
 <div id="alu-element-specific-dna-methylation-clock" class="section level3">
 <h3><span class="header-section-number">5.4.1</span> Alu-element specific DNA methylation Clock</h3>
 <ul>
-<li>Elastic net regression with R package glmnet <span class="citation">[<a href="#ref-Friedman2010" role="doc-biblioref">120</a>]</span>, <span class="citation">[<a href="#ref-Engebretsen2019" role="doc-biblioref">365</a>]</span></li>
+<li>Elastic net regression with R package glmnet <span class="citation">[<a href="#ref-Friedman2010" role="doc-biblioref">120</a>]</span>, <span class="citation">[<a href="#ref-Engebretsen2019" role="doc-biblioref">372</a>]</span></li>
 </ul>
 </div>
 <div id="comparison-of-alu-clock-with-array-derived-dna-methylation-clocks" class="section level3">
@@ -262,8 +260,8 @@ Finally, we interrogated these genetic associations for any potential connection
 <li>Hannum et al. <span class="citation">[<a href="#ref-Hannum2013" role="doc-biblioref">118</a>]</span></li>
 <li>PhenoAge <span class="citation">[<a href="#ref-Levine2018" role="doc-biblioref">138</a>]</span></li>
 <li>GrimAge <span class="citation">[<a href="#ref-Lu2019" role="doc-biblioref">139</a>]</span></li>
-<li>EpiTOC <span class="citation">[<a href="#ref-Yang2016" role="doc-biblioref">315</a>]</span></li>
-<li>?Remethylation Window <span class="citation">[<a href="#ref-Zhou2018" role="doc-biblioref">366</a>]</span></li>
+<li>EpiTOC <span class="citation">[<a href="#ref-Yang2016" role="doc-biblioref">310</a>]</span></li>
+<li>?Remethylation Window <span class="citation">[<a href="#ref-Zhou2018" role="doc-biblioref">373</a>]</span></li>
 </ul></li>
 </ul>
 </div>
@@ -277,16 +275,16 @@ Finally, we interrogated these genetic associations for any potential connection
 <div id="disease-association-with-these-variants-enrichment-for-age-related-diseases" class="section level3">
 <h3><span class="header-section-number">5.4.4</span> Disease Association with these Variants / Enrichment for Age-Related Diseases</h3>
 <ul>
-<li>Ageing and genetics shared risk <span class="citation">[<a href="#ref-Zenin2019" role="doc-biblioref">367</a>]</span></li>
+<li>Ageing and genetics shared risk <span class="citation">[<a href="#ref-Zenin2019" role="doc-biblioref">374</a>]</span></li>
 <li><a href="https://www.eurekalert.org/pub_releases/2019-01/g-aac012919.php" class="uri">https://www.eurekalert.org/pub_releases/2019-01/g-aac012919.php</a></li>
 <li>GWAS results from UKBioBank</li>
 <li><a href="http://www.nealelab.is/uk-biobank" class="uri">http://www.nealelab.is/uk-biobank</a></li>
 <li>Explore via PheWAS of these Alu-related variants
 <ul>
 <li>Phewascatelog.org</li>
-<li>Denny et al Nat Biotech 2013 <span class="citation">[<a href="#ref-Denny2014" role="doc-biblioref">368</a>]</span></li>
-<li>Bush NRG <span class="citation">[<a href="#ref-Bush2016" role="doc-biblioref">369</a>]</span></li>
-<li>Wei et al. Circulation 2018 <span class="citation">[<a href="#ref-Wei2018" role="doc-biblioref">370</a>]</span></li>
+<li>Denny et al Nat Biotech 2013 <span class="citation">[<a href="#ref-Denny2014" role="doc-biblioref">375</a>]</span></li>
+<li>Bush NRG <span class="citation">[<a href="#ref-Bush2016" role="doc-biblioref">376</a>]</span></li>
+<li>Wei et al. Circulation 2018 <span class="citation">[<a href="#ref-Wei2018" role="doc-biblioref">377</a>]</span></li>
 <li>Other papers (Zhao et al. Plos One 2019; We et al. BioRxiv 462077; Nielsen et al Nat Gen 2018; Giri et al. Nat Gen 2019; Bastarache et al Science (2018))</li>
 <li><a href="http://pheweb.sph.umich.edu/" class="uri">http://pheweb.sph.umich.edu/</a></li>
 </ul></li>
@@ -312,7 +310,7 @@ These deeply phenotyped individuals DNA methylomes</p>
 <h2><span class="header-section-number">5.7</span> Age-related DNA methylation changes</h2>
 <p>To identify strongly genetically we ?utilised the Gap Hunting algorithm of Andrews et al. <span class="citation">[<a href="#ref-Andrews2016" role="doc-biblioref">166</a>]</span> adapted
 We excluded all known
-Excluded polymorphic Alus <span class="citation">[<a href="#ref-Payer2017" role="doc-biblioref">359</a>]</span>
+Excluded polymorphic Alus <span class="citation">[<a href="#ref-Payer2017" role="doc-biblioref">366</a>]</span>
 ?Exclude any methylation overlapping STRs</p>
 <div id="validation-with-target-bis-seq" class="section level3">
 <h3><span class="header-section-number">5.7.1</span> ?Validation with target BiS-seq</h3>
@@ -341,7 +339,7 @@ EGAD00010000983).</p>
 <div id="acknowledgements-2" class="section level4">
 <h4><span class="header-section-number">5.7.5.3</span> Acknowledgements</h4>
 </div>
-<div id="author-contributions-1" class="section level4">
+<div id="author-contributions" class="section level4">
 <h4><span class="header-section-number">5.7.5.4</span> Author Contributions</h4>
 <div style="page-break-after: always;"></div>
 
@@ -412,121 +410,121 @@ EGAD00010000983).</p>
 <p>225. Acton RJ, Bourne E, Bell J, Lillycrop K, Wang J, Dennison E, Harvey N, Spector TD, Cooper C, Bell CG: <strong>The Genomic Loci of Specific Human tRNA Genes Exhibit Ageing-Related DNA Hypermethylation</strong>. <em>bioRxiv</em> 2019,:1–48<a href="https://doi.org/10.1101/870352">10.1101/870352</a>Available: <a href="https://www.biorxiv.org/content/10.1101/870352v1">https://www.biorxiv.org/content/10.1101/870352v1</a>.</p>
 </div>
 <div id="ref-Partridge2018">
-<p>227. Partridge L, Deelen J, Slagboom PE: <strong>Facing up to the global challenges of ageing</strong>. <em>Nature</em> 2018, <strong>561</strong>:45–56<a href="https://doi.org/10.1038/s41586-018-0457-8">10.1038/s41586-018-0457-8</a>Available: <a href="http://www.nature.com/articles/s41586-018-0457-8">http://www.nature.com/articles/s41586-018-0457-8</a>.</p>
+<p>226. Partridge L, Deelen J, Slagboom PE: <strong>Facing up to the global challenges of ageing</strong>. <em>Nature</em> 2018, <strong>561</strong>:45–56<a href="https://doi.org/10.1038/s41586-018-0457-8">10.1038/s41586-018-0457-8</a>Available: <a href="http://www.nature.com/articles/s41586-018-0457-8">http://www.nature.com/articles/s41586-018-0457-8</a>.</p>
 </div>
 <div id="ref-Chuong2017">
-<p>229. Chuong EB, Elde NC, Feschotte C: <strong>Regulatory activities of transposable elements: from conflicts to benefits</strong>. <em>Nature Reviews Genetics</em> 2017, <strong>18</strong>:71–86<a href="https://doi.org/10.1038/nrg.2016.139">10.1038/nrg.2016.139</a>Available: <a href="http://www.nature.com/articles/nrg.2016.139">http://www.nature.com/articles/nrg.2016.139</a>.</p>
+<p>228. Chuong EB, Elde NC, Feschotte C: <strong>Regulatory activities of transposable elements: from conflicts to benefits</strong>. <em>Nature Reviews Genetics</em> 2017, <strong>18</strong>:71–86<a href="https://doi.org/10.1038/nrg.2016.139">10.1038/nrg.2016.139</a>Available: <a href="http://www.nature.com/articles/nrg.2016.139">http://www.nature.com/articles/nrg.2016.139</a>.</p>
 </div>
 <div id="ref-Yang2016">
-<p>315. Yang Z, Wong A, Kuh D, Paul DS, Rakyan VK, Leslie RD, Zheng SC, Widschwendter M, Beck S, Teschendorff AE: <strong>Correlation of an epigenetic mitotic clock with cancer risk</strong>. <em>Genome Biology</em> 2016, <strong>17</strong>:205<a href="https://doi.org/10.1186/s13059-016-1064-3">10.1186/s13059-016-1064-3</a>Available: <a href="http://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1064-3">http://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1064-3</a>.</p>
+<p>310. Yang Z, Wong A, Kuh D, Paul DS, Rakyan VK, Leslie RD, Zheng SC, Widschwendter M, Beck S, Teschendorff AE: <strong>Correlation of an epigenetic mitotic clock with cancer risk</strong>. <em>Genome Biology</em> 2016, <strong>17</strong>:205<a href="https://doi.org/10.1186/s13059-016-1064-3">10.1186/s13059-016-1064-3</a>Available: <a href="http://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1064-3">http://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1064-3</a>.</p>
 </div>
 <div id="ref-Gregory2005">
-<p>335. Gregory TR: <strong>Synergy between sequence and size in large-scale genomics</strong>. <em>Nature Reviews Genetics</em> 2005, <strong>6</strong>:699–708<a href="https://doi.org/10.1038/nrg1674">10.1038/nrg1674</a>.</p>
+<p>342. Gregory TR: <strong>Synergy between sequence and size in large-scale genomics</strong>. <em>Nature Reviews Genetics</em> 2005, <strong>6</strong>:699–708<a href="https://doi.org/10.1038/nrg1674">10.1038/nrg1674</a>.</p>
 </div>
 <div id="ref-Deniz2019">
-<p>336. Deniz Ö, Frost JM, Branco MR: <strong>Regulation of transposable elements by DNA modifications</strong>. <em>Nature Reviews Genetics</em> 2019, <strong>20</strong>:417–431<a href="https://doi.org/10.1038/s41576-019-0106-6">10.1038/s41576-019-0106-6</a>.</p>
+<p>343. Deniz Ö, Frost JM, Branco MR: <strong>Regulation of transposable elements by DNA modifications</strong>. <em>Nature Reviews Genetics</em> 2019, <strong>20</strong>:417–431<a href="https://doi.org/10.1038/s41576-019-0106-6">10.1038/s41576-019-0106-6</a>.</p>
 </div>
 <div id="ref-Kazazian2017">
-<p>337. Kazazian HH, Moran JV: <strong>Mobile DNA in health and disease</strong>. <em>New England Journal of Medicine</em> 2017, <strong>377</strong>:361–370<a href="https://doi.org/10.1056/NEJMra1510092">10.1056/NEJMra1510092</a>.</p>
+<p>344. Kazazian HH, Moran JV: <strong>Mobile DNA in health and disease</strong>. <em>New England Journal of Medicine</em> 2017, <strong>377</strong>:361–370<a href="https://doi.org/10.1056/NEJMra1510092">10.1056/NEJMra1510092</a>.</p>
 </div>
 <div id="ref-Deaton2011">
-<p>338. Deaton AM, Bird A: <strong>CpG islands and the regulation of transcription</strong>. <em>Genes &amp; development</em> 2011, <strong>25</strong>:1010–22<a href="https://doi.org/10.1101/gad.2037511">10.1101/gad.2037511</a>Available: <a href="http://www.ncbi.nlm.nih.gov/pubmed/21576262">http://www.ncbi.nlm.nih.gov/pubmed/21576262</a>.</p>
+<p>345. Deaton AM, Bird A: <strong>CpG islands and the regulation of transcription</strong>. <em>Genes &amp; development</em> 2011, <strong>25</strong>:1010–22<a href="https://doi.org/10.1101/gad.2037511">10.1101/gad.2037511</a>Available: <a href="http://www.ncbi.nlm.nih.gov/pubmed/21576262">http://www.ncbi.nlm.nih.gov/pubmed/21576262</a>.</p>
 </div>
 <div id="ref-Hellman2007">
-<p>339. Hellman A, Chess A: <strong>Gene body-specific methylation on the active X chromosome</strong>. <em>Science</em> 2007, <strong>315</strong>:1141–1143<a href="https://doi.org/10.1126/science.1136352">10.1126/science.1136352</a>.</p>
+<p>346. Hellman A, Chess A: <strong>Gene body-specific methylation on the active X chromosome</strong>. <em>Science</em> 2007, <strong>315</strong>:1141–1143<a href="https://doi.org/10.1126/science.1136352">10.1126/science.1136352</a>.</p>
 </div>
 <div id="ref-Shukla2011">
-<p>340. Shukla S, Kavak E, Gregory M, Imashimizu M, Shutinoski B, Kashlev M, Oberdoerffer P, Sandberg R, Oberdoerffer S: <strong>CTCF-promoted RNA polymerase II pausing links DNA methylation to splicing</strong>. <em>Nature</em> 2011, <strong>479</strong>:74–79<a href="https://doi.org/10.1038/nature10442">10.1038/nature10442</a>Available: <a href="http://dx.doi.org/10.1038/nature10442">http://dx.doi.org/10.1038/nature10442</a>.</p>
+<p>347. Shukla S, Kavak E, Gregory M, Imashimizu M, Shutinoski B, Kashlev M, Oberdoerffer P, Sandberg R, Oberdoerffer S: <strong>CTCF-promoted RNA polymerase II pausing links DNA methylation to splicing</strong>. <em>Nature</em> 2011, <strong>479</strong>:74–79<a href="https://doi.org/10.1038/nature10442">10.1038/nature10442</a>Available: <a href="http://dx.doi.org/10.1038/nature10442">http://dx.doi.org/10.1038/nature10442</a>.</p>
 </div>
 <div id="ref-Blattler2014">
-<p>341. Blattler A, Yao L, Witt H, Guo Y, Nicolet CM, Berman BP, Farnham PJ: <strong>Global loss of DNA methylation uncovers intronic enhancers in genes showing expression changes</strong>. <em>Genome Biology</em> 2014, <strong>15</strong>:469<a href="https://doi.org/10.1186/s13059-014-0469-0">10.1186/s13059-014-0469-0</a>Available: <a href="http://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0469-0">http://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0469-0</a>.</p>
+<p>348. Blattler A, Yao L, Witt H, Guo Y, Nicolet CM, Berman BP, Farnham PJ: <strong>Global loss of DNA methylation uncovers intronic enhancers in genes showing expression changes</strong>. <em>Genome Biology</em> 2014, <strong>15</strong>:469<a href="https://doi.org/10.1186/s13059-014-0469-0">10.1186/s13059-014-0469-0</a>Available: <a href="http://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0469-0">http://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0469-0</a>.</p>
 </div>
 <div id="ref-Gama-Sosa1983">
-<p>342. Gama-Sosa MA, Slagel VA, Trewyn RW, Oxenhandler R, Kuo KC, Gehrke CW, Ehrlich M: <strong>The 5-methylcytosine content of DNA from human tumors</strong>. <em>Nucleic Acids Research</em> 1983, <strong>11</strong>:6883–6894<a href="https://doi.org/10.1093/nar/11.19.6883">10.1093/nar/11.19.6883</a>Available: <a href="https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/11.19.6883">https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/11.19.6883</a>.</p>
+<p>349. Gama-Sosa MA, Slagel VA, Trewyn RW, Oxenhandler R, Kuo KC, Gehrke CW, Ehrlich M: <strong>The 5-methylcytosine content of DNA from human tumors</strong>. <em>Nucleic Acids Research</em> 1983, <strong>11</strong>:6883–6894<a href="https://doi.org/10.1093/nar/11.19.6883">10.1093/nar/11.19.6883</a>Available: <a href="https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/11.19.6883">https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/11.19.6883</a>.</p>
 </div>
 <div id="ref-Bollati2010">
-<p>343. Bollati V, Schwartz J, Wright R, Litonjua A, Tarantini L, Suh H, Sparrow D, Vokonas P, Baccarelli A: <strong>Decline in genomic DNA methylation through aging in a cohort of elderly subjects</strong>. <em>Mechanisms of Ageing and Development</em> 2009, <strong>130</strong>:234–239<a href="https://doi.org/10.1016/j.mad.2008.12.003">10.1016/j.mad.2008.12.003</a>Available: <a href="https://linkinghub.elsevier.com/retrieve/pii/S0047637408002820">https://linkinghub.elsevier.com/retrieve/pii/S0047637408002820</a>.</p>
+<p>350. Bollati V, Schwartz J, Wright R, Litonjua A, Tarantini L, Suh H, Sparrow D, Vokonas P, Baccarelli A: <strong>Decline in genomic DNA methylation through aging in a cohort of elderly subjects</strong>. <em>Mechanisms of Ageing and Development</em> 2009, <strong>130</strong>:234–239<a href="https://doi.org/10.1016/j.mad.2008.12.003">10.1016/j.mad.2008.12.003</a>Available: <a href="https://linkinghub.elsevier.com/retrieve/pii/S0047637408002820">https://linkinghub.elsevier.com/retrieve/pii/S0047637408002820</a>.</p>
 </div>
 <div id="ref-Dewannieux2003">
-<p>344. Dewannieux M, Esnault C, Heidmann T: <strong>LINE-mediated retrotransposition of marked Alu sequences</strong>. <em>Nature Genetics</em> 2003, <strong>35</strong>:41–48<a href="https://doi.org/10.1038/ng1223">10.1038/ng1223</a>Available: <a href="http://www.nature.com/articles/ng1223">http://www.nature.com/articles/ng1223</a>.</p>
+<p>351. Dewannieux M, Esnault C, Heidmann T: <strong>LINE-mediated retrotransposition of marked Alu sequences</strong>. <em>Nature Genetics</em> 2003, <strong>35</strong>:41–48<a href="https://doi.org/10.1038/ng1223">10.1038/ng1223</a>Available: <a href="http://www.nature.com/articles/ng1223">http://www.nature.com/articles/ng1223</a>.</p>
 </div>
 <div id="ref-Deininger2011">
-<p>345. Deininger P: <strong>Alu elements: know the SINEs</strong>. <em>Genome Biology</em> 2011, <strong>12</strong>:236<a href="https://doi.org/10.1186/gb-2011-12-12-236">10.1186/gb-2011-12-12-236</a>Available: <a href="http://genomebiology.biomedcentral.com/articles/10.1186/gb-2011-12-12-236">http://genomebiology.biomedcentral.com/articles/10.1186/gb-2011-12-12-236</a>.</p>
+<p>352. Deininger P: <strong>Alu elements: know the SINEs</strong>. <em>Genome Biology</em> 2011, <strong>12</strong>:236<a href="https://doi.org/10.1186/gb-2011-12-12-236">10.1186/gb-2011-12-12-236</a>Available: <a href="http://genomebiology.biomedcentral.com/articles/10.1186/gb-2011-12-12-236">http://genomebiology.biomedcentral.com/articles/10.1186/gb-2011-12-12-236</a>.</p>
 </div>
 <div id="ref-Ullu1984">
-<p>346. Ullu E, Tschudi C: <strong>Alu sequences are processed 7SL RNA genes</strong>. <em>Nature</em> 1984, <strong>312</strong>:171–172<a href="https://doi.org/10.1038/312171a0">10.1038/312171a0</a>Available: <a href="http://www.nature.com/articles/312171a0">http://www.nature.com/articles/312171a0</a>.</p>
+<p>353. Ullu E, Tschudi C: <strong>Alu sequences are processed 7SL RNA genes</strong>. <em>Nature</em> 1984, <strong>312</strong>:171–172<a href="https://doi.org/10.1038/312171a0">10.1038/312171a0</a>Available: <a href="http://www.nature.com/articles/312171a0">http://www.nature.com/articles/312171a0</a>.</p>
 </div>
 <div id="ref-Ade2013">
-<p>347. Ade C, Roy-Engel AM, Deininger PL: <strong>Alu elements: an intrinsic source of human genome instability</strong>. <em>Current Opinion in Virology</em> 2013, <strong>3</strong>:639–645<a href="https://doi.org/10.1016/j.coviro.2013.09.002">10.1016/j.coviro.2013.09.002</a>Available: <a href="https://linkinghub.elsevier.com/retrieve/pii/S1879625713001533">https://linkinghub.elsevier.com/retrieve/pii/S1879625713001533</a>.</p>
+<p>354. Ade C, Roy-Engel AM, Deininger PL: <strong>Alu elements: an intrinsic source of human genome instability</strong>. <em>Current Opinion in Virology</em> 2013, <strong>3</strong>:639–645<a href="https://doi.org/10.1016/j.coviro.2013.09.002">10.1016/j.coviro.2013.09.002</a>Available: <a href="https://linkinghub.elsevier.com/retrieve/pii/S1879625713001533">https://linkinghub.elsevier.com/retrieve/pii/S1879625713001533</a>.</p>
 </div>
 <div id="ref-Cordaux2009">
-<p>348. Cordaux R, Batzer MA: <strong>The impact of retrotransposons on human genome evolution</strong>. <em>Nature Reviews Genetics</em> 2009, <strong>10</strong>:691–703<a href="https://doi.org/10.1038/nrg2640">10.1038/nrg2640</a>Available: <a href="http://www.nature.com/articles/nrg2640">http://www.nature.com/articles/nrg2640</a>.</p>
+<p>355. Cordaux R, Batzer MA: <strong>The impact of retrotransposons on human genome evolution</strong>. <em>Nature Reviews Genetics</em> 2009, <strong>10</strong>:691–703<a href="https://doi.org/10.1038/nrg2640">10.1038/nrg2640</a>Available: <a href="http://www.nature.com/articles/nrg2640">http://www.nature.com/articles/nrg2640</a>.</p>
 </div>
 <div id="ref-Belancio2008">
-<p>349. Belancio VP, Hedges DJ, Deininger P: <strong>Mammalian non-LTR retrotransposons: For better or worse, in sickness and in health</strong>. <em>Genome Research</em> 2008, <strong>18</strong>:343–358<a href="https://doi.org/10.1101/gr.5558208">10.1101/gr.5558208</a>Available: <a href="http://www.genome.org/cgi/doi/10.1101/gr.5558208">http://www.genome.org/cgi/doi/10.1101/gr.5558208</a>.</p>
+<p>356. Belancio VP, Hedges DJ, Deininger P: <strong>Mammalian non-LTR retrotransposons: For better or worse, in sickness and in health</strong>. <em>Genome Research</em> 2008, <strong>18</strong>:343–358<a href="https://doi.org/10.1101/gr.5558208">10.1101/gr.5558208</a>Available: <a href="http://www.genome.org/cgi/doi/10.1101/gr.5558208">http://www.genome.org/cgi/doi/10.1101/gr.5558208</a>.</p>
 </div>
 <div id="ref-Jorda2017">
-<p>350. Jordà M, Díez-Villanueva A, Mallona I, Martín B, Lois S, Barrera V, Esteller M, Vavouri T, Peinado MA: <strong>The epigenetic landscape of Alu repeats delineates the structural and functional genomic architecture of colon cancer cells</strong>. <em>Genome Research</em> 2017, <strong>27</strong>:118–132<a href="https://doi.org/10.1101/gr.207522.116">10.1101/gr.207522.116</a>Available: <a href="http://www.ncbi.nlm.nih.gov/pubmed/27999094">http://www.ncbi.nlm.nih.gov/pubmed/27999094</a>.</p>
+<p>357. Jordà M, Díez-Villanueva A, Mallona I, Martín B, Lois S, Barrera V, Esteller M, Vavouri T, Peinado MA: <strong>The epigenetic landscape of Alu repeats delineates the structural and functional genomic architecture of colon cancer cells</strong>. <em>Genome Research</em> 2017, <strong>27</strong>:118–132<a href="https://doi.org/10.1101/gr.207522.116">10.1101/gr.207522.116</a>Available: <a href="http://www.ncbi.nlm.nih.gov/pubmed/27999094">http://www.ncbi.nlm.nih.gov/pubmed/27999094</a>.</p>
 </div>
 <div id="ref-Polak2006">
-<p>351. Polak P, Domany E: <strong>Alu elements contain many binding sites for transcription factors and may play a role in regulation of developmental processes.</strong> <em>BMC genomics</em> 2006, <strong>7</strong>:133<a href="https://doi.org/10.1186/1471-2164-7-133">10.1186/1471-2164-7-133</a>Available: <a href="http://www.ncbi.nlm.nih.gov/pubmed/16740159">http://www.ncbi.nlm.nih.gov/pubmed/16740159</a>.</p>
+<p>358. Polak P, Domany E: <strong>Alu elements contain many binding sites for transcription factors and may play a role in regulation of developmental processes.</strong> <em>BMC genomics</em> 2006, <strong>7</strong>:133<a href="https://doi.org/10.1186/1471-2164-7-133">10.1186/1471-2164-7-133</a>Available: <a href="http://www.ncbi.nlm.nih.gov/pubmed/16740159">http://www.ncbi.nlm.nih.gov/pubmed/16740159</a>.</p>
 </div>
 <div id="ref-Chen2017b">
-<p>352. Chen L-L, Yang L: <strong>ALU ternative Regulation for Gene Expression</strong>. <em>Trends in Cell Biology</em> 2017, <strong>27</strong>:480–490<a href="https://doi.org/10.1016/j.tcb.2017.01.002">10.1016/j.tcb.2017.01.002</a>Available: <a href="https://linkinghub.elsevier.com/retrieve/pii/S0962892417300028">https://linkinghub.elsevier.com/retrieve/pii/S0962892417300028</a>.</p>
+<p>359. Chen L-L, Yang L: <strong>ALU ternative Regulation for Gene Expression</strong>. <em>Trends in Cell Biology</em> 2017, <strong>27</strong>:480–490<a href="https://doi.org/10.1016/j.tcb.2017.01.002">10.1016/j.tcb.2017.01.002</a>Available: <a href="https://linkinghub.elsevier.com/retrieve/pii/S0962892417300028">https://linkinghub.elsevier.com/retrieve/pii/S0962892417300028</a>.</p>
 </div>
 <div id="ref-RobertoFerrari2019">
-<p>353. Ferrari R, de Llobet Cucalon LI, Di Vona C, Le Dilly F, Vidal E, Lioutas A, Oliete JQ, Jochem L, Cutts E, Dieci G, Vannini A, Teichmann M, Luna S de la, Beato M: <strong>TFIIIC Binding to Alu Elements Controls Gene Expression via Chromatin Looping and Histone Acetylation</strong>. <em>Molecular Cell</em> 2019,:1–13<a href="https://doi.org/10.1016/j.molcel.2019.10.020">10.1016/j.molcel.2019.10.020</a>Available: <a href="https://linkinghub.elsevier.com/retrieve/pii/S1097276519307981">https://linkinghub.elsevier.com/retrieve/pii/S1097276519307981</a>.</p>
+<p>360. Ferrari R, de Llobet Cucalon LI, Di Vona C, Le Dilly F, Vidal E, Lioutas A, Oliete JQ, Jochem L, Cutts E, Dieci G, Vannini A, Teichmann M, Luna S de la, Beato M: <strong>TFIIIC Binding to Alu Elements Controls Gene Expression via Chromatin Looping and Histone Acetylation</strong>. <em>Molecular Cell</em> 2019,:1–13<a href="https://doi.org/10.1016/j.molcel.2019.10.020">10.1016/j.molcel.2019.10.020</a>Available: <a href="https://linkinghub.elsevier.com/retrieve/pii/S1097276519307981">https://linkinghub.elsevier.com/retrieve/pii/S1097276519307981</a>.</p>
 </div>
 <div id="ref-Su2014">
-<p>354. Su M, Han D, Boyd-Kirkup J, Yu X, Han J-DJ: <strong>Evolution of Alu Elements toward Enhancers</strong>. <em>Cell Reports</em> 2014, <strong>7</strong>:376–385<a href="https://doi.org/10.1016/j.celrep.2014.03.011">10.1016/j.celrep.2014.03.011</a>Available: <a href="http://dx.doi.org/10.1016/j.celrep.2014.03.011">http://dx.doi.org/10.1016/j.celrep.2014.03.011</a>.</p>
+<p>361. Su M, Han D, Boyd-Kirkup J, Yu X, Han J-DJ: <strong>Evolution of Alu Elements toward Enhancers</strong>. <em>Cell Reports</em> 2014, <strong>7</strong>:376–385<a href="https://doi.org/10.1016/j.celrep.2014.03.011">10.1016/j.celrep.2014.03.011</a>Available: <a href="http://dx.doi.org/10.1016/j.celrep.2014.03.011">http://dx.doi.org/10.1016/j.celrep.2014.03.011</a>.</p>
 </div>
 <div id="ref-Ward2013">
-<p>355. Ward MC, Wilson MD, Barbosa-Morais NL, Schmidt D, Stark R, Pan Q, Schwalie PC, Menon S, Lukk M, Watt S, Thybert D, Kutter C, Kirschner K, Flicek P, Blencowe BJ, Odom DT: <strong>Latent Regulatory Potential of Human-Specific Repetitive Elements</strong>. <em>Molecular Cell</em> 2013, <strong>49</strong>:262–272<a href="https://doi.org/10.1016/j.molcel.2012.11.013">10.1016/j.molcel.2012.11.013</a>Available: <a href="http://dx.doi.org/10.1016/j.molcel.2012.11.013">http://dx.doi.org/10.1016/j.molcel.2012.11.013</a>.</p>
+<p>362. Ward MC, Wilson MD, Barbosa-Morais NL, Schmidt D, Stark R, Pan Q, Schwalie PC, Menon S, Lukk M, Watt S, Thybert D, Kutter C, Kirschner K, Flicek P, Blencowe BJ, Odom DT: <strong>Latent Regulatory Potential of Human-Specific Repetitive Elements</strong>. <em>Molecular Cell</em> 2013, <strong>49</strong>:262–272<a href="https://doi.org/10.1016/j.molcel.2012.11.013">10.1016/j.molcel.2012.11.013</a>Available: <a href="http://dx.doi.org/10.1016/j.molcel.2012.11.013">http://dx.doi.org/10.1016/j.molcel.2012.11.013</a>.</p>
 </div>
 <div id="ref-Xie2013">
-<p>356. Xie M, Hong C, Zhang B, Lowdon RF, Xing X, Li D, Zhou X, Lee HJ, Maire CL, Ligon KL, Gascard P, Sigaroudinia M, Tlsty TD, Kadlecek T, Weiss A, O’Geen H, Farnham PJ, Madden PAF, Mungall AJ, Tam A, Kamoh B, Cho S, Moore R, Hirst M, Marra MA, Costello JF, Wang T: <strong>DNA hypomethylation within specific transposable element families associates with tissue-specific enhancer landscape</strong>. <em>Nature Genetics</em> 2013, <strong>45</strong>:836–841<a href="https://doi.org/10.1038/ng.2649">10.1038/ng.2649</a>Available: <a href="http://www.ncbi.nlm.nih.gov/pubmed/23708189">http://www.ncbi.nlm.nih.gov/pubmed/23708189</a>.</p>
+<p>363. Xie M, Hong C, Zhang B, Lowdon RF, Xing X, Li D, Zhou X, Lee HJ, Maire CL, Ligon KL, Gascard P, Sigaroudinia M, Tlsty TD, Kadlecek T, Weiss A, O’Geen H, Farnham PJ, Madden PAF, Mungall AJ, Tam A, Kamoh B, Cho S, Moore R, Hirst M, Marra MA, Costello JF, Wang T: <strong>DNA hypomethylation within specific transposable element families associates with tissue-specific enhancer landscape</strong>. <em>Nature Genetics</em> 2013, <strong>45</strong>:836–841<a href="https://doi.org/10.1038/ng.2649">10.1038/ng.2649</a>Available: <a href="http://www.ncbi.nlm.nih.gov/pubmed/23708189">http://www.ncbi.nlm.nih.gov/pubmed/23708189</a>.</p>
 </div>
 <div id="ref-Jang2019">
-<p>357. Jang HS, Shah NM, Du AY, Dailey ZZ, Pehrsson EC, Godoy PM, Zhang D, Li D, Xing X, Kim S, O’Donnell D, Gordon JI, Wang T: <strong>Transposable elements drive widespread expression of oncogenes in human cancers</strong>. <em>Nature Genetics</em> 2019, <strong>51</strong>:611–617<a href="https://doi.org/10.1038/s41588-019-0373-3">10.1038/s41588-019-0373-3</a>Available: <a href="http://dx.doi.org/10.1038/s41588-019-0373-3">http://dx.doi.org/10.1038/s41588-019-0373-3</a>.</p>
+<p>364. Jang HS, Shah NM, Du AY, Dailey ZZ, Pehrsson EC, Godoy PM, Zhang D, Li D, Xing X, Kim S, O’Donnell D, Gordon JI, Wang T: <strong>Transposable elements drive widespread expression of oncogenes in human cancers</strong>. <em>Nature Genetics</em> 2019, <strong>51</strong>:611–617<a href="https://doi.org/10.1038/s41588-019-0373-3">10.1038/s41588-019-0373-3</a>Available: <a href="http://dx.doi.org/10.1038/s41588-019-0373-3">http://dx.doi.org/10.1038/s41588-019-0373-3</a>.</p>
 </div>
 <div id="ref-Rajendiran2016">
-<p>358. Rajendiran S, Gibbs LD, Van Treuren T, Klinkebiel DL, Vishwanatha JK: <strong>MIEN1 is tightly regulated by SINE Alu methylation in its promoter</strong>. <em>Oncotarget</em> 2016, <strong>7</strong>:65307–65319<a href="https://doi.org/10.18632/oncotarget.11675">10.18632/oncotarget.11675</a>Available: <a href="http://www.oncotarget.com/fulltext/11675">http://www.oncotarget.com/fulltext/11675</a>.</p>
+<p>365. Rajendiran S, Gibbs LD, Van Treuren T, Klinkebiel DL, Vishwanatha JK: <strong>MIEN1 is tightly regulated by SINE Alu methylation in its promoter</strong>. <em>Oncotarget</em> 2016, <strong>7</strong>:65307–65319<a href="https://doi.org/10.18632/oncotarget.11675">10.18632/oncotarget.11675</a>Available: <a href="http://www.oncotarget.com/fulltext/11675">http://www.oncotarget.com/fulltext/11675</a>.</p>
 </div>
 <div id="ref-Payer2017">
-<p>359. Payer LM, Steranka JP, Yang WR, Kryatova M, Medabalimi S, Ardeljan D, Liu C, Boeke JD, Avramopoulos D, Burns KH: <strong>Structural variants caused by Alu insertions are associated with risks for many human diseases</strong>. <em>Proceedings of the National Academy of Sciences</em> 2017, <strong>114</strong>:E3984–E3992<a href="https://doi.org/10.1073/pnas.1704117114">10.1073/pnas.1704117114</a>Available: <a href="http://www.pnas.org/lookup/doi/10.1073/pnas.1704117114">http://www.pnas.org/lookup/doi/10.1073/pnas.1704117114</a>.</p>
+<p>366. Payer LM, Steranka JP, Yang WR, Kryatova M, Medabalimi S, Ardeljan D, Liu C, Boeke JD, Avramopoulos D, Burns KH: <strong>Structural variants caused by Alu insertions are associated with risks for many human diseases</strong>. <em>Proceedings of the National Academy of Sciences</em> 2017, <strong>114</strong>:E3984–E3992<a href="https://doi.org/10.1073/pnas.1704117114">10.1073/pnas.1704117114</a>Available: <a href="http://www.pnas.org/lookup/doi/10.1073/pnas.1704117114">http://www.pnas.org/lookup/doi/10.1073/pnas.1704117114</a>.</p>
 </div>
 <div id="ref-Mozhui2017">
-<p>360. Mozhui K, Pandey AK: <strong>Conserved effect of aging on DNA methylation and association with EZH2 polycomb protein in mice and humans</strong>. <em>Mechanisms of Ageing and Development</em> 2017, <strong>162</strong>:27–37<a href="https://doi.org/10.1016/j.mad.2017.02.006">10.1016/j.mad.2017.02.006</a>Available: <a href="http://dx.doi.org/10.1016/j.mad.2017.02.006">http://dx.doi.org/10.1016/j.mad.2017.02.006</a>.</p>
+<p>367. Mozhui K, Pandey AK: <strong>Conserved effect of aging on DNA methylation and association with EZH2 polycomb protein in mice and humans</strong>. <em>Mechanisms of Ageing and Development</em> 2017, <strong>162</strong>:27–37<a href="https://doi.org/10.1016/j.mad.2017.02.006">10.1016/j.mad.2017.02.006</a>Available: <a href="http://dx.doi.org/10.1016/j.mad.2017.02.006">http://dx.doi.org/10.1016/j.mad.2017.02.006</a>.</p>
 </div>
 <div id="ref-Lu2017">
-<p>361. Lu AT, Hannon E, Levine ME, Crimmins EM, Lunnon K, Mill J, Geschwind DH, Horvath S: <strong>Genetic architecture of epigenetic and neuronal ageing rates in human brain regions</strong>. <em>Nature Communications</em> 2017, <strong>8</strong>:15353<a href="https://doi.org/10.1038/ncomms15353">10.1038/ncomms15353</a>Available: <a href="http://dx.doi.org/10.1038/ncomms15353">http://dx.doi.org/10.1038/ncomms15353</a>.</p>
+<p>368. Lu AT, Hannon E, Levine ME, Crimmins EM, Lunnon K, Mill J, Geschwind DH, Horvath S: <strong>Genetic architecture of epigenetic and neuronal ageing rates in human brain regions</strong>. <em>Nature Communications</em> 2017, <strong>8</strong>:15353<a href="https://doi.org/10.1038/ncomms15353">10.1038/ncomms15353</a>Available: <a href="http://dx.doi.org/10.1038/ncomms15353">http://dx.doi.org/10.1038/ncomms15353</a>.</p>
 </div>
 <div id="ref-Gibson2019">
-<p>362. Gibson J, Russ TC, Clarke T-K, Howard DM, Hillary RF, Evans KL, Walker RM, Bermingham ML, Morris SW, Campbell A, Hayward C, Murray AD, Porteous DJ, Horvath S, Lu AT, McIntosh AM, Whalley HC, Marioni RE: <strong>A meta-analysis of genome-wide association studies of epigenetic age acceleration</strong>. <em>PLOS Genetics</em> 2019, <strong>15</strong>:e1008104<a href="https://doi.org/10.1371/journal.pgen.1008104">10.1371/journal.pgen.1008104</a>Available: <a href="http://www.ncbi.nlm.nih.gov/pubmed/31738745">http://www.ncbi.nlm.nih.gov/pubmed/31738745</a>.</p>
+<p>369. Gibson J, Russ TC, Clarke T-K, Howard DM, Hillary RF, Evans KL, Walker RM, Bermingham ML, Morris SW, Campbell A, Hayward C, Murray AD, Porteous DJ, Horvath S, Lu AT, McIntosh AM, Whalley HC, Marioni RE: <strong>A meta-analysis of genome-wide association studies of epigenetic age acceleration</strong>. <em>PLOS Genetics</em> 2019, <strong>15</strong>:e1008104<a href="https://doi.org/10.1371/journal.pgen.1008104">10.1371/journal.pgen.1008104</a>Available: <a href="http://www.ncbi.nlm.nih.gov/pubmed/31738745">http://www.ncbi.nlm.nih.gov/pubmed/31738745</a>.</p>
 </div>
 <div id="ref-Bycroft2017">
-<p>363. Bycroft C, Freeman C, Petkova D, Band G, Elliott LT, Sharp K, Motyer A, Vukcevic D, Delaneau O, O’Connell J, Cortes A, Welsh S, McVean G, Leslie S, Donnelly P, Marchini J: <strong>Genome-wide genetic data on ~500,000 UK Biobank participants</strong>. <em>bioRxiv</em> 2017,:166298<a href="https://doi.org/10.1101/166298">10.1101/166298</a>Available: <a href="https://www.biorxiv.org/content/10.1101/166298v1">https://www.biorxiv.org/content/10.1101/166298v1</a>.</p>
+<p>370. Bycroft C, Freeman C, Petkova D, Band G, Elliott LT, Sharp K, Motyer A, Vukcevic D, Delaneau O, O’Connell J, Cortes A, Welsh S, McVean G, Leslie S, Donnelly P, Marchini J: <strong>Genome-wide genetic data on ~500,000 UK Biobank participants</strong>. <em>bioRxiv</em> 2017,:166298<a href="https://doi.org/10.1101/166298">10.1101/166298</a>Available: <a href="https://www.biorxiv.org/content/10.1101/166298v1">https://www.biorxiv.org/content/10.1101/166298v1</a>.</p>
 </div>
 <div id="ref-McLean2010">
-<p>364. McLean CY, Bristor D, Hiller M, Clarke SL, Schaar BT, Lowe CB, Wenger AM, Bejerano G: <strong>GREAT improves functional interpretation of cis-regulatory regions</strong>. <em>Nature Biotechnology</em> 2010, <strong>28</strong>:495–501<a href="https://doi.org/10.1038/nbt.1630">10.1038/nbt.1630</a>Available: <a href="http://www.ncbi.nlm.nih.gov/pubmed/20436461">http://www.ncbi.nlm.nih.gov/pubmed/20436461</a>.</p>
+<p>371. McLean CY, Bristor D, Hiller M, Clarke SL, Schaar BT, Lowe CB, Wenger AM, Bejerano G: <strong>GREAT improves functional interpretation of cis-regulatory regions</strong>. <em>Nature Biotechnology</em> 2010, <strong>28</strong>:495–501<a href="https://doi.org/10.1038/nbt.1630">10.1038/nbt.1630</a>Available: <a href="http://www.ncbi.nlm.nih.gov/pubmed/20436461">http://www.ncbi.nlm.nih.gov/pubmed/20436461</a>.</p>
 </div>
 <div id="ref-Engebretsen2019">
-<p>365. Engebretsen S, Bohlin J: <strong>Statistical predictions with glmnet</strong>. <em>Clinical Epigenetics</em> 2019, <strong>11</strong>:123<a href="https://doi.org/10.1186/s13148-019-0730-1">10.1186/s13148-019-0730-1</a>Available: <a href="https://clinicalepigeneticsjournal.biomedcentral.com/articles/10.1186/s13148-019-0730-1">https://clinicalepigeneticsjournal.biomedcentral.com/articles/10.1186/s13148-019-0730-1</a>.</p>
+<p>372. Engebretsen S, Bohlin J: <strong>Statistical predictions with glmnet</strong>. <em>Clinical Epigenetics</em> 2019, <strong>11</strong>:123<a href="https://doi.org/10.1186/s13148-019-0730-1">10.1186/s13148-019-0730-1</a>Available: <a href="https://clinicalepigeneticsjournal.biomedcentral.com/articles/10.1186/s13148-019-0730-1">https://clinicalepigeneticsjournal.biomedcentral.com/articles/10.1186/s13148-019-0730-1</a>.</p>
 </div>
 <div id="ref-Zhou2018">
-<p>366. Zhou W, Dinh HQ, Ramjan Z, Weisenberger DJ, Nicolet CM, Shen H, Laird PW, Berman BP: <strong>DNA methylation loss in late-replicating domains is linked to mitotic cell division</strong>. <em>Nature Genetics</em> 2018, <strong>50</strong>:591–602<a href="https://doi.org/10.1038/s41588-018-0073-4">10.1038/s41588-018-0073-4</a>Available: <a href="http://dx.doi.org/10.1038/s41588-018-0073-4">http://dx.doi.org/10.1038/s41588-018-0073-4</a>.</p>
+<p>373. Zhou W, Dinh HQ, Ramjan Z, Weisenberger DJ, Nicolet CM, Shen H, Laird PW, Berman BP: <strong>DNA methylation loss in late-replicating domains is linked to mitotic cell division</strong>. <em>Nature Genetics</em> 2018, <strong>50</strong>:591–602<a href="https://doi.org/10.1038/s41588-018-0073-4">10.1038/s41588-018-0073-4</a>Available: <a href="http://dx.doi.org/10.1038/s41588-018-0073-4">http://dx.doi.org/10.1038/s41588-018-0073-4</a>.</p>
 </div>
 <div id="ref-Zenin2019">
-<p>367. Zenin A, Tsepilov Y, Sharapov S, Getmantsev E, Menshikov LI, Fedichev PO, Aulchenko Y: <strong>Identification of 12 genetic loci associated with human healthspan</strong>. <em>Communications Biology</em> 2019, <strong>2</strong>:41<a href="https://doi.org/10.1038/s42003-019-0290-0">10.1038/s42003-019-0290-0</a>Available: <a href="http://dx.doi.org/10.1038/s42003-019-0290-0">http://dx.doi.org/10.1038/s42003-019-0290-0</a>.</p>
+<p>374. Zenin A, Tsepilov Y, Sharapov S, Getmantsev E, Menshikov LI, Fedichev PO, Aulchenko Y: <strong>Identification of 12 genetic loci associated with human healthspan</strong>. <em>Communications Biology</em> 2019, <strong>2</strong>:41<a href="https://doi.org/10.1038/s42003-019-0290-0">10.1038/s42003-019-0290-0</a>Available: <a href="http://dx.doi.org/10.1038/s42003-019-0290-0">http://dx.doi.org/10.1038/s42003-019-0290-0</a>.</p>
 </div>
 <div id="ref-Denny2014">
-<p>368. Denny JC, Bastarache L, Ritchie MD, Carroll RJ, Zink R, Mosley JD, Field JR, Pulley JM, Ramirez AH, Bowton E, Basford M a, Carrell DS, Peissig PL, Kho AN, Pacheco J a, Rasmussen LV, Crosslin DR, Crane PK, Pathak J, Bielinski SJ, Pendergrass SA, Xu H, Hindorff LA, Li R, Manolio TA, Chute CG, Chisholm RL, Larson EB, Jarvik GP, Brilliant MH, et al.: <strong>Systematic comparison of phenome-wide association study of electronic medical record data and genome-wide association study data</strong>. <em>Nature Biotechnology</em> 2013, <strong>31</strong>:1102–1111<a href="https://doi.org/10.1038/nbt.2749">10.1038/nbt.2749</a>Available: <a href="http://www.nature.com/articles/nbt.2749">http://www.nature.com/articles/nbt.2749</a>.</p>
+<p>375. Denny JC, Bastarache L, Ritchie MD, Carroll RJ, Zink R, Mosley JD, Field JR, Pulley JM, Ramirez AH, Bowton E, Basford M a, Carrell DS, Peissig PL, Kho AN, Pacheco J a, Rasmussen LV, Crosslin DR, Crane PK, Pathak J, Bielinski SJ, Pendergrass SA, Xu H, Hindorff LA, Li R, Manolio TA, Chute CG, Chisholm RL, Larson EB, Jarvik GP, Brilliant MH, et al.: <strong>Systematic comparison of phenome-wide association study of electronic medical record data and genome-wide association study data</strong>. <em>Nature Biotechnology</em> 2013, <strong>31</strong>:1102–1111<a href="https://doi.org/10.1038/nbt.2749">10.1038/nbt.2749</a>Available: <a href="http://www.nature.com/articles/nbt.2749">http://www.nature.com/articles/nbt.2749</a>.</p>
 </div>
 <div id="ref-Bush2016">
-<p>369. Bush WS, Oetjens MT, Crawford DC: <strong>Unravelling the human genome-phenome relationship using phenome-wide association studies</strong>. <em>Nature Reviews Genetics</em> 2016, <strong>17</strong>:129–145<a href="https://doi.org/10.1038/nrg.2015.36">10.1038/nrg.2015.36</a>Available: <a href="http://dx.doi.org/10.1038/nrg.2015.36">http://dx.doi.org/10.1038/nrg.2015.36</a>.</p>
+<p>376. Bush WS, Oetjens MT, Crawford DC: <strong>Unravelling the human genome-phenome relationship using phenome-wide association studies</strong>. <em>Nature Reviews Genetics</em> 2016, <strong>17</strong>:129–145<a href="https://doi.org/10.1038/nrg.2015.36">10.1038/nrg.2015.36</a>Available: <a href="http://dx.doi.org/10.1038/nrg.2015.36">http://dx.doi.org/10.1038/nrg.2015.36</a>.</p>
 </div>
 <div id="ref-Wei2018">
-<p>370. Wei W-Q, Li X, Feng Q, Kubo M, Kullo IJ, Peissig PL, Karlson EW, Jarvik GP, Lee MTM, Shang N, Larson EA, Edwards T, Shaffer CM, Mosley JD, Maeda S, Horikoshi M, Ritchie M, Williams MS, Larson EB, Crosslin DR, Bland ST, Pacheco JA, Rasmussen-Torvik LJ, Cronkite D, Hripcsak G, Cox NJ, Wilke RA, Stein CM, Rotter JI, Momozawa Y, et al.: <strong>LPA Variants Are Associated With Residual Cardiovascular Risk in Patients Receiving Statins</strong>. <em>Circulation</em> 2018, <strong>138</strong>:1839–1849<a href="https://doi.org/10.1161/CIRCULATIONAHA.117.031356">10.1161/CIRCULATIONAHA.117.031356</a>Available: <a href="https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.117.031356">https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.117.031356</a>.</p>
+<p>377. Wei W-Q, Li X, Feng Q, Kubo M, Kullo IJ, Peissig PL, Karlson EW, Jarvik GP, Lee MTM, Shang N, Larson EA, Edwards T, Shaffer CM, Mosley JD, Maeda S, Horikoshi M, Ritchie M, Williams MS, Larson EB, Crosslin DR, Bland ST, Pacheco JA, Rasmussen-Torvik LJ, Cronkite D, Hripcsak G, Cox NJ, Wilke RA, Stein CM, Rotter JI, Momozawa Y, et al.: <strong>LPA Variants Are Associated With Residual Cardiovascular Risk in Patients Receiving Statins</strong>. <em>Circulation</em> 2018, <strong>138</strong>:1839–1849<a href="https://doi.org/10.1161/CIRCULATIONAHA.117.031356">10.1161/CIRCULATIONAHA.117.031356</a>Available: <a href="https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.117.031356">https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.117.031356</a>.</p>
 </div>
 </div>
             </section>

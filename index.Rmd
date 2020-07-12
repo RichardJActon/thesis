@@ -26,7 +26,6 @@ suppressPackageStartupMessages({
 	library(tidyverse)
 	#library(gt)
 	library(kableExtra)
-  options(kableExtra.auto_format = TRUE)
 })
 ```
 
