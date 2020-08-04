@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.5.19)  12 JUL 2020 12:22
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.5.19)  4 AUG 2020 11:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -943,7 +943,38 @@ s
 \f@nch@O@erf=\skip72
 \f@nch@O@olf=\skip73
 \f@nch@O@orf=\skip74
-) (./thesis.aux)
+) (./thesis.aux
+
+LaTeX Warning: Label `abstract' multiply defined.
+
+
+LaTeX Warning: Label `introduction' multiply defined.
+
+
+LaTeX Warning: Label `methods' multiply defined.
+
+
+LaTeX Warning: Label `abstract' multiply defined.
+
+
+LaTeX Warning: Label `methods' multiply defined.
+
+
+LaTeX Warning: Label `results' multiply defined.
+
+
+LaTeX Warning: Label `discussion' multiply defined.
+
+
+LaTeX Warning: Label `participants' multiply defined.
+
+
+LaTeX Warning: Label `acknowledgements' multiply defined.
+
+
+LaTeX Warning: Label `discussion' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 144.
@@ -1394,7 +1425,7 @@ File: figs/Clark2012fig1MeDIPseqVs450Kcoverage.png Graphic file (type bmp)
 File: figs/MeDIPseqReaction.png Graphic file (type bmp)
 <figs/MeDIPseqReaction.png>
 [51] [52]
-Underfull \hbox (badness 1221) in paragraph at lines 1233--1235
+Underfull \hbox (badness 1221) in paragraph at lines 1242--1244
 \TU/lmr/m/n/10 (EGA) ([][]$[] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [
 ] [] [] [] [] [] [] []$[][]) under study number EGAS00001001910 and dataset
  []
@@ -1425,7 +1456,7 @@ Package Fancyhdr Warning: \headheight is too small (20.0pt):
 File: figs/Harvey2014bfig1.png Graphic file (type bmp)
 <figs/Harvey2014bfig1.png>
 [59] [60]
-Overfull \hbox (6.99475pt too wide) in paragraph at lines 1392--1394
+Overfull \hbox (6.99475pt too wide) in paragraph at lines 1401--1403
 []\TU/lmr/m/n/10 The previous work identifying DNA methylation changes at the \
 TU/lmr/m/it/10 RXRA \TU/lmr/m/n/10 [[][]203[][]] and \TU/lmr/m/it/10 CDKN2A/ANR
 IL
@@ -1495,7 +1526,7 @@ File: figs/MAVIDOSbmc.png Graphic file (type bmp)
 File: figs/MAVIDOSbmcEPICewasManhattanSVA.png Graphic file (type bmp)
 <figs/MAVIDOSbmcEPICewasManhattanSVA.png>
 [82]
-Underfull \hbox (badness 2753) in paragraph at lines 1828--1831
+Underfull \hbox (badness 2753) in paragraph at lines 1837--1840
  \TU/lmr/bx/n/10 3.4.1.4.2 Intervention / Placebo[] \TU/lmr/m/n/10 No probes fe
 ll below the Bonferroni corrected
  []
@@ -1603,14 +1634,14 @@ File: figs/SWSs3crtdenEPICewasManhattanAll.png Graphic file (type bmp)
 [112] [113] [114]
 Chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2358--2359
+Underfull \hbox (badness 10000) in paragraph at lines 2367--2368
 [][][][][][][][][][][][]$\TU/lmr/m/n/10 , $[][][][][][][][][][][][][][][]$, $[]
 [][][][][][][]$, $[][][][][][][][][][][][][][][]$, $[][][][][][][][][][][][][][
 ][]$,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2368--2370
+Underfull \hbox (badness 10000) in paragraph at lines 2377--2379
 
  []
 
@@ -1663,255 +1694,256 @@ File: ./figs/DNAmAgeVsChronAge.png Graphic file (type bmp)
 [141]
 File: ./figs/tRNA-iMet-CAT-1-4_nomSig_CpG.png Graphic file (type bmp)
 <./figs/tRNA-iMet-CAT-1-4_nomSig_CpG.png>
-[142]
+[142] [143]
 File: ./figs/pairwiseTab.pdf Graphic file (type pdf)
 <use ./figs/pairwiseTab.pdf>
-File: ./figs/combined_Nokaryo_sig_bl_iMet-EPIC.png Graphic file (type bmp)
-<./figs/combined_Nokaryo_sig_bl_iMet-EPIC.png>
-[143] [144]
+File: ./figs/combinedKaryoplots_sig_bl.png Graphic file (type bmp)
+<./figs/combinedKaryoplots_sig_bl.png>
+[144] [145]
 File: ./figs/blood_epitwins450k_Counts_sws_bl_zhou.png Graphic file (type bmp)
 <./figs/blood_epitwins450k_Counts_sws_bl_zhou.png>
-[145]
+[146]
 File: ./figs/maxScoreBytRNAtRNAge6SplitPlot_BL.png Graphic file (type bmp)
 <./figs/maxScoreBytRNAtRNAge6SplitPlot_BL.png>
-[146]
+[147]
 File: ./figs/meanMethbytRNAMatLowBB6_bl.png Graphic file (type bmp)
 <./figs/meanMethbytRNAMatLowBB6_bl.png>
-[147] [148]
-File: ./figs/nonSigIsoMapbbswsPlotsGln-CTG.png Graphic file (type bmp)
-<./figs/nonSigIsoMapbbswsPlotsGln-CTG.png>
-[149]
-File: ./figs/combinedFragSizeDists.png Graphic file (type bmp)
-<./figs/combinedFragSizeDists.png>
-File: ./figs/CpGPlotComb.png Graphic file (type bmp)
-<./figs/CpGPlotComb.png>
-[150] [151]
-File: ./figs/cancerVsNormalCombinedPlots.png Graphic file (type bmp)
-<./figs/cancerVsNormalCombinedPlots.png>
-[152] [153] [154] [155] [156] [157] [158] [159] [160]
 File: ./figs/meanMethbytRNAMatHeatmapLow_bl.png Graphic file (type bmp)
 <./figs/meanMethbytRNAMatHeatmapLow_bl.png>
+[148] [149]
 File: ./figs/meanBetasByTissueTNMpseudoSplitHeatmap.png Graphic file (type bmp)
 
 <./figs/meanBetasByTissueTNMpseudoSplitHeatmap.png>
-[161]
+[150]
 File: ./figs/meanMethBytRNAByFetalTissueHeatmapPseudosplit.png Graphic file (ty
 pe bmp)
 <./figs/meanMethBytRNAByFetalTissueHeatmapPseudosplit.png>
-[162] [163] [164
-
-]
+[151] [152]
+File: ./figs/nonSigIsoMapbbswsPlotsGln-CTG.png Graphic file (type bmp)
+<./figs/nonSigIsoMapbbswsPlotsGln-CTG.png>
+[153]
+File: ./figs/combinedFragSizeDists.png Graphic file (type bmp)
+<./figs/combinedFragSizeDists.png>
+[154]
+File: ./figs/CpGPlotComb.png Graphic file (type bmp)
+<./figs/CpGPlotComb.png>
+[155] [156]
+File: ./figs/cancerVsNormalCombinedPlots.png Graphic file (type bmp)
+<./figs/cancerVsNormalCombinedPlots.png>
+[157] [158] [159] [160] [161] [162] [163] [164]
 Chapter 5.
-[165] [166] [167] [168] [169] [170] [171] [172
+[165
+
+] [166] [167] [168] [169] [170] [171] [172
 
 ]
 Chapter 6.
 [173] [174
 
 ]
-Underfull \hbox (badness 1043) in paragraph at lines 3607--3609
+Underfull \hbox (badness 1043) in paragraph at lines 3622--3624
 [][]\TU/lmr/m/n/10 10. Booth LN, Brunet A: \TU/lmr/bx/n/10 The Aging Epigenome\
 TU/lmr/m/n/10 . \TU/lmr/m/it/10 Molecular Cell \TU/lmr/m/n/10 2016, \TU/lmr/bx/
 n/10 62\TU/lmr/m/n/10 :728–
  []
 
 [175]
-Overfull \hbox (2.64565pt too wide) in paragraph at lines 3625--3627
+Overfull \hbox (2.64565pt too wide) in paragraph at lines 3640--3642
 [][]\TU/lmr/m/n/10 16. Bird A: \TU/lmr/bx/n/10 Perceptions of epigenetics. \TU/
 lmr/m/it/10 Nature \TU/lmr/m/n/10 2007, \TU/lmr/bx/n/10 447\TU/lmr/m/n/10 :396–
 8[][]10.1038/nature05913[][]Available:
  []
 
 
-Overfull \hbox (2.43898pt too wide) in paragraph at lines 3634--3636
+Overfull \hbox (2.43898pt too wide) in paragraph at lines 3649--3651
 \TU/lmr/bx/n/10 text of a Mature Organism? \TU/lmr/m/it/10 Cell Systems \TU/lmr
 /m/n/10 2017, \TU/lmr/bx/n/10 4\TU/lmr/m/n/10 :255–259[][]10.1016/j.cels.2017.0
 3.006[][]Available:
  []
 
 [176]
-Underfull \hbox (badness 1412) in paragraph at lines 3658--3660
+Underfull \hbox (badness 1412) in paragraph at lines 3673--3675
 [][]\TU/lmr/m/n/10 27. Voigt P, LeRoy G, Drury WJ, Zee BM, Son J, Beck DB, Youn
 g NL, Garcia
  []
 
 
-Underfull \hbox (badness 3098) in paragraph at lines 3658--3660
+Underfull \hbox (badness 3098) in paragraph at lines 3673--3675
 \TU/lmr/m/n/10 BA, Reinberg D: \TU/lmr/bx/n/10 Asymmetrically modified nucleoso
 mes. \TU/lmr/m/it/10 Cell \TU/lmr/m/n/10 2012, \TU/lmr/bx/n/10 151\TU/lmr/m/n/1
 0 :181–
  []
 
 [177]
-Overfull \hbox (77.039pt too wide) in paragraph at lines 3676--3678
+Overfull \hbox (77.039pt too wide) in paragraph at lines 3691--3693
 [][]\TU/lmr/m/n/10 33. Jenuwein T: \TU/lmr/bx/n/10 Translating the Histone Code
 \TU/lmr/m/n/10 . \TU/lmr/m/it/10 Science \TU/lmr/m/n/10 2001, \TU/lmr/bx/n/10 2
 93\TU/lmr/m/n/10 :1074–1080[][]10.1126/science.1063127[][]Available:
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 3697--3699
+Underfull \hbox (badness 1527) in paragraph at lines 3712--3714
 \TU/lmr/bx/n/10 ment, Aging, and Tumorigenesis\TU/lmr/m/n/10 . \TU/lmr/m/it/10 
 BioMed Research International \TU/lmr/m/n/10 2014, \TU/lmr/bx/n/10 2014\TU/lmr/
 m/n/10 :1–
  []
 
 [178]
-Underfull \hbox (badness 2426) in paragraph at lines 3715--3717
+Underfull \hbox (badness 2426) in paragraph at lines 3730--3732
 \TU/lmr/bx/n/10 6\TU/lmr/m/n/10 :e1001134[][]10.1371/journal.pgen.1001134[][]Av
 ailable: [][]$[] [] [][] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
 [] [] [] [] [] [] [] [] [] [] [] [] [] [] []
  []
 
 [179]
-Overfull \hbox (47.03233pt too wide) in paragraph at lines 3739--3741
+Overfull \hbox (47.03233pt too wide) in paragraph at lines 3754--3756
 \TU/lmr/bx/n/10 some Positioning in Diverse Eukaryotes\TU/lmr/m/n/10 . \TU/lmr/
 m/it/10 Cell \TU/lmr/m/n/10 2014, \TU/lmr/bx/n/10 156\TU/lmr/m/n/10 :1286–1297[
 ][]10.1016/j.cell.2014.01.029[][]Available:
  []
 
 
-Underfull \hbox (badness 2213) in paragraph at lines 3748--3750
+Underfull \hbox (badness 2213) in paragraph at lines 3763--3765
 \TU/lmr/m/n/10 1764[][]10.1126/science.1147939[][]Available: [][]$[] [] [][] []
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
 [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []
  []
 
 [180] [181]
-Underfull \hbox (badness 1168) in paragraph at lines 3781--3783
+Underfull \hbox (badness 1168) in paragraph at lines 3796--3798
 [][]\TU/lmr/m/n/10 68. Ciernia AV, LaSalle J: \TU/lmr/bx/n/10 The landscape of 
 DNA methylation amid a per-
  []
 
 
-Underfull \hbox (badness 3019) in paragraph at lines 3781--3783
+Underfull \hbox (badness 3019) in paragraph at lines 3796--3798
 \TU/lmr/bx/n/10 fect storm of autism aetiologies\TU/lmr/m/n/10 . \TU/lmr/m/it/1
 0 Nature Reviews Neuroscience \TU/lmr/m/n/10 2016, \TU/lmr/bx/n/10 17\TU/lmr/m/
 n/10 :411–
  []
 
 [182]
-Underfull \hbox (badness 1077) in paragraph at lines 3808--3810
+Underfull \hbox (badness 1077) in paragraph at lines 3823--3825
 [][]\TU/lmr/m/n/10 77. Weber M, Davies JJ, Wittig D, Oakeley EJ, Haase M, Lam W
 L, Schübeler D:
  []
 
 [183]
-Underfull \hbox (badness 1337) in paragraph at lines 3844--3846
+Underfull \hbox (badness 1337) in paragraph at lines 3859--3861
 \TU/lmr/bx/n/10 DNA cytosine methylation using nanopore sequencing\TU/lmr/m/n/1
 0 . \TU/lmr/m/it/10 Nature Methods \TU/lmr/m/n/10 2017,
  []
 
 [184]
-Overfull \hbox (8.39566pt too wide) in paragraph at lines 3874--3876
+Overfull \hbox (8.39566pt too wide) in paragraph at lines 3889--3891
 \TU/lmr/bx/n/10 gation\TU/lmr/m/n/10 . \TU/lmr/m/it/10 New England Journal of M
 edicine \TU/lmr/m/n/10 2018, \TU/lmr/bx/n/10 378\TU/lmr/m/n/10 :1323–1334[][]10
 .1056/NEJMra1402513[][]Available:
  []
 
 [185]
-Underfull \hbox (badness 1389) in paragraph at lines 3892--3894
+Underfull \hbox (badness 1389) in paragraph at lines 3907--3909
 \TU/lmr/m/n/10 Nelson HH, Karagas MR, Padbury JF, Bueno R, Sugarbaker DJ, Yeh R
 -F, Wiencke
  []
 
 
-Underfull \hbox (badness 4673) in paragraph at lines 3892--3894
+Underfull \hbox (badness 4673) in paragraph at lines 3907--3909
 \TU/lmr/m/n/10 JK, Kelsey KT: \TU/lmr/bx/n/10 Aging and Environmental Exposures
  Alter Tissue-Specific
  []
 
 
-Underfull \hbox (badness 1642) in paragraph at lines 3904--3906
+Underfull \hbox (badness 1642) in paragraph at lines 3919--3921
 [][]\TU/lmr/m/n/10 109. Jung M, Pfeifer GP: \TU/lmr/bx/n/10 Aging and DNA methy
 lation\TU/lmr/m/n/10 . \TU/lmr/m/it/10 BMC Biology \TU/lmr/m/n/10 2015,
  []
 
 [186]
-Underfull \hbox (badness 2512) in paragraph at lines 3913--3915
+Underfull \hbox (badness 2512) in paragraph at lines 3928--3930
 \TU/lmr/m/n/10 G, Zhang F, Valdes A, Shin S-Y, Dempster EL, Murray RM, Grundber
 g E, Hed-
  []
 
 
-Underfull \hbox (badness 1688) in paragraph at lines 3913--3915
+Underfull \hbox (badness 1688) in paragraph at lines 3928--3930
 \TU/lmr/m/n/10 man AK, Nica A, Small KS, MuTHER Consortium, Dermitzakis ET, McC
 arthy MI,
  []
 
 
-Underfull \hbox (badness 3354) in paragraph at lines 3913--3915
+Underfull \hbox (badness 3354) in paragraph at lines 3928--3930
 \TU/lmr/m/n/10 Mill J, Spector TD, Deloukas P: \TU/lmr/bx/n/10 Epigenome-wide s
 cans identify differentially
  []
 
 
-Underfull \hbox (badness 2142) in paragraph at lines 3913--3915
+Underfull \hbox (badness 2142) in paragraph at lines 3928--3930
 \TU/lmr/bx/n/10 methylated regions for age and age-related phenotypes in a heal
 thy age-
  []
 
 
-Underfull \hbox (badness 1062) in paragraph at lines 3913--3915
+Underfull \hbox (badness 1062) in paragraph at lines 3928--3930
 \TU/lmr/bx/n/10 ing population. \TU/lmr/m/it/10 PLoS genetics \TU/lmr/m/n/10 20
 12, \TU/lmr/bx/n/10 8\TU/lmr/m/n/10 :e1002629[][]10.1371/journal.pgen.1002629[]
 []Available:
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 3922--3924
+Underfull \hbox (badness 1259) in paragraph at lines 3937--3939
 \TU/lmr/m/n/10 VE, Usiello A, Chiariotti L, Cocozza S: \TU/lmr/bx/n/10 Modeling
  DNA methylation by analyz-
  []
 
 [187]
-Underfull \hbox (badness 1127) in paragraph at lines 3937--3939
+Underfull \hbox (badness 1127) in paragraph at lines 3952--3954
 [][]\TU/lmr/m/n/10 120. Friedman J, Hastie T, Tibshirani R: \TU/lmr/bx/n/10 Reg
 ularization Paths for Generalized
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 3949--3951
+Underfull \hbox (badness 1009) in paragraph at lines 3964--3966
 \TU/lmr/m/n/10 LR: \TU/lmr/bx/n/10 Methylome-wide association study of whole bl
 ood DNA in the Norfolk
  []
 
 
-Underfull \hbox (badness 1533) in paragraph at lines 3949--3951
+Underfull \hbox (badness 1533) in paragraph at lines 3964--3966
 \TU/lmr/bx/n/10 Island isolate identifies robust loci associated with age\TU/lm
 r/m/n/10 . \TU/lmr/m/it/10 Aging \TU/lmr/m/n/10 2017, \TU/lmr/bx/n/10 9\TU/lmr/
 m/n/10 :753–
  []
 
 [188] [189] [190]
-Overfull \hbox (22.21231pt too wide) in paragraph at lines 4018--4020
+Overfull \hbox (22.21231pt too wide) in paragraph at lines 4033--4035
 \TU/lmr/bx/n/10 by Polycomb and Trithorax Proteins\TU/lmr/m/n/10 . \TU/lmr/m/it
 /10 Cell \TU/lmr/m/n/10 2007, \TU/lmr/bx/n/10 128\TU/lmr/m/n/10 :735–745[][]10.
 1016/j.cell.2007.02.009[][]Available:
  []
 
 
-Underfull \hbox (badness 1147) in paragraph at lines 4021--4023
+Underfull \hbox (badness 1147) in paragraph at lines 4036--4038
 [][]\TU/lmr/m/n/10 148. Hahn O, Grönke S, Stubbs TM, Ficz G, Hendrich O, Kruege
 r F, Andrews S,
  []
 
 [191]
-Underfull \hbox (badness 1533) in paragraph at lines 4045--4047
+Underfull \hbox (badness 1533) in paragraph at lines 4060--4062
 \TU/lmr/bx/n/10 able High-Density Optical Sensor Arrays\TU/lmr/m/n/10 . \TU/lmr
 /m/it/10 Analytical Chemistry \TU/lmr/m/n/10 1998, \TU/lmr/bx/n/10 70\TU/lmr/m/
 n/10 :1242–
  []
 
 
-Underfull \hbox (badness 2401) in paragraph at lines 4057--4059
+Underfull \hbox (badness 2401) in paragraph at lines 4072--4074
 \TU/lmr/m/n/10 2016,:btw691[][]10.1093/bioinformatics/btw691[][]Available: [][]
 $[] [] [][] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [
 ] [] [] [] [] [] [] [] [] [] []
  []
 
 [192] [193]
-Underfull \hbox (badness 1320) in paragraph at lines 4096--4098
+Underfull \hbox (badness 1320) in paragraph at lines 4111--4113
 \TU/lmr/m/n/10 015-0067-3[][]Available: [][]$[] [] [] [] [] [] [] [] [] [] [] [
 ] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
@@ -1919,274 +1951,274 @@ Underfull \hbox (badness 1320) in paragraph at lines 4096--4098
  []
 
 
-Overfull \hbox (40.43231pt too wide) in paragraph at lines 4105--4107
+Overfull \hbox (40.43231pt too wide) in paragraph at lines 4120--4122
 \TU/lmr/bx/n/10 Bisulfite-Seq applications\TU/lmr/m/n/10 . \TU/lmr/m/it/10 Bioi
 nformatics \TU/lmr/m/n/10 2011, \TU/lmr/bx/n/10 27\TU/lmr/m/n/10 :1571–1572[][]
 10.1093/bioinformatics/btr167[][]Available:
  []
 
 [194]
-Underfull \hbox (badness 1442) in paragraph at lines 4138--4140
+Underfull \hbox (badness 1442) in paragraph at lines 4153--4155
 [][]\TU/lmr/m/n/10 187. Christakos S, Dhawan P, Porta A, Mady LJ, Seth T: \TU/l
 mr/bx/n/10 Vitamin D and in-
  []
 
 
-Underfull \hbox (badness 1616) in paragraph at lines 4138--4140
+Underfull \hbox (badness 1616) in paragraph at lines 4153--4155
 \TU/lmr/bx/n/10 testinal calcium absorption\TU/lmr/m/n/10 . \TU/lmr/m/it/10 Mol
 ecular and Cellular Endocrinology \TU/lmr/m/n/10 2011, \TU/lmr/bx/n/10 347\TU/l
 mr/m/n/10 :25–
  []
 
 [195]
-Underfull \hbox (badness 1275) in paragraph at lines 4165--4167
+Underfull \hbox (badness 1275) in paragraph at lines 4180--4182
 \TU/lmr/bx/n/10 childhood—a prospective cohort study\TU/lmr/m/n/10 . \TU/lmr/m/
 it/10 Osteoporosis International \TU/lmr/m/n/10 2011, \TU/lmr/bx/n/10 22\TU/lmr
 /m/n/10 :883–
  []
 
 [196]
-Underfull \hbox (badness 1521) in paragraph at lines 4192--4194
+Underfull \hbox (badness 1521) in paragraph at lines 4207--4209
 \TU/lmr/m/n/10 ter AAM, Loche E, Ozanne SE, Rakyan VK: \TU/lmr/bx/n/10 Early-li
 fe nutrition modulates the
  []
 
 [197]
-Underfull \hbox (badness 2393) in paragraph at lines 4207--4209
+Underfull \hbox (badness 2393) in paragraph at lines 4222--4224
 \TU/lmr/bx/n/10 timation of nucleated cells types in cord blood. \TU/lmr/m/it/1
 0 Epigenetics \TU/lmr/m/n/10 2016, \TU/lmr/bx/n/10 11\TU/lmr/m/n/10 :773–
  []
 
 
-Underfull \hbox (badness 1997) in paragraph at lines 4213--4215
+Underfull \hbox (badness 1997) in paragraph at lines 4228--4230
 \TU/lmr/bx/n/10 types: Applications for mixed cell birth studies\TU/lmr/m/n/10 
 . \TU/lmr/m/it/10 Epigenetics \TU/lmr/m/n/10 2016, \TU/lmr/bx/n/10 11\TU/lmr/m/
 n/10 :354–
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4213--4215
+Underfull \hbox (badness 10000) in paragraph at lines 4228--4230
 \TU/lmr/m/n/10 362[][]10.1080/15592294.2016.1161875[][]Available: [][]$[] [] []
 [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [
 ] [] [] [] [] [] [] [] [] [] [] [] [] []
  []
 
 [198] [199]
-Overfull \hbox (17.64235pt too wide) in paragraph at lines 4261--4263
+Overfull \hbox (17.64235pt too wide) in paragraph at lines 4276--4278
 \TU/lmr/bx/n/10 from conflicts to benefits\TU/lmr/m/n/10 . \TU/lmr/m/it/10 Natu
 re Reviews Genetics \TU/lmr/m/n/10 2017, \TU/lmr/bx/n/10 18\TU/lmr/m/n/10 :71–8
 6[][]10.1038/nrg.2016.139[][]Available:
  []
 
 
-Underfull \hbox (badness 2237) in paragraph at lines 4273--4275
+Underfull \hbox (badness 2237) in paragraph at lines 4288--4290
 [][]\TU/lmr/m/n/10 232. Bhattacharyya S, Varshney U: \TU/lmr/bx/n/10 Evolution 
 of initiator tRNAs and selec-
  []
 
 
-Underfull \hbox (badness 1248) in paragraph at lines 4273--4275
+Underfull \hbox (badness 1248) in paragraph at lines 4288--4290
 \TU/lmr/bx/n/10 tion of methionine as the initiating amino acid\TU/lmr/m/n/10 .
  \TU/lmr/m/it/10 RNA Biology \TU/lmr/m/n/10 2016, \TU/lmr/bx/n/10 13\TU/lmr/m/n
 /10 :810–
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4273--4275
+Underfull \hbox (badness 10000) in paragraph at lines 4288--4290
 \TU/lmr/m/n/10 819[][]10.1080/15476286.2016.1195943[][]Available: [][]$[] [] []
 [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [
 ] [] [] [] [] [] [] [] [] [] [] [] [] []
  []
 
 [200]
-Underfull \hbox (badness 1038) in paragraph at lines 4300--4302
+Underfull \hbox (badness 1038) in paragraph at lines 4315--4317
 [][]\TU/lmr/m/n/10 241. Lee YS, Shibata Y, Malhotra A, Dutta A: \TU/lmr/bx/n/10
  A novel class of small RNAs:
  []
 
 
-Underfull \hbox (badness 2894) in paragraph at lines 4300--4302
+Underfull \hbox (badness 2894) in paragraph at lines 4315--4317
 \TU/lmr/bx/n/10 tRNA-derived RNA fragments (tRFs). \TU/lmr/m/it/10 Genes & deve
 lopment \TU/lmr/m/n/10 2009, \TU/lmr/bx/n/10 23\TU/lmr/m/n/10 :2639–
  []
 
 
-Overfull \hbox (16.719pt too wide) in paragraph at lines 4303--4305
+Overfull \hbox (16.719pt too wide) in paragraph at lines 4318--4320
 \TU/lmr/m/it/10 ceedings of the National Academy of Sciences \TU/lmr/m/n/10 201
 9, \TU/lmr/bx/n/10 116\TU/lmr/m/n/10 :201821120[][]10.1073/pnas.1821120116[][]A
 vailable:
  []
 
 [201]
-Underfull \hbox (badness 2197) in paragraph at lines 4327--4329
+Underfull \hbox (badness 2197) in paragraph at lines 4342--4344
 [][]\TU/lmr/m/n/10 250. Martinez G, Choudury SG, Slotkin RK: \TU/lmr/bx/n/10 tR
 NA-derived small RNAs tar-
  []
 
 
-Underfull \hbox (badness 3312) in paragraph at lines 4327--4329
+Underfull \hbox (badness 3312) in paragraph at lines 4342--4344
 \TU/lmr/bx/n/10 get transposable element transcripts\TU/lmr/m/n/10 . \TU/lmr/m/
 it/10 Nucleic Acids Research \TU/lmr/m/n/10 2017, \TU/lmr/bx/n/10 45\TU/lmr/m/n
 /10 :5142–
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4327--4329
+Underfull \hbox (badness 10000) in paragraph at lines 4342--4344
 \TU/lmr/m/n/10 5152[][]10.1093/nar/gkx103[][]Available: [][]$[] [] [] [] [] [] 
 [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [
 ] [] [][] [][] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []
  []
 
 [202]
-Overfull \hbox (10.61894pt too wide) in paragraph at lines 4342--4344
+Overfull \hbox (10.61894pt too wide) in paragraph at lines 4357--4359
 \TU/lmr/m/it/10 Bioinformatics and Biology Insights \TU/lmr/m/n/10 2019, \TU/lm
 r/bx/n/10 13\TU/lmr/m/n/10 :117793221986845[][]10.1177/1177932219868454[][]Avai
 lable:
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 4351--4353
+Underfull \hbox (badness 2418) in paragraph at lines 4366--4368
 \TU/lmr/bx/n/10 III transcription machinery in human cells. \TU/lmr/m/it/10 Gen
 ome research \TU/lmr/m/n/10 2010, \TU/lmr/bx/n/10 20\TU/lmr/m/n/10 :710–
  []
 
 
-Underfull \hbox (badness 1515) in paragraph at lines 4360--4362
+Underfull \hbox (badness 1515) in paragraph at lines 4375--4377
 \TU/lmr/bx/n/10 III in Saccharomyces cerevisiae\TU/lmr/m/n/10 . \TU/lmr/m/it/10
  Molecular and Cellular Biology \TU/lmr/m/n/10 2001, \TU/lmr/bx/n/10 21\TU/lmr/
 m/n/10 :5031–
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4360--4362
+Underfull \hbox (badness 10000) in paragraph at lines 4375--4377
 \TU/lmr/m/n/10 5040[][]10.1128/MCB.21.15.5031-5040.2001[][]Available: [][]$[] [
 ] [][] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
 [] [] [] [] [] [] []
  []
 
 [203]
-Underfull \hbox (badness 2096) in paragraph at lines 4369--4371
+Underfull \hbox (badness 1189) in paragraph at lines 4384--4386
+\TU/lmr/bx/n/10 Grand ConducTOR of Metabolism and Aging\TU/lmr/m/n/10 . \TU/lmr
+/m/it/10 Cell Metabolism \TU/lmr/m/n/10 2016, \TU/lmr/bx/n/10 23\TU/lmr/m/n/10 
+:990–
+ []
+
+
+Underfull \hbox (badness 2096) in paragraph at lines 4387--4389
 \TU/lmr/m/n/10 2820[][]10.1093/emboj/cdg265[][]Available: [][]$[] [] [][] [] []
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
 [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []
  []
 
 
-Overfull \hbox (22.24109pt too wide) in paragraph at lines 4375--4377
+Overfull \hbox (22.24109pt too wide) in paragraph at lines 4393--4395
 \TU/lmr/bx/n/10 polymerase III transcription by c-Myc\TU/lmr/m/n/10 . \TU/lmr/m
 /it/10 Nature \TU/lmr/m/n/10 2003, \TU/lmr/bx/n/10 421\TU/lmr/m/n/10 :290–294[]
 []10.1038/nature01327[][]Available:
  []
 
-
-Underfull \hbox (badness 1189) in paragraph at lines 4390--4392
-\TU/lmr/bx/n/10 Grand ConducTOR of Metabolism and Aging\TU/lmr/m/n/10 . \TU/lmr
-/m/it/10 Cell Metabolism \TU/lmr/m/n/10 2016, \TU/lmr/bx/n/10 23\TU/lmr/m/n/10 
-:990–
- []
-
 [204]
-Overfull \hbox (3.17104pt too wide) in paragraph at lines 4393--4395
+Overfull \hbox (3.17104pt too wide) in paragraph at lines 4408--4410
 \TU/lmr/bx/n/10 RNA Polymerase II\TU/lmr/m/n/10 . \TU/lmr/m/it/10 Molecular Cel
 l \TU/lmr/m/n/10 2020, \TU/lmr/bx/n/10 78\TU/lmr/m/n/10 :765–778.e7[][]10.1016/
 j.molcel.2020.03.023[][]Available:
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 4408--4410
+Underfull \hbox (badness 1648) in paragraph at lines 4423--4425
 \TU/lmr/bx/n/10 by a silent polymorphism linked to tRNA abundance\TU/lmr/m/n/10
  . \TU/lmr/m/it/10 PLOS Biology \TU/lmr/m/n/10 2017,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4408--4410
+Underfull \hbox (badness 10000) in paragraph at lines 4423--4425
 \TU/lmr/bx/n/10 15\TU/lmr/m/n/10 :e2000779[][]10.1371/journal.pbio.2000779[][]A
 vailable: [][]$[] [] [][] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] []
  []
 
 [205] [206]
-Underfull \hbox (badness 1810) in paragraph at lines 4456--4458
+Underfull \hbox (badness 1810) in paragraph at lines 4471--4473
 \TU/lmr/m/n/10 1242[][]10.1093/ije/dyi127[][]Available: [][]$[] [] [][] [] [] [
 ] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []
  []
 
 [207]
-Underfull \hbox (badness 1845) in paragraph at lines 4489--4491
+Underfull \hbox (badness 1845) in paragraph at lines 4504--4506
 \TU/lmr/bx/n/10 20\TU/lmr/m/n/10 :55[][]10.1186/s13059-019-1664-9[][]Available:
  [][]$[] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [
 ] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []
  []
 
 
-Overfull \hbox (7.38438pt too wide) in paragraph at lines 4501--4503
+Overfull \hbox (7.38438pt too wide) in paragraph at lines 4516--4518
 \TU/lmr/bx/n/10 (GEO) and BioConductor\TU/lmr/m/n/10 . \TU/lmr/m/it/10 Bioinfor
 matics \TU/lmr/m/n/10 2007, \TU/lmr/bx/n/10 23\TU/lmr/m/n/10 :1846–1847[][]10.1
 093/bioinformatics/btm254[][]. 
  []
 
 [208]
-Underfull \hbox (badness 2401) in paragraph at lines 4519--4521
+Underfull \hbox (badness 2401) in paragraph at lines 4534--4536
 [][]\TU/lmr/m/n/10 314. Schmitt BM, Rudolph KLM, Karagianni P, Fonseca NA, Whit
 e RJ, Taliani-
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 4519--4521
+Underfull \hbox (badness 1609) in paragraph at lines 4534--4536
 \TU/lmr/m/n/10 dis I, Odom DT, Marioni JC, Kutter C: \TU/lmr/bx/n/10 High-resol
 ution mapping of transcrip-
  []
 
 
-Underfull \hbox (badness 2970) in paragraph at lines 4519--4521
+Underfull \hbox (badness 2970) in paragraph at lines 4534--4536
 \TU/lmr/bx/n/10 tional dynamics across tissue development reveals a stable mRNA
 –tRNA
  []
 
 
-Underfull \hbox (badness 1796) in paragraph at lines 4519--4521
+Underfull \hbox (badness 1796) in paragraph at lines 4534--4536
 \TU/lmr/bx/n/10 interface\TU/lmr/m/n/10 . \TU/lmr/m/it/10 Genome Research \TU/l
 mr/m/n/10 2014, \TU/lmr/bx/n/10 24\TU/lmr/m/n/10 :1797–1807[][]10.1101/gr.17678
 4.114[][]Available: [][]$[] [] [][] []
  []
 
 
-Overfull \hbox (72.08566pt too wide) in paragraph at lines 4522--4524
+Overfull \hbox (72.08566pt too wide) in paragraph at lines 4537--4539
 \TU/lmr/bx/n/10 multidimensional genomic data\TU/lmr/m/n/10 . \TU/lmr/m/it/10 B
 ioinformatics \TU/lmr/m/n/10 2016, \TU/lmr/bx/n/10 32\TU/lmr/m/n/10 :2847–2849[
 ][]10.1093/bioinformatics/btw313[][]Available:
  []
 
 [209] [210]
-Underfull \hbox (badness 1259) in paragraph at lines 4579--4581
+Underfull \hbox (badness 1259) in paragraph at lines 4594--4596
 \TU/lmr/bx/n/10 536\TU/lmr/m/n/10 :376–384[][]10.1016/j.gene.2013.11.049[][]Ava
 ilable: [][]$[] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
 [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []
  []
 
 [211] [212]
-Underfull \hbox (badness 1527) in paragraph at lines 4627--4629
+Underfull \hbox (badness 1527) in paragraph at lines 4642--4644
 \TU/lmr/m/n/10 239[][]10.1016/j.mad.2008.12.003[][]Available: [][]$[] [] [] [] 
 [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [
 ] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 4630--4632
+Underfull \hbox (badness 1275) in paragraph at lines 4645--4647
 [][]\TU/lmr/m/n/10 351. Dewannieux M, Esnault C, Heidmann T: \TU/lmr/bx/n/10 LI
 NE-mediated retrotransposition
  []
 
 
-Underfull \hbox (badness 1107) in paragraph at lines 4630--4632
+Underfull \hbox (badness 1107) in paragraph at lines 4645--4647
 \TU/lmr/bx/n/10 of marked Alu sequences\TU/lmr/m/n/10 . \TU/lmr/m/it/10 Nature 
 Genetics \TU/lmr/m/n/10 2003, \TU/lmr/bx/n/10 35\TU/lmr/m/n/10 :41–48[][]10.103
 8/ng1223[][]Available:
  []
 
 
-Underfull \hbox (badness 2435) in paragraph at lines 4633--4635
+Underfull \hbox (badness 2435) in paragraph at lines 4648--4650
 \TU/lmr/m/n/10 2011-12-12-236[][]Available: [][]$[] [] [][] [] [] [] [] [] [] [
 ] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [][] [] [] [][]
@@ -2194,38 +2226,41 @@ Underfull \hbox (badness 2435) in paragraph at lines 4633--4635
  []
 
 
-Overfull \hbox (36.1923pt too wide) in paragraph at lines 4639--4641
+Overfull \hbox (36.1923pt too wide) in paragraph at lines 4654--4656
 \TU/lmr/bx/n/10 genome instability\TU/lmr/m/n/10 . \TU/lmr/m/it/10 Current Opin
 ion in Virology \TU/lmr/m/n/10 2013, \TU/lmr/bx/n/10 3\TU/lmr/m/n/10 :639–645[]
 []10.1016/j.coviro.2013.09.002[][]Available:
  []
 
 [213] [214]
-Underfull \hbox (badness 1122) in paragraph at lines 4684--4686
+Underfull \hbox (badness 1122) in paragraph at lines 4699--4701
 \TU/lmr/m/n/10 S, Lu AT, McIntosh AM, Whalley HC, Marioni RE: \TU/lmr/bx/n/10 A
  meta-analysis of genome-
  []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 4684--4686
+Underfull \hbox (badness 1281) in paragraph at lines 4699--4701
 \TU/lmr/bx/n/10 wide association studies of epigenetic age acceleration\TU/lmr/
 m/n/10 . \TU/lmr/m/it/10 PLOS Genetics \TU/lmr/m/n/10 2019,
  []
 
 [215]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4711.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4726.
 [216]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4711.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4726.
 (./thesis.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 4711.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 4711.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4711.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 4726.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 4726.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4726.
  ) 
 Here is how much of TeX's memory you used:
- 27011 strings out of 493007
- 499605 string characters out of 6136719
- 772774 words of memory out of 5000000
- 30576 multiletter control sequences out of 15000+600000
+ 26996 strings out of 493007
+ 499361 string characters out of 6136719
+ 773164 words of memory out of 5000000
+ 30561 multiletter control sequences out of 15000+600000
  536617 words of font info for 76 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  58i,12n,117p,10401b,712s stack positions out of 5000i,500n,10000p,200000b,80000s
