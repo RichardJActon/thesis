@@ -1,57 +1,196 @@
-# Results 3 - {#Alus}
+# Results 3 - DNA methylation clocks in Alu Elements {#Alus}
 
 ## Abstract 
 
+
+
 ## Introduction {#AluIntro}
 
-Age is a significant risk factor across the breadth of chronic diseases, including cardiovascular, obesity-related, ophthalmic, musculoskeletal and neurological disorders [@Partridge2018].
-The molecular changes that occur with age include alterations to the epigenome [@Booth2016] – the chemical modifications and packaging of the genome that indicate or facilitate cell-specific activity [@Bird2007].
-This includes age-related changes to DNA methylation, the most common modification of DNA [@Lopez-Otin2013].
-This epigenetic mechanism is crucial in repressing the large proportion of the human genome (~45% [@Gregory2005]) that is comprised of repetitive or transposable elements [@Deniz2019], [@Kazazian2017].
-It also classically leads to robust repression of gene expression through promoter DNA methylation [@Deaton2011], and has more nuanced effects on expression within the gene body [@Hellman2007], as well as influencing splicing [@Shukla2011] and transcription factor binding-sites (TFBSs) [@Blattler2014], [@Yin2017].
+As we age biological systems from the molecular to the macroscopic undergo functional decline.
+This increasingly impaired function with time results in increased risk for a wide variety of chronic disease states and indeed for co-morbidities with these conditions.
+Ranging from the cardiovascular, opthalmic, and musculoskeletal through to neurological conditions and obesity, all have age as a primary risk factor [@Partridge2018].
+Among the molecular changes that occur with age are alterations to the epigenome [@Booth2016].
+The epigenome here refers to: The chemical modifications to the genome and the molecules which package it. 
+These modifications do not affect the genomic sequence but do impact the accessibility or expression of the genome in different contexts, such as different cell-types [@Bird2007]. 
 
-A significant decrease in DNA methylation with age was first observed with pioneering global measures [@Wilson1983], in similar fashion to the reduced methylation seen in cancer tissue [@Gama-Sosa1983].
-This DNA methylation loss was seen to be strongly contributed to by the demethylation of repetitive elements [@Bollati2010].
-Random drift in the epigenetic state with age was also observed [@Bollati2010], and more recent studies have identified targeted hypermethylation of specific functional regions, such as the promoters of polycomb target genes [@Teschendorff2010], bivalent chromatin domains [@Rakyan2010] and the genomic loci of specific tRNA genes [@Acton2020] 
+Approximately 45% of the human genome is comprised of repetitive or transposable elements [@Deniz2019; @Kazazian2017].
+The repression of these elements to prevent their expansion or the impact of their latent regulatory potential from effecting genomic stability and regulation is a core function of epigenetic mechanisms [@Gregory2005].
+The most common DNA modification, 5-methylcytosine (5mC) at CpG loci, exhibits the most well documented age-related changes, and plays a central role in the repression of repetitive and transposable elements [@Lopez-Otin2013].
+DNA methylation also classically functions to repress gene expression at promoters [@Deaton2011], similar to the repressive role that is plays at repetitive elements.
+Beyond solely repressive effects, DNA methylation in gene bodies can modulate expression [@Hellman2007] and influence splicing patterns [@Shukla2011].
+Furthermore, DNA methylation levels at transcription factor binding sites (TFBS) modulate the binding affinity of transcriptions factors for these sites [@Blattler2014; @Yin2017].
 
-Alu elements are the most successful transposon in terms of numbers within the human genome, totalling ~1.19 million copies and comprising ~10.7% of the genomic sequence [@Dewannieux2003], [@Deininger2011].
-This ~300 bp primate-specific retrotransposon is a member of the short interspersed nuclear elements (SINEs) and is derived from the 7SL RNA gene [@Ullu1984].
-Alu elements arose ~65 million years ago (MYA), with a peak in amplification around ~40 MYA [@Ade2013].
-Non-LTR retrotransposons, which include Alus as well as L1 and SVA elements, are active in human.
-However, Alu elements themselves are non-autonomous and need to commandeer a nearby L1 element’s retrotransposition molecular machinery [@Cordaux2009].
-Alu insertion mutagenesis as well as Alu element mediated recombination account for 0.4% of all human genetic disorders [@Kazazian2017], [@Belancio2008].
+Significant decreases in bulk 5mC with age [@Wilson1983] and in cancer tissues [@Gama-Sosa1983] are among the earliest pioneering measure of global DNAm changes.
+Demethylation of repetitive elements was thought to be a major contributor to the global decreases in 5mC [@Bollati2010].
+More recent studies using methods able to resolve the genomic position of DNA methylation changes have revealed that some regions of the genome show increasing DNA methylation with age.
+Notably, the promoters of polycomb target genes [@Teschendorff2010], bivalent chromatin domains [@Rakyan2010] and specific tRNA genes [@Acton2020].
 
-DNA methylation represses Alu elements and due to their sequences being rich in CpGs they in fact account for ~25% of all the CpGs in human genome (~7.5 million) [@Deininger2011].
-Alu repeats are predominately methylated across all normal tissues, and even in cancer cells they are the more resistant to hypomethylation than other repetitive elements, implying a strong pressure to maintain their epigenetic state [@Jorda2017].
-These elements are an abundant genetic resource of regulatory sequences with
-numerous TFBSs residing within its canonical sequence [@Polak2006].
-They can influence gene expression [@Chen2017b], [@RobertoFerrari2019] and there is evidence that some may possess enhancer activity [@Su2014]. 
-The deterioration of epigenomic repression can unmask latent regulatory function within repetitive elements [@Ward2013], [@Chuong2017], [@Xie2013].
-This has been clearly displayed as a pathogenic mechanism in cancer, with epigenetic reactivation of cryptic cis-regulatory elements (CREs) within transposons acting as oncogenic drivers [@Jang2019] , including Alu elements [@Rajendiran2016].
-There is the potential for these changes to also influence common non-malignant age-related diseases [@Chuong2017], [@Payer2017].
+Alu elements are the single most abundant transposon in the human genome with ~1.19 million copies and comprising ~10.7% of the total genomic sequence [@Dewannieux2003; @Deininger2011].
+Alu elements are members of the short interspersed nuclear elements (SINEs) family of retrotransposons, are ~300bp in length, and are derived from the 7SL RNA gene [@Ullu1984].
+The Alu elements arose from the 7SL sequence via the FAM sequences, which gave rise to truncated variants, FRAM and FLAM the fusion of which yielded the current dimeric Alu sequence [@Quentin1992].
 
-The identification of specific age-related DNA methylation changes has enabled the construction of ‘DNA methylation clocks‘ [@Horvath2018] that can predict an individual’s chronological age, but also capture aspects of biological ageing, such as all-cause mortality [@Marioni2015].
-Hypermethylated and hypomethylated cytosines approximately equally drive these DNA methylation clocks, although these age-related increases or decreases in methylation are driven by distinct biological mechanisms [@Mozhui2017], [@Wu2017].
-Interestingly, hypomethylating CpGs have been identified to be the most indicative of biological ageing-related all-cause mortality effects in blood [@Zhang2017].
-However, due to poor coverage of the repetitive space because of technical issues [@Bell2019], much of the genomic hypomethylation is not well captured by array analysis.
+```{r AluStruct, fig.cap="(ref:AluStruct-Cap)", out.width='90%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("./figs/AluStructure.png")
+```
+(ref:AluStruct-Cap) __Structure of an Alu element__ A complete Alu element contains the A and B box sequence elements from an RNA polIII promoter, a central A rich region, a short insertion in the right arm, and a poly A region involved in retrotransposition and insertion. There is not an explicit polIII terminator in the Alu sequence so transcription continues through arbitrary flanking sequence until a run of at least 4 Ts, is encountered [@Chen2008; @Batzer2002]. FLAM sequences are the origin of the Left arm and FRAMs the origin of the Right [@Quentin1992.
 
-In this study we set about to identify and explore age-related DNA methylation changes in Alu elements in a large (>3,000) immunoprecipitation-derived sequencing-based dataset (MeDIP-seq) from peripheral blood DNA. We constructed an Alu-specific DNA methylation ageing clock and compared how this contrasted with other clocks’ measures. We also investigated genetic influences on age- acceleration measures from this Alu-clock via GWAS, as has been with shown previously with an association in the TERT gene with the Horvath clock [@Lu2017], [@Gibson2019].
+They are primate specific and arose ~65 million years ago (MYA), with a peak in amplification around ~40 MYA (Figure \@ref(fig:AluAge)) [@Ade2013].
+Non-LTR retrotransposons, including Alu, L1 and SVA elements, are active in humans.
+However, Alu elements are non-autonomous and require the presence of an L1 element to provide the molecular machinery needed for retrotransposition [@Cordaux2009]. 
+Mutagenesis arising from Alu element insertion and Alu element mediated recombination is responsible for an estimated 0.4% of all human genetic disorders [@Kazazian2017; @Belancio2008]
+
+```{r AluAge, fig.cap="(ref:AluAge-Cap)", out.width='90%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("./figs/Batzer2002_fig2_Alu_age_expansion.png")
+```
+(ref:AluAge-Cap) __Alu element Age and history of expansion in primates__ Mya (milion years ago). Reproduced from Batzer & Deininger 2002 [@Batzer2002].
+
+Alu elements are CpG rich (Figure \@ref(fig:AlusWindowsCpGdLVplot)), accounting for ~7.5 million CpGs, or ~25% of all human CpG sites [@Deininger2011].
+High levels of DNA methylation predominate at Alu elements across normal tissues.
+Furthermore Alu elements are more resistent to hypomethylation than other repetitive elements in cancer cells.
+This is indicative of strong pressure to maintain their repressed state [@Jorda2017].
+
+```{r AlusWindowsCpGdLVplot, fig.cap="(ref:AlusWindowsCpGdLVplot-Cap)", out.width='60%', fig.show='hold', fig.align = 'center', echo=FALSE}
+#knitr::include_graphics("./figs/AlusWindowsCpGdLVplot.png")
+knitr::include_graphics("./figs/AlusWindowsCpGdLVplot-FAMs.png")
+```
+(ref:AlusWindowsCpGdLVplot-Cap) __Alu elements are CpG dense__
+
+Alu elements contain many sequences with the potential to effect gene regulation, and indeed do effect gene expression [@Chen2017b; @RobertoFerrari2019].
+There are numerous TFBSs in the canonical Alu sequence [@Polak2006], and some may possess enhancer activity [@Su2014].
+Thus deterioration in the effectiveness of the repression of Alu elements has the potential to disruptively expose this latent regulatory potential [@Ward2013; @Chuong2017; @Xie2013].
+Epigenetic reactivation of cryptic cis-regulatory elements (CREs) within transposons has been show to act as an oncogenic driver [@Jang2019], including specifically from Alu elements [@Rajendiran2016].
+De-repression of Alu elements also has the potential to influence common non-malignant diseases [@Chuong2017; @Payer2017].
+
+Quantitative assays of DNA methylation with high positional resolution which cover a large number of loci, combined with statistical methods for sparse regression analysis have permitted the construction of ‘DNA methylation clocks‘ which predict chronological age with a high degree of accuracy [@Horvath2018; @Bell2019].
+The difference between chronological and predicted age in a number of these clocks or the 'age acceleration' has been found to capture aspects of biological age.
+For example, Age acceleration is a strong predictor of all-cause mortality [@Marioni2015].
+Whilst DNA hypermethylation and hypomethylation are driven by distinct mechanism [@Mozhui2017; @Wu2017] CpGs undergoing these processes are approximately equally represented in DNA methylation clocks.
+Interestingly however, hypomethylating CpGs were identified by Zhang et al. to be the most indicative of biological ageing-related all-cause mortality effects in blood [@Zhang2017].
+Most DNA methylation clocks constructed in humans have been constructed using the Illumina bead chip array based DNA methylation assays. The coverage these assays is strongly focused on promoters [@Bibikova2009], CpG islands [@Bibikova2011], and more recently enhancers [@Moran2015] but is lacking in coverage of repetitive elements due in part to the technical challenges of accurate mapping in these spaces [@Bell2019].
+Thus, much of the genomic hypomethylation goes uncovered by the assays most commonly used to construct human epigenetic clocks.
+
+I this study elastic net regression models were used to construct age predictors comprised of the DNA methylation state of Alu elements. 
+DNA methylation data at Alu elemetns was drawn from a large (>3,000) immunoprecipitation-derived sequencing-based dataset (MeDIP-seq) from peripheral blood DNA.
+Alu-specific DNA methylation ageing clocks were constructed and compared to other clocks' measures.
+
+===
+
+We also investigated genetic influences on age-acceleration measures from this Alu-clock via GWAS, as has been with shown previously with an association in the TERT gene with the Horvath clock [@Lu2017], [@Gibson2019].
+
 These results may reveal mechanisms involved in controlling the epigenetic state of this large portion of the genome.
-Finally, we interrogated these genetic associations for any potential connection with common age-related diseases through PheWAS in the UKBiobank dataset [@Bycroft2017].
 
 ## Methods
 
+### DNA methylome data
+
+The Methylated DNA Immunoprecipitation sequencing (MeDIP-seq) data was processed as previously described [@Bell2016; @Bell2017a] and detailed in [Methods](#MeDIPseq) \@ref(MeDIPseq).
+These processed data are available from the European Genome-phenome Archive (EGA) (https://www.ebi.ac.uk/ega) under study number EGAS00001001910 and dataset EGAD00010000983 and were generated by BGI Shenzen for TwinsUK.
+
+`MEDIPS` (v1.0) was used for the MeDIP-seq analysis [@Lienhard2014].
+This produced reads per million base pairs (RPM) values binned into 500bp windows with a 250bp slide in the BED format, resulting in ~12.8 million windows on the genome.
+
+### Alu element annotation and pre-filtering 
+
+Alu element annotations were taken from Repeat Masker [@Smit2009], only Alus on the autosomes were considered.
+2,758,588 500bp windows with a 250bp slide overlapped the 1,137,653 Alu elements annotated.
+
+Technically problematic and genetically confounded Alu element loci were removed.
+Alu elements located in [blacklisted](https://github.com/Boyle-Lab/Blacklist/raw/master/lists/hg19-blacklist.v2.bed.gz) 834 regions of the hg19 genome, as identified by Amemiya et al. [@Amemiya2019] were excluded as candidate loci when constructing DNAm clocks.
+
+~~(Remaining Alu windows 2,710,245 over 1,117,715 elements)~~
+
+Alu elements overlapping [known structural variants](ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/phase3/integrated_sv_map/ALL.wgs.mergedSV.v8.20130502.svs.genotypes.vcf.gz) identified by the 1000 genomes project [@Fairley2020] were excluded as candidate clock loci.
+Genetic variants which impact on the rate of biological ageing could confound DNA methylation ageing signal.
+
+Haplotype specific methylation peaks, in which a common disease associated genetic variant is predictive of DNA methylation state, were also excluded from the clock; Bell et al. identified  7,173 such regions [@Bell2017a]. ~~leaving 2,656,388 alu windows~~
+
+To exclude loci with low coverage which are likely to be uninformative and noisey a zero filter was used.
+In quantile normalised data loci in which 0.1% or more of samples have an RPM value of 0 are excluded.
+
+[`Bigstatsr`](https://privefl.github.io/bigstatsr/) was used to fit penalised regression models [@Prive2019].
+Elastic net regression with an $\alpha$ = 0.5 and cross-model selection and averaging (CMSA) was used.
+This procedure obviates the necessity of selecting a $\lambda$ regularisation hyperparameter.
+CMSA generates model coefficient by averaging across coefficients generated by cross validation [@Prive2019; @Friedman2010; @Tibshirani2012].
+
+### Sample selection
+
+Two training and two replication sets were created from the twin data so as to permit the training and replication sets to be unrelated. 
+The training sets, which were permitted to contain singletons, contained 1548 individuals and the replication sets contained the 1308 individuals who where twins of those in the replication sets.
+The 1548 individuals in the training sets were randomly split into 2 groups of 774 the replication set for each training set was comprised of the twins of the other training set such that two training sets with unrelated replication sets could be constructed (Figure \@ref(fig:twinsplit)).
+Giving a total of 2856 individuals in all sets.
+
+```{r twinsplit, fig.cap="(ref:twinsplit-Cap)", out.width='70%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("./figs/twin_split.png")
+```
+(ref:twinsplit-Cap) __Construction of training and replication sets__ Twin pairs were split one twin in each group. The first group was twins was split into two groups with a random number generator. The twins of the individuals in one random half of the group were assigned to be the replication set for the other half, producing two sets of unrelated training and replication groups. Models were also used to predict the age of related individuals to gauge the effect of genetic factors on the predictive power of the models.
+
+The age distribution of these training and replication sets are highly similar (Figure \@ref(fig:setsAgeDist)).
+
+```{r setsAgeDist, fig.cap="(ref:setsAgeDist-Cap)", out.width='90%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("./figs/setsAgeDist.png")
+```
+(ref:setsAgeDist-Cap) __Age distribution of training and replication sets__ Training 1 (n = 774); Training 2 (n = 774); Replication 1 (n = 664), unrelated to Training 1; Replication 2 (n = 644), unrelated to Training 2.
+
+### Genetic Association for Alu-Clock
+
+### Comparison with Array-derived Clocks
+
+### Association of these variants with Age-related Disease
+
 ## Results
+
+### Simple Clock Model
+
+A variety of different initial filtering criteria were applied to the Alu elements included in the models, as well as a number of data transformations. 
+Binarisation of gene expression data yielded increased predictive accuracy in gene expression based ageing clocks [@Meyer2020]. 
+The reasoning behind this approach is that the quantitation of changes in gene expression is noisy and binarising the data may reduce the noise whilst retaining the information important for age prediction. 
+
+Binarisation of DNA methylation data was achieved by a simple procedure: assigning windows in a given sample a DNA methylation value of 1 if their DNA methylation value was greater than the median for this window across samples and a 0 if it was less.
+
+Whilst Human epigenetic age is logarithmic with time across the lifespan the effects of this are more relevant at younger ages [@Snir2019]. 
+We fitted Alu Clock models on the natural logarithm of age in years this did not improve the quality of predicted to actual age values, likely due to the older age distribution of our data. 
+
+An Alu element length filter of at least 180bp or approximately two-thirds the length of a full length Alu element (~280bp) was imposed. 
+This minimises the number of potentially misaligned reads which, in this context, could lead to reduced accuracy of Alu DNA methylation estimates [@Hellen2013].
+
+CpG density filters were employed to prioritise regions likely to have dynamic and functionally interesting differences in DNA methylation. Filters were used for CpG densities above the genomic background of 2%, as well as for >5% the approximate threshold for CpG island shores and low methylation regions [@Stadler2011; @Irizarry2009].
+
+To limit the selection of predictive sites to those likely to have consistent directions of change across samples a clock was constructed with only windows which show nominally significant changes in both members of an MZ twin pair in a consistent direction.
+Linear models to predict age based on DNA methylation were fitted for 687 pairs of monozygotic (MZ) twins. 
+Batch information and blood cell counts (eosinophils, lymphocytes, monocytes, neutrophils) were included as covariates.
+
+To produce a model that specifically capture age as a function of the de-repression of Alu elements clocks were also constructed with only windows which exhibited nominally significant (p < 0.05) decreases in DNAm in both MZ twins.
+This filtering was based on the model used in selecting windows with a consistent direction of change. 
+
+AluY 
+
+
 
 Age-related DNA methylation changes in Alu Elements
 
 Study Design - Figure 1
 
-```{r studyDesign, fig.cap="(ref:studyDesignCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
-#knitr::include_graphics("./figs/studyDesign.png")
+```{r modelSummaryTabsMain, fig.cap="(ref:modelSummaryTabsMain-Cap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("./figs/model_summary_tabs_main.png")
+AluColours <- c(
+	"AluY" = "#e41a1c",
+	#"Y" = "#e41a1c",
+	"AluS" = "#377eb8",
+	#"S" = "#377eb8",
+	"AluJ" = "#4daf4a",
+	#"J" = "#4daf4a",
+	"FAM" = "#984ea3",
+	"FLAM" = "#ff7f00",
+	"FRAM" = "#ffff33"
+)
+alucolorkeytxt <- paste0(
+	collapse = ", ",
+	purrr::map2(
+		names(AluColours), AluColours, ~kableExtra::text_spec(.x, color = .y)
+	)
+)
 ```
-
-(ref:studyDesignCap)
+(ref:modelSummaryTabsMain-Cap) __Alu Clock Model Summaries__ `r alucolorkeytxt`
 
 - This sequencing-based dataset – MeDIP-seq fragments 200-500bp – size Alu elements 300bp
 - Remove strongly genetically driven loci
@@ -102,46 +241,10 @@ Study Design - Figure 1
 
 \newpage
 
-## Methods
-
-### Participants
-
-Human participants were drawn from the TwinsUK Bioresource. 
-These deeply phenotyped individuals DNA methylomes
-
-MeDIP-seq data as described in [@Bell2017a] – Briefly All data is available at
-
-## Age-related DNA methylation changes
 
 To identify strongly genetically we ?utilised the Gap Hunting algorithm of Andrews et al. [@Andrews2016] adapted
 We excluded all known
 Excluded polymorphic Alus [@Payer2017]
 ?Exclude any methylation overlapping STRs
 
-### ?Validation with target BiS-seq
-
-### Alu element specific DNA methylation Clock
-
-### Comparison with Array-derived Clocks
-
-### Genetic Association for Alu-Clock
-
-### Association of these variants with Age-related Disease
-
-#### Data availability
-
-The MeDIP-seq data supporting the results of this article are available in the EMBL-EBI European Genome-phenome Archive (EGA) under Data set Accession number EGAD00010000983 (https://www.ebi.ac.uk/ega/datasets/
-EGAD00010000983).
-
-#### Code availablity
-
-Available at [GitHub](https://github.com/richardjacton)
-
-\newpage
-
-#### Acknowledgements
-
-#### Author Contributions
-
-\newpage
 
