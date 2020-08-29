@@ -1,6 +1,6 @@
 # Methods {#methods}
 
-## Illumina DNA Methylation arrays
+## Illumina DNA Methylation arrays {#GenMethodsMethArray}
 
 The Illumina methylation bead chip arrays make use of 50 bp long probes with sequences corresponding to the loci of interest in the genome, with an additional 23 base sequence for positional addressing on the array [@Bibikova2006; @Bibikova2009; @Bibikova2011; @Moran2015].
 The CpG of interest is located at the 3' end of the probes.

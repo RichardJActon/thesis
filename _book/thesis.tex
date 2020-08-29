@@ -69,9 +69,6 @@
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
-\usepackage[normalem]{ulem}
-% Avoid problems with \sout in headers with hyperref
-\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -142,7 +139,7 @@ Academic Unit - Human Development and Health
 
 Supervisors - Chris Bell, Karen Lillycrop and Cyrus Cooper}
 \author{Richard J. Acton}
-\date{2020-08-14}
+\date{2020-08-24}
 
 \begin{document}
 \maketitle
@@ -1041,8 +1038,8 @@ Lastly, the generation of new DNAm clocks based on a family of repetitive elemen
 \hypertarget{methods}{%
 \chapter{Methods}\label{methods}}
 
-\hypertarget{illumina-dna-methylation-arrays}{%
-\section{Illumina DNA Methylation arrays}\label{illumina-dna-methylation-arrays}}
+\hypertarget{GenMethodsMethArray}{%
+\section{Illumina DNA Methylation arrays}\label{GenMethodsMethArray}}
 
 The Illumina methylation bead chip arrays make use of 50 bp long probes with sequences corresponding to the loci of interest in the genome, with an additional 23 base sequence for positional addressing on the array {[}\protect\hyperlink{ref-Bibikova2006}{102},\protect\hyperlink{ref-Bibikova2009}{107},\protect\hyperlink{ref-Bibikova2011}{114},\protect\hyperlink{ref-Moran2015}{154}{]}.
 The CpG of interest is located at the 3' end of the probes.
@@ -1314,8 +1311,8 @@ The PCR products are sequenced and the resulting reads aligned and methylation l
 \hypertarget{arrays}{%
 \chapter{Results 1 - Epigenome Wide Association Studies for Bone Health Outcomes in Umbilical Cord Blood and Tissue}\label{arrays}}
 
-\hypertarget{abstract}{%
-\section{Abstract}\label{abstract}}
+\hypertarget{abstract-1}{%
+\section{Abstract}\label{abstract-1}}
 
 Long term bone health and fracture risk is strongly influenced by the peak bone mass that is attained in early adulthood, this has its origins in development from late pregnancy through early childhood.
 The availability of vitamin D to facilitate the uptake of calcium and phosphate is essential to healthy bone development, in addition to the role of vitamin D as a hormone mediating this process.
@@ -1325,8 +1322,8 @@ Long-term bone health outcomes have also been associated with both maternal vita
 To attempt to identify other loci, the epigenetic regulation of which is pertinent to the impact of maternal vitamin D levels on long-term bone health, Epigenome-Wide Association Studies (EWAS) were performed with DNA methylation data from the Illumina EPIC \& 450k methylation bead chip arrays.
 We tentatively identify two CpGs whose DNA methylation state is associated with bone mineral content at 6 years of age and periosteal circumference at 6 years of age respectively.
 
-\hypertarget{introduction}{%
-\section{Introduction}\label{introduction}}
+\hypertarget{introduction-1}{%
+\section{Introduction}\label{introduction-1}}
 
 In England and Wales a survey of general practice data indicates that 53\% of women and 21\% of men will experience a bone fracture in their remaining lifetime from the age of 50 years {[}\protect\hyperlink{ref-VanStaa2001}{178}{]} (Figure \ref{fig:VanStaa2001}).
 Hip fractures in particular are associated with a reduction in survival of an estimated 10-20\% with most deaths occurring in the first 6 months, vertebral fractures though approximately an order of magnitude less common carry a similar mortality risk {[}\protect\hyperlink{ref-VanStaa2001}{178},\protect\hyperlink{ref-Streubel2011}{179}{]}.
@@ -1452,8 +1449,8 @@ Analysis of the SWS cord blood EPIC array data.
   \end{itemize}
 \end{itemize}
 
-\hypertarget{methods}{%
-\section{Methods}\label{methods}}
+\hypertarget{methods-1}{%
+\section{Methods}\label{methods-1}}
 
 Analysis of the Illumina EPIC and 450k methylation arrays was carried out in the \texttt{R} statistical programming language (v3.5.2) using the \href{https://github.com/perishky/meffil/wiki}{\texttt{meffil}} package {[}\protect\hyperlink{ref-Min2017}{209}{]}, which was chosen as it is capable of performing functional normalisation in a more memory efficient fashion than alternatives such as \texttt{minfi}.
 
@@ -2388,7 +2385,7 @@ Furthermore, these results have contributed to a larger meta analysis with great
   Barts \& The London Genome Centre, Blizard Institute, Barts \& The London School of Medicine and Dentistry, Queen Mary University of London, London, U.K.
 \end{enumerate}
 
-2020-08-14
+2020-08-24
 
 \begin{figure}
 \centering
@@ -2554,23 +2551,33 @@ Samples from the 28 year old time point are all from pregnant women at \textasci
 
 Genomic coordinates of the tRNA genes were downloaded from GtRNAdb {[}\protect\hyperlink{ref-Chan2009}{254}{]}.
 The 2 tRNAs located in chr1\_gl000192\_random are tRNA-Gly-CCC-8-1 \& tRNA-Asn-ATT-1-2 (\href{./Supplementary_Files/hg19-tRNAs.bed}{Supplementary File S1}).
-Stem/loop structure annotations were inferred from output of \texttt{tRNAscan} {[}\protect\hyperlink{ref-Lowe2016}{294}{]} with a custom \texttt{perl6} script.
 The 213 probes overlapping tRNA genes were derived from intersecting the tRNA gene annotation data from gtRNAdb with the Illumina 450k array manifest annotation for the hg19 genome build using bedtools v2.17.0 {[}\protect\hyperlink{ref-Quinlan2010}{171}{]}.
-107 tRNA genes were excluded from blacklisted regions of hg19 {[}\protect\hyperlink{ref-Amemiya2019}{295}{]}.
+107 tRNA genes were excluded from blacklisted regions of hg19 {[}\protect\hyperlink{ref-Amemiya2019}{294}{]}.
 
 \hypertarget{clustering}{%
 \subsubsection{tRNA Gene Clustering}\label{clustering}}
 
 tRNA genes were clustered by grouping together all tRNAs within 5Mb of one another using the \texttt{bedtools\ merge} tool v2.17.0 {[}\protect\hyperlink{ref-Quinlan2010}{171}{]}.
 A command of the form: \texttt{bedtools\ merge\ -c\ 4\ -o\ collapse\ -d\ \textless{}N\textgreater{}\ -i\ hg19-tRNAs.bed} was used, where \texttt{\textless{}N\textgreater{}} is the binsize.
-The binsize was varied and 5Mb was selected as it is at approximately this size that number of clusters with more than one tRNAs exceeds the number of singleton tRNAs (Figure \ref{fig:heyn} a).
+The binsize was varied and 5Mb was selected as it is at approximately this size that number of clusters with more than one tRNAs exceeds the number of singleton tRNAs (Figure \ref{fig:tRNAgeneClustersByBinSize}).
 The further requirements that these groupings contain at least 5 tRNA genes with a density of at least 5 tRNA genes per Mb were added for these groups to be considered clusters.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figs/tRNAgeneClustersByBinSize} 
+
+}
+
+\caption{\textbf{tRNA gene cluster numbers at different bin sizes} total: total number of tRNA clusters. singletons: number of tRNAs in clusters alone. moreThan1: number of tRNAs in clusters with more than one tRNA. maxSize: the number of tRNAs in the largest cluster.}\label{fig:tRNAgeneClustersByBinSize}
+\end{figure}
+
+
 
 \hypertarget{mappabilityDensity}{%
 \subsubsection{tRNA gene mappability assessment}\label{mappabilityDensity}}
 
 To assess the mappability of tRNA gene regions a value for mappability score density was computed to facilitate comparisons of regions of the genome.
-Mappability score density is computed as the area under the encode mappability tracks {[}\protect\hyperlink{ref-Derrien2012}{296}{]} over the length of the region.
+Mappability score density is computed as the area under the encode mappability tracks {[}\protect\hyperlink{ref-Derrien2012}{295}{]} over the length of the region.
 
 \hypertarget{dna-methylome-data}{%
 \subsection{DNA methylome data}\label{dna-methylome-data}}
@@ -2637,14 +2644,14 @@ Models for this set included participant identifier as a fixed effect in additio
 Permutation analysis was performed to determine whether the CpG distribution of sets of the tRNAome was the principle driver of the ageing-related changes observed.
 Windows overlapping tRNAs have a higher proportion of windows with a greater CpG density than their surrounding sequences (see Figure \ref{fig:CpGcountBGvstRNAPlot}).
 CpGs residing within moderate CpG density loci are the most dynamic in the genome {[}\protect\hyperlink{ref-Ziller2013}{62}{]} and CpG dense CpG island regions include specific ageing-related changes {[}\protect\hyperlink{ref-Rakyan2010}{106},\protect\hyperlink{ref-Teschendorff2010}{108},\protect\hyperlink{ref-Bell2016}{151}{]}.
-For comparison the permutation was also performed in the CGI regions from the Polycomb group protein target promoters in Teschendorff \emph{et al.} {[}\protect\hyperlink{ref-Teschendorff2010}{108}{]} and bivalent loci from ENCODE ChromHmm `Poised Promoter' classification in the GM12878 cell-line {[}\protect\hyperlink{ref-Ernst2011}{297}{]}.
+For comparison the permutation was also performed in the CGI regions from the Polycomb group protein target promoters in Teschendorff \emph{et al.} {[}\protect\hyperlink{ref-Teschendorff2010}{108}{]} and bivalent loci from ENCODE ChromHmm `Poised Promoter' classification in the GM12878 cell-line {[}\protect\hyperlink{ref-Ernst2011}{296}{]}.
 A random set of 500bp windows representing an equivalent CpG density distribution of the feature set in question were selected from the genome-wide data.
 Above a certain CpG density there are insufficient windows to sample without replacement within a permutation.
-Furthermore, above \textasciitilde{}\(\ge18\%\) CpG density CpG Islands become consistently hypomethylated {[}\protect\hyperlink{ref-Bell2012a}{298}{]}.
+Furthermore, above \textasciitilde{}\(\ge18\%\) CpG density CpG Islands become consistently hypomethylated {[}\protect\hyperlink{ref-Bell2012a}{297}{]}.
 Therefore, all windows with a CpG density of \(\ge18\%\) (45 CpGs per 500bp) were grouped and sampled from the same pool.
 i.e.~a window overlapping a tRNA gene which had a 20\% density could be represented in permutation by one with any density \(\ge18\%\).
 This permutation was performed 1,000 times to determine an Empirical p value by calculating the number of times the permutation result exceeded the observed number of significant windows in the feature set.
-\(Empirical~p-value = \frac{r+1}{N+1}\), where r is the sum of significantly hypermethylating windows in all permutations and N is number of permutations {[}\protect\hyperlink{ref-North2003}{299}{]}.
+\(Empirical~p-value = \frac{r+1}{N+1}\), where r is the sum of significantly hypermethylating windows in all permutations and N is number of permutations {[}\protect\hyperlink{ref-North2003}{298}{]}.
 
 \begin{figure}
 
@@ -2670,24 +2677,6 @@ Here DNA was extracted from whole blood and pooled into 8 samples from unrelated
 The individual were age matched at approximately 4, 28, 63, and 78 year timepoints (Table \ref{fig:poolSummaryTable})
 Using the EPIC array DNAm age and inferred using the Horvath clock {[}\protect\hyperlink{ref-Horvath2013}{119}{]} and blood cell-type-composition with the houseman method {[}\protect\hyperlink{ref-Houseman2012}{146}{]}.
 
-\begin{table}[H]
-\centering
-\begin{tabular}{>{\bfseries}l|rlrrr}
-\toprule
-Pool & Mean Age & Sex & Min Age & Max Age & n\\
-\midrule
-\rowcolor{gray!6}  \multicolumn{1}{c}{Pool 1} & 4.07 & Male & 3.99 & 4.38 & 20\\
-\multicolumn{1}{c}{Pool 2} & 4.09 & Female & 3.99 & 4.36 & 20\\
-\rowcolor{gray!6}  \multicolumn{1}{c}{Pool 3} & 28.07 & Female & 25.87 & 29.80 & 25\\
-\multicolumn{1}{c}{Pool 4} & 28.23 & Female & 26.05 & 30.01 & 25\\
-\rowcolor{gray!6}  \multicolumn{1}{c}{Pool 5} & 63.40 & Female & 62.80 & 63.80 & 25\\
-\multicolumn{1}{c}{Pool 6} & 63.26 & Female & 62.70 & 63.70 & 25\\
-\rowcolor{gray!6}  \multicolumn{1}{c}{Pool 7} & 77.96 & Female & 75.50 & 80.50 & 25\\
-\multicolumn{1}{c}{Pool 8} & 77.22 & Female & 74.40 & 80.10 & 25\\
-\bottomrule
-\end{tabular}
-\end{table}
-
 \begin{figure}
 
 {\centering \includegraphics[width=1\linewidth]{figs/poolSummaryTable} 
@@ -2707,30 +2696,30 @@ Primer design was performed using `methPrimer' {[}\protect\hyperlink{ref-Li2002}
 A total of 84 tRNA loci were targeted in 2 rounds of sequencing, 79 subsequently generated reliable results post-QC.
 The targeted tRNAs covered a total of 723 CpGs with a median of 8 CpGs per tRNA (range 1-13), data passing QC was generated for 458 CpGs, median 6 (range 1-9) per tRNA.
 
-Initial QC for readcount, base call quality and base composition was caried out with \href{https://github.com/s-andrews/FastQC}{\texttt{FastQC}} {[}\protect\hyperlink{ref-Andrews2010}{169}{]} and \href{https://github.com/ewels/MultiQC}{\texttt{multiqc}} {[}\protect\hyperlink{ref-Ewels2016}{300}{]} for combined visualisation of QC outputs.
-Quality based trimming was performed with \href{https://github.com/FelixKrueger/TrimGalore}{\texttt{Trim\ Galore}} {[}\protect\hyperlink{ref-Krueger2015}{301}{]} and target specific primer trimming with \href{https://github.com/marcelm/cutadapt}{\texttt{cutadapt}} {[}\protect\hyperlink{ref-Martin2011}{302}{]} and custom \texttt{perl\ 5} scripts.
-Alignment and methylation calling was performed with \texttt{Bismark} (v0.20.0) {[}\protect\hyperlink{ref-Krueger2011}{176}{]} making use of \texttt{bowtie2} {[}\protect\hyperlink{ref-Langmead2012}{303}{]}.
+Initial QC for readcount, base call quality and base composition was caried out with \href{https://github.com/s-andrews/FastQC}{\texttt{FastQC}} {[}\protect\hyperlink{ref-Andrews2010}{169}{]} and \href{https://github.com/ewels/MultiQC}{\texttt{multiqc}} {[}\protect\hyperlink{ref-Ewels2016}{299}{]} for combined visualisation of QC outputs.
+Quality based trimming was performed with \href{https://github.com/FelixKrueger/TrimGalore}{\texttt{Trim\ Galore}} {[}\protect\hyperlink{ref-Krueger2015}{300}{]} and target specific primer trimming with \href{https://github.com/marcelm/cutadapt}{\texttt{cutadapt}} {[}\protect\hyperlink{ref-Martin2011}{301}{]} and custom \texttt{perl\ 5} scripts.
+Alignment and methylation calling was performed with \texttt{Bismark} (v0.20.0) {[}\protect\hyperlink{ref-Krueger2011}{176}{]} making use of \texttt{bowtie2} {[}\protect\hyperlink{ref-Langmead2012}{302}{]}.
 
 The alignment was performed against both the whole hg19 genome and just the tRNAome +/- 100bp to assess the possible impact of off-target mapping.
 Mapping to the whole genome did produce purported methylation calls at a larger number of loci than mapping just to the tRNAome (683,783 vs 45,861 respectively).
 Introducing a minimum coverage threshold of 25 reads dramatically reduced this and brought the number of sites into line with that in the tRNAome set (36,065 vs 33,664 respectively) suggesting a small number of ambiguously mapping reads.
 All subsequent analysis was performed using the alignment to just the tRNAome with a minimum coverage of 25 reads.
 
-Pairwise differential methylation analysis of the tRNA genes at the different time points was performed using \href{https://bioconductor.org/packages/release/bioc/html/RnBeads.html}{\texttt{RnBeads}} {[}\protect\hyperlink{ref-Muller2019}{304}{]} with \texttt{limma} {[}\protect\hyperlink{ref-Ritchie2015}{305}{]} and a minimum coverage of 25 reads.
+Pairwise differential methylation analysis of the tRNA genes at the different time points was performed using \href{https://bioconductor.org/packages/release/bioc/html/RnBeads.html}{\texttt{RnBeads}} {[}\protect\hyperlink{ref-Muller2019}{303}{]} with \texttt{limma} {[}\protect\hyperlink{ref-Ritchie2015}{304}{]} and a minimum coverage of 25 reads.
 Linear regression was used to predict age from DNA methylation at the targeted tRNA sites, permitting us to compare rates of increase with age.
 For the linear regression, only CpG sites with more than 25 reads mapped to the regions of the genome targeted for amplification were used.
 
 \hypertarget{twinsuk-illumina-450k-array-methylomes}{%
 \subsubsection{TwinsUK Illumina 450k array methylomes}\label{twinsuk-illumina-450k-array-methylomes}}
 
-Illumina Infinium DNA methylation 450k arrays ((C) Illumina) were also performed on TwinsUK participants, in 770 Blood-derived DNA samples which had matched MeDIP-seq data.
+Illumina Infinium DNA methylation 450k arrays ((C) Illumina) were also performed on TwinsUK participants, in 770 Blood-derived DNA samples which had matched MeDIP-seq data (\protect\hyperlink{GenMethodsMethArray}{Methods} \ref{GenMethodsMethArray}).
 These data were available for this analysis in a pre-processed form, Methylation `beta' values subject to beta-mixture quantile normalisation (BMIQ) as previously described {[}\protect\hyperlink{ref-Bell2017a}{67},\protect\hyperlink{ref-Bell2016}{151}{]}.
 Cell-type correction was performed using cell-count data and the following model: \texttt{lm(age\ \textasciitilde{}\ beta\ +\ eosinophils\ +\ lymphocytes\ +\ monocytes\ +\ neutrophils)}.
 
 \hypertarget{chromatin-segmentation-data}{%
 \subsection{Chromatin Segmentation Data}\label{chromatin-segmentation-data}}
 
-Epilogos chromatin segmentation data {[}\protect\hyperlink{ref-Ernst2011}{297},\protect\hyperlink{ref-Meuleman2019}{306}{]} was downloaded for the tRNA gene regions +/- 200bp from \url{https://explore.altius.org/tabix/epilogos/hg19.15.Blood_T-cell.KL.gz} using the \texttt{tabix} utility.
+Epilogos chromatin segmentation data {[}\protect\hyperlink{ref-Ernst2011}{296},\protect\hyperlink{ref-Meuleman2019}{305}{]} was downloaded for the tRNA gene regions +/- 200bp from \url{https://explore.altius.org/tabix/epilogos/hg19.15.Blood_T-cell.KL.gz} using the \texttt{tabix} utility.
 The data used was the `Blood \& T-cell' 15 State model based on segmentation of 14 cell-types.
 This data was manipulated and visualised with \texttt{R} and \texttt{ggplot2}.
 tRNAs were assigned a predominant chromatin state base on the state with the highest score over that tRNA gene.
@@ -2738,21 +2727,21 @@ tRNAs were assigned a predominant chromatin state base on the state with the hig
 \hypertarget{sortedbloodmethods}{%
 \subsection{Isolated Blood Cell Type Specific Data}\label{sortedbloodmethods}}
 
-Data from 7 cell-type fractions from 6 Male individuals was downloaded from \href{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35069}{GSE35069} {[}\protect\hyperlink{ref-Reinius2012}{307}{]} using \texttt{GEOquery} {[}\protect\hyperlink{ref-Davis2007p}{308}{]}.
+Data from 7 cell-type fractions from 6 Male individuals was downloaded from \href{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35069}{GSE35069} {[}\protect\hyperlink{ref-Reinius2012}{306}{]} using \texttt{GEOquery} {[}\protect\hyperlink{ref-Davis2007p}{307}{]}.
 Five of the 6 top age hypermethylating tRNAs are covered by this array dataset.
 
 \hypertarget{TCGAmethods}{%
 \subsection{Cancer and Tissue Specific Methylation Data}\label{TCGAmethods}}
 
-Data was downloaded from the TCGA (The Cancer Genome Atlas) via the GDC (genomic data commons) data portal {[}\protect\hyperlink{ref-Grossman2016}{309}{]} using the \texttt{GenomicDataCommons} \texttt{R} package.
-Data from foetal tissue {[}\protect\hyperlink{ref-Yang2016}{310},\protect\hyperlink{ref-Nazor2012}{311}{]} was downloaded from GEO (\href{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE72867}{GSE72867}, \href{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30654}{GSE30654}).
+Data was downloaded from the TCGA (The Cancer Genome Atlas) via the GDC (genomic data commons) data portal {[}\protect\hyperlink{ref-Grossman2016}{308}{]} using the \texttt{GenomicDataCommons} \texttt{R} package.
+Data from foetal tissue {[}\protect\hyperlink{ref-Yang2016}{309},\protect\hyperlink{ref-Nazor2012}{310}{]} was downloaded from GEO (\href{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE72867}{GSE72867}, \href{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30654}{GSE30654}).
 From the TCGA, samples were selected for which DNAm data was available from both the primary site and normal solid tissue, and for which an approximate age could be inferred (within one year).
 Selecting those probes overlapping tRNA genes yielded 73,403 data points across 19 tissues with an age range of 15-90yrs (median 63.4) (\href{./Supplementary_Files/TCGA_samples_used.tsv}{Supplementary File S3})
 
 \hypertarget{mintmapmethods}{%
 \subsection{Assaying tRNA expression in blood with MINTmap}\label{mintmapmethods}}
 
-Small RNA-seq data from sorted blood cell fractions {[}\protect\hyperlink{ref-Juzenas2017}{312}{]} was used. (\href{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE100467}{GSE100467}) and the MINTmap {[}\protect\hyperlink{ref-Loher2017}{248}{]} tRNA fragment alignment tool.
+Small RNA-seq data from sorted blood cell fractions {[}\protect\hyperlink{ref-Juzenas2017}{311}{]} was used. (\href{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE100467}{GSE100467}) and the MINTmap {[}\protect\hyperlink{ref-Loher2017}{248}{]} tRNA fragment alignment tool.
 This dataset covered 42 individuals aged 21-63.
 I created a customised MINTmap reference designed to include only fragments which unambiguously map to a single tRNA gene locus and which overlap the 5' or 3' end of the genomic tRNA sequence by at least one base with no mismatches.
 This reference is intended to capture pre-tRNAs prior to processing and CCA addition operating under the assumption that the levels of pre-tRNAs will be informative about the amount of transcription taking place at the tRNA loci.
@@ -2767,9 +2756,9 @@ The maximum length of a fragment was limited to 50nt, due to the read length of 
 \hypertarget{mousemethods}{%
 \subsection{Mouse RRBS Analysis}\label{mousemethods}}
 
-Methylation calls and coverage information resulting from RRBS performed by Petkovich \emph{et al.} {[}\protect\hyperlink{ref-Petkovich2017}{313}{]} were downloaded from GEO using \texttt{GEOquery} {[}\protect\hyperlink{ref-Davis2007p}{308}{]} \href{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE80672}{GSE80672}.
+Methylation calls and coverage information resulting from RRBS performed by Petkovich \emph{et al.} {[}\protect\hyperlink{ref-Petkovich2017}{312}{]} were downloaded from GEO using \texttt{GEOquery} {[}\protect\hyperlink{ref-Davis2007p}{307}{]} \href{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE80672}{GSE80672}.
 These data from 152 mice covered 68 tRNA and 436 CpGs after QC requiring \textgreater50 reads per CpG and \textgreater10 data points per tRNA.
-5 tRNAs were excluded for being located within blacklisted regions of mm10 {[}\protect\hyperlink{ref-Amemiya2019}{295}{]}.
+5 tRNAs were excluded for being located within blacklisted regions of mm10 {[}\protect\hyperlink{ref-Amemiya2019}{294}{]}.
 After QC there were 58 tRNA genes and 385 CpGs.
 Simple linear modelling to predict age (in months) from methylation level at each tRNA and each CpG were performed in \texttt{R}.
 
@@ -2792,10 +2781,10 @@ Simple linear modelling to predict age (in months) from methylation level at eac
 
 
 
-Due to tRNAs critical role in translation and evidence of their modulation in ageing and longevity-related pathways, I interrogated these genes for evidence of ageing-related DNA methylation changes.
-Our discovery set was a large-scale peripheral blood-derived DNA methylome dataset comprising of 4,350 samples (see Figure \ref{fig:OverviewOfAnalyses}).
+Due to tRNAs critical role in translation and evidence of their modulation in ageing and longevity-related pathways, these genes were interrogatedfor evidence of ageing-related DNA methylation changes.
+The discovery set was a large-scale peripheral blood-derived DNA methylome dataset comprising of 4,350 samples (see Figure \ref{fig:OverviewOfAnalyses}).
 This sequencing-based dataset had been generated by Methylated DNA Immunoprecipitation (MeDIP-seq) {[}\protect\hyperlink{ref-Down2009}{79}{]}, which relies on the enrichment of methylated fragments of 200-500 bp to give a regional DNAm assessment (500 bp semi-overlapping windows, see \protect\hyperlink{EpiTwinsMethods}{Methods} \ref{EpiTwinsMethods}).
-In total the extended human tRNAome is comprised of 610 tRNAs and closely related sequences (gtRNAdb)(see Figure \ref{fig:kutteresq}), though only 492 are autosomal and do not reside in blacklisted regions of the genome {[}\protect\hyperlink{ref-Amemiya2019}{295}{]}.
+In total the extended human tRNAome is comprised of 610 tRNAs and closely related sequences (gtRNAdb)(see Figure \ref{fig:kutteresq}), though only 492 are autosomal and do not reside in blacklisted regions of the genome {[}\protect\hyperlink{ref-Amemiya2019}{294}{]}.
 
 \begin{figure}
 
@@ -2803,7 +2792,7 @@ In total the extended human tRNAome is comprised of 610 tRNAs and closely relate
 
 }
 
-\caption{\textbf{The genetic code as instantiated in the human tRNAome} The triplet genetic code leads to the incorporation of specific amino acids into an elongating protein via corresponding tRNAs. n is the number of tRNA genes which encode a given amino acid, the number in parentheses is how many of those may be pseudogenes based on their tRNAscan score {[}\protect\hyperlink{ref-Lowe2016}{294}{]}, and the number in square brackets is the number in blacklisted regions {[}\protect\hyperlink{ref-Amemiya2019}{295}{]}. There are a total of 610 tRNAs and closely related sequences in GtRNAdb {[}\protect\hyperlink{ref-Chan2009}{254}{]}, 416 of which are high confidence tRNAs, 116 of which are potential pseudogenes, and 107 are in blacklisted regions {[}\protect\hyperlink{ref-Amemiya2019}{295}{]}. Notably 7 of the 61 non-STOP codons are missing from the human tRNAome therefore these codons are handled by wobble base matching (\emph{e.g.} GCG Arg, ACC Gly). Also of note are the suppressor and selenocysteine tRNAs. The 20 methionine tRNAs are split equally between initiator methionine and internally incorporating methionine tRNAs, which are structurally distinct. There are also 23 nuclear encoded mitochondrial tRNAs.}\label{fig:kutteresq}
+\caption{\textbf{The genetic code as instantiated in the human tRNAome} The triplet genetic code leads to the incorporation of specific amino acids into an elongating protein via corresponding tRNAs. n is the number of tRNA genes which encode a given amino acid, the number in parentheses is how many of those may be pseudogenes based on their tRNAscan score {[}\protect\hyperlink{ref-Lowe2016}{313}{]}, and the number in square brackets is the number in blacklisted regions {[}\protect\hyperlink{ref-Amemiya2019}{294}{]}. There are a total of 610 tRNAs and closely related sequences in GtRNAdb {[}\protect\hyperlink{ref-Chan2009}{254}{]}, 416 of which are high confidence tRNAs, 116 of which are potential pseudogenes, and 107 are in blacklisted regions {[}\protect\hyperlink{ref-Amemiya2019}{294}{]}. Notably 7 of the 61 non-STOP codons are missing from the human tRNAome therefore these codons are handled by wobble base matching (\emph{e.g.} GCG Arg, ACC Gly). Also of note are the suppressor and selenocysteine tRNAs. The 20 methionine tRNAs are split equally between initiator methionine and internally incorporating methionine tRNAs, which are structurally distinct {[}\protect\hyperlink{ref-Kolitz2010}{236}{]}. There are also 23 nuclear encoded mitochondrial tRNAs.}\label{fig:kutteresq}
 \end{figure}
 
 
@@ -2821,7 +2810,7 @@ This is because there is no ChIP fragment so reads mapping to adjacent more mapp
 
 }
 
-\caption{Example of mappability data from the encode mappability tracks {[}\protect\hyperlink{ref-Derrien2012}{296}{]} for the initiator methionine tRNA genes.}\label{fig:mappabilityiMet1}
+\caption{Example of mappability data from the encode mappability tracks {[}\protect\hyperlink{ref-Derrien2012}{295}{]} for the initiator methionine tRNA genes.}\label{fig:mappabilityiMet1}
 \end{figure}
 
 
@@ -2832,7 +2821,7 @@ This is because there is no ChIP fragment so reads mapping to adjacent more mapp
 
 }
 
-\caption{Mappability score density of the tRNAome increases with read length and is greater when flanking regions (\(\pm500bp\)) are included. Mappability score density is computed as the area under the encode mappability tracks {[}\protect\hyperlink{ref-Derrien2012}{296}{]} over the length of the region.}\label{fig:mappabilityScoreDensity}
+\caption{Mappability score density of the tRNAome increases with read length and is greater when flanking regions (\(\pm500bp\)) are included. Mappability score density is computed as the area under the encode mappability tracks {[}\protect\hyperlink{ref-Derrien2012}{295}{]} over the length of the region.}\label{fig:mappabilityScoreDensity}
 \end{figure}
 
 
@@ -2852,7 +2841,7 @@ Going forward these most robustly corrected sets of 3 and 16 tRNA genes are refe
 
 }
 
-\caption{Study-wide significantly hypermethylating tRNAs in blood cell-type and batch corrected model MeDIP-seq. With Corresponding results in Twins UK 450k array (blood cell-type corrected) and targeted bisulfite sequencing results. Age models for array and targeted BiS-seq were calculated using all probes / CpGs overlapping the indicated tRNA gene. `Slope' corresponds to the beta value for methylation in the linear model, orange colouring indicates hypermethylation and blue hypomethylation. p-values coloured such that low values are dark blue and high values are yellow. blank grey cells indicate missing data. Due to the related nature of these twin samples, these data were also analysed in two subsets of n = 1198 \& 1206 by selecting one twin from each pair into the separate sets.}\label{fig:GWSBBtRNAsTab}
+\caption{Study-wide significantly hypermethylating tRNAs in blood cell-type and batch corrected model MeDIP-seq. With Corresponding results in Twins UK 450k array (blood cell-type corrected) and targeted bisulfite sequencing results. Age models for array and targeted BiS-seq were calculated using all probes / CpGs overlapping the indicated tRNA gene. `Slope' corresponds to the beta value for methylation in the linear model, orange colouring indicates hypermethylation and blue hypomethylation. p-values coloured such that low values are dark blue and high values are yellow. blank grey cells indicate missing data.}\label{fig:GWSBBtRNAsTab}
 \end{figure}
 
 
@@ -2863,7 +2852,7 @@ Going forward these most robustly corrected sets of 3 and 16 tRNA genes are refe
 
 }
 
-\caption{Human tRNAome overview. From the outside in: Chromosome ideograms scaled by the number of tRNA genes (total = 598), as excludes chromosome X (10), Y (0) and contig chr1\_gl000192\_random (2; see \protect\hyperlink{tRNAanno}{Methods} \ref{tRNAanno}). tRNA genes within 20kbp of one another are grouped with breaks inserted between these clusters. Radial grey lines represent the location of tRNA genes in the genome. \(-log_{10}(p-value)\) for the blood cell-type and batch corrected age model are shown for each window overlapping a tRNA gene in green. Mean methylation across all samples (n=3001) in RPM (reads per million base pairs) is shown in blue. Genome-wide significant cell-type \& batch corrected (\(p < 4.34\times10^{-9}\)) tRNAs show in red. The 158 Loci covered by 213 probes on the 450k array which directly overlap a tRNA gene are shown with green triangles. The 84 loci targeted for bisulfite sequencing in this study are indicated in magenta. Mappability score density is computed as the area under the encode mappability tracks {[}\protect\hyperlink{ref-Derrien2012}{296}{]} over the length of the region.}\label{fig:circos}
+\caption{Human tRNAome overview. From the outside in: Chromosome ideograms scaled by the number of tRNA genes (total = 598), as excludes chromosome X (10), Y (0) and contig chr1\_gl000192\_random (2; see \protect\hyperlink{tRNAanno}{Methods} \ref{tRNAanno}). tRNA genes within 20kbp of one another are grouped with breaks inserted between these clusters. Radial grey lines represent the location of tRNA genes in the genome. \(-log_{10}(p-value)\) for the blood cell-type and batch corrected age model are shown for each window overlapping a tRNA gene in green. Mean methylation across all samples (n=3001) in RPM (reads per million base pairs) is shown in blue. Genome-wide significant cell-type \& batch corrected (\(p < 4.34\times10^{-9}\)) tRNAs show in red. The 158 Loci covered by 213 probes on the 450k array which directly overlap a tRNA gene are shown with green triangles. The 84 loci targeted for bisulfite sequencing in this study are indicated in magenta. Mappability score density is computed as the area under the encode mappability tracks {[}\protect\hyperlink{ref-Derrien2012}{295}{]} over the length of the region.}\label{fig:circos}
 \end{figure}
 
 
@@ -2913,7 +2902,7 @@ GENCODE 19 places tRNA-Ile-AAT-4-1 in the 3'UTR of a Nonsense-mediated decay tra
 
 }
 
-\caption{\textbf{A)} tRNA-iMet-CAT-1-4 as well as \textbf{B)} tRNA-Ser-AGA-2-6 and tRNA-Ile-AAT-4-1 exhibit age related DNA hypermethylation in MeDIP-seq data. The sharp peaks suggest that this effect is localised to individual tRNA genes. One of the windows overlapping tRNA-Ile-AAT-4-1 also partially overlaps tRNA-Ser-AGA-2-6.Results shown are from the blood cell-type and batch corrected model. Median Methylation in reads per million is calculated across all samples in the model. The window structure track (Wins) illustrates the tiled nature of the MeDIP-seq windowing. Some annotations of the 3' UTR of CTC1 extend further than illustrated here covering tRNA-Thr-AGT-1-2. CpG density and CpG position are included to illustrate that similarly CpG dense tRNA genes are exhibiting differing age related DNAm change patterns.}\label{fig:gvizLocusZooms}
+\caption{\textbf{A)} tRNA-iMet-CAT-1-4 as well as \textbf{B)} tRNA-Ser-AGA-2-6 and tRNA-Ile-AAT-4-1 exhibit age related DNA hypermethylation in MeDIP-seq data. The sharp peaks suggest that this effect is localised to individual tRNA genes. One of the windows overlapping tRNA-Ile-AAT-4-1 also partially overlaps tRNA-Ser-AGA-2-6. Results shown are from the blood cell-type and batch corrected model. Median Methylation in reads per million is calculated across all samples in the model. The window structure track (Wins) illustrates the tiled nature of the MeDIP-seq windowing. Some annotations of the 3' UTR of CTC1 extend further than illustrated here covering tRNA-Thr-AGT-1-2. CpG density and CpG position are included to illustrate that similarly CpG dense tRNA genes are exhibiting differing age related DNAm change patterns.}\label{fig:gvizLocusZooms}
 \end{figure}
 
 
@@ -3002,7 +2991,7 @@ Also, four of the individual CpGs in tRNA-iMet-CAT-1-4 exhibited nominally signi
 
 }
 
-\caption{Pairwise Differences in Methylation between Age groups by tRNA. p-values are for pairwise methylation differences (see \protect\hyperlink{targetedBiSseq}{Methods} \ref{targetedBiSseq}){[}\protect\hyperlink{ref-Muller2019}{304}{]}.}\label{fig:pairwiseTab}
+\caption{Pairwise Differences in Methylation between Age groups by tRNA. p-values are for pairwise methylation differences (see \protect\hyperlink{targetedBiSseq}{Methods} \ref{targetedBiSseq}){[}\protect\hyperlink{ref-Muller2019}{303}{]}.}\label{fig:pairwiseTab}
 \end{figure}
 
 
@@ -3047,7 +3036,7 @@ Although it should be noted that 56 of these 143 probes are within the non-robus
 \hypertarget{ageing-related-trna-loci-show-increased-enhancer-related-chromatin-signatures}{%
 \subsubsection{Ageing-Related tRNA Loci show increased Enhancer-Related Chromatin Signatures}\label{ageing-related-trna-loci-show-increased-enhancer-related-chromatin-signatures}}
 
-The activity of the tRNAome was further explored using public chromatin segmentation data in blood (Epilogos Blood \& T-cells set) {[}\protect\hyperlink{ref-Meuleman2019}{306}{]}.
+The activity of the tRNAome was further explored using public chromatin segmentation data in blood (Epilogos Blood \& T-cells set) {[}\protect\hyperlink{ref-Meuleman2019}{305}{]}.
 This shows proportionally more Enhancer-related (Enh, EnhBiv \& EnhG) chromatin states at tRNA genes hypermethylating with age than the stronger Promoter-related (TSS) in other tRNAs. (Figure \ref{fig:combinedEpilogosPlot}).
 Whereas these characteristics are less frequently predominant in the rest of the tRNAs (Figure \ref{fig:combinedEpilogosPlot}).
 Age-hypermethylating tRNA are enriched for enhancer chromatin states compared to the rest of the tRNAome (Fisher's Exact test p = 0.01).
@@ -3058,7 +3047,7 @@ Age-hypermethylating tRNA are enriched for enhancer chromatin states compared to
 
 }
 
-\caption{Chromatin segmentation data from the Epilogos {[}\protect\hyperlink{ref-Meuleman2019}{306}{]} `Blood \& T-cell' 15 State model (tRNA genes +/- 200bp). Frequency with which a model state was the predominant state at a given tRNA. Proportions of predominant tRNA state for the 14 study-wide significant age-hypermethylating tRNAs covered compared to other 371 available tRNAs.}\label{fig:combinedEpilogosPlot}
+\caption{Chromatin segmentation data from the Epilogos {[}\protect\hyperlink{ref-Meuleman2019}{305}{]} `Blood \& T-cell' 15 State model (tRNA genes +/- 200bp). Frequency with which a model state was the predominant state at a given tRNA. Proportions of predominant tRNA state for the 14 study-wide significant age-hypermethylating tRNAs covered compared to other 371 available tRNAs.}\label{fig:combinedEpilogosPlot}
 \end{figure}
 
 
@@ -3071,7 +3060,7 @@ This is suggestive of either cell-type independent change or, presumably less li
 tRNAs have exhibited tissue-specific expression {[}\protect\hyperlink{ref-Dittmar2006}{275},\protect\hyperlink{ref-Sagi2016}{276},\protect\hyperlink{ref-Schmitt2014b}{314}{]} and blood cell-type populations change with age.
 Specifically, there is shift to favour the production of cells in the myeloid lineage {[}\protect\hyperlink{ref-Geiger2013}{144}{]}.
 These points lead us to examine tRNA gene DNAm in sorted cell populations.
-A publicly available 450k array dataset {[}\protect\hyperlink{ref-Reinius2012}{307}{]}) that has been used in the construction of cell-type specific DNAm references for cell-type fraction prediction using the Houseman algorithm {[}\protect\hyperlink{ref-Houseman2012}{146}{]} was used (see \protect\hyperlink{sortedbloodmethods}{Methods} \ref{sortedbloodmethods}).
+A publicly available 450k array dataset {[}\protect\hyperlink{ref-Reinius2012}{306}{]}) that has been used in the construction of cell-type specific DNAm references for cell-type fraction prediction using the Houseman algorithm {[}\protect\hyperlink{ref-Houseman2012}{146}{]} was used (see \protect\hyperlink{sortedbloodmethods}{Methods} \ref{sortedbloodmethods}).
 This consists of data from 6 individuals (aged \(38 \pm 13.6\)/yrs) from seven isolated cell populations (CD4+ T cells, CD8+ T cells, CD56+ NK cells, CD19+ B cells, CD14+ monocytes, neutrophils, and eosinophils).
 It was found that tRNA gene DNAm could separate myeloid from lymphoid lineages (Figures \ref{fig:meanMethbytRNAMatLowBB6} \& \ref{fig:meanMethbytRNAMatHeatmapLow}).
 
@@ -3088,7 +3077,7 @@ In that study they identified that those loci accruing methylomic variability we
 
 }
 
-\caption{Heatmap {[}\protect\hyperlink{ref-Gu2016}{315}{]} of mean methylation of probes covering each tRNA in 7 cell-type fractions from 6 Male individuals. Data from \href{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35069}{GSE35069} {[}\protect\hyperlink{ref-Reinius2012}{307}{]}. Of the 16 study-wide significant hypermethylating tRNAs, 8 are covered by this dataset.}\label{fig:meanMethbytRNAMatLowBB6}
+\caption{Heatmap {[}\protect\hyperlink{ref-Gu2016}{315}{]} of mean methylation of probes covering each tRNA in 7 cell-type fractions from 6 Male individuals. Data from \href{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35069}{GSE35069} {[}\protect\hyperlink{ref-Reinius2012}{306}{]}. Of the 16 study-wide significant hypermethylating tRNAs, 8 are covered by this dataset.}\label{fig:meanMethbytRNAMatLowBB6}
 \end{figure}
 
 
@@ -3099,7 +3088,7 @@ In that study they identified that those loci accruing methylomic variability we
 
 }
 
-\caption{Heatmap Mean Methylation of probes covering each tRNA in 7 cell-type fractions from 6 Male individuals. Showing all 150 tRNAs covered by 213 probes on the Illumina 450k array. Data from \href{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35069}{GSE35069} {[}\protect\hyperlink{ref-Reinius2012}{307}{]} downloaded using \texttt{GEOquery} {[}\protect\hyperlink{ref-Davis2007p}{308}{]}. Generated with the \texttt{ComplexHeatmap} \texttt{R} package {[}\protect\hyperlink{ref-Gu2016}{315}{]}.}\label{fig:meanMethbytRNAMatHeatmapLow}
+\caption{Heatmap Mean Methylation of probes covering each tRNA in 7 cell-type fractions from 6 Male individuals. Showing all 150 tRNAs covered by 213 probes on the Illumina 450k array. Data from \href{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35069}{GSE35069} {[}\protect\hyperlink{ref-Reinius2012}{306}{]} downloaded using \texttt{GEOquery} {[}\protect\hyperlink{ref-Davis2007p}{307}{]}. Generated with the \texttt{ComplexHeatmap} \texttt{R} package {[}\protect\hyperlink{ref-Gu2016}{315}{]}.}\label{fig:meanMethbytRNAMatHeatmapLow}
 \end{figure}
 
 
@@ -3109,7 +3098,7 @@ In that study they identified that those loci accruing methylomic variability we
 
 Some tRNA gene expression has been shown to be highly tissue specific {[}\protect\hyperlink{ref-Dittmar2006}{275},\protect\hyperlink{ref-Sagi2016}{276},\protect\hyperlink{ref-Schmitt2014b}{314}{]}.
 It follows that our observations of changes in DNAm with age in blood might be specific to that tissue.
-A mix of 450k and 27k array data from `solid tissue normal' samples made available by TCGA (The Cancer Genome Atlas) and data from foetal tissue {[}\protect\hyperlink{ref-Yang2016}{310},\protect\hyperlink{ref-Nazor2012}{311}{]} were downloaded from GEO for use in this analysis (see \protect\hyperlink{TCGAmethods}{Methods} \ref{TCGAmethods}).
+A mix of 450k and 27k array data from `solid tissue normal' samples made available by TCGA (The Cancer Genome Atlas) and data from foetal tissue {[}\protect\hyperlink{ref-Yang2016}{309},\protect\hyperlink{ref-Nazor2012}{310}{]} were downloaded from GEO for use in this analysis (see \protect\hyperlink{TCGAmethods}{Methods} \ref{TCGAmethods}).
 The samples from TCGA range in age from 15-90 (n = 733).
 Only 43 tRNA genes had adequate data to compare across tissues in this dataset and 115 in the foetal tissue data.
 
@@ -3195,7 +3184,7 @@ There are larger peaks at \textasciitilde28 and \textasciitilde40nt consistent w
 \hypertarget{mice-also-show-age-related-trna-gene-dna-hypermethylation}{%
 \subsection{Mice also show age-related tRNA gene DNA hypermethylation}\label{mice-also-show-age-related-trna-gene-dna-hypermethylation}}
 
-The DNA methylation of the mouse tRNA genes was examined using data from a reduced representation bisulfite sequencing (RRBS) experiment performed by Petkovich et al.~{[}\protect\hyperlink{ref-Petkovich2017}{313}{]}.
+The DNA methylation of the mouse tRNA genes was examined using data from a reduced representation bisulfite sequencing (RRBS) experiment performed by Petkovich et al.~{[}\protect\hyperlink{ref-Petkovich2017}{312}{]}.
 These data from 152 mice covered 51 tRNA genes and 385 CpGs after QC (see \protect\hyperlink{mousemethods}{Methods} \ref{mousemethods}), representing \textasciitilde11\% of mouse tRNA genes.
 The mice ranged in age from 0.67-35 months.
 
@@ -3208,16 +3197,16 @@ These three are tRNA-Asp-GTC-1-12, tRNA-Ile-AAT-1-4, tRNA-Glu-TTC-1-3 (Figure \r
 
 }
 
-\caption{DNA methylation of CpGs in 3 tRNA which significantly hypermethylate with age in mice, in data from Petkovich et al.~{[}\protect\hyperlink{ref-Petkovich2017}{313}{]}. 6 CpGs reach Bonferroni significance and 7 show nominally significant increases.}\label{fig:mouse}
+\caption{DNA methylation of CpGs in 3 tRNA which significantly hypermethylate with age in mice, in data from Petkovich et al.~{[}\protect\hyperlink{ref-Petkovich2017}{312}{]}. 6 CpGs reach Bonferroni significance and 7 show nominally significant increases.}\label{fig:mouse}
 \end{figure}
 
 
 
 In order to investigate the mouse results further data from Thornlow et al.~{[}\protect\hyperlink{ref-Thornlow2020}{316}{]}, which had established tRNA ortholog sets for 29 mammalian species, were used.
-They identified 197 mouse tRNAs as having direct human orthologs with 44 of these included in the mouse results from Petkovich et al.~{[}\protect\hyperlink{ref-Petkovich2017}{313}{]}.
+They identified 197 mouse tRNAs as having direct human orthologs with 44 of these included in the mouse results from Petkovich et al.~{[}\protect\hyperlink{ref-Petkovich2017}{312}{]}.
 However, unfortunately, although 2 of the top 3 tRNAs (tRNA-Ser-AGA-2-6 \& tRNA-Ile-AAT-4-1) have mouse orthologs (tRNA-Ser-AGA-2-2 \& tRNA-Ile-AAT-1-1), they are not covered in these mouse data.
 Furthermore, none of the tRNAs showing significant hypermethylation in mice (at nominal p\textless0.05) had human orthologs in our MeDIP-seq study-wide significant hypermethylating set.
-Therefore, whilst specific tRNA loci cannot be directly compated due to this lack of coverage, it is interesting that the small number of significant tRNA genes in the mouse data also hypermethylate with age.
+Therefore, whilst specific tRNA loci cannot be directly compared due to this lack of coverage, it is interesting that the small number of significant tRNA genes in the mouse data also hypermethylate with age.
 
 \hypertarget{trna-gene-methylation-in-cancer}{%
 \section{tRNA Gene Methylation in Cancer}\label{trna-gene-methylation-in-cancer}}
@@ -3239,7 +3228,7 @@ Consistent with Figure \ref{fig:meanBetasByTissueTNMHeatmap} the tRNAs tRNA-iMet
 
 }
 
-\caption{Global properties of tRNA methylation data for 45 tRNA genes across 19 tissues with matched normal and tumour samples from 733 cases in TCGA {[}\protect\hyperlink{ref-Yang2016}{310},\protect\hyperlink{ref-Nazor2012}{311}{]}.}\label{fig:cancerVsNormalCombinedPlots}
+\caption{Global properties of tRNA methylation data for 45 tRNA genes across 19 tissues with matched normal and tumour samples from 733 cases in TCGA {[}\protect\hyperlink{ref-Yang2016}{309},\protect\hyperlink{ref-Nazor2012}{310}{]}.}\label{fig:cancerVsNormalCombinedPlots}
 \end{figure}
 
 
@@ -3267,7 +3256,7 @@ As this result was observed in DNA from peripheral blood, a source with a hetero
 Moreover, there are well known age-related proportional changes in peripheral blood cell composition {[}\protect\hyperlink{ref-Geiger2013}{144}{]}.
 The TwinsUK MeDIP-seq and 450k array DNA methylation data included measured haematological values.
 Therefore, major cell type effects such as a myeloid skew were adjusted for, and distinct tRNAs were still significant.
-Although, a caveat to is that this can not exclude changes in minor specific sub-cell fractions types.
+Although, a caveat to this is that one cannot exclude changes in minor specific sub-cell fraction types.
 However, that these age-related effects were strong enough to be observed in both a regional MeDIP-seq assessment and a pooled sequencing approach, implies that they not extremely subtle.
 Age-related tRNA gene DNA methylation changes were observed in the limited subset of mouse tRNA genes covered in publicly available RRBS data (\textasciitilde13\%) and were able to identify tRNAs exhibiting DNA hypermethylation with age in this set.
 This suggests that age-related tRNA gene hypermethylation may not be unique to humans, and may extend at least across mammals.
@@ -3295,58 +3284,57 @@ Therefore, this may suggest that the hypermethylation signal observed at this lo
 Of the 16 study-wide significant tRNA genes, only these two have a shared significant window, furthermore, in the expanded set of 44 only tRNA-Thr-AGT-1-2 could be similarly affected.
 
 Although others have found the majority of isodecoders are transcribed in different cell types {[}\protect\hyperlink{ref-Parisien2013}{253}{]}.
-Codon usage frequencies have been claimed to be mostly invariant in the transcriptomes of a wide range of tissues, as well as across developmental time {[}\protect\hyperlink{ref-Schmitt2014b}{314}{]}. However, differences in the codon usage of genes with highly tissue-specific expression patterns have been observed {[}\protect\hyperlink{ref-Plotkin2004}{325}{]}.
-Transcriptome codon usage frequency and corresponding tRNA gene expression levels have been claimed to vary with several other factors; notably, the replicative state of cells.
-Differences in the codon usage of genes with highly tissue-specifically expressed genes have been observed {[}\protect\hyperlink{ref-Powell1997}{326}{]}.
-It has however been argued that these differences are substantially explained by variation in GC content {[}\protect\hyperlink{ref-Rudolph2016}{327}{]}, and the extent to which codon usage plays a role in regulation of translation remains contested.
+Codon usage frequencies have been claimed to be mostly invariant in the transcriptomes of a wide range of tissues, as well as across developmental time {[}\protect\hyperlink{ref-Schmitt2014b}{314}{]}.
+
+However, differences in the codon usage of genes with highly tissue-specific expression patterns have been observed {[}\protect\hyperlink{ref-Plotkin2004}{325}{]}.
+Transcriptome codon usage frequency and corresponding tRNA gene expression levels have been claimed to vary with several other factors; notably, the replicative state of cells, as well as across developmental time {[}\protect\hyperlink{ref-Schmitt2014}{326}{]}.
+Experimental stress-related states have revealed changes with an over-representation of codons that are translated by rare tRNAs {[}\protect\hyperlink{ref-Gingold2012}{273}{]}.
+Differences in the codon usage of genes with highly tissue-specifically expressed genes have been observed {[}\protect\hyperlink{ref-Powell1997}{327}{]}.
+It has however been argued that these differences are substantially explained by variation in GC content {[}\protect\hyperlink{ref-Rudolph2016}{328}{]}, and the extent to which codon usage plays a role in regulation of translation remains contested.
+Changes in the epigenetic state of specific tRNAs could be modulating transcription efficiency or even codon availability in the ageing cell.
+tRNA gene dosage is quite closely matched to amino acid usage frequency in the human exome.
 
 The location of tRNA-Ser-AGA-2-6 and tRNA-Ile-AAT-4-1 immediately downstream of \emph{CTC1} and of tRNA-Ile-AAT-4-1 within the 3'UTR of an alternate isoform of \emph{CTC1}, which undergoes nonsense mediated decay raises the possibility that the gene body epigenetic regulation of \emph{CTC1} may impact on the state of these tRNA genes.
-\emph{CTC1}'s function in telomere maintenance {[}\protect\hyperlink{ref-Gu2018}{328}{]}, DNA replication licensing {[}\protect\hyperlink{ref-Wang2019a}{329}{]}, and it's role in a rare progeroid condition {[}\protect\hyperlink{ref-Sargolzaeiaval2018}{330}{]} indicate that it has ageing-relevant biology. The possible relationship between the regulation of \emph{CTC1} and that of the tRNA genes downstream of it warrants further study.
+\emph{CTC1}'s function in telomere maintenance {[}\protect\hyperlink{ref-Gu2018}{329}{]}, DNA replication licensing {[}\protect\hyperlink{ref-Wang2019a}{330}{]}, and it's role in a rare progeroid condition {[}\protect\hyperlink{ref-Sargolzaeiaval2018}{331}{]} indicate that it has ageing-relevant biology. The possible relationship between the regulation of \emph{CTC1} and that of the tRNA genes downstream of it warrants further study.
 
 Several transcription factors acting via TFIIIB {[}\protect\hyperlink{ref-Gomez-Roman2003}{267}{]} have a negative (the tumour suppressors p53 {[}\protect\hyperlink{ref-Crighton2003}{265}{]} and Rb {[}\protect\hyperlink{ref-Sutcliffe2000}{266}{]}) or positive (the proto-oncogene c-Myc) influence {[}\protect\hyperlink{ref-Gomez-Roman2003}{267}{]}.
-Regulatory sequence in the flanking or the internal regions of tRNA genes do not explain tRNA expression variation {[}\protect\hyperlink{ref-Schmitt2014}{331}{]}.
+Regulatory sequence in the flanking or the internal regions of tRNA genes do not explain tRNA expression variation {[}\protect\hyperlink{ref-Schmitt2014}{326}{]}.
 Whilst DNAm is able to repress the expression of tRNA genes {[}\protect\hyperlink{ref-Besser1990}{270}{]} in a plasmid expression system, the broader chromatin environment also affects tRNA transcription.
 Due to the co-ordinated nature of epigenomic modifications, it may also be revealing to evaluate ageing-related histone modification in these tRNA loci.
 
-Changes in the epigenetic state of specific tRNAs could be modulating transcription efficiency or even codon availability in the ageing cell.
-tRNA gene dosage is quite closely matched to amino acid usage frequency in the human exome.
-However, the transcriptome codon usage frequency and tRNA gene expression have been claimed to vary with the replicative state of cells, separating differentiated from replicating cells {[}\protect\hyperlink{ref-Gingold2014}{332}{]}.
-Others have argued that these differences are substantially explained by variation in GC content {[}\protect\hyperlink{ref-Rudolph2016}{327}{]} and that codon usage frequencies are observed to be mostly invariant in the transcriptomes of a wide range of tissues, as well as across developmental time {[}\protect\hyperlink{ref-Schmitt2014}{331}{]}.
-Although, experimental stress-related states have revealed changes with an over-representation of codons that are translated by rare tRNAs {[}\protect\hyperlink{ref-Gingold2012}{273}{]}.
-
 tRNA sequences themselves are under strong structural (both secondary and tertiary) {[}\protect\hyperlink{ref-Goodenbour2006}{322}{]} as well as functional constraint, which leads to an order of magnitude reduction in variation compared the background genomic mutation rate {[}\protect\hyperlink{ref-Parisien2013}{253}{]}.
-However, polymorphic tRNA could be another potential caveat to our work.
+However, polymorphic tRNA could be another potential caveat to this work.
 Although, there is no significant population variation in, for example, tRNA iMet sequences in 1,000 Genomes data.
 Indeed, there are only 11 new isodecoder sequences with high confidence (tRNAscan scores \(\ge50\)) at \textgreater1\% population frequency {[}\protect\hyperlink{ref-Parisien2013}{253}{]}.
-Despite strong purifying selection maintaining very low variation in tRNA gene bodies, tRNA genes are subject to high levels of transcription-associated mutagenesis (TAM) leading to elevated mutation rates over evolutionary time in their immediate flanking sequences {[}\protect\hyperlink{ref-Thornlow2018}{333}{]}.
-There is also some evidence for tRNA copy number variation at specific loci, although this remains under-characterised {[}\protect\hyperlink{ref-Iben2015}{334},\protect\hyperlink{ref-Darrow2014}{335}{]}.
+Despite strong purifying selection maintaining very low variation in tRNA gene bodies, tRNA genes are subject to high levels of transcription-associated mutagenesis (TAM) leading to elevated mutation rates over evolutionary time in their immediate flanking sequences {[}\protect\hyperlink{ref-Thornlow2018}{332}{]}.
+There is also some evidence for tRNA copy number variation at specific loci, although this remains under-characterised {[}\protect\hyperlink{ref-Iben2015}{333},\protect\hyperlink{ref-Darrow2014}{334}{]}.
 Another potential cause considered was whether age-related somatic copy number increases could be occurring in these loci.
 Population or somatic copy number expansions could lead to increased methylated reads in MeDIP-seq without any epigenetic state change.
 However, this would not be consistent with the targeted and array BiS conversion methodologies, where the proportion of methylated to unmethylated reads would still be constant.
 
 It is worth noting the parallels with known cancer and ageing epigenetic changes, and that tRNAs are also dysregulated in cancer {[}\protect\hyperlink{ref-Huang2018}{269}{]}, with proposed utility as prognostic markers {[}\protect\hyperlink{ref-Krishnan2016}{268}{]}.
-Furthermore, the early replicating state of tRNA loci, potentially associated with high expression {[}\protect\hyperlink{ref-Muller2017}{336}{]}, may make them prone to hypermethylate, as is observed in early replicating loci in both cancer {[}\protect\hyperlink{ref-Du2019}{337}{]} and senescent cells {[}\protect\hyperlink{ref-Cruickshanks2013}{338}{]}.
+Furthermore, the early replicating state of tRNA loci, potentially associated with high expression {[}\protect\hyperlink{ref-Muller2017}{335}{]}, may make them prone to hypermethylate, as is observed in early replicating loci in both cancer {[}\protect\hyperlink{ref-Du2019}{336}{]} and senescent cells {[}\protect\hyperlink{ref-Cruickshanks2013}{337}{]}.
 Interestingly, tRNA gene loci may also play a role in local as well as large scale genome organisation {[}\protect\hyperlink{ref-VanBortle2017}{291}{]}.
 tRNA gene clusters act as insulators {[}\protect\hyperlink{ref-Raab2011}{290}{]} and have extensive long-range chromatin interactions with other tRNA gene loci {[}\protect\hyperlink{ref-VanBortle2017}{291}{]}.
 The coordinated transcription of tRNAs at subnuclear foci and the B-box sequence elements bound by TFIIIC and not polIII may represent an organising principle for 3D-chromatin by providing spatial constraints {[}\protect\hyperlink{ref-Noma2006}{292}{]}.
-Therefore, these tRNA epigenetic changes could contribute to the structural changes that are also observed in ageing {[}\protect\hyperlink{ref-Sun2018}{339}{]}.
+Therefore, these tRNA epigenetic changes could contribute to the structural changes that are also observed in ageing {[}\protect\hyperlink{ref-Sun2018}{338}{]}.
 
 A predominantly unmethylated state across fetal (Figure \ref{fig:meanMethBytRNAByFetalTissueHeatmap}) and adult tissues (Figure \ref{fig:meanBetasByTissueTNMHeatmap}) was observed at tRNA gene loci, consistent with the high rate of transcription at many tRNA gene loci.
 We suspect that the tRNA genes largely remain unmethylated through development and that the moderate increases in DNAm that are observed with age at these loci are being driven by changes arising primarily in older individuals.
-Distinct biological changes have been observed recently in aged individuals {[}\protect\hyperlink{ref-Moskowitz2017}{340},\protect\hyperlink{ref-Hashimoto2019}{341}{]}.
+Distinct biological changes have been observed recently in aged individuals {[}\protect\hyperlink{ref-Moskowitz2017}{339},\protect\hyperlink{ref-Hashimoto2019}{340}{]}.
 This would also be consistent with the lack of significant differences in the tRNA loci detected between the neonate and the 26-year-old adult in the Heyn et al.~{[}\protect\hyperlink{ref-Heyn2012}{113}{]} data.
 This low baseline DNA methylation of the tRNA genes may also explain why the observed age related changes are predominantly hypermethylation.
 Whether this is driven by mechanisms, such as aberrant DNA methylation targeting of the tRNA loci or specific sub-celltype effects with age, will require further experimental investigation.
 
-Our attempt to estimate tRNA transcription by identifying fragments which may be derived from pre-tRNA sequences has serious limitations.
+The attempt to estimate tRNA transcription by identifying fragments which may be derived from pre-tRNA sequences has serious limitations.
 It assumes that pre-tRNA levels reflect the amount of tRNA transcription, however, this may not be the case as pre-tRNAs are rapidly processed to mature tRNAs.
-Our requirement for a read length of at least 40nt only has only a limited ability to distinguish full length tRNAs from tRNA derived small-RNAs, and the short read length of the data prevented the use of a higher threshold.
+The requirement for a read length of at least 40nt only has only a limited ability to distinguish full length tRNAs from tRNA derived small-RNAs, and the short read length of the data prevented the use of a higher threshold.
 Furthermore the limited number of reads unambiguously mapping to a specific tRNA locus limits the utility of this approach for inferring the effects of epigenetic changes at a specific locus on the expression at that locus.
 tsRNA abundance has been associated with locus specific tRNA gene expression, in some cases independent of mature tRNA levels {[}\protect\hyperlink{ref-Torres2019}{242}{]}.
-This has important implications for the interpretation of our results given the multi-copy nature of genes like tRNA-iMet-CAT-1-4, as even if expression levels of mature iMet tRNAs are unaffected by changes in one copy's DNA methylation, these changes could still influence the levels of particular tsRNAs derived from specific tRNA loci.
+This has important implications for the interpretation of these results given the multi-copy nature of genes like tRNA-iMet-CAT-1-4, as even if expression levels of mature iMet tRNAs are unaffected by changes in one copy's DNA methylation, these changes could still influence the levels of particular tsRNAs derived from specific tRNA loci.
 
 In conclusion, due to the unique challenges that make the tRNAome difficult to examine it has remained epigenetically under-characterised despite its critical importance for cell function.
-We directly interrogated the epigenetic DNA methylation state of the functionally important tRNAome, across the age spectrum in a range of datasets as well as methodologies and identified an enrichment for age-related DNA hypermethylation in the human tRNA genes.
+This work directly interrogates the epigenetic DNA methylation state of the functionally important tRNAome, across the age spectrum in a range of datasets as well as methodologies and identified an enrichment for age-related DNA hypermethylation in the human tRNA genes.
 
 \newpage
 
@@ -3364,10 +3352,10 @@ Available at \url{https://github.com/RichardJActon/tRNA_paper_code}
 \newpage
 
 \hypertarget{Alus}{%
-\chapter{Results 3 -}\label{Alus}}
+\chapter{Results 3 - DNA methylation clocks in Alu Elements}\label{Alus}}
 
-\hypertarget{abstract}{%
-\section{Abstract}\label{abstract}}
+\hypertarget{abstract-2}{%
+\section{Abstract}\label{abstract-2}}
 
 \hypertarget{AluIntro}{%
 \section{Introduction}\label{AluIntro}}
@@ -3379,25 +3367,37 @@ Among the molecular changes that occur with age are alterations to the epigenome
 The epigenome here refers to: The chemical modifications to the genome and the molecules which package it.
 These modifications do not affect the genomic sequence but do impact the accessibility or expression of the genome in different contexts, such as different cell-types {[}\protect\hyperlink{ref-Bird2007}{16}{]}.
 
-Approximately 45\% of the human genome is comprised of repetitive or transposable elements {[}\protect\hyperlink{ref-Deniz2019}{342},\protect\hyperlink{ref-Kazazian2017}{343}{]}.
-The repression of these elements to prevent their expansion or the impact of their latent regulatory potential from effecting genomic stability and regulation is a core function of epigenetic mechanisms {[}\protect\hyperlink{ref-Gregory2005}{344}{]}.
+Approximately 45\% of the human genome is comprised of repetitive or transposable elements {[}\protect\hyperlink{ref-Deniz2019}{341},\protect\hyperlink{ref-Kazazian2017}{342}{]}.
+The repression of these elements to prevent their expansion or the impact of their latent regulatory potential from effecting genomic stability and regulation is a core function of epigenetic mechanisms {[}\protect\hyperlink{ref-Gregory2005}{343}{]}.
 The most common DNA modification, 5-methylcytosine (5mC) at CpG loci, exhibits the most well documented age-related changes, and plays a central role in the repression of repetitive and transposable elements {[}\protect\hyperlink{ref-Lopez-Otin2013}{9}{]}.
-DNA methylation also classically functions to repress gene expression at promoters {[}\protect\hyperlink{ref-Deaton2011}{345}{]}, similar to the repressive role that is plays at repetitive elements.
-Beyond solely repressive effects, DNA methylation in gene bodies can modulate expression {[}\protect\hyperlink{ref-Hellman2007}{346}{]} and influence splicing patterns {[}\protect\hyperlink{ref-Shukla2011}{347}{]}.
-Furthermore, DNA methylation levels at transcription factor binding sites (TFBS) modulate the binding affinity of transcriptions factors for these sites {[}\protect\hyperlink{ref-Yin2017}{51},\protect\hyperlink{ref-Blattler2014}{348}{]}.
+DNA methylation also classically functions to repress gene expression at promoters {[}\protect\hyperlink{ref-Deaton2011}{344}{]}, similar to the repressive role that is plays at repetitive elements.
+Beyond solely repressive effects, DNA methylation in gene bodies can modulate expression {[}\protect\hyperlink{ref-Hellman2007}{345}{]} and influence splicing patterns {[}\protect\hyperlink{ref-Shukla2011}{346}{]}.
+Furthermore, DNA methylation levels at transcription factor binding sites (TFBS) modulate the binding affinity of transcriptions factors for these sites {[}\protect\hyperlink{ref-Yin2017}{51},\protect\hyperlink{ref-Blattler2014}{347}{]}.
 
-Significant decreases in bulk 5mC with age {[}\protect\hyperlink{ref-Wilson1983}{90}{]} and in cancer tissues {[}\protect\hyperlink{ref-Gama-Sosa1983}{349}{]} are among the earliest pioneering measure of global DNAm changes.
-Demethylation of repetitive elements was thought to be a major contributor to the global decreases in 5mC {[}\protect\hyperlink{ref-Bollati2010}{350}{]}.
+Significant decreases in bulk 5mC with age {[}\protect\hyperlink{ref-Wilson1983}{90}{]} and in cancer tissues {[}\protect\hyperlink{ref-Gama-Sosa1983}{348}{]} are among the earliest pioneering measure of global DNAm changes.
+Demethylation of repetitive elements was thought to be a major contributor to the global decreases in 5mC {[}\protect\hyperlink{ref-Bollati2010}{349}{]}.
 More recent studies using methods able to resolve the genomic position of DNA methylation changes have revealed that some regions of the genome show increasing DNA methylation with age.
 Notably, the promoters of polycomb target genes {[}\protect\hyperlink{ref-Teschendorff2010}{108}{]}, bivalent chromatin domains {[}\protect\hyperlink{ref-Rakyan2010}{106}{]} and specific tRNA genes {[}\protect\hyperlink{ref-Acton2020}{225}{]}.
 
-Alu elements are the single most abundant transposon in the human genome with \textasciitilde1.19 million copies and comprising \textasciitilde10.7\% of the total genomic sequence {[}\protect\hyperlink{ref-Dewannieux2003}{351},\protect\hyperlink{ref-Deininger2011}{352}{]}.
-Alu elements are members of the short interspersed nuclear elements (SINEs) family of retrotransposons, are \textasciitilde280bp in length, and are derived from the 7SL RNA gene {[}\protect\hyperlink{ref-Ullu1984}{353}{]}.
-The Alu elements arose from the 7SL sequence via the FAM sequences, which gave rise to truncated variants, FRAM and FLAM the fusion of which yielded the current dimeric Alu sequence {[}\protect\hyperlink{ref-Quentin1992}{354}{]}.
-They are primate specific and arose \textasciitilde65 million years ago (MYA), with a peak in amplification around \textasciitilde40 MYA (Figure \ref{fig:AluAge}) {[}\protect\hyperlink{ref-Ade2013}{355}{]}.
+Alu elements are the single most abundant transposon in the human genome with \textasciitilde1.19 million copies and comprising \textasciitilde10.7\% of the total genomic sequence {[}\protect\hyperlink{ref-Dewannieux2003}{350},\protect\hyperlink{ref-Deininger2011}{351}{]}.
+Alu elements are members of the short interspersed nuclear elements (SINEs) family of retrotransposons, are \textasciitilde300bp in length, and are derived from the 7SL RNA gene {[}\protect\hyperlink{ref-Ullu1984}{352}{]}.
+The Alu elements arose from the 7SL sequence via the FAM sequences, which gave rise to truncated variants, FRAM and FLAM the fusion of which yielded the current dimeric Alu sequence {[}\protect\hyperlink{ref-Quentin1992}{353}{]}.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{./figs/AluStructure} 
+
+}
+
+\caption{\textbf{Structure of an Alu element} A complete Alu element contains the A and B box sequence elements from an RNA polIII promoter, a central A rich region, a short insertion in the right arm, and a poly A region involved in retrotransposition and insertion. There is not an explicit polIII terminator in the Alu sequence so transcription continues through arbitrary flanking sequence until a run of at least 4 Ts, is encountered {[}\protect\hyperlink{ref-Chen2008}{354},\protect\hyperlink{ref-Batzer2002}{355}{]}. FLAM sequences are the origin of the Left arm and FRAMs the origin of the Right {[}{[}\protect\hyperlink{ref-Quentin1992}{353}{]}.}\label{fig:AluStruct}
+\end{figure}
+
+
+
+Alus are primate specific and arose \textasciitilde65 million years ago (MYA), with a peak in amplification around \textasciitilde40 MYA (Figure \ref{fig:AluAge}) {[}\protect\hyperlink{ref-Ade2013}{356}{]}.
 Non-LTR retrotransposons, including Alu, L1 and SVA elements, are active in humans.
-However, Alu elements are non-autonomous and require the presence of an L1 element to provide the molecular machinery needed for retrotransposition {[}\protect\hyperlink{ref-Cordaux2009}{356}{]}.
-Mutagenesis arising from Alu element insertion and Alu element mediated recombination is responsible for an estimated 0.4\% of all human genetic disorders {[}\protect\hyperlink{ref-Kazazian2017}{343},\protect\hyperlink{ref-Belancio2008}{357}{]}
+However, Alu elements are non-autonomous and require the presence of an L1 element to provide the molecular machinery needed for retrotransposition {[}\protect\hyperlink{ref-Cordaux2009}{357}{]}.
+Mutagenesis arising from Alu element insertion and Alu element mediated recombination is responsible for an estimated 0.4\% of all human genetic disorders {[}\protect\hyperlink{ref-Kazazian2017}{342},\protect\hyperlink{ref-Belancio2008}{358}{]}
 
 \begin{figure}
 
@@ -3405,19 +3405,19 @@ Mutagenesis arising from Alu element insertion and Alu element mediated recombin
 
 }
 
-\caption{\textbf{Alu element Age and history of expansion in primates} Mya (milion years ago). Reproduced from Batzer \& Deininger 2002 {[}\protect\hyperlink{ref-Batzer2002}{358}{]}.}\label{fig:AluAge}
+\caption{\textbf{Alu element Age and history of expansion in primates} Mya (milion years ago). Reproduced from Batzer \& Deininger 2002 {[}\protect\hyperlink{ref-Batzer2002}{355}{]}.}\label{fig:AluAge}
 \end{figure}
 
 
 
-Alu elements are CpG rich (Figure \ref{fig:AlusWindowsCpGdLVplot}), accounting for \textasciitilde7.5 million CpGs, or \textasciitilde25\% of all human CpG sites {[}\protect\hyperlink{ref-Deininger2011}{352}{]}.
+Alu elements are CpG rich (Figure \ref{fig:AlusWindowsCpGdLVplot}), accounting for \textasciitilde7.5 million CpGs, or \textasciitilde25\% of all human CpG sites {[}\protect\hyperlink{ref-Deininger2011}{351}{]}.
 High levels of DNA methylation predominate at Alu elements across normal tissues.
-Furthermore Alu elements are more resistent to hypomethylation than other repetitive elements in cancer cells.
+Furthermore Alu elements are more resistant to hypomethylation than other repetitive elements in cancer cells.
 This is indicative of strong pressure to maintain their repressed state {[}\protect\hyperlink{ref-Jorda2017}{359}{]}.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.6\linewidth]{./figs/AlusWindowsCpGdLVplot-FAMs} 
+{\centering \includegraphics[width=0.8\linewidth]{./figs/AlusWindowsCpGdLVplot-FAMs} 
 
 }
 
@@ -3428,33 +3428,31 @@ This is indicative of strong pressure to maintain their repressed state {[}\prot
 
 Alu elements contain many sequences with the potential to effect gene regulation, and indeed do effect gene expression {[}\protect\hyperlink{ref-Chen2017b}{360},\protect\hyperlink{ref-RobertoFerrari2019}{361}{]}.
 There are numerous TFBSs in the canonical Alu sequence {[}\protect\hyperlink{ref-Polak2006}{362}{]}, and some may possess enhancer activity {[}\protect\hyperlink{ref-Su2014}{363}{]}.
-Thus deterioration in the effectiveness of the repression of Alu elements has the potential to disruptively expose this latent regulatory potential {[}\protect\hyperlink{ref-Chuong2017}{228},\protect\hyperlink{ref-Ward2013}{364},\protect\hyperlink{ref-Xie2013}{365}{]}.
+Thus deterioration in the effectiveness of the repression of Alu elements has the potential to disruptively expose this latent regulatory function {[}\protect\hyperlink{ref-Chuong2017}{228},\protect\hyperlink{ref-Ward2013}{364},\protect\hyperlink{ref-Xie2013}{365}{]}.
 Epigenetic reactivation of cryptic cis-regulatory elements (CREs) within transposons has been show to act as an oncogenic driver {[}\protect\hyperlink{ref-Jang2019}{366}{]}, including specifically from Alu elements {[}\protect\hyperlink{ref-Rajendiran2016}{367}{]}.
 De-repression of Alu elements also has the potential to influence common non-malignant diseases {[}\protect\hyperlink{ref-Chuong2017}{228},\protect\hyperlink{ref-Payer2017}{368}{]}.
 
 Quantitative assays of DNA methylation with high positional resolution which cover a large number of loci, combined with statistical methods for sparse regression analysis have permitted the construction of `DNA methylation clocks` which predict chronological age with a high degree of accuracy {[}\protect\hyperlink{ref-Horvath2018}{149},\protect\hyperlink{ref-Bell2019}{150}{]}.
-The difference between chronological and predicted age in a number of these clocks or the 'age acceleration' has been found to capture aspects of biological age.
+The difference between chronological and predicted age know as the 'age acceleration' has been found to capture aspects of biological ageing in a number of these clocks.
 For example, Age acceleration is a strong predictor of all-cause mortality {[}\protect\hyperlink{ref-Marioni2015}{135}{]}.
-Whilst DNA hypermethylation and hypomethylation are driven by distinct mechanism {[}\protect\hyperlink{ref-Wu2017}{60},\protect\hyperlink{ref-Mozhui2017}{369}{]} CpGs undergoing these processes are approximately equally represented in DNA methylation clocks.
+Whilst DNA hypermethylation and hypomethylation are driven by distinct mechanisms {[}\protect\hyperlink{ref-Wu2017}{60},\protect\hyperlink{ref-Mozhui2017}{369}{]} CpGs undergoing these processes are approximately equally represented in DNA methylation clocks.
 Interestingly however, hypomethylating CpGs were identified by Zhang et al.~to be the most indicative of biological ageing-related all-cause mortality effects in blood {[}\protect\hyperlink{ref-Zhang2017}{140}{]}.
-Most DNA methylation clocks constructed in humans have been constructed using the Illumina bead chip array based DNA methylation assays. The coverage these assays is strongly focused on promoters {[}\protect\hyperlink{ref-Bibikova2009}{107}{]}, CpG islands {[}\protect\hyperlink{ref-Bibikova2011}{114}{]}, and more recently enhancers {[}\protect\hyperlink{ref-Moran2015}{154}{]} but is lacking in coverage of repetitive elements due in part to the technical challenges of accurate mapping in these spaces {[}\protect\hyperlink{ref-Bell2019}{150}{]}.
+Most DNA methylation clocks constructed in humans have been constructed using the Illumina bead chip array based DNA methylation assays.
+The coverage of these assays is strongly focused on promoters {[}\protect\hyperlink{ref-Bibikova2009}{107}{]}, CpG islands {[}\protect\hyperlink{ref-Bibikova2011}{114}{]}, and more recently enhancers {[}\protect\hyperlink{ref-Moran2015}{154}{]}.
+However, array coverage of repetitive elements is lacking due in part to the technical challenges of accurate mapping in these spaces {[}\protect\hyperlink{ref-Bell2019}{150}{]}.
 Thus, much of the genomic hypomethylation goes uncovered by the assays most commonly used to construct human epigenetic clocks.
 
-===
+In this study elastic net regression models were used to construct age predictors comprised of the DNA methylation state of Alu elements.
+DNA methylation data at Alu elemetns was drawn from a large (\textgreater3,000) immunoprecipitation-derived sequencing-based dataset (MeDIP-seq) from peripheral blood DNA.
+Alu-specific DNA methylation ageing clocks were constructed and compared to other clocks' measures. The best performing Alu age predictor had a Pearson correlation coefficient of 0.65 and a median absolute error of 8.1 years.
 
-In this study we set about to identify and explore age-related DNA methylation changes in Alu elements in a large (\textgreater3,000) immunoprecipitation-derived sequencing-based dataset (MeDIP-seq) from peripheral blood DNA.
+\newpage
 
-We constructed an Alu-specific DNA methylation ageing clock and compared how this contrasted with other clocks' measures. We also investigated genetic influences on age- acceleration measures from this Alu-clock via GWAS, as has been with shown previously with an association in the TERT gene with the Horvath clock {[}\protect\hyperlink{ref-Lu2017}{370}{]}, {[}\protect\hyperlink{ref-Gibson2019}{371}{]}.
+\hypertarget{methods-2}{%
+\section{Methods}\label{methods-2}}
 
-These results may reveal mechanisms involved in controlling the epigenetic state of this large portion of the genome.
-
-Finally, we interrogated these genetic associations for any potential connection with common age-related diseases through PheWAS in the UKBiobank dataset {[}\protect\hyperlink{ref-Bycroft2017}{372}{]}.
-
-\hypertarget{methods}{%
-\section{Methods}\label{methods}}
-
-\hypertarget{dna-methylome-data}{%
-\subsection{DNA methylome data}\label{dna-methylome-data}}
+\hypertarget{dna-methylome-data-1}{%
+\subsection{DNA methylome data}\label{dna-methylome-data-1}}
 
 The Methylated DNA Immunoprecipitation sequencing (MeDIP-seq) data was processed as previously described {[}\protect\hyperlink{ref-Bell2017a}{67},\protect\hyperlink{ref-Bell2016}{151}{]} and detailed in \protect\hyperlink{MeDIPseq}{Methods} \ref{MeDIPseq}.
 These processed data are available from the European Genome-phenome Archive (EGA) (\url{https://www.ebi.ac.uk/ega}) under study number EGAS00001001910 and dataset EGAD00010000983 and were generated by BGI Shenzen for TwinsUK.
@@ -3465,27 +3463,27 @@ This produced reads per million base pairs (RPM) values binned into 500bp window
 \hypertarget{alu-element-annotation-and-pre-filtering}{%
 \subsection{Alu element annotation and pre-filtering}\label{alu-element-annotation-and-pre-filtering}}
 
-Alu element annotations were taken from Repeat Masker {[}\protect\hyperlink{ref-Smit2009}{373}{]}, only Alus on the autosomes were considered.
+Alu element annotations were taken from Repeat Masker {[}\protect\hyperlink{ref-Smit2009}{370}{]}, only Alus on the autosomes were considered.
 2,758,588 500bp windows with a 250bp slide overlapped the 1,137,653 Alu elements annotated.
 
 Technically problematic and genetically confounded Alu element loci were removed.
-Alu elements located in (blacklisted){[}\url{https://github.com/Boyle-Lab/Blacklist/raw/master/lists/hg19-blacklist.v2.bed.gz}{]} 834 regions of the hg19 genome, as identified by Amemiya et al.~{[}\protect\hyperlink{ref-Amemiya2019}{295}{]} were excluded as candidate loci when constructing DNAm clocks.
-\sout{(Remaining Alu windows 2,710,245 over 1,117,715 elements)}
-Alu elements overlapping (known structural variants){[}\url{ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/phase3/integrated_sv_map/ALL.wgs.mergedSV.v8.20130502.svs.genotypes.vcf.gz}{]} identified by the 1000 genomes project {[}\protect\hyperlink{ref-Fairley2020}{374}{]} were excluded as candidate clock loci.
+Alu elements located in \href{https://github.com/Boyle-Lab/Blacklist/raw/master/lists/hg19-blacklist.v2.bed.gz}{blacklisted} 834 regions of the hg19 genome, as identified by Amemiya et al.~{[}\protect\hyperlink{ref-Amemiya2019}{294}{]} were excluded as candidate loci when constructing DNAm clocks.
+Alu elements overlapping \href{ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/phase3/integrated_sv_map/ALL.wgs.mergedSV.v8.20130502.svs.genotypes.vcf.gz}{known structural variants} identified by the 1000 genomes project {[}\protect\hyperlink{ref-Payer2017}{368},\protect\hyperlink{ref-Fairley2020}{371}{]} were excluded as candidate clock loci.
 Genetic variants which impact on the rate of biological ageing could confound DNA methylation ageing signal.
-
-Haplotype specific methylation peaks, in which a common disease associated genetic variant is predictive of DNA methylation state, were also excluded from the clock; Bell et al.~identified 7,173 such regions {[}\protect\hyperlink{ref-Bell2017a}{67}{]}. \sout{leaving 2,656,388 alu windows}
-
-To exclude loci with low coverage which are likely to be uninformative and noisey a zero filter was used.
+Haplotype specific methylation peaks, in which a common disease associated genetic variant is predictive of DNA methylation state, were also excluded from the clock; Bell et al.~identified 7,173 such regions {[}\protect\hyperlink{ref-Bell2017a}{67}{]}.
+To exclude loci with low coverage which are likely to be uninformative and noisy a zero filter was used.
 In quantile normalised data loci in which 0.1\% or more of samples have an RPM value of 0 are excluded.
 
-\href{https://privefl.github.io/bigstatsr/}{\texttt{Bigstatsr}} was used to fit penalised regression models {[}\protect\hyperlink{ref-Prive2019}{375}{]}.
-Elastic net regression with an \(\alpha\) = 0.5 and cross-model selection and averaging (CMSA) was used.
+\hypertarget{elastic-net-regression}{%
+\subsection{Elastic net regression}\label{elastic-net-regression}}
+
+\href{https://privefl.github.io/bigstatsr/}{\texttt{Bigstatsr}} was used to fit penalised regression models {[}\protect\hyperlink{ref-Prive2019}{372}{]}.
+Elastic net regression with an \(\alpha\) = 0.5, and cross-model selection and averaging (CMSA) with 10 fold cross-validation was used.
 This procedure obviates the necessity of selecting a \(\lambda\) regularisation hyperparameter.
-CMSA generates model coefficient by averaging across coefficients generated by cross validation {[}\protect\hyperlink{ref-Friedman2010}{120},\protect\hyperlink{ref-Prive2019}{375},\protect\hyperlink{ref-Tibshirani2012}{376}{]}.
+CMSA generates model coefficient by averaging across coefficients generated by cross-validation {[}\protect\hyperlink{ref-Friedman2010}{120},\protect\hyperlink{ref-Prive2019}{372},\protect\hyperlink{ref-Tibshirani2012}{373}{]}.
 
 \hypertarget{sample-selection}{%
-\subsection{Sample selection}\label{sample-selection}}
+\subsection{Sample Selection}\label{sample-selection}}
 
 Two training and two replication sets were created from the twin data so as to permit the training and replication sets to be unrelated.
 The training sets, which were permitted to contain singletons, contained 1548 individuals and the replication sets contained the 1308 individuals who where twins of those in the replication sets.
@@ -3494,7 +3492,7 @@ Giving a total of 2856 individuals in all sets.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.7\linewidth]{./figs/twin_split} 
+{\centering \includegraphics[width=1\linewidth]{./figs/twin_split} 
 
 }
 
@@ -3516,50 +3514,78 @@ The age distribution of these training and replication sets are highly similar (
 
 
 
+All sets are comprised of \textasciitilde2/3 Monozygotic (MZ) twins and \textasciitilde1/3 Dizygotic (DZ) twins, exact numbers are detailed in (Figure \ref{fig:mzdzsplitplot}).
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{./figs/mzdzsplitplot} 
+
+}
+
+\caption{\textbf{Zygosity Make-up of sets} Replication 1 (n = 664, 225 DZ, 439 MZ); Replication 2 (n = 644, 204 DZ, 440 MZ), Training 1 (n = 774, 256 DZ, 518 MZ); Training 2 (n = 774, 269 DZ, 505 MZ).}\label{fig:mzdzsplitplot}
+\end{figure}
+
+
+
+\hypertarget{binarisation}{%
+\subsection{Binarisation}\label{binarisation}}
+
+Binarisation of DNA methylation data was achieved by a simple procedure: assigning windows in a given sample a DNA methylation value of 1 if their DNA methylation value was greater than the median RPM value for this window across samples and a 0 if it was less.
+
+Binarisation of gene expression data yielded increased predictive accuracy in gene expression based ageing clocks {[}\protect\hyperlink{ref-Meyer2020}{374}{]}.
+The reasoning behind this approach is that the quantitation of changes in gene expression is noisy and binarising the data may reduce the noise whilst retaining the information important for age prediction.
+
+\hypertarget{AluMethodsArrays}{%
+\subsection{Comparisons to other clocks in TwinsUK Illumina 450k array data}\label{AluMethodsArrays}}
+
+Illumina Infinium DNA methylation 450k arrays ((C) Illumina) were also performed on TwinsUK participants (\protect\hyperlink{GenMethodsMethArray}{Methods} \ref{GenMethodsMethArray}).
+574 Blood-derived DNA samples had matched MeDIP-seq data not used in the training or replication sets in the Alu clock analysis.
+These data were available for this analysis in a pre-processed form, Methylation `beta' values subject to beta-mixture quantile normalisation (BMIQ) as previously described {[}\protect\hyperlink{ref-Bell2017a}{67},\protect\hyperlink{ref-Bell2016}{151}{]}.
+
+DNA methylation ages were computed for the Horvath {[}\protect\hyperlink{ref-Horvath2013}{119}{]}, Hannum et al.~{[}\protect\hyperlink{ref-Hannum2013}{118}{]} and Levine et al.~`PhenoAge' {[}\protect\hyperlink{ref-Levine2018}{138}{]} clocks, using the coefficients, intercept values and transformations specified the original publications, and a model of the form:
+\(DNAmAge = a\beta_{probe\ 1} ... b\beta_{probe\ n} + intercept\)
+Where \emph{a}, \emph{b} and \emph{intercept} are model parameters provided by the authors of the respective DNAm age predictors.
+In the absence of an intercept value 0 was used, in the case of the Hannum clock.
+Age acceleration values were computed as the predicted age minus the chronological age.
+
 \hypertarget{genetic-association-for-alu-clock}{%
 \subsection{Genetic Association for Alu-Clock}\label{genetic-association-for-alu-clock}}
 
-\hypertarget{comparison-with-array-derived-clocks}{%
-\subsection{Comparison with Array-derived Clocks}\label{comparison-with-array-derived-clocks}}
+\newpage
 
-\hypertarget{association-of-these-variants-with-age-related-disease}{%
-\subsection{Association of these variants with Age-related Disease}\label{association-of-these-variants-with-age-related-disease}}
-
-\hypertarget{results}{%
-\chapter{Results}\label{results}}
-
-\hypertarget{simple-clock-model}{%
-\section{Simple Clock Model}\label{simple-clock-model}}
+\hypertarget{results-1}{%
+\section{Results}\label{results-1}}
 
 A variety of different initial filtering criteria were applied to the Alu elements included in the models, as well as a number of data transformations.
-Binarisation of gene expression data yielded increased predictive accuracy in gene expression based ageing clocks {[}\protect\hyperlink{ref-Meyer2020}{377}{]}.
-The reasoning behind this approach is that the quantitation of changes in gene expression is noisy and binarising the data may reduce the noise whilst retaining the information important for age prediction.
+Pre-filtering steps were performed partially for quality control and partially to see if subsets of the Alu space with biologically interesting differences could yield clocks of equivalent accuracy but which might capture different aspects of biological ageing related to repeat de-repression.
 
-Binarisation of DNA methylation data was achieved by a simple procedure: assigning windows in a given sample a DNA methylation value of 1 if their DNA methylation value was greater than the median for this window across samples and a 0 if it was less.
+Preliminary analysis were carried out using RPM values, Quantile normalised RPM values, Absolute methylation value estimates from \texttt{MEDIPS} and Binarised DNA methylation data.
+Quantile normalised RPM values yielded the best and most consistent results and were used in subsequent analyses.
 
-Whilst Human epigenetic age is logarithmic with time across the lifespan the effects of this are more relevant at younger ages {[}\protect\hyperlink{ref-Snir2019}{378}{]}.
-We fitted Alu Clock models on the natural logarithm of age in years this did not improve the quality of predicted to actual age values, likely due to the older age distribution of our data.
+Whilst Human epigenetic age is logarithmic with time across the lifespan the effects of this are more relevant at younger ages {[}\protect\hyperlink{ref-Snir2019}{375}{]}.
+We fitted Alu Clock models on the natural logarithm of age in years this did not improve the quality of predicted to actual age values, likely due in part to the older age distribution of our data.
 
 An Alu element length filter of at least 180bp or approximately two-thirds the length of a full length Alu element (\textasciitilde280bp) was imposed.
-This minimises the number of potentially misaligned reads which, in this context, could lead to reduced accuracy of Alu DNA methylation estimates {[}\protect\hyperlink{ref-Hellen2013}{379}{]}.
+This minimises the number of reads with the potential to misalign to other Alu elements, reads which, in this context, could lead to reduced accuracy of positionally specific Alu DNA methylation estimates {[}\protect\hyperlink{ref-Hellen2013}{376}{]}.
 
-CpG density filters were employed to prioritise regions likely to have dynamic and functionally interesting differences in DNA methylation. Filters were used for CpG densities above the genomic background of 2\%, as well as for \textgreater5\% the approximate threshold for CpG island shores and low methylation regions {[}\protect\hyperlink{ref-Irizarry2009}{43},\protect\hyperlink{ref-Stadler2011}{50}{]}.
+CpG density filters were employed to prioritise regions likely to have dynamic and functionally interesting differences in DNA methylation.
+Filters were used for CpG densities above the genomic background of 2\%, as well as for \textgreater5\% the approximate threshold for CpG island shores and low methylation regions {[}\protect\hyperlink{ref-Irizarry2009}{43},\protect\hyperlink{ref-Stadler2011}{50}{]}.
 
 To limit the selection of predictive sites to those likely to have consistent directions of change across samples a clock was constructed with only windows which show nominally significant changes in both members of an MZ twin pair in a consistent direction.
 Linear models to predict age based on DNA methylation were fitted for 687 pairs of monozygotic (MZ) twins.
 Batch information and blood cell counts (eosinophils, lymphocytes, monocytes, neutrophils) were included as covariates.
 
-To produce a model that specifically capture age as a function of the de-repression of Alu elements clocks were also constructed with only windows which exhibited nominally significant (p \textless{} 0.05) decreases in DNAm in both MZ twins.
+To produce a model that specifically captures age as a function of the de-repression of Alu elements clocks were also constructed with only windows which exhibited nominally significant (p \textless{} 0.05) decreases in DNAm in both MZ twins.
 This filtering was based on the model used in selecting windows with a consistent direction of change.
 
-AluY
+An age predictor was also constructed using only AluY elements.
+AluY is the youngest (Figure \ref{fig:AluAge}), and most CpG dense \ref{fig:AlusWindowsCpGdLVplot} family of Alu elements.
+Having a CpG density closer to that of typically de-repressed functional elements may make such elements more readily susceptible to stable de-repression.
+In addition the host genome has had less time to adapt to the presence of these elements so their de-repression may be more disruptive than older elements.
 
-\hypertarget{results-1}{%
-\section{Results}\label{results-1}}
-
-Age-related DNA methylation changes in Alu Elements
-
-Study Design - Figure 1
+Figure \ref{fig:modelSummaryTabsMain} summarises the details of Alu clocks trained with these various pre-filtering criteria applied to their starting sets.
+The correlation with the predicted age and the chronological age of samples unrelated to the individuals on which the clock was trained indicate model quality (Figure \ref{fig:corplotsPanelSplit} a).
+The Quality of the Alu clock predictions is quite poor in comparison to other DNA methylation clocks with the highest R of 0.65 and a median absolute error of 8.1 years, compared to 0.96 and 3.6 years for Horvath's multi-tissue clock {[}\protect\hyperlink{ref-Horvath2013}{119}{]}.
 
 \begin{figure}
 
@@ -3567,129 +3593,128 @@ Study Design - Figure 1
 
 }
 
-\caption{\textbf{Alu Clock Model Summaries} \textcolor[HTML]{e41a1c}{AluY}, \textcolor[HTML]{377eb8}{AluS}, \textcolor[HTML]{4daf4a}{AluJ}, \textcolor[HTML]{984ea3}{FAM}, \textcolor[HTML]{ff7f00}{FLAM}, \textcolor[HTML]{ffff33}{FRAM}}\label{fig:modelSummaryTabsMain}
+\caption{\textbf{Alu Clock Model Summaries} \emph{A)} Models fitted with Training 1 set predicting Replication 1 ages. \emph{B)} Models fitted with Training 2 set predicting Replication 2 ages. Alu Type Composition Colour code: \textcolor[HTML]{e41a1c}{AluY}, \textcolor[HTML]{377eb8}{AluS}, \textcolor[HTML]{4daf4a}{AluJ}, \textcolor[HTML]{984ea3}{FAM}, \textcolor[HTML]{ff7f00}{FLAM}, \textcolor[HTML]{ffff33}{FRAM}. R is Pearson's correlation coefficient. RMSE = root mean squared Error, MAE = median absolute error. `+' signifies this filter is in addition to element length \textgreater180bp and 99.9\% non-zero RPM values at this locus.}\label{fig:modelSummaryTabsMain}
 \end{figure}
 
 
 
-\begin{itemize}
-\tightlist
-\item
-  This sequencing-based dataset -- MeDIP-seq fragments 200-500bp -- size Alu elements 300bp
-\item
-  Remove strongly genetically driven loci
+Figure \ref{fig:modelSummaryTabsCtrl} shows the model summaries when correlations are computed for for the related sets comprised of the twins of individuals in the training set.
+The correlations are mostly slightly higher for this prediction than for the prediction of unrelated individuals (Figure \ref{fig:corplotsPanelSplit} b).
+This suggests that there are not large genetic effects on the models as their predictive efficacy is only marginally better when employed to predict the age of individuals closely related to the training set compared to unrelated individuals.
 
-  \begin{itemize}
-  \tightlist
-  \item
-    Removed known polymorphic Alu in the human population {[}\protect\hyperlink{ref-Payer2017}{368}{]}
-  \item
-    ?Adapted Gap Hunting algorithm (see Methods)
-  \end{itemize}
-\item
-  Genome-wide significant/ Study-wide Significant windows
-\item
-  ?Validated Alu methylation with target BiS-seq
-\item
-  Enrichment Analysis - GREAT {[}\protect\hyperlink{ref-McLean2010}{380}{]}
-\item
-  ?Association with GWAS disease loci
-\end{itemize}
+\begin{figure}
 
-\hypertarget{alu-element-specific-dna-methylation-clock}{%
-\subsection{Alu-element specific DNA methylation Clock}\label{alu-element-specific-dna-methylation-clock}}
+{\centering \includegraphics[width=1\linewidth]{./figs/model_summary_tabs_ctrl} 
 
-\begin{itemize}
-\tightlist
-\item
-  Elastic net regression with R package glmnet {[}\protect\hyperlink{ref-Friedman2010}{120}{]}, {[}\protect\hyperlink{ref-Engebretsen2019}{381}{]}
-\end{itemize}
+}
 
-\hypertarget{comparison-of-alu-clock-with-array-derived-dna-methylation-clocks}{%
-\subsection{Comparison of Alu-Clock with Array-derived DNA methylation Clocks}\label{comparison-of-alu-clock-with-array-derived-dna-methylation-clocks}}
+\caption{\textbf{Summaries of Alu Clock Models Predicting Twin Groups} for the purpose of comparing predictive of age models in related and unrelated samples. \emph{A)} Models fitted with Training 1 set predicting Replication 2 ages. \emph{B)} Models fitted with Training 2 set predicting Replication 1 ages. Alu Type Composition Colour code: \textcolor[HTML]{e41a1c}{AluY}, \textcolor[HTML]{377eb8}{AluS}, \textcolor[HTML]{4daf4a}{AluJ}, \textcolor[HTML]{984ea3}{FAM}, \textcolor[HTML]{ff7f00}{FLAM}, \textcolor[HTML]{ffff33}{FRAM}. R is Pearson's correlation coefficient. RMSE = root mean squared Error, MAE = median absolute error. `+' signifies this filter is in addition to element length \textgreater180bp and 99.9\% non-zero RPM values at this locus.}\label{fig:modelSummaryTabsCtrl}
+\end{figure}
 
-\begin{itemize}
-\tightlist
-\item
-  Compared with
 
-  \begin{itemize}
-  \tightlist
-  \item
-    Horvath {[}\protect\hyperlink{ref-Horvath2013}{119}{]} ,
-  \item
-    Hannum et al.~{[}\protect\hyperlink{ref-Hannum2013}{118}{]}
-  \item
-    PhenoAge {[}\protect\hyperlink{ref-Levine2018}{138}{]}
-  \item
-    GrimAge {[}\protect\hyperlink{ref-Lu2019}{139}{]}
-  \item
-    EpiTOC {[}\protect\hyperlink{ref-Yang2016}{310}{]}
-  \item
-    ?Remethylation Window {[}\protect\hyperlink{ref-Zhou2018}{382}{]}
-  \end{itemize}
-\end{itemize}
 
-\hypertarget{genetic-association-for-alu-clock-calculated-age-acceleration}{%
-\subsection{Genetic Association for Alu-Clock calculated Age Acceleration}\label{genetic-association-for-alu-clock-calculated-age-acceleration}}
+\begin{figure}
 
-\begin{itemize}
-\tightlist
-\item
-  We performed a GWAS on Age-acceleration similar to Lu et al.~42 calculated in a separate dataset used to construct the Alu-clock
-\item
-  Genome-wide significant \& nominally significant results
-\end{itemize}
+{\centering \includegraphics[width=1\linewidth]{./figs/corplots_panel_split} 
 
-\hypertarget{disease-association-with-these-variants-enrichment-for-age-related-diseases}{%
-\subsection{Disease Association with these Variants / Enrichment for Age-Related Diseases}\label{disease-association-with-these-variants-enrichment-for-age-related-diseases}}
+}
 
-\begin{itemize}
-\tightlist
-\item
-  Ageing and genetics shared risk {[}\protect\hyperlink{ref-Zenin2019}{383}{]}
-\item
-  \url{https://www.eurekalert.org/pub_releases/2019-01/g-aac012919.php}
-\item
-  GWAS results from UKBioBank
-\item
-  \url{http://www.nealelab.is/uk-biobank}
-\item
-  Explore via PheWAS of these Alu-related variants
+\caption{\textbf{Correlation of Predicted with Chronological Age Across Models} MAE = median absolute error. Orange = High \(R^2\), purple = low \(R^2\). `+' signifies this filter is in addition to element length \textgreater180bp and 99.9\% non-zero RPM values at this locus.}\label{fig:corplotsPanelSplit}
+\end{figure}
 
-  \begin{itemize}
-  \tightlist
-  \item
-    Phewascatelog.org
-  \item
-    Denny et al Nat Biotech 2013 {[}\protect\hyperlink{ref-Denny2014}{384}{]}
-  \item
-    Bush NRG {[}\protect\hyperlink{ref-Bush2016}{385}{]}
-  \item
-    Wei et al.~Circulation 2018 {[}\protect\hyperlink{ref-Wei2018}{386}{]}
-  \item
-    Other papers (Zhao et al.~Plos One 2019; We et al.~BioRxiv 462077; Nielsen et al Nat Gen 2018; Giri et al.~Nat Gen 2019; Bastarache et al Science (2018))
-  \item
-    \url{http://pheweb.sph.umich.edu/}
-  \end{itemize}
-\item
-  Enrichment of nominal significant results with Age-related disease cf.~Random
-\end{itemize}
+
+
+\hypertarget{comparison-to-other-dna-methylation-clocks}{%
+\section{Comparison to other DNA methylation clocks}\label{comparison-to-other-dna-methylation-clocks}}
+
+To compare the Alu clock results with those of other DNA methylation age clocks DNAm age was predicted for the: Horvath {[}\protect\hyperlink{ref-Horvath2013}{119}{]}, Hannum et al.~{[}\protect\hyperlink{ref-Hannum2013}{118}{]} and Levine et al.~`PhenoAge' {[}\protect\hyperlink{ref-Levine2018}{138}{]} clocks (\protect\hyperlink{AluMethodsArrays}{Methods} \ref{AluMethodsArrays}) using samples for which both DNA methylation array data and MeDIP-seq data was available (n = 574).
+The array based clocks all perform similarly with R values in excess of 0.8, the Alu clock only attains an R of 0.46, though with a narrower error than PhenoAge.
+This however, is not entirely surprising given that PhenoAge aims to capture ageing phenotypes and not narrowly chronological age.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{./figs/age_vs_pred_age} 
+
+}
+
+\caption{\textbf{Correlation of Alu Age Acceleration with Chronological Age Across Models} MAE = median absolute error. Orange = High \(R^2\), purple = low \(R^2\). Alu Clock here refers to the unfiltered model trained on the Training 1 set.}\label{fig:ageVsPredage}
+\end{figure}
+
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{./figs/alu_clock_age_vs_pred_age_single} 
+
+}
+
+\caption{\textbf{Correlation of Alu Age Acceleration with Chronological Age Across Models} MAE = median absolute error. Orange = High \(R^2\), purple = low \(R^2\). Alu Clock here refers to the unfiltered model trained on the Training 1 set.}\label{fig:aluclockageVsPredageSingle}
+\end{figure}
+
+
+
+\hypertarget{alu-age-acceleration}{%
+\subsection{Alu Age Acceleration}\label{alu-age-acceleration}}
+
+The age acceleration values (Chronological - Predicted Age) for the Alu clocks are strongly correlated with chronological age (Figure \ref{fig:accelCorplotsPanelSplit}), unlike the age acceleration of the Horvath DNA methylation clock and others (Figure \ref{fig:ageVsAgeAccelAluVsOther}).
+The older the in individual and more prone their age is to be overestimated and vice versa.
+This means that Alu clock age acceleration values cannot be used independently of chronological age to make statements about biological age.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{./figs/accel_corplots_panel_split} 
+
+}
+
+\caption{\textbf{Correlation of Alu Age Acceleration with Chronological Age Across Models} MAE = median absolute error. Orange = High \(R^2\), purple = low \(R^2\). `+' signifies this filter is in addition to element length \textgreater180bp and 99.9\% non-zero RPM values at this locus.}\label{fig:accelCorplotsPanelSplit}
+\end{figure}
+
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{./figs/age_vs_age_accel_alu_vs_other} 
+
+}
+
+\caption{\textbf{Correlation of Age Acceleration with Chronological Age Across Models} MAE = median absolute error. Orange = High \(R^2\), purple = low \(R^2\). Alu Clock here refers to the unfiltered model trained on the Training 1 set. `+' signifies this filter is in addition to element length \textgreater180bp and 99.9\% non-zero RPM values at this locus.}\label{fig:ageVsAgeAccelAluVsOther}
+\end{figure}
+
+
+
+Age acceleration in the Alu clocks is not strongly correlated with age acceleration in the Horvath, Hannun or PhenoAge clocks.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{./figs/alu_clock_accel_vs_others} 
+
+}
+
+\caption{\textbf{Correlation of Alu Age Accelerations with Age Acceleration from Other Models} MAE = median absolute error. Orange = High \(R^2\), purple = low \(R^2\). Alu Clock here refers to the unfiltered model trained on the Training 1 set. `+' signifies this filter is in addition to element length \textgreater180bp and 99.9\% non-zero RPM values at this locus.}\label{fig:aluClockAccelVsOthers}
+\end{figure}
+
+
 
 \newpage
 
-\hypertarget{discussion}{%
-\section{Discussion}\label{discussion}}
+\hypertarget{discussion-1}{%
+\section{Discussion}\label{discussion-1}}
 
-\newpage
+The criteria for being called an epigenetic clock layed out by Horvath \& Raj {[}\protect\hyperlink{ref-Horvath2018}{149}{]} are that an r \textgreater{} 0.8 should be achieved by the clock.
+By this metric the Alu age predictors generated here should not be considered epigenetic clocks.
 
-To identify strongly genetically we ?utilised the Gap Hunting algorithm of Andrews et al.~{[}\protect\hyperlink{ref-Andrews2016}{166}{]} adapted
-We excluded all known
-Excluded polymorphic Alus {[}\protect\hyperlink{ref-Payer2017}{368}{]}
-?Exclude any methylation overlapping STRs
+The age acceleration of the Alu age predictors in strongly correlate with age.
+This may be due the the relatively poor ability of MeDIP-seq to provide absolute quantitation of DNA methylation.
+There is substantial technical noise in the value representing DNA methylation at a given locus.
+The observed systematic bais towards underestimating the ages of the young and overesimating the ages of the old may be explained by a broadly consistent direction with an inconsistent magnitude.
+Simply scaling the value of given locus by a fixed model coefficient when there is a large amount of variation leads to outsized of high magnitude outliers on the age estimates.
 
-\hypertarget{discussion}{%
-\chapter{Discussion}\label{discussion}}
+It was an aim of this work to investigate the genetic influences on the Alu clock based measures of age-acceleration, as has been with shown previously with an association in the TERT gene with the Horvath clock {[}\protect\hyperlink{ref-Lu2017}{377}{]}, {[}\protect\hyperlink{ref-Gibson2019}{378}{]}.
+These results had the potential to reveal mechanisms involved in controlling the epigenetic state of this large portion of the genome.
+However the strong relationship with Age acceleration and Chronological age in the Alu clock measures of age acceleration renders this difficult as age would be a potent confounder of age acceleration in this instance.
+
+\hypertarget{discussion-2}{%
+\chapter{Discussion}\label{discussion-2}}
 
 \ldots{}
 
@@ -4577,65 +4602,65 @@ Excluded polymorphic Alus {[}\protect\hyperlink{ref-Payer2017}{368}{]}
 \leavevmode\hypertarget{ref-Syddall2005}{}%
 293. Syddall H, Aihie Sayer A, Dennison E, Martin H, Barker D, Cooper C: \textbf{Cohort Profile: The Hertfordshire Cohort Study}. \emph{International Journal of Epidemiology} 2005, \textbf{34}:1234--1242\href{https://doi.org/10.1093/ije/dyi127}{10.1093/ije/dyi127}Available: \url{http://academic.oup.com/ije/article/34/6/1234/707357/Cohort-Profile-The-Hertfordshire-Cohort-Study}.
 
-\leavevmode\hypertarget{ref-Lowe2016}{}%
-294. Lowe TM, Chan PP: \textbf{tRNAscan-SE On-line: integrating search and context for analysis of transfer RNA genes}. \emph{Nucleic Acids Research} 2016, \textbf{44}:W54--W57\href{https://doi.org/10.1093/nar/gkw413}{10.1093/nar/gkw413}Available: \url{https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/gkw413}.
-
 \leavevmode\hypertarget{ref-Amemiya2019}{}%
-295. Amemiya HM, Kundaje A, Boyle AP: \textbf{The ENCODE Blacklist: Identification of Problematic Regions of the Genome}. \emph{Scientific Reports} 2019, \textbf{9}:9354\href{https://doi.org/10.1038/s41598-019-45839-z}{10.1038/s41598-019-45839-z}Available: \url{http://www.nature.com/articles/s41598-019-45839-z}.
+294. Amemiya HM, Kundaje A, Boyle AP: \textbf{The ENCODE Blacklist: Identification of Problematic Regions of the Genome}. \emph{Scientific Reports} 2019, \textbf{9}:9354\href{https://doi.org/10.1038/s41598-019-45839-z}{10.1038/s41598-019-45839-z}Available: \url{http://www.nature.com/articles/s41598-019-45839-z}.
 
 \leavevmode\hypertarget{ref-Derrien2012}{}%
-296. Derrien T, Estellé J, Marco Sola S, Knowles DG, Raineri E, Guigó R, Ribeca P: \textbf{Fast Computation and Applications of Genome Mappability}. \emph{PLoS ONE} 2012, \textbf{7}:e30377\href{https://doi.org/10.1371/journal.pone.0030377}{10.1371/journal.pone.0030377}Available: \url{https://dx.plos.org/10.1371/journal.pone.0030377}.
+295. Derrien T, Estellé J, Marco Sola S, Knowles DG, Raineri E, Guigó R, Ribeca P: \textbf{Fast Computation and Applications of Genome Mappability}. \emph{PLoS ONE} 2012, \textbf{7}:e30377\href{https://doi.org/10.1371/journal.pone.0030377}{10.1371/journal.pone.0030377}Available: \url{https://dx.plos.org/10.1371/journal.pone.0030377}.
 
 \leavevmode\hypertarget{ref-Ernst2011}{}%
-297. Ernst J, Kheradpour P, Mikkelsen TS, Shoresh N, Ward LD, Epstein CB, Zhang X, Wang L, Issner R, Coyne M, Ku M, Durham T, Kellis M, Bernstein BE: \textbf{Mapping and analysis of chromatin state dynamics in nine human cell types}. \emph{Nature} 2011, \textbf{473}:43--49\href{https://doi.org/10.1038/nature09906}{10.1038/nature09906}Available: \url{http://www.nature.com/articles/nature09906}.
+296. Ernst J, Kheradpour P, Mikkelsen TS, Shoresh N, Ward LD, Epstein CB, Zhang X, Wang L, Issner R, Coyne M, Ku M, Durham T, Kellis M, Bernstein BE: \textbf{Mapping and analysis of chromatin state dynamics in nine human cell types}. \emph{Nature} 2011, \textbf{473}:43--49\href{https://doi.org/10.1038/nature09906}{10.1038/nature09906}Available: \url{http://www.nature.com/articles/nature09906}.
 
 \leavevmode\hypertarget{ref-Bell2012a}{}%
-298. Bell CG, Wilson GA, Butcher LM, Roos C, Walter L, Beck S: \textbf{Human-specific CpG "beacons" identify loci associated with human-specific traits and disease.} \emph{Epigenetics} 2012, \textbf{7}:1188--99\href{https://doi.org/10.4161/epi.22127}{10.4161/epi.22127}Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/22968434}.
+297. Bell CG, Wilson GA, Butcher LM, Roos C, Walter L, Beck S: \textbf{Human-specific CpG "beacons" identify loci associated with human-specific traits and disease.} \emph{Epigenetics} 2012, \textbf{7}:1188--99\href{https://doi.org/10.4161/epi.22127}{10.4161/epi.22127}Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/22968434}.
 
 \leavevmode\hypertarget{ref-North2003}{}%
-299. North BV, Curtis D, Sham PC: \textbf{A Note on the Calculation of Empirical P Values from Monte Carlo Procedures}. \emph{The American Journal of Human Genetics} 2003, \textbf{72}:498--499\href{https://doi.org/10.1086/346173}{10.1086/346173}Available: \url{https://linkinghub.elsevier.com/retrieve/pii/S0002929707605618}.
+298. North BV, Curtis D, Sham PC: \textbf{A Note on the Calculation of Empirical P Values from Monte Carlo Procedures}. \emph{The American Journal of Human Genetics} 2003, \textbf{72}:498--499\href{https://doi.org/10.1086/346173}{10.1086/346173}Available: \url{https://linkinghub.elsevier.com/retrieve/pii/S0002929707605618}.
 
 \leavevmode\hypertarget{ref-Ewels2016}{}%
-300. Ewels P, Magnusson M, Lundin S, Käller M: \textbf{MultiQC: summarize analysis results for multiple tools and samples in a single report.} \emph{Bioinformatics (Oxford, England)} 2016, \textbf{32}:3047--8\href{https://doi.org/10.1093/bioinformatics/btw354}{10.1093/bioinformatics/btw354}Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/27312411}.
+299. Ewels P, Magnusson M, Lundin S, Käller M: \textbf{MultiQC: summarize analysis results for multiple tools and samples in a single report.} \emph{Bioinformatics (Oxford, England)} 2016, \textbf{32}:3047--8\href{https://doi.org/10.1093/bioinformatics/btw354}{10.1093/bioinformatics/btw354}Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/27312411}.
 
 \leavevmode\hypertarget{ref-Krueger2015}{}%
-301. Krueger F: \textbf{Trim Galore}. 2015, Available: \url{https://www.bioinformatics.babraham.ac.uk/projects/trim\%7B/_\%7Dgalore/}.
+300. Krueger F: \textbf{Trim Galore}. 2015, Available: \url{https://www.bioinformatics.babraham.ac.uk/projects/trim\%7B/_\%7Dgalore/}.
 
 \leavevmode\hypertarget{ref-Martin2011}{}%
-302. Martin M: \textbf{Cutadapt removes adapter sequences from high-throughput sequencing reads}. \emph{EMBnet.journal} 2011, \textbf{17}:10\href{https://doi.org/10.14806/ej.17.1.200}{10.14806/ej.17.1.200}Available: \url{http://journal.embnet.org/index.php/embnetjournal/article/view/200}.
+301. Martin M: \textbf{Cutadapt removes adapter sequences from high-throughput sequencing reads}. \emph{EMBnet.journal} 2011, \textbf{17}:10\href{https://doi.org/10.14806/ej.17.1.200}{10.14806/ej.17.1.200}Available: \url{http://journal.embnet.org/index.php/embnetjournal/article/view/200}.
 
 \leavevmode\hypertarget{ref-Langmead2012}{}%
-303. Langmead B, Salzberg SL: \textbf{Fast gapped-read alignment with Bowtie 2}. \emph{Nature Methods} 2012, \textbf{9}:357--359\href{https://doi.org/10.1038/nmeth.1923}{10.1038/nmeth.1923}Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/22388286}.
+302. Langmead B, Salzberg SL: \textbf{Fast gapped-read alignment with Bowtie 2}. \emph{Nature Methods} 2012, \textbf{9}:357--359\href{https://doi.org/10.1038/nmeth.1923}{10.1038/nmeth.1923}Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/22388286}.
 
 \leavevmode\hypertarget{ref-Muller2019}{}%
-304. Müller F, Scherer M, Assenov Y, Lutsik P, Walter J, Lengauer T, Bock C: \textbf{RnBeads 2.0: comprehensive analysis of DNA methylation data}. \emph{Genome Biology} 2019, \textbf{20}:55\href{https://doi.org/10.1186/s13059-019-1664-9}{10.1186/s13059-019-1664-9}Available: \url{https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1664-9}.
+303. Müller F, Scherer M, Assenov Y, Lutsik P, Walter J, Lengauer T, Bock C: \textbf{RnBeads 2.0: comprehensive analysis of DNA methylation data}. \emph{Genome Biology} 2019, \textbf{20}:55\href{https://doi.org/10.1186/s13059-019-1664-9}{10.1186/s13059-019-1664-9}Available: \url{https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1664-9}.
 
 \leavevmode\hypertarget{ref-Ritchie2015}{}%
-305. Ritchie ME, Phipson B, Wu D, Hu Y, Law CW, Shi W, Smyth GK: \textbf{limma powers differential expression analyses for RNA-sequencing and microarray studies}. \emph{Nucleic Acids Research} 2015, \textbf{43}:e47--e47\href{https://doi.org/10.1093/nar/gkv007}{10.1093/nar/gkv007}Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/25605792}.
+304. Ritchie ME, Phipson B, Wu D, Hu Y, Law CW, Shi W, Smyth GK: \textbf{limma powers differential expression analyses for RNA-sequencing and microarray studies}. \emph{Nucleic Acids Research} 2015, \textbf{43}:e47--e47\href{https://doi.org/10.1093/nar/gkv007}{10.1093/nar/gkv007}Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/25605792}.
 
 \leavevmode\hypertarget{ref-Meuleman2019}{}%
-306. Meuleman W: \textbf{Epilogos}. 2019, Available: \url{https://epilogos.altius.org/\%20https://github.com/Altius/epilogos}.
+305. Meuleman W: \textbf{Epilogos}. 2019, Available: \url{https://epilogos.altius.org/\%20https://github.com/Altius/epilogos}.
 
 \leavevmode\hypertarget{ref-Reinius2012}{}%
-307. Reinius LE, Acevedo N, Joerink M, Pershagen G, Dahlén S-E, Greco D, Söderhäll C, Scheynius A, Kere J: \textbf{Differential DNA Methylation in Purified Human Blood Cells: Implications for Cell Lineage and Studies on Disease Susceptibility}. \emph{PLoS ONE} 2012, \textbf{7}:e41361\href{https://doi.org/10.1371/journal.pone.0041361}{10.1371/journal.pone.0041361}Available: \url{https://dx.plos.org/10.1371/journal.pone.0041361}.
+306. Reinius LE, Acevedo N, Joerink M, Pershagen G, Dahlén S-E, Greco D, Söderhäll C, Scheynius A, Kere J: \textbf{Differential DNA Methylation in Purified Human Blood Cells: Implications for Cell Lineage and Studies on Disease Susceptibility}. \emph{PLoS ONE} 2012, \textbf{7}:e41361\href{https://doi.org/10.1371/journal.pone.0041361}{10.1371/journal.pone.0041361}Available: \url{https://dx.plos.org/10.1371/journal.pone.0041361}.
 
 \leavevmode\hypertarget{ref-Davis2007p}{}%
-308. Sean D, Meltzer PS: \textbf{GEOquery: A bridge between the Gene Expression Omnibus (GEO) and BioConductor}. \emph{Bioinformatics} 2007, \textbf{23}:1846--1847\href{https://doi.org/10.1093/bioinformatics/btm254}{10.1093/bioinformatics/btm254}.
+307. Sean D, Meltzer PS: \textbf{GEOquery: A bridge between the Gene Expression Omnibus (GEO) and BioConductor}. \emph{Bioinformatics} 2007, \textbf{23}:1846--1847\href{https://doi.org/10.1093/bioinformatics/btm254}{10.1093/bioinformatics/btm254}.
 
 \leavevmode\hypertarget{ref-Grossman2016}{}%
-309. Grossman RL, Heath AP, Ferretti V, Varmus HE, Lowy DR, Kibbe WA, Staudt LM: \textbf{Toward a Shared Vision for Cancer Genomic Data}. \emph{New England Journal of Medicine} 2016, \textbf{375}:1109--1112\href{https://doi.org/10.1056/NEJMp1607591}{10.1056/NEJMp1607591}Available: \url{http://www.nejm.org/doi/10.1056/NEJMp1607591}.
+308. Grossman RL, Heath AP, Ferretti V, Varmus HE, Lowy DR, Kibbe WA, Staudt LM: \textbf{Toward a Shared Vision for Cancer Genomic Data}. \emph{New England Journal of Medicine} 2016, \textbf{375}:1109--1112\href{https://doi.org/10.1056/NEJMp1607591}{10.1056/NEJMp1607591}Available: \url{http://www.nejm.org/doi/10.1056/NEJMp1607591}.
 
 \leavevmode\hypertarget{ref-Yang2016}{}%
-310. Yang Z, Wong A, Kuh D, Paul DS, Rakyan VK, Leslie RD, Zheng SC, Widschwendter M, Beck S, Teschendorff AE: \textbf{Correlation of an epigenetic mitotic clock with cancer risk}. \emph{Genome Biology} 2016, \textbf{17}:205\href{https://doi.org/10.1186/s13059-016-1064-3}{10.1186/s13059-016-1064-3}Available: \url{http://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1064-3}.
+309. Yang Z, Wong A, Kuh D, Paul DS, Rakyan VK, Leslie RD, Zheng SC, Widschwendter M, Beck S, Teschendorff AE: \textbf{Correlation of an epigenetic mitotic clock with cancer risk}. \emph{Genome Biology} 2016, \textbf{17}:205\href{https://doi.org/10.1186/s13059-016-1064-3}{10.1186/s13059-016-1064-3}Available: \url{http://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1064-3}.
 
 \leavevmode\hypertarget{ref-Nazor2012}{}%
-311. Nazor KL, Altun G, Lynch C, Tran H, Harness JV, Slavin I, Garitaonandia I, Müller F-J, Wang Y-C, Boscolo FS, Fakunle E, Dumevska B, Lee S, Park HS, Olee T, D'Lima DD, Semechkin R, Parast MM, Galat V, Laslett AL, Schmidt U, Keirstead HS, Loring JF, Laurent LC: \textbf{Recurrent Variations in DNA Methylation in Human Pluripotent Stem Cells and Their Differentiated Derivatives}. \emph{Cell Stem Cell} 2012, \textbf{10}:620--634\href{https://doi.org/10.1016/j.stem.2012.02.013}{10.1016/j.stem.2012.02.013}Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/10449618}.
+310. Nazor KL, Altun G, Lynch C, Tran H, Harness JV, Slavin I, Garitaonandia I, Müller F-J, Wang Y-C, Boscolo FS, Fakunle E, Dumevska B, Lee S, Park HS, Olee T, D'Lima DD, Semechkin R, Parast MM, Galat V, Laslett AL, Schmidt U, Keirstead HS, Loring JF, Laurent LC: \textbf{Recurrent Variations in DNA Methylation in Human Pluripotent Stem Cells and Their Differentiated Derivatives}. \emph{Cell Stem Cell} 2012, \textbf{10}:620--634\href{https://doi.org/10.1016/j.stem.2012.02.013}{10.1016/j.stem.2012.02.013}Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/10449618}.
 
 \leavevmode\hypertarget{ref-Juzenas2017}{}%
-312. Juzenas S, Venkatesh G, Hübenthal M, Hoeppner MP, Du ZG, Paulsen M, Rosenstiel P, Senger P, Hofmann-Apitius M, Keller A, Kupcinskas L, Franke A, Hemmrich-Stanisak G: \textbf{A comprehensive, cell specific microRNA catalogue of human peripheral blood}. \emph{Nucleic Acids Research} 2017, \textbf{45}:9290--9301\href{https://doi.org/10.1093/nar/gkx706}{10.1093/nar/gkx706}Available: \url{http://academic.oup.com/nar/article/45/16/9290/4080663}.
+311. Juzenas S, Venkatesh G, Hübenthal M, Hoeppner MP, Du ZG, Paulsen M, Rosenstiel P, Senger P, Hofmann-Apitius M, Keller A, Kupcinskas L, Franke A, Hemmrich-Stanisak G: \textbf{A comprehensive, cell specific microRNA catalogue of human peripheral blood}. \emph{Nucleic Acids Research} 2017, \textbf{45}:9290--9301\href{https://doi.org/10.1093/nar/gkx706}{10.1093/nar/gkx706}Available: \url{http://academic.oup.com/nar/article/45/16/9290/4080663}.
 
 \leavevmode\hypertarget{ref-Petkovich2017}{}%
-313. Petkovich DA, Podolskiy DI, Lobanov AV, Lee S-G, Miller RA, Gladyshev VN: \textbf{Using DNA Methylation Profiling to Evaluate Biological Age and Longevity Interventions}. \emph{Cell Metabolism} 2017, \textbf{25}:954--960.e6\href{https://doi.org/10.1016/j.cmet.2017.03.016}{10.1016/j.cmet.2017.03.016}Available: \url{https://linkinghub.elsevier.com/retrieve/pii/S1550413117301687}.
+312. Petkovich DA, Podolskiy DI, Lobanov AV, Lee S-G, Miller RA, Gladyshev VN: \textbf{Using DNA Methylation Profiling to Evaluate Biological Age and Longevity Interventions}. \emph{Cell Metabolism} 2017, \textbf{25}:954--960.e6\href{https://doi.org/10.1016/j.cmet.2017.03.016}{10.1016/j.cmet.2017.03.016}Available: \url{https://linkinghub.elsevier.com/retrieve/pii/S1550413117301687}.
+
+\leavevmode\hypertarget{ref-Lowe2016}{}%
+313. Lowe TM, Chan PP: \textbf{tRNAscan-SE On-line: integrating search and context for analysis of transfer RNA genes}. \emph{Nucleic Acids Research} 2016, \textbf{44}:W54--W57\href{https://doi.org/10.1093/nar/gkw413}{10.1093/nar/gkw413}Available: \url{https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/gkw413}.
 
 \leavevmode\hypertarget{ref-Schmitt2014b}{}%
 314. Schmitt BM, Rudolph KLM, Karagianni P, Fonseca NA, White RJ, Talianidis I, Odom DT, Marioni JC, Kutter C: \textbf{High-resolution mapping of transcriptional dynamics across tissue development reveals a stable mRNA--tRNA interface}. \emph{Genome Research} 2014, \textbf{24}:1797--1807\href{https://doi.org/10.1101/gr.176784.114}{10.1101/gr.176784.114}Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/25122613}.
@@ -4673,104 +4698,104 @@ Excluded polymorphic Alus {[}\protect\hyperlink{ref-Payer2017}{368}{]}
 \leavevmode\hypertarget{ref-Plotkin2004}{}%
 325. Plotkin JB, Robins H, Levine AJ: \textbf{Tissue-specific codon usage and the expression of human genes.} \emph{Proceedings of the National Academy of Sciences of the United States of America} 2004, \textbf{101}:12588--91\href{https://doi.org/10.1073/pnas.0404957101}{10.1073/pnas.0404957101}Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/15314228}.
 
+\leavevmode\hypertarget{ref-Schmitt2014}{}%
+326. Schmitt BM, Rudolph KLM, Karagianni P, Fonseca NA, White RJ, Talianidis I, Odom DT, Marioni JC, Kutter C: \textbf{High-resolution mapping of transcriptional dynamics across tissue development reveals a stable mRNA-tRNA interface.} \emph{Genome research} 2014, \textbf{24}:1797--807\href{https://doi.org/10.1101/gr.176784.114}{10.1101/gr.176784.114}Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/25122613}.
+
 \leavevmode\hypertarget{ref-Powell1997}{}%
-326. Powell JR, Moriyama EN: \textbf{Evolution of codon usage bias in Drosophila}. \emph{Proceedings of the National Academy of Sciences} 1997, \textbf{94}:7784--7790\href{https://doi.org/10.1073/pnas.94.15.7784}{10.1073/pnas.94.15.7784}Available: \url{http://www.pnas.org/cgi/doi/10.1073/pnas.94.15.7784}.
+327. Powell JR, Moriyama EN: \textbf{Evolution of codon usage bias in Drosophila}. \emph{Proceedings of the National Academy of Sciences} 1997, \textbf{94}:7784--7790\href{https://doi.org/10.1073/pnas.94.15.7784}{10.1073/pnas.94.15.7784}Available: \url{http://www.pnas.org/cgi/doi/10.1073/pnas.94.15.7784}.
 
 \leavevmode\hypertarget{ref-Rudolph2016}{}%
-327. Rudolph KLM, Schmitt BM, Villar D, White RJ, Marioni JC, Kutter C, Odom DT: \textbf{Codon-Driven Translational Efficiency Is Stable across Diverse Mammalian Cell States.} \emph{PLoS genetics} 2016, \textbf{12}:e1006024\href{https://doi.org/10.1371/journal.pgen.1006024}{10.1371/journal.pgen.1006024}Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/27166679}.
+328. Rudolph KLM, Schmitt BM, Villar D, White RJ, Marioni JC, Kutter C, Odom DT: \textbf{Codon-Driven Translational Efficiency Is Stable across Diverse Mammalian Cell States.} \emph{PLoS genetics} 2016, \textbf{12}:e1006024\href{https://doi.org/10.1371/journal.pgen.1006024}{10.1371/journal.pgen.1006024}Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/27166679}.
 
 \leavevmode\hypertarget{ref-Gu2018}{}%
-328. Gu T, Lin X, Cullen SM, Luo M, Jeong M, Estecio M, Shen J, Hardikar S, Sun D, Su J, Rux D, Guzman A, Lee M, Qi LS, Chen J-J, Kyba M, Huang Y, Chen T, Li W, Goodell MA: \textbf{DNMT3A and TET1 cooperate to regulate promoter epigenetic landscapes in mouse embryonic stem cells}. \emph{Genome Biology} 2018, \textbf{19}:88\href{https://doi.org/10.1186/s13059-018-1464-7}{10.1186/s13059-018-1464-7}Available: \url{https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1464-7}.
+329. Gu T, Lin X, Cullen SM, Luo M, Jeong M, Estecio M, Shen J, Hardikar S, Sun D, Su J, Rux D, Guzman A, Lee M, Qi LS, Chen J-J, Kyba M, Huang Y, Chen T, Li W, Goodell MA: \textbf{DNMT3A and TET1 cooperate to regulate promoter epigenetic landscapes in mouse embryonic stem cells}. \emph{Genome Biology} 2018, \textbf{19}:88\href{https://doi.org/10.1186/s13059-018-1464-7}{10.1186/s13059-018-1464-7}Available: \url{https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1464-7}.
 
 \leavevmode\hypertarget{ref-Wang2019a}{}%
-329. Wang Y, Brady KS, Caiello BP, Ackerson SM, Stewart JA: \textbf{Human CST suppresses origin licensing and promotes AND-1/Ctf4 chromatin association}. \emph{Life Science Alliance} 2019, \textbf{2}:e201800270\href{https://doi.org/10.26508/lsa.201800270}{10.26508/lsa.201800270}Available: \url{http://www.life-science-alliance.org/lookup/doi/10.26508/lsa.201800270}.
+330. Wang Y, Brady KS, Caiello BP, Ackerson SM, Stewart JA: \textbf{Human CST suppresses origin licensing and promotes AND-1/Ctf4 chromatin association}. \emph{Life Science Alliance} 2019, \textbf{2}:e201800270\href{https://doi.org/10.26508/lsa.201800270}{10.26508/lsa.201800270}Available: \url{http://www.life-science-alliance.org/lookup/doi/10.26508/lsa.201800270}.
 
 \leavevmode\hypertarget{ref-Sargolzaeiaval2018}{}%
-330. Sargolzaeiaval F, Zhang J, Schleit J, Lessel D, Kubisch C, Precioso DR, Sillence D, Hisama FM, Dorschner M, Martin GM, Oshima J: \textbf{CTC1 mutations in a Brazilian family with progeroid features and recurrent bone fractures}. \emph{Molecular Genetics \& Genomic Medicine} 2018, \textbf{6}:1148--1156\href{https://doi.org/10.1002/mgg3.495}{10.1002/mgg3.495}Available: \url{http://doi.wiley.com/10.1002/mgg3.495}.
-
-\leavevmode\hypertarget{ref-Schmitt2014}{}%
-331. Schmitt BM, Rudolph KLM, Karagianni P, Fonseca NA, White RJ, Talianidis I, Odom DT, Marioni JC, Kutter C: \textbf{High-resolution mapping of transcriptional dynamics across tissue development reveals a stable mRNA-tRNA interface.} \emph{Genome research} 2014, \textbf{24}:1797--807\href{https://doi.org/10.1101/gr.176784.114}{10.1101/gr.176784.114}Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/25122613}.
-
-\leavevmode\hypertarget{ref-Gingold2014}{}%
-332. Gingold H, Tehler D, Christoffersen NR, Nielsen MM, Asmar F, Kooistra SM, Christophersen NS, Christensen LL, Borre M, Sørensen KD, Andersen LD, Andersen CL, Hulleman E, Wurdinger T, Ralfkiær E, Helin K, Grønbæk K, Ørntoft T, Waszak SM, Dahan O, Pedersen JS, Lund AH, Pilpel Y: \textbf{A Dual Program for Translation Regulation in Cellular Proliferation and Differentiation}. \emph{Cell} 2014, \textbf{158}:1281--1292\href{https://doi.org/10.1016/j.cell.2014.08.011}{10.1016/j.cell.2014.08.011}Available: \url{http://www.sciencedirect.com/science/article/pii/S0092867414010423}.
+331. Sargolzaeiaval F, Zhang J, Schleit J, Lessel D, Kubisch C, Precioso DR, Sillence D, Hisama FM, Dorschner M, Martin GM, Oshima J: \textbf{CTC1 mutations in a Brazilian family with progeroid features and recurrent bone fractures}. \emph{Molecular Genetics \& Genomic Medicine} 2018, \textbf{6}:1148--1156\href{https://doi.org/10.1002/mgg3.495}{10.1002/mgg3.495}Available: \url{http://doi.wiley.com/10.1002/mgg3.495}.
 
 \leavevmode\hypertarget{ref-Thornlow2018}{}%
-333. Thornlow BP, Hough J, Roger JM, Gong H, Lowe TM, Corbett-Detig RB: \textbf{Transfer RNA genes experience exceptionally elevated mutation rates}. \emph{Proceedings of the National Academy of Sciences} 2018, \textbf{115}:8996--9001\href{https://doi.org/10.1073/pnas.1801240115}{10.1073/pnas.1801240115}Available: \url{http://www.pnas.org/lookup/doi/10.1073/pnas.1801240115}.
+332. Thornlow BP, Hough J, Roger JM, Gong H, Lowe TM, Corbett-Detig RB: \textbf{Transfer RNA genes experience exceptionally elevated mutation rates}. \emph{Proceedings of the National Academy of Sciences} 2018, \textbf{115}:8996--9001\href{https://doi.org/10.1073/pnas.1801240115}{10.1073/pnas.1801240115}Available: \url{http://www.pnas.org/lookup/doi/10.1073/pnas.1801240115}.
 
 \leavevmode\hypertarget{ref-Iben2015}{}%
-334. Iben JR, Maraia RJ: \textbf{tRNA gene copy number variation in humans}. \emph{Gene} 2014, \textbf{536}:376--384\href{https://doi.org/10.1016/j.gene.2013.11.049}{10.1016/j.gene.2013.11.049}Available: \url{https://linkinghub.elsevier.com/retrieve/pii/S0378111913015758}.
+333. Iben JR, Maraia RJ: \textbf{tRNA gene copy number variation in humans}. \emph{Gene} 2014, \textbf{536}:376--384\href{https://doi.org/10.1016/j.gene.2013.11.049}{10.1016/j.gene.2013.11.049}Available: \url{https://linkinghub.elsevier.com/retrieve/pii/S0378111913015758}.
 
 \leavevmode\hypertarget{ref-Darrow2014}{}%
-335. Darrow EM, Chadwick BP: \textbf{A novel tRNA variable number tandem repeat at human chromosome 1q23.3 is implicated as a boundary element based on conservation of a CTCF motif in mouse}. \emph{Nucleic Acids Research} 2014, \textbf{42}:6421--6435\href{https://doi.org/10.1093/nar/gku280}{10.1093/nar/gku280}Available: \url{http://academic.oup.com/nar/article/42/10/6421/2435926/A-novel-tRNA-variable-number-tandem-repeat-at}.
+334. Darrow EM, Chadwick BP: \textbf{A novel tRNA variable number tandem repeat at human chromosome 1q23.3 is implicated as a boundary element based on conservation of a CTCF motif in mouse}. \emph{Nucleic Acids Research} 2014, \textbf{42}:6421--6435\href{https://doi.org/10.1093/nar/gku280}{10.1093/nar/gku280}Available: \url{http://academic.oup.com/nar/article/42/10/6421/2435926/A-novel-tRNA-variable-number-tandem-repeat-at}.
 
 \leavevmode\hypertarget{ref-Muller2017}{}%
-336. Müller CA, Nieduszynski CA: \textbf{DNA replication timing influences gene expression level}. \emph{The Journal of Cell Biology} 2017, \textbf{216}:1907--1914\href{https://doi.org/10.1083/jcb.201701061}{10.1083/jcb.201701061}Available: \url{http://www.jcb.org/lookup/doi/10.1083/jcb.201701061}.
+335. Müller CA, Nieduszynski CA: \textbf{DNA replication timing influences gene expression level}. \emph{The Journal of Cell Biology} 2017, \textbf{216}:1907--1914\href{https://doi.org/10.1083/jcb.201701061}{10.1083/jcb.201701061}Available: \url{http://www.jcb.org/lookup/doi/10.1083/jcb.201701061}.
 
 \leavevmode\hypertarget{ref-Du2019}{}%
-337. Du Q, Bert SA, Armstrong NJ, Caldon CE, Song JZ, Nair SS, Gould CM, Luu P-L, Peters T, Khoury A, Qu W, Zotenko E, Stirzaker C, Clark SJ: \textbf{Replication timing and epigenome remodelling are associated with the nature of chromosomal rearrangements in cancer}. \emph{Nature Communications} 2019, \textbf{10}:416\href{https://doi.org/10.1038/s41467-019-08302-1}{10.1038/s41467-019-08302-1}Available: \url{http://dx.doi.org/10.1038/s41467-019-08302-1}.
+336. Du Q, Bert SA, Armstrong NJ, Caldon CE, Song JZ, Nair SS, Gould CM, Luu P-L, Peters T, Khoury A, Qu W, Zotenko E, Stirzaker C, Clark SJ: \textbf{Replication timing and epigenome remodelling are associated with the nature of chromosomal rearrangements in cancer}. \emph{Nature Communications} 2019, \textbf{10}:416\href{https://doi.org/10.1038/s41467-019-08302-1}{10.1038/s41467-019-08302-1}Available: \url{http://dx.doi.org/10.1038/s41467-019-08302-1}.
 
 \leavevmode\hypertarget{ref-Cruickshanks2013}{}%
-338. Cruickshanks HA, McBryan T, Nelson DM, VanderKraats ND, Shah PP, Tuyn J van, Singh Rai T, Brock C, Donahue G, Dunican DS, Drotar ME, Meehan RR, Edwards JR, Berger SL, Adams PD: \textbf{Senescent cells harbour features of the cancer epigenome}. \emph{Nature Cell Biology} 2013, \textbf{15}:1495--1506\href{https://doi.org/10.1038/ncb2879}{10.1038/ncb2879}Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/24270890}.
+337. Cruickshanks HA, McBryan T, Nelson DM, VanderKraats ND, Shah PP, Tuyn J van, Singh Rai T, Brock C, Donahue G, Dunican DS, Drotar ME, Meehan RR, Edwards JR, Berger SL, Adams PD: \textbf{Senescent cells harbour features of the cancer epigenome}. \emph{Nature Cell Biology} 2013, \textbf{15}:1495--1506\href{https://doi.org/10.1038/ncb2879}{10.1038/ncb2879}Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/24270890}.
 
 \leavevmode\hypertarget{ref-Sun2018}{}%
-339. Sun L, Yu R, Dang W: \textbf{Chromatin Architectural Changes during Cellular Senescence and Aging}. \emph{Genes} 2018, \textbf{9}:211\href{https://doi.org/10.3390/genes9040211}{10.3390/genes9040211}Available: \url{http://www.mdpi.com/2073-4425/9/4/211}.
+338. Sun L, Yu R, Dang W: \textbf{Chromatin Architectural Changes during Cellular Senescence and Aging}. \emph{Genes} 2018, \textbf{9}:211\href{https://doi.org/10.3390/genes9040211}{10.3390/genes9040211}Available: \url{http://www.mdpi.com/2073-4425/9/4/211}.
 
 \leavevmode\hypertarget{ref-Moskowitz2017}{}%
-340. Moskowitz DM, Zhang DW, Hu B, Le Saux S, Yanes RE, Ye Z, Buenrostro JD, Weyand CM, Greenleaf WJ, Goronzy JJ: \textbf{Epigenomics of human CD8 T cell differentiation and aging}. \emph{Science Immunology} 2017, \textbf{2}:eaag0192\href{https://doi.org/10.1126/sciimmunol.aag0192}{10.1126/sciimmunol.aag0192}Available: \url{https://immunology.sciencemag.org/lookup/doi/10.1126/sciimmunol.aag0192}.
+339. Moskowitz DM, Zhang DW, Hu B, Le Saux S, Yanes RE, Ye Z, Buenrostro JD, Weyand CM, Greenleaf WJ, Goronzy JJ: \textbf{Epigenomics of human CD8 T cell differentiation and aging}. \emph{Science Immunology} 2017, \textbf{2}:eaag0192\href{https://doi.org/10.1126/sciimmunol.aag0192}{10.1126/sciimmunol.aag0192}Available: \url{https://immunology.sciencemag.org/lookup/doi/10.1126/sciimmunol.aag0192}.
 
 \leavevmode\hypertarget{ref-Hashimoto2019}{}%
-341. Hashimoto K, Kouno T, Ikawa T, Hayatsu N, Miyajima Y, Yabukami H, Terooatea T, Sasaki T, Suzuki T, Valentine M, Pascarella G, Okazaki Y, Suzuki H, Shin JW, Minoda A, Taniuchi I, Okano H, Arai Y, Hirose N, Carninci P: \textbf{Single-cell transcriptomics reveals expansion of cytotoxic CD4 T cells in supercentenarians}. \emph{Proceedings of the National Academy of Sciences of the United States of America} 2019, \textbf{116}:24242--24251\href{https://doi.org/10.1073/pnas.1907883116}{10.1073/pnas.1907883116}.
+340. Hashimoto K, Kouno T, Ikawa T, Hayatsu N, Miyajima Y, Yabukami H, Terooatea T, Sasaki T, Suzuki T, Valentine M, Pascarella G, Okazaki Y, Suzuki H, Shin JW, Minoda A, Taniuchi I, Okano H, Arai Y, Hirose N, Carninci P: \textbf{Single-cell transcriptomics reveals expansion of cytotoxic CD4 T cells in supercentenarians}. \emph{Proceedings of the National Academy of Sciences of the United States of America} 2019, \textbf{116}:24242--24251\href{https://doi.org/10.1073/pnas.1907883116}{10.1073/pnas.1907883116}.
 
 \leavevmode\hypertarget{ref-Deniz2019}{}%
-342. Deniz Ö, Frost JM, Branco MR: \textbf{Regulation of transposable elements by DNA modifications}. \emph{Nature Reviews Genetics} 2019, \textbf{20}:417--431\href{https://doi.org/10.1038/s41576-019-0106-6}{10.1038/s41576-019-0106-6}.
+341. Deniz Ö, Frost JM, Branco MR: \textbf{Regulation of transposable elements by DNA modifications}. \emph{Nature Reviews Genetics} 2019, \textbf{20}:417--431\href{https://doi.org/10.1038/s41576-019-0106-6}{10.1038/s41576-019-0106-6}.
 
 \leavevmode\hypertarget{ref-Kazazian2017}{}%
-343. Kazazian HH, Moran JV: \textbf{Mobile DNA in health and disease}. \emph{New England Journal of Medicine} 2017, \textbf{377}:361--370\href{https://doi.org/10.1056/NEJMra1510092}{10.1056/NEJMra1510092}.
+342. Kazazian HH, Moran JV: \textbf{Mobile DNA in health and disease}. \emph{New England Journal of Medicine} 2017, \textbf{377}:361--370\href{https://doi.org/10.1056/NEJMra1510092}{10.1056/NEJMra1510092}.
 
 \leavevmode\hypertarget{ref-Gregory2005}{}%
-344. Gregory TR: \textbf{Synergy between sequence and size in large-scale genomics}. \emph{Nature Reviews Genetics} 2005, \textbf{6}:699--708\href{https://doi.org/10.1038/nrg1674}{10.1038/nrg1674}.
+343. Gregory TR: \textbf{Synergy between sequence and size in large-scale genomics}. \emph{Nature Reviews Genetics} 2005, \textbf{6}:699--708\href{https://doi.org/10.1038/nrg1674}{10.1038/nrg1674}.
 
 \leavevmode\hypertarget{ref-Deaton2011}{}%
-345. Deaton AM, Bird A: \textbf{CpG islands and the regulation of transcription}. \emph{Genes \& development} 2011, \textbf{25}:1010--22\href{https://doi.org/10.1101/gad.2037511}{10.1101/gad.2037511}Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/21576262}.
+344. Deaton AM, Bird A: \textbf{CpG islands and the regulation of transcription}. \emph{Genes \& development} 2011, \textbf{25}:1010--22\href{https://doi.org/10.1101/gad.2037511}{10.1101/gad.2037511}Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/21576262}.
 
 \leavevmode\hypertarget{ref-Hellman2007}{}%
-346. Hellman A, Chess A: \textbf{Gene body-specific methylation on the active X chromosome}. \emph{Science} 2007, \textbf{315}:1141--1143\href{https://doi.org/10.1126/science.1136352}{10.1126/science.1136352}.
+345. Hellman A, Chess A: \textbf{Gene body-specific methylation on the active X chromosome}. \emph{Science} 2007, \textbf{315}:1141--1143\href{https://doi.org/10.1126/science.1136352}{10.1126/science.1136352}.
 
 \leavevmode\hypertarget{ref-Shukla2011}{}%
-347. Shukla S, Kavak E, Gregory M, Imashimizu M, Shutinoski B, Kashlev M, Oberdoerffer P, Sandberg R, Oberdoerffer S: \textbf{CTCF-promoted RNA polymerase II pausing links DNA methylation to splicing}. \emph{Nature} 2011, \textbf{479}:74--79\href{https://doi.org/10.1038/nature10442}{10.1038/nature10442}Available: \url{http://dx.doi.org/10.1038/nature10442}.
+346. Shukla S, Kavak E, Gregory M, Imashimizu M, Shutinoski B, Kashlev M, Oberdoerffer P, Sandberg R, Oberdoerffer S: \textbf{CTCF-promoted RNA polymerase II pausing links DNA methylation to splicing}. \emph{Nature} 2011, \textbf{479}:74--79\href{https://doi.org/10.1038/nature10442}{10.1038/nature10442}Available: \url{http://dx.doi.org/10.1038/nature10442}.
 
 \leavevmode\hypertarget{ref-Blattler2014}{}%
-348. Blattler A, Yao L, Witt H, Guo Y, Nicolet CM, Berman BP, Farnham PJ: \textbf{Global loss of DNA methylation uncovers intronic enhancers in genes showing expression changes}. \emph{Genome Biology} 2014, \textbf{15}:469\href{https://doi.org/10.1186/s13059-014-0469-0}{10.1186/s13059-014-0469-0}Available: \url{http://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0469-0}.
+347. Blattler A, Yao L, Witt H, Guo Y, Nicolet CM, Berman BP, Farnham PJ: \textbf{Global loss of DNA methylation uncovers intronic enhancers in genes showing expression changes}. \emph{Genome Biology} 2014, \textbf{15}:469\href{https://doi.org/10.1186/s13059-014-0469-0}{10.1186/s13059-014-0469-0}Available: \url{http://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0469-0}.
 
 \leavevmode\hypertarget{ref-Gama-Sosa1983}{}%
-349. Gama-Sosa MA, Slagel VA, Trewyn RW, Oxenhandler R, Kuo KC, Gehrke CW, Ehrlich M: \textbf{The 5-methylcytosine content of DNA from human tumors}. \emph{Nucleic Acids Research} 1983, \textbf{11}:6883--6894\href{https://doi.org/10.1093/nar/11.19.6883}{10.1093/nar/11.19.6883}Available: \url{https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/11.19.6883}.
+348. Gama-Sosa MA, Slagel VA, Trewyn RW, Oxenhandler R, Kuo KC, Gehrke CW, Ehrlich M: \textbf{The 5-methylcytosine content of DNA from human tumors}. \emph{Nucleic Acids Research} 1983, \textbf{11}:6883--6894\href{https://doi.org/10.1093/nar/11.19.6883}{10.1093/nar/11.19.6883}Available: \url{https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/11.19.6883}.
 
 \leavevmode\hypertarget{ref-Bollati2010}{}%
-350. Bollati V, Schwartz J, Wright R, Litonjua A, Tarantini L, Suh H, Sparrow D, Vokonas P, Baccarelli A: \textbf{Decline in genomic DNA methylation through aging in a cohort of elderly subjects}. \emph{Mechanisms of Ageing and Development} 2009, \textbf{130}:234--239\href{https://doi.org/10.1016/j.mad.2008.12.003}{10.1016/j.mad.2008.12.003}Available: \url{https://linkinghub.elsevier.com/retrieve/pii/S0047637408002820}.
+349. Bollati V, Schwartz J, Wright R, Litonjua A, Tarantini L, Suh H, Sparrow D, Vokonas P, Baccarelli A: \textbf{Decline in genomic DNA methylation through aging in a cohort of elderly subjects}. \emph{Mechanisms of Ageing and Development} 2009, \textbf{130}:234--239\href{https://doi.org/10.1016/j.mad.2008.12.003}{10.1016/j.mad.2008.12.003}Available: \url{https://linkinghub.elsevier.com/retrieve/pii/S0047637408002820}.
 
 \leavevmode\hypertarget{ref-Dewannieux2003}{}%
-351. Dewannieux M, Esnault C, Heidmann T: \textbf{LINE-mediated retrotransposition of marked Alu sequences}. \emph{Nature Genetics} 2003, \textbf{35}:41--48\href{https://doi.org/10.1038/ng1223}{10.1038/ng1223}Available: \url{http://www.nature.com/articles/ng1223}.
+350. Dewannieux M, Esnault C, Heidmann T: \textbf{LINE-mediated retrotransposition of marked Alu sequences}. \emph{Nature Genetics} 2003, \textbf{35}:41--48\href{https://doi.org/10.1038/ng1223}{10.1038/ng1223}Available: \url{http://www.nature.com/articles/ng1223}.
 
 \leavevmode\hypertarget{ref-Deininger2011}{}%
-352. Deininger P: \textbf{Alu elements: know the SINEs}. \emph{Genome Biology} 2011, \textbf{12}:236\href{https://doi.org/10.1186/gb-2011-12-12-236}{10.1186/gb-2011-12-12-236}Available: \url{http://genomebiology.biomedcentral.com/articles/10.1186/gb-2011-12-12-236}.
+351. Deininger P: \textbf{Alu elements: know the SINEs}. \emph{Genome Biology} 2011, \textbf{12}:236\href{https://doi.org/10.1186/gb-2011-12-12-236}{10.1186/gb-2011-12-12-236}Available: \url{http://genomebiology.biomedcentral.com/articles/10.1186/gb-2011-12-12-236}.
 
 \leavevmode\hypertarget{ref-Ullu1984}{}%
-353. Ullu E, Tschudi C: \textbf{Alu sequences are processed 7SL RNA genes}. \emph{Nature} 1984, \textbf{312}:171--172\href{https://doi.org/10.1038/312171a0}{10.1038/312171a0}Available: \url{http://www.nature.com/articles/312171a0}.
+352. Ullu E, Tschudi C: \textbf{Alu sequences are processed 7SL RNA genes}. \emph{Nature} 1984, \textbf{312}:171--172\href{https://doi.org/10.1038/312171a0}{10.1038/312171a0}Available: \url{http://www.nature.com/articles/312171a0}.
 
 \leavevmode\hypertarget{ref-Quentin1992}{}%
-354. Quentin Y: \textbf{Origin of the Alu family:} \emph{Nucleic Acids Research} 1992, \textbf{20}:3397--3401.
+353. Quentin Y: \textbf{Origin of the Alu family:} \emph{Nucleic Acids Research} 1992, \textbf{20}:3397--3401.
 
-\leavevmode\hypertarget{ref-Ade2013}{}%
-355. Ade C, Roy-Engel AM, Deininger PL: \textbf{Alu elements: an intrinsic source of human genome instability}. \emph{Current Opinion in Virology} 2013, \textbf{3}:639--645\href{https://doi.org/10.1016/j.coviro.2013.09.002}{10.1016/j.coviro.2013.09.002}Available: \url{https://linkinghub.elsevier.com/retrieve/pii/S1879625713001533}.
-
-\leavevmode\hypertarget{ref-Cordaux2009}{}%
-356. Cordaux R, Batzer MA: \textbf{The impact of retrotransposons on human genome evolution}. \emph{Nature Reviews Genetics} 2009, \textbf{10}:691--703\href{https://doi.org/10.1038/nrg2640}{10.1038/nrg2640}Available: \url{http://www.nature.com/articles/nrg2640}.
-
-\leavevmode\hypertarget{ref-Belancio2008}{}%
-357. Belancio VP, Hedges DJ, Deininger P: \textbf{Mammalian non-LTR retrotransposons: For better or worse, in sickness and in health}. \emph{Genome Research} 2008, \textbf{18}:343--358\href{https://doi.org/10.1101/gr.5558208}{10.1101/gr.5558208}Available: \url{http://www.genome.org/cgi/doi/10.1101/gr.5558208}.
+\leavevmode\hypertarget{ref-Chen2008}{}%
+354. Chen L-L, Carmichael GG: \textbf{Gene regulation by SINES and inosines: biological consequences of A-to-I editing of Alu element inverted repeats}. \emph{Cell Cycle} 2008, \textbf{7}:3294--3301\href{https://doi.org/10.4161/cc.7.21.6927}{10.4161/cc.7.21.6927}Available: \url{http://www.tandfonline.com/doi/abs/10.4161/cc.7.21.6927}.
 
 \leavevmode\hypertarget{ref-Batzer2002}{}%
-358. Batzer MA, Deininger PL: \textbf{Alu repeats and human genomic diversity}. \emph{Nature Reviews Genetics} 2002, \textbf{3}:370--379\href{https://doi.org/10.1038/nrg798}{10.1038/nrg798}Available: \url{http://www.nature.com/articles/nrg798}.
+355. Batzer MA, Deininger PL: \textbf{Alu repeats and human genomic diversity}. \emph{Nature Reviews Genetics} 2002, \textbf{3}:370--379\href{https://doi.org/10.1038/nrg798}{10.1038/nrg798}Available: \url{http://www.nature.com/articles/nrg798}.
+
+\leavevmode\hypertarget{ref-Ade2013}{}%
+356. Ade C, Roy-Engel AM, Deininger PL: \textbf{Alu elements: an intrinsic source of human genome instability}. \emph{Current Opinion in Virology} 2013, \textbf{3}:639--645\href{https://doi.org/10.1016/j.coviro.2013.09.002}{10.1016/j.coviro.2013.09.002}Available: \url{https://linkinghub.elsevier.com/retrieve/pii/S1879625713001533}.
+
+\leavevmode\hypertarget{ref-Cordaux2009}{}%
+357. Cordaux R, Batzer MA: \textbf{The impact of retrotransposons on human genome evolution}. \emph{Nature Reviews Genetics} 2009, \textbf{10}:691--703\href{https://doi.org/10.1038/nrg2640}{10.1038/nrg2640}Available: \url{http://www.nature.com/articles/nrg2640}.
+
+\leavevmode\hypertarget{ref-Belancio2008}{}%
+358. Belancio VP, Hedges DJ, Deininger P: \textbf{Mammalian non-LTR retrotransposons: For better or worse, in sickness and in health}. \emph{Genome Research} 2008, \textbf{18}:343--358\href{https://doi.org/10.1101/gr.5558208}{10.1101/gr.5558208}Available: \url{http://www.genome.org/cgi/doi/10.1101/gr.5558208}.
 
 \leavevmode\hypertarget{ref-Jorda2017}{}%
 359. Jordà M, Díez-Villanueva A, Mallona I, Martín B, Lois S, Barrera V, Esteller M, Vavouri T, Peinado MA: \textbf{The epigenetic landscape of Alu repeats delineates the structural and functional genomic architecture of colon cancer cells}. \emph{Genome Research} 2017, \textbf{27}:118--132\href{https://doi.org/10.1101/gr.207522.116}{10.1101/gr.207522.116}Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/27999094}.
@@ -4805,55 +4830,31 @@ Excluded polymorphic Alus {[}\protect\hyperlink{ref-Payer2017}{368}{]}
 \leavevmode\hypertarget{ref-Mozhui2017}{}%
 369. Mozhui K, Pandey AK: \textbf{Conserved effect of aging on DNA methylation and association with EZH2 polycomb protein in mice and humans}. \emph{Mechanisms of Ageing and Development} 2017, \textbf{162}:27--37\href{https://doi.org/10.1016/j.mad.2017.02.006}{10.1016/j.mad.2017.02.006}Available: \url{http://dx.doi.org/10.1016/j.mad.2017.02.006}.
 
-\leavevmode\hypertarget{ref-Lu2017}{}%
-370. Lu AT, Hannon E, Levine ME, Crimmins EM, Lunnon K, Mill J, Geschwind DH, Horvath S: \textbf{Genetic architecture of epigenetic and neuronal ageing rates in human brain regions}. \emph{Nature Communications} 2017, \textbf{8}:15353\href{https://doi.org/10.1038/ncomms15353}{10.1038/ncomms15353}Available: \url{http://dx.doi.org/10.1038/ncomms15353}.
-
-\leavevmode\hypertarget{ref-Gibson2019}{}%
-371. Gibson J, Russ TC, Clarke T-K, Howard DM, Hillary RF, Evans KL, Walker RM, Bermingham ML, Morris SW, Campbell A, Hayward C, Murray AD, Porteous DJ, Horvath S, Lu AT, McIntosh AM, Whalley HC, Marioni RE: \textbf{A meta-analysis of genome-wide association studies of epigenetic age acceleration}. \emph{PLOS Genetics} 2019, \textbf{15}:e1008104\href{https://doi.org/10.1371/journal.pgen.1008104}{10.1371/journal.pgen.1008104}Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/31738745}.
-
-\leavevmode\hypertarget{ref-Bycroft2017}{}%
-372. Bycroft C, Freeman C, Petkova D, Band G, Elliott LT, Sharp K, Motyer A, Vukcevic D, Delaneau O, O'Connell J, Cortes A, Welsh S, McVean G, Leslie S, Donnelly P, Marchini J: \textbf{Genome-wide genetic data on \textasciitilde500,000 UK Biobank participants}. \emph{bioRxiv} 2017,:166298\href{https://doi.org/10.1101/166298}{10.1101/166298}Available: \url{https://www.biorxiv.org/content/10.1101/166298v1}.
-
 \leavevmode\hypertarget{ref-Smit2009}{}%
-373. Smit A, Hubley R, Green: \textbf{Repeat Masker}. 2009, Available: \url{http://www.repeatmasker.org}.
+370. Smit A, Hubley R, Green: \textbf{Repeat Masker}. 2009, Available: \url{http://www.repeatmasker.org}.
 
 \leavevmode\hypertarget{ref-Fairley2020}{}%
-374. Fairley S, Lowy-Gallego E, Perry E, Flicek P: \textbf{The International Genome Sample Resource (IGSR) collection of open human genomic variation resources}. \emph{Nucleic Acids Research} 2020, \textbf{48}:D941--D947\href{https://doi.org/10.1093/nar/gkz836}{10.1093/nar/gkz836}Available: \url{https://academic.oup.com/nar/article/48/D1/D941/5580898}.
+371. Fairley S, Lowy-Gallego E, Perry E, Flicek P: \textbf{The International Genome Sample Resource (IGSR) collection of open human genomic variation resources}. \emph{Nucleic Acids Research} 2020, \textbf{48}:D941--D947\href{https://doi.org/10.1093/nar/gkz836}{10.1093/nar/gkz836}Available: \url{https://academic.oup.com/nar/article/48/D1/D941/5580898}.
 
 \leavevmode\hypertarget{ref-Prive2019}{}%
-375. Privé F, Aschard H, Blum MGB: \textbf{Efficient Implementation of Penalized Regression for Genetic Risk Prediction}. \emph{Genetics} 2019, \textbf{212}:65--74\href{https://doi.org/10.1534/genetics.119.302019}{10.1534/genetics.119.302019}Available: \url{http://www.genetics.org/lookup/doi/10.1534/genetics.119.302019\%20https://figshare.com/articles/code/7178750\%20https://gsajournals.figshare.com/articles/Supplemental\%7B/_\%7DMaterial\%7B/_\%7Dfor\%7B/_\%7DPriv\%7B/_\%7DAschard\%7B/_\%7Dand\%7B/_\%7DBlum\%7B/_\%7D2019/7851470}.
+372. Privé F, Aschard H, Blum MGB: \textbf{Efficient Implementation of Penalized Regression for Genetic Risk Prediction}. \emph{Genetics} 2019, \textbf{212}:65--74\href{https://doi.org/10.1534/genetics.119.302019}{10.1534/genetics.119.302019}Available: \url{http://www.genetics.org/lookup/doi/10.1534/genetics.119.302019\%20https://figshare.com/articles/code/7178750\%20https://gsajournals.figshare.com/articles/Supplemental\%7B/_\%7DMaterial\%7B/_\%7Dfor\%7B/_\%7DPriv\%7B/_\%7DAschard\%7B/_\%7Dand\%7B/_\%7DBlum\%7B/_\%7D2019/7851470}.
 
 \leavevmode\hypertarget{ref-Tibshirani2012}{}%
-376. Tibshirani R, Bien J, Friedman J, Hastie T, Simon N, Taylor J, Tibshirani RJ: \textbf{Strong rules for discarding predictors in lasso-type problems}. \emph{Journal of the Royal Statistical Society. Series B: Statistical Methodology} 2012, \textbf{74}:245--266\href{https://doi.org/10.1111/j.1467-9868.2011.01004.x}{10.1111/j.1467-9868.2011.01004.x}Available: \url{http://arxiv.org/abs/1011.2234}.
+373. Tibshirani R, Bien J, Friedman J, Hastie T, Simon N, Taylor J, Tibshirani RJ: \textbf{Strong rules for discarding predictors in lasso-type problems}. \emph{Journal of the Royal Statistical Society. Series B: Statistical Methodology} 2012, \textbf{74}:245--266\href{https://doi.org/10.1111/j.1467-9868.2011.01004.x}{10.1111/j.1467-9868.2011.01004.x}Available: \url{http://arxiv.org/abs/1011.2234}.
 
 \leavevmode\hypertarget{ref-Meyer2020}{}%
-377. Meyer DH: \textbf{A transcriptome based aging clock near the theoretical limit of accuracy}. 2020,.
+374. Meyer DH: \textbf{A transcriptome based aging clock near the theoretical limit of accuracy}. 2020, \href{https://doi.org/10.1101/2020.05.29.123430}{10.1101/2020.05.29.123430}Available: \url{https://doi.org/10.1101/2020.05.29.123430}.
 
 \leavevmode\hypertarget{ref-Snir2019}{}%
-378. Snir S, Farrell C, Pellegrini M: \textbf{Human epigenetic ageing is logarithmic with time across the entire lifespan}. \emph{Epigenetics} 2019, \textbf{0}:1--15\href{https://doi.org/10.1080/15592294.2019.1623634}{10.1080/15592294.2019.1623634}Available: \url{https://www.tandfonline.com/doi/full/10.1080/15592294.2019.1623634}.
+375. Snir S, Farrell C, Pellegrini M: \textbf{Human epigenetic ageing is logarithmic with time across the entire lifespan}. \emph{Epigenetics} 2019, \textbf{0}:1--15\href{https://doi.org/10.1080/15592294.2019.1623634}{10.1080/15592294.2019.1623634}Available: \url{https://www.tandfonline.com/doi/full/10.1080/15592294.2019.1623634}.
 
 \leavevmode\hypertarget{ref-Hellen2013}{}%
-379. Hellen EH, Brookfield JF: \textbf{Alu elements in primates are preferentially lost from areas of high GC content}. \emph{PeerJ} 2013, \textbf{1}:e78\href{https://doi.org/10.7717/peerj.78}{10.7717/peerj.78}Available: \url{https://peerj.com/articles/78}.
+376. Hellen EH, Brookfield JF: \textbf{Alu elements in primates are preferentially lost from areas of high GC content}. \emph{PeerJ} 2013, \textbf{1}:e78\href{https://doi.org/10.7717/peerj.78}{10.7717/peerj.78}Available: \url{https://peerj.com/articles/78}.
 
-\leavevmode\hypertarget{ref-McLean2010}{}%
-380. McLean CY, Bristor D, Hiller M, Clarke SL, Schaar BT, Lowe CB, Wenger AM, Bejerano G: \textbf{GREAT improves functional interpretation of cis-regulatory regions}. \emph{Nature Biotechnology} 2010, \textbf{28}:495--501\href{https://doi.org/10.1038/nbt.1630}{10.1038/nbt.1630}Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/20436461}.
+\leavevmode\hypertarget{ref-Lu2017}{}%
+377. Lu AT, Hannon E, Levine ME, Crimmins EM, Lunnon K, Mill J, Geschwind DH, Horvath S: \textbf{Genetic architecture of epigenetic and neuronal ageing rates in human brain regions}. \emph{Nature Communications} 2017, \textbf{8}:15353\href{https://doi.org/10.1038/ncomms15353}{10.1038/ncomms15353}Available: \url{http://dx.doi.org/10.1038/ncomms15353}.
 
-\leavevmode\hypertarget{ref-Engebretsen2019}{}%
-381. Engebretsen S, Bohlin J: \textbf{Statistical predictions with glmnet}. \emph{Clinical Epigenetics} 2019, \textbf{11}:123\href{https://doi.org/10.1186/s13148-019-0730-1}{10.1186/s13148-019-0730-1}Available: \url{https://clinicalepigeneticsjournal.biomedcentral.com/articles/10.1186/s13148-019-0730-1}.
-
-\leavevmode\hypertarget{ref-Zhou2018}{}%
-382. Zhou W, Dinh HQ, Ramjan Z, Weisenberger DJ, Nicolet CM, Shen H, Laird PW, Berman BP: \textbf{DNA methylation loss in late-replicating domains is linked to mitotic cell division}. \emph{Nature Genetics} 2018, \textbf{50}:591--602\href{https://doi.org/10.1038/s41588-018-0073-4}{10.1038/s41588-018-0073-4}Available: \url{http://dx.doi.org/10.1038/s41588-018-0073-4}.
-
-\leavevmode\hypertarget{ref-Zenin2019}{}%
-383. Zenin A, Tsepilov Y, Sharapov S, Getmantsev E, Menshikov LI, Fedichev PO, Aulchenko Y: \textbf{Identification of 12 genetic loci associated with human healthspan}. \emph{Communications Biology} 2019, \textbf{2}:41\href{https://doi.org/10.1038/s42003-019-0290-0}{10.1038/s42003-019-0290-0}Available: \url{http://dx.doi.org/10.1038/s42003-019-0290-0}.
-
-\leavevmode\hypertarget{ref-Denny2014}{}%
-384. Denny JC, Bastarache L, Ritchie MD, Carroll RJ, Zink R, Mosley JD, Field JR, Pulley JM, Ramirez AH, Bowton E, Basford M a, Carrell DS, Peissig PL, Kho AN, Pacheco J a, Rasmussen LV, Crosslin DR, Crane PK, Pathak J, Bielinski SJ, Pendergrass SA, Xu H, Hindorff LA, Li R, Manolio TA, Chute CG, Chisholm RL, Larson EB, Jarvik GP, Brilliant MH, et al.: \textbf{Systematic comparison of phenome-wide association study of electronic medical record data and genome-wide association study data}. \emph{Nature Biotechnology} 2013, \textbf{31}:1102--1111\href{https://doi.org/10.1038/nbt.2749}{10.1038/nbt.2749}Available: \url{http://www.nature.com/articles/nbt.2749}.
-
-\leavevmode\hypertarget{ref-Bush2016}{}%
-385. Bush WS, Oetjens MT, Crawford DC: \textbf{Unravelling the human genome-phenome relationship using phenome-wide association studies}. \emph{Nature Reviews Genetics} 2016, \textbf{17}:129--145\href{https://doi.org/10.1038/nrg.2015.36}{10.1038/nrg.2015.36}Available: \url{http://dx.doi.org/10.1038/nrg.2015.36}.
-
-\leavevmode\hypertarget{ref-Wei2018}{}%
-386. Wei W-Q, Li X, Feng Q, Kubo M, Kullo IJ, Peissig PL, Karlson EW, Jarvik GP, Lee MTM, Shang N, Larson EA, Edwards T, Shaffer CM, Mosley JD, Maeda S, Horikoshi M, Ritchie M, Williams MS, Larson EB, Crosslin DR, Bland ST, Pacheco JA, Rasmussen-Torvik LJ, Cronkite D, Hripcsak G, Cox NJ, Wilke RA, Stein CM, Rotter JI, Momozawa Y, et al.: \textbf{LPA Variants Are Associated With Residual Cardiovascular Risk in Patients Receiving Statins}. \emph{Circulation} 2018, \textbf{138}:1839--1849\href{https://doi.org/10.1161/CIRCULATIONAHA.117.031356}{10.1161/CIRCULATIONAHA.117.031356}Available: \url{https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.117.031356}.
+\leavevmode\hypertarget{ref-Gibson2019}{}%
+378. Gibson J, Russ TC, Clarke T-K, Howard DM, Hillary RF, Evans KL, Walker RM, Bermingham ML, Morris SW, Campbell A, Hayward C, Murray AD, Porteous DJ, Horvath S, Lu AT, McIntosh AM, Whalley HC, Marioni RE: \textbf{A meta-analysis of genome-wide association studies of epigenetic age acceleration}. \emph{PLOS Genetics} 2019, \textbf{15}:e1008104\href{https://doi.org/10.1371/journal.pgen.1008104}{10.1371/journal.pgen.1008104}Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/31738745}.
 
 \end{document}
