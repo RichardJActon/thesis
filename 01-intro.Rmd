@@ -12,7 +12,7 @@ Ageing is a common underlying risk factor for many conditions and as this would 
 knitr::include_graphics("figs/population-pryamids-1950-2019.png")
 ```
 
-(ref:poppyramid-cap) __The Population is Getting Older__ Population pryamids for global population for A) 1950 and B) 2019 from [populationpyramid.net](populationpyramid.net)
+(ref:poppyramid-cap) __The Population is Getting Older__ Population pyramids for global population for A) 1950 and B) 2019 from [populationpyramid.net](populationpyramid.net) [@PopulationPyramid2019]
 
 ```{r Kontis2017-fig1, fig.cap='(ref:Kontis2017-fig1-cap)', out.width='95%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/Kontis2017_fig1.jpg")
@@ -24,7 +24,7 @@ knitr::include_graphics("figs/Kontis2017_fig1.jpg")
 knitr::include_graphics("figs/Belikov2019_fig1.jpg")
 ```
 
-(ref:Belikov2019-fig1-cap) __Mortality from Age-Related Conditions Increases According to a Logistic Function with Age__ Morality rate in deaths per 100,000 at different ages for Atherosclerosis, Essential Hypertension, Insulin-dependent diabetes, Non-insulin-dependent diabetes, Alzheimer's disease, and Parkinson's disease. Showing Model fits for exponential, logistic and the sum of 2 logistic functions. Underlying Cause of Death data (1999-2015) were form the Centers for Disease Control and Prevention, Wide-ranging OnLine Data for Epidemiologic Research (CDC WONDER) database. Reproduced from Belikov 2019 figure 1 [@Belikov2019].
+(ref:Belikov2019-fig1-cap) __Mortality from Age-Related Conditions Increases According to a Logistic Function with Age__ Mortality rate in deaths per 100,000 at different ages for Atherosclerosis, Essential Hypertension, Insulin-dependent diabetes, Non-insulin-dependent diabetes, Alzheimer's disease, and Parkinson's disease. Showing Model fits for exponential, logistic and the sum of 2 logistic functions. Underlying Cause of Death data (1999-2015) were form the Centers for Disease Control and Prevention, Wide-ranging OnLine Data for Epidemiologic Research (CDC WONDER) database. Reproduced from Belikov 2019 figure 1 [@Belikov2019].
 
 ```{r Fleming2005-fig3, fig.cap='(ref:Fleming2005-fig3-cap)', out.width='90%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/Fleming2005_fig3.jpg")
@@ -39,7 +39,7 @@ knitr::include_graphics("figs/Barnett2012_fig1.jpg")
 (ref:Barnett2012-fig1-cap) __Number and Frequency of Comorbidities increase with Age__ Number of chronic disorders by age group. reproduced from Barnett et al. 2012 figure 1 [@Barnett2012].
 
 Given the rapid increases in the rates of numerous diseases and the rate of death from those diseases as we age, there is a clear impetus to develop interventions to prevent and treat age-related diseases. 
-The common factor among all these conditions is their relationship to age, but age is not merely a shared risk factor but frequently the largest; outside of rare genetic conditions which predispose to early-onset.
+The common factor among all these conditions is their relationship to age, but age is not merely a shared risk factor but frequently the largest; outside of rare genetic conditions which predispose to early-onset [@Niccoli2012].
 Thus understanding the underlying biological mechanisms of the ageing process and intervening in those mechanisms, has the potential to be vastly more effective and economical [@Goldman2016] than attempting to tackle diseases individually. 
 The discovery in 1993 by Cynthia Kenyon and others [@Kenyon1993] that a single mutation in the *daf-2* gene of *C. elegans* could double the lifespan of this organism is often cited as an inflexion point in the confidence of the ageing research field that interventions in the process of ageing itself may be a realistic therapeutic target. What then do we know about the underlying biology of ageing?
 
@@ -49,8 +49,8 @@ Ageing is characterised by a progressive deterioration of physiological integrit
 Theories of how and why this occurs are numerous with a history in the scientific literature stretching back to the late 1800s [@Medvedev1990], setting aside, for now, theoretical frameworks for the process of ageing we will first consider the nature of these changes.
 Changes at the organismal level have their origins in changes at the molecular and cellular scales. Lopez-Otin et al. 2013 [@Lopez-Otin2013] identified nine hallmarks of ageing in their 2013 review.
 These hallmarks meet the criteria of: 
-Manifesting during normal ageing. 
-Accelerating ageing when aggravated. 
+Manifesting during normal ageing; 
+Accelerating ageing when aggravated; 
 Retarding ageing when ameliorated.
 The hallmarks are further subdivided and hierarchically arranged into primary, antagonistic and integrative categories.
 Primary hallmarks are of unequivocally negative effect.
@@ -71,7 +71,7 @@ __Primary Hallmarks - Causes of Damage__
   Patterns of DNA methylation and of a number of histone modifications exhibit age-related changes. These contribute to the dysregulation of gene expression and derepression of heterochromatin regions which also increases the risk of genomic instability.
   
 4. *Loss of proteostasis*: 
-  production of protein folding chaperones in response to stress decreases with age, as does the activity of the two major proteolytic systems, the ubiquitin-proteasome system and the autophagy-lysosome system. 
+  Production of protein folding chaperones in response to stress decreases with age, as does the activity of the two major proteolytic systems, the ubiquitin-proteasome system and the autophagy-lysosome system. 
   This leads to increased prevalence of misfolded, aberrant and aggregated proteins with age.
 
 __Antagonistic Hallmarks - Responses to damage__
@@ -90,7 +90,7 @@ __Antagonistic Hallmarks - Responses to damage__
 7. *Cellular senescence*: 
   Senescent cells are in stable cell-cycle arrest induced by shortened telomeres, other forms of DNA damage, INK4/ARF derepression, or a variety of mitogenic/oncogenic signals.
   Induction of a senescent state in pre-cancerous cells protects against cancer and senescent cells are initially cleared by the immune system.
-  However, these cells accumulate in tissue as we age without contributing to function and with a pro-inflammatory secretory phenotype that promotes chronic inflammation.
+  However, these cells accumulate in tissue as we age without contributing to function and with a pro-inflammatory secretory phenotype that promotes chronic inflammation [@Avelar2020].
 
 __Integrative Hallmarks - Proximal Causes of the Ageing phenotype__
 
@@ -105,22 +105,22 @@ __Integrative Hallmarks - Proximal Causes of the Ageing phenotype__
 
 This work and therefore the following review of the literature focuses on the 3rd hallmark, epigenetic alterations, specifically the role of DNA methylation in ageing.
 Booth & Brunet [@Booth2016] contend that epigenetic processes are a hub through which all of the other hallmarks of ageing are mediated and feed-back on one another (Figure \@ref(fig:Booth2016fig3)).
-One of these interactions is between DNA damage and chromatin state including DNAm.
+One of these interactions is between DNA damage and chromatin state including DNA methylation.
 Sinclair and Oberdoerffer [@Sinclair2009] make the case that DNA damage and repair processes are disruptive to the epigenome and, with Hayano et al., link double-stranded DNA breaks to accelerated epigenetic ageing in a recent pre-print [@Hayano2019].
 Kane & Sinclair [@Kane2019] make the case that reprogramming of the epigenome to a 'younger' state is a promising mode of intervention in the ageing process. 
-Whilst loss of genetic information is effectively irreversible, loss of epigenetic information is not necessarily so. 
+Whilst loss of genetic information is effectively irreversible, barring gene therapy-like interventions, loss of epigenetic information is not necessarily so. 
 Dysregulation from the loss of epigenetic information is arguably proximate to age-related changes and may run ahead of significant genetic information loss such that intervening in the former may have beneficial effects in its own right and stave off the latter. 
 
 ```{r Booth2016fig3, fig.cap='(ref:Booth2016fig3-Cap)', out.width='60%', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/Booth2016_F3_epigenomeHubAgingHallmarks_alpha.png")
 ```
-(ref:Booth2016fig3-Cap) Epigenetic Changes as a hub for the hallmarks of ageing. (reproduced from [@Booth2016], figure 3)
+(ref:Booth2016fig3-Cap) Epigenetic Changes as a hub for the hallmarks of ageing. (Reproduced from Booth & Brunet [@Booth2016], figure 3)
 
 Prior to examining the specific relationship of epigenetic changes to ageing we take a step back to define and outline epigenomics and examine the fundamentals of DNA methylation biology.
 
 ## Epigenomics - Overview
 
-Epigenetics generally refers to modifications to DNA and chromatin which do not affect the primary sequence of DNA bases, but which are to varying degrees stable and heritable. 
+Epigenetics generally refers to modifications to DNA and chromatin which do not affect the primary sequence of DNA bases [@Bird2007], but which are to varying degrees stable and heritable. 
 The term derives from epigenesis and genetics originating with Conrad Waddington [@Waddington1942]. 
 Epigenesis refers to the idea that organisms develop through the progressive differentiation of cells from the egg into adult tissues. 
 As modern genetics revealed that every cell contained a complete copy of the genome which was differentially utilised by the cells of adult organisms, the terms were fused to reflect the study of how this occurs.
@@ -131,7 +131,7 @@ Adrian Bird proposed the definition: "the structural adaptation of chromosomal r
 Epigenomics refers to the totality of the epigenetic modifications present in a particular cell, tissue type or genome.
 This definition appears to have caught on with at least some as: 'These days, "epigenetics" more generally refers to all non-genomic information storage in cells including gene networks, chromatin structure and post-translational modifications to histones.', according to Alice Kane and David Sinclair [@Kane2019].
 
-Whilst an organism can generally be thought of as having a single genome, with exceptions such as Somatic mutations and Chimerism, it will have at least as many epigenomes as it has cell types.
+Whilst an organism can generally be thought of as having a single genome, with exceptions such as Somatic mutations and Chimerism, it will have at least as many epigenomes as it has cell types [@Tabansky2015].
 There are on the order of $10^{13}$ cells in the human body [@Bianconi2013].
 Estimates of the number of cell types vary with the resolution at which one deems cells functionally distinct [@Regev2017].
 At this point in time, however, there is no clear definition of what constitutes a distinct cell type, indeed they are beginning to be defined by the distinct patterns of gene expression and epigenetic modifications they exhibit [@CellSystemsCellType2017].
@@ -142,22 +142,23 @@ There are a number of epigenetic modifications which can be subdivided into four
 
 1. __DNA modifications__
 
-    DNA methylation primarily takes place on Cytosine residues. 
+    In mammals DNA methylation primarily takes place on Cytosine residues. 
     Cytosine methylation occurs principally in an mCpG sequence context but can also occur in mCpH, mCHG and mCHH (H=A/C/T) contexts; particularly in cells of the nervous system [@Guo2014a] and embryonic stem cells where as many as 25% of all cytosines can be methylated in non-canonical contexts.
     In contrast to methylation in a differentiated non-neuronal tissue such as foetal lung fibroblasts which is 99.98% in CpG context [@Lister2009; @Schultz2015].
-    5-methylcytosine (5mc) can be oxidised to produce and another modified DNA base 5-hydroxymethylcytosine (5hmC).
-    5hmC may act as an intermediate to demethylation and potentially has regulatory functions in its own right, reviewed in [@Pfeifer2013].
-    5hmC can be oxidised further to formylcytosine (5fC) and carboxylcytosine (5caC). 
+    5-methylcytosine (5mc) can be oxidised to produce another modified DNA base 5-hydroxymethylcytosine (5hmC) [@Penn1972; @Kriaucionis2009].
+    5hmC may act as an intermediate to demethylation and potentially has regulatory functions in its own right [@Pfeifer2013].
+    5hmC can be oxidised further to formylcytosine (5fC) and carboxylcytosine (5caC) [@Ito2011]. 
     The extent to which these modifications are stable and functional is still being explored.
-    Other DNA bases can be methylated such as N6-methyladenine, but this occurs at a substantially lower frequency that 5mC and much less is known about their potential functions [@Wu2016].
+    Other DNA bases can be methylated such as N6-methyladenine, but this occurs at a substantially lower frequency that 5mC and much less is known about their potential functions [@Wu2016]. 
+    N6-methyladenine may play a role in condensing chromatin [@Xie2018].
 
 2. __Histone tail modifications__
 
     Histone proteins form disk-shaped octamers around which ~150bp of DNA can be wrapped to form a nucleosome. 
     The 'tails' are generally the N termini of the histone proteins, outside of the core globular domains, which protrude from the nucleosome structure. 
     Histone tails can be subject to post-translational modification which commonly takes place at lysine residues, other residues are subject to modifications but lysines are among the best characterised. 
-    Examples of modifications include methylations with between one and three methyl groups per lysine, Acetylations, Ubiquitylation, SUMOylations, and phosphorylations (Reviewed in @Bannister2011).
-    Many of these marks can be generally classified as permissive or repressive but are frequently found in combinations of marks of opposing effect, rendering the interpretation of the 'Histone Code' extremely challenging [@Voigt2012].
+    Examples of modifications include methylation with between one and three methyl groups per lysine, Acetylations, Ubiquitylation, SUMOylations, and phosphorylations [@Bannister2011].
+    Many of these marks can be generally classified as permissive or repressive but are frequently found in combinations of marks of opposing effect, rendering the interpretation of the 'Histone Code' extremely challenging [@Strahl2000; @Schreiber2002; @Voigt2012].
     One approach to interpreting chromatin state is segmentation. 
     Segmentation makes use of pattern discovery techniques to divide the genome into discrete sections assigning these sections to a set of categories which can then be compared to existing annotations to provide functional labels [@Hoffman2012; @Carrillo-de-Santa-Pau2017].
     When successful the pattern discovery algorithm independently recapitulates our existing ontology of functional elements and hopefully provides new insights by for example highlighting regions not previously considered to be in a given functional category. 
@@ -165,12 +166,12 @@ There are a number of epigenetic modifications which can be subdivided into four
 
 3. __Histone Variants__
 
-    Alternatives to the canonical histones can be substituted in the nucleosome, examples of such alternative histones include H2A.Z and H3.3.
-    Alternative histones can alter chromatin structure and dynamics by altering nucleosome stability, binding different factors, and presenting a different substrate for histone modifications, thus altering their pattern.       (reviewed in @Weber2014.)
+    Alternatives to the canonical histones can be substituted in the nucleosome, examples of such alternative histones include H2A.Z and H3.3 [@Talbert2012].
+    Alternative histones can alter chromatin structure and dynamics by altering nucleosome stability, binding different factors, and presenting a different substrate for histone modifications, thus altering their pattern [@Weber2014].
 
 4. __Some non-coding RNAs (ncRNA)__
 
-    A subset of ncRNAs, particularly those which persist in close association with chromatin can fall within the definition of epigenetic features (reviewed in @Kaikkonen2011). 
+    A subset of ncRNAs, particularly those which persist in close association with chromatin can fall within the definition of epigenetic features [@Kaikkonen2011]. 
     An example of such a long non-coding RNA (lncRNA) is Xist which is a key regulator of X inactivation [@Cerase2015].
 
 ## Fundamentals of DNA Methylation
@@ -228,7 +229,7 @@ CGIs overlap the promoters of $\sim70\%$ of genes [@Saxonov2006], this, however,
 These orphan CGIs frequently constitute cell-type specific enhancers [@Bell2017] and alternate promoters [@Illingworth2010; @Maunakea2010].
 They are found in both intergenic and intragenic regions.
 CpGs are distributed quite sparsely through the genome occurring at low density in "seas" and at increasing density in CGIs and their flanking regions, see figure \@ref(fig:CGIs).
-Early work showed 70-80% of CpGs are constitutively methylated [@Ehrlich1982] (reviewed @Bird2002) Stadler et al. produced a more detailed picture of the distribution of CpG methylation in mouse embryonic stem cells (ESCs) [@Stadler2011] see figure \@ref(fig:CpGfreqVsDNAm).
+Early work showed 70-80% of CpGs are constitutively methylated [@Ehrlich1982; @Bird2002] Stadler et al. produced a more detailed picture of the distribution of CpG methylation in mouse embryonic stem cells (ESCs) [@Stadler2011] see figure \@ref(fig:CpGfreqVsDNAm).
 It is a characteristic of CGIs that they are generally unmethylated.
 
 ```{r CpGfreqVsDNAm, fig.cap='(ref:CpGfreqVsDNAm-Cap)',  out.width='80%', fig.show='hold', fig.align = 'center', echo=FALSE}
@@ -262,7 +263,7 @@ The location of *de novo* methylation by the DNMT3s is influenced by a number of
 knitr::include_graphics("figs/Lyko2017DNAmMechanism.png")
 ```
 
-(ref:Lyko2017DNAmMechanism-Cap) Motif VI (ENV/PCQ) refers to the conserved catalytic motif in DNMTs. 'B:' Represents the enzyme supplied base (Figure reproduced from the review of DNMT biology by @Lyko2017 (fig. 1b))
+(ref:Lyko2017DNAmMechanism-Cap) Motif VI (ENV/PCQ) refers to the conserved catalytic motif in DNMTs. 'B:' Represents the enzyme supplied base (Figure reproduced from the review of DNMT biology by Lyko [@Lyko2017] (fig. 1b))
 
 DNMT2 is unlike the other members of the DNMT family in that it targets an RNA substrate. 
 DNMT2 is a tRNA methyltransferase which methylates a specific subset of tRNA genes, mostly Asp isoacceptors, at a site adjacent to the anticodon which protects them from endonucleolytic cleavage under stress conditions.
@@ -393,7 +394,7 @@ The lack of apparent global changes may be due to the biases of the reduced repr
 RRBS uses a restriction enzyme-based approach to enrich for regions with high GC content such as CGIs which tend to have low levels of methylation, and consequently may not be sensitive to loss of methylation in generally hypermethylated regions which could contribute to a global trend [@Meissner2005].
 
 Wilson et al. also noted that the mitotic index of tissues did not relate to the loss of DNA methylation with age in tension with their earlier observations *in vitro*.
-The persistent loss of 5mC over time and the dramatic changes in methylation seen in cancer cells lead Wilson et al. to suggest that dysregulation of DNA methylation may have a substantial role to play in the age-dependency of cancer risk and ageing more generally (reviewed by Feinberg and Tycko [@Feinberg2004]).
+The persistent loss of 5mC over time and the dramatic changes in methylation seen in cancer cells lead Wilson et al. to suggest that dysregulation of DNA methylation may have a substantial role to play in the age-dependency of cancer risk and ageing more generally [@Feinberg2004].
 It has been suggested that "Epimutations" may be able to substitute for mutations in the multi-hit model of carcinogenesis [@Knudson1971].
 For example; hypermethylation of the *BRCA1* promoter [@Esteller2000], Or, the development of Wilms’ tumour due to Beckwith–Wiedemann syndrome, a disorder arising from loss of imprinting of the gene encoding insulin-like growth factor 2 (IGF-2) leading to a double dose of IGF-2 protein [@Feinberg2018].
 Furthermore, the loss of methylation and increased entropy of closed chromatin regions may lead to increased susceptibility to structural mutations commonly found in cancer cells through the exposure of homologous sequences [@Feinberg2004; @Jenkinson2017].
@@ -587,7 +588,7 @@ One could restrict the definition of clock changes further to only those which a
 Apparent changes in the DNAm state of a mixed cell population could be due not to global changes in that population but rather its composition, blood exhibits changes in the cellular composition with age [@Rimmele2014; @Izzo2020].
 As haematopoietic stem cells age their numbers increase and their regenerative potential declines.
 Their output becomes skewed towards the myeloid lineage but produces poorer quality cells.
-The number of naive T-cells decreases with age, memory and effector T-cells accumulate as to memory B cells limiting the diversity in the cell-types and contributing to immunosenescence (reviewed in [@Geiger2013]).
+The number of naive T-cells decreases with age, memory and effector T-cells accumulate as to memory B cells limiting the diversity in the cell-types and contributing to immunosenescence [@Geiger2013].
 Cellular composition of tissues can have a substantial impact on epigenome-wide association studies (EWAS), especially when dealing with small effect sizes [@Jaffe2014].
 Thus shifts in cell composition such as those in blood during ageing can be substantial sources of confounding when searching for cell-intrinsic changes in DNA. 
 Some attempts to assay and/or correct for cell-type composition have been made, for example, Rakyan et al [@Rakyan2010] isolated $CD4^+$ T-cells and found that they had a 60% overlap with age-related CpGs in whole blood. Chen et al. [@Chen2016a] used the method developed by Houseman et al. [@Houseman2012] to correct for cell-type composition and found that it did improve the performance of the Horvath and Hannum age predictors.

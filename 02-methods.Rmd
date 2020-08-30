@@ -155,7 +155,7 @@ These individuals originate from 1933 unique families.
 There are 1234 monozygotic (MZ) twin pairs (2468 individuals), and 458 dizygotic (DZ) twin pairs (916 individuals).
 
 The above-described processing steps for Methylated DNA Immunoprecipitation sequencing (MeDIP-seq) data used here have been previously described in Bell et al. [@Bell2016; @Bell2017a].
-These processed data are available, subject to approval, from the European Genome-phenome Archive (EGA) (https://www.ebi.ac.uk/ega) under study number EGAS00001001910 and dataset EGAD00010000983.
+These processed data are available, subject to approval, from the European Genome-phenome Archive (EGA) (https://www.ebi.ac.uk/ega) under study number EGAS00001001910 and dataset  ([https://www.ebi.ac.uk/ega/datasets/EGAD00010000983](https://www.ebi.ac.uk/ega/datasets/EGAD00010000983)).
 
 ## Targeted Bisulfite sequencing
 
@@ -204,3 +204,5 @@ Fluidigm 48.48 access array.
 After designing the target-specific primer sequences the CS1 and CS2 adaptor sequences are added to the forward and reverse primers respectively to permit the addition of Illumina sequencing primers in a second PCR step.
 The subsequent analysis is similar to that for whole-genome bisulfite sequencing.
 The PCR products are sequenced and the resulting reads aligned and methylation levels called with `Bismark`.
+
+The targeted BiS-sequencing data is available at: [https://www.ncbi.nlm.nih.gov/bioproject/PRJNA635108](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA635108)

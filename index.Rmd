@@ -8,8 +8,8 @@ link-citations: yes
 linkcolor: blue
 linestretch: 1.5
 documentclass: book
-bibliography: "`r normalizePath('~/Documents/bibtex/library.bib')`"
-csl: "`r normalizePath('~/Documents/bibtex/genomebiology.csl')`"
+bibliography: "library.bib"
+csl: "genomebiology.csl"
 github-repo: 
 description: "PhD Thesis"
 subtitle: |

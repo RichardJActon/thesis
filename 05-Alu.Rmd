@@ -1,8 +1,6 @@
-# Results 3 - DNA methylation clocks in Alu Elements {#Alus}
+# DNA methylation clocks in Alu Elements {#Alus}
 
 ## Abstract 
-
-
 
 ## Introduction {#AluIntro}
 
