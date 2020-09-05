@@ -152,6 +152,32 @@ Age acceleration values were computed as the predicted age minus the chronologic
 
 ### Genetic Association for Alu-Clock
 
+===
+The study included X participants with both genotypic and phenotypic data from the TwinsUK adult twin registry (see Methods chapter).
+
+Genotyping of the TwinsUK cohort was done with a combination of Illumina HumanHap300 and HumanHap610Q chips – cite Hysi[1] - plus more details of this in there
+
+Intensity data for each of the arrays were pooled separately and genotypes were called with the Illuminus32 calling algorithm, thresholding on a maximum posterior probability of 0.95. After pre-phasing using Eagle v2.4[2], imputation was performed using the Minimach 3.0 software package[3], using haplotype information from the HRC r1.1 2016 reference panel[4].
+
+Using the software GEMMA[5], linear mixed models were fitted to test for associations between the phenotypes and genetic variants. 
+
+For each variant a linear mixed model was built, taking into account the family relatedness arising from the presence of siblings in the cohort (Pirro is checking specifically what he included)
+
+P value to assess the probabilities of associations - suggestive threshold 1x10-5, significant 5x10-8
+
+ 
+
+[1] Hysi, Pirro G., et al. "A genome-wide association study for myopia and refractive error identifies a susceptibility locus at 15q25." Nature genetics 42.10 (2010): 902-905.
+
+2Loh, Po-Ru, Pier Francesco Palamara, and Alkes L. Price. "Fast and accurate long-range phasing in a UK Biobank cohort." Nature genetics 48.7 (2016): 811-816.
+
+3Das, Sayantan, et al. "Next-generation genotype imputation service and methods." Nature genetics 48.10 (2016): 1284-1287.
+
+4McCarthy, Shane, et al. "A reference panel of 64,976 haplotypes for genotype imputation." Nature genetics 48.10 (2016): 1279-1283.
+
+5Zhou, Xiang, and Matthew Stephens. "Genome-wide efficient mixed-model analysis for association studies." Nature genetics 44.7 (2012): 821-824.
+===
+
 \newpage
 
 ## Results

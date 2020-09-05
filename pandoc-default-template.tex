@@ -383,11 +383,15 @@ $else$
 \providecommand{\subtitle}[1]{% add subtitle to \maketitle
   \apptocmd{\@title}{\par {\large #1 \par}}{}{}
 }
+\providecommand{\orcid}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {#1 \par}}{}{}
+}
 \makeatother
 $endif$
 \subtitle{$subtitle$}
 $endif$
 \author{$for(author)$$author$$sep$ \and $endfor$}
+\orcid{$orcid$} % ###!!!
 \date{$date$}
 $if(beamer)$
 $if(institute)$

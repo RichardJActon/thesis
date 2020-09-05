@@ -155,7 +155,7 @@ There are a number of epigenetic modifications which can be subdivided into four
 2. __Histone tail modifications__
 
     Histone proteins form disk-shaped octamers around which ~150bp of DNA can be wrapped to form a nucleosome. 
-    The 'tails' are generally the N termini of the histone proteins, outside of the core globular domains, which protrude from the nucleosome structure. 
+    The 'tails' are generally the N termini of the histone proteins, outside of the core globular domains, which protrude from the nucleosome structure [@Losick2014]. 
     Histone tails can be subject to post-translational modification which commonly takes place at lysine residues, other residues are subject to modifications but lysines are among the best characterised. 
     Examples of modifications include methylation with between one and three methyl groups per lysine, Acetylations, Ubiquitylation, SUMOylations, and phosphorylations [@Bannister2011].
     Many of these marks can be generally classified as permissive or repressive but are frequently found in combinations of marks of opposing effect, rendering the interpretation of the 'Histone Code' extremely challenging [@Strahl2000; @Schreiber2002; @Voigt2012].
@@ -171,8 +171,9 @@ There are a number of epigenetic modifications which can be subdivided into four
 
 4. __Some non-coding RNAs (ncRNA)__
 
-    A subset of ncRNAs, particularly those which persist in close association with chromatin can fall within the definition of epigenetic features [@Kaikkonen2011]. 
+    A subset of long ncRNAs, particularly those which persist in close association with chromatin can fall within the definition of epigenetic features [@Kaikkonen2011]. 
     An example of such a long non-coding RNA (lncRNA) is Xist which is a key regulator of X inactivation [@Cerase2015].
+    The catagorisation of these as epigenetic is somewhat controversial, as they are not direct chemical modifications to chromatin. However Xist, for example, facilitates the mitotically heritable repression of the inactivate X chromosome satisfying other criteria for being considered an epigenetic modification.
 
 ## Fundamentals of DNA Methylation
 
@@ -229,14 +230,21 @@ CGIs overlap the promoters of $\sim70\%$ of genes [@Saxonov2006], this, however,
 These orphan CGIs frequently constitute cell-type specific enhancers [@Bell2017] and alternate promoters [@Illingworth2010; @Maunakea2010].
 They are found in both intergenic and intragenic regions.
 CpGs are distributed quite sparsely through the genome occurring at low density in "seas" and at increasing density in CGIs and their flanking regions, see figure \@ref(fig:CGIs).
-Early work showed 70-80% of CpGs are constitutively methylated [@Ehrlich1982; @Bird2002] Stadler et al. produced a more detailed picture of the distribution of CpG methylation in mouse embryonic stem cells (ESCs) [@Stadler2011] see figure \@ref(fig:CpGfreqVsDNAm).
+Early work showed 70-80% of CpGs are constitutively methylated [@Ehrlich1982; @Bird2002] Stadler et al. produced a more detailed picture of the distribution of CpG methylation in mouse embryonic stem cells (ESCs) [@Stadler2011] see figures \@ref()fig:Baubec2014fig1 & \@ref(fig:CpGfreqVsDNAm).
 It is a characteristic of CGIs that they are generally unmethylated.
+
+
+```{r Baubec2014fig1, fig.cap='(ref:Baubec2014fig1-Cap)',  out.width='80%', fig.show='hold', fig.align = 'center', echo=FALSE}
+knitr::include_graphics("figs/Baubec2014_fig1.png")
+```
+
+(ref:Baubec2014fig1-Cap) Stylised representation of the relationship between CpG Density, CpG methylation and functional DNA elements. (Figure reproduced from Baubec & Schubeler [@Baubec2014] figure 1)
 
 ```{r CpGfreqVsDNAm, fig.cap='(ref:CpGfreqVsDNAm-Cap)',  out.width='80%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/CpGfreqVsDNAm.png")
 ```
 
-(ref:CpGfreqVsDNAm-Cap) The fraction of CpGs with a given methylation level. Data from Whole-Genome Bisulfite Sequencing (WGBS) of Mouse embryonic stem cells. (Figure reproduced from Stadler et al. 2011 [@Stadler2011] figure 1a)
+(ref:CpGfreqVsDNAm-Cap) The fraction of CpGs with a given methylation level. Data from Whole-Genome Bisulfite Sequencing (WGBS) of Mouse embryonic stem cells. Colours denote: unmethylated regions (blue), low-methylated regions (red), and fully methylated regions (green). These groups are three segments produced by a hidden markov model. low-methylated regions with 10-50% methylation are evolutionarily conserved distal regulatory elements with  dynamic cell-type specific regulation unlike the consistently unmethylated regions at CGIs. (Figure reproduced from Stadler et al. 2011 [@Stadler2011] figure 1a)
 
 The regulatory role played by DNA methylation varies with context and the scale at which it is examined. 
 For example methylation at a single CpG in a transcription factor binding site can determine whether or not the factor can bind at that site. 
@@ -250,7 +258,7 @@ This raises the question if some DNA methylation occurs specifically to act as a
 
 CpG methylation is produced and maintained by DNA methyltransferase (DNMT) enzymes.
 All the DNMT enzymes use S-adenosylmethionine as the source of the methyl donor group.
-DNMTs form a covalent intermediate between a conserved cysteine residue and the target base, through a nucleophilic attack on the C6 position in the cytosine ring. 
+DNMTs form a covalent intermediate between a conserved cysteine residue and the target base, through a nucleophilic attack on the C6 position in the cytosine ring [@Lyko2017]. 
 This is followed by the transfer of the S-adenosylmethionine methyl group to C5, and deprotonation of the C5 to reform the double bond between C5 and C6; which is mediated by a base provided by the enzyme (Figure \@ref(fig:Lyko2017DNAmMechanism)). 
 
 DNMT1 is associated with the replication machinery [@Vertino2002] and reproduces the methylation state of the parent strand on the daughter strand during replication.
@@ -267,10 +275,11 @@ knitr::include_graphics("figs/Lyko2017DNAmMechanism.png")
 
 DNMT2 is unlike the other members of the DNMT family in that it targets an RNA substrate. 
 DNMT2 is a tRNA methyltransferase which methylates a specific subset of tRNA genes, mostly Asp isoacceptors, at a site adjacent to the anticodon which protects them from endonucleolytic cleavage under stress conditions.
-Unprotected tRNAs produce fragments which compete with small interfering RNAs interfering with their signalling pathways.
+Unprotected tRNAs produce fragments which compete with small interfering RNAs interfering with their signalling pathways [@Kaiser2017].
 
-The mechanisms of the demethylation of DNA were more recently characterised than those which govern its methylation. 
+The mechanisms of the demethylation of DNA were more recently characterised than those which govern its methylation [@Tahiliani2009; @Ito2011]. 
 They are more complex and less well understood.
+TET2 mutations are quite common in cancer, ranking 65th across 12 major cancer types [@Kandoth2013] and more common in diverse myeloid malignancies, where loss of its catalytic activity favours tumourigenesis [@Ko2010a].
 A distinction is drawn between active and passive demethylation, in passive demethylation, 5mC bases are diluted out in the process of DNA replication.
 In the leading model of active demethylation, they are oxidised one or more times by an enzyme from the TET (Ten-Eleven-translocase) family. 
 They are then either passively removed by DNA replication or actively removed by a DNA glycosylase (thymine DNA glycosylase TGD) to create an apurinic site which is restored to a C by the Base Excision Repair (BER) pathway. This cycle of cytosine methylation and demethylation is illustrated in Figure \@ref(fig:Wu2017TETsDNAmCycle) [@Wu2017].
@@ -279,14 +288,14 @@ They are then either passively removed by DNA replication or actively removed by
 knitr::include_graphics("figs/Wu2017TETsDNAmCycle.png")
 ```
 
-(ref:Wu2017TETsDNAmCycle-Cap) BER = Bases Excision Repair; AM = Active Modification; AR = Active Removal, PD = Passive Dilution (Figure reproduced from the review of TET mediated active demethylation by @Wu2017 (fig. 1a))
+(ref:Wu2017TETsDNAmCycle-Cap) BER = Bases Excision Repair; AM = Active Modification; AR = Active Removal, PD = Passive Dilution (Figure reproduced from the review of TET mediated active demethylation by Wu & Zhang [@Wu2017] (fig. 1a))
 
 ### Maintenance and Fidelity
 
 DNA methylation is highly dependent on the underlying DNA sequence. 
 Sequence features of particular importance to determining DNA methylation status are; transcription factor and other DNA binding protein recognition motifs, and CpG density [@Lienert2011; @Ziller2013]. 
 Alterations in underlying DNA sequence such as SNPs and copy number variants (CNVs) can have a significant impact on methylation level and the susceptibility of the methylation level to change. 
-In addition, CNVs can result in dosage effects on measures of DNAm, causing regions to appear, respectively, substantially more or less methylated when fewer or greater copies than expected are present [@Boks2009; @Kerkel2008; @Schalkwyk2010; @Shoemaker2010; @Bell2017a].
+In addition, CNVs can result in dosage effects on measures of DNAm, causing regions to appear, respectively, substantially more or less methylated when fewer or greater copies than expected are present [@Boks2009; @Kerkel2008; @Schalkwyk2010; @Shoemaker2010; @Bell2017a; @Martin-Trujillo2017].
 Despite the strong influence of sequence on methylation, global CpG methylation exhibits change over developmental time as illustrated in figure \@ref(fig:DNAmDevTime) and exhibits tissue-specific changes in distribution and amount [@Ziller2013]. 
 
 ```{r DNAmDevTime, fig.cap='(ref:DNAmDevTime-Cap)', out.width='80%', fig.align = 'center', echo=FALSE}
@@ -308,7 +317,7 @@ This stochastic model of DNAm is in agreement with experimental findings [@Laird
 ```{r Riggs2004PNASfig2DNAmFidelity, fig.cap='(ref:Riggs2004PNASfig2DNAmFidelity-Cap)', out.width='70%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/Riggs2004PNASfig2DNAmFidelity.png")
 ```
-(ref:Riggs2004PNASfig2DNAmFidelity-Cap) $E_m$ = probability of methylation maintenance, $E_m$ = probability of *de novo* methylation. $M$ & $U$ = the number of methylated and unmethylated molecules at specific CpG sites respectively. Modelling (__Grey points__) $E_m,E_d$ values of 0.90,0.10; 0.95,0.05; 0.97,0.03 (outermost to innermost, two curves for each $E_m,E_d$ set, one starting at $M=1,U=0$ and one a $M=0,U=1$. Experimental data (__Black points__) from the *HpaII* locus (site H3) in 17 clones of mouse cell line BML-2 which has a known methylation level of 50%. (Reproduced from [@Riggs2004a])
+(ref:Riggs2004PNASfig2DNAmFidelity-Cap) $E_m$ = probability of methylation maintenance, $E_m$ = probability of *de novo* methylation. $M$ & $U$ = the number of methylated and unmethylated molecules at specific CpG sites respectively. Modelling (__Grey points__) $E_m,E_d$ values of 0.90,0.10; 0.95,0.05; 0.97,0.03 (outermost to innermost, two curves for each $E_m,E_d$ set, one starting at $M=1,U=0$ and one a $M=0,U=1$. Experimental data (__Black points__) from the *HpaII* locus (site H3) in 17 clones of mouse cell line BML-2 which has a known methylation level of 50%. (Reproduced from Riggs & Xiong [@Riggs2004a])
 
 Jenkinson et al. [@Jenkinson2017] used an information-theoretic approach, modelling DNAm as a binary communications channel using a 1-dimensional Ising model from the field of statistical physics. 
 This permitted them to examine properties of DNAm not accessible to conventional means of analysis which typically capture the mean methylation level and perhaps the variability for a given locus. 
@@ -328,6 +337,8 @@ knitr::include_graphics("figs/Zhao2014-fig3-ab.png")
 ```
 (ref:Zhao2014fig3ab-Cap) Bimodal Distribution of DNA methylation level and fidelity. Methylation fidelity exhibits a bimodal distribution with most and least methylated regions exhibiting the highest fidelity. Additionally, fidelity for methylation levels of 10-50% is considerably better than fidelity for levels of 50-90%. These data are from the mouse cell line ES-E14TG2a which is capable of self-renewal when cultured with Leukaemia Inhibitory Factor (LIF) and spontaneous differentiation upon removal of LIF (denoted as E14-d0 at day 0 and E14-d6 at day 6 after the withdrawal of LIF, respectively). Fidelity represents the percentage of symmetrically methylated or unmethylated CpG dyads for a given position as determined by Hairpin-Bisulfite PCR. (Reproduced from Zhao et al. 2014 [@Zhao2014] (figure 3 a and b).)
 
+[@Zhou2018] late replicating domains
+
 ### DNA Methylation Assays 
 
 There are numerous DNA methylation assays. 
@@ -337,7 +348,7 @@ Both the targeted and untargeted methods vary in their granularity, from individ
 These assays also vary in their coverage of the genome from locus-specific approaches looking at small numbers of individual loci to whole-genome methods providing methylation information on all ~28 million CpG sites. 
 Between these two extremes are 'epigenome-wide' methods which are focused with varying degrees of specificity on genomic regions of interest.
 
-These DNA methylation assays generally exploit one of four following things:
+These DNA methylation assays generally exploit one of four following principles:
 
 1. __Methylation sensitive restriction digestion__
     A variety of methods exploit enzymes which differentially cut methylated and unmethylated DNA.
@@ -394,7 +405,7 @@ The lack of apparent global changes may be due to the biases of the reduced repr
 RRBS uses a restriction enzyme-based approach to enrich for regions with high GC content such as CGIs which tend to have low levels of methylation, and consequently may not be sensitive to loss of methylation in generally hypermethylated regions which could contribute to a global trend [@Meissner2005].
 
 Wilson et al. also noted that the mitotic index of tissues did not relate to the loss of DNA methylation with age in tension with their earlier observations *in vitro*.
-The persistent loss of 5mC over time and the dramatic changes in methylation seen in cancer cells lead Wilson et al. to suggest that dysregulation of DNA methylation may have a substantial role to play in the age-dependency of cancer risk and ageing more generally [@Feinberg2004].
+The persistent loss of 5mC over time and the dramatic changes in methylation seen in cancer cells led Wilson et al. to suggest that dysregulation of DNA methylation may have a substantial role to play in the age-dependency of cancer risk and ageing more generally [@Feinberg2004].
 It has been suggested that "Epimutations" may be able to substitute for mutations in the multi-hit model of carcinogenesis [@Knudson1971].
 For example; hypermethylation of the *BRCA1* promoter [@Esteller2000], Or, the development of Wilms’ tumour due to Beckwith–Wiedemann syndrome, a disorder arising from loss of imprinting of the gene encoding insulin-like growth factor 2 (IGF-2) leading to a double dose of IGF-2 protein [@Feinberg2018].
 Furthermore, the loss of methylation and increased entropy of closed chromatin regions may lead to increased susceptibility to structural mutations commonly found in cancer cells through the exposure of homologous sequences [@Feinberg2004; @Jenkinson2017].
@@ -411,7 +422,7 @@ Both the increase in variability with age and the increasing divergence of twins
 ```{r Fraga2005fig3, fig.cap='(ref:Fraga2005fig3-Cap)',  out.width='80%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/Fraga2005fig3.png")
 ```
-(ref:Fraga2005fig3-Cap) Mapping Chromosomal Regions of Differential DNA Methylation. Examples from Chromosomes 1, 3, 12 & 17 are shown for a 3 and 50-year-old twin pair. Methylation status is shown by competitive hybridization of AIMS (amplification of inter-methylated sites) products to metaphase chromosomes. Green and Red signals indicate hypermethylation and hypomethylation events between twins, Yellow indicates little difference. Red and Green blocks adjacent to ideograms indicate areas of significant DNA methylation change. (Reproduced from [@Fraga2005] (figure 3).)
+(ref:Fraga2005fig3-Cap) Mapping Chromosomal Regions of Differential DNA Methylation. Examples from Chromosomes 1, 3, 12 & 17 are shown for a 3 and 50-year-old twin pair. Methylation status is shown by competitive hybridization of AIMS (amplification of inter-methylated sites) products to metaphase chromosomes. Green and Red signals indicate hypermethylation and hypomethylation events between twins, Yellow indicates little difference. Red and Green blocks adjacent to ideograms indicate areas of significant DNA methylation change. (Reproduced from Fraga et al. [@Fraga2005] (figure 3).)
 
 ### Age-Related Differential Methylation and Epigenetic Clocks {#DNAmAgeReview}
 
@@ -457,7 +468,7 @@ Garagnani et al. used 450k array data from a cohort of 64 subjects aged 9-83 to 
 knitr::include_graphics("figs/Heyn2012F1b.png")
 ```
 (ref:Heyn2012F1b-Cap) Global Hypomethylation with Age. NB = Newborn, Y26 = 26 year old, Y103 = 103 year old.
-(Reproduced from @Heyn2012 figure 1 b.)
+(Reproduced from Heyn et al. [@Heyn2012] figure 1 b.)
 
 In January of 2013 Hannum at al. [@Hannum2013] published a study using the Illumina 450k array and whole blood samples for 656 participants aged 19-101. 
 Their optimised model was able to predict age with an error of 3.9 years.
@@ -494,12 +505,12 @@ This is of particular relevance to DNAm as the profile of the types of mutation 
 ```{r Jaiswal2014fig1, fig.cap='(ref:Jaiswal2014fig1-Cap)', out.width='60%', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/Jaiswal2014fig1_somaticMutationAge.png")
 ```
-(ref:Jaiswal2014fig1-Cap) Somatic mutations increase with Age. (Reproduced from [@Jaiswal2014c], figure 1)
+(ref:Jaiswal2014fig1-Cap) Somatic mutations increase with Age. (Reproduced from Jaiswal et al. [@Jaiswal2014c], figure 1)
 
 ```{r Jaiswal2014fig2c, fig.cap='(ref:Jaiswal2014fig2c-Cap)', out.width='60%', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/Jaiswal2014fig2c.png")
 ```
-(ref:Jaiswal2014fig2c-Cap) C to T transitions are the most common substitutions that occur with age. (Reproduced from [@Jaiswal2014c], figure2 c)
+(ref:Jaiswal2014fig2c-Cap) C to T transitions are the most common substitutions that occur with age. (Reproduced from Jaiswal et al. [@Jaiswal2014c], figure2 c)
 
 ### DNAm Age as a Biomarker of Ageing
 
@@ -583,7 +594,7 @@ Whilst it is evidently the case that multi-tissue DNAm age prediction is possibl
 This is supported by the out-performance of the Horvath predictor by the Hannum predictor in blood samples [@Marioni2015] and differentially predicted ages of tissues such as breast noted by Horvath [@Horvath2013].
 DNAm was highly correlated with age for a variety of tissue-specific sites in many studies, suggesting that the definition of clock sites is frequently tissue-dependent. 
 This may also be true of drift changes, stochastic changes may occur at sites in one tissue that would be tightly controlled in another. 
-One could restrict the definition of clock changes further to only those which are present in all/most tissue types to make a multi-tissue predictor. 
+If one was interested in universal signatures of ageing common across cell-types, one could restrict the definition of clock changes further to only those which are present in all/most tissue types to make a multi-tissue predictor. 
 
 Apparent changes in the DNAm state of a mixed cell population could be due not to global changes in that population but rather its composition, blood exhibits changes in the cellular composition with age [@Rimmele2014; @Izzo2020].
 As haematopoietic stem cells age their numbers increase and their regenerative potential declines.
@@ -621,10 +632,10 @@ Horvath laid out four predictions of this EMS model and argued that there was ev
 3. High age acceleration of cancer tissue should be associated with fewer somatic mutations given the protective role of the EMS
 4. Mutations in TP53 should be associated with a lower age acceleration of cancer tissue if one further assumes that p53 signalling helps trigger the EMS
 
-I would propose that a fifth prediction of this model is that DNA methylation fidelity should be elevated during development and differentiation as a reflection of the greater amount of work done by the EMS during this period. 
+A fifth prediction of this model would be that DNA methylation fidelity should be elevated during development and differentiation as a reflection of the greater amount of work done by the EMS during this period. 
 This is borne out by the results of Zhao et al. [@Zhao2014] who noted a global increase in DNA methylation fidelity during the early differentiation of mouse embryonic stems cells (see figure \@ref(fig:Zhao2014fig3ab)). 
 
-If Horvath's Concept of an EMS is accurate and Jenkinson et al.'s RDE captures the energy expended by the cell on the maintenance of the methylation state of a locus, one would expect Horvath's concept of an EMS to tie in quite nicely with Jenkinson et al.'s methylation channel model.
+If Horvath's concept of an EMS is accurate and Jenkinson et al.'s RDE captures the energy expended by the cell on the maintenance of the methylation state of a locus, one would expect Horvath's concept of an EMS to tie in quite nicely with Jenkinson et al.'s methylation channel model.
 With the Relative dissipated energy (RDE) for a CpG channel corresponding to the work done by Horvath's EMS at a given locus. 
 Jenkinson et al. did indeed observe high levels of RDE in stem cells and a decline of RDE with age. 
 Interestingly, however, some cancers exhibited decreased RDE, CAP and increased entropy which is consistent with an accelerated ageing profile but seemingly less so with elevated activity of an EMS. 

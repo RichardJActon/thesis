@@ -62,9 +62,13 @@ knitr::include_graphics("figs/Dedeurwaerder2011fig1bL.png")
 (ref:Dedeurwaerder2011fig1bL-Cap) __Type I probes have a wider range and less variability than type II__. Type I probes shown in blue, Type II in red. Plot shows kernel density of beta values with gausian smoothing. (Reproduced from Dedeurwaerder et al. [@Dedeurwaerder2011])
 
 There exist a number of normalisation methods to account for probe-type bias [@Fortin2016] such as beta-mixture quantile normalization (BMIQ) [@Teschendorff2013]. 
-This method was applied as a part of the pre-processing of the Twins UK 450k array datasets used in [Chapter 4](#tRNAs) in this thesis. 
+This method was applied as a part of the pre-processing of the Twins UK 450k array datasets used in (Chapter \@ref(tRNAs)) in this thesis. 
 In addition, there are other techniques capable of correcting for probe bias as well as other sources of technical variation such as batch effects [@Leek2010].
-Functional normalisation [@Fortin2014] which makes use of the technical control probe data on the arrays to inform its transformation of the DNA methylation values was used to normalise EPIC array data from the MAVIDOS and Southampton Women's Survey (SWS) data in [Chapter 3](#arrays) of this work.
+Functional normalisation [@Fortin2014] which makes use of the technical control probe data on the arrays to inform its transformation of the DNA methylation values was used to normalise EPIC array data from the MAVIDOS and Southampton Women's Survey (SWS) data in (Chapter \@ref(arrays)) of this work.
+
+Bisulfite conversion efficiency can be estimated by looking at the rates of conversion an non-CpG cytosines as these are very rarely methylated they should be bisulfite converted at a very high rate. 
+If this is not the case it can lead to the overestimation of DNA methylation levels, bisulfite conversion also  fragments DNA so there is a trade-off between achieving sufficient conversion efficiency and not producing overly fragmented DNA [@Ehrich2007].
+On the Illumina methylation arrays control probes ([@Illumina2015] p226) are located at non-CpG cytosines to assay the conversion efficiency for use in quality control assesment of array data.
 
 In addition to probe-type bias, there are other sources of potential problems for individual probes on these arrays [@Pidsley2016].
 Zhou et al. divide these into three categories [@Zhou2017]:
@@ -82,11 +86,12 @@ Zhou et al. divide these into three categories [@Zhou2017]:
 To account for these potential problems probe 'masks' have been produced which identify probes which commonly exhibit one or more of these problematic properties so that findings at these loci can be excluded or followed up for validation with other methods [@Zhou2017; @Pidsley2016].
 These masks have been used here to identify potentially problematic probes.
 
-The presence of a genetic variant which influences the DNA methylation state of a CpG is known as genetic confounding.
+When looking for a purely epigenetic effect the presence of a genetic variant which influences the DNA methylation state of a CpG is known as genetic confounding.
 This is not necessarily a problem if genetic effects on a phenotype of interest are a useful outcome but it is an issue if looking for effects mediated purely through epigenetic mechanisms.
+Genetic variants which bias the DNA methylation in a particular direction, or modulate the plasticity of DNA methylation state to environmental influences may be important to mechanistic understanding the biological system under examination [@Birney2016; @Lappalainen2017].
 Simply excluding all probes with a SNP above a certain minor allele frequency and with a certain distance of a target CpG can both miss rarer genetic confounders and throw away actual non-genetic differences in DNA methylation.
 Andrews et al. developed a method called 'gap-hunting' to identify probes which commonly have multi-modal DNA methylation distributions which may be associated with different genotypes influencing a probe locus [@Andrews2016]. 
-'gap-hunting' was also employed in this work to search for DNA methylation changes which may be under genetic influence [Results 1](#arrays).
+'gap-hunting' was also employed in this work to search for DNA methylation changes which may be under genetic influence (Chapter \@ref(arrays)).
 In addition to SNPs causing sequence context changes that affect the DNAm of probes, structural mutations can also have this effect on DNA methylation [@Bell2017a].
 Thus probes in the vicinity of non-SNP mutations should also be subject to additional scrutiny.
 
@@ -104,13 +109,13 @@ At half that total read count MeDIP-seq still covers ~50% of CpGs at $\ge1\times
 Other estimates place the threshold for saturation coverage by MeDIP-seq lower at between 20 and 30 million reads and suggest that the maximum number of CpGs covered at least once could extend up to 90% [@Chavez2010].
 MeDIP-seq provide a particular advantage by comparison with the Illumina beadchip array technologies with respect to the coverage it provides for repetitive regions of the genome. 
 This is illustrated by Clark et al. who show that MeDip-seq covers an estimated 91.4% of repetitive sequences and the 450k array only 3.4% [@Clark2012] (Figure \ref{fig:Clark2012fig1}).
-This makes it particularly suited to the aims of this project (Chapters [4](#tRNAs) & [5](#Alus)).
+This makes it particularly suited to the aims of this project (Chapters \@ref(tRNAs) & \@ref(Alus)).
 
 ```{r Clark2012fig1, fig.cap='(ref:Clark2012fig1-Cap)', out.width='90%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/Clark2012fig1MeDIPseqVs450Kcoverage.png")
 ```
 
-(ref:Clark2012fig1-Cap) MeDIP-seq provides superior coverage of repetitive regions of the genome than the Illumina array platform. MD-s = MeDIP-seq, 450k = Illumina 450k DNA methylation bead chip array (Reproduced from Clark et al. [@Clark2012])
+(ref:Clark2012fig1-Cap) MeDIP-seq provides superior coverage of repetitive regions of the genome than the Illumina array platform. This presumes saturation coverage for the MeDIP-seq assay. MD-s = MeDIP-seq, 450k = Illumina 450k DNA methylation bead chip array (Reproduced from Clark et al. [@Clark2012]) The CpG islands, shores, and shelves major RefSeq gene features are covered almost as well in the 450k array as they are by MeDIP-seq but repetitive regions and other regulatory elements are where MeDIP-seq provides substantially greater coverage.
 
 ```{r MeDIPseqReaction, fig.cap='(ref:MeDIPseqReaction-Cap)', out.width='60%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/MeDIPseqReaction.png")
@@ -188,7 +193,8 @@ Microfluidic systems for conducting multiple PCR reactions in parallel such as t
 knitr::include_graphics("figs/targeted_BiSseq_fluidigm_generic.png")
 ```
 
-(ref:targetedBiSseqFluidigmGeneric-Cap) __Four primer step-out PCR for targeted bisulfite sequencing on the Fluidigm access array.__ 
+(ref:targetedBiSseqFluidigmGeneric-Cap) __Microfluidic system for multiple parallel pairwise PCR reactions.__
+Fluidigm 48.48 access array.
 
 A four primer step-out PCR process is performed on the bisulfite-converted genome to generate the final PCR product used in the Illumina sequencing reaction (Figure \ref{fig:targetedBiSseqFluidigmPCR}).
 After the loci of interest are selected locus-specific primers are designed to be complementary to the bisulfite converted regions flanking the area of interest and avoiding CpG sites in those flanking regions.
@@ -198,8 +204,7 @@ A number of tools for designing such primers are available, the tool used in thi
 knitr::include_graphics("figs/targeted_BiSseq_fluidigm_PCR.png")
 ```
 
-(ref:targetedBiSseqFluidigmPCR-Cap) __Microfluidic system for multiple parallel pairwise PCR reactions.__
-Fluidigm 48.48 access array.
+(ref:targetedBiSseqFluidigmPCR-Cap) __Four primer step-out PCR for targeted bisulfite sequencing on the Fluidigm access array.__ 
 
 After designing the target-specific primer sequences the CS1 and CS2 adaptor sequences are added to the forward and reverse primers respectively to permit the addition of Illumina sequencing primers in a second PCR step.
 The subsequent analysis is similar to that for whole-genome bisulfite sequencing.
