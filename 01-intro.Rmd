@@ -182,14 +182,14 @@ There are a number of epigenetic modifications which can be subdivided into four
 DNA methylation is the most well-studied epigenetic modification [@Haluskova2010].
 Specifically CpG methylation, the addition of a Methyl group to the 5 carbon of a cytosine base (figure \@ref(fig:5mCvsC)), in a CpG dinucleotide context (figure \@ref(fig:CpGvsGpC)).
 (hereafter 'DNA Methylation' or 'DNAm' refers to 5mC CpG methylation unless stated otherwise.)
+DNA methylation is stable and relatively easy to characterise from biological samples by comparison with other epigenetic marks.
+The methylation status of ancient DNA has even been characterised, for example, native American remains ranging in age from 230 to 4500 years wew measured using bisulfite sequencing [@Smith2015].
 
-DNA methylation is stable and relatively easy to characterise from biological samples by comparison with other epigenetic marks, the methylation status of ancient DNA has even been characterised, see for example: 
-DNAm profiles have been produced from DNA extracted from mammoth and neandertal remains [@Briggs2010] and native American remains ranging in age from 230 to 4500 years [@Smith2015].
-5mC is quite chemically stable such that for most tissue sample preservation techniques for which DNA can be extracted from the sample DNAm can also be characterised. 
+5mC is quite chemically stable such that for most tissue sample preservation techniques for which DNA can be extracted from the sample DNAm can also be characterised [@Briggs2010]. 
 DNA extracted with normal laboratory methods can be assayed for DNAm.
 Histone modification status, on the other hand, is less robust against environmental stresses on samples and often requires considerably more laborious sample preparation to characterise [@Bauden2017].
-DNA methylation also offers the appearance of relative simplicity in comparison to the complex picture of the 'histone code' giving the impression that its useful interpretation may be more readily tractable.
-However, interaction between DNAm and histone modifications is well documented [@Hashimshony2003; @Esteve2006; @Rose2014] consequently, a fuller understanding of DNAm will likely require an understanding of histone modifications and their potential to feedback on and thus affect DNAm.
+DNA methylation also offers the appearance of relative simplicity in comparison to the complex picture of the 'histone code', the simple binary nature of DNA methylation state makes it easier to model and possibly to interpret.
+However, interaction between DNAm and histone modifications is well documented [@Hashimshony2003; @Esteve2006; @Rose2014], this interplay between DNAm and histone modifications renders the interpretation of DNAm more complex, as its effects may be conditional on the chromatin environment.
 
 ```{r 5mCvsC, fig.cap='(ref:5mCvsC-Cap)',  out.width='80%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/5mC_vs_C.png")
@@ -223,15 +223,23 @@ CpGs are not uniformly distributed in the genome, they occur at higher frequency
 "CpG islands" or CGIs are regions of high CpG density.
 The total number of CpGs in the UCSC repeat masked CGI annotation list of 28,691 CGIs is 1,990,729.
 Therefore, these CpGs comprise $\sim7.0\%$ of the total number of CpGs the genome. The mean percentage of the sequence of these CGIs that is comprised of CpG dinucleotides is $\sim18.5\%$ and their mean length is 761bp.
-Irizarry et al. found that the 2kb regions flanking CpG islands which they termed "CpG island shores" exhibited greater tissue-specific differential methylation than the islands themselves [@Irizarry2009]. 
-This nomenclature has subsequently been expanded further with "CpG island shelves" which are 2kb - 4kb from the CGIs, and "seas" referring to the rest of the genome, see figure \@ref(fig:CGIs). 
-
 CGIs overlap the promoters of $\sim70\%$ of genes [@Saxonov2006], this, however, leaves roughly half of all CGIs as "orphans" not associated with a known transcription site.
 These orphan CGIs frequently constitute cell-type specific enhancers [@Bell2017] and alternate promoters [@Illingworth2010; @Maunakea2010].
 They are found in both intergenic and intragenic regions.
 CpGs are distributed quite sparsely through the genome occurring at low density in "seas" and at increasing density in CGIs and their flanking regions, see figure \@ref(fig:CGIs).
-Early work showed 70-80% of CpGs are constitutively methylated [@Ehrlich1982; @Bird2002] Stadler et al. produced a more detailed picture of the distribution of CpG methylation in mouse embryonic stem cells (ESCs) [@Stadler2011] see figures \@ref()fig:Baubec2014fig1 & \@ref(fig:CpGfreqVsDNAm).
 It is a characteristic of CGIs that they are generally unmethylated.
+
+Early work showed 70-80% of CpGs are constitutively methylated [@Ehrlich1982; @Bird2002] Stadler et al. produced a more detailed picture of the distribution of CpG methylation in mouse embryonic stem cells (ESCs) [@Stadler2011] see figures \@ref(fig:Baubec2014fig1) & \@ref(fig:CpGfreqVsDNAm).
+Stadler et al. categorised ...Mouse embryonic stem cells hidden markov model  [@Stadler2011]
+
+Irizarry et al. found that the 2kb regions flanking CpG islands which they termed "CpG island shores" exhibited greater tissue-specific differential methylation than the islands themselves [@Irizarry2009]. 
+This nomenclature has subsequently been expanded further with "CpG island shelves" which are 2kb - 4kb from the CGIs, and "seas" referring to the rest of the genome, see figure \@ref(fig:CGIs). 
+Ziller et al. identified ~5.6 million CpGs dynamically regulated across diverse cell-types regions, these clustered into ~716,000 differentially methylated regions.
+More that three quarters of these regions where under 1kb in size and located away from transcription start sites and >70% of which had methylation levels >75% [@Ziller2013].
+
+Irizarry et al., Stadler et al. and Ziller et al. data indicate that the most dynamic DNA methylation changes are occurring at the level of small distal regulatory features.
+
+
 
 
 ```{r Baubec2014fig1, fig.cap='(ref:Baubec2014fig1-Cap)',  out.width='80%', fig.show='hold', fig.align = 'center', echo=FALSE}
@@ -244,7 +252,7 @@ knitr::include_graphics("figs/Baubec2014_fig1.png")
 knitr::include_graphics("figs/CpGfreqVsDNAm.png")
 ```
 
-(ref:CpGfreqVsDNAm-Cap) The fraction of CpGs with a given methylation level. Data from Whole-Genome Bisulfite Sequencing (WGBS) of Mouse embryonic stem cells. Colours denote: unmethylated regions (blue), low-methylated regions (red), and fully methylated regions (green). These groups are three segments produced by a hidden markov model. low-methylated regions with 10-50% methylation are evolutionarily conserved distal regulatory elements with  dynamic cell-type specific regulation unlike the consistently unmethylated regions at CGIs. (Figure reproduced from Stadler et al. 2011 [@Stadler2011] figure 1a)
+(ref:CpGfreqVsDNAm-Cap) The fraction of CpGs with a given methylation level. Data from Whole-Genome Bisulfite Sequencing (WGBS) of Mouse embryonic stem cells. Colours denote: unmethylated regions (blue), low-methylated regions (red), and fully methylated regions (green). These groups are three segments produced by a hidden markov model. low-methylated regions with 10-50% methylation are evolutionarily conserved distal regulatory elements with  dynamic cell-type specific regulation unlike the consistently unmethylated regions at CGIs. (Figure reproduced from Stadler et al. [@Stadler2011] figure 1a)
 
 The regulatory role played by DNA methylation varies with context and the scale at which it is examined. 
 For example methylation at a single CpG in a transcription factor binding site can determine whether or not the factor can bind at that site. 
