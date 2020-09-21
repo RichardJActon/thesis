@@ -2,6 +2,7 @@ bookdown::gitbook:
   css: style.css
   config:
     toc:
+      toc_depth: 5
       before: |
         <li><a href="./">The Epigenomics of Human Ageing</a></li>
       after: |
@@ -9,10 +10,13 @@ bookdown::gitbook:
     edit: https://github.com/RichardJActon/thesis/%s
     download: ["pdf", "epub"]
 bookdown::pdf_book:
+  toc_depth: 5
   includes:
     in_header: preamble.tex
   latex_engine: xelatex
   citation_package: default #natbib
+  # split_by: chapter
+  # split_bib: yes
   keep_tex: yes
   base_format: rmarkdown::pdf_document
   pandoc_args:

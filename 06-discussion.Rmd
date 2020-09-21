@@ -1,3 +1,100 @@
 # Discussion
 
-...
+make new knowledge claims of your own
+
+critically examine your findings in the light of the previous state of the subject as outlined in the background, and make judgments as to what has been learnt in your work
+
+Interpretations: what do the results mean?
+Implications: why do the results matter?
+Limitations: what can’t the results tell us?
+Recommendations: what practical actions or scientific studies should follow?
+
+themes
+
+mud map
+
+
+## Chapter \@ref(arrays) Epigenome Wide Association Studies for Bone Health Outcomes in Umbilical Cord Blood and Tissue 
+
+In this chapter two CpGs were identified as having genome wide significant associations with the outcome of interest in their respective EWAS.
+These CpGs were: 
+
+1. CpG cg26559250 which is located at Chr6:157,653,445-157,653,447 at the ZDHHC14 (zinc finger DHHC-type palmitoyltransferase 14) gene. This CpG was identified In the EWAS for total bone mineral content minus head at 6 years adjusted for age and sex, with a p-value of $2.52\times 10^{-8}$ for an increase of 1.46% per kg in an uncorrected model and a model corrected for *...*
+
+2. CpG cg22570676 located at Chr19:2,527,492-2,527,494 at the GNG7 (G protein subunit gamma 7) gene. 
+   This CpG was identified on the EWAS for periosteal circumference at 38% from the distal end of the tibia at 6 years (mm) adjusted for age and sex, with a p-value of $4.24\times 10^{-8}$ for an increase of 0.370% per mm in an uncorrected model and a model corrected for *...*
+
+
+EWAS were performed for 9 different outcomes across three groups of samples, and in each case four different models were fitted.
+Within a given EWAS the quite stringent Bonerroni standard for multiple testing correction was applied, however conducting multiple EWAS across different groups creates a secondary multiple testing problem. 
+Meaning that these findings could still be false positives despite the aspiration of family wise correction to minimise type 1 errors.
+Confirmation of these associations in another cohort would be preferable in order for theses associations to be asserted with confidence.
+
+Epigenome wide association studies are here being used as a discovery platform for processes which may be implicated in the interaction of the in eutero environment and bone health outcomes, both of which are complex and multifactorial.
+
+This presents a challenge as there are many sources of noise which could obscure any relationships which do exist between these properties or produce the spurious appearance of a relationship when none may exist. 
+Striking the balance between sensitivity and specificity is particularly challening in the context, lowering the threshold for specificity and admitting some type 1 errors might generate additional hits with which to attempt ... gene set enrichment analysis and related methods to identify the biologically relevant pathways which may mediate the observed association however an excessive number of false positive inputs to such analyses can lead to 
+
+dimentionality reduction (WGCNA), increase sample size, increased prior knowledge
+
+As such it is 
+
+*interp*
+power only sufficient to detect relatively large changes in DNAm
+*imp*
+size of future studies, specificty of the question
+*limit*
+as before power
+associational - causal understanding
+*recom*
+validate in a larger independent cohort
+
+## Chapter \@ref(tRNAs) The Genomic Loci of Specific Human tRNA Genes Exhibit Ageing-Related DNA Hypermethylation
+
+__tRNA__
+*interp*
+challenging to interpret given the complexity of tRNA biology
+*imp*
+suggests age related changes in a core component of cellular biology
+*limit*
+impact on expression
+magnitude of the change
+difficulty of validating in other systems e.g. mouse without large scale targeted screen
+*recomend*
+targeted PAC-bio long read sequencing of tRNA gene clusters
+- insight into copy number variation
+- DNA methylation assay with single molecule patterning information
+
+## Chapter \@ref(Alus) DNA methylation clocks in Alu Elements
+
+__Alu clock__
+*interp*
+possible to train an age predictor on a subset of genomic features other than protein coding genes
+
+*imp*
+
+*limit*
+numbers, quantitation
+
+*recomend*
+test the limits of constructing age predictors on different functional subsets of the genome e.g MIR elements. Histone genes - smaller target but may be generalisable across species like rDNA based clock [@Wang2019]
+within sample binarisation?
+
+//
+
+The epigenome sits upon the genome encoding the annotations to the genome necessary for cells with diverse and dynamic functions to arise from a singular set of genetic information. 
+As such this layer of biological information storage and processing is of critical importance to the understanding of the process of ageing.
+With age comes a deterioration of function from the molecular to the macroscopic.
+It is at the level of epigenetic information at which many of the factors crucial to the proper functioning of an organism are encoded.
+The determinants of a properly differentiated and well functioning cell are at the level of epigenetic information.
+The specialised functions of specific cell types which need to be performed for an organism to be in good health are determined by what pieces of genetic information are used where, when and in response to what stimuli.
+The epigenomic configuration of a cell determines nature of the default activities and the stimulus response activities that can be readily elicited from a given cell.
+The developmental program lays down the basis of this epigenetic state in different cell types through a cascade of feedback mechanisms through which the history and cellular environment shape the epigenomic configuration of a particular cell. 
+In mature tissue the role to be played by a cell is partly inherited and partly informed by the environment in which the cell is immersed.
+Epigentic information is more environmentally mutable than genetic information, this is part of its function, but this means that its robustness depends on temporally proximate feedback mechanisms which push its state in the direction of proper function.
+The environmental malleability of the epigenome is its core strength it is the plasticity to adopt multiple roles that permits multicellularity [@Tudge2016].
+This maleability is also a weakness in the context of ageing as relatively minor environmental alterations can enter into these feedback mechanisms and perturb the equilibrium of proper function.
+
+antagonistic pleiotropy and the selection shadow place limits on the genetic selection for insensitivity of the feedback processes that maintain healthy epigenetic state to deleterious perturbations.
+Reproductive fitness requires the robustness of these feedback processes for long enough to produce offspring, and limited anti-fragility to environmental injuries that may be incurred in the process.
+Evolution's utility function does not optimise for longevity but for reproductive fitness, all other factors are orthogonal and only selected for insofar as they serve this end or are a byproduct of something which does.

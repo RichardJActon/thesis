@@ -203,7 +203,7 @@ knitr::include_graphics("figs/CpG_vs_GpC.png")
 
 (ref:CpGvsGpC-Cap) A schematic representation showing a Methylated __CpG__ dinucleotide in its structural context. This is contrasted with a __GpC__ dinucleotide, which cannot be superimposed on a __CpG__. upper left: methylated cytosine residues in a __CpG__ dinucleotide, showing 5mC is 5' of G on both DNA strands. upper right: unmethylated cytosine residues in a __GpC__ dinucleotide, showing G is 5' of C on both DNA strands. lower: superimposition of a __GpC__ and __CpG__ dinucleotide illustrating the mirrored nature of these structures and the impossibility of superimposing them through rotation. (Figure created by the Author.)
 
-### Distribution and Global Trends
+### Distribution and Global Trends {#IntroCpGdist}
 
 There are 28,299,634 CpGs [@Luo2014] in the hg19 assembly of the human genome [@Lander2001].
 Given that the GC content of the human genome is $42\%$ the prior probability of getting a CpG dinucleotide is: $0.21 \times 0.21 = 0.0441$, $4.41\%$.

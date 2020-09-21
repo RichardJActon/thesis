@@ -160,9 +160,9 @@ These individuals originate from 1933 unique families.
 There are 1234 monozygotic (MZ) twin pairs (2468 individuals), and 458 dizygotic (DZ) twin pairs (916 individuals).
 
 The above-described processing steps for Methylated DNA Immunoprecipitation sequencing (MeDIP-seq) data used here have been previously described in Bell et al. [@Bell2016; @Bell2017a].
-These processed data are available, subject to approval, from the European Genome-phenome Archive (EGA) (https://www.ebi.ac.uk/ega) under study number EGAS00001001910 and dataset  ([https://www.ebi.ac.uk/ega/datasets/EGAD00010000983](https://www.ebi.ac.uk/ega/datasets/EGAD00010000983)).
+These processed data are available, subject to approval, in the European Genome-phenome Archive (EGA) (https://www.ebi.ac.uk/ega) under study number EGAS00001001910 and dataset  ([https://www.ebi.ac.uk/ega/datasets/EGAD00010000983](https://www.ebi.ac.uk/ega/datasets/EGAD00010000983)).
 
-## Targeted Bisulfite sequencing
+## Targeted Bisulfite Sequencing {#MethodsTargetedBisulfiteSequencing}
 
 Targeted Bisulfite sequencing [@Korbie2015] is very similar in principle to ordinary targeted DNA sequencing but preceded by a bisulfite conversion step as illustrated in Figure \@ref(fig:BisulfiteConversionNEB) [@Bock2010].
 However, bisulfite conversion has several implications for downstream processing.
@@ -183,7 +183,7 @@ Substantial mapping to areas other than those targeted could be indicative of of
 ```{r Krueger2011BismarkAlignment, fig.cap='(ref:Krueger2011BismarkAlignment-Cap)', out.width='60%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/Krueger2011BismarkAlignment.png")
 ```
-(ref:Krueger2011BismarkAlignment-Cap) __Bisulfite sequencing alignment process__  (Reproduced from Krueger et al. [@Krueger2011])
+(ref:Krueger2011BismarkAlignment-Cap) __Bisulfite sequencing alignment process__ Unmethylated cytosines are converted to uracil in the bisulfite conversion process these are rendered as thymidine as T is used in the PCR amplification following bisulfite conversion. Following the conversion of a C to A T its corresponding G is swapped for an A in the complementary strand. The Genome is converted in silico to permit the alignment of these altered bases. Thus there is the C to T converted and a G to A converted genome each to which has two strands totalling 4 possible alignment targets for the converted reads. The unique best alignment for a read is determined from this set and mismatches of C in this alignment are used to call the methylation state. (Reproduced from Krueger et al. [@Krueger2011])
 
 Targeted sequencing methods where the aim is to sequence a number of amplicons ($N_a$) from a number of samples ($N_s$) means the total number of PCR reactions in the pairwise matrix is ($N_a \times N_s$).
 This can rapidly become difficult to manage with conventional bench-top PCR methods especially where consistently between reactions is important for quantitation.
@@ -194,7 +194,7 @@ knitr::include_graphics("figs/targeted_BiSseq_fluidigm_generic.png")
 ```
 
 (ref:targetedBiSseqFluidigmGeneric-Cap) __Microfluidic system for multiple parallel pairwise PCR reactions.__
-Fluidigm 48.48 access array.
+The Fluidigm 48.48 access array permits the combination of up-to 48 samples with up-to 48 different set of reagents, without multiplexing. In this case the reagents are locus specific primers for targeted sequencing. Samples are added to one side of the array and reagents to the other the flow cell permits all combinations of the two to be mixed. Fluidigm's controller flow cell and thermocycler allow all the PCR reactions to be carried out simultaneously and their products be extracted for sequencing.
 
 A four primer step-out PCR process is performed on the bisulfite-converted genome to generate the final PCR product used in the Illumina sequencing reaction (Figure \ref{fig:targetedBiSseqFluidigmPCR}).
 After the loci of interest are selected locus-specific primers are designed to be complementary to the bisulfite converted regions flanking the area of interest and avoiding CpG sites in those flanking regions.
@@ -204,7 +204,7 @@ A number of tools for designing such primers are available, the tool used in thi
 knitr::include_graphics("figs/targeted_BiSseq_fluidigm_PCR.png")
 ```
 
-(ref:targetedBiSseqFluidigmPCR-Cap) __Four primer step-out PCR for targeted bisulfite sequencing on the Fluidigm access array.__ 
+(ref:targetedBiSseqFluidigmPCR-Cap) __Four primer step-out PCR for targeted bisulfite sequencing on the Fluidigm access array.__ The sample DNA is bisulfite converted. The region of interest amplified using site specific primers with the Fluidigm CS1 and CS2 primers in the first PCR step. The CS1/2 primers have regions complementary to the Illumina sequencing primers permitting them to be added in a second PCR step to generate the final PCR product ready for sequencing.
 
 After designing the target-specific primer sequences the CS1 and CS2 adaptor sequences are added to the forward and reverse primers respectively to permit the addition of Illumina sequencing primers in a second PCR step.
 The subsequent analysis is similar to that for whole-genome bisulfite sequencing.

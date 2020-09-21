@@ -75,7 +75,27 @@ Date: `r Sys.Date()`
 
 # Abstract {-}
 
-...
+The global population is ageing and age is a primary risk factor for many life threatening diseases including cancer, cardiovascular and neurodegenerative conditions. 
+As well as for conditions such as osteoporosis which increase the risk of death indirectly through elevated risk of the fracture of major bones and subsequent complications. 
+It is the aim of this work to contribute to the understanding of the epigentic processes involved in ageing and ageing-related disease.
+three specific areas were investigated. 
+
+Firstly, the relationship between early life epigenetic state and long term bone health. This investigation took the form of Epigenome wide association studies conducted with umbilical cord blood. 
+Which identified candidate CpGs whose DNA methylation state is associated with bone mineral content at 6 years of age ($p < 2.52\times 10^{-8}$, n = 402) and periosteal circumference at 6 years of age ($p < 4.24\times 10^{-8}$, n = 141) respectively.
+
+Secondly, following up on an earlier finding that a human tRNA gene exhibited age-related hypermethylation, the changes in human tRNA gene DNA methylation with age were interogated. 
+Human tRNA genes are enriched for age-related DNA hypermethylation and three specific tRNA loci show genome wide significant ($p < 4.34\times10^{-9}$) hypermethylation with age. 
+Two of which were validated using at different technology and replicated in an independent cohort, using a third DNA methylation assay.
+
+Thirdly, a DNA methylation based age predictor based on a region of the genome not previously broadly accessible to DNA methylation based age predictors, namely the Alu family of SINE repeat elements. 
+Age predictors using the DNA methylation state of Alu repeat elements are able to predict human age with an R of 0.65 and a median absolute error of 8.1 years.
+This predicition was possible using MeDIP-seq training data from 774 individuals and validated on an unrelated set of 664 individuals.
+This MeDIP-seq dataset also facilitated the investigation of the tRNA gene regions which like the Alu repeat elements are poorly covered by most other genome-wide DNA methylation assays.
+
+In Summary, this work provides a starting point for further investigations into the relationship between early life epigenetic associations to longer term bone health outcomes.
+This work highlights age-related epigenetics changes at the tRNA gene loci, a region of the genome responsible for the production of a core component of the apparatus of translation.
+Additionally, this work also demonstrates a proof of principle for DNA methylation based age estimators created with the DNA methylation signatures from specific genomic compartments. 
+As well as for identifying the genetic associations of biological age indicators such as age acceleration based on such genomic feature specific age predictors.
 
 # Acknowledgements {-}
 

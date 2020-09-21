@@ -174,7 +174,7 @@ knitr::include_graphics("figs/tRNAgeneClustersByBinSize.png")
 To assess the mappability of tRNA gene regions a value for mappability score density was computed to facilitate comparisons of regions of the genome.
 Mappability score density is computed as the area under the encode mappability tracks [@Derrien2012] over the length of the region.
 
-### DNA methylome data
+### DNA methylome data {#tRNA-DNA-methylome-Data}
 
 #### TwinsUK MeDIP-seq methylomes {#EpiTwinsMethods}
 
@@ -846,7 +846,7 @@ knitr::include_graphics("./figs/meanMethBytRNAByFetalTissueHeatmapPseudosplit.pn
 ```
 (ref:meanMethBytRNAByFetalTissueHeatmapCap) Mean Methylation of 115 tRNAs in 11 tissues. Possible pseudogenes are shown in a separate cluster beneath the main heatmap [@Gu2016].
 
-## tRNA Gene Methylation in Cancer
+#### tRNA Gene Methylation in Cancer
 
 A coarse grained examination of the tRNA DNA methylome in tumour samples with matched normal tissue data was performed, considering the 45 tRNA genes and 19 tissues for which data were available.
 Across multiple tissues it was found that both tumour and 'normal' samples have a strong preponderance for low levels of methylation consistent with the active transcription of many tRNA genes.
