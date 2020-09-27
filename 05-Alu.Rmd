@@ -67,7 +67,7 @@ knitr::include_graphics("./figs/AlusWindowsCpGdLVplot-FAMs.png")
 Alu elements contain many sequences with the potential to effect gene regulation, and indeed do effect gene expression [@Chen2017b; @RobertoFerrari2019].
 There are numerous TFBSs in the canonical sequences of elements in the Alu family [@Polak2006], and some may possess enhancer activity [@Su2014].
 DNA methylation levels at transcription factor binding sites (TFBS) modulate the binding affinity of transcription factors for these sites [@Blattler2014; @Yin2017].
-Thus deterioration in the effectiveness of the repression of Alu elements has the potential to disruptively expose this latent regulatory function [@Ward2013; @Chuong2017; @Xie2013].
+Thus deterioration in the effectiveness of the repression of Alu elements has the potential to disruptively expose this latent regulatory function [@Ward2013; @Chuong2017; @Xie2013; @Zhang2019].
 Epigenetic reactivation of cryptic cis-regulatory elements (CREs) within transposons has been show to act as an oncogenic driver [@Jang2019], including specifically from Alu elements [@Rajendiran2016].
 Alu element methylation has also previously been correlated with age-related phenotypes.
 Hypomethylation of Alu elements in blood cells has been associated with increasing age and with lower bone mass [@Jintaridth2013].

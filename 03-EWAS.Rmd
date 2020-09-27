@@ -61,7 +61,7 @@ Work in rat models has demonstrated the ability of maternal nutritional exposure
 Consequently, the DNA methylation status of target genes of interest for vitamin D and bone development related pathways have been examined [@Holroyd2012]. 
 
 Retinoid-X-receptor-alpha (RXRA), which forms a heterodimer with the vitamin D receptor is essential for the nuclear action of $1,25(OH)_2-Vitamin~D$. 
-Harvey et al. foudn that DNA methylation at four of ten CpG sites in the *RXRA* gene were significantly ($p\le0.05$) lower in the umbilical cord of offspring from cholecalciferol supplemented mothers compared to placebo with a mean difference in methylation of -1.98% (n=447, 95% CI -3.65 to -0.32, p=0.01). 
+Harvey et al. found that DNA methylation at four of ten CpG sites in the *RXRA* gene were significantly ($p\le0.05$) lower in the umbilical cord of offspring from cholecalciferol supplemented mothers compared to placebo with a mean difference in methylation of -1.98% (n=447, 95% CI -3.65 to -0.32, p=0.01). 
 One CpG site in the gene is related to estimated free 25(OH)D levels [@Harvey2014d].
 
 Methylation of cyclin-dependent kinase inhibitor 2A (CDKN2A) in umbilical cord tissue has been implicated in bone cell activity mediating skeletal development and homeostasis. 

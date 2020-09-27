@@ -649,7 +649,7 @@ knitr::include_graphics("./figs/DNAmAgeVsChronAge.png")
 ```
 (ref:DNAmAgeVsChronAgeCap) Mean chronological age is tightly correlated with DNAm Horvath clock [@Horvath2013] predicted age for the 8 pooled samples. (See Table \@ref(fig:poolSummaryTable) for pool details).
 
-Itwas observed that individual tRNA loci exhibiting age-related changes in DNAm had duplicate or isodecoder (same anticodon but body sequence variation) sequences in the genome, which despite exact or near sequence identity did not show similar changes.
+It was observed that individual tRNA loci exhibiting age-related changes in DNAm had duplicate or isodecoder (same anticodon but body sequence variation) sequences in the genome, which despite exact or near sequence identity did not show similar changes.
 tRNA-iMet-CAT-1-4 for instance is 1 of 8 identical copies in the genome and was the only locus that showed significant changes.
 The results of pairwise differential methylation tests between age groups for the 6 top tRNAs from the MeDIP-seq models are listed in Table \@ref(fig:pairwiseTab).
 
