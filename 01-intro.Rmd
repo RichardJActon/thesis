@@ -61,31 +61,31 @@ The hallmarks are as follows:
 __Primary Hallmarks - Causes of Damage__
 
 1. *Genomic instability*: 
-  Damage to the genomes of our cells occurs over time and accumulates as we age, this damage ranges from point mutations to large structural mutations, as well as mutations in the mitochondrial genome. 
+  Damage to the genomes of our cells occurs over time and accumulates as we age, this damage ranges from point mutations to large structural mutations, as well as mutations in the mitochondrial genome [@Niedernhofer2018]. 
 
 2. *Telomere attrition*: 
   Telomere shortening occurs during the ageing process, somatic cells do not generally express telomerase so with each division telomeres grow shorter.
-  Telomere exhaustion limits the replicative capacity of cells inducing replicative senescence, limiting regenerative potential but also protecting from the uncontrolled growth of cancer.
+  Telomere exhaustion limits the replicative capacity of cells inducing replicative senescence, limiting regenerative potential but also protecting from the uncontrolled growth of cancer [@Casagrande2019].
 
 3. __Epigenetic alterations__: 
-  Patterns of DNA methylation and of a number of histone modifications exhibit age-related changes. These contribute to the dysregulation of gene expression and derepression of heterochromatin regions which also increases the risk of genomic instability.
+  Patterns of DNA methylation and of a number of histone modifications exhibit age-related changes. These contribute to the dysregulation of gene expression and derepression of heterochromatin regions which also increases the risk of genomic instability [@Saldanha2015].
   
 4. *Loss of proteostasis*: 
   Production of protein folding chaperones in response to stress decreases with age, as does the activity of the two major proteolytic systems, the ubiquitin-proteasome system and the autophagy-lysosome system. 
-  This leads to increased prevalence of misfolded, aberrant and aggregated proteins with age.
+  This leads to increased prevalence of misfolded, aberrant and aggregated proteins with age [@Santra2019].
 
 __Antagonistic Hallmarks - Responses to damage__
 
 5. *Deregulated nutrient sensing*: 
   The IIS (insulin & insulin-like growth signalling) and TOR (Target Of Rapamycin) pathways signal nutrient abundance, promoting anabolism.
   The AMPK (5' adenosine monophosphate-activated protein kinase) and Sirtuins signal nutrient scarcity, promoting catabolism.
-  Broadly speaking inhibiting the pro-anabolic pathways and activating the pro-catabolic pathways can extend lifespan.
+  Broadly speaking inhibiting the pro-anabolic pathways and activating the pro-catabolic pathways can extend lifespan [@Johnson2018; @Soultoukis2016].
   
 6. *Mitochondrial dysfunction*: 
   Mitochondrial ATP production drops off with and ROS (Reactive Oxygen Species) production increases. Elevated ROS do not appear to accelerate ageing nor do elevated antioxidants retard it. 
   Indicating the primary function of ROS in ageing is not straightforwardly a result of oxidative damage, but may result from its role in stress signalling. 
   Dysfunctional mitochondria exhibit an increased propensity to polarise in response to stress, impacting on apoptotic signalling and inflammatory responses.
-  This contributes to the increases in senescent cells and their chronic inflammatory phenotype.
+  This contributes to the increases in senescent cells and their chronic inflammatory phenotype [@Payne2015].
   
 7. *Cellular senescence*: 
   Senescent cells are in stable cell-cycle arrest induced by shortened telomeres, other forms of DNA damage, INK4/ARF derepression, or a variety of mitogenic/oncogenic signals.
@@ -97,11 +97,11 @@ __Integrative Hallmarks - Proximal Causes of the Ageing phenotype__
 8. *Stem cell exhaustion*: 
   Adult stem cells capable of producing new cells for the regeneration of tissues undergo asymmetric divisions to replace themselves and produce replicative progenitor cells to replenish tissue.
   Stem cells may accumulate damage and cease replicating or leave their quiescent state becoming overly replicative and potentially becoming senescent.
-  This disrupts the supply of new cells for the renewal of tissue.
+  This disrupts the supply of new cells for the renewal of tissue [@Ren2017].
   
 9. *Altered intercellular communication*: 
   The aforementioned cell-autonomous alterations alter external signalling behaviour of cells across intercellular signalling paradigms.
-  This can lead to feedback loops that exacerbate the problem. The high background of pro-inflammatory signals from senescent cells dilutes already declining immune response and fewer senescent cells are cleared.
+  This can lead to feedback loops that exacerbate the problem. The high background of pro-inflammatory signals from senescent cells dilutes already declining immune response and fewer senescent cells are cleared [@Franceschi2014].
 
 Many genetic changes have been associated with changes in longevity since Cynthia Kenyon's characterisation of the *daf-2* mutation which approximately doubled the lifespan of *C. elegans* [@Kenyon1993a; @Kenyon2010a; @Singh2019]. 
 
@@ -248,6 +248,9 @@ More that three quarters of these regions where under 1kb in size and located aw
 Data from tree different approaches taken by Irizarry et al. [@Irizarry2009], Stadler et al. [@Stadler2011], and Ziller et al. [@Ziller2013] indicate that the most dynamic DNA methylation changes are occurring at the level of small distal regulatory features. 
 A small fraction of CpGs, on the order of 2-6% exhibiting constitutively unmethylated states and on the order of 70-90% constitutively methylated leaving 4-28% of sites subject to dynamic regulation.
 
+__[@Wilson2014] species specific DMR, [@Doi2009] __
+
+
 ```{r Baubec2014fig1, fig.cap='(ref:Baubec2014fig1-Cap)',  out.width='80%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/Baubec2014_fig1.png")
 ```
@@ -341,6 +344,14 @@ Jenkinson et al. [@Jenkinson2017] used an information-theoretic approach, modell
 This permitted them to examine properties of DNAm not accessible to conventional means of analysis which typically capture the mean methylation level and perhaps the variability for a given locus. 
 When considering methylation fidelity using this lens the maintenance of a given methylation state can be seen as an information processing task which requires the consumption of free energy in order to reduce the probability of error in the transmission of that methylation state. 
 Thus Relative Dissipated Energy (RDE) can serve as a measure of the work expended by a cell at a given locus in order to preserve the current methylation state of that locus. 
+They found that the Transcription Start Sites (TSS) exhibited high levels of RDE and high information capacity as well as low levels of entropy.
+These values trended in the opposite direction as they moved outwards to CGIs, shores and seas. 
+Jenkinson et al. [@Jenkinson2017] also found a global increase in entropy with age, but not with cell passage in culture suggesting an increase in entropy is associated with epigenetic age independent of mitotic age.
+This observation is in agreement with the finding that epigenetic state becomes more stochastic and diverges with age [@Fraga2005; @Slieker2016], indeed genes whose methylation were most divergent with age were enriched for ageing associations. 
+They also observed a loss of entropic sensitivity with age. 
+Entropic sensitivity is an indicator of how plastic DNAm state is to extrinsic effects. 
+Jenkinson et al. noted that there is a general loss of phenotypic plasticity with age, but cited no specific instance of loss of DNAm plasticity to environmental effects with age.
+Hahn et al. [@Hahn2017] provided a possible example of this effect when they reported that dietary restriction caused fewer differences in the methylation state of older than younger mice.
 
 Zhao et al [@Zhao2014] applied Hairpin-Bisulfite PCR genome-wide in mouse embryonic stem cells (ESCs). 
 They also found high degrees of methylation fidelity in hypomethylated regions such as CGIs and Promoters, as well as a high degree of fidelity in sites bound by transcription factors. 
@@ -584,8 +595,8 @@ DNAm data was then regressed against PhenoAge using elastic-net regression to pr
 The PhenoAge predictor outperformed the Horvath and Hannum clocks at predicting all-cause mortality, comorbidities, coronary heart disease risk, and measures of physical functioning. 
 41 of the 513 CpGs in the PhenoAge clock were present in the original 353 CpG sites used in the Horvath clock.
 
-The 'GrimAge' clock [@Lu2019] takes a different approach to previous epigenetic clocks in that it has a 2-tiered model predicting first seven surrogates for a variety of other biomarkers of ageing then fitting a model to predict time to death using these surrogates.
-'GrimAge' outperforms age accelerations from the Horvath, Hannum and PhenoAge clocks at predicting time to death. Belsky et al. developed a DNA methylation based estimate of the rate of biological ageing called 'DunedinPoAm' [@Belsky2020].
+The 'GrimAge' clock [@Lu2019] takes a different approach to previous epigenetic clocks in that it has a two-tiered model predicting first seven surrogates for a variety of other biomarkers of ageing then fitting a model to predict time to death using these surrogates.
+'GrimAge' outperforms age accelerations from the Horvath, Hannum and PhenoAge clocks at predicting time to death [@Halloran2020]. Belsky et al. developed a DNA methylation based estimate of the rate of biological ageing called 'DunedinPoAm' [@Belsky2020].
 
 
 ```{r Marioni2015f3, fig.cap='(ref:Marioni2015f3-Cap)',  out.width='80%', fig.show='hold', fig.align = 'center', echo=FALSE}
@@ -593,113 +604,34 @@ knitr::include_graphics("figs/Marioni2015f3.png")
 ```
 (ref:Marioni2015f3-Cap) Survival probability by quartiles of $\Delta_{Age}$ in LBC 1921 adjusted for sex, and chronological age. LBC = Lothian Birth Cohort. Using the Hannum and Horvath predictors' values for $\Delta_{Age}$. (Reproduced from @Marioni2015 figure 3.)
 
-### Discussion and Analysis of the Findings of DNAm Age Studies
+### DNA methylation clock measurements as outcomes for anti-ageing interventions
 
-Interestingly CpGs whose methylation status has been identified as correlating with age in various studies show relatively little overlap. Despite this, changes in DNAm with age are probably the most robust and reproducible large-scale epigenetic change yet captured.
-This lack of agreement in absolute terms, however, presents a challenge about how to interpret DNAm changes with age. 
+Fahy et al. showed in a small exploratory study that they could reduced epigenetic age, as measured by four different epigenetic clocks [@Fahy2019].
+The clocks used were: Horvath et al. [@Horvath2013], Hannum et al. [@Hannum2013], 'PhenoAge' Levine et al. [@Levine2018] and 'GrimAge' Lu et al. [@Lu2019a].
+The study called TRIIM (Thymus Regeneration, Immunorestoration, and Insulin Mitigation) consisted of ten men aged 51-65 who were treated with a regimen of recombinant human growth hormone (rhGH) in combination with dehydroepiandrosterone (DHEA) and metformin.
+The aim of this treatment was to counteract the decline in immune function attributed to the decrease in diversity of t-cell receptors that occurs in this age group [@Naylor2005].
+rhGH was found to stimulate the reconstitution of the thymus and thereby T-cell levels in HIV patients, hence it was reasoned that it might also counteract the age-related deterioration of the thymus.
+DHEA and metformin were included in the regimen to counter the hyperinsulinemia which can be induced by growth hormone [@Marcus1990].
+The mean decrease in epigenetic age after 12 months treatment was 2.5 years so a reduction of 1.5 years from baseline, the rate of this decrease appeared still to be increasing in the final 3 months of treatment (9-12 months).
+There was incomplete regression towards pre-treatment levels of age acceleration at 18 months from onset, 6 months after cessation of treatment, in 3 of the 4 epigenetic clocks.
+There were however no sign of change in the GrimAge [@Lu2019a] acceleration estimate which remained at, on average, 2 years lower than age acceleration at onset.
+This study sets an important precedent for for the use of DNAm age acceleration as a readout of the effectiveness of anti-ageing interventions, opening the door for their use in future studies. 
+The challenge faced by studies where the intended outcome is increased lifespan is that this requires a long, expensive, and impractical follow-up period to measure directly.
+If DNA methylation based measures of age acceleration can be used as effective proxies for measuring lifespan then this dramatically decreases the cost and inconvenience of studying interventions which effect lifespan.
+Clearly however it needs to be established how good a proxy for actual health/lifespan increases DNA methylation age metrics actually are before they can be relied upon.
 
-The result of the various DNAm age studies display some seemingly contradictory trends. 
-For example, there is the global loss of methylation with age [@Wilson1987; @Fraga2005; @Heyn2012] and yet the majority of the highly significant age predicting CpGs in clocks are undergoing hypermethylation by a ratio of very roughly 2:1 [@Rakyan2010; @Bocklandt2011; @Koch2011; @Garagnani2012; @Florath2014] (see figure \@ref(fig:Florath2014F4abc)).
-Interestingly when expanded to look at all age-associated CpGs and not just the most highly correlated CpGs a slightly different picture emerges. Teschendorff et al. [@Teschendorff2010] noted in their original study and Zhang et al. [@Zhang2017] noted in a subsequent analysis if more loosely age correlated sites are included hypomethylation with age is more prevalent.
-Zhang et al. state roughly 60% of sites are hypomethylated and 40% hypermethylated, they also observed that all of the highly age-predictive CpGs which overlapped between the studies they examined were hypomethylated. 
+Ascertaining the effectiveness of using DNA methylation based age acceleration metrics as an outcome in ageing and longevity interventions in model organisms is likely to be informative about how well they can be expected to perform in humans.
+Promisingly, differences in interventions known to effect longevity in model organisms such as caloric restriction, rapamycin treatment, ovariectomy in female mice, and genetically long lived mouse strains [@Gensous2019; @Wang2017a; @Stubbs2017] have consistently shown decreased epigenetic ageing under the pro-longevity conditions. 
+Horvath et al. recently produced a single epigenetic age predictor which works in both humans and rats using the same assay of conserved CpG sites and the same age prediction algorithm [@Horvath2020].
+This unified metric provides greater confidence that an intervention which improves ageing outcomes in rats will also do so in humans.
+Horvath et al. also demonstrate the effectiveness of Heterochronic Plasma Exchange (HPE), the replacement of the plasma of old rats by that of young rats at rejuvenating the rat tissues.
+They observed an average of a 54.2% reduction in epigenetic age across liver, blood, heart, and hypothalamus with their pan tissue clock in old rats which underwent HPE [@Horvath2020].
 
-It is worth noting that the technologies used to measure the DNAm introduce their own biases into global changes in DNAm levels.
-The more Global measures such as WGBS and biochemical measures seem to favour hypomethylation with age [@Wilson1987; @Fraga2005; @Heyn2012].
-The arrays seem to have agreed more with these global measures as they have increased in size.
-RRBS also seems to skew in favour of hypermethylation with age [@Cole2017].
-These more narrow technologies are biased towards promoters and CGIs with their higher CpG density and lower baseline methylation levels making the prior probability of observing a methylation event greater than demethylation by dint of having a dearth of methylated sites to start with.
-
-Sites which are hypomethylated as their "ground state" are more likely to be in CGIs than sites which are hypermethylated as their "ground state", and thus hypomethylated sites are more likely to be variable in their methylation state and subject to tight regulatory control than are hypermethylated sites.
-Expanding the pool to look at CpG sites more poorly correlated with age is likely to introduce more sites whose hypomethylation with age is due to increased stochasticity with age.
-However, from the background information, one would expect that hypermethylated sites in CpG dense regions like CGIs whose methylation level declines with age would make good quality indicators.
-Given that CpGs in CGIs have a high prior probability of being hypomethylated, it follows that one would be more likely to observe a hypermethylation event by chance.
-Consequently, a CpG in a CGI that exhibits hypomethylation with age is less likely to be a result of noise than its converse, this may explain the higher reproducibility of these hypomethylated sites. 
-
-```{r Florath2014F4abc, fig.cap='(ref:Florath2014F4abc-Cap)',  out.width='80%', fig.show='hold', fig.align = 'center', echo=FALSE}
-knitr::include_graphics("figs/Florath2014_F4abc.png")
-```
-(ref:Florath2014F4abc-Cap) Mean methylation level by genomic region showing proportions negatively correlated with age, i.e. become hypomethylated as age increases. (Reproduced from @Florath2014 figure4 a, b, c.)
-
-In a review of DNAm and ageing Jones et al. [@Jones2015] drew a distinction between epigenetic drift changes and epigenetic clock changes with age wherein they defined drift as "the collection of DNA methylation changes that are associated with age within an individual but are not common across individuals.", which is slightly different from the definition used by Fraga et al. [@Fraga2005].
-Clock changes are defined as "those sites that are associated with age across individuals and can thus in some cases be used to predict chronological age".
-Drift constitutes stochastic change over time not driven by some process which strongly biases the resulting changes in DNAm in direction or to specific sites.
-Clock changes are the converse, some underlying process biases DNAm changes in direction and/or position.
-
-This picture is complicated by the tissue specificity of DNAm changes.
-Whilst it is evidently the case that multi-tissue DNAm age prediction is possible, it also seems to be the case that an age predictor trained on samples from a specific tissue will outperform one trained on multiple or other tissues when predicting the age of a sample of matching tissue type.
-This is supported by the out-performance of the Horvath predictor by the Hannum predictor in blood samples [@Marioni2015] and differentially predicted ages of tissues such as breast noted by Horvath [@Horvath2013].
-DNAm was highly correlated with age for a variety of tissue-specific sites in many studies, suggesting that the definition of clock sites is frequently tissue-dependent. 
-This may also be true of drift changes, stochastic changes may occur at sites in one tissue that would be tightly controlled in another. 
-If one was interested in universal signatures of ageing common across cell-types, one could restrict the definition of clock changes further to only those which are present in all/most tissue types to make a multi-tissue predictor. 
-
-Apparent changes in the DNAm state of a mixed cell population could be due not to global changes in that population but rather its composition, blood exhibits changes in the cellular composition with age [@Rimmele2014; @Izzo2020].
-As haematopoietic stem cells age their numbers increase and their regenerative potential declines.
-Their output becomes skewed towards the myeloid lineage but produces poorer quality cells [@Kirschner2017; @Dykstra2011a].
-The number of naive T-cells decreases with age, memory and effector T-cells accumulate as to memory B cells limiting the diversity in the cell-types and contributing to immunosenescence [@Geiger2013].
-Cellular composition of tissues can have a substantial impact on epigenome-wide association studies (EWAS), especially when dealing with small effect sizes [@Jaffe2014].
-Thus shifts in cell composition such as those in blood during ageing can be substantial sources of confounding when searching for cell-intrinsic changes in DNA. 
-Some attempts to assay and/or correct for cell-type composition have been made, for example, Rakyan et al [@Rakyan2010] isolated $CD4^+$ T-cells and found that they had a 60% overlap with age-related CpGs in whole blood. Chen et al. [@Chen2016a] used the method developed by Houseman et al. [@Houseman2012] to correct for cell-type composition and found that it did improve the performance of the Horvath and Hannum age predictors.
-The changes were significant but the effect of this correction was relatively modest. 
-Whilst cell composition has an effect, DNAm Age definitely seems to be capturing something beyond shifts in cell-type composition. 
-However, the age acceleration computed with Hannum's method, which is trained on blood data only, was more strongly correlated with cell-type composition than Horvath's method, indicating that extrinsic changes in cell-type composition likely have some impact the model. 
-
-Jenkinson et al. [@Jenkinson2017] took an information-theoretic approach to DNA methylation maintenance, modelling the binary methylation state of CpGs as a noisy communications channel. 
-Permitting them to compute the information capacity (CAP), methylation entropy (ENT), and the relative dissipated energy (RDE) of these channels. 
-High capacity channels represent reliable transmission of methylation state, consistent with high RDE as more energy is needed to ensure reliability and low entropy as methylation is more ordered at sites under tighter control than at less highly controlled sites.
-They found that the Transcription Start Sites (TSS) exhibited high levels of RDE and high information capacity as well as low levels of entropy.
-These values trended in the opposite direction as they moved outwards to CGIs, shores and seas. 
-This information-theoretic framing provides a useful lens through which to view drift and clock loci. 
-
-It could be hypothesised that as a cell differentiates those sites the methylation status of which are most important for successful differentiation will be the focus of the expenditure of cellular resources to set and maintain their methylation state, and will thus exhibit high capacity and low entropy.
-Whatever mechanism is focusing the resources of the cell on the maintenance of the methylation at these sites may be responsible for the tissue-specific biases in DNAm changes over time i.e. their targets will be clock sites. 
-Those sites not involved in the maintenance of the specific differentiated state would be a lower priority for the expenditure of cellular resources and thus display lower information capacity and higher entropy i.e. be drift sites. 
-This would also lead one to predict that multi-tissue age predicting loci would be enriched for factors common to the maintenance of a differentiated state. 
-The polycomb and Trithorax group proteins are very broadly evolutionarily conserved and play a key role in developmental cell fate choice and particularly in long-term stable maintenance of epigenetic state [@Schuettengruber2017].
-Consistent with this hypothesis Teschendorff et al. [@Teschendorff2010] observed that PCGTs are enriched among CpGs associated with age and Levine et al. [@Levine2018] also noted that their 513 clock CpGs were enriched for PCGTs. 
-This is also complementary to the idea that DNAm dysregulation with age promotes carcinogenesis by stabilising stem cell character but with reduced capacity for differentiation as proposed by Teschendorff et al. [@Teschendorff2010] and Rakyan et al. [@Rakyan2010].
-
-In his paper [@Horvath2013] Horvath proposed that DNAm age is a measure of the work done by an "Epigenetic Maintenance System" (EMS) which maintains epigenetic stability over time. 
-Considering work in its physical sense of the integral of power over time, Horvath considered power, the rate of change in the use of energy by the EMS as the 'tick-rate' of the epigenetic clock. 
-He proposed that during development power would be high due to the high level of stress on the system and that power would drop to a consistent level once maturity was reached. 
-Horvath laid out four predictions of this EMS model and argued that there was evidence in support of each of them. The predictions were:
-
-1. Cancer tissue should show signs of accelerated age, reflecting the protective actions of the EMS
-2. Many mitogens, genomic aberrations, and oncogenes, which trigger the response of the EMS, should be associated with accelerated DNAm age.
-3. High age acceleration of cancer tissue should be associated with fewer somatic mutations given the protective role of the EMS
-4. Mutations in TP53 should be associated with a lower age acceleration of cancer tissue if one further assumes that p53 signalling helps trigger the EMS
-
-A fifth prediction of this model would be that DNA methylation fidelity should be elevated during development and differentiation as a reflection of the greater amount of work done by the EMS during this period. 
-This is borne out by the results of Zhao et al. [@Zhao2014] who noted a global increase in DNA methylation fidelity during the early differentiation of mouse embryonic stems cells (see figure \@ref(fig:Zhao2014fig3ab)). 
-
-If Horvath's concept of an EMS is accurate and Jenkinson et al.'s RDE captures the energy expended by the cell on the maintenance of the methylation state of a locus, one would expect Horvath's concept of an EMS to tie in quite nicely with Jenkinson et al.'s methylation channel model.
-With the Relative dissipated energy (RDE) for a CpG channel corresponding to the work done by Horvath's EMS at a given locus. 
-Jenkinson et al. did indeed observe high levels of RDE in stem cells and a decline of RDE with age. 
-Interestingly, however, some cancers exhibited decreased RDE, CAP and increased entropy which is consistent with an accelerated ageing profile but seemingly less so with elevated activity of an EMS. 
-It is possible that whilst the distribution of RDE at various loci in the genome shifts giving a lower mean RDE that the total amount of energy expended is increasing but becoming less well targeted such that whilst there is increased energy flux through the EMS it is not being properly directed. 
-There may also be a plateau effect wherein the energy flux through the EMS is maxed out and cannot keep up with demand from many loci. 
-One would also predict more rapid equilibration of DNAm levels at loci with high RDEs, which could be examined by looking at the second derivatives for the stochastic model of DNA methylation described by Pfeifer et al. [@Pfeifer1990a] using the experimental systems Laird et al. [@Laird2004] and Riggs et al. [@Riggs2004a] used which supported the original model.
-
-Jenkinson et al. [@Jenkinson2017] found a global increase in entropy with age, but not with cell passage in culture suggesting an increase in entropy is associated with epigenetic age independent of mitotic age.
-This observation is in agreement with the finding that epigenetic state becomes more stochastic and diverges with age [@Fraga2005; @Slieker2016], indeed genes whose methylation were most divergent with age were enriched for ageing associations. 
-They also observed a loss of entropic sensitivity with age. 
-Entropic sensitivity is an indicator of how plastic DNAm state is to extrinsic effects. 
-Jenkinson et al. noted that there is a general loss of phenotypic plasticity with age, but cited no specific instance of loss of DNAm plasticity to environmental effects with age.
-Hahn et al. [@Hahn2017] provided a possible example of this effect when they reported that dietary restriction caused fewer differences in the methylation state of older than younger mice.
-
-In summary, DNAm age is a high-quality biomarker of ageing which can be tailored to the particular requirements of the context, be it estimating the chronological age of individuals, measuring age acceleration/deceleration of individuals relative to their chronological age or estimating age disparity of tissues [@Horvath2018; @Bell2019]. 
-There is predictably a cost/accuracy trade-off. 
-DNAm age is to some degree capturing "biological age" and likely not being driven by changes due to specific ageing-related diseases as illustrated by lack of relationships with specific pathologies and phenotypes of ageing noted by Bell et al. [@Bell2012]. 
-The PhenoAge clock is a better predictor of morbidity and mortality than age acceleration but may not be a better predictor of underlying biological age if the risk it is capturing is driven more by disease than that captured by age acceleration.
-PhenoAge is strongly associated with comorbidity count, more so than either the Hannun or Horvath clocks, interestingly zero comorbidities are associated with a negative PhenoAge score suggesting some of the PhenoAge signal is derived from disease status.
-Disease may, of course, interact with biological age causing an acceleration thereof, making them difficult to disentangle.
-Neither Age acceleration nor PhenoAge perfectly captures biological age but both are highly informative on the subject
-
-Global DNA methylation decreases with age, DNA methylation becomes more disordered and less plastic to environmental influences with age. 
-A set of loci, not necessarily individual CpGs but rather some functional unit of methylation exhibit consistent predictable changes with age. 
-Which loci are in this set varies with tissue type; there is, however, a subset which seems to be common to most tissues.
-The preponderance of these loci are in areas of high to moderate CpG density and become hypermethylated with age.
-The high frequency of CpGs and the hypomethylated "ground state" of CGIs would lead one to expect a bias towards being located in CGIs and becoming hypermethylated. 
-Thus it is unclear if changes in DNA methylation over time are biased towards regions of high CpG density and hypermethylation at a level that is greater or less than one would predict with the prior information.
+These results have laid the groundwork for the first large scale trial of an anti-ageing intervention.
+Metformin has a relatively small but well documented effect on lifespan and reduced risk of a number of ageing related conditions in model organisms and in humans with type two diabetes, for which it is widely prescribed [@Kulkarni2020].
+The TAME (Targeting Aging with Metformin) trial plans to include over 3,000 individuals aged 65-79 in a double-blind placebo controlled trial to examine the effects of metformin treatment on a composite primary endpoint consisting of stroke, heart failure, dementia, myocardial infarction, cancer and death [@TAME2020].
+The biomarker work group indicated that DNA methylation ageing assays may not be among the primary set of biomarkers used in the trial [@Justice2018].
+However, TAME will establish a repository of bio-specimens including blood which will likely permit the examination of the effects of metformin on DNA methylation based ageing metrics in humans at a large scale.
 
 ## Aims
 

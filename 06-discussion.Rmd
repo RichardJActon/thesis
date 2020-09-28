@@ -1,31 +1,30 @@
 # Discussion
 
-## [Chapter 3](#arrays) Epigenome Wide Association Studies for Bone Health Outcomes in Umbilical Cord Blood and Tissue 
+Overview... latest...
 
+## [Chapter 3](#arrays) Epigenomic analysis of the developmental origins of long-term bone health
+
+__topic sentence...__
 In this chapter two CpGs were identified as having genome wide significant associations with the outcome of interest in their respective EWAS.
-These CpGs were: 
+The first of these was CpG cg26559250 which is located at Chr6:157,653,445-157,653,447 at the *ZDHHC14* (zinc finger DHHC-type palmitoyltransferase 14) gene. 
+This CpG was identified In the EWAS for total bone mineral content minus head at 6 years adjusted for age and sex, with a p-value of $2.52\times 10^{-8}$ for an increase of 1.46% per kg in an uncorrected model and a corrected model.
+The Second was CpG cg22570676 located at Chr19:2,527,492-2,527,494 at the *GNG7* (G protein subunit gamma 7) gene. 
+This CpG was identified on the EWAS for periosteal circumference at 38% from the distal end of the tibia at 6 years (mm) adjusted for age and sex, with a p-value of $4.24\times 10^{-8}$ for an increase of 0.370% per mm in an uncorrected model and a corrected model
+The corrected models included covariates for: blood cell-type composition, maternal age at time of birth (years), sex, maternal BMI at 11 weeks gestation, parity, whether or not the mother smoked during pregnancy, and gestational age.
 
-1. CpG cg26559250 which is located at Chr6:157,653,445-157,653,447 at the ZDHHC14 (zinc finger DHHC-type palmitoyltransferase 14) gene. 
-   This CpG was identified In the EWAS for total bone mineral content minus head at 6 years adjusted for age and sex, with a p-value of $2.52\times 10^{-8}$ for an increase of 1.46% per kg in an uncorrected model and a corrected model.
-
-2. CpG cg22570676 located at Chr19:2,527,492-2,527,494 at the GNG7 (G protein subunit gamma 7) gene. 
-   This CpG was identified on the EWAS for periosteal circumference at 38% from the distal end of the tibia at 6 years (mm) adjusted for age and sex, with a p-value of $4.24\times 10^{-8}$ for an increase of 0.370% per mm in an uncorrected model and a corrected model
-
-The corrected models included covariates for: Blood cell-type composition, Maternal Age at time of birth (years), Sex, maternal BMI at 11 weeks gestation, parity, whether or not the mother smoked during pregnancy, and gestational age.
-
-EWAS were performed for 9 different outcomes across three groups of samples, and in each case four different models were fitted.
-Within a given EWAS the quite stringent Bonerroni standard for multiple testing correction was applied, however conducting multiple EWAS across different groups creates a secondary multiple testing problem. 
-Meaning that these findings could still be false positives despite the aspiration of family wise correction to minimise type 1 errors.
-Confirmation of these associations in another cohort would be preferable in order for the biological reality of these associations to be asserted with confidence.
+EWAS were performed for nine different outcomes across three groups of samples, and in each case four different models were fitted.
+Within a given EWAS the quite stringent Bonferroni standard for multiple testing correction was applied, however conducting multiple EWAS across different groups creates a secondary multiple testing problem. 
+This means that these findings could still be false positives despite the aspiration of family wise correction to minimise type 1 errors.
+Confirmation of these associations in another cohort would be necessary in order for the biological reality of these associations to be asserted with confidence.
 These results are correlational and experimental follow up would be needed to establish any mechanistic or causal relationships between the DNA methylation state at these sites and bone properties in early life. 
-One could for example attempt epigenetic editing of orthologous sites in a model organism and look for an effect on bone measurements.
+One could for example attempt epigenetic editing of orthologous sites in a model organism and look for an effect on bone measurements [@Gjaltema2020].
 
 This study did not find significant correlations between the examined bone measurements at *CDKN2A*, where previously an inverse relationship between DNA methylation and bone size, mineral content and mineral density at 4 years had been documented [@Curtis2017]. 
 There was ample opportunity to see changes at this locus in the data, with 95 probe sites in the vicinity of this gene.
 Nor did this study see significantly reduced DNA methylation at *RXRA* in umbilical cord with maternal vitamin D supplementation or increased circulating vitamin D at the 75 probe sites near *RXRA* [@Harvey2014d].
 Whilst this study did not replicate these specific findings it has highlighted two new loci with possible relationships to bone health outcomes.
 
-Epigenome wide association studies are here being used as a discovery platform for processes which may be implicated in the interaction of the in eutero environment and bone health outcomes as mediated by the epigenome, all of which are complex and multifactorial.
+Epigenome wide association studies are here being used as a discovery platform for processes which may be implicated in the interaction of the *in utero* environment and bone health outcomes as mediated by the epigenome, all of which are complex and multifactorial.
 There is not strong prior knowledge of the relationships between systems under investigation with which to make precise predictions, the aim is rather to provide a starting point for generating more specific models with which to generate more precise hypotheses.
 This presents a challenge as there are many sources of noise which could obscure any relationships which do exist between these properties or produce the spurious appearance of a relationship when none may exist. 
 Striking the balance between sensitivity and specificity is particularly challenging in the context.
@@ -41,8 +40,9 @@ One could also perform the reciprocal analysis, (dimentionality reduction in the
 An ongoing collaboration with colleagues at MRC-IEU, University of Bristol is including this data in a meta-analysis and is replicating several of these EWAS in other cohorts.
 This provides an opportunity to attempt to replicate the sites identified here and ascertain if they are sufficiently robust to warrant functional follow-up.
 
-## [Chapter 4](#tRNAs) The Genomic Loci of Specific Human tRNA Genes Exhibit Ageing-Related DNA Hypermethylation
+## [Chapter 4](#tRNAs) The implications of ageing-related changes in the epigenetic state of tRNA genes
 
+__topic sentence...__
 The finding that the tRNAome is enriched for age related hypermethylation and that there are two loci in which this effect is distinct and replicable is challenging to interpret given the number of different regulatory paradigms in which tRNA genes are involved.
 There are several ways in which the effects of changes on tRNA DNA methylation could manifest.
 There is the canonical function of tRNAs in which changes would impact on the expression of the tRNA gene which alters the amount of mature tRNA produced, with potential consequences in translation.
@@ -61,8 +61,8 @@ tRNAs are a key component of the translation system, a core component of the cel
 Translation's tight coupling to metabolic regulation and the effect of modulating it on ageing [@Hansen2007] means that any effect of tRNA gene DNAm on translation could be relevant for the regulation of ageing processes.
 
 Unpicking the potential mechanism of action of action of changes in tRNA gene DNA methylation, if indeed these changes have physiologically relevant impacts, will require greater understanding of a number of aspects of tRNA biology.
-Our collective understanding of the the post-transcriptional modifications of tRNAs and the regulatory functions of tRNA derived small RNAs is still in its infancy [@Schimmel2017].
-In conclusion are too many mechanisms of action through which changes in epigenetic state of tRNA genes could impact on ageing related systems and at present insufficient evidence to favour any one particular mechanism.
+Our collective understanding of the post-transcriptional modifications of tRNAs and the regulatory functions of tRNA derived small RNAs is still in its infancy [@Schimmel2017].
+In conclusion with possible effects on chromatin structure, on tRNA derived small RNA signalling and on translation, there are too many mechanisms of action through which changes in epigenetic state of tRNA genes could impact on ageing related systems, and at present insufficient evidence to favour any one particular mechanism.
 In addition, these possibilities are not mutually exclusive so any effects need not be limited to a single mechanism.
 
 A number of age related tRNA DNA hypermethylation signals persisted after correction for cell-type composition, and there were some differences in tRNA gene DNA methylation between cell-types. 
@@ -74,9 +74,10 @@ CpGs differentially methylated with age have generally shown changes on the orde
 
 The targeted bisulfite sequencing method employed here is quite efficient at capturing DNA methylation within tRNA genes as a single amplicon is generally sufficient to span a given tRNA gene. 
 This panel could be expanded to most of the human tRNAome though some loci have CpG loci positioned flanking the tRNA genes which prevent the design of primers spanning the tRNA gene locus. 
-It would be interesting to attempt this assay with enzymatic instead of bisulfite conversion as this might permit some inaccessible sites to be targeted with slightly longer amplicons and improve yields due the reduced fragmentation arising from bisulfite treatment [@Williams2019].
-If others wish to characterise DNA methylation at tRNA gene loci this method proved highly effective here.
-It would be particularly interesting to employ this is mice at tRNA loci not well covered by RRBS, to see if the finding of tRNA gene enrichment for age related hypermethylation is also the case in mice.
+It would be interesting to attempt this assay with enzymatic (NEBNext Enzymatic Methyl-seq 'EM-seq') instead of bisulfite conversion as this might permit some inaccessible sites to be targeted with slightly longer amplicons and improve yields due the reduced fragmentation arising from bisulfite treatment [@Williams2019].
+It would be particularly interesting to employ this in mice at tRNA loci not well covered by RRBS, to see if the finding of tRNA gene enrichment for age related hypermethylation is also the case in mice.
+The RRBS mouse data analysed in this study showed age-related hypermethylation in three of 51 tRNAs.
+This limited coverage of the 401 high confidence tRNAs in the mouse genome [@Chan2009] limits the ability to generalise about the enrichment for tRNA gene DNA hypermethylation in mice.
 
 An effective follow up experiment would be to use Pacific Biosciences no amplification CRISPR based targeted sequencing method to examine tRNA gene clusters [@Wieben2019].
 A dataset of this type has the potential to elucidate several features of the tRNA genes.
@@ -88,8 +89,9 @@ Coupled with this it would also be illuminating to employ the Hydro-tRNAseq and 
 Little was previously known about the epigenetic state of the human tRNA genes [@Bhargava2013a] and much remains to be characterised.
 This work represents the first detailed characterisation of the DNA methylation state of the human tRNAome, and revealed a novel pattern of age related hypermethylation in these genes.
 
-## [Chapter 5](#Alus) DNA methylation clocks in Alu Elements
+## [Chapter 5](#Alus) Assessing Biological ageing by DNA methylation changes within Alu repeat elements
 
+__topic sentence...__
 The best Alu DNA methylation age predictor constructed in this work was able to predict chronological age with an R of 0.65 from a training set of n=774 in an unrelated replication set of n=664 with a median absolute error of 8.1 years. 
 Whilst this is less accurate than many of the other DNA methylation based age predictors [@Bell2019] it was not the primary goal of this predictor to generate the most accurate age predictions but rather to be sufficiently accurate to capture a signature of age acceleration specific to the Alu repeat elements.
 The difference between the predicted and chronological age, the age acceleration, was strongly correlated with the chronological age such that the age of older individuals is prone to be overestimated and vice versa.
@@ -102,7 +104,7 @@ This effect in the quantile normalised data was not mitigated by binarising the 
 The difficulty with absolute DNA methylation quantitation by MeDIP-seq is not simple to resolve with common data transformations.
 
 The strong association between Alu age acceleration and chronological age limited the interpretability of the GWAS for age acceleration.
-This is because associations found here could easily be driven by differences in allele frequencies between different age strata within the GWAS population and not with signal driven by the Alu age acceleration independent of chronological age.
+This is because associations found here could easily be driven by differences in allele frequencies between different age strata within the GWAS population and not with signal driven by the Alu age acceleration independent of chronological age [@Price2010].
 
 The samples used to train and test the models have a median age of approximately 60 years.
 A larger proportion of samples at a particular part of the age distribution is also a potential source of bias, as poor performance in the lower numbers of older and younger individuals will not be penalised as much as poor performance at the ages with more samples.
@@ -114,7 +116,8 @@ The age predictors generally performed only marginally better when predicting th
 Despite the issues with the correlation of age acceleration with chronological age this work and Wang et al.'s rDNA clock [@Wang2019] demonstrate that a DNA methylation based age predictors can be trained in repetitive sequence elements.
 This suggests that constructing DNA methylation based age predictors targeted to particular subsets of the genome is possible.
 Though, the aim of capturing signatures of biological ageing specific to those subsets is yet to be adequately explored.
-It may be possible to revisit this approach once large whole genome bisulfite or the enzymatically converted equivalent datasets are generated as it seems unlikely that it would be economical to examine the ~1.1 mission Alu elements with any of the available targeted methods.
+It may be possible to revisit this approach once large whole genome bisulfite or the enzymatically converted equivalent datasets are generated as it seems unlikely that it would be economical to examine the ~1.1 million Alu elements with any of the available targeted methods.
+Alternatively if the cost of long-read sequencing drops and in quality of methylated base calls using these methods increases [@]
 Other possible features on which to attempt to construct age predictors could include MIR repeat elements and Histone genes, though Histone genes present a relatively limited set of possible sites with which to predict.
 
 ## Conclusion
