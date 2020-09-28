@@ -188,7 +188,7 @@ There are a number of epigenetic modifications which can be subdivided into four
 ### Structure and Context
 
 DNA methylation is the most well-studied epigenetic modification [@Haluskova2010].
-Specifically CpG methylation, the addition of a Methyl group to the 5 carbon of a cytosine base (figure \@ref(fig:5mCvsC)), in a CpG dinucleotide context (figure \@ref(fig:CpGvsGpC)).
+Specifically CpG methylation, the addition of a Methyl group to the 5 carbon of a cytosine base (figure \@ref(fig:5mCvsC)), in a CpG dinucleotide context.
 (hereafter 'DNA Methylation' or 'DNAm' refers to 5mC CpG methylation unless stated otherwise.)
 DNA methylation is stable and relatively easy to characterise from biological samples by comparison with other epigenetic marks.
 The methylation status of ancient DNA has even been characterised, for example, native American remains ranging in age from 230 to 4500 years were measured using bisulfite sequencing [@Smith2015].
@@ -247,9 +247,6 @@ Ziller et al. identified ~5.6 million CpGs, ~21.8% of autosomal CpGs, which are 
 More that three quarters of these regions where under 1kb in size and located away from transcription start sites and >70% of which had methylation levels >75% [@Ziller2013].
 Data from tree different approaches taken by Irizarry et al. [@Irizarry2009], Stadler et al. [@Stadler2011], and Ziller et al. [@Ziller2013] indicate that the most dynamic DNA methylation changes are occurring at the level of small distal regulatory features. 
 A small fraction of CpGs, on the order of 2-6% exhibiting constitutively unmethylated states and on the order of 70-90% constitutively methylated leaving 4-28% of sites subject to dynamic regulation.
-
-__[@Wilson2014] species specific DMR, [@Doi2009] __
-
 
 ```{r Baubec2014fig1, fig.cap='(ref:Baubec2014fig1-Cap)',  out.width='80%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/Baubec2014_fig1.png")

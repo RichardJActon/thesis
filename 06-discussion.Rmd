@@ -1,10 +1,16 @@
 # Discussion
 
-Overview... latest...
+The epigenomics of ageing has enormous potential for growth in the coming years.
+DNA methylation based ageing biomarkers have a bright future as a reliable and convenient broad indicators of biological ageing, that have the potential to be used as proxies for longevity in clinical trials intervening in ageing.
+For instance there is growing interest and investment in drugs with potential anti-ageing activities such as senolytics [@VanDeursen2019], and in re-purposing of existing drugs like metformin for pro-longevity and increased healthspan interventions [@TAME2020].
+Advances in epigenetic editing [@Gjaltema2020] promise the possibility of experimentally establishing causal roles of age related epigenetic changes, and the ability to dissect the mechanisms of the involvement of epigenetic changes in the processes of ageing.
+Improvements are taking plance in DNA methylation assay technologies such as NEBNext Enzymatic Methyl-seq 'EM-seq' [@Williams2019], better DNA methylation calling in nanopore sequencing [@Ni2019], advances in single-cell DNA methylation assays [@Zhu2018a], and Illumina methylation arrays for sites conserved across mammals [@Horvath2020]. With these tools there are many additional opportunities to characterise the DNA methylomes and capture changes in DNA methylation which were not previously accessible, as well as to begin more mechanistic studies.
 
 ## [Chapter 3](#arrays) Epigenomic analysis of the developmental origins of long-term bone health
 
-__topic sentence...__
+The developmental origins of health and disease hypothesis (DOHaD) holds that early life environmental influences have long term consequences for the risk of developing various pathologies in adulthood and later life. 
+It is with this lens that the EWAS for relationships between umbilical cord DNA methylation and bone health outcomes were framed.
+DNA methylation being an epigenetic mark is influenced by environmental factors and is heritable by subsequent generations of cells, thus it could be a medium through which environmental factors could act on long term health in accordance with DOHaD.
 In this chapter two CpGs were identified as having genome wide significant associations with the outcome of interest in their respective EWAS.
 The first of these was CpG cg26559250 which is located at Chr6:157,653,445-157,653,447 at the *ZDHHC14* (zinc finger DHHC-type palmitoyltransferase 14) gene. 
 This CpG was identified In the EWAS for total bone mineral content minus head at 6 years adjusted for age and sex, with a p-value of $2.52\times 10^{-8}$ for an increase of 1.46% per kg in an uncorrected model and a corrected model.
@@ -31,8 +37,15 @@ Striking the balance between sensitivity and specificity is particularly challen
 Lowering the threshold for specificity and admitting some type 1 errors might generate sufficient additional hits with which to attempt methods such as gene set enrichment analysis, and related approaches, to identify the biologically relevant systems and processes which may mediate the observed association.
 However, an excessive number of false positive inputs to such analyses can lead to spuriously identifying associated terms.
 Simply increasing the sample size of studies to reach the level of power necessary to detect small effect size changes is expensive, impractical and does not help when it comes to analysing existing datasets underpowered for the analysis as initially conceived.
+The hypothesis free approach has some advantages when attempting to elevate as yet unknown aspects of biology relevant the association being tested to the attention of investigators for further exploration. 
+However, searching for associations between outcomes and particular genomic locations may be of limited effectiveness, even when sufficient statistical power is available to uncover very small effects. 
+As, when individual loci have only very minor contributions to a given effect there are many of them, often spread across many systems [@Boyle2017].
+Greater temporal and tissue specificity may reveal larger effect sizes in particular tissues at particular times. 
+Time and tissue specific signals may currently be flattened out in the aggregate signal.
+The combinatorial complexity of possible times and tissues renders a brute force search impractical, so some prior reason based in biological understanding is likely to be needed to go looking in a particular time and/or tissue for an association.
 
 If the primary interest is in identifying pathways or other functional biological units then making use of dimentionality reduction methods such as weighted correlation network analysis (WGCNA) [@Langfelder2008] could potentially help to address some of the power issues faced by these studies.
+Tough this approach also has the limitation that biologically relevant effects may be realised through small perturbations across many systems [@Boyle2017], meaning no whole network may stand out.
 Grouping the outcomes into effects on correlated gene networks rather than individual genes dramatically reduces the number of statistical tests performed.
 This approach could be used to narrow the set of tests to perform when looking for gene level associations in other datasets.
 If changes in gene networks are associated with an outcome of interest in one cohort it is reasonable to take this prior information to a second cohort and test only genes in this network for an association with the outcome of interest dramatically reducing the number of CpG level tests.
@@ -42,15 +55,20 @@ This provides an opportunity to attempt to replicate the sites identified here a
 
 ## [Chapter 4](#tRNAs) The implications of ageing-related changes in the epigenetic state of tRNA genes
 
-__topic sentence...__
+tRNAs are central to the core cellular process of translation but relatively little is known about the epigenetic state of the genes which encode this essential cellular component.
+Almost half of all tRNA genes are silent [@Torres2019a], and there is evidence that they are expressed in a tissue specific fashion [@Dittmar2006; @Sagi2016], indeed this study found differences in tRNA gene DNA methylation between blood cell types.
+There are many indicators that there is a great deal of potential biological insight to be gained from a deeper understanding of the epigenetic regulation of tRNA genes.
+
 The finding that the tRNAome is enriched for age related hypermethylation and that there are two loci in which this effect is distinct and replicable is challenging to interpret given the number of different regulatory paradigms in which tRNA genes are involved.
 There are several ways in which the effects of changes on tRNA DNA methylation could manifest.
 There is the canonical function of tRNAs in which changes would impact on the expression of the tRNA gene which alters the amount of mature tRNA produced, with potential consequences in translation.
 There is also action through altering the amount or type of tRNA derived small RNA molecules produced.
 There is altering the chromatin dynamics of the tRNA gene loci, with potential knock-on effects for other systems given their insulator activity [@Raab2011] and tendency to cluster in three dimensional space with other tRNA genes [@VanBortle2017].
 In addition these are not mutually exclusive. 
-Given the relatively localised effects on DNA methylation that were observed (Figure \@ref(fig:gvizLocusZooms)) the effect on larger scale chromatin dynamics would naively seem relatively unlikely by comparison with an effect on the transcription of the tRNA genes.
-However, the effects of tRNA genes on genome architecture can apparently be mediated by local changes in the nucleosome organisation at tRNA genes [@Hamdani2019], so it is hard to rule this out.
+
+Despite the relatively localised effects on DNA methylation that were observed (Figure \@ref(fig:gvizLocusZooms)) these changes could still have an effect on larger scale chromatin dynamics. The action of zinc finger CXXC domain proteins binding a unmethylated CpGs and Methyl-CpG-Binding domains at methylated CpGs can alter histone modifications and affect alternate histone usage respectively [@Blackledge2013; @Sijacic2019].
+In addition changes in the nucleosome organisation at tRNA genes may affect genome architecture [@Hamdani2019].
+So it is hard to rule this out effects on chromatin architechture even from localised DNA methylation changes.
 The circulating tRNA derived small RNAs have been documented as exhibiting age related changes and thus represent an additional signalling vector through which changes in tRNA expression could act [@Dhahbi2013; @Rounge2018].
 
 The effects of increased DNAm on tRNA genes was to repress their expression in a plasmid based experimental system [@Besser1990], however this does not necessarily imply that increased DNA methylation at a tRNA gene locus would result in the reduced expression of tRNA derived small RNAs.
@@ -91,7 +109,8 @@ This work represents the first detailed characterisation of the DNA methylation 
 
 ## [Chapter 5](#Alus) Assessing Biological ageing by DNA methylation changes within Alu repeat elements
 
-__topic sentence...__
+Repetitive elements make up some 45% of the human genome [@Jorda2017] and the global hypomethylation observed with age is driven by these repeats [@Bollati2010], but to date limited coverage of these regions [@Clark2012] has meant that their potential contain information relevant to biological ageing has gone underexplored.
+
 The best Alu DNA methylation age predictor constructed in this work was able to predict chronological age with an R of 0.65 from a training set of n=774 in an unrelated replication set of n=664 with a median absolute error of 8.1 years. 
 Whilst this is less accurate than many of the other DNA methylation based age predictors [@Bell2019] it was not the primary goal of this predictor to generate the most accurate age predictions but rather to be sufficiently accurate to capture a signature of age acceleration specific to the Alu repeat elements.
 The difference between the predicted and chronological age, the age acceleration, was strongly correlated with the chronological age such that the age of older individuals is prone to be overestimated and vice versa.
@@ -108,6 +127,7 @@ This is because associations found here could easily be driven by differences in
 
 The samples used to train and test the models have a median age of approximately 60 years.
 A larger proportion of samples at a particular part of the age distribution is also a potential source of bias, as poor performance in the lower numbers of older and younger individuals will not be penalised as much as poor performance at the ages with more samples.
+This also negatively impacts the ability to determine the quality of the predictor as a good age range is is required to reliably estimate the R of a predictor [@Horvath2018].
 Mitigating this by equalising the numbers in certain age groups is a possibility but a substantial number of samples must be left out to achieve this, excessively shrinking the training set.
 
 The Twins UK dataset provides a powerful tool for assessing the impact of genetics on age predictors.
@@ -117,14 +137,14 @@ Despite the issues with the correlation of age acceleration with chronological a
 This suggests that constructing DNA methylation based age predictors targeted to particular subsets of the genome is possible.
 Though, the aim of capturing signatures of biological ageing specific to those subsets is yet to be adequately explored.
 It may be possible to revisit this approach once large whole genome bisulfite or the enzymatically converted equivalent datasets are generated as it seems unlikely that it would be economical to examine the ~1.1 million Alu elements with any of the available targeted methods.
-Alternatively if the cost of long-read sequencing drops and in quality of methylated base calls using these methods increases [@]
-Other possible features on which to attempt to construct age predictors could include MIR repeat elements and Histone genes, though Histone genes present a relatively limited set of possible sites with which to predict.
+Alternatively if the cost of long-read sequencing drops and the quality of methylated base calls using these methods increases [@Ni2019] they may also be a viable source of such data.
+Other possible features on which to attempt to construct age predictors could include: MIR repeat elements some of which have been co-opted as enhancers and which are associated with tissue specific gene expression [@Jjingo2014]; Long Terminal Repeat (LTR) elements which are enriched for chromatin marks which characterise active *cis* regulatory elements [@Leung2015]; Histone genes because of their core function and the wide spread genomic implications of alterations in their availability. They are also located in early-replicating domains [@Muller2017] so should generally have high fidelity DNA methylation copying during mitosis [@Zhou2018] so any changes observed here are less likely to be the product of epigenetic drift. This would include also alternative histones as they have functions in genome stability and DNA repair [@Billon2012]. However, Histone genes present a relatively limited set of possible sites with which to predict.
 
 ## Conclusion
 
 The unifying theme of this work is the relationship between DNA methylation and healthy ageing.
 From its possible function as a mediator for the effects of early life environmental influences on long term bone health, through age-related hypermethylation of genes encoding core components of the transcriptional machinery, to signatures of biological ageing in the repetitive regions of the genome.
 The epigenome sits upon the genome encoding the annotations to the genome necessary for cells with diverse and dynamic functions to arise from a singular set of genetic information. 
-The ability to construct epigenetic clocks reveals that this layer of information storage and processing contains much that is important for understanding the processes of ageing.
-The environmental malleability of the epigenome is its core strength, it is this plasticity to adopt multiple roles that permits multicellularity [@Tudge2016].
-The possibility of understanding the ageing related changes in the epigenome and of modulating those changes to increase longevity and healthspan make the epigenomics of ageing an important area for further study.
+The ability to construct epigenetic clocks reveals that this layer of information storage and processing contains much that is important for understanding the molecular and cellular processes of ageing.
+The environmental malleability of the epigenome is its core strength, it is this plasticity to adopt multiple roles that permits multicellularity [@Tudge2016], this malleability both leaves the epigenome open to disruption and presents the possibility of correcting any errant changes.
+The integrative understanding of epigenomics has the potential to contribute many novel scientific insights into the fundamental mechanisms of ageing in the years to come with profound impacts for our ability to ameliorate chronic and ageing related conditions by intervening in their underlying causes to increase longevity and healthspan.

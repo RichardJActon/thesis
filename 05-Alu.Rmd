@@ -42,7 +42,7 @@ The Alu elements arose from the 7SL sequence via the FAM sequences, which gave r
 ```{r AluStruct, fig.cap="(ref:AluStruct-Cap)", out.width='90%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("./figs/AluStructure.png")
 ```
-(ref:AluStruct-Cap) __Structure of an Alu element__ A complete Alu element contains the A and B box sequence elements from an RNA polIII promoter, a central A rich region, a short insertion in the right arm, and a poly A region involved in retrotransposition and insertion. There is not an explicit polIII terminator in the Alu sequence so transcription continues through arbitrary flanking sequence until a run of at least 4 Ts, is encountered [@Chen2008; @Batzer2002]. FLAM sequences are the origin of the Left arm and FRAMs the origin of the Right [@Quentin1992.
+(ref:AluStruct-Cap) __Structure of an Alu element__ A complete Alu element contains the A and B box sequence elements from an RNA polIII promoter, a central A rich region, a short insertion in the right arm, and a poly A region involved in retrotransposition and insertion. There is not an explicit polIII terminator in the Alu sequence so transcription continues through arbitrary flanking sequence until a run of at least 4 Ts, is encountered [@Chen2008; @Batzer2002]. FLAM sequences are the origin of the Left arm and FRAMs the origin of the Right [@Quentin1992].
 
 Alus are primate specific and arose ~65 million years ago (MYA), with a peak in amplification around ~40 MYA (Figure \@ref(fig:AluAge)) [@Ade2013].
 Non-LTR retrotransposons, including Alu, L1 and SVA elements, are active in humans.
