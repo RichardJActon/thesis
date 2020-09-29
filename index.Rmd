@@ -19,7 +19,7 @@ output:
       download: null
       search: yes
       fontsettings:
-        theme: night
+        theme: white #night
         family: sans
         size: 2
       info: yes
@@ -41,25 +41,28 @@ abstract: |
   # Abstract {-}
   
   The global population is ageing and age is a primary risk factor for many life threatening diseases including cancer, cardiovascular and neurodegenerative conditions. 
-  This also includes conditions such as osteoporosis which increase the risk of death indirectly through elevated risk of the fracture of major bones and subsequent complications. 
-  The aim of this work was to extend the understanding of the epigenetic processes involved in ageing and ageing-related disease.
+  This also encompasses conditions such as osteoporosis which increase the risk of death indirectly through elevated risk of the fracture of major bones and subsequent complications. 
+  The aim of this thesis was to extend the understanding of the epigenetic processes involved in ageing and ageing-related disease.
   Three specific areas were investigated. 
 
-  Firstly, the relationship between early life epigenetic state and long term bone health.
-  This investigation took the form of Epigenome wide association studies conducted on umbilical cord blood DNA methylation.
-  This identified candidate CpGs whose DNA methylation state is associated with bone mineral content at 6 years of age ($p < 2.52\times 10^{-8}$, n = 402) and periosteal circumference at 6 years of age ($p < 4.24\times 10^{-8}$, n = 141) respectively.
+  Firstly, the relationship between early life epigenetic state and long term bone health was analysed.
+  This investigation took the form of Epigenome-wide association studies (EWAS) conducted on umbilical cord blood DNA methylation.
+  This identified candidate CpGs whose, DNA methylation state is associated with bone mineral content at 6 years of age ($p < 2.52\times 10^{-8}$, n = 402) and periosteal circumference at 6 years of age ($p < 4.24\times 10^{-8}$, n = 141) respectively.
 
   Secondly, the changes in human tRNA gene DNA methylation with age were interogated. 
   tRNAs permit the look-up of amino acids matching a given codon and as such are an essential core component of the translation of mRNA into protein by the ribosome.
-  Human tRNA genes were found to be enriched for age-related DNA hypermethylation and three specific tRNA loci show genome wide significant ($p < 4.34\times10^{-9}$) hypermethylation with age. 
-  Two of which, tRNA-iMet-CAT-1-4 and tRNA-Ser-AGA-2-6, were validated using at different technology and replicated in an independent cohort, using a third DNA methylation assay.
+  Human tRNA genes were found to be enriched for age-related DNA hypermethylation and three specific tRNA loci show genome-wide significant ($p < 4.34\times10^{-9}$) hypermethylation with age. 
+  Two of which, tRNA-iMet-CAT-1-4 and tRNA-Ser-AGA-2-6, were validated using the 450k Illumina DNA methylation array and replicated in an independent cohort, using targeted bisulfite sequencing.
 
-  Thirdly, a DNA methylation based age predictor based on the Alu family of SINE repeat elements.
-  This is a region of the genome not previously broadly accessible to DNA methylation assays used in the construction of age predictors. 
+  Thirdly, a DNA methylation based age predictor based on the Alu family of SINE repeat elements was constructed.
+  These repeats comprise a region of the genome not previously broadly accessible to DNA methylation assays used in the construction of age predictors. 
   Age predictors using the DNA methylation state of Alu repeat elements were able to predict human age with an R of 0.65 and a median absolute error of 8.1 years.
   This predicition was possible using MeDIP-seq training data from 774 individuals and validated on an unrelated set of 664 individuals.
+  An attempt was made to use ageing-related changes in Alu DNA methylation as a potential measure of ‘biological’ ageing.
+  A Genome-wide Association study (GWAS) was performed for age accleration, the difference between predicted and chronological age.
+  However, this age acceleration calculation was observed to be still strongly driven by actual age.
 
-  This work brings together epigenomic changes related to healthy ageing from the beginning of the lifecourse through to later life, examining areas of the DNA methylome not previously studied in depth.
+  This work brings together epigenomic changes related to ageing from the beginning of the lifecourse through to later life, uniquely examining areas of the DNA methylome not previously studied in depth.
   
   \newpage
   
@@ -122,14 +125,14 @@ suppressPackageStartupMessages({
 
 # Acknowledgements {-}
 
-I would like to acknowledge Nevena Krstic for her work extracting the DNA for the MAVIDOS EPIC array analysis and Dr Millie Parsons for her assistance with with the MAVIDOS sample metadata, as well as Dr Beth Curtis and Professor Nick Harvey of the MRC-LEU for their assistance with framing the research questions for the vitamin D and bone development outcomes work with the MAVIDOS samples.
+I would like to acknowledge Dr Nevena Krstic for her work extracting the DNA for the MAVIDOS EPIC array analysis and Dr Millie Parsons for her assistance with with the MAVIDOS sample metadata, as well as Dr. Beth Curtis and Professor Nick Harvey of the MRC-LEU for their assistance with framing the research questions for the vitamin D and bone development outcomes work with the MAVIDOS samples.
 The MRC-LEU is supported by the Medical Research Council (MRC).
 I gratefully acknowledge the individuals from TwinsUK, Mavidos and the Hertfordshrie cohort.
-I would like to thank Pirro Hysi for his work performing the age acceleration GWAS.
+I would like to thank Dr. Pirro Hysi for his work performing the age acceleration GWAS.
 I would like to acknowledge Nikki Graham for her assistance identifying suitable samples for targeted bisulfite sequencing work and her work extracting DNA from those samples. 
 I acknowledge the use of the IRIDIS High-Performance Computing Facility, and associated support services at the University of Southampton, in the completion of this work. 
 I would like to thank the MRC Doctoral fund for supporting this work.
 I thank my family for their invaluable support, encouragement, and occasional proofreading.
-Thanks also to Michael Glinka for his advice, encouragement and friendship.
-I thank my supervisors Karen Lillycrop and Cyrus Cooper for their input and advice on my project.
+Thanks also to Dr Michael Glinka for his advice, encouragement and friendship.
+I thank my supervisors Professors Karen Lillycrop and Cyrus Cooper for their input and advice on my project.
 Finally, I would like to acknowledge the extensive help and support of my primary supervisor Dr Chris Bell.
