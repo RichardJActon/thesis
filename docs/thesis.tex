@@ -1352,10 +1352,8 @@ Microfluidic systems for conducting multiple PCR reactions in parallel such as t
 
 }
 
-\caption{\textbf{Microfluidic system for multiple parallel pairwise PCR reactions.}
-The Fluidigm 48.48 access array permits the combination of up-to 48 samples with up-to 48 different set of reagents, without multiplexing. In this case the reagents are locus specific primers for targeted sequencing. Samples are added to one side of the array and reagents to the other the flow cell permits all combinations of the two to be mixed. Fluidigm's controller flow cell and thermocycler allow all the PCR reactions to be carried out simultaneously and their products be extracted for sequencing.}\label{fig:targetedBiSseqFluidigmGeneric}
+\caption{\textbf{Microfluidic system for multiple parallel pairwise PCR reactions.} The Fluidigm 48.48 access array permits the combination of up-to 48 samples with up-to 48 different set of reagents, without multiplexing. In this case the reagents are locus specific primers for targeted sequencing. Samples are added to one side of the array and reagents to the other the flow cell permits all combinations of the two to be mixed. Fluidigm's controller flow cell and thermocycler allow all the PCR reactions to be carried out simultaneously and their products be extracted for sequencing.}\label{fig:targetedBiSseqFluidigmGeneric}
 \end{figure}
-
 
 
 
@@ -2635,7 +2633,7 @@ Samples from the 28 year old time point are all from pregnant women at \textasci
 \subsection{tRNA annotation information}\label{tRNAanno}}
 
 Genomic coordinates of the tRNA genes were downloaded from GtRNAdb {[}\protect\hyperlink{ref-Chan2009}{304}{]}.
-The 2 tRNAs located in chr1\_gl000192\_random are tRNA-Gly-CCC-8-1 \& tRNA-Asn-ATT-1-2 (\href{./Supplementary_Files/hg19-tRNAs.bed}{Supplementary File S1}).
+The 2 tRNAs located in chr1\_gl000192\_random are tRNA-Gly-CCC-8-1 \& tRNA-Asn-ATT-1-2 (\href{docs/Supplementary_Files/hg19-tRNAs.bed}{Supplementary File S1}).
 The 213 probes overlapping tRNA genes were derived from intersecting the tRNA gene annotation data from gtRNAdb with the Illumina 450k array manifest annotation for the hg19 genome build using bedtools v2.17.0 {[}\protect\hyperlink{ref-Quinlan2010}{231}{]}.
 107 tRNA genes were excluded from blacklisted regions of hg19 {[}\protect\hyperlink{ref-Amemiya2019}{357}{]}.
 
@@ -2771,7 +2769,7 @@ Using the EPIC array DNAm age was estimated using the Horvath clock {[}\protect\
 \subsubsection{Targeted Bisulfite Sequencing}\label{targetedBiSseq}}
 
 tRNA loci were selected for targeted sequencing which exhibited changes and DNAm with age along with closely related tRNAs in which changes were not observed.
-Primer design was performed using `methPrimer' {[}\protect\hyperlink{ref-Li2002}{237}{]} (\href{./Supplementary_Files/Targeted_BiS-seq_Primers.txt}{Supplementary File S2}).
+Primer design was performed using `methPrimer' {[}\protect\hyperlink{ref-Li2002}{237}{]} (\href{docs/Supplementary_Files/Targeted_BiS-seq_Primers.txt}{Supplementary File S2}).
 A total of 84 tRNA loci were targeted in 2 rounds of sequencing, 79 subsequently generated reliable results post-QC.
 The targeted tRNAs covered a total of 723 CpGs with a median of 8 CpGs per tRNA (range 1-13), data passing QC was generated for 458 CpGs, median 6 (range 1-9) per tRNA.
 
@@ -2815,7 +2813,7 @@ Five of the 6 top age hypermethylating tRNAs are covered by this array dataset.
 Data was downloaded from the TCGA (The Cancer Genome Atlas) via the GDC (genomic data commons) data portal {[}\protect\hyperlink{ref-Grossman2016}{371}{]} using the \texttt{GenomicDataCommons} \texttt{R} package.
 Data from foetal tissue {[}\protect\hyperlink{ref-Yang2016}{372},\protect\hyperlink{ref-Nazor2012}{373}{]} was downloaded from GEO (\href{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE72867}{GSE72867}, \href{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30654}{GSE30654}).
 From the TCGA, samples were selected for which DNAm data was available from both the primary site and normal solid tissue, and for which an approximate age could be inferred (within one year).
-Selecting those probes overlapping tRNA genes yielded 73,403 data points across 19 tissues with an age range of 15-90yrs (median 63.4) (\href{./Supplementary_Files/TCGA_samples_used.tsv}{Supplementary File S3})
+Selecting those probes overlapping tRNA genes yielded 73,403 data points across 19 tissues with an age range of 15-90yrs (median 63.4) (\href{docs/Supplementary_Files/TCGA_samples_used.tsv}{Supplementary File S3})
 
 \hypertarget{mintmapmethods}{%
 \subsection{Assaying tRNA expression in blood with MINTmap}\label{mintmapmethods}}
@@ -3301,7 +3299,7 @@ These data from 152 mice covered 51 tRNA genes and 385 CpGs after QC (see \prote
 The mice ranged in age from 0.67-35 months.
 
 Three of the 51 tRNAs showed Bonferroni significant DNA methylation changes with age (p-value \textless{} \(1.08 \times 10^{-4}\)) and all were in the hypermethylation direction.
-These three are tRNA-Asp-GTC-1-12, tRNA-Ile-AAT-1-4, tRNA-Glu-TTC-1-3 (Figure \ref{fig:mouse}). Full Age model Results are available in \href{Supplementary_Files/SF4_mouse_tRNA_age_models.xlsx}{Supplementary File S4}.
+These three are tRNA-Asp-GTC-1-12, tRNA-Ile-AAT-1-4, tRNA-Glu-TTC-1-3 (Figure \ref{fig:mouse}). Full Age model Results are available in \href{docs/Supplementary_Files/SF4_mouse_tRNA_age_models.xlsx}{Supplementary File S4}.
 
 \begin{figure}
 
@@ -3845,7 +3843,7 @@ The Manhattan plots in Figures \ref{fig:m1manhat} \& \ref{fig:m2manhat} illustra
 
 
 Neither model had any associations with a genome wide significant p-value of \(p < 5\times10^{-8}\), model 1 had 115 and model 2 130 SNPs below the suggestive threshold of \(p < 1\times10^{-5}\).
-These sites are listed in Supplementary Files \href{./Supplementary_Files/SF8_suggestivem1full.tsv}{S8} \& \href{./Supplementary_Files/SF9_suggestivem2full.tsv}{S9} with the top 10 sites from each GWAS shown in Figures \ref{fig:m1tab} \& \ref{fig:m2tab} respectively.
+These sites are listed in Supplementary Files \href{docs/Supplementary_Files/SF8_suggestivem1full.tsv}{S8} \& \href{docs/Supplementary_Files/SF9_suggestivem2full.tsv}{S9} with the top 10 sites from each GWAS shown in Figures \ref{fig:m1tab} \& \ref{fig:m2tab} respectively.
 There is substantial overlap between the 2 sets with 143 unique SNPs in the combined list.
 
 \begin{figure}
@@ -5565,7 +5563,7 @@ The integrative understanding of epigenomics has the potential to contribute man
   Barts \& The London Genome Centre, Blizard Institute, Barts \& The London School of Medicine and Dentistry, Queen Mary University of London, London, U.K.
 \end{enumerate}
 
-the pre-print is included as a \href{Supplementary_Files/SF10_tRNApaper.pdf}{pdf file} with the supplementary data.
+the pre-print is included as a \href{docs/Supplementary_Files/SF10_tRNApaper.pdf}{pdf file} with the supplementary data.
 
 \begin{figure}
 \centering

@@ -193,8 +193,7 @@ Microfluidic systems for conducting multiple PCR reactions in parallel such as t
 knitr::include_graphics("figs/targeted_BiSseq_fluidigm_generic.png")
 ```
 
-(ref:targetedBiSseqFluidigmGeneric-Cap) __Microfluidic system for multiple parallel pairwise PCR reactions.__
-The Fluidigm 48.48 access array permits the combination of up-to 48 samples with up-to 48 different set of reagents, without multiplexing. In this case the reagents are locus specific primers for targeted sequencing. Samples are added to one side of the array and reagents to the other the flow cell permits all combinations of the two to be mixed. Fluidigm's controller flow cell and thermocycler allow all the PCR reactions to be carried out simultaneously and their products be extracted for sequencing.
+(ref:targetedBiSseqFluidigmGeneric-Cap) __Microfluidic system for multiple parallel pairwise PCR reactions.__ The Fluidigm 48.48 access array permits the combination of up-to 48 samples with up-to 48 different set of reagents, without multiplexing. In this case the reagents are locus specific primers for targeted sequencing. Samples are added to one side of the array and reagents to the other the flow cell permits all combinations of the two to be mixed. Fluidigm's controller flow cell and thermocycler allow all the PCR reactions to be carried out simultaneously and their products be extracted for sequencing.
 
 A four primer step-out PCR process is performed on the bisulfite-converted genome to generate the final PCR product used in the Illumina sequencing reaction (Figure \ref{fig:targetedBiSseqFluidigmPCR}).
 After the loci of interest are selected locus-specific primers are designed to be complementary to the bisulfite converted regions flanking the area of interest and avoiding CpG sites in those flanking regions.
