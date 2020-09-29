@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.9.4)  29 SEP 2020 10:30
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.9.4)  29 SEP 2020 11:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -846,112 +846,108 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--196
 
  []
 
-[3] [4
+[3] [4] (./thesis.toc [5
 
-] (./thesis.toc [5] [6])
+] [6])
 \tf@toc=\write3
 \openout3 = `thesis.toc'.
 
 [7] [8
 
-] [9] [10
-
-] [11] [12
-
 ]
 Chapter 1.
 File: figs/population-pryamids-1950-2019.png Graphic file (type bmp)
 <figs/population-pryamids-1950-2019.png>
-[13]
+[9]
 File: figs/Kontis2017_fig1.jpg Graphic file (type bmp)
 <figs/Kontis2017_fig1.jpg>
 File: figs/Belikov2019_fig1.jpg Graphic file (type bmp)
 <figs/Belikov2019_fig1.jpg>
-[14]
+[10]
 File: figs/Fleming2005_fig3.jpg Graphic file (type bmp)
 <figs/Fleming2005_fig3.jpg>
-[15]
+[11]
 File: figs/Barnett2012_fig1.jpg Graphic file (type bmp)
 <figs/Barnett2012_fig1.jpg>
-[16] [17] [18] [19]
+[12] [13] [14] [15]
 File: figs/Booth2016_F3_epigenomeHubAgingHallmarks_alpha.png Graphic file (type
  bmp)
 <figs/Booth2016_F3_epigenomeHubAgingHallmarks_alpha.png>
-[20] [21] [22]
+[16] [17] [18]
 File: figs/5mC_vs_C.png Graphic file (type bmp)
 <figs/5mC_vs_C.png>
-[23]
+[19]
 File: figs/CGI-Shores-Shelves-Seas_2.png Graphic file (type bmp)
 <figs/CGI-Shores-Shelves-Seas_2.png>
-[24]
+[20]
 File: figs/Baubec2014_fig1.png Graphic file (type bmp)
 <figs/Baubec2014_fig1.png>
-[25]
+[21]
 File: figs/CpGfreqVsDNAm.png Graphic file (type bmp)
 <figs/CpGfreqVsDNAm.png>
-[26]
+[22]
 File: figs/Lyko2017DNAmMechanism.png Graphic file (type bmp)
 <figs/Lyko2017DNAmMechanism.png>
-[27]
+[23]
 File: figs/Wu2017TETsDNAmCycle.png Graphic file (type bmp)
 <figs/Wu2017TETsDNAmCycle.png>
-[28]
+[24]
 File: figs/Ciernia2016f3DNAmTime.png Graphic file (type bmp)
 <figs/Ciernia2016f3DNAmTime.png>
-[29]
+[25]
 File: figs/Riggs2004PNASfig2DNAmFidelity.png Graphic file (type bmp)
 <figs/Riggs2004PNASfig2DNAmFidelity.png>
-[30]
+[26]
 File: figs/Zhao2014-fig3-ab.png Graphic file (type bmp)
 <figs/Zhao2014-fig3-ab.png>
-[31] [32] [33]
+[27] [28] [29]
 File: figs/BisulfiteConversionNEB.jpg Graphic file (type bmp)
 <figs/BisulfiteConversionNEB.jpg>
-[34] [35]
+[30] [31]
 File: figs/Fraga2005fig3.png Graphic file (type bmp)
 <figs/Fraga2005fig3.png>
-[36] [37] [38]
+[32] [33] [34]
 File: figs/Heyn2012F1b.png Graphic file (type bmp)
 <figs/Heyn2012F1b.png>
-[39] [40]
+[35] [36]
 File: figs/Jaiswal2014fig1_somaticMutationAge.png Graphic file (type bmp)
 <figs/Jaiswal2014fig1_somaticMutationAge.png>
 File: figs/Jaiswal2014fig2c.png Graphic file (type bmp)
 <figs/Jaiswal2014fig2c.png>
-[41] [42]
+[37] [38]
 File: figs/Marioni2015f3.png Graphic file (type bmp)
 <figs/Marioni2015f3.png>
-[43] [44] [45] [46]
+[39] [40] [41] [42]
 Chapter 2.
-[47
+[43
 
 ]
 File: figs/Bibikova2011IlluminaMethylationBeadChip.png Graphic file (type bmp)
 <figs/Bibikova2011IlluminaMethylationBeadChip.png>
-[48]
+[44]
 Overfull \vbox (26.5682pt too high) has occurred while \output is active []
 
-[49]
+[45]
 File: figs/Dedeurwaerder2011fig1bL.png Graphic file (type bmp)
 <figs/Dedeurwaerder2011fig1bL.png>
-[50] [51] [52]
+[46] [47] [48]
 File: figs/Clark2012fig1MeDIPseqVs450Kcoverage.png Graphic file (type bmp)
 <figs/Clark2012fig1MeDIPseqVs450Kcoverage.png>
-[53]
+[49]
 File: figs/MeDIPseqReaction.png Graphic file (type bmp)
 <figs/MeDIPseqReaction.png>
-[54] [55] [56]
+[50] [51] [52]
 File: figs/Krueger2011BismarkAlignment.png Graphic file (type bmp)
 <figs/Krueger2011BismarkAlignment.png>
-[57]
+[53]
 File: figs/targeted_BiSseq_fluidigm_generic.png Graphic file (type bmp)
 <figs/targeted_BiSseq_fluidigm_generic.png>
-[58]
+[54]
 File: figs/targeted_BiSseq_fluidigm_PCR.png Graphic file (type bmp)
 <figs/targeted_BiSseq_fluidigm_PCR.png>
-[59] [60]
+[55] [56]
 Chapter 3.
-[61
+[57
 
 ]
 File: figs/adapted_from_VanStaa2001_Fig1-2.png Graphic file (type bmp)
@@ -962,352 +958,352 @@ Make it at least 22.76004pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[62]
+[58]
 File: figs/Harvey2014bfig1.png Graphic file (type bmp)
 <figs/Harvey2014bfig1.png>
-[63] [64]
+[59] [60]
 Overfull \hbox (6.99475pt too wide) in paragraph at lines 1475--1477
 []\TU/lmr/m/n/10 The previous work identifying DNA methylation changes at the \
 TU/lmr/m/it/10 RXRA \TU/lmr/m/n/10 [[][]263[][]] and \TU/lmr/m/it/10 CDKN2A/ANR
 IL
  []
 
-[65] [66] [67]
+[61] [62] [63]
 File: figs/IntrinsicVsExtrinsicDNAmChangeGeneral.png Graphic file (type bmp)
 <figs/IntrinsicVsExtrinsicDNAmChangeGeneral.png>
-[68]
+[64]
 File: figs/MAVIDOSqcEPICsexMismatch.png Graphic file (type bmp)
 <figs/MAVIDOSqcEPICsexMismatch.png>
-[69]
+[65]
 File: figs/MAVIDOSqcEPICmethVsUnmeth.png Graphic file (type bmp)
 <figs/MAVIDOSqcEPICmethVsUnmeth.png>
-[70]
+[66]
 File: figs/MAVIDOSqcEPICpropSites.png Graphic file (type bmp)
 <figs/MAVIDOSqcEPICpropSites.png>
-[71]
+[67]
 File: figs/MAVIDOSqcEPICbeadNum.png Graphic file (type bmp)
 <figs/MAVIDOSqcEPICbeadNum.png>
-[72]
+[68]
 File: figs/MAVIDOSqc450ksexMismatch.png Graphic file (type bmp)
 <figs/MAVIDOSqc450ksexMismatch.png>
-[73]
+[69]
 File: figs/MAVIDOSqc450kmethVsUnmeth.png Graphic file (type bmp)
 <figs/MAVIDOSqc450kmethVsUnmeth.png>
-[74]
+[70]
 File: figs/MAVIDOSqc450kpropSites.png Graphic file (type bmp)
 <figs/MAVIDOSqc450kpropSites.png>
-[75]
+[71]
 File: figs/MAVIDOSqc450kbeadNum.png Graphic file (type bmp)
 <figs/MAVIDOSqc450kbeadNum.png>
-[76]
+[72]
 File: figs/MAVIDOSqcEPICctrlProbes.png Graphic file (type bmp)
 <figs/MAVIDOSqcEPICctrlProbes.png>
-[77]
+[73]
 Overfull \vbox (48.02695pt too high) has occurred while \output is active []
 
-[78]
+[74]
 File: figs/MAVIDOSqcEPICpropSamples.png Graphic file (type bmp)
 <figs/MAVIDOSqcEPICpropSamples.png>
 File: figs/MAVIDOSqcEPICbeadNumAcross.png Graphic file (type bmp)
 <figs/MAVIDOSqcEPICbeadNumAcross.png>
-[79]
+[75]
 File: figs/MAVIDOSgaphunterEgMonApr162018.png Graphic file (type bmp)
 <figs/MAVIDOSgaphunterEgMonApr162018.png>
-[80]
+[76]
 File: figs/MAVIDOSqc450kctrlProbes.png Graphic file (type bmp)
 <figs/MAVIDOSqc450kctrlProbes.png>
-[81]
+[77]
 Overfull \vbox (48.02695pt too high) has occurred while \output is active []
 
-[82]
+[78]
 File: figs/MAVIDOSqc450kpropSamples.png Graphic file (type bmp)
 <figs/MAVIDOSqc450kpropSamples.png>
 File: figs/MAVIDOSqc450kbeadNumAcross.png Graphic file (type bmp)
 <figs/MAVIDOSqc450kbeadNumAcross.png>
-[83]
+[79]
 File: figs/MAVIDOSfunnormPCsEPICMonApr162018.png Graphic file (type bmp)
 <figs/MAVIDOSfunnormPCsEPICMonApr162018.png>
-[84]
+[80]
 File: figs/MAVIDOSfunnormPCs450kMonApr162018.png Graphic file (type bmp)
 <figs/MAVIDOSfunnormPCs450kMonApr162018.png>
-[85]
+[81]
 File: figs/MAVIDOSbmc.png Graphic file (type bmp)
 <figs/MAVIDOSbmc.png>
 File: figs/MAVIDOSbmcEPICewasManhattanSVA.png Graphic file (type bmp)
 <figs/MAVIDOSbmcEPICewasManhattanSVA.png>
-[86]
+[82]
 File: figs/MAVIDOSccEPICewasManhattanSVA.png Graphic file (type bmp)
 <figs/MAVIDOSccEPICewasManhattanSVA.png>
-[87]
+[83]
 File: figs/MAVIDOSvitDviolinMonApr162018.png Graphic file (type bmp)
 <figs/MAVIDOSvitDviolinMonApr162018.png>
-[88]
+[84]
 File: figs/MAVIDOSmVitD34EPICewasManhattanSVA.png Graphic file (type bmp)
 <figs/MAVIDOSmVitD34EPICewasManhattanSVA.png>
-[89]
+[85]
 File: figs/MAVIDOSdifVD.png Graphic file (type bmp)
 <figs/MAVIDOSdifVD.png>
-[90]
+[86]
 File: figs/MAVIDOSdifVDEPICewasManhattanSVA.png Graphic file (type bmp)
 <figs/MAVIDOSdifVDEPICewasManhattanSVA.png>
-[91]
+[87]
 File: figs/EPIC450kEWASconcordMAVIDOSMonApr162018.png Graphic file (type bmp)
 <figs/EPIC450kEWASconcordMAVIDOSMonApr162018.png>
 File: figs/EPIC450kEWASconcordMAVIDOSMonApr162018zoom.png Graphic file (type bm
 p)
 <figs/EPIC450kEWASconcordMAVIDOSMonApr162018zoom.png>
-[92]
+[88]
 File: figs/MAVIDOS-II-qcEPICsexMismatch.png Graphic file (type bmp)
 <figs/MAVIDOS-II-qcEPICsexMismatch.png>
-[93]
+[89]
 File: figs/MAVIDOS-II-qcEPICmethVsUnmeth.png Graphic file (type bmp)
 <figs/MAVIDOS-II-qcEPICmethVsUnmeth.png>
-[94]
+[90]
 File: figs/MAVIDOS-II-qcEPICpropSites.png Graphic file (type bmp)
 <figs/MAVIDOS-II-qcEPICpropSites.png>
-[95]
+[91]
 File: figs/MAVIDOS-II-qcEPICbeadNum.png Graphic file (type bmp)
 <figs/MAVIDOS-II-qcEPICbeadNum.png>
-[96]
+[92]
 File: figs/MAVIDOS-II-qcEPICctrlProbes.png Graphic file (type bmp)
 <figs/MAVIDOS-II-qcEPICctrlProbes.png>
-[97]
+[93]
 Overfull \vbox (48.02695pt too high) has occurred while \output is active []
 
-[98]
+[94]
 File: figs/MAVIDOS-II-qcEPICpropSamples.png Graphic file (type bmp)
 <figs/MAVIDOS-II-qcEPICpropSamples.png>
 File: figs/MAVIDOS-II-qcEPICbeadNumAcross.png Graphic file (type bmp)
 <figs/MAVIDOS-II-qcEPICbeadNumAcross.png>
-[99]
+[95]
 File: figs/MAVIDOS-II-funnormPCsEPIC.png Graphic file (type bmp)
 <figs/MAVIDOS-II-funnormPCsEPIC.png>
-[100]
+[96]
 File: figs/MAVIDOSIInsubtotbmc.png Graphic file (type bmp)
 <figs/MAVIDOSIInsubtotbmc.png>
-[101]
+[97]
 File: figs/MAVIDOSIInsubtotbmcEPICewasManhattanSVA.png Graphic file (type bmp)
 <figs/MAVIDOSIInsubtotbmcEPICewasManhattanSVA.png>
-[102]
+[98]
 File: figs/SWSqcEPICsexMismatch.png Graphic file (type bmp)
 <figs/SWSqcEPICsexMismatch.png>
-[103]
+[99]
 File: figs/SWSqcEPICmethVsUnmeth.png Graphic file (type bmp)
 <figs/SWSqcEPICmethVsUnmeth.png>
 File: figs/SWSqcEPICpropSites.png Graphic file (type bmp)
 <figs/SWSqcEPICpropSites.png>
-[104]
+[100]
 File: figs/SWSqcEPICbeadNum.png Graphic file (type bmp)
 <figs/SWSqcEPICbeadNum.png>
-[105]
+[101]
 File: figs/SWSqcEPICctrlProbes.png Graphic file (type bmp)
 <figs/SWSqcEPICctrlProbes.png>
-[106]
+[102]
 Overfull \vbox (48.02695pt too high) has occurred while \output is active []
 
-[107]
+[103]
 File: figs/SWSqcEPICpropSamples.png Graphic file (type bmp)
 <figs/SWSqcEPICpropSamples.png>
 File: figs/SWSqcEPICbeadNumAcross.png Graphic file (type bmp)
 <figs/SWSqcEPICbeadNumAcross.png>
-[108]
+[104]
 File: figs/SWSfunnormPCsEPIC.png Graphic file (type bmp)
 <figs/SWSfunnormPCsEPIC.png>
-[109]
+[105]
 File: figs/SWS8yrBMCdist.png Graphic file (type bmp)
 <figs/SWS8yrBMCdist.png>
-[110]
+[106]
 File: figs/SWSttotbmcwhasaEPICewasManhattanAll.png Graphic file (type bmp)
 <figs/SWSttotbmcwhasaEPICewasManhattanAll.png>
-[111]
+[107]
 File: figs/SWS6yrBMCdist.png Graphic file (type bmp)
 <figs/SWS6yrBMCdist.png>
 File: figs/SWSstotbmcwhasaEPICewasManhattanAll.png Graphic file (type bmp)
 <figs/SWSstotbmcwhasaEPICewasManhattanAll.png>
-[112]
+[108]
 File: figs/SWSs3peric.png Graphic file (type bmp)
 <figs/SWSs3peric.png>
-[113]
+[109]
 File: figs/SWSs3pericEPICewasManhattanAll.png Graphic file (type bmp)
 <figs/SWSs3pericEPICewasManhattanAll.png>
-[114]
+[110]
 File: figs/SWSs3crtden.png Graphic file (type bmp)
 <figs/SWSs3crtden.png>
-[115]
+[111]
 File: figs/SWSs3crtdenEPICewasManhattanAll.png Graphic file (type bmp)
 <figs/SWSs3crtdenEPICewasManhattanAll.png>
-[116] [117] [118]
+[112] [113] [114]
 Chapter 4.
-[119
+[115
 
-] [120] [121]
+] [116] [117]
 File: ./figs/910px-TRNA-Phe_yeast_1ehz_RJA_white.png Graphic file (type bmp)
 <./figs/910px-TRNA-Phe_yeast_1ehz_RJA_white.png>
-[122]
+[118]
 File: ./figs/tRNA-PollIII_white.png Graphic file (type bmp)
 <./figs/tRNA-PollIII_white.png>
 File: ./figs/codonAndaaFreqNtRNAplots.png Graphic file (type bmp)
 <./figs/codonAndaaFreqNtRNAplots.png>
-[123] [124]
+[119] [120]
 File: ./figs/tRNAderivedSmallRNARoles.png Graphic file (type bmp)
 <./figs/tRNAderivedSmallRNARoles.png>
-[125] [126] [127] [128]
+[121] [122] [123] [124]
 File: figs/tRNAgeneClustersByBinSize.png Graphic file (type bmp)
 <figs/tRNAgeneClustersByBinSize.png>
-[129] [130]
+[125] [126]
 File: figs/CpGcountBGvstRNAPlot.png Graphic file (type bmp)
 <figs/CpGcountBGvstRNAPlot.png>
 File: figs/poolSummaryTable.pdf Graphic file (type pdf)
 <use figs/poolSummaryTable.pdf>
-[131] [132] [133] [134]
+[127] [128] [129] [130]
 File: figs/OverviewOfAnalysesFigure_tRNA_3.png Graphic file (type bmp)
 <figs/OverviewOfAnalysesFigure_tRNA_3.png>
 File: figs/kutteresq_BLcount.png Graphic file (type bmp)
 <figs/kutteresq_BLcount.png>
-[135]
+[131]
 File: ./figs/mappability-iMet1.png Graphic file (type bmp)
 <./figs/mappability-iMet1.png>
-[136]
+[132]
 File: ./figs/mappabilityScoreDensity_tRNAVsFlank500.png Graphic file (type bmp)
 
 <./figs/mappabilityScoreDensity_tRNAVsFlank500.png>
-[137] [138]
+[133] [134]
 File: ./figs/table1a.pdf Graphic file (type pdf)
 <use ./figs/table1a.pdf>
 File: figs/tRNA_circos_test_inkscape_4.png Graphic file (type bmp)
 <figs/tRNA_circos_test_inkscape_4.png>
-[139] [140]
+[135] [136]
 File: ./figs/permutation-proportion.png Graphic file (type bmp)
 <./figs/permutation-proportion.png>
-[141]
+[137]
 File: figs/gviz_iMet-CAT-1-4_Ser-AGA-2-6_3k_white_bigger.png Graphic file (type
  bmp)
 <figs/gviz_iMet-CAT-1-4_Ser-AGA-2-6_3k_white_bigger.png>
-[142]
+[138]
 File: ./figs/heyn-cluster.png Graphic file (type bmp)
 <./figs/heyn-cluster.png>
-[143] [144]
+[139] [140]
 File: ./figs/DNAmAgeVsChronAge.png Graphic file (type bmp)
 <./figs/DNAmAgeVsChronAge.png>
-[145]
+[141]
 File: ./figs/tRNA-iMet-CAT-1-4_nomSig_CpG.png Graphic file (type bmp)
 <./figs/tRNA-iMet-CAT-1-4_nomSig_CpG.png>
-[146] [147]
+[142] [143]
 File: ./figs/pairwiseTab.pdf Graphic file (type pdf)
 <use ./figs/pairwiseTab.pdf>
 File: ./figs/combinedKaryoplots_sig_bl.png Graphic file (type bmp)
 <./figs/combinedKaryoplots_sig_bl.png>
-[148] [149]
+[144] [145]
 File: ./figs/blood_epitwins450k_Counts_sws_bl_zhou.png Graphic file (type bmp)
 <./figs/blood_epitwins450k_Counts_sws_bl_zhou.png>
-[150]
+[146]
 File: ./figs/maxScoreBytRNAtRNAge6SplitPlot_BL.png Graphic file (type bmp)
 <./figs/maxScoreBytRNAtRNAge6SplitPlot_BL.png>
-[151]
+[147]
 File: ./figs/meanMethbytRNAMatLowBB6_bl.png Graphic file (type bmp)
 <./figs/meanMethbytRNAMatLowBB6_bl.png>
 File: ./figs/meanMethbytRNAMatHeatmapLow_bl.png Graphic file (type bmp)
 <./figs/meanMethbytRNAMatHeatmapLow_bl.png>
-[152] [153]
+[148] [149]
 File: ./figs/meanBetasByTissueTNMpseudoSplitHeatmap.png Graphic file (type bmp)
 
 <./figs/meanBetasByTissueTNMpseudoSplitHeatmap.png>
-[154]
+[150]
 File: ./figs/meanMethBytRNAByFetalTissueHeatmapPseudosplit.png Graphic file (ty
 pe bmp)
 <./figs/meanMethBytRNAByFetalTissueHeatmapPseudosplit.png>
-[155] [156]
+[151] [152]
 File: ./figs/cancerVsNormalCombinedPlots.png Graphic file (type bmp)
 <./figs/cancerVsNormalCombinedPlots.png>
-[157] [158]
+[153] [154]
 File: ./figs/nonSigIsoMapbbswsPlotsGln-CTG.png Graphic file (type bmp)
 <./figs/nonSigIsoMapbbswsPlotsGln-CTG.png>
-[159]
+[155]
 File: ./figs/combinedFragSizeDists.png Graphic file (type bmp)
 <./figs/combinedFragSizeDists.png>
 File: ./figs/CpGPlotComb.png Graphic file (type bmp)
 <./figs/CpGPlotComb.png>
-[160] [161] [162] [163] [164] [165] [166]
+[156] [157] [158] [159] [160] [161] [162]
 Chapter 5.
-[167
+[163
 
 ]
 File: ./figs/Jorda_Peinado_prop_repeats.png Graphic file (type bmp)
 <./figs/Jorda_Peinado_prop_repeats.png>
-[168]
+[164]
 File: ./figs/AluStructure.png Graphic file (type bmp)
 <./figs/AluStructure.png>
 File: ./figs/Batzer2002_fig2_Alu_age_expansion.png Graphic file (type bmp)
 <./figs/Batzer2002_fig2_Alu_age_expansion.png>
-[169]
+[165]
 File: ./figs/AlusWindowsCpGdLVplot-FAMs.png Graphic file (type bmp)
 <./figs/AlusWindowsCpGdLVplot-FAMs.png>
-[170] [171]
+[166] [167]
 File: ./figs/Bell_2019_Clock_repeats_CpG.png Graphic file (type bmp)
 <./figs/Bell_2019_Clock_repeats_CpG.png>
-[172] [173]
+[168] [169]
 File: ./figs/twin_split.png Graphic file (type bmp)
 <./figs/twin_split.png>
 File: ./figs/setsAgeDist.png Graphic file (type bmp)
 <./figs/setsAgeDist.png>
-[174]
+[170]
 File: ./figs/mzdzsplitplot.png Graphic file (type bmp)
 <./figs/mzdzsplitplot.png>
-[175] [176] [177] [178]
+[171] [172] [173] [174]
 File: ./figs/model_summary_tabs_main.png Graphic file (type bmp)
 <./figs/model_summary_tabs_main.png>
 File: ./figs/model_summary_tabs_ctrl.png Graphic file (type bmp)
 <./figs/model_summary_tabs_ctrl.png>
-[179]
+[175]
 File: ./figs/corplots_panel_split.png Graphic file (type bmp)
 <./figs/corplots_panel_split.png>
-[180]
+[176]
 Overfull \vbox (66.07794pt too high) has occurred while \output is active []
 
-[181]
+[177]
 File: ./figs/age_vs_pred_age.png Graphic file (type bmp)
 <./figs/age_vs_pred_age.png>
 File: ./figs/alu_clock_age_vs_pred_age_single.png Graphic file (type bmp)
 <./figs/alu_clock_age_vs_pred_age_single.png>
-[182]
+[178]
 File: ./figs/accel_corplots_panel_split.png Graphic file (type bmp)
 <./figs/accel_corplots_panel_split.png>
-[183]
+[179]
 Overfull \vbox (66.07794pt too high) has occurred while \output is active []
 
-[184]
+[180]
 File: ./figs/age_vs_age_accel_alu_vs_other.png Graphic file (type bmp)
 <./figs/age_vs_age_accel_alu_vs_other.png>
 File: ./figs/alu_clock_accel_vs_others.png Graphic file (type bmp)
 <./figs/alu_clock_accel_vs_others.png>
-[185]
+[181]
 Overfull \vbox (0.26329pt too high) has occurred while \output is active []
 
-[186]
+[182]
 File: ./figs/manhat_m1_v3.png Graphic file (type bmp)
 <./figs/manhat_m1_v3.png>
 File: ./figs/manhat_m2_v3.png Graphic file (type bmp)
 <./figs/manhat_m2_v3.png>
-[187]
+[183]
 File: ./figs/top10_pretty_m1.png Graphic file (type bmp)
 <./figs/top10_pretty_m1.png>
 File: ./figs/top10_pretty_m2.png Graphic file (type bmp)
 <./figs/top10_pretty_m2.png>
-[188]
+[184]
 File: ./figs/locusZoom_rs192929352_400kb.png Graphic file (type bmp)
 <./figs/locusZoom_rs192929352_400kb.png>
 File: ./figs/PheWeb_sets.png Graphic file (type bmp)
 <./figs/PheWeb_sets.png>
-[189] [190] [191] [192]
+[185] [186] [187] [188]
 Chapter 6.
-[193
+[189
 
-] [194] [195] [196] [197]
+] [190] [191] [192] [193]
 Underfull \hbox (badness 1824) in paragraph at lines 4055--4055
 []\TU/lmr/bx/n/14.4 Assessing Biological ageing by DNA methylation
  []
 
-[198] [199] [200] [201
+[194] [195] [196] [197
 
 ]
 Overfull \hbox (77.7323pt too wide) in paragraph at lines 4142--4144
@@ -1323,14 +1319,14 @@ Overfull \hbox (34.1923pt too wide) in paragraph at lines 4160--4162
 0.1016/j.cmet.2017.07.019[][]Available:
  []
 
-[202]
+[198]
 Overfull \hbox (11.459pt too wide) in paragraph at lines 4169--4171
 [][]\TU/lmr/m/n/10 23. Kenyon CJ: \TU/lmr/bx/n/10 The genetics of ageing\TU/lmr
 /m/n/10 . \TU/lmr/m/it/10 Nature \TU/lmr/m/n/10 2010, \TU/lmr/bx/n/10 464\TU/lm
 r/m/n/10 :504–512[][]10.1038/nature08980[][]Available:
  []
 
-[203]
+[199]
 Underfull \hbox (badness 1043) in paragraph at lines 4190--4192
 [][]\TU/lmr/m/n/10 30. Booth LN, Brunet A: \TU/lmr/bx/n/10 The Aging Epigenome\
 TU/lmr/m/n/10 . \TU/lmr/m/it/10 Molecular Cell \TU/lmr/m/n/10 2016, \TU/lmr/bx/
@@ -1351,14 +1347,14 @@ Overfull \hbox (2.43898pt too wide) in paragraph at lines 4220--4222
 3.006[][]Available:
  []
 
-[204]
+[200]
 Overfull \hbox (61.779pt too wide) in paragraph at lines 4238--4240
 \TU/lmr/bx/n/10 Present in Purkinje Neurons and the Brain\TU/lmr/m/n/10 . \TU/l
 mr/m/it/10 Science \TU/lmr/m/n/10 2009, \TU/lmr/bx/n/10 324\TU/lmr/m/n/10 :929–
 930[][]10.1126/science.1169786[][]Available:
  []
 
-[205]
+[201]
 Underfull \hbox (badness 1412) in paragraph at lines 4265--4267
 [][]\TU/lmr/m/n/10 55. Voigt P, LeRoy G, Drury WJ, Zee BM, Son J, Beck DB, Youn
 g NL, Garcia
@@ -1371,47 +1367,47 @@ mes. \TU/lmr/m/it/10 Cell \TU/lmr/m/n/10 2012, \TU/lmr/bx/n/10 151\TU/lmr/m/n/1
 0 :181–
  []
 
-[206]
+[202]
 Overfull \hbox (77.039pt too wide) in paragraph at lines 4289--4291
 [][]\TU/lmr/m/n/10 63. Jenuwein T: \TU/lmr/bx/n/10 Translating the Histone Code
 \TU/lmr/m/n/10 . \TU/lmr/m/it/10 Science \TU/lmr/m/n/10 2001, \TU/lmr/bx/n/10 2
 93\TU/lmr/m/n/10 :1074–1080[][]10.1126/science.1063127[][]Available:
  []
 
-[207]
+[203]
 Underfull \hbox (badness 1527) in paragraph at lines 4313--4315
 \TU/lmr/bx/n/10 ment, Aging, and Tumorigenesis\TU/lmr/m/n/10 . \TU/lmr/m/it/10 
 BioMed Research International \TU/lmr/m/n/10 2014, \TU/lmr/bx/n/10 2014\TU/lmr/
 m/n/10 :1–
  []
 
-[208] [209]
+[204] [205]
 Overfull \hbox (47.03233pt too wide) in paragraph at lines 4373--4375
 \TU/lmr/bx/n/10 some Positioning in Diverse Eukaryotes\TU/lmr/m/n/10 . \TU/lmr/
 m/it/10 Cell \TU/lmr/m/n/10 2014, \TU/lmr/bx/n/10 156\TU/lmr/m/n/10 :1286–1297[
 ][]10.1016/j.cell.2014.01.029[][]Available:
  []
 
-[210]
+[206]
 Underfull \hbox (badness 1286) in paragraph at lines 4394--4396
 \TU/lmr/m/n/10 S, Iyer LM, Liu DR, Aravind L, Rao A: \TU/lmr/bx/n/10 Conversion
  of 5-Methylcytosine to 5-
  []
 
-[211]
+[207]
 Underfull \hbox (badness 3019) in paragraph at lines 4427--4429
 \TU/lmr/bx/n/10 fect storm of autism aetiologies\TU/lmr/m/n/10 . \TU/lmr/m/it/1
 0 Nature Reviews Neuroscience \TU/lmr/m/n/10 2016, \TU/lmr/bx/n/10 17\TU/lmr/m/
 n/10 :411–
  []
 
-[212]
+[208]
 Underfull \hbox (badness 1147) in paragraph at lines 4463--4465
 [][]\TU/lmr/m/n/10 121. Hahn O, Grönke S, Stubbs TM, Ficz G, Hendrich O, Kruege
 r F, Andrews S,
  []
 
-[213] [214] [215]
+[209] [210] [211]
 Overfull \hbox (3.46233pt too wide) in paragraph at lines 4517--4519
 \TU/lmr/bx/n/10 cancers from their normal counterparts\TU/lmr/m/n/10 . \TU/lmr/
 m/it/10 Nature \TU/lmr/m/n/10 1983, \TU/lmr/bx/n/10 301\TU/lmr/m/n/10 :89–92[][
@@ -1425,7 +1421,7 @@ Medicine \TU/lmr/m/n/10 2018, \TU/lmr/bx/n/10 378\TU/lmr/m/n/10 :1323–1334[][]
 0.1056/NEJMra1402513[][]Available:
  []
 
-[216]
+[212]
 Underfull \hbox (badness 1389) in paragraph at lines 4556--4558
 \TU/lmr/m/n/10 Nelson HH, Karagas MR, Padbury JF, Bueno R, Sugarbaker DJ, Yeh R
 -F, Wiencke
@@ -1443,7 +1439,7 @@ Underfull \hbox (badness 1642) in paragraph at lines 4568--4570
 lation\TU/lmr/m/n/10 . \TU/lmr/m/it/10 BMC Biology \TU/lmr/m/n/10 2015,
  []
 
-[217]
+[213]
 Underfull \hbox (badness 2512) in paragraph at lines 4580--4582
 \TU/lmr/m/n/10 G, Zhang F, Valdes A, Shin S-Y, Dempster EL, Murray RM, Grundber
 g E, Hed-
@@ -1480,7 +1476,7 @@ Underfull \hbox (badness 1259) in paragraph at lines 4589--4591
  DNA methylation by analyz-
  []
 
-[218]
+[214]
 Underfull \hbox (badness 1127) in paragraph at lines 4607--4609
 [][]\TU/lmr/m/n/10 169. Friedman J, Hastie T, Tibshirani R: \TU/lmr/bx/n/10 Reg
 ularization Paths for Generalized
@@ -1499,13 +1495,13 @@ r/m/n/10 . \TU/lmr/m/it/10 Aging \TU/lmr/m/n/10 2017, \TU/lmr/bx/n/10 9\TU/lmr/
 m/n/10 :753–
  []
 
-[219]
+[215]
 Underfull \hbox (badness 1067) in paragraph at lines 4628--4630
 \TU/lmr/m/n/10 YA, Grueters A, Krude H: \TU/lmr/bx/n/10 An alu element-associat
 ed hypermethylation variant
  []
 
-[220] [221] [222]
+[216] [217] [218]
 Underfull \hbox (badness 1975) in paragraph at lines 4709--4711
 [][]\TU/lmr/m/n/10 203. Horvath S, Singh K, Raj K, Khairnar S, Sanghavi A, Shri
 vastava A, Zoller
@@ -1523,14 +1519,14 @@ Underfull \hbox (badness 2229) in paragraph at lines 4709--4711
 TU/lmr/m/n/10 . \TU/lmr/m/it/10 bioRxiv
  []
 
-[223]
+[219]
 Underfull \hbox (badness 1533) in paragraph at lines 4736--4738
 \TU/lmr/bx/n/10 able High-Density Optical Sensor Arrays\TU/lmr/m/n/10 . \TU/lmr
 /m/it/10 Analytical Chemistry \TU/lmr/m/n/10 1998, \TU/lmr/bx/n/10 70\TU/lmr/m/
 n/10 :1242–
  []
 
-[224]
+[220]
 Underfull \hbox (badness 1769) in paragraph at lines 4760--4762
 \TU/lmr/bx/n/10 assessment of DNA quality after bisulfite treatment. \TU/lmr/m/
 it/10 Nucleic acids research
@@ -1543,21 +1539,21 @@ Underfull \hbox (badness 1199) in paragraph at lines 4760--4762
 [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [][] [][]
  []
 
-[225]
+[221]
 Overfull \hbox (57.39445pt too wide) in paragraph at lines 4772--4774
 \TU/lmr/bx/n/10 terpretation of Disease -Omics\TU/lmr/m/n/10 . \TU/lmr/m/it/10 
 PLOS Genetics \TU/lmr/m/n/10 2016, \TU/lmr/bx/n/10 12\TU/lmr/m/n/10 :e1006105[]
 []10.1371/journal.pgen.1006105[][]Available:
  []
 
-[226]
+[222]
 Overfull \hbox (40.43231pt too wide) in paragraph at lines 4808--4810
 \TU/lmr/bx/n/10 Bisulfite-Seq applications\TU/lmr/m/n/10 . \TU/lmr/m/it/10 Bioi
 nformatics \TU/lmr/m/n/10 2011, \TU/lmr/bx/n/10 27\TU/lmr/m/n/10 :1571–1572[][]
 10.1093/bioinformatics/btr167[][]Available:
  []
 
-[227]
+[223]
 Underfull \hbox (badness 1442) in paragraph at lines 4841--4843
 [][]\TU/lmr/m/n/10 247. Christakos S, Dhawan P, Porta A, Mady LJ, Seth T: \TU/l
 mr/bx/n/10 Vitamin D and in-
@@ -1570,20 +1566,20 @@ ecular and Cellular Endocrinology \TU/lmr/m/n/10 2011, \TU/lmr/bx/n/10 347\TU/l
 mr/m/n/10 :25–
  []
 
-[228]
+[224]
 Underfull \hbox (badness 1275) in paragraph at lines 4868--4870
 \TU/lmr/bx/n/10 childhood—a prospective cohort study\TU/lmr/m/n/10 . \TU/lmr/m/
 it/10 Osteoporosis International \TU/lmr/m/n/10 2011, \TU/lmr/bx/n/10 22\TU/lmr
 /m/n/10 :883–
  []
 
-[229]
+[225]
 Underfull \hbox (badness 1521) in paragraph at lines 4898--4900
 \TU/lmr/m/n/10 ter AAM, Loche E, Ozanne SE, Rakyan VK: \TU/lmr/bx/n/10 Early-li
 fe nutrition modulates the
  []
 
-[230]
+[226]
 Underfull \hbox (badness 2393) in paragraph at lines 4919--4921
 \TU/lmr/bx/n/10 timation of nucleated cells types in cord blood. \TU/lmr/m/it/1
 0 Epigenetics \TU/lmr/m/n/10 2016, \TU/lmr/bx/n/10 11\TU/lmr/m/n/10 :773–
@@ -1596,7 +1592,7 @@ Underfull \hbox (badness 1997) in paragraph at lines 4925--4927
 n/10 :354–
  []
 
-[231] [232]
+[227] [228]
 Overfull \hbox (17.64235pt too wide) in paragraph at lines 4970--4972
 \TU/lmr/bx/n/10 from conflicts to benefits\TU/lmr/m/n/10 . \TU/lmr/m/it/10 Natu
 re Reviews Genetics \TU/lmr/m/n/10 2017, \TU/lmr/bx/n/10 18\TU/lmr/m/n/10 :71–8
@@ -1616,14 +1612,14 @@ Underfull \hbox (badness 1248) in paragraph at lines 4985--4987
 /10 :810–
  []
 
-[233]
+[229]
 Overfull \hbox (10.61894pt too wide) in paragraph at lines 5015--5017
 \TU/lmr/m/it/10 Bioinformatics and Biology Insights \TU/lmr/m/n/10 2019, \TU/lm
 r/bx/n/10 13\TU/lmr/m/n/10 :117793221986845[][]10.1177/1177932219868454[][]Avai
 lable:
  []
 
-[234]
+[230]
 Underfull \hbox (badness 2418) in paragraph at lines 5024--5026
 \TU/lmr/bx/n/10 III transcription machinery in human cells. \TU/lmr/m/it/10 Gen
 ome research \TU/lmr/m/n/10 2010, \TU/lmr/bx/n/10 20\TU/lmr/m/n/10 :710–
@@ -1643,7 +1639,7 @@ Underfull \hbox (badness 1189) in paragraph at lines 5042--5044
 :990–
  []
 
-[235]
+[231]
 Overfull \hbox (22.24109pt too wide) in paragraph at lines 5051--5053
 \TU/lmr/bx/n/10 polymerase III transcription by c-Myc\TU/lmr/m/n/10 . \TU/lmr/m
 /it/10 Nature \TU/lmr/m/n/10 2003, \TU/lmr/bx/n/10 421\TU/lmr/m/n/10 :290–294[]
@@ -1657,7 +1653,7 @@ l \TU/lmr/m/n/10 2020, \TU/lmr/bx/n/10 78\TU/lmr/m/n/10 :765–778.e7[][]10.1016
 j.molcel.2020.03.023[][]Available:
  []
 
-[236]
+[232]
 Underfull \hbox (badness 1648) in paragraph at lines 5081--5083
 \TU/lmr/bx/n/10 by a silent polymorphism linked to tRNA abundance\TU/lmr/m/n/10
  . \TU/lmr/m/it/10 PLOS Biology \TU/lmr/m/n/10 2017,
@@ -1682,7 +1678,7 @@ Overfull \hbox (16.719pt too wide) in paragraph at lines 5093--5095
 vailable:
  []
 
-[237]
+[233]
 Underfull \hbox (badness 2197) in paragraph at lines 5117--5119
 [][]\TU/lmr/m/n/10 339. Martinez G, Choudury SG, Slotkin RK: \TU/lmr/bx/n/10 tR
 NA-derived small RNAs tar-
@@ -1695,21 +1691,21 @@ it/10 Nucleic Acids Research \TU/lmr/m/n/10 2017, \TU/lmr/bx/n/10 45\TU/lmr/m/n
 /10 :5142–
  []
 
-[238] [239] [240]
+[234] [235] [236]
 Overfull \hbox (7.38438pt too wide) in paragraph at lines 5210--5212
 \TU/lmr/bx/n/10 (GEO) and BioConductor\TU/lmr/m/n/10 . \TU/lmr/m/it/10 Bioinfor
 matics \TU/lmr/m/n/10 2007, \TU/lmr/bx/n/10 23\TU/lmr/m/n/10 :1846–1847[][]10.1
 093/bioinformatics/btm254[][]. 
  []
 
-[241]
+[237]
 Overfull \hbox (72.08566pt too wide) in paragraph at lines 5237--5239
 \TU/lmr/bx/n/10 multidimensional genomic data\TU/lmr/m/n/10 . \TU/lmr/m/it/10 B
 ioinformatics \TU/lmr/m/n/10 2016, \TU/lmr/bx/n/10 32\TU/lmr/m/n/10 :2847–2849[
 ][]10.1093/bioinformatics/btw313[][]Available:
  []
 
-[242] [243] [244] [245]
+[238] [239] [240] [241]
 Underfull \hbox (badness 1275) in paragraph at lines 5336--5338
 [][]\TU/lmr/m/n/10 412. Dewannieux M, Esnault C, Heidmann T: \TU/lmr/bx/n/10 LI
 NE-mediated retrotransposition
@@ -1729,7 +1725,7 @@ ion in Virology \TU/lmr/m/n/10 2013, \TU/lmr/bx/n/10 3\TU/lmr/m/n/10 :639–645[
 []10.1016/j.coviro.2013.09.002[][]Available:
  []
 
-[246] [247] [248] [249]
+[242] [243] [244] [245]
 Overfull \hbox (82.9523pt too wide) in paragraph at lines 5453--5455
 \TU/lmr/bx/n/10 genotype–phenotype associations\TU/lmr/m/n/10 . \TU/lmr/m/it/10
  Bioinformatics \TU/lmr/m/n/10 2016, \TU/lmr/bx/n/10 32\TU/lmr/m/n/10 :3207–320
@@ -1749,7 +1745,7 @@ eutsches Aerzteblatt Online \TU/lmr/m/n/10 2019, \TU/lmr/bx/n/10 116\TU/lmr/m/n
 /10 :301–
  []
 
-[250]
+[246]
 Underfull \hbox (badness 1122) in paragraph at lines 5480--5482
 \TU/lmr/m/n/10 S, Lu AT, McIntosh AM, Whalley HC, Marioni RE: \TU/lmr/bx/n/10 A
  meta-analysis of genome-
@@ -1761,7 +1757,7 @@ Underfull \hbox (badness 1281) in paragraph at lines 5480--5482
 m/n/10 . \TU/lmr/m/it/10 PLOS Genetics \TU/lmr/m/n/10 2019,
  []
 
-[251]
+[247]
 Underfull \hbox (badness 1755) in paragraph at lines 5507--5509
 [][]\TU/lmr/m/n/10 469. Sijacic P, Holder DH, Bajic M, Deal RB: \TU/lmr/bx/n/10
  Methyl-CpG-binding domain 9
@@ -1779,7 +1775,7 @@ Underfull \hbox (badness 1303) in paragraph at lines 5507--5509
 10 . \TU/lmr/m/it/10 PLOS Genetics \TU/lmr/m/n/10 2019,
  []
 
-[252] [253] [254
+[248] [249] [250
 
 ]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
@@ -1802,9 +1798,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 5557--5559
 
 File: figs/biorxiv_screenshot.png Graphic file (type bmp)
 <figs/biorxiv_screenshot.png>
-[255]
+[251]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5580.
-[256]
+[252]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 5580.
 (./thesis.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 5580.
@@ -1813,10 +1809,10 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 5580.
 Here is how much of TeX's memory you used:
  20984 strings out of 479819
  394863 string characters out of 5895847
- 866889 words of memory out of 5000000
+ 866876 words of memory out of 5000000
  37645 multiletter control sequences out of 15000+600000
  539790 words of font info for 88 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  58i,12n,115p,2611b,580s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (256 pages).
+Output written on thesis.pdf (252 pages).
