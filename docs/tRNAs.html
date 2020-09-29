@@ -336,7 +336,7 @@ Samples from the 28 year old time point are all from pregnant women at ~11 weeks
 <div id="tRNAanno" class="section level3">
 <h3><span class="header-section-number">4.3.2</span> tRNA annotation information</h3>
 <p>Genomic coordinates of the tRNA genes were downloaded from GtRNAdb <span class="citation">[<a href="references.html#ref-Chan2009" role="doc-biblioref">304</a>]</span>.
-The 2 tRNAs located in chr1_gl000192_random are tRNA-Gly-CCC-8-1 &amp; tRNA-Asn-ATT-1-2 (<a href="docs/Supplementary_Files/hg19-tRNAs.bed">Supplementary File S1</a>).
+The 2 tRNAs located in chr1_gl000192_random are tRNA-Gly-CCC-8-1 &amp; tRNA-Asn-ATT-1-2 (<a href="Supplementary_Files/hg19-tRNAs.bed">Supplementary File S1</a>).
 The 213 probes overlapping tRNA genes were derived from intersecting the tRNA gene annotation data from gtRNAdb with the Illumina 450k array manifest annotation for the hg19 genome build using bedtools v2.17.0 <span class="citation">[<a href="references.html#ref-Quinlan2010" role="doc-biblioref">231</a>]</span>.
 107 tRNA genes were excluded from blacklisted regions of hg19 <span class="citation">[<a href="references.html#ref-Amemiya2019" role="doc-biblioref">357</a>]</span>.</p>
 <div id="clustering" class="section level4">
@@ -437,7 +437,7 @@ Figure 4.7: Summary information on participants in each pool.
 <div id="targetedBiSseq" class="section level4">
 <h4><span class="header-section-number">4.3.3.6</span> Targeted Bisulfite Sequencing</h4>
 <p>tRNA loci were selected for targeted sequencing which exhibited changes and DNAm with age along with closely related tRNAs in which changes were not observed.
-Primer design was performed using ‘methPrimer’ <span class="citation">[<a href="references.html#ref-Li2002" role="doc-biblioref">237</a>]</span> (<a href="docs/Supplementary_Files/Targeted_BiS-seq_Primers.txt">Supplementary File S2</a>).
+Primer design was performed using ‘methPrimer’ <span class="citation">[<a href="references.html#ref-Li2002" role="doc-biblioref">237</a>]</span> (<a href="Supplementary_Files/Targeted_BiS-seq_Primers.txt">Supplementary File S2</a>).
 A total of 84 tRNA loci were targeted in 2 rounds of sequencing, 79 subsequently generated reliable results post-QC.
 The targeted tRNAs covered a total of 723 CpGs with a median of 8 CpGs per tRNA (range 1-13), data passing QC was generated for 458 CpGs, median 6 (range 1-9) per tRNA.</p>
 <p>Initial QC for readcount, base call quality and base composition was caried out with <a href="https://github.com/s-andrews/FastQC"><code>FastQC</code></a> <span class="citation">[<a href="references.html#ref-Andrews2010" role="doc-biblioref">229</a>]</span> and <a href="https://github.com/ewels/MultiQC"><code>multiqc</code></a> <span class="citation">[<a href="references.html#ref-Ewels2016" role="doc-biblioref">362</a>]</span> for combined visualisation of QC outputs.
@@ -475,7 +475,7 @@ Five of the 6 top age hypermethylating tRNAs are covered by this array dataset.<
 <p>Data was downloaded from the TCGA (The Cancer Genome Atlas) via the GDC (genomic data commons) data portal <span class="citation">[<a href="references.html#ref-Grossman2016" role="doc-biblioref">371</a>]</span> using the <code>GenomicDataCommons</code> <code>R</code> package.
 Data from foetal tissue <span class="citation">[<a href="references.html#ref-Yang2016" role="doc-biblioref">372</a>,<a href="references.html#ref-Nazor2012" role="doc-biblioref">373</a>]</span> was downloaded from GEO (<a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE72867">GSE72867</a>, <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30654">GSE30654</a>).
 From the TCGA, samples were selected for which DNAm data was available from both the primary site and normal solid tissue, and for which an approximate age could be inferred (within one year).
-Selecting those probes overlapping tRNA genes yielded 73,403 data points across 19 tissues with an age range of 15-90yrs (median 63.4) (<a href="docs/Supplementary_Files/TCGA_samples_used.tsv">Supplementary File S3</a>)</p>
+Selecting those probes overlapping tRNA genes yielded 73,403 data points across 19 tissues with an age range of 15-90yrs (median 63.4) (<a href="Supplementary_Files/TCGA_samples_used.tsv">Supplementary File S3</a>)</p>
 </div>
 <div id="mintmapmethods" class="section level3">
 <h3><span class="header-section-number">4.3.7</span> Assaying tRNA expression in blood with MINTmap</h3>
@@ -834,7 +834,7 @@ Figure 4.29: Comparison of the fragment size distributions between our custom re
 These data from 152 mice covered 51 tRNA genes and 385 CpGs after QC (see <a href="tRNAs.html#mousemethods">Methods</a> <a href="tRNAs.html#mousemethods">4.3.8</a>), representing ~11% of mouse tRNA genes.
 The mice ranged in age from 0.67-35 months.</p>
 <p>Three of the 51 tRNAs showed Bonferroni significant DNA methylation changes with age (p-value &lt; <span class="math inline">\(1.08 \times 10^{-4}\)</span>) and all were in the hypermethylation direction.
-These three are tRNA-Asp-GTC-1-12, tRNA-Ile-AAT-1-4, tRNA-Glu-TTC-1-3 (Figure ). Full Age model Results are available in <a href="docs/Supplementary_Files/SF4_mouse_tRNA_age_models.xlsx">Supplementary File S4</a>.</p>
+These three are tRNA-Asp-GTC-1-12, tRNA-Ile-AAT-1-4, tRNA-Glu-TTC-1-3 (Figure ). Full Age model Results are available in <a href="Supplementary_Files/SF4_mouse_tRNA_age_models.xlsx">Supplementary File S4</a>.</p>
 <div class="figure" style="text-align: center"><span id="fig:mouse"></span>
 <img src="figs/CpGPlotComb.png" alt="DNA methylation of CpGs in 3 tRNA which significantly hypermethylate with age in mice, in data from Petkovich et al. [375]. 6 CpGs reach Bonferroni significance and 7 show nominally significant increases." width="100%" />
 <p class="caption">

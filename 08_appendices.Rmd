@@ -12,7 +12,7 @@ $Richard J. Acton ^{1,2,3}$, $Wei Yuan ^{4,5}$, $Fei Gao ^{6}$, $Yudong Xia ^{6}
 6. BGI-Shenzhen, Shenzhen, China
 7. Barts & The London Genome Centre, Blizard Institute, Barts & The London School of Medicine and Dentistry, Queen Mary University of London, London, U.K.
 
-the pre-print is included as a [pdf file](docs/Supplementary_Files/SF10_tRNApaper.pdf) with the supplementary data.
+the pre-print is included as a [pdf file](Supplementary_Files/SF10_tRNApaper.pdf) with the supplementary data.
 
 ![https://doi.org/10.1101/870352](figs/biorxiv_screenshot.png)
 

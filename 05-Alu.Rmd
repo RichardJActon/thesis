@@ -313,7 +313,7 @@ knitr::include_graphics("./figs/manhat_m2_v3.png")
 (ref:m2manhat-Cap) Manhattan plot showing the results of a GWAS for Alu Age acceleration computed with the predictor trained using Training set 1 on windows filtered to have an element length >180bp and 99.9% non-zero RPM values at each locus.
 
 Neither model had any associations with a genome wide significant p-value of $p < 5\times10^{-8}$, model 1 had 115 and model 2 130 SNPs below the suggestive threshold of $p < 1\times10^{-5}$. 
-These sites are listed in Supplementary Files [S8](docs/Supplementary_Files/SF8_suggestivem1full.tsv) & [S9](docs/Supplementary_Files/SF9_suggestivem2full.tsv) with the top 10 sites from each GWAS shown in Figures \@ref(fig:m1tab) & \@ref(fig:m2tab) respectively. 
+These sites are listed in Supplementary Files [S8](Supplementary_Files/SF8_suggestivem1full.tsv) & [S9](Supplementary_Files/SF9_suggestivem2full.tsv) with the top 10 sites from each GWAS shown in Figures \@ref(fig:m1tab) & \@ref(fig:m2tab) respectively. 
 There is substantial overlap between the 2 sets with 143 unique SNPs in the combined list.
 
 ```{r m1tab, fig.cap="(ref:m1tab-Cap)", out.width='60%', fig.show='hold', fig.align = 'center', echo=FALSE}
