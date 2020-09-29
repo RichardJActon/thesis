@@ -2,7 +2,7 @@
 title: "__The Epigenomics of Human Ageing__"
 author: "Richard J. Acton"
 orcid: "ORCID: [0000-0002-2574-9611](https://orcid.org/0000-0002-2574-9611)"
-date: "`r Sys.Date()`"
+date: "`r format(Sys.Date(), '%B %Y')`"
 site: bookdown::bookdown_site
 output: 
   bookdown::gitbook:
@@ -13,7 +13,6 @@ output:
         scroll_highlight: yes
         before: null
         after: null
-      lof: yes
       toolbar:
         position: fixed
       edit : null
@@ -37,33 +36,49 @@ subtitle: |
   
   __Academic Unit:__ Human Development and Health
   
-  __Supervisors:__ Chris Bell, Karen Lillycrop and Cyrus Cooper
-  
-  Thesis for the degree of Doctor of Philosophy
+  A thesis for the degree of Doctor of Philosophy
 abstract: |
   # Abstract {-}
   
   The global population is ageing and age is a primary risk factor for many life threatening diseases including cancer, cardiovascular and neurodegenerative conditions. 
-  As well as for conditions such as osteoporosis which increase the risk of death indirectly through elevated risk of the fracture of major bones and subsequent complications. 
-  It is the aim of this work to contribute to the understanding of the epigentic processes involved in ageing and ageing-related disease.
-  three specific areas were investigated. 
+  This also includes conditions such as osteoporosis which increase the risk of death indirectly through elevated risk of the fracture of major bones and subsequent complications. 
+  The aim of this work was to extend the understanding of the epigenetic processes involved in ageing and ageing-related disease.
+  Three specific areas were investigated. 
 
-  Firstly, the relationship between early life epigenetic state and long term bone health. This investigation took the form of Epigenome wide association studies conducted with umbilical cord blood. 
-  Which identified candidate CpGs whose DNA methylation state is associated with bone mineral content at 6 years of age ($p < 2.52\times 10^{-8}$, n = 402) and periosteal circumference at 6 years of age ($p < 4.24\times 10^{-8}$, n = 141) respectively.
+  Firstly, the relationship between early life epigenetic state and long term bone health.
+  This investigation took the form of Epigenome wide association studies conducted on umbilical cord blood DNA methylation.
+  This identified candidate CpGs whose DNA methylation state is associated with bone mineral content at 6 years of age ($p < 2.52\times 10^{-8}$, n = 402) and periosteal circumference at 6 years of age ($p < 4.24\times 10^{-8}$, n = 141) respectively.
 
-  Secondly, following up on an earlier finding that a human tRNA gene exhibited age-related hypermethylation, the changes in human tRNA gene DNA methylation with age were interogated. 
-  Human tRNA genes are enriched for age-related DNA hypermethylation and three specific tRNA loci show genome wide significant ($p < 4.34\times10^{-9}$) hypermethylation with age. 
-  Two of which were validated using at different technology and replicated in an independent cohort, using a third DNA methylation assay.
+  Secondly, the changes in human tRNA gene DNA methylation with age were interogated. 
+  tRNAs permit the look-up of amino acids matching a given codon and as such are an essential core component of the translation of mRNA into protein by the ribosome.
+  Human tRNA genes were found to be enriched for age-related DNA hypermethylation and three specific tRNA loci show genome wide significant ($p < 4.34\times10^{-9}$) hypermethylation with age. 
+  Two of which, tRNA-iMet-CAT-1-4 and tRNA-Ser-AGA-2-6, were validated using at different technology and replicated in an independent cohort, using a third DNA methylation assay.
 
-  Thirdly, a DNA methylation based age predictor based on a region of the genome not previously broadly accessible to DNA methylation based age predictors, namely the Alu family of SINE repeat elements. 
-  Age predictors using the DNA methylation state of Alu repeat elements are able to predict human age with an R of 0.65 and a median absolute error of 8.1 years.
+  Thirdly, a DNA methylation based age predictor based on the Alu family of SINE repeat elements.
+  This is a region of the genome not previously broadly accessible to DNA methylation assays used in the construction of age predictors. 
+  Age predictors using the DNA methylation state of Alu repeat elements were able to predict human age with an R of 0.65 and a median absolute error of 8.1 years.
   This predicition was possible using MeDIP-seq training data from 774 individuals and validated on an unrelated set of 664 individuals.
-  This MeDIP-seq dataset also facilitated the investigation of the tRNA gene regions which like the Alu repeat elements are poorly covered by most other genome-wide DNA methylation assays.
 
-  In Summary, this work provides a starting point for further investigations into the relationship between early life epigenetic associations to longer term bone health outcomes.
-  This work highlights age-related epigenetics changes at the tRNA gene loci, a region of the genome responsible for the production of a core component of the apparatus of translation.
-  Additionally, this work also demonstrates a proof of principle for DNA methylation based age estimators created with the DNA methylation signatures from specific genomic compartments. 
-  As well as for identifying the genetic associations of biological age indicators such as age acceleration based on such genomic feature specific age predictors.
+  This work brings together epigenomic changes related to healthy ageing from the beginning of the lifecourse through to later life, examining areas of the DNA methylome not previously studied in depth.
+  
+  \newpage
+  
+  # Publications arising from this Thesis {-}
+  $BioR\chi iv$ manuscript: The Genomic Loci of Specific Human tRNA Genes Exhibit Ageing-Related DNA Hypermethylation
+
+  $Richard J. Acton ^{1,2,3}$, $Wei Yuan ^{4,5}$, $Fei Gao ^{6}$, $Yudong Xia ^{6}$, $Emma Bourne ^{7}$, $Eva Wozniak ^{7}$, $Jordana Bell ^{4}$, $Karen Lillycrop ^{3}$, $Jun Wang ^{6}$, $Elaine Dennison ^{2}$, $Nicholas Harvey ^{2}$, $Charles A. Mein ^{7}$, $Tim D. Spector ^{4}$, $Pirro G. Hysi ^{4}$, $Cyrus Cooper ^{2}$, $Christopher G. Bell ^{1}$
+
+  1. William Harvey Research Institute, Barts & The London School of Medicine and Dentistry, Charterhouse Square, Queen Mary University of London, London, U.K.
+  2. MRC Lifecourse Epidemiology Unit, University of Southampton, Southampton, U.K.
+  3. Human Development and Health, Institute of Developmental Sciences, University of Southampton, Southampton, U.K.  
+  4. Department of Twin Research & Genetic Epidemiology, St Thomas Hospital, King’s College London, London, U.K.
+  5. Institute of Cancer Research, Sutton, U.K.
+  6. BGI-Shenzhen, Shenzhen, China
+  7. Barts & The London Genome Centre, Blizard Institute, Barts & The London School of Medicine and Dentistry, Queen Mary University of London, London, U.K.
+  [$bioR \chi iv$](https://doi.org/10.1101/870352) [@Acton2020]
+
+  [Under Consideration at Nature Communications](https://nature-research-under-consideration.nature.com/users/37265-nature-communications/posts/57741-the-genomic-loci-of-specific-human-trna-genes-exhibit-ageing-related-dna-hypermethylation)
+
 ---
 
 ```{r,include=FALSE,echo=FALSE}
@@ -106,11 +121,12 @@ Date: `r Sys.Date()`
 I would like to acknowledge Nevena Krstic for her work extracting the DNA for the MAVIDOS EPIC array analysis and Dr Millie Parsons for her assistance with with the MAVIDOS sample metadata, as well as Dr Beth Curtis and Professor Nick Harvey of the MRC-LEU for their assistance with framing the research questions for the vitamin D and bone development outcomes work with the MAVIDOS samples.
 The MRC-LEU is supported by the Medical Research Council (MRC).
 I gratefully acknowledge the individuals from TwinsUK, Mavidos and the Hertfordshrie cohort.
+I would like to thank Pirro Hysi for his work performing the age acceleration GWAS.
 I would like to acknowledge Nikki Graham for her assistance identifying suitable samples for targeted bisulfite sequencing work and her work extracting DNA from those samples. 
-TwinsUK received funding from the Wellcome Trust (Ref: 081878/Z/06/Z), European Community’s Seventh Framework Programme (FP7/2007-2013), the National Institute for Health Research (NIHR)-funded BioResource, Clinical Research Facility and Biomedical Research Centre based at Guy’s and St Thomas’ NHS Foundation Trust in partnership with King’s College London. 
-Further funding support for the EpiTwin project was obtained from the European Research Council (project number 250157) and BGI. 
-SNP Genotyping was performed by The Wellcome Trust Sanger Institute and National Eye Institute via NIH/CIDR.
 I acknowledge the use of the IRIDIS High-Performance Computing Facility, and associated support services at the University of Southampton, in the completion of this work. 
-I would like to thank the MRC Doctoral fund (1820097) for supporting this work.
+I would like to thank the MRC Doctoral fund for supporting this work.
+I thank my family for their invaluable support, encouragement, and occasional proofreading.
+Thanks also to Michael Glinka for his advice, encouragement and friendship.
+I thank my supervisors Karen Lillycrop and Cyrus Cooper for their input and advice on my project.
 Finally, I would like to acknowledge the extensive help and support of my primary supervisor Dr Chris Bell.
 
