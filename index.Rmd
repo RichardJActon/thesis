@@ -102,20 +102,6 @@ abstract: |
   Date: `r Sys.Date()`
 
   \newpage
-
-  # Acknowledgements {-}
-
-  I would like to acknowledge Nevena Krstic for her work extracting the DNA for the MAVIDOS EPIC array analysis and Dr Millie Parsons for her assistance with with the MAVIDOS sample metadata, as well as Dr Beth Curtis and Professor Nick Harvey of the MRC-LEU for their assistance with framing the research questions for the vitamin D and bone development outcomes work with the MAVIDOS samples.
-  The MRC-LEU is supported by the Medical Research Council (MRC).
-  I gratefully acknowledge the individuals from TwinsUK, Mavidos and the Hertfordshrie cohort.
-  I would like to thank Pirro Hysi for his work performing the age acceleration GWAS.
-  I would like to acknowledge Nikki Graham for her assistance identifying suitable samples for targeted bisulfite sequencing work and her work extracting DNA from those samples. 
-  I acknowledge the use of the IRIDIS High-Performance Computing Facility, and associated support services at the University of Southampton, in the completion of this work. 
-  I would like to thank the MRC Doctoral fund for supporting this work.
-  I thank my family for their invaluable support, encouragement, and occasional proofreading.
-  Thanks also to Michael Glinka for his advice, encouragement and friendship.
-  I thank my supervisors Karen Lillycrop and Cyrus Cooper for their input and advice on my project.
-  Finally, I would like to acknowledge the extensive help and support of my primary supervisor Dr Chris Bell.
 ---
 
 ```{r,include=FALSE,echo=FALSE}
@@ -128,3 +114,17 @@ suppressPackageStartupMessages({
 ```
 
 \newpage
+
+# Acknowledgements {-}
+
+I would like to acknowledge Nevena Krstic for her work extracting the DNA for the MAVIDOS EPIC array analysis and Dr Millie Parsons for her assistance with with the MAVIDOS sample metadata, as well as Dr Beth Curtis and Professor Nick Harvey of the MRC-LEU for their assistance with framing the research questions for the vitamin D and bone development outcomes work with the MAVIDOS samples.
+The MRC-LEU is supported by the Medical Research Council (MRC).
+I gratefully acknowledge the individuals from TwinsUK, Mavidos and the Hertfordshrie cohort.
+I would like to thank Pirro Hysi for his work performing the age acceleration GWAS.
+I would like to acknowledge Nikki Graham for her assistance identifying suitable samples for targeted bisulfite sequencing work and her work extracting DNA from those samples. 
+I acknowledge the use of the IRIDIS High-Performance Computing Facility, and associated support services at the University of Southampton, in the completion of this work. 
+I would like to thank the MRC Doctoral fund for supporting this work.
+I thank my family for their invaluable support, encouragement, and occasional proofreading.
+Thanks also to Michael Glinka for his advice, encouragement and friendship.
+I thank my supervisors Karen Lillycrop and Cyrus Cooper for their input and advice on my project.
+Finally, I would like to acknowledge the extensive help and support of my primary supervisor Dr Chris Bell.
