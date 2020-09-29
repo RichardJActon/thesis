@@ -79,6 +79,8 @@ abstract: |
 
   [Under Consideration at Nature Communications](https://nature-research-under-consideration.nature.com/users/37265-nature-communications/posts/57741-the-genomic-loci-of-specific-human-trna-genes-exhibit-ageing-related-dna-hypermethylation)
   
+  \newpage
+  
   # Research Thesis: Declaration of Authorship {-}
 
   Name: Richard J. Acton
@@ -101,7 +103,6 @@ abstract: |
 
   Date: `r Sys.Date()`
 
-  \newpage
 ---
 
 ```{r,include=FALSE,echo=FALSE}
