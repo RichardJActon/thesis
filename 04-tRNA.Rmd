@@ -152,7 +152,7 @@ Samples from the 28 year old time point are all from pregnant women at ~11 weeks
 ### tRNA annotation information {#tRNAanno}
 
 Genomic coordinates of the tRNA genes were downloaded from GtRNAdb [@Chan2009]. 
-The 2 tRNAs located in chr1_gl000192_random are tRNA-Gly-CCC-8-1 & tRNA-Asn-ATT-1-2 ([Supplementary File S1](Supplementary_Files/hg19-tRNAs.bed)).
+The 2 tRNAs located in chr1_gl000192_random are tRNA-Gly-CCC-8-1 & tRNA-Asn-ATT-1-2 ([Supplementary File S1](Supplementary_Files/SF5_hg19-tRNAs.bed)).
 The 213 probes overlapping tRNA genes were derived from intersecting the tRNA gene annotation data from gtRNAdb with the Illumina 450k array manifest annotation for the hg19 genome build using bedtools v2.17.0 [@Quinlan2010].
 107 tRNA genes were excluded from blacklisted regions of hg19 [@Amemiya2019].
 
@@ -335,7 +335,7 @@ knitr::include_graphics("figs/poolSummaryTable.png")
 #### Targeted Bisulfite Sequencing {#targetedBiSseq}
 
 tRNA loci were selected for targeted sequencing which exhibited changes and DNAm with age along with closely related tRNAs in which changes were not observed.
-Primer design was performed using 'methPrimer' [@Li2002] ([Supplementary File S2](Supplementary_Files/Targeted_BiS-seq_Primers.txt)). 
+Primer design was performed using 'methPrimer' [@Li2002] ([Supplementary File S2](Supplementary_Files/SF6_Targeted_BiS-seq_Primers.txt)). 
 A total of 84 tRNA loci were targeted in 2 rounds of sequencing, 79 subsequently generated reliable results post-QC.
 The targeted tRNAs covered a total of 723 CpGs with a median of 8 CpGs per tRNA (range 1-13), data passing QC was generated for 458 CpGs, median 6 (range 1-9) per tRNA.
 
@@ -375,7 +375,7 @@ Five of the 6 top age hypermethylating tRNAs are covered by this array dataset.
 Data was downloaded from the TCGA (The Cancer Genome Atlas) via the GDC (genomic data commons) data portal [@Grossman2016] using the `GenomicDataCommons` `R` package.
 Data from foetal tissue [@Yang2016; @Nazor2012] was downloaded from GEO ([GSE72867](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE72867), [GSE30654](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30654)).
 From the TCGA, samples were selected for which DNAm data was available from both the primary site and normal solid tissue, and for which an approximate age could be inferred (within one year).
-Selecting those probes overlapping tRNA genes yielded 73,403 data points across 19 tissues with an age range of 15-90yrs (median 63.4) ([Supplementary File S3](Supplementary_Files/TCGA_samples_used.tsv))
+Selecting those probes overlapping tRNA genes yielded 73,403 data points across 19 tissues with an age range of 15-90yrs (median 63.4) ([Supplementary File S3](Supplementary_Files/SF7_TCGA_samples_used.tsv))
 
 ### Assaying tRNA expression in blood with MINTmap {#mintmapmethods}
 

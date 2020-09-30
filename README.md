@@ -1,3 +1,4 @@
 # The Epigenomics of Human Ageing
 
-[PhD Thesis](http://richardjacton.github.io/thesis)
+View the online version of my PhD Thesis at http://richardjacton.github.io/thesis
+
