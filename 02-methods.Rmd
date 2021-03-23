@@ -123,7 +123,7 @@ knitr::include_graphics("figs/MeDIPseqReaction.png")
 ```
 (ref:MeDIPseqReaction-Cap) __Graphical Summary of the MeDIP-seq process__ Purified DNA is fragmented by sonication, denatured and incubated with anti-5mC antibodies. It is then immunoprecipitated resulting in fragments containing methylated CpGs which are subsequently sequenced.
 
-DNA sample preparation, MeDIP reaction, and Illumina sequencing were performed by BGI-Shenzhen (Shenzhen, China).
+DNA sample preparation, MeDIP reaction, and Illumina sequencing were performed by BGI-Shenzhen (Shenzhen, China) on behalf of Twins UK, prior to the analytical work performed on the resulting data in this thesis.
 Fragmentation of genomic DNA from whole peripheral blood samples from the Twins UK cohort was performed by sonication using a Covaris system (Woburn, MA, USA).
 $5\mu g$ of DNA was used in the Illumina Single-End DNA Sample Prep kit followed by end repair, <A> base addition and adaptor ligation.
 The MeDIP reaction was performed, according to the protocol for the MagMeDIP kit (mc-magme-048), with a monoclonal antibody for 5-methylcytosine (5mC) (Cat. No.: CO2010021 mc-magme-048 from Diagenode (Liège, Belgium)). 
@@ -133,16 +133,20 @@ The product of the MeDIP reaction was purified with Zymo DNA Clean & Concentrato
 Size selection of fragments (200–500 bp) was performed by gel excision and quality assessed by Agilent BioAnalyzer (Agilent Technologies, Santa Clara, CA, USA). 
 The resultant libraries were subjected to highly parallel 50bp single-end sequencing on the Illumina HiSeq2000 platform.
 
-Quality control (QC) and alignment were performed by Twins UK.
+Quality control (QC) and alignment were performed by Twins UK, also prior to the work done in this thesis.
 Sequencing data were subject to initial QC for call quality and base composition using `FASTQC` (v0.10.0) (https://github.com/s-andrews/FastQC) [@Andrews2010].
 Duplicates were removed with `SAMTools` (https://github.com/samtools/samtools) [@Li2009b].
 The alignment was performed using the Burrows-Wheeler Aligner (`bwa`) (https://github.com/lh3/bwa) [Li2009] with a minimum mapping quality score of Q10.
 `MEDIPS` (v1.0) was used to perform MeDIP-specific QC, as well as to generate reads per million (RPM) and Absolute methylation score (AMS) values (https://bioconductor.org/packages/release/bioc/html/MEDIPS.html) [@Lienhard2014].
 AMS and RPM values are binned into 500bp windows with a 250bp slide in the BED format, resulting in ~12.8 million windows on the genome (Build: hg19/GRCh37).
-Additional quality control checks were performed in the R language: correlation matrix, hierarchical clustering, dendrogram, heatmap, density plot, and batch effects inspection by principal component analysis.
+Additional quality control checks were performed by Twins UK in the R language: correlation matrix, hierarchical clustering, dendrogram, heatmap, density plot, and batch effects inspection by principal component analysis.
+Analyses in this thesis are based on these binned DNA methylation level estimates and the accompanying individual metadata, such as age, produced by Twins UK.
 There was a mean of ~16.89 million (SD 3.04M) reads per sample.
 This number of reads per sample is consistent with covering ~50% of all CpGs at 1x, ~15% at 5x and ~10% at 10x (estimated using the results of Taiwo *et al.* 2012 [@Taiwo2012].)
 MeDIP-seq data from regions of interest was extracted using `bedtools` v2.17.0 [@Quinlan2010].
+
+The above-described processing steps for Methylated DNA Immunoprecipitation sequencing (MeDIP-seq) data used here have been previously described in Bell et al. [@Bell2016; @Bell2017a].
+These processed data are available, subject to approval, in the European Genome-phenome Archive (EGA) (https://www.ebi.ac.uk/ega) under study number EGAS00001001910 and dataset  ([https://www.ebi.ac.uk/ega/datasets/EGAD00010000983](https://www.ebi.ac.uk/ega/datasets/EGAD00010000983)).
 
 ### Participants
 
@@ -160,8 +164,6 @@ There are 3652 individuals in this data set.
 These individuals originate from 1933 unique families.
 There are 1234 monozygotic (MZ) twin pairs (2468 individuals), and 458 dizygotic (DZ) twin pairs (916 individuals).
 
-The above-described processing steps for Methylated DNA Immunoprecipitation sequencing (MeDIP-seq) data used here have been previously described in Bell et al. [@Bell2016; @Bell2017a].
-These processed data are available, subject to approval, in the European Genome-phenome Archive (EGA) (https://www.ebi.ac.uk/ega) under study number EGAS00001001910 and dataset  ([https://www.ebi.ac.uk/ega/datasets/EGAD00010000983](https://www.ebi.ac.uk/ega/datasets/EGAD00010000983)).
 
 ## Targeted Bisulfite Sequencing {#MethodsTargetedBisulfiteSequencing}
 
@@ -209,5 +211,3 @@ knitr::include_graphics("figs/targeted_BiSseq_fluidigm_PCR.png")
 After designing the target-specific primer sequences the CS1 and CS2 adaptor sequences are added to the forward and reverse primers respectively to permit the addition of Illumina sequencing primers in a second PCR step.
 The subsequent analysis is similar to that for whole-genome bisulfite sequencing.
 The PCR products are sequenced and the resulting reads aligned and methylation levels called with `Bismark`.
-
-The targeted BiS-sequencing data is available at: [https://www.ncbi.nlm.nih.gov/bioproject/PRJNA635108](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA635108)
