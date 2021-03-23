@@ -112,6 +112,15 @@ MeDIP-seq provide a particular advantage by comparison with the Illumina beadchi
 This is illustrated by Clark et al. who show that MeDIP-seq covers an estimated 91.4% of repetitive sequences and the 450k array only 3.4% [@Clark2012] (Figure \ref{fig:Clark2012fig1}).
 This makes it particularly suited to the aims of this project (Chapters \@ref(tRNAs) & \@ref(Alus)).
 
+MeDIP-seq does however have the disadvantage that it is less good at absolute quantitation of DNA methylation levels than bisulfite conversion base methods.
+This is especially the case without input controls i.e. sequencing data without antibody pull-down to account for the 'sequencability' or background levels of reads that are generated for a given region in the genome which can be corrected for when estimating methylation levels.
+Better even that input controls is to couple MeDIP-seq with MRE-seq which makes use of methylation-sensitive restriction digests to enrich for unmethylated DNA [@Maunakea2010].
+Signal in MRE-seq thus corresponds to the genomic location of unmethylated regions and can thus be used to differentiate gaps in MeDIP-seq coverage from truly unmethylated regions.
+In conjunction these complementary sequencing technologies provide an improved ability to discern absolute methylation levels compared to MeDIP-seq alone [@Clark2012, @Bock2010].
+The data generated on behalf of TwinsUK and used in this thesis did not make use of input or MRE-seq controls.
+Additionally Data for Chromosome X were not available for use in the analyses performed in this thesis.
+Interpretation of changes in chromosome X DNA methylation with age would be interesting to examine especially in this almost exclusively female cohort, despite the challenges in interpreting such changes given X inactivation.
+
 ```{r Clark2012fig1, fig.cap='(ref:Clark2012fig1-Cap)', out.width='90%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/Clark2012fig1MeDIPseqVs450Kcoverage.png")
 ```
