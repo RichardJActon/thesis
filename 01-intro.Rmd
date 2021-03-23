@@ -245,7 +245,7 @@ Irizarry et al. found that the 2kb regions flanking CpG islands which they terme
 This nomenclature has subsequently been expanded further with "CpG island shelves" which are 2kb - 4kb from the CGIs, and "seas" referring to the rest of the genome, see figure \@ref(fig:CGIs). 
 Ziller et al. identified ~5.6 million CpGs, ~21.8% of autosomal CpGs, which are dynamically regulated across diverse cell-types, these clustered into ~716,000 differentially methylated regions.
 More that three quarters of these regions where under 1kb in size and located away from transcription start sites and >70% of which had methylation levels >75% [@Ziller2013].
-Data from tree different approaches taken by Irizarry et al. [@Irizarry2009], Stadler et al. [@Stadler2011], and Ziller et al. [@Ziller2013] indicate that the most dynamic DNA methylation changes are occurring at the level of small distal regulatory features. 
+Data from three different approaches taken by Irizarry et al. [@Irizarry2009], Stadler et al. [@Stadler2011], and Ziller et al. [@Ziller2013] indicate that the most dynamic DNA methylation changes are occurring at the level of small distal regulatory features. 
 A small fraction of CpGs, on the order of 2-6% exhibiting constitutively unmethylated states and on the order of 70-90% constitutively methylated leaving 4-28% of sites subject to dynamic regulation.
 
 ```{r Baubec2014fig1, fig.cap='(ref:Baubec2014fig1-Cap)',  out.width='80%', fig.show='hold', fig.align = 'center', echo=FALSE}
@@ -603,7 +603,7 @@ knitr::include_graphics("figs/Marioni2015f3.png")
 
 ### DNA methylation clock measurements as outcomes for anti-ageing interventions
 
-Fahy et al. showed in a small exploratory study that they could reduced epigenetic age, as measured by four different epigenetic clocks [@Fahy2019].
+Fahy et al. showed in a small exploratory study that they could reduce epigenetic age, as measured by four different epigenetic clocks [@Fahy2019].
 The clocks used were: Horvath et al. [@Horvath2013], Hannum et al. [@Hannum2013], 'PhenoAge' Levine et al. [@Levine2018] and 'GrimAge' Lu et al. [@Lu2019a].
 The study called TRIIM (Thymus Regeneration, Immunorestoration, and Insulin Mitigation) consisted of ten men aged 51-65 who were treated with a regimen of recombinant human growth hormone (rhGH) in combination with dehydroepiandrosterone (DHEA) and metformin.
 The aim of this treatment was to counteract the decline in immune function attributed to the decrease in diversity of t-cell receptors that occurs in this age group [@Naylor2005].
