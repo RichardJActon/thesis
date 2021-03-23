@@ -180,6 +180,8 @@ Targeted Bisulfite sequencing [@Korbie2015] is very similar in principle to ordi
 However, bisulfite conversion has several implications for downstream processing.
 Bisulfite library prep can be either directional, sequencing reads correspond to a bisulfite-converted version of either the forward or reverse strand, or non-directional in which sequencing reads correspond to bisulfite-converted versions of either strand giving a total of four bisulfite-converted sequences with the strand of origin unknown.
 If a library is directional there are only two bisulfite-converted sequences.
+Other than ability to trace strand of origin there is no particular advantage to either approach.
+In both cases very rigorous adapter trimming is needed to avoid biases arising from the reads that are longer than the fragments and thus might be inferring methylation state for cytosines introduced during the library preparation process.
 Library preparation in this work was non-directional.
 
 Mapping can be performed with customised software wrapper to implementations of existing alignment tools. 
