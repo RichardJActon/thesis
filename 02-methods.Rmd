@@ -109,7 +109,7 @@ At near saturation coverage of ~40 million reads per sample, MeDIP-seq can cover
 At half that total read count MeDIP-seq still covers ~50% of CpGs at $\ge1\times$ and ~20% at $\ge5\times$ [@Taiwo2012].
 Other estimates place the threshold for saturation coverage by MeDIP-seq lower at between 20 and 30 million reads and suggest that the maximum number of CpGs covered at least once could extend up to 90% [@Chavez2010].
 MeDIP-seq provide a particular advantage by comparison with the Illumina beadchip array technologies with respect to the coverage it provides for repetitive regions of the genome. 
-This is illustrated by Clark et al. who show that MeDip-seq covers an estimated 91.4% of repetitive sequences and the 450k array only 3.4% [@Clark2012] (Figure \ref{fig:Clark2012fig1}).
+This is illustrated by Clark et al. who show that MeDIP-seq covers an estimated 91.4% of repetitive sequences and the 450k array only 3.4% [@Clark2012] (Figure \ref{fig:Clark2012fig1}).
 This makes it particularly suited to the aims of this project (Chapters \@ref(tRNAs) & \@ref(Alus)).
 
 ```{r Clark2012fig1, fig.cap='(ref:Clark2012fig1-Cap)', out.width='90%', fig.show='hold', fig.align = 'center', echo=FALSE}
