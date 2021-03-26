@@ -451,6 +451,8 @@ knitr::include_graphics("./figs/mappabilityScoreDensity_tRNAVsFlank500.png")
 
 21 genome-wide significant and 44 study-wide significant results were identified via linear regression, (p < $4.34\times10^{-9}$ and $8.36\times10^{-5}$, respectively; see [Methods](#medipmodels) \@ref(medipmodels), batch corrected n=4350).
 Study-wide significance was calculated conservatively using the Bonferroni method for all 598 autosomal tRNAs. 
+Two distinct significance thresholds are used here, the study-wide correcting for the number of tRNA loci and the genome-wide correcting for the total number of loci in the genome. 
+This is intended to permit the framing of statistical questions about the tRNA genes relative to other tRNAs genes (study-wide) or relative to the rest of the genome (genome-wide).
 There was a strong directional trend with all results at both significance levels being due to increases in DNA methylation.
 Age-related changes in cell type proportion are strong in heterogeneous peripheral blood, and include a myeloid skew, loss of naive T cells and increases in senescent cells [@Geiger2013].
 A subset of 3 genome-wide and 16 study-wide significant hypermethylation results remained significant even after correcting for potential cell-type changes by including lymphocytes, monocytes, neutrophils and eosinophil cell count data (n=3001, Listed in Table \@ref(fig:GWSBBtRNAsTab), Red in Figure \@ref(fig:circos)).
