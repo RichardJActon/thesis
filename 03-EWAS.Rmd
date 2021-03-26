@@ -149,6 +149,7 @@ Observed variation DNA methylation can be cell-type intrinsic, where changes in 
 An established approach for addressing this potential source of confounding is to add terms to the regression model which reflect the cell-type composition of each sample. 
 Cell-type composition can be ascertained through three main approaches: Direct cell count data; Estimating cell counts using the experimental data and models fitted on DNA methylation data from reference panels of known cell-type composition [@Houseman2012]; or reference free approaches which make use of mathematical methods to identify sources of confounding variation such as cell-type heterogeneity. 
 Whilst there are several reference samples available for cord blood [@Cardenas2016; @DeGoede2015; @Bakulski2016; @Gervin2016], none were available for cord tissue at the time of the initial analysis, and consequently a reference free technique was used in phase I of the MAVIDOS analysis.
+In the analysis of the SWS cord blood data the "andrews and bakulski cord blood" reference panel [@Bakulski2016] was used in `meffil` for cell-type composition estimation.
 Models were fitted using Surrogate Variable Analysis (SVA) [@Leek2007] and independent Surrogate Variable Analysis (iSVA) [@Teschendorff2011].
 The focus of these results is on SVA as minimal differences between the two methods were observed and SVA was recommended based on comparisons of the performance of various cell-type heterogeneity correction methods [@McGregor2016; @Teschendorff2017].
 
