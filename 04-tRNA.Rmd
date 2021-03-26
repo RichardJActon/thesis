@@ -124,7 +124,7 @@ The 450k and EPIC arrays have 110 robust probes covering 84 tRNAs and 129 robust
 
 tRNA genes sit at the heart not only of the core biological process of translation but at a nexus of signalling networks operating in several different paradigms, from small RNA signalling to large scale chromatin organisation [@VanBortle2017].
 In summation tRNA biology, protein synthesis, nutrient sensing, stress response and ageing are intimately interlinked.
-The newly described ageing-related observation of tRNAome DNA hypermethylation has here been identified as and independently replicated.
+
 
 \newpage
 
