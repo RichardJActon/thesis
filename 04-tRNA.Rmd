@@ -238,7 +238,7 @@ $Empirical~p-value = \frac{r+1}{N+1}$, where r is the sum of significantly hyper
 ```{r CpGcountBGvstRNAPlot, fig.cap="(ref:CpGcountBGvstRNAPlotCap)", out.width='100%', fig.show='hold', fig.align = 'center', echo=FALSE}
 knitr::include_graphics("figs/CpGcountBGvstRNAPlot.png")
 ```
-(ref:CpGcountBGvstRNAPlotCap) CpG Density in windows overlapping tRNA genes compared to that of non-tRNA overlapping windows in arbitrary flanking sequences (+/-5kb)
+(ref:CpGcountBGvstRNAPlotCap) CpG Density is higher in windows directly overlapping tRNA genes compared to that of non-tRNA overlapping windows in arbitrary flanking sequences (+/-5kb). This difference in CpG density between tRNA loci and other regions of the genome is a potential source of bias if age related DNA methylation changes vary with CpG density which they may as baseline DNA methylation levels also vary with CpG density.
 
 #### Neonate and Centenarian Whole Genome Bisulfite Sequencing
 
