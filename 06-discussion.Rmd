@@ -21,6 +21,7 @@ The corrected models included covariates for: blood cell-type composition, mater
 EWAS were performed for nine different outcomes across three groups of samples, and in each case four different models were fitted.
 Within a given EWAS the quite stringent Bonferroni standard for multiple testing correction was applied, however conducting multiple EWAS across different groups creates a secondary multiple testing problem. 
 This means that these findings could still be false positives despite the aspiration of family wise correction to minimise type 1 errors.
+Adjusting for the number of tests performed in a given EWAS should in theory minimise false positives but if several are performed the effective number of tests increases and is not adjusted for increasing the probability that a result could be a false positive from the near zero level family wise correction is aimed at achieving.
 Confirmation of these associations in another cohort would be necessary in order for the biological reality of these associations to be asserted with confidence.
 These results are correlational and experimental follow up would be needed to establish any mechanistic or causal relationships between the DNA methylation state at these sites and bone properties in early life. 
 One could for example attempt epigenetic editing of orthologous sites in a model organism and look for an effect on bone measurements [@Gjaltema2020].
@@ -45,7 +46,7 @@ Time and tissue specific signals may currently be flattened out in the aggregate
 The combinatorial complexity of possible times and tissues renders a brute force search impractical, so some prior reason based in biological understanding is likely to be needed to go looking in a particular time and/or tissue for an association.
 
 If the primary interest is in identifying pathways or other functional biological units then making use of dimentionality reduction methods such as weighted correlation network analysis (WGCNA) [@Langfelder2008] could potentially help to address some of the power issues faced by these studies.
-Tough this approach also has the limitation that biologically relevant effects may be realised through small perturbations across many systems [@Boyle2017], meaning no whole network may stand out.
+Though this approach also has the limitation that biologically relevant effects may be realised through small perturbations across many systems [@Boyle2017], meaning no whole network may stand out.
 Grouping the outcomes into effects on correlated gene networks rather than individual genes dramatically reduces the number of statistical tests performed.
 This approach could be used to narrow the set of tests to perform when looking for gene level associations in other datasets.
 If changes in gene networks are associated with an outcome of interest in one cohort it is reasonable to take this prior information to a second cohort and test only genes in this network for an association with the outcome of interest dramatically reducing the number of CpG level tests.
@@ -68,7 +69,7 @@ In addition these are not mutually exclusive.
 
 Despite the relatively localised effects on DNA methylation that were observed (Figure \@ref(fig:gvizLocusZooms)) these changes could still have an effect on larger scale chromatin dynamics. The action of zinc finger CXXC domain proteins binding a unmethylated CpGs and Methyl-CpG-Binding domains at methylated CpGs can alter histone modifications and affect alternate histone usage respectively [@Blackledge2013; @Sijacic2019].
 In addition changes in the nucleosome organisation at tRNA genes may affect genome architecture [@Hamdani2019].
-So it is hard to rule this out effects on chromatin architechture even from localised DNA methylation changes.
+So it is hard to rule out effects on chromatin architechture even from localised DNA methylation changes.
 The circulating tRNA derived small RNAs have been documented as exhibiting age related changes and thus represent an additional signalling vector through which changes in tRNA expression could act [@Dhahbi2013; @Rounge2018].
 
 The effects of increased DNAm on tRNA genes was to repress their expression in a plasmid based experimental system [@Besser1990], however this does not necessarily imply that increased DNA methylation at a tRNA gene locus would result in the reduced expression of tRNA derived small RNAs.
@@ -78,7 +79,7 @@ It is plausible that increased DNA methylation at a tRNA gene could cause the tR
 tRNAs are a key component of the translation system, a core component of the cell, any age related alterations in this system have the potential to impact on essentially all other systems in the cell if they affect translation.
 Translation's tight coupling to metabolic regulation and the effect of modulating it on ageing [@Hansen2007] means that any effect of tRNA gene DNAm on translation could be relevant for the regulation of ageing processes.
 
-Unpicking the potential mechanism of action of action of changes in tRNA gene DNA methylation, if indeed these changes have physiologically relevant impacts, will require greater understanding of a number of aspects of tRNA biology.
+Unpicking the potential mechanism of action of changes in tRNA gene DNA methylation, if indeed these changes have physiologically relevant impacts, will require greater understanding of a number of aspects of tRNA biology.
 Our collective understanding of the post-transcriptional modifications of tRNAs and the regulatory functions of tRNA derived small RNAs is still in its infancy [@Schimmel2017].
 In conclusion with possible effects on chromatin structure, on tRNA derived small RNA signalling and on translation, there are too many mechanisms of action through which changes in epigenetic state of tRNA genes could impact on ageing related systems, and at present insufficient evidence to favour any one particular mechanism.
 In addition, these possibilities are not mutually exclusive so any effects need not be limited to a single mechanism.
@@ -109,7 +110,7 @@ This work represents the first detailed characterisation of the DNA methylation 
 
 ## Assessing Biological ageing by DNA methylation changes within Alu repeat elements
 
-Repetitive elements make up some 45% of the human genome [@Jorda2017] and the global hypomethylation observed with age is driven by these repeats [@Bollati2010], but to date limited coverage of these regions [@Clark2012] has meant that their potential contain information relevant to biological ageing has gone underexplored.
+Repetitive elements make up some 45% of the human genome [@Jorda2017] and the global hypomethylation observed with age is driven by these repeats [@Bollati2010], but to date limited coverage of these regions [@Clark2012] has meant that their potential to contain information relevant to biological ageing has gone underexplored.
 
 The best Alu DNA methylation age predictor constructed in [Chapter 5](#Alus) was able to predict chronological age with an R of 0.65 from a training set of n=774 in an unrelated replication set of n=664 with a median absolute error of 8.1 years. 
 Whilst this is less accurate than many of the other DNA methylation based age predictors [@Bell2019] it was not the primary goal of this predictor to generate the most accurate age predictions but rather to be sufficiently accurate to capture a signature of age acceleration specific to the Alu repeat elements.
@@ -129,6 +130,7 @@ The samples used to train and test the models have a median age of approximately
 A larger proportion of samples at a particular part of the age distribution is also a potential source of bias, as poor performance in the lower numbers of older and younger individuals will not be penalised as much as poor performance at the ages with more samples.
 This also negatively impacts the ability to determine the quality of the predictor as a good age range is is required to reliably estimate the R of a predictor [@Horvath2018].
 Mitigating this by equalising the numbers in certain age groups is a possibility but a substantial number of samples must be left out to achieve this, excessively shrinking the training set.
+In addition this unlikely to be the sole factor at play in poor prediction performance of these clocks as similarly imperfect age distributions have been used in the training of more performant clocks.
 
 The Twins UK dataset provides a powerful tool for assessing the impact of genetics on age predictors.
 The age predictors generally performed only marginally better when predicting the ages of the twins of the individuals in the training set than on unrelated individuals, suggesting a minimal impact of genetic factors on the Alu DNA methylation age predictor.

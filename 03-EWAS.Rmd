@@ -627,7 +627,7 @@ Surrogate variable analysis identified 97 significant surrogate variables, this 
 ```{r SWSstotbmcwhasa, fig.cap='(ref:SWSstotbmcwhasa-Cap)', out.width='80%', fig.align = 'center', fig.show='hold',  echo=FALSE}
 knitr::include_graphics("figs/SWS6yrBMCdist.png")
 ```
-(ref:SWSstotbmcwhasa-Cap) Distribution of whole body (minus head) bone mineral content in kg at 8 years of age (n = 402), adjusted for sex and age, as measured by DXA.
+(ref:SWSstotbmcwhasa-Cap) Distribution of whole body (minus head) bone mineral content in kg at 6 years of age (n = 402), adjusted for sex and age, as measured by DXA.
 
 One CpG fell below the Bonferroni corrected significance threshold ($5.92\times10^{-8}$) for an association between DNA methylation at that locus and total bone mineral content minus head at 6 years adjusted for age and sex, Figure \@ref(fig:SWSstotbmcwhasaEPICewasManhattanSVA). This CpG was cg26559250 which is located at Chr6:157,653,445-157,653,447 adjacent to the ZDHHC14 (zinc finger DHHC-type palmitoyltransferase 14) gene. cg26559250 was significant (p = $2.52\times 10^{-8}$, increase of 1.46% per kg) in the 'all' model and was also Bonferroni significant in the uncorrected model. However, cg26559250 was not significant in the SVA or iSVA models suggesting that it may be attributable to batch or cell-type effects.
 

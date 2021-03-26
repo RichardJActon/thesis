@@ -82,7 +82,7 @@ The tissue specific expression of tRNAs whilst substantially maintaining codon r
 
 Additionally, beyond their core role in the information flow from DNA to protein sequence, tRNAs can fragment into numerous tRNA-derived small RNAs (tsRNAs).
 There are a number of types of tRNA derived small RNAs (tsRNAs) [@Pliatsika2018] which serve as signalling molecules [@Lee2009] (Figure \@ref(fig:tRNAderivedSmallRNARoles)).
-Four main types of tsRNAs have been identified, these are 5' tRNA halves, 3' tRNA halves, and the tRNA derived fragments (tRFs) of ~18 - ~22bp sizes [@Torres2019; @Li2018a; @Xu2017a].
+Four main types of tsRNAs have been identified, these are 5' tRNA halves, 3' tRNA halves, and the two main types of tRNA derived fragments (tRFs), the ~18bp and the ~22bp sizes [@Torres2019; @Li2018a; @Xu2017a].
 tRNAs and pre-tRNAs also give rise to piRNAs [@Keam2014; @Honda2017; @Tosar2018] and internal tRNA fragments or itRFs [@Loher2017].
 The terminology and ontology of tsRNAs is still stabilising as our understanding of these RNA species evolves.
 Some of these tsRNAs feedback on protein synthesis by regulating ribosome biogenesis [@Kim2017], others have diverse regulatory functions such as targeting transposable element transcripts [@Martinez2017].
@@ -137,24 +137,35 @@ Code for analyses performed in this chapter can be found here: [https://github.c
 #### MeDIP-seq DNA methylomes
 
 Participants in the 'EpiTwins' study are adult volunteers from the TwinsUK Register.
-The participants were aged between 16 and 82 years, with a median of ~55 years (cohort profile [@Moayyeri2013]).
+The participants were aged between 16 and 82 years, with a median of age at sampling of ~55 years for 4350 methylomes taken from 3652 unique participants some of whom where sampled more than once. (cohort profile [@Moayyeri2013]).
+The majority of samples 4054 are female and 270 are male. 
+3001 have full blood counts.
+These individuals originate from 1933 unique families.
+There are 1234 monozygotic (MZ) twin pairs (2468 individuals), and 458 dizygotic (DZ) twin pairs (916 individuals).
+See also the [participants section in general Methods](#Participants) \@ref(Participants).
 Ethics for the collection of these data were approved by Guy's & St Thomas' NHS Foundation Trust Ethics Committee (EC04/015—15-Mar-04) and written informed consent was obtained from all participants.  
 
 #### Targeted Bisulfite sequencing
 
 Participants for our targeted bisulfite sequencing of select tRNA loci were drawn from two studies.
-Samples from participants aged 4 and 28 years are from the MAVIDOS [@Harvey2012a] study and participants aged 63 and 78 years are from the Hertfordshire cohort study [@Syddall2005].
+Samples from participants aged 4 and 28 years are from the MAVIDOS [@Harvey2012a] study, a randomised controlled trial of the effect of maternal vitamin D supplementation of the bone health of their offspring. 
+Participants aged 63 and 78 years are from the Hertfordshire cohort study, which consists of individuals originally recruited in the 1980's for a study of the impact of birth weight on heart attack risk because high quality records of their birth weights and other useful data had been recorded in the 1920s & 30s [@Syddall2005].
 Due to a limited number of available samples, the two 4 year old pools contained DNA from 20 individuals each, with all other pools having 25 contributing individuals.
 Pool 1, the first 4 year old pool used DNA from all male samples, with all other pools using all female samples.
 Thus, the total number of participants was 190 (see Table \@ref(fig:poolSummaryTable)).
 Samples from the 28 year old time point are all from pregnant women at ~11 weeks gestation.  
 
-### tRNA annotation information {#tRNAanno}
+Richard Acton selected the loci to target, designed the primers and selected the samples to go in each pool.
+Selected DNA samples were pooled by Nikki Graham at the institute of developmental sciences at the university of Southampton.
+With Fluidigm amplification and sequencing performed at Bart's and the London genome centre, the genomics core facility at Queen Mary, University of London.
+The targeted BiS-sequencing data is available at: [https://www.ncbi.nlm.nih.gov/bioproject/PRJNA635108](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA635108).
 
-Genomic coordinates of the tRNA genes were downloaded from GtRNAdb [@Chan2009]. 
+### tRNA Gene coordinates and other annotation information {#tRNAanno}
+
+Genomic coordinates of all tRNA genes including some likely pseudogenes were downloaded from GtRNAdb [@Chan2009]. 
 The 2 tRNAs located in chr1_gl000192_random are tRNA-Gly-CCC-8-1 & tRNA-Asn-ATT-1-2 ([Supplementary File S1](Supplementary_Files/SF5_hg19-tRNAs.bed)).
 The 213 probes overlapping tRNA genes were derived from intersecting the tRNA gene annotation data from gtRNAdb with the Illumina 450k array manifest annotation for the hg19 genome build using bedtools v2.17.0 [@Quinlan2010].
-107 tRNA genes were excluded from blacklisted regions of hg19 [@Amemiya2019].
+107 tRNA genes were excluded from blacklisted regions of hg19 [@Amemiya2019], that is to say regions of the genome which have "anomalous, unstructured, or high signal in next-generation sequencing experiments independent of cell line or experiment".
 
 #### tRNA Gene Clustering {#clustering}
 
@@ -196,7 +207,7 @@ Quantile normalisation was performed with the `qqnorm` R function with the theor
 
 Models were fitted with:
 
-1. No covariates
+1. Uncorrected, simply modelling age from DNA methylation
 2. Batch information as a fixed effect
 3. Blood cell-type counts for neutrophils, monocytes, eosinophils, and lymphocytes as fixed effects
 4. Batch and Blood Cell counts as fixed effects
@@ -205,7 +216,7 @@ Models were fitted with:
 - Models 1 & 2 fitted in the n=3001 subset were similar to those fitted in the complete set of 4350. 
 - Models 3 & 4 were fitted in the n=3001 subset with full covariate information and sets of significant tRNAs identified at study-wide and genome wide levels in model 4 were used in subsequent analyses.
 
-Models were also fitted for two unrelated subsets created by selecting one twin from each pair (Monozygotic or Dizygotic), yielding sets with n = 1198 & 1206 DNA methylomes. 
+Models were also fitted for two unrelated subsets created by selecting one twin from each pair (Monozygotic or Dizygotic), yielding sets with n = 1198 & 1206 DNA methylomes, which timepoint was used when more than one sample was available for an individual was selected arbitrarily. 
 One additional model was fitted for longitudinal analysis, samples were selected by identifying individuals with a DNA methylome at more than one time point and filtering for only those with a minimum of 5 years between samples.
 This yielded 658 methylomes from 329 individuals with age differences of 5-16.1 years, median 7.6 years.
 Models for this set included participant identifier as a fixed effect in addition to blood cell counts and batch information.
@@ -236,7 +247,7 @@ DNA methylation calls were downloaded from GEO: [GSE31263](https://www.ncbi.nlm.
 #### Sample pooling and EPIC array
 
 An Illumina Infinium DNA methylation EPIC array ((C) Illumina) and targeted bisulfite sequencing of select tRNA gene loci were performed.
-Here DNA was extracted from whole blood and pooled into 8 samples from unrelated individuals at 4 time-points with 2 pools at each time-point.
+Here DNA was extracted from whole blood and combined into 8 pools from unrelated individuals at 4 time-points with 2 pools at each time-point.
 The individual were age matched at approximately 4, 28, 63, and 78 year timepoints (Table \@ref(fig:poolSummaryTable))
 Using the EPIC array DNAm age was estimated using the Horvath clock [@Horvath2013] and blood cell-type-composition with the Houseman method [@Houseman2012].
 
