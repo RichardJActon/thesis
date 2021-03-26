@@ -602,6 +602,13 @@ For all the EWAS, blood cell-type counts were estimated using the Houseman metho
 The Cell-types estimated were: B cells, CD4+ T cells, CD8+ T Cells, Granulocytes, Monocytes, Natural Killer cells, & Erythrocytes.
 In addition to the estimated blood cell counts all models included as covariates: Maternal Age at time of birth (years), Sex, maternal BMI at 11 weeks gestation, parity, whether or not the mother smoked during pregnancy, and gestational age.
 
+EWAS for bone mineral content at 6 and 8 years would be expected to produce similar results given that BMC at these ages are highly correlated (Figure \ref(fig:cor_8_6_plot)).
+
+```{r cor_8_6_plot, fig.cap='(ref:cor_8_6_plot-Cap)', out.width='60%', fig.align = 'center', fig.show='hold', echo=FALSE}
+knitr::include_graphics("figs/cor_8_6_plot.png")
+```
+(ref:cor_8_6_plot-Cap) Bone Mineral content at 6 and 8 years of are correlated with an $R^2 = 0.88$.
+
 ##### Total Bone Mineral Conent at 8 years
 
 Figure \@ref(fig:SWSttotbmcwhasa), illustrates the distribution of bone mineral content at 8 years in the 408 individuals in this EWAS.
