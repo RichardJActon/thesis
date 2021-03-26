@@ -125,6 +125,19 @@ The 450k and EPIC arrays have 110 robust probes covering 84 tRNAs and 129 robust
 tRNA genes sit at the heart not only of the core biological process of translation but at a nexus of signalling networks operating in several different paradigms, from small RNA signalling to large scale chromatin organisation [@VanBortle2017].
 In summation tRNA biology, protein synthesis, nutrient sensing, stress response and ageing are intimately interlinked.
 
+## Primary questions
+
+Are there additional loci which show the age-related DNA methylation changes observed in tRNA-iMet-CAT-1-4?
+
+Is there an overall pattern of age-related hypermethylation in the tRNAome?
+
+Can age-related DNA methylation changes at tRNA loci be validated with different technology to MeDIP-seq in which was initially identified?
+
+Can age-related DNA methylation changes at tRNA loci be replicated in a cohort independent of that in which it was originally identified?
+
+Can age-related DNA methylation changes at tRNA loci be observed in other organisms?
+
+Can tissue specific differences in age-related DNA methylation changes at tRNA loci be observed?
 
 \newpage
 
