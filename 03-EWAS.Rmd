@@ -87,13 +87,13 @@ Phase I of the MAVIDOS EPIC arrays and comparison with 450k array results.
 Phase II of the MAVIDOS EPIC analysis with additional samples.
 Analysis of the SWS cord blood EPIC array data.
 
-1. MAVIDOS phase I results (EPIC n = 140, 450k n = 60), EWAS outcomes: 
+1. MAVIDOS phase I, cord tissue, results (EPIC n = 140, 450k n = 60), EWAS outcomes: 
   - Intervention Vs. Placebo 
   - Bone Mineral Content at Birth (g), measured by DXA
   - Maternal circulating 25(OH)-vitamin D levels (nmol/l) at 34 weeks
   - Change in Maternal Vitamin D form 11 to 34 weeks
     
-2. MAVIDOS phase II results (n = 237), EWAS outcomes:
+2. MAVIDOS phase II, cord tissue, results (EPIC n = 237), EWAS outcomes:
   - 4 year Total BMC (g), without heads* , measured by DXA
   
 3. SWS cord blood, EWAS outcomes:
@@ -103,8 +103,6 @@ Analysis of the SWS cord blood EPIC array data.
   - 6 year Cortical density of the Tibia at 38% from the distal end (mg/cm3), measured by Peripheral PQCT (n = 141)
 
 *'without heads' indicates that bone mass contributed by the head is not included in the total as the head is not scanned during the DXA imaging.
-
-## Methods {#arrayMethods}
 
 Analysis of the Illumina EPIC and 450k methylation arrays was carried out in the `R` statistical programming language (v3.5.2) using the [`meffil`](https://github.com/perishky/meffil/wiki) package [@Min2017], which was chosen as it is capable of performing functional normalisation in a more memory efficient fashion than alternatives such as `minfi`. 
 
