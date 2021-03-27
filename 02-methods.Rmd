@@ -157,7 +157,7 @@ MeDIP-seq data from regions of interest was extracted using `bedtools` v2.17.0 [
 The above-described processing steps for Methylated DNA Immunoprecipitation sequencing (MeDIP-seq) data used here have been previously described in Bell et al. [@Bell2016; @Bell2017a].
 These processed data are available, subject to approval, in the European Genome-phenome Archive (EGA) (https://www.ebi.ac.uk/ega) under study number EGAS00001001910 and dataset  ([https://www.ebi.ac.uk/ega/datasets/EGAD00010000983](https://www.ebi.ac.uk/ega/datasets/EGAD00010000983)).
 
-### Participants
+### Participants {#Participants}
 
 Peripheral blood samples for DNA extraction were provided by the adult volunteers from the UK Twin Register (TwinsUK Resource [@Moayyeri2013]).
 The participants are rigorously phenotyped at visits at St Thomas’ Hospital, London.
